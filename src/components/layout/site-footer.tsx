@@ -126,18 +126,12 @@ export function SiteFooter() {
         <div className="grid gap-12 lg:grid-cols-[1.35fr_1fr_1fr_1fr] lg:gap-x-12 lg:gap-y-14">
           {/* Brand, contact and socials */}
           <div className="lg:row-span-2">
-            <Link href="/" className="inline-flex items-center gap-4">
+            <Link href="/" className="inline-flex" aria-label="Afar Horizon Expeditions — home">
               <img
-                src="/images/logo.png"
+                src="/images/logo-light.png"
                 alt="Afar Horizon Expeditions Logo"
-                className="h-20 w-20 rounded-full border border-accent/25 object-cover shadow-[0_10px_30px_-12px_black]"
+                className="h-28 w-auto object-contain"
               />
-              <span className="flex flex-col">
-                <span className="font-serif text-[2.1rem] leading-none">Afar Horizon</span>
-                <span className="mt-1.5 text-[10px] font-semibold uppercase tracking-[0.32em] text-accent">
-                  Expeditions
-                </span>
-              </span>
             </Link>
             <p className="mt-6 max-w-sm text-pretty text-[15px] leading-relaxed text-background/65">
               Introducing travellers to one of humanity&apos;s oldest
