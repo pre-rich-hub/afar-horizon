@@ -12,8 +12,6 @@ export const metadata: Metadata = {
 }
 
 export default function GalleryPage() {
-  const places = new Set(galleryPhotos.map((p) => p.location)).size
-
   return (
     <>
       <PageHero
@@ -23,12 +21,6 @@ export default function GalleryPage() {
         image="/images/hero-simien.png"
         imageAlt="Mist rolling through the Simien Mountains escarpment at sunrise"
         crumbs={[{ label: 'Home', href: '/' }, { label: 'Gallery' }]}
-        meta={[
-          { label: 'Photographs', value: String(galleryPhotos.length) },
-          { label: 'Places', value: String(places) },
-          { label: 'Collections', value: String(galleryCategories.length) },
-          { label: 'Best Light', value: 'Oct – Mar' },
-        ]}
       />
 
       <section className="shell py-16 sm:py-20 lg:py-28">

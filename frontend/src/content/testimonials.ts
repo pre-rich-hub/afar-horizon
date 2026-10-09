@@ -1,62 +1,62 @@
 import type { ReviewSummary, Testimonial } from '@/types'
 
+// Sample reviews for the template — replace with genuine guest reviews
+// before launch.
 export const testimonials: Testimonial[] = [
   {
     quote:
-      'We have travelled the world, yet nothing prepared us for Ethiopia. Every detail was considered, every guide extraordinary. We did not feel like tourists — we felt like guests of an old friend.',
-    name: 'Eleanor Whitmore',
-    detail: 'The Historic Route · United Kingdom',
-    image: '/images/traveler-portrait.png',
-  },
-  {
-    quote:
-      'They rebuilt our itinerary twice before we ever paid a deposit, then again in-country when the light was better in the south. That is not a package. That is a design practice.',
-    name: 'Daniel Okonjo',
-    detail: 'Omo Valley Cultural Odyssey · Nigeria',
-    image: '/images/traveler-portrait.png',
-  },
-  {
-    quote:
-      'A fourteen-hour connection in Addis became the most memorable day of the whole trip. Met at the gate, back at check-in, and Lucy in between.',
-    name: 'Marta Køhler',
-    detail: 'The Capital, 12-hour layover · Denmark',
-    image: '/images/traveler-portrait.png',
-  },
-  // Sample reviews for the template — replace with genuine guest reviews
-  // before launch.
-  {
-    quote:
-      'Standing on the rim of Erta Ale at midnight with the lava lake below us is something I will never forget. The team handled every permit, every camp and every early start without a single hiccup.',
+      'Standing on the rim of Erta Ale at midnight with the lava lake churning below is something I will never forget. The team handled every permit, every camp and every pre-dawn start without a single hiccup.',
     name: 'James Whitfield',
     detail: 'Danakil Expedition · Australia',
     image: '/images/traveler-portrait.png',
   },
   {
     quote:
-      'Our guide in the Simien knew every gelada troop by name. Paced perfectly for our family, with lodges that felt like a reward at the end of each walk.',
+      'Dallol looks like another planet — acid-green pools, sulfur chimneys, salt shaped like coral. Our Afar guide knew exactly where it was safe to walk and when to leave before the heat closed in.',
+    name: 'Eleanor Whitmore',
+    detail: 'Danakil Expedition · United Kingdom',
+    image: '/images/traveler-portrait.png',
+  },
+  {
+    quote:
+      'Watching the salt caravans leave Lake Asale at first light, camels roped nose to tail, was the most quietly moving hour of our lives. We were welcomed, never gawked at, and that is down to how this team works with Afar communities.',
+    name: 'Daniel Okonjo',
+    detail: 'Danakil Expedition · Nigeria',
+    image: '/images/traveler-portrait.png',
+  },
+  {
+    quote:
+      'Night in Hamed Ela under more stars than I knew existed, then out onto the salt flats before sunrise. Hot, raw and extraordinary — and somehow they kept us comfortable, fed and well watered the whole way.',
+    name: 'Marta Køhler',
+    detail: 'Danakil Expedition · Denmark',
+    image: '/images/traveler-portrait.png',
+  },
+  {
+    quote:
+      "I was nervous about the Danakil's reputation, but every vehicle, escort and camp was organised to the minute. We felt safe the entire time and could simply concentrate on the landscape.",
     name: 'Sofia Lindqvist',
-    detail: 'Highlands & Wildlife · Sweden',
+    detail: 'Danakil Expedition · Sweden',
     image: '/images/traveler-portrait.png',
   },
   {
     quote:
-      'Timkat in Gondar was overwhelming in the best way. We had a quiet vantage point above the crowds and a priest who explained every moment of the ceremony.',
+      'Floating in the salt lake at Afrera, then cutting salt blocks with the workers on Asale — our guide made the Afar people and their history the heart of the trip, not just the scenery.',
     name: 'Priya Raman',
-    detail: 'Timkat Festival Journey · India',
+    detail: 'Danakil Expedition · India',
     image: '/images/traveler-portrait.png',
   },
   {
     quote:
-      'From the island monasteries of Lake Tana to a coffee ceremony in a Kaffa farmhouse, every day had one moment that stopped us in our tracks. Thoughtful, unhurried and beautifully planned.',
+      "We added the Afar to the end of the Historic Route and it became the part everyone at home asks about. Going from Lalibela's churches to the lowest, hottest place in Africa in a few days was astonishing.",
     name: 'Thomas Becker',
-    detail: 'Sacred Waters & Coffee · Germany',
+    detail: 'The Historic Route + Danakil · Germany',
     image: '/images/traveler-portrait.png',
   },
   {
     quote:
-      'Lalibela at dawn, before anyone else arrived, was worth the whole trip. Our designer listened carefully and built the route around exactly what we hoped to see.',
+      'Climbing Erta Ale in the dark with camels carrying our gear, then sleeping on the crater rim to the sound of the lava — unforgettable. The cooks produced proper meals in the middle of the desert.',
     name: 'Amara Nwosu',
-    detail: 'The Historic Route · Canada',
+    detail: 'Danakil Expedition · Canada',
     image: '/images/traveler-portrait.png',
   },
 ]

@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import { HeroActions } from '@/features/home/components/hero-actions'
+import { HeroSlideshow } from '@/features/home/components/hero-slideshow'
 
 export function Hero() {
   return (
@@ -7,18 +7,10 @@ export function Hero() {
       id="top"
       className="relative isolate flex min-h-[100svh] w-full flex-col justify-end overflow-hidden"
     >
-      <div className="absolute inset-0 -z-10">
-        <Image
-          src="/images/hero-lalibela.png"
-          alt="Bet Giyorgis (Church of St. George) in Lalibela, Ethiopia, a historic monolithic rock-hewn church"
-          fill
-          priority
-          sizes="100vw"
-          className="animate-slow-zoom object-cover"
-        />
+      <HeroSlideshow>
         <div className="absolute inset-0 bg-gradient-to-b from-charcoal/55 via-charcoal/25 to-charcoal/85" />
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal/55 via-charcoal/10 to-transparent" />
-      </div>
+      </HeroSlideshow>
 
       <div className="shell flex flex-1 flex-col items-center pb-20 pt-32 text-center sm:pb-24 lg:pb-28">
         <div className="flex flex-1 flex-col items-center justify-center">
@@ -27,8 +19,8 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-[52ch] text-pretty leading-relaxed text-background/90 [animation:fade-up_1s_ease_0.25s_both] sm:mt-8 sm:text-lg">
-            Private expeditions from the salt and fire of the Afar to
-            Ethiopia&apos;s ancient highlands.
+            Private expeditions from the salt and fire of the Afar to Ethiopia&apos;s ancient
+            highlands.
           </p>
         </div>
 
@@ -39,5 +31,3 @@ export function Hero() {
     </section>
   )
 }
-
-

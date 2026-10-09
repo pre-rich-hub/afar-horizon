@@ -280,7 +280,7 @@ Submits a dynamic itinerary planner or enquiry request fields.
 - **Backend Action**: 
    1. Validates inputs using Schema validation runtime (e.g. Zod).
    2. Writes record to `enquiries` table.
-   3. Sends notification email to `contact@ethioafrotours.com` using email service (Resend).
+   3. Sends notification email to `info@afarhorizon.com` using email service (Resend).
    4. Sends confirmation email to user: `alex@mercer.org`.
 - **Response `201 Created`**:
   ```json
@@ -359,7 +359,7 @@ graph TD
 
 1. **Email Service (Resend)**
    - Used for notifying the travel concierge team within 24 hours of form entries.
-   - Set up custom domains for `@ethioafrotours.com` to prevent emails landing in spam.
+   - Set up custom domains for `@afarhorizon.com` to prevent emails landing in spam.
 2. **Payment Gateway (Chapa API / Stripe API)**
    - Important for transacting the Layover packages. Chapa provides native support for Ethiopian Birr (ETB), Telebirr, and international cards.
 3. **OpenAI API or Anthropic API**
