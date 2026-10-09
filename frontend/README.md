@@ -1,75 +1,104 @@
 # Afar Horizon Expeditions — Frontend
 
 Marketing site and admin panel for Afar Horizon Expeditions, built with
-Next.js (App Router), React 19, TypeScript and Tailwind CSS v4.
+Next.js (App Router), React 19, TypeScript, and Tailwind CSS v4.
 
 ## Getting started
 
 ```bash
 pnpm install
-cp .env.example .env.local   # API_BASE_URL of the Express backend
-pnpm dev                     # http://localhost:3000
+cp .env.example .env.local  # Set API_BASE_URL for the separate Express backend
+pnpm dev                   # http://localhost:3000
 ```
 
-| Script | Purpose |
+| Command | Purpose |
 | --- | --- |
 | `pnpm dev` | Development server |
 | `pnpm build` / `pnpm start` | Production build and server |
 | `pnpm typecheck` | TypeScript check without emitting |
+| `node --test tests/*.test.cjs` | Feature contract and architecture checks |
 
-The site works without the backend: every page falls back to the static
-catalogue in `src/content`.
+Public pages render using feature-owned static catalogues when live data is
+unavailable. Form submissions, admin operations, and assistant responses require
+the backend. Tour prices and featured flags overlay the static tour catalogue;
+other tour content remains local.
 
-## Project structure
+## Structure
 
+```text
+frontend/
+├── app/                 Routes, layouts, metadata, loading and not-found states
+│   ├── page.tsx         Homepage composition
+│   ├── (auth)/login/    Admin sign-in, still served at /login
+│   ├── admin/           Session-guarded admin routes
+│   └── …                Existing public index and dynamic detail routes
+├── features/
+│   ├── home/            Homepage-only sections and their interactions
+│   ├── about/
+│   ├── contact/
+│   ├── destinations/
+│   ├── tours/
+│   ├── layover/
+│   ├── blog/
+│   ├── gallery/
+│   ├── auth/            Login and session verification
+│   ├── admin/           Admin screens, resource APIs, types, and hooks
+│   ├── enquiries/       Shared journey enquiry form and endpoint
+│   ├── newsletter/      Subscription form and endpoint
+│   └── support/         Floating support UI and streaming assistant
+├── components/
+│   ├── ui/              Shared UI primitives
+│   ├── layout/          Site navigation and footer
+│   └── common/          Shared heroes, headings, cards, links, icons, and reveal
+├── lib/
+│   ├── api/             JSON and admin request transports
+│   ├── utils/           Class names and date formatting
+│   ├── constants/       Shared navigation, contact details, and brand promises
+│   └── config/          Server-side backend URL configuration
+├── public/              Images and icons, with their original URLs
+└── tests/               Contract and ownership checks
 ```
-src/
-├── app/                     Routes only — thin pages that compose features
-│   ├── (site)/              Public site (route group, no URL segment)
-│   │   ├── page.tsx         Home
-│   │   ├── about/  blog/  contact/  destinations/  layover/  tours/
-│   ├── admin/               Admin panel (session-guarded layout)
-│   ├── login/               Admin sign-in
-│   ├── layout.tsx           Root layout: fonts, nav, footer, support widget
-│   ├── not-found.tsx
-│   └── globals.css          Design tokens and global styles
-│
-├── components/              Shared, feature-agnostic UI
-│   ├── ui/                  Primitives: Reveal, LinkButton, SectionHeading…
-│   ├── layout/              Site chrome: SiteNav, SiteFooter, PageHero…
-│   ├── cards/               InfoCard, BookingCard
-│   └── icons/               Third-party brand marks
-│
-├── features/                Feature modules (components owned by one area)
-│   ├── home/                Homepage sections
-│   ├── tours/               TourCard, ToursGrid
-│   ├── destinations/        Destination cards
-│   ├── blog/                PostCard, PostsGrid
-│   ├── enquiry/             Enquiry and newsletter forms
-│   └── admin/               Admin components and API helpers
-│
-├── content/                 Static catalogue (destinations, tours, posts…)
-├── types/                   Shared domain types
-├── hooks/                   Reusable React hooks
-└── lib/
-    ├── api-client.ts        Typed client for the Express API
-    ├── catalog.ts           Merges live API data over the static catalogue
-    └── utils.ts             `cn()` class-name helper
+
+## Ownership rules
+
+- `app/` owns route composition, metadata, static generation, route parameters,
+  and missing-record handling. Page sections and domain logic belong in features.
+- Each feature owns its components, data, types, utilities, client hooks, and
+  backend endpoint calls. Add a subfolder only when it has a real responsibility.
+- Homepage-only presentations stay in `features/home`, even when they display
+  destinations or tours. They reuse domain data and cards through feature exports.
+- Cross-feature consumers import from `@/features/<feature>`. Feature internals
+  use relative imports; `index.ts` explicitly exports the consumer-facing surface.
+- Authentication's `features/auth/server.ts` is a separate server-only entry point.
+  Never re-export it from the client-facing auth index.
+- Shared UI belongs in `components`; infrastructure belongs in `lib`. Domain URLs
+  and endpoint functions belong in feature API modules. Public and admin request
+  transports retain their distinct headers, timeout, and error behavior.
+- Public catalogue types and admin resource types are separate contracts. Admin
+  API payloads need not match the static catalogue's display model.
+- `@/` resolves to `frontend/`. Components use PascalCase filenames, hooks use
+  camelCase beginning with `use`, and domain files use names such as
+  `destination.data.ts`, `destination.types.ts`, and `destination.utils.ts`.
+- Next.js convention files retain their required names (`page.tsx`, `layout.tsx`,
+  and so on). Colours use the tokens in `app/globals.css`.
+
+## Destination example
+
+```text
+features/destinations/
+├── components/          Cards, grid, hero, overview, journeys, and enquiry sections
+├── data/destination.data.ts
+├── types/destination.types.ts
+├── utils/destination.utils.ts
+└── index.ts
 ```
 
-### Conventions
-
-- **Imports** use the `@/` alias, which points at `src/`.
-- **Pages stay thin.** Route files fetch data and compose sections; markup
-  lives in `features/` or `components/`.
-- **Where a component goes:** used by one feature → `features/<feature>`;
-  used across features → `components/`.
-- **Content vs. types:** edit copy and catalogue entries in `src/content`;
-  shapes live in `src/types` and are the contract for the API overlay.
-- **Colours** come from the tokens in `globals.css` (`bg-primary`,
-  `bg-copper`, …) rather than raw hex values.
-- **Files** are kebab-case; components are PascalCase named exports.
+Destination hover state currently belongs to the homepage presentation; there
+is no empty destination hooks folder. Tour and layover live-data overlays live
+in their respective feature utilities.
 
 ## Further reading
 
-- [`docs/backend-design.md`](docs/backend-design.md) — backend architecture notes.
+[`docs/backend-design.md`](docs/backend-design.md) is a planning document, not a
+complete description of the implemented backend. This checkout contains the
+frontend and expects a separate Express API.

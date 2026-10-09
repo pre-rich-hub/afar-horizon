@@ -1,0 +1,6 @@
+export { AboutApproach } from './components/AboutApproach'
+export { AboutBrief } from './components/AboutBrief'
+export { AboutHero } from './components/AboutHero'
+export { AboutNavigation } from './components/AboutNavigation'
+export { AboutPlanning } from './components/AboutPlanning'
+export { AboutStory } from './components/AboutStory'
