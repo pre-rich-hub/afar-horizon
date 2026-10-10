@@ -1,5 +1,5 @@
 import { Reveal } from '@/components/common/Reveal'
-import { PlanJourneyForm } from '@/features/enquiries'
+import { EnquiryForm } from '@/features/enquiries'
 import { contact } from '@/lib/constants/company'
 import { Mail, MessageCircle, Phone } from 'lucide-react'
 import Link from 'next/link'
@@ -57,7 +57,7 @@ export function PlanRequest({ subject }: { subject?: string }) {
       </Reveal>
 
       <Reveal delay={120}>
-        <PlanJourneyForm subject={subject} />
+        <EnquiryForm subject={subject} defaultStyles={[]} />
       </Reveal>
     </section>
   )

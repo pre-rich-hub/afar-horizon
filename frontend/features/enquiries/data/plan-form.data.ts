@@ -1,33 +1,4 @@
-// Choices offered on the Plan My Journey and partner forms.
-
-export const destinationOptions = [
-  'Danakil',
-  'Afar',
-  'Gheralta',
-  'Axum',
-  'Lalibela',
-  'Simien',
-  'Gondar',
-  'Lake Tana',
-  'Not sure yet',
-]
-
-export const styleOptions = ['Private', 'Couple', 'Family', 'Friends', 'Small group', 'Specialist']
-
-export const interestOptions = [
-  'Adventure',
-  'Photography',
-  'Geology',
-  'Culture',
-  'History',
-  'Churches',
-  'Trekking',
-  'Wildlife',
-  'Food',
-  'Local life',
-  'Research',
-  'Film',
-]
+// Choices offered on the partner form.
 
 export const serviceOptions = [
   'Full ground operation',
