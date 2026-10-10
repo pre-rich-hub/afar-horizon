@@ -16,9 +16,9 @@ export const shots = [
     description: 'Acid deposits and salt pans 100 meters below sea level.',
   },
   {
-    src: '/images/omo-valley.png',
-    location: 'Omo Valley',
-    description: 'Morning light crossing the winding Omo River.',
+    src: '/images/hero-danakil/salt-cutters.jpg',
+    location: 'Lake Assale',
+    description: 'Salt cut into blocks by hand, as it has been for generations.',
   },
   {
     src: '/images/festival-timkat.png',

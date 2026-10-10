@@ -12,7 +12,7 @@ export function TourCard({
   const [kind] = t.style.split(' · ')
   return (
     <InfoCard
-      href={`/tours/${t.slug}`}
+      href={`/expeditions/${t.slug}`}
       image={t.image}
       imageAlt={t.title}
       badge={kind}
@@ -23,7 +23,10 @@ export function TourCard({
         { icon: MapPin, label: `${t.places.length} places` },
         { icon: Users, label: t.group },
         { icon: Clock, label: t.season },
-        { icon: CalendarDays, label: `${t.days} · ${t.nights} nights` },
+        {
+          icon: CalendarDays,
+          label: t.nights ? `${t.days} · ${t.nights} ${t.nights === 1 ? 'night' : 'nights'}` : t.days,
+        },
       ]}
       sizes={sizes}
     />

@@ -37,13 +37,14 @@ frontend/
 │   ├── about/
 │   ├── contact/
 │   ├── destinations/
-│   ├── tours/
-│   ├── layover/
+│   ├── tours/           Expedition catalogue, served at /expeditions
 │   ├── blog/
 │   ├── gallery/
+│   ├── faq/  before-you-go/  plan/  specialist-travel/
+│   ├── ground-operations/  photo-credits/
 │   ├── auth/            Login and session verification
 │   ├── admin/           Admin screens, resource APIs, types, and hooks
-│   ├── enquiries/       Shared journey enquiry form and endpoint
+│   ├── enquiries/       Enquiry, Plan My Journey and partner forms, and endpoint
 │   ├── newsletter/      Subscription form and endpoint
 │   └── support/         Floating support UI and streaming assistant
 ├── components/
@@ -94,8 +95,8 @@ features/destinations/
 ```
 
 Destination hover state currently belongs to the homepage presentation; there
-is no empty destination hooks folder. Tour and layover live-data overlays live
-in their respective feature utilities.
+is no empty destination hooks folder. The tour live-data overlay lives in the
+tours feature utilities.
 
 ## Further reading
 

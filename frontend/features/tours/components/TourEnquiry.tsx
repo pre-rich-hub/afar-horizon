@@ -1,5 +1,5 @@
 import { Reveal } from '@/components/common/Reveal'
-import { EnquiryForm } from '@/features/enquiries'
+import { PlanJourneyForm } from '@/features/enquiries'
 import type { Tour } from '../types/tour.types'
 
 export function TourEnquiry({ t }: { t: Tour }) {
@@ -17,20 +17,17 @@ export function TourEnquiry({ t }: { t: Tour }) {
               Make {t.title} yours
             </h2>
             <p className="mt-6 max-w-md text-pretty leading-relaxed text-background/70 sm:text-lg">
-              Send us your dates and we will confirm availability, quote
-              precisely, and suggest the two or three changes we would make if it
-              were our own trip.
+              Send us your dates and group size. We will check current conditions,
+              confirm the route and send a clear quotation before you commit to
+              anything.
             </p>
             <p className="mt-8 border-l-2 border-accent pl-5 text-sm leading-relaxed text-background/70">
-              Runs {t.season} · {t.group} · from{' '}
+              {t.days} · {t.group} · from{' '}
               <span className="text-background">{t.from}</span>
             </p>
           </Reveal>
           <Reveal delay={120}>
-            <EnquiryForm
-              subject={t.title}
-              defaultStyles={t.style.split('·').map((s) => s.trim())}
-            />
+            <PlanJourneyForm subject={`${t.days} ${t.title}`} />
           </Reveal>
         </div>
       </section>

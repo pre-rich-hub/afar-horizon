@@ -16,7 +16,7 @@ export function CtaBand({
   eyebrow = 'Speak With a Designer',
   title,
   text,
-  primary = { label: 'Plan Your Journey', href: '/contact' },
+  primary = { label: 'Plan My Journey', href: '/plan' },
   secondary,
   image = '/images/luxury-lodge.png',
 }: CtaBandProps) {

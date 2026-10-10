@@ -1,32 +1,32 @@
 
 export const experiences = [
   {
-    kicker: 'Origins & ritual',
-    title: 'Private Coffee Journeys',
-    text: 'Trace the bean from wild forest to ceremony, roasted over coals by families who have welcomed guests for generations.',
-    image: '/images/coffee-ceremony.png',
-    href: '/tours/sacred-waters-and-coffee',
-  },
-  {
     kicker: 'Light & landscape',
     title: 'Photography Expeditions',
-    text: 'Chase golden light across highland escarpments and salt flats, guided by those who know exactly where the moment will appear.',
-    image: '/images/danakil.png',
-    href: '/tours/danakil-expedition',
+    text: 'Longer field stops, dawn and night shoots at Dallol, Erta Ale and the salt plain, with time to wait for the light.',
+    image: '/images/hero-danakil/dallol-sulfur.jpg',
+    href: '/specialist-travel#photography',
   },
   {
-    kicker: 'Craft & culture',
-    title: 'Luxury Cultural Immersions',
-    text: 'Weave a morning with master artisans, share a meal, and witness craft traditions carried across centuries.',
-    image: '/images/textile.png',
-    href: '/tours/omo-valley-immersion',
+    kicker: 'Rift & volcano',
+    title: 'Geology & Culture',
+    text: 'Eight days to understand the Afar Triangle: the volcano, the salt economy and the people who live with both.',
+    image: '/images/hero-danakil/salt-cutters.jpg',
+    href: '/expeditions/afar-geology-and-culture',
   },
   {
-    kicker: 'Rest & retreat',
-    title: 'Signature Hospitality',
-    text: 'Retreat each evening to eco-lodges perched on the edge of the world, where quiet and comfort meet the wild.',
-    image: '/images/luxury-lodge.png',
-    href: '/tours',
+    kicker: 'Cliffs & churches',
+    title: 'Danakil & the Highlands',
+    text: 'From the salt desert to Aksum’s obelisks and the cliff churches of Gheralta, in nine or ten days.',
+    image: '/images/destinations/gheralta-cliffs.jpg',
+    href: '/expeditions#danakil-highlands',
+  },
+  {
+    kicker: 'For travel companies',
+    title: 'Ground Operations',
+    text: 'Vehicles, guides, camps and permits for tour operators, film crews and research teams. One local partner on the ground.',
+    image: '/images/hero-danakil/salt-flats.jpg',
+    href: '/ground-operations',
   },
 ]
 

@@ -14,10 +14,13 @@ export async function generateMetadata({
   const { slug } = await params
   const d = getDestination(slug)
   if (!d) return { title: 'Destination not found' }
+  const title = d.seoTitle ?? d.name
+  const description = d.seoDescription ?? d.intro
   return {
-    title: d.name,
-    description: d.intro,
-    openGraph: { title: d.name, description: d.intro, images: [d.image] },
+    title: { absolute: `${title} | Afar Horizon` },
+    description,
+    alternates: { canonical: `/destinations/${d.slug}` },
+    openGraph: { title, description, images: [d.image] },
   }
 }
 

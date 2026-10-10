@@ -16,6 +16,9 @@ export function DestinationOverview({ d, fallback }: { d: Destination; fallback:
               {d.teaser}
             </h2>
             <div className="mt-8 space-y-6">
+              {d.headline && (
+                <p className="text-pretty leading-relaxed text-muted-foreground sm:text-lg">{d.intro}</p>
+              )}
               {d.paragraphs.map((p) => (
                 <p
                   key={p.slice(0, 24)}

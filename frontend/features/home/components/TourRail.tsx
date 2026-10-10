@@ -20,9 +20,9 @@ export function TourRail({ tours }: { tours: Tour[] }) {
     <div className="relative">
       {/* Phones and tablets: heading sits above the rail */}
       <div className="shell mb-8 sm:mb-10 lg:hidden">
-        <p className="eyebrow mb-4 text-accent">Featured Tours</p>
+        <p className="eyebrow mb-4 text-accent">Choose Your Horizon</p>
         <h2 className="text-balance text-[2rem] leading-[1.05] text-secondary-foreground sm:text-5xl">
-          Curated journeys, <em className="italic text-accent">never packages</em>
+          From one day in Afar to <em className="italic text-accent">three weeks in the north</em>
         </h2>
         <p className="mt-3 text-pretty font-serif text-base italic leading-relaxed text-secondary-foreground/65 sm:text-lg">
           Remarkable journeys, reshaped around you.
@@ -42,17 +42,17 @@ export function TourRail({ tours }: { tours: Tour[] }) {
         {/* Intro panel travels with the cards, as the first item in the rail */}
         <div className="hidden w-[340px] shrink-0 snap-start flex-col justify-center pr-10 lg:flex">
           <p className="eyebrow mb-6 text-accent">
-            Featured Tours
+            Choose Your Horizon
           </p>
           <h2
             id="tours-title"
             className="text-balance text-4xl leading-[1.05] text-secondary-foreground sm:text-5xl"
           >
-            Curated journeys, <em className="italic text-accent">never packages</em>
+            From one day in Afar to <em className="italic text-accent">three weeks in the north</em>
           </h2>
           <p className="mt-6 text-pretty font-serif text-lg italic leading-relaxed text-secondary-foreground/65">
-            A starting point for conversation — every itinerary is reshaped
-            around your pace, your interests, and the journey you imagined.
+            Private expeditions we operate ourselves, each with an honest
+            day-by-day route. These are our most requested; there are thirteen in all.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export function TourRail({ tours }: { tours: Tour[] }) {
         {/* "View all" sits at the very end of the rail */}
         <div className="flex shrink-0 snap-end items-center pl-2 pr-4 lg:pl-4">
           <Link
-            href="/tours"
+            href="/expeditions"
             className="group inline-flex items-center gap-2 whitespace-nowrap border border-secondary-foreground/30 px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-secondary-foreground transition-colors duration-300 hover:border-accent hover:bg-accent hover:text-accent-foreground"
           >
             View all
@@ -105,7 +105,7 @@ function TourPanel({ tour: t }: { tour: Tour }) {
 
   return (
     <Link
-      href={`/tours/${t.slug}`}
+      href={`/expeditions/${t.slug}`}
       data-card
       className={cn(
         CARD,
@@ -157,7 +157,7 @@ function TourPanel({ tour: t }: { tour: Tour }) {
 function CustomPanel() {
   return (
     <Link
-      href="#plan"
+      href="/plan"
       className={cn(
         CARD,
         'group relative flex aspect-[9/16] flex-col justify-center overflow-hidden rounded-sm bg-charcoal p-7 shadow-[0_40px_70px_-40px_black] sm:aspect-[10/17]',
@@ -180,8 +180,8 @@ function CustomPanel() {
           Create your own <em className="italic text-accent">itinerary</em>
         </h3>
         <p className="mt-4 max-w-[28ch] text-pretty text-sm leading-relaxed text-background/75">
-          Tell us how you like to travel and a designer will draw a journey
-          from scratch — replies within 24 hours.
+          “I have six days and want the Danakil and Gheralta.” Tell us your
+          dates and interests and we will build the route around you.
         </p>
         <span className="mt-8 inline-flex items-center gap-2 bg-accent px-5 py-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-accent-foreground transition-all duration-300 group-hover:bg-sand">
           Create Trip

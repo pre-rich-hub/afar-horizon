@@ -6,7 +6,7 @@ import { useState } from 'react'
 import { submitContact } from '../api/enquiry.api'
 
 export function EnquiryForm({
-  defaultStyles = ['Luxury'],
+  defaultStyles = ['Private'],
   subject,
 }: {
   defaultStyles?: string[]
@@ -28,12 +28,11 @@ export function EnquiryForm({
           <Check className="h-6 w-6" />
         </span>
         <h3 className="font-serif text-3xl text-foreground">
-          Your journey begins here
+          Request received
         </h3>
         <p className="mt-4 max-w-sm text-pretty leading-relaxed text-muted-foreground">
-          A travel designer is already reviewing your vision and will begin
-          crafting a personalised itinerary. Expect to hear from us within 24
-          hours.
+          We read every request personally and will reply by email or
+          WhatsApp, usually within one working day.
         </p>
       </div>
     )
@@ -135,7 +134,7 @@ export function EnquiryForm({
             name="dream"
             rows={4}
             className="input resize-none"
-            placeholder="A private coffee journey, mornings above the clouds, evenings by the fire..."
+            placeholder="How many days you have, what you want to see, anything we should know..."
           />
         </Field>
 
@@ -153,7 +152,7 @@ export function EnquiryForm({
           <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
         </button>
         <p className="text-xs leading-relaxed text-muted-foreground">
-          We reply personally within 24 hours. Your details are never shared.
+          We reply personally. Your details are never shared.
         </p>
       </form>
     </div>

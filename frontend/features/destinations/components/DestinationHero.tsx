@@ -6,7 +6,7 @@ export function DestinationHero({ d }: { d: Destination }) {
     <PageHero
         eyebrow={`${d.tag} · ${d.region}`}
         title={d.name}
-        lede={d.intro}
+        lede={d.headline ? `${d.headline}.` : d.intro}
         image={d.image}
         imageAlt={`${d.name}, Ethiopia`}
         crumbs={[

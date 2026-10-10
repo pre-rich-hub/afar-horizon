@@ -13,7 +13,7 @@ export const index: Result[] = [
   })),
   ...tours.map((t) => ({
     kind: 'Journey' as const,
-    href: `/tours/${t.slug}`,
+    href: `/expeditions/${t.slug}`,
     title: t.title,
     meta: `${t.days} · ${t.style}`,
     image: t.image,

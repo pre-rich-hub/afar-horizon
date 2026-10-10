@@ -25,18 +25,18 @@ export function StoryCarousel({ tours = staticTours }: { tours?: Tour[] }) {
     >
       <Reveal className="shell mb-12 text-center sm:mb-16">
         <p className="eyebrow mb-5 justify-center text-accent">
-          Signature Journeys
+          Every Expedition
         </p>
         <h2
           id="stories-title"
           className="text-balance text-4xl leading-[1.05] text-foreground sm:text-5xl lg:text-6xl"
         >
-          Your journey, <em className="font-serif italic">your story</em>
+          Salt, fire, <em className="font-serif italic">stone and mountain</em>
         </h2>
         <p className="mx-auto mt-6 max-w-[52ch] text-pretty leading-relaxed text-muted-foreground sm:text-lg">
-          No two journeys we plan are alike. Wherever Ethiopia calls you, our
-          Addis-based specialists bring honest advice and first-hand knowledge,
-          so each chapter is more memorable than the last.
+          From a single day in Afar to three weeks across the north. Every
+          expedition is a planned route we operate ourselves and adapt when
+          conditions on the ground change.
         </p>
       </Reveal>
 
@@ -53,7 +53,7 @@ export function StoryCarousel({ tours = staticTours }: { tours?: Tour[] }) {
             return (
               <Link
                 key={`${copy}-${t.slug}`}
-                href={`/tours/${t.slug}`}
+                href={`/expeditions/${t.slug}`}
                 aria-hidden={clone || undefined}
                 tabIndex={clone ? -1 : undefined}
                 className={cn(

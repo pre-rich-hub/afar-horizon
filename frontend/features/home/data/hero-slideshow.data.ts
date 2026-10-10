@@ -10,12 +10,12 @@ export const slides: Slide[] = [
     source: 'https://commons.wikimedia.org/wiki/File:ET_Afar_asv2018-01_img48_Dallol.jpg',
   },
   {
-    src: '/images/hero-danakil/erta-ale-lava-lake.jpg',
-    alt: 'The glowing lava lake inside the crater of Erta Ale volcano',
-    place: 'Erta Ale lava lake',
-    credit: 'Hervé Sthioul',
-    license: 'CC BY 2.5',
-    source: 'https://commons.wikimedia.org/wiki/File:Erta-ale_lac-de-lave_2001.jpg',
+    src: '/images/hero-danakil/erta-ale-approach.jpg',
+    alt: 'An Afar camel handler leading pack camels across the basalt toward Erta Ale',
+    place: 'The approach to Erta Ale',
+    credit: 'Ji-Elle',
+    license: 'CC BY-SA 3.0',
+    source: 'https://commons.wikimedia.org/wiki/File:Erta_Ale-Chamelier_Afar_(2).jpg',
   },
   {
     src: '/images/hero-danakil/salt-flats.jpg',

@@ -25,19 +25,6 @@ test('tour catalogue keeps static content, overlays price/featured, and falls ba
   assert.deepEqual(await getTourData(tours[0].slug), tours[0])
 })
 
-test('layover overlay preserves local images unless the API serves the media', async t => {
-  const load = createLoader()
-  const { layoverPackages } = load('@/features/layover/data/layover.data')
-  const { getLayoverPackagesData } = load('@/features/layover/utils/layover.catalog')
-  let image = '/assets/local.jpg'
-  mockFetch(t, async () => success([{ ...layoverPackages[0], price: '$123', image }]))
-  assert.equal((await getLayoverPackagesData())[0].image, layoverPackages[0].image)
-  image = '/api/v1/media/photo.jpg'
-  assert.equal((await getLayoverPackagesData())[0].image, image)
-  global.fetch = async () => { throw new Error('offline') }
-  assert.deepEqual(await getLayoverPackagesData(), layoverPackages)
-})
-
 test('enquiry and newsletter preserve JSON payloads and backend errors', async t => {
   const load = createLoader(), calls = []
   mockFetch(t, async (url, init) => { calls.push({ url, init }); return success(null) })

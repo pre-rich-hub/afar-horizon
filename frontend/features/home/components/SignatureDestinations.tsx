@@ -10,9 +10,9 @@ export function SignatureDestinations() {
     <section id="destinations" className="bg-muted/50 py-20 sm:py-24 lg:py-32">
       <div className="shell">
         <SectionHeading
-          eyebrow="Signature Destinations"
-          title="A country of impossible variety"
-          aside="From highland cathedrals to volcanic lowlands, each region reveals a different chapter of Ethiopia's story."
+          eyebrow="Where We Travel"
+          title="Afar, the Danakil and the north"
+          aside="Volcano, salt and geothermal colour below sea level; cliff churches, ancient kingdoms and mountains above it."
         />
 
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">

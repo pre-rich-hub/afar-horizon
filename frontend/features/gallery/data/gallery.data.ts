@@ -40,7 +40,7 @@ export const galleryPhotos: GalleryPhoto[] = [
     src: '/images/bale-gelada.png',
     alt: 'A troop of gelada monkeys resting on a cliff edge above the clouds',
     title: 'The bleeding-heart monkeys',
-    location: 'Simien & Bale highlands',
+    location: 'Simien Mountains',
     category: 'Wildlife',
     caption: 'Gelada troops graze the high meadows by day and sleep on the cliff faces at night.',
     shape: 'portrait',
@@ -62,15 +62,6 @@ export const galleryPhotos: GalleryPhoto[] = [
     category: 'Heritage',
     caption: "Fasil Ghebbi, the seventeenth-century castle compound of Ethiopia's imperial capital.",
     shape: 'landscape',
-  },
-  {
-    src: '/images/omo-valley.png',
-    alt: 'A man of the Omo Valley in beaded adornment standing in golden grassland',
-    title: 'People of the river',
-    location: 'Omo Valley',
-    category: 'Culture',
-    caption: 'One of the most culturally diverse corners of Africa — met slowly, and always with permission.',
-    shape: 'portrait',
   },
   {
     src: '/images/lake-tana.png',
@@ -132,7 +123,7 @@ export const galleryPhotos: GalleryPhoto[] = [
     title: 'The new flower',
     location: 'Addis Ababa',
     category: 'Landscapes',
-    caption: 'The capital from the Entoto hills — where most journeys, and many layovers, begin.',
+    caption: 'The capital from the Entoto hills — where most journeys begin.',
     shape: 'portrait',
   },
 ]

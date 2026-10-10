@@ -1,0 +1,5 @@
+export { SpecialistHero } from './components/SpecialistHero'
+export { SpecialistNavigation } from './components/SpecialistNavigation'
+export { SpecialistPlanning } from './components/SpecialistPlanning'
+export { SpecialistPricing } from './components/SpecialistPricing'
+export { SpecialistTracks } from './components/SpecialistTracks'

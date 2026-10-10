@@ -1,5 +1,6 @@
 import { PageHero } from '@/components/common/PageHero'
 import type { Tour } from '../types/tour.types'
+import { formatDuration, getStartEnd } from '../utils/tour.utils'
 
 export function TourHero({ t }: { t: Tour }) {
   return (
@@ -11,13 +12,13 @@ export function TourHero({ t }: { t: Tour }) {
         imageAlt={t.title}
         crumbs={[
           { label: 'Home', href: '/' },
-          { label: 'Tours', href: '/tours' },
+          { label: 'Expeditions', href: '/expeditions' },
           { label: t.title },
         ]}
         meta={[
-          { label: 'Duration', value: t.days },
-          { label: 'Season', value: t.season },
-          { label: 'Group Size', value: t.group },
+          { label: 'Duration', value: formatDuration(t) },
+          { label: 'Start & Finish', value: getStartEnd(t) },
+          { label: 'Difficulty', value: t.difficulty ?? t.style },
           { label: 'From', value: t.from.split(' ')[0] },
         ]}
       />

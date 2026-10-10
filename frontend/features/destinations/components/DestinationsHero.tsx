@@ -1,19 +1,20 @@
 import { PageHero } from '@/components/common/PageHero'
+import { destinations } from '../data/destination.data'
 
 export function DestinationsHero() {
   return (
     <PageHero
         eyebrow="Where We Travel"
-        title="Eight Ethiopias, and the routes between them"
-        lede="From churches carved downward into the rock to a lava lake burning below sea level. These are the places our designers know by name, season and hour of day."
-        image="/images/gondar.png"
-        imageAlt="The royal enclosure of Fasil Ghebbi in Gondar at golden hour"
+        title="From the lowest landscapes to the highest horizons"
+        lede="Salt and volcanoes in Afar, cliff churches in Gheralta, the ancient kingdom of Axum and the mountains of the Simien. These are the places we know from the ground up."
+        image="/images/hero-danakil/dallol-aerial.jpg"
+        imageAlt="Aerial view of steaming hydrothermal fields at Dallol in the Danakil Depression"
         crumbs={[{ label: 'Home', href: '/' }, { label: 'Destinations' }]}
         meta={[
-          { label: 'Destinations', value: '8' },
-          { label: 'UNESCO Sites', value: '4' },
-          { label: 'Altitude Range', value: '-125 – 4,533 m' },
-          { label: 'Best Months', value: 'Oct – Mar' },
+          { label: 'Destinations', value: String(destinations.length) },
+          { label: 'Lowest Point', value: 'Below sea level' },
+          { label: 'Highest Point', value: '4,550 m' },
+          { label: 'Danakil Season', value: 'Nov – Jan' },
         ]}
       />
   )

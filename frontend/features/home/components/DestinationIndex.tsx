@@ -58,7 +58,7 @@ export function DestinationIndex() {
             <p
               className="font-serif text-xl text-accent sm:text-2xl"
             >
-              Our destinations
+              From the lowest landscapes to the highest horizons
             </p>
             <div className="mt-5 h-px w-full bg-border" />
 
@@ -130,7 +130,7 @@ function MobileIndex() {
           id="destination-index-title"
           className="text-center font-serif text-[2.1rem] leading-tight text-foreground sm:text-4xl"
         >
-          Our destinations
+          From the lowest landscapes to the highest horizons
         </h2>
       </Reveal>
 

@@ -3,7 +3,7 @@ import type { ReviewSummary, Testimonial } from '../types/review.types'
 export const testimonials: Testimonial[] = [
   {
     quote:
-      'Standing on the rim of Erta Ale at midnight with the lava lake churning below is something I will never forget. The team handled every permit, every camp and every pre-dawn start without a single hiccup.',
+      'Standing on the rim of Erta Ale at midnight, the crater hissing and glowing below us, is something I will never forget. The team handled every permit, every camp and every pre-dawn start without a single hiccup.',
     name: 'James Whitfield',
     detail: 'Danakil Expedition · Australia',
     image: '/images/traveler-portrait.png',
@@ -52,7 +52,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      'Climbing Erta Ale in the dark with camels carrying our gear, then sleeping on the crater rim to the sound of the lava — unforgettable. The cooks produced proper meals in the middle of the desert.',
+      'Climbing Erta Ale in the dark with camels carrying our gear, then sleeping on the crater rim to the sound of the volcano — unforgettable. The cooks produced proper meals in the middle of the desert.',
     name: 'Amara Nwosu',
     detail: 'Danakil Expedition · Canada',
     image: '/images/traveler-portrait.png',

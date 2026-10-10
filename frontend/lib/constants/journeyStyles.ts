@@ -1,10 +1,10 @@
 export const journeyStyles = [
-  'Luxury',
-  'Photography',
+  'Private',
+  'Small group',
+  'Adventure',
   'Cultural',
-  'Wildlife',
+  'Photography',
   'Trekking',
-  'Festival',
-  'Layover',
+  'Research',
   'Family',
 ]

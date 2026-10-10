@@ -15,9 +15,9 @@ export function DestinationEnquiry({ d, others }: { d: Destination; others: Dest
             Build {d.name} into your journey
           </h2>
           <p className="mt-6 max-w-md text-pretty leading-relaxed text-muted-foreground sm:text-lg">
-            Nothing here is fixed. Tell us how long you have and what else you
-            want to see, and a designer will draw the route — including the
-            flights, the guides and the hours that matter.
+            Tell us what you are curious about, what you want to photograph and
+            how slowly or quickly you want to travel. We build the journey
+            around you and confirm current conditions for your dates.
           </p>
 
           <div className="mt-12">
@@ -57,7 +57,7 @@ export function DestinationEnquiry({ d, others }: { d: Destination; others: Dest
         </Reveal>
 
         <Reveal delay={120}>
-          <EnquiryForm subject={d.name} defaultStyles={['Luxury']} />
+          <EnquiryForm subject={d.name} defaultStyles={[]} />
         </Reveal>
       </section>
   )

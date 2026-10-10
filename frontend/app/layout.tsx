@@ -29,11 +29,12 @@ export const metadata: Metadata = {
   keywords: [
     'Luxury Ethiopia Tours',
     'Private Ethiopia Tours',
-    'Addis Ababa layover tour',
     'Lalibela',
     'Simien Mountains',
     'Danakil Depression',
-    'Omo Valley',
+    'Erta Ale',
+    'Dallol',
+    'Gheralta',
     'Ethiopia travel',
   ],
   openGraph: {

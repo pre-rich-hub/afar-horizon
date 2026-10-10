@@ -93,22 +93,4 @@ export const posts: Post[] = [
       'What we ask of guests is simple: put the camera down for the first half hour, ask before every portrait, accept a no without negotiation, and send prints back with us. Half of our returning guests come back partly to deliver them.',
     ],
   },
-  {
-    slug: 'twelve-hours-in-addis',
-    title: 'Twelve hours in Addis: a layover worth leaving the airport for',
-    category: 'Layover',
-    date: 'March 14, 2026',
-    readTime: '6 min read',
-    image: '/images/textile.png',
-    author: 'Yohannes Tesfaye',
-    authorRole: 'Senior Guide, Northern Circuit',
-    excerpt:
-      'Bole is one of Africa’s great connecting hubs. If your onward flight is more than eight hours out, the city is right there.',
-    body: [
-      'Half our layover guests were not planning to leave the terminal. Twelve hours later they are asking whether they can change their onward flight.',
-      'The shape of a good Addis day: high ground first for the panorama and the eucalyptus air, then the National Museum before the school groups, then Mercato with somebody who knows which alley to turn down.',
-      'The single best thing in the city is not a building. It is a coffee ceremony in a family home in Shiro Meda, an hour long, in a room with a corrugated roof and a bowl of popcorn.',
-      'Logistics matter more than sights on a layover. Visa on arrival, a driver who tracks your inbound flight, a hotel day room for a shower, and back at the terminal three hours before departure. That is the whole trick.',
-    ],
-  },
 ]

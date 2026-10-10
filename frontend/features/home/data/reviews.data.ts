@@ -1,6 +1,6 @@
 
 export const reviewPhotos = [
-  '/images/hero-danakil/erta-ale-lava-lake.jpg',
+  '/images/hero-danakil/erta-ale-approach.jpg',
   '/images/hero-danakil/dallol-springs.jpg',
   '/images/hero-danakil/salt-cutters.jpg',
   '/images/hero-danakil/salt-flats.jpg',

@@ -65,7 +65,7 @@ function HeroSearch() {
   const submit = () => {
     const pick = results[highlight] ?? results[0]
     if (q && pick) go(pick.href)
-    else go('/tours')
+    else go('/expeditions')
   }
 
   const onKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {

@@ -16,7 +16,8 @@ export function DestinationBooking({ d }: { d: Destination }) {
                   { k: 'Altitude', v: d.altitude },
                   { k: 'Region', v: d.region },
                 ]}
-                primary={{ label: 'Plan this trip', href: '#enquire' }}
+                primary={{ label: 'Plan my journey', href: '#enquire' }}
+                secondary={{ label: 'Ask about current conditions', href: '/contact' }}
               />
             </Reveal>
           </div>

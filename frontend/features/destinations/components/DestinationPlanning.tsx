@@ -4,8 +4,8 @@ import type { Destination } from '../types/destination.types'
 export function DestinationPlanning({ d }: { d: Destination }) {
   return (
     <CtaBand
-        title="Speak to someone who has been there this season"
-        text="Our designers travel these routes themselves. Ask about road conditions, festival dates or which lodge has the better view — you will get a straight answer."
+        title="Your Ethiopia should not feel like someone else’s itinerary"
+        text="Ask about road conditions, the season or what a day here is really like. You will get a straight answer from the team that runs the route."
         secondary={{ label: 'All Destinations', href: '/destinations' }}
         image={d.image}
       />

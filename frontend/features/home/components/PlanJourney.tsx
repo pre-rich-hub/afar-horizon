@@ -11,7 +11,7 @@ export function PlanJourney() {
     >
       <div className="absolute inset-0 opacity-15">
         <Image
-          src="/images/luxury-lodge.png"
+          src="/images/hero-danakil/salt-flats.jpg"
           alt=""
           aria-hidden
           fill
@@ -27,18 +27,18 @@ export function PlanJourney() {
             Plan Your Journey
           </p>
           <h2 className="max-w-[16ch] text-balance font-serif text-[2.1rem] leading-[1.08] sm:text-5xl lg:text-[3.4rem]">
-            Let&apos;s design your Ethiopian journey
+            Plan your expedition with us
           </h2>
           <p className="mt-7 max-w-md text-pretty text-base leading-relaxed text-primary-foreground/80 sm:text-lg">
-            Every itinerary begins with a conversation. No templates, no
-            compromises — only a journey designed entirely around you. A travel
-            designer replies within 24 hours.
+            Tell us your dates, how many days you have and what you want to
+            experience. We check current conditions, build the route and send a
+            clear quotation. A conversation first, never an instant booking.
           </p>
           <ul className="mt-10 space-y-4">
             {[
-              'Locally designed, privately guided',
-              'Transparent, tailor-made pricing',
-              '24/7 concierge before, during & after',
+              'Locally owned and operated in Ethiopia',
+              'Clear pricing: what is included and what is not',
+              'Honest about conditions before you book',
             ].map((item) => (
               <li
                 key={item}
@@ -54,7 +54,7 @@ export function PlanJourney() {
         </Reveal>
 
         <Reveal delay={120}>
-          <EnquiryForm />
+          <EnquiryForm defaultStyles={[]} />
         </Reveal>
       </div>
     </section>

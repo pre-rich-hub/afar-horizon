@@ -14,7 +14,7 @@ YouTubeIcon,
 } from '@/components/common/BrandMarks'
 import { destinations } from '@/features/destinations'
 import { NewsletterForm } from '@/features/newsletter'
-import { tours } from '@/features/tours'
+import { expeditionCollections } from '@/features/tours'
 import { contact } from '@/lib/constants/company'
 import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react'
 import Link from 'next/link'
@@ -50,31 +50,42 @@ const socials: { name: string; href: string; icon: React.ReactNode }[] = [
 
 const columns = [
   {
+    title: 'Expeditions',
+    links: [
+      ...expeditionCollections.map((c) => ({ label: c.title, href: `/expeditions#${c.id}` })),
+      { label: 'Specialist Travel', href: '/specialist-travel' },
+      { label: 'Ground Operations', href: '/ground-operations' },
+      { label: 'Plan My Journey', href: '/plan' },
+    ],
+    more: { label: 'All expeditions', href: '/expeditions' },
+  },
+  {
     title: 'Destinations',
-    links: destinations
-      .slice(0, 5)
-      .map((d) => ({ label: d.name, href: `/destinations/${d.slug}` })),
+    links: [
+      'danakil-depression',
+      'afar',
+      'erta-ale',
+      'dallol',
+      'gheralta',
+      'axum',
+      'lalibela',
+      'simien-mountains',
+    ].map((slug) => {
+      const d = destinations.find((x) => x.slug === slug)!
+      return { label: d.name, href: `/destinations/${d.slug}` }
+    }),
     more: { label: 'All destinations', href: '/destinations' },
   },
   {
-    title: 'Tours',
+    title: 'Company',
     links: [
-      ...tours
-        .slice(0, 4)
-        .map((t) => ({ label: t.title, href: `/tours/${t.slug}` })),
-      { label: 'Custom Itineraries', href: '/contact' },
-    ],
-    more: { label: 'All tours', href: '/tours' },
-  },
-  {
-    title: 'Explore',
-    links: [
-      { label: 'Layover in Addis', href: '/layover' },
+      { label: 'About Us', href: '/about' },
+      { label: 'Before You Go', href: '/before-you-go' },
+      { label: 'FAQ', href: '/faq' },
       { label: 'Gallery', href: '/gallery' },
-      { label: 'Travel Journal', href: '/blog' },
-      { label: 'Responsible Tourism', href: '/blog/responsible-travel-in-the-omo' },
-      { label: 'When to Visit', href: '/blog/when-to-visit-ethiopia' },
-      { label: 'Contact Us', href: '/contact' },
+      { label: 'Journal', href: '/blog' },
+      { label: 'Contact', href: '/contact' },
+      { label: 'Photo Credits', href: '/photo-credits' },
     ],
   },
 ]

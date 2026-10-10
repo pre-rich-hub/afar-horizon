@@ -15,14 +15,14 @@ export function Experiences() {
     <section id="experiences" className="bg-background py-20 sm:py-24 lg:py-32">
       <Reveal className="shell mb-14 text-center sm:mb-20">
         <p className="eyebrow mb-5 justify-center text-accent">
-          Luxury Experiences
+          Travel With a Purpose
         </p>
         <h2 className="text-balance text-4xl leading-[1.05] text-foreground sm:text-5xl lg:text-6xl">
-          Moments <em className="italic">that stay with you</em>
+          Built around <em className="italic">what you came for</em>
         </h2>
         <p className="mx-auto mt-6 max-w-[50ch] text-pretty leading-relaxed text-muted-foreground sm:text-lg">
-          Before we plan anything, we learn how you like to travel. Your story
-          becomes the blueprint for every moment that follows.
+          Some travellers come for the light, some for the geology, some for the
+          churches, some to run a programme for their own clients. We plan for each.
         </p>
       </Reveal>
 
@@ -92,10 +92,10 @@ export function Experiences() {
 
       <Reveal className="mt-16 flex justify-center sm:mt-20">
         <Link
-          href="/tours"
+          href="/expeditions"
           className="group inline-flex items-center gap-2.5 rounded-full bg-accent px-9 py-4 text-[11px] font-semibold uppercase tracking-[0.18em] text-accent-foreground shadow-[0_12px_32px_-14px_oklch(0.705_0.098_76/0.8)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary hover:text-primary-foreground sm:text-xs"
         >
-          Explore Travel Styles
+          Explore All Expeditions
           <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
         </Link>
       </Reveal>

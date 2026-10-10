@@ -1,9 +1,9 @@
 'use client'
 
-import { destinations } from '@/features/destinations'
-import { tours } from '@/features/tours'
+import { destinationGroups, destinationsInGroup, getDestination } from '@/features/destinations'
+import { expeditionCollections, tours } from '@/features/tours'
 import { contact } from '@/lib/constants/company'
-import { navLinks } from '@/lib/constants/navigation'
+import { navLinks, planJourneyLink } from '@/lib/constants/navigation'
 import { cn } from '@/lib/utils'
 import {
 ArrowRight,
@@ -18,6 +18,15 @@ X,
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
+
+// Cards shown in the desktop dropdowns: the signature expeditions and one
+// destination from each part of the north.
+const navExpeditions = ['danakil-deep', 'danakil-and-gheralta', 'northern-ethiopia-grand-horizon']
+  .map((slug) => tours.find((t) => t.slug === slug))
+  .filter((t) => t !== undefined)
+const navDestinations = ['danakil-depression', 'dallol', 'gheralta', 'lalibela']
+  .map((slug) => getDestination(slug))
+  .filter((d) => d !== undefined)
 
 const languages = [
   { code: 'EN', label: 'English' },
@@ -121,16 +130,16 @@ export function SiteNav() {
         >
           <Wordmark tone={open ? 'dark' : tone} />
 
-          <ul className="ml-auto mr-4 hidden items-center gap-4 lg:flex xl:mr-10 xl:gap-8">
+          <ul className="ml-auto mr-4 hidden items-center gap-3.5 lg:flex xl:mr-8 xl:gap-6 2xl:gap-8">
             {navLinks.map((link) => {
               const active = isActive(link.href)
-              const hasDropdown = link.label === 'Destinations' || link.label === 'Tours'
+              const hasDropdown = Boolean(link.menu)
               return (
-                <li key={link.href} className="group py-5">
+                <li key={link.href} className={cn('group py-5', link.menu === 'links' && 'relative')}>
                   <Link
                     href={link.href}
                     className={cn(
-                      'relative flex items-center gap-1 whitespace-nowrap py-2 text-[11px] font-semibold uppercase tracking-[0.12em] transition-colors duration-300 xl:tracking-[0.16em]',
+                      'relative flex items-center gap-1 whitespace-nowrap py-2 text-[10.5px] font-semibold uppercase tracking-[0.1em] transition-colors duration-300 xl:text-[11px] xl:tracking-[0.14em]',
                       tone === 'dark'
                         ? active
                           ? 'text-foreground'
@@ -153,16 +162,29 @@ export function SiteNav() {
                   </Link>
 
                   {/* Dropdowns */}
-                  {link.label === 'Destinations' && (
+                  {link.menu === 'destinations' && (
                     <div className="absolute left-0 top-full w-full bg-background/98 backdrop-blur-2xl border-t border-accent/25 border-b border-border/80 shadow-2xl opacity-0 invisible -translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-45 text-foreground">
                       <div className="shell grid grid-cols-[1fr_3.2fr] gap-12 py-10">
                         <div className="flex flex-col justify-between">
                           <div>
-                            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-accent mb-2 block">Ethiopia</span>
+                            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-accent mb-2 block">Afar · Tigray · Amhara</span>
                             <h3 className="font-serif text-2xl text-foreground mb-4">Our Destinations</h3>
                             <p className="text-xs text-muted-foreground leading-relaxed">
-                              From monolithic churches carved from solid rock to tectonic landscapes at the edge of the world. Explore the ancient cradle of civilization.
+                              From the salt and volcanoes of the Danakil to the cliff churches, ancient kingdoms and mountains of the north.
                             </p>
+                            <ul className="mt-6 space-y-2.5 border-t border-border pt-5">
+                              {destinationGroups.map((g) => (
+                                <li key={g.id}>
+                                  <Link
+                                    href={`/destinations#${g.id}`}
+                                    className="flex items-baseline justify-between gap-3 text-[13px] text-foreground/80 transition-colors hover:text-accent"
+                                  >
+                                    {g.title}
+                                    <span className="text-[10px] text-muted-foreground">{destinationsInGroup(g.id).length}</span>
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
                           </div>
                           <Link
                             href="/destinations"
@@ -173,7 +195,7 @@ export function SiteNav() {
                         </div>
 
                         <div className="grid grid-cols-4 gap-6">
-                          {destinations.slice(0, 4).map((d) => (
+                          {navDestinations.map((d) => (
                             <Link
                               key={d.slug}
                               href={`/destinations/${d.slug}`}
@@ -207,30 +229,60 @@ export function SiteNav() {
                     </div>
                   )}
 
-                  {link.label === 'Tours' && (
+                  {link.menu === 'links' && link.children && (
+                    <div className="absolute top-full z-45 -ml-4 w-64 border-t-2 border-accent bg-background/98 py-2 text-foreground shadow-2xl backdrop-blur-2xl transition-all duration-300 opacity-0 invisible -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-hover:pointer-events-auto">
+                      {link.children.map((c) => (
+                        <Link
+                          key={c.href}
+                          href={c.href}
+                          className="block px-4 py-2.5 transition-colors hover:bg-muted/60"
+                        >
+                          <span className="block text-[13px] text-foreground">{c.label}</span>
+                          {c.text && (
+                            <span className="mt-0.5 block text-[11px] leading-snug text-muted-foreground">{c.text}</span>
+                          )}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+
+                  {link.menu === 'expeditions' && (
                     <div className="absolute left-0 top-full w-full bg-background/98 backdrop-blur-2xl border-t border-accent/25 border-b border-border/80 shadow-2xl opacity-0 invisible -translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-45 text-foreground">
                       <div className="shell grid grid-cols-[1fr_3.2fr] gap-12 py-10">
                         <div className="flex flex-col justify-between">
                           <div>
-                            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-accent mb-2 block">Curated Journeys</span>
-                            <h3 className="font-serif text-2xl text-foreground mb-4">Signature Itineraries</h3>
+                            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-accent mb-2 block">Afar · Danakil · Northern Ethiopia</span>
+                            <h3 className="font-serif text-2xl text-foreground mb-4">Our Expeditions</h3>
                             <p className="text-xs text-muted-foreground leading-relaxed">
-                              Expertly designed private expeditions combining luxury lodgings, expert naturalist guides, and exclusive cultural access.
+                              Private expeditions from one day to three weeks, operated by our own team on the ground.
                             </p>
+                            <ul className="mt-6 space-y-2.5 border-t border-border pt-5">
+                              {expeditionCollections.map((c) => (
+                                <li key={c.id}>
+                                  <Link
+                                    href={`/expeditions#${c.id}`}
+                                    className="flex items-baseline justify-between gap-3 text-[13px] text-foreground/80 transition-colors hover:text-accent"
+                                  >
+                                    {c.title}
+                                    <span className="whitespace-nowrap text-[10px] text-muted-foreground">{c.span}</span>
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
                           </div>
                           <Link
-                            href="/tours"
+                            href="/expeditions"
                             className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-accent hover:text-accent/80 transition-colors mt-6"
                           >
-                            Explore All Tours <ArrowRight className="h-3.5 w-3.5" />
+                            Explore All Expeditions <ArrowRight className="h-3.5 w-3.5" />
                           </Link>
                         </div>
 
                         <div className="grid grid-cols-3 gap-6">
-                          {tours.slice(0, 3).map((t) => (
+                          {navExpeditions.map((t) => (
                             <Link
                               key={t.slug}
-                              href={`/tours/${t.slug}`}
+                              href={`/expeditions/${t.slug}`}
                               className="group/item flex flex-col gap-3.5 rounded-lg overflow-hidden p-2.5 transition-all duration-300 hover:bg-muted/50"
                             >
                               <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[4px]">
@@ -270,7 +322,7 @@ export function SiteNav() {
           </ul>
 
           <div className="flex items-center gap-2 sm:gap-3">
-            <div ref={langRef} className="relative hidden sm:block">
+            <div ref={langRef} className="relative hidden sm:block lg:hidden xl:block">
               <button
                 aria-label="Change language"
                 aria-haspopup="listbox"
@@ -327,10 +379,10 @@ export function SiteNav() {
             </div>
 
             <Link
-              href="/contact"
+              href={planJourneyLink.href}
               className="hidden items-center whitespace-nowrap rounded-full bg-accent px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-accent-foreground shadow-[0_8px_22px_-12px_oklch(0.705_0.098_76/0.75)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-sand lg:-mr-4 lg:inline-flex xl:-mr-[min(3.5rem,calc((100vw-1280px)/2+1rem))]"
             >
-              Request Your Journey
+              {planJourneyLink.label}
             </Link>
 
             <button
@@ -399,6 +451,21 @@ export function SiteNav() {
                       )}
                     />
                   </Link>
+                  {link.children && (
+                    <ul className="-mt-2 flex flex-wrap gap-x-5 gap-y-2 pb-5 pl-8">
+                      {link.children.map((c) => (
+                        <li key={c.href}>
+                          <Link
+                            href={c.href}
+                            onClick={() => setOpen(false)}
+                            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                          >
+                            {c.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </li>
               )
             })}
@@ -447,11 +514,11 @@ export function SiteNav() {
 
         <div className="border-t border-border bg-background px-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] pt-4 sm:px-6">
           <Link
-            href="/contact"
+            href={planJourneyLink.href}
             onClick={() => setOpen(false)}
             className="group flex w-full items-center justify-center gap-2.5 rounded-full bg-accent px-6 py-4 text-[11px] font-semibold uppercase tracking-[0.18em] text-accent-foreground shadow-[0_12px_32px_-12px_oklch(0.705_0.098_76/0.7)] transition-all duration-300 hover:bg-sand"
           >
-            Request Your Journey
+            {planJourneyLink.label}
             <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </div>

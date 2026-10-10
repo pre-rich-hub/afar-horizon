@@ -10,17 +10,17 @@ export function RelatedTours({ others }: { others: Tour[] }) {
         <Reveal className="mb-10 flex flex-col justify-between gap-6 sm:mb-14 md:flex-row md:items-end">
           <div className="max-w-2xl">
             <p className="eyebrow mb-4 text-accent sm:mb-5">
-              Other Journeys
+              Other Expeditions
             </p>
             <h2 className="text-balance text-3xl leading-[1.1] text-foreground sm:text-4xl">
               You may also be weighing up
             </h2>
           </div>
           <Link
-            href="/tours"
+            href="/expeditions"
             className="group inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-primary transition-colors hover:text-accent sm:text-xs"
           >
-            All tours
+            All expeditions
             <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </Reveal>

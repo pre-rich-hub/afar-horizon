@@ -4,7 +4,8 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Destinations',
   description:
-    'Rock-hewn churches, Afro-alpine plateaus, sulphur springs below sea level and the most culturally dense valley on earth — the eight regions of Ethiopia we know best.',
+    'The Danakil Depression, Afar, Erta Ale, Dallol, Lake Assale, Gheralta, Axum, Lalibela, the Simien Mountains and Gondar: the places in northern Ethiopia we operate in.',
+  alternates: { canonical: '/destinations' },
 }
 
 export default function DestinationsPage() {

@@ -1,9 +1,14 @@
 import { BookingCard } from '@/components/common/BookingCard'
 import { Reveal } from '@/components/common/Reveal'
-import { MapPin } from 'lucide-react'
+import { accessUpdate } from '@/lib/constants/travelAdvice'
+import { AlertTriangle, MapPin, Moon, Utensils } from 'lucide-react'
+import { expeditionConditionsNote } from '../data/tour.data'
 import type { Tour } from '../types/tour.types'
+import { formatDuration, getStartEnd } from '../utils/tour.utils'
 
 export function TourOverview({ t }: { t: Tour }) {
+  const startEnd = getStartEnd(t)
+
   return (
     <section className="shell grid gap-12 py-16 sm:py-20 lg:grid-cols-[1fr_360px] lg:gap-x-16 lg:gap-y-0 xl:grid-cols-[1fr_380px] xl:gap-x-20 lg:py-28">
         <Reveal className="lg:col-start-1 lg:row-start-1">
@@ -11,11 +16,31 @@ export function TourOverview({ t }: { t: Tour }) {
             The Journey
           </p>
           <h2 className="max-w-[22ch] text-balance text-3xl leading-[1.1] text-foreground sm:text-4xl">
-            {t.nights} nights, designed around the hours that matter
+            {t.teaser}
           </h2>
           <p className="mt-7 text-pretty leading-relaxed text-muted-foreground sm:text-lg">
             {t.summary}
           </p>
+          {t.why && (
+            <p className="mt-5 text-pretty leading-relaxed text-muted-foreground">{t.why}</p>
+          )}
+
+          {(t.idealFor || t.notFor) && (
+            <dl className="mt-10 grid gap-6 sm:grid-cols-2">
+              {t.idealFor && (
+                <div className="border-t-2 border-accent pt-4">
+                  <dt className="eyebrow mb-2 text-primary">Who it is for</dt>
+                  <dd className="text-pretty text-sm leading-relaxed text-foreground">{t.idealFor}</dd>
+                </div>
+              )}
+              {t.notFor && (
+                <div className="border-t-2 border-border pt-4">
+                  <dt className="eyebrow mb-2 text-muted-foreground">Consider another itinerary if</dt>
+                  <dd className="text-pretty text-sm leading-relaxed text-muted-foreground">{t.notFor}</dd>
+                </div>
+              )}
+            </dl>
+          )}
 
           <div className="mt-10">
             <p className="eyebrow mb-5 text-primary">
@@ -41,20 +66,16 @@ export function TourOverview({ t }: { t: Tour }) {
           <BookingCard
             label="Pricing"
             title={`From ${t.from.split(' per')[0]}`}
-            subtitle="per person, twin share"
+            subtitle="per person, confirmed on quotation"
             rows={[
-              { k: 'Duration', v: `${t.days} / ${t.nights} Nights` },
-              { k: 'Group size', v: t.group },
+              { k: 'Duration', v: formatDuration(t) },
+              { k: 'Start & finish', v: startEnd },
+              ...(t.difficulty ? [{ k: 'Difficulty', v: t.difficulty }] : []),
+              { k: 'Group', v: t.group },
               { k: 'Best season', v: t.season },
-              {
-                k: 'Start & finish',
-                v:
-                  t.places[0] === t.places[t.places.length - 1]
-                    ? t.places[0]
-                    : `${t.places[0]} – ${t.places[t.places.length - 1]}`,
-              },
             ]}
-            primary={{ label: 'Book this tour', href: '#enquire' }}
+            primary={{ label: 'Check my dates', href: '#enquire' }}
+            secondary={{ label: 'Ask about current conditions', href: '/contact' }}
           />
         </Reveal>
           </div>
@@ -67,11 +88,10 @@ export function TourOverview({ t }: { t: Tour }) {
               Day by Day
             </p>
             <h2 className="text-balance text-3xl leading-[1.1] text-foreground sm:text-4xl lg:text-5xl">
-              The itinerary, as it usually runs
+              The planned route
             </h2>
             <p className="mt-5 text-pretty leading-relaxed text-muted-foreground sm:text-lg">
-              A working draft rather than a fixed schedule — we move days around
-              for weather, festivals and how you are feeling.
+              Exact timings, camp locations and access are confirmed for your dates.
             </p>
           </Reveal>
 
@@ -96,9 +116,43 @@ export function TourOverview({ t }: { t: Tour }) {
                 <p className="mt-2.5 max-w-2xl text-pretty leading-relaxed text-muted-foreground">
                   {step.text}
                 </p>
+                {(step.overnight || step.meals) && (
+                  <dl className="mt-3.5 flex flex-wrap gap-x-6 gap-y-1.5 text-[13px] text-muted-foreground">
+                    {step.overnight && (
+                      <div className="flex items-center gap-1.5">
+                        <Moon aria-hidden className="h-3.5 w-3.5 text-accent" />
+                        <dt className="sr-only">Overnight</dt>
+                        <dd>{step.overnight === 'None' ? 'No overnight' : step.overnight}</dd>
+                      </div>
+                    )}
+                    {step.meals && (
+                      <div className="flex items-center gap-1.5">
+                        <Utensils aria-hidden className="h-3.5 w-3.5 text-accent" />
+                        <dt className="sr-only">Meals</dt>
+                        <dd>{step.meals}</dd>
+                      </div>
+                    )}
+                  </dl>
+                )}
               </Reveal>
             ))}
           </ol>
+
+          <Reveal className="mt-14 flex gap-4 border border-border bg-card p-6 sm:p-7">
+            <AlertTriangle aria-hidden className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+            <div className="space-y-3 text-pretty text-sm leading-relaxed text-muted-foreground">
+              <p className="font-semibold text-foreground">Operating subject to current access and conditions</p>
+              {t.accessNote && <p>{t.accessNote}</p>}
+              <p>{expeditionConditionsNote}</p>
+              <p>
+                <span className="font-medium text-foreground">Official travel advice ({accessUpdate.checked}):</span>{' '}
+                {accessUpdate.text}{' '}
+                <a href={accessUpdate.source} target="_blank" rel="noopener noreferrer" className="text-primary underline-offset-4 hover:underline">
+                  Read the current advice
+                </a>
+              </p>
+            </div>
+          </Reveal>
         </div>
       </section>
   )

@@ -25,13 +25,13 @@ export function WhyTravel() {
 
       <Reveal className="shell relative mb-12 text-center sm:mb-16">
         <p className="eyebrow mb-5 justify-center text-accent">
-          The Afar Horizon Difference
+          Not just a tour
         </p>
         <h2
           id="why-us-title"
           className="text-balance text-4xl leading-[1.05] text-foreground sm:text-5xl"
         >
-          Why travel with Afar Horizon<span className="text-accent">.</span>
+          Why Afar Horizon<span className="text-accent">?</span>
         </h2>
       </Reveal>
 
