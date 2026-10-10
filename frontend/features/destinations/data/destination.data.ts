@@ -22,6 +22,8 @@ export const destinationGroups: { id: DestinationGroup; title: string; text: str
   },
 ]
 
+const destinationImageBase = 'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803'
+
 const danakilSeason = 'Nov – Jan'
 const highlandSeason = 'Oct – Mar'
 
@@ -34,7 +36,7 @@ export const destinations: Destination[] = [
     headline: 'Where the earth feels alive',
     region: 'Afar Region',
     tag: 'Expedition',
-    image: '/images/danakil.png',
+    image: `${destinationImageBase}/danakil-depression.png`,
     seoTitle: 'Danakil Depression Ethiopia | Tours & Expeditions',
     seoDescription:
       'Explore the Danakil Depression with a locally owned Ethiopian expedition operator: Erta Ale, Dallol, Lake Assale and Afar, with professional local logistics.',
@@ -106,7 +108,7 @@ export const destinations: Destination[] = [
     headline: 'A land that teaches resilience',
     region: 'Afar Region',
     tag: 'People & Landscape',
-    image: '/images/hero-danakil/salt-cutters.jpg',
+    image: `${destinationImageBase}/afar.png`,
     seoTitle: 'Afar Ethiopia Travel | Danakil & Afar Expeditions',
     seoDescription:
       'Discover Afar beyond the Danakil: desert landscapes, salt culture, volcanic geology and local life with an Ethiopian-owned expedition company.',
@@ -155,7 +157,7 @@ export const destinations: Destination[] = [
     headline: 'The volcano at the edge of the desert',
     region: 'Afar Region · Danakil',
     tag: 'Volcano',
-    image: '/images/hero-danakil/erta-ale-approach.jpg',
+    image: `${destinationImageBase}/erta-ale.png`,
     seoTitle: 'Erta Ale Volcano Ethiopia | Trekking & Danakil Expeditions',
     seoDescription:
       'Experience Erta Ale volcano in Ethiopia’s Danakil Depression with a locally operated expedition team. What you can see today, the walk, and how conditions change.',
@@ -203,7 +205,7 @@ export const destinations: Destination[] = [
     headline: 'When the earth paints itself',
     region: 'Afar Region · Danakil',
     tag: 'Geothermal',
-    image: '/images/hero-danakil/dallol-springs.jpg',
+    image: `${destinationImageBase}/dallol.png`,
     seoTitle: 'Dallol Ethiopia | Danakil Geothermal Landscape & Tours',
     seoDescription:
       'Explore Dallol in Ethiopia’s Danakil Depression: acid hot springs, salt chimneys, mineral colours and volcanic geology, below sea level.',
@@ -238,7 +240,7 @@ export const destinations: Destination[] = [
     headline: 'Where salt becomes a way of life',
     region: 'Afar Region · Danakil',
     tag: 'Salt Country',
-    image: '/images/hero-danakil/salt-flats.jpg',
+    image: `${destinationImageBase}/lake-assale.png`,
     seoTitle: 'Lake Assale Ethiopia | Danakil Salt Lake & Salt Caravans',
     seoDescription:
       'Visit Lake Assale (Lake Karum) in Ethiopia’s Danakil Depression and discover salt flats, Afar salt cutting and the camel caravans of the salt trade.',
@@ -268,7 +270,7 @@ export const destinations: Destination[] = [
     headline: 'The desert has a lake',
     region: 'Afar Region · Danakil',
     tag: 'Salt Lake',
-    image: '/images/destinations/lake-afdera.jpg',
+    image: `${destinationImageBase}/lake-afdera.png`,
     seoTitle: 'Lake Afdera Ethiopia | Salt Lake in Afar',
     seoDescription:
       'Discover Lake Afdera (Afrera), a hypersaline lake more than 100 m below sea level in Ethiopia’s Afar region, fed by hot springs and ringed by salt works.',
@@ -298,9 +300,8 @@ export const destinations: Destination[] = [
     headline: 'A base in the heart of salt country',
     region: 'Afar Region · Danakil',
     tag: 'Expedition Base',
-    image: '/images/hero-danakil/salt-cutters.jpg',
+    image: `${destinationImageBase}/hamed-ela.png`,
     seoTitle: 'Hamed Ela | Danakil Camp & Expedition Guide',
-    imageAlt: 'A salt cutter shaping blocks on Lake Asale in Afar',
     seoDescription:
       'Understand Hamed Ela’s role in a Danakil expedition, basic camp expectations and journeys to Lake Assale and Dallol.',
     teaser: 'Between the desert crossing and the salt plain, a place to rest and prepare for the next early start.',
@@ -352,9 +353,8 @@ export const destinations: Destination[] = [
     headline: 'Prepare for the journey into Afar',
     region: 'Afar Region',
     tag: 'Expedition Gateway',
-    image: '/images/hero-danakil/salt-flats.jpg',
+    image: `${destinationImageBase}/semera.png`,
     seoTitle: 'Semera | Afar & Danakil Departure Guide',
-    imageAlt: 'Salt flats in the Danakil Depression, reached on expeditions from Semera',
     seoDescription:
       'Plan a Danakil expedition starting in Semera: arrival coordination, preparation, onward travel and the route into Afar.',
     teaser: 'The meeting point for many Afar journeys, where arrival becomes expedition preparation.',
@@ -404,8 +404,7 @@ export const destinations: Destination[] = [
     headline: 'Another landscape at the edge of Afar',
     region: 'Afar & Oromia',
     tag: 'Wildlife & Landscape',
-    image: '/images/destinations/awash-waterfall.jpg',
-    imageAlt: 'The Awash River waterfall in Awash National Park, Ethiopia',
+    image: `${destinationImageBase}/awash-national-park.png`,
     seoTitle: 'Awash National Park | Wildlife & Afar Travel Guide',
     seoDescription: 'Explore the wildlife, river landscape and volcanic plains of Awash National Park, with practical guidance for a possible Afar journey extension.',
     teaser: 'River, savanna and volcanic terrain add a different chapter to an Afar journey.',
@@ -439,8 +438,8 @@ export const destinations: Destination[] = [
     headline: 'Afar’s place in the story of human origins',
     region: 'Afar Region',
     tag: 'Human Origins',
-    image: '/images/destinations/lucy-cast.jpg',
-    imageAlt: 'A cast of Lucy’s skeleton at the American Museum of Natural History',
+    image: `${destinationImageBase}/hadar.png`,
+    imageAlt: 'A river flowing through a green valley',
     seoTitle: 'Hadar & Lower Awash Valley | Afar Human Origins Guide',
     seoDescription: 'Learn about Hadar, the discovery of Lucy and the Lower Awash Valley, with clear guidance on discussing a possible specialist visit.',
     teaser: 'Beyond volcanoes and salt, Afar holds evidence of a much older human story.',
@@ -456,7 +455,7 @@ export const destinations: Destination[] = [
     ],
     paragraphs: [
       'The Lower Awash Valley is a place to understand through context and careful interpretation. Its importance is not a promise of finding fossils on a walk or seeing original specimens in the field.',
-      'The photograph accompanying this guide shows a museum cast of Lucy, not the original fossil or an exhibit at Hadar. This is a knowledge guide; a field visit requires separate confirmation of access, local arrangements and a suitable itinerary.',
+      'This is a knowledge guide; a field visit requires separate confirmation of access, local arrangements and a suitable itinerary.',
     ],
     sections: [
       { title: 'Discuss the purpose of a visit', text: 'Tell the team whether your interest is general history, geology or specialist study. A research or heritage site should not be treated as an ordinary sightseeing stop, and no visit is included in the current published packages.' },
@@ -477,7 +476,7 @@ export const destinations: Destination[] = [
     headline: 'Churches above the clouds',
     region: 'Tigray',
     tag: 'Rock Churches',
-    image: '/images/destinations/gheralta-cliffs.jpg',
+    image: `${destinationImageBase}/gheralta.png`,
     seoTitle: 'Gheralta Ethiopia | Rock-Hewn Churches & Mountain Treks',
     seoDescription:
       'Explore Gheralta’s sandstone mountains and rock-hewn churches, including Abuna Yemata Guh and Maryam Korkor, with a locally operated Ethiopian team.',
@@ -524,7 +523,7 @@ export const destinations: Destination[] = [
     headline: 'Where history still has a presence',
     region: 'Tigray',
     tag: 'Ancient Kingdom',
-    image: '/images/destinations/axum-obelisks.jpg',
+    image: `${destinationImageBase}/axum.png`,
     seoTitle: 'Axum Ethiopia | Ancient Kingdom, Obelisks & History',
     seoDescription:
       'Explore Axum, centre of the ancient Aksumite kingdom and a UNESCO World Heritage Site: monumental stelae, royal tombs and the church of St Mary of Zion.',
@@ -559,7 +558,7 @@ export const destinations: Destination[] = [
     headline: 'Stone, faith and human imagination',
     region: 'Amhara',
     tag: 'Living Heritage',
-    image: '/images/lalibela.png',
+    image: `${destinationImageBase}/lalibela.png`,
     seoTitle: 'Lalibela Ethiopia | Rock-Hewn Churches & Private Tours',
     seoDescription:
       'Discover Lalibela’s eleven rock-hewn churches, a UNESCO World Heritage Site, through local guiding, cultural interpretation and private journeys.',
@@ -589,7 +588,7 @@ export const destinations: Destination[] = [
     headline: 'The mountains that started the story',
     region: 'Amhara',
     tag: 'Trekking',
-    image: '/images/hero-simien.png',
+    image: `${destinationImageBase}/simien-mountains.png`,
     seoTitle: 'Simien Mountains Ethiopia | Trekking, Wildlife & Expeditions',
     seoDescription:
       'Trek the Simien Mountains, a UNESCO World Heritage national park, with an Ethiopian mountain guide: escarpments, gelada, Walia ibex and Ras Dashen.',
@@ -620,7 +619,7 @@ export const destinations: Destination[] = [
     headline: 'The royal city of the highlands',
     region: 'Amhara',
     tag: 'Royal City',
-    image: '/images/gondar.png',
+    image: `${destinationImageBase}/gondar.png`,
     seoTitle: 'Gondar Ethiopia | Castles, History & Private Tours',
     seoDescription:
       'Explore Gondar: the UNESCO-listed royal enclosure of Fasil Ghebbi, Debre Birhan Selassie, Fasilides’ Bath and Timkat, gateway to the Simien Mountains.',
@@ -651,9 +650,8 @@ export const destinations: Destination[] = [
     headline: 'Plan the connection between highlands and lowlands',
     region: 'Tigray',
     tag: 'Highlands Gateway',
-    image: '/images/destinations/gheralta-cliffs.jpg',
+    image: `${destinationImageBase}/mekelle.png`,
     seoTitle: 'Mekelle | Highlands & Danakil Gateway Guide',
-    imageAlt: 'Gheralta cliffs in the northern highlands, part of proposed journeys through Mekelle',
     seoDescription:
       'Understand Mekelle’s role in proposed highlands-to-Afar journeys and how to plan a gateway connection with current access checks.',
     teaser: 'A highlands gateway to consider when connecting Gheralta, Axum and the journey into Afar.',
@@ -706,8 +704,7 @@ export const destinations: Destination[] = [
     headline: 'A lakeside base for the northern journey',
     region: 'Amhara · Lake Tana',
     tag: 'Lakeside Gateway',
-    image: '/images/lake-tana.png',
-    imageAlt: 'Lake Tana, explored from the lakeside city of Bahir Dar',
+    image: `${destinationImageBase}/bahir-dar.png`,
     seoTitle: 'Bahir Dar | Lake Tana & Northern Ethiopia Guide',
     seoDescription: 'Plan time in Bahir Dar, the gateway to Lake Tana, with guidance on lake visits and its place in Northern Ethiopia itineraries.',
     teaser: 'Lake journeys, a city pause and onward connections through the historic north.',
@@ -741,8 +738,7 @@ export const destinations: Destination[] = [
     headline: 'A journey across water and living heritage',
     region: 'Amhara · Bahir Dar',
     tag: 'Lake & Monasteries',
-    image: '/images/lake-tana.png',
-    imageAlt: 'Lake Tana in Ethiopia’s northern highlands',
+    image: `${destinationImageBase}/lake-tana.png`,
     seoTitle: 'Lake Tana | Monasteries & Northern Ethiopia Journeys',
     seoDescription: 'Discover Lake Tana through boat journeys and monastery visits from Bahir Dar, as part of a tailored Northern Ethiopia itinerary.',
     teaser: 'A lake chapter of the historic north, approached by boat from Bahir Dar.',
@@ -778,7 +774,7 @@ export const destinations: Destination[] = [
     headline: 'One region, many worlds',
     region: 'Afar · Tigray · Amhara',
     tag: 'The Whole Journey',
-    image: '/images/lake-tana.png',
+    image: `${destinationImageBase}/northern-ethiopia.png`,
     seoTitle: 'Northern Ethiopia Tours | Danakil, Gheralta, Axum & Simien',
     seoDescription:
       'Plan a private Northern Ethiopia journey connecting the Danakil, Afar, Gheralta, Axum, Lalibela, the Simien, Gondar and Lake Tana, subject to current access.',

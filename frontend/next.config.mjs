@@ -5,6 +5,13 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        pathname: '/xsrr0wfh/image/upload/**',
+      },
+    ],
   },
   async redirects() {
     // Removed pages and old /tours addresses from before the expedition catalogue.
