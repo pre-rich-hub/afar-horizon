@@ -1,13 +1,13 @@
 
 export const reviewPhotos = [
-  '/images/hero-danakil/erta-ale-approach.jpg',
-  '/images/hero-danakil/dallol-springs.jpg',
-  '/images/hero-danakil/salt-cutters.jpg',
-  '/images/hero-danakil/salt-flats.jpg',
-  '/images/danakil.png',
-  '/images/hero-danakil/dallol-aerial.jpg',
-  '/images/lalibela.png',
-  '/images/hero-danakil/dallol-sulfur.jpg',
+  'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652743/Erta_Ale_approach.png',
+  'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/dallol.png',
+  'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-assale.png',
+  'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-assale.png',
+  'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png',
+  'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/dallol.png',
+  'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lalibela.png',
+  'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/dallol.png',
 ]
 
 export const avatarTones = ['bg-primary', 'bg-accent', 'bg-secondary']

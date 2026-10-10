@@ -1,16 +1,119 @@
-// Freely licensed photographs from Wikimedia Commons used across the site.
-// Each licence requires attribution; CC BY-SA and FAL also require that
-// adapted versions (ours are resized and compressed) keep the same licence.
+// Client-provided photos hosted on Cloudinary. Photographer and licence details were not supplied.
 export const credits = [
-  { src: '/images/destinations/awash-waterfall.jpg', subject: 'Awash waterfall, Awash National Park', author: 'Jean Rebiffé', license: 'CC BY 2.0', page: 'https://commons.wikimedia.org/wiki/File:Awash_waterfalls,_Ethiopia_(16960503700).jpg' },
-  { src: '/images/destinations/lucy-cast.jpg', subject: 'Museum cast of Lucy, American Museum of Natural History', author: 'Vicpeters', license: 'CC BY 4.0', page: 'https://commons.wikimedia.org/wiki/File:Lucy_cast.jpg' },
-  { src: '/images/hero-danakil/dallol-springs.jpg', subject: 'Dallol, Danakil Depression', author: 'A. Savin', license: 'Free Art License', page: 'https://commons.wikimedia.org/wiki/File:ET_Afar_asv2018-01_img48_Dallol.jpg' },
-  { src: '/images/hero-danakil/dallol-sulfur.jpg', subject: 'Sulphur springs, Dallol', author: 'A. Savin', license: 'Free Art License', page: 'https://commons.wikimedia.org/wiki/File:ET_Afar_asv2018-01_img36_Dallol.jpg' },
-  { src: '/images/hero-danakil/dallol-aerial.jpg', subject: 'Dallol from above', author: 'Thomas Fuhrmann', license: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Ethiopia_-_Dallol.jpg' },
-  { src: '/images/hero-danakil/salt-flats.jpg', subject: 'Salt flats of the Danakil', author: 'Thomas Fuhrmann', license: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Ethiopia_-_dry_landscape_in_the_Danakil_Depression.jpg' },
-  { src: '/images/hero-danakil/erta-ale-approach.jpg', subject: 'The approach to Erta Ale', author: 'Ji-Elle', license: 'CC BY-SA 3.0', page: 'https://commons.wikimedia.org/wiki/File:Erta_Ale-Chamelier_Afar_(2).jpg' },
-  { src: '/images/hero-danakil/salt-cutters.jpg', subject: 'Salt cutters, Lake Assale', author: 'Charliefleurene', license: 'CC BY 4.0', page: 'https://commons.wikimedia.org/wiki/File:Ethiopia_Asale_MenCarvingSalt_01.jpg' },
-  { src: '/images/destinations/lake-afdera.jpg', subject: 'Lake Afdera', author: 'A. Savin', license: 'Free Art License', page: 'https://commons.wikimedia.org/wiki/File:ET_Afar_asv2018-01_img113_Afdera.jpg' },
-  { src: '/images/destinations/gheralta-cliffs.jpg', subject: 'Gheralta Mountains, Tigray', author: 'MarcD.', license: 'CC BY-SA 3.0', page: 'https://commons.wikimedia.org/wiki/File:Gheralta_Mountains,_Tigray,_Ethiopia_2013_-_panoramio.jpg' },
-  { src: '/images/destinations/axum-obelisks.jpg', subject: 'Obelisks of Aksum', author: 'Allamiro', license: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Obelisk_of_Aksum_Remains2.jpg' },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png",
+    "subject": "Danakil Depression"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/afar.png",
+    "subject": "Afar"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/erta-ale.png",
+    "subject": "Erta Ale"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/dallol.png",
+    "subject": "Dallol"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-assale.png",
+    "subject": "Lake Assale"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-afdera.png",
+    "subject": "Lake Afdera"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/hamed-ela.png",
+    "subject": "Hamed Ela"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/semera.png",
+    "subject": "Semera"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/awash-national-park.png",
+    "subject": "Awash National Park"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/hadar.png",
+    "subject": "Hadar"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/gheralta.png",
+    "subject": "Gheralta"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/axum.png",
+    "subject": "Axum"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lalibela.png",
+    "subject": "Lalibela"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/simien-mountains.png",
+    "subject": "Simien Mountains"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/gondar.png",
+    "subject": "Gondar"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/mekelle.png",
+    "subject": "Mekelle"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/bahir-dar.png",
+    "subject": "Bahir Dar"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-tana.png",
+    "subject": "Lake Tana"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/northern-ethiopia.png",
+    "subject": "Northern Ethiopia"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652748/LakeAfdera.png",
+    "subject": "Lake Afdera \u2014 The Afar Edge"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652746/Into_the_Danakil.png",
+    "subject": "Into the Danakil"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652743/Erta_Ale_approach.png",
+    "subject": "Erta Ale Approach"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652742/Afar_Geolog.png",
+    "subject": "Afar Geology and Culture"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652741/From_Mountain_to_Horizon.png",
+    "subject": "From Mountain to Horizon"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652741/Danakil_Essentials.png",
+    "subject": "Danakil Essentials"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652740/Danakil_Photography_Expedition.png",
+    "subject": "Danakil Photography Expedition"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652737/Danakil_Gheralta.png",
+    "subject": "Danakil and Gheralta"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652734/From_Axum_to_the_Afar_Horizon.png",
+    "subject": "From Axum to the Afar Horizon"
+  },
+  {
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652727/Danakil_Deep.png",
+    "subject": "Danakil Deep"
+  }
 ]

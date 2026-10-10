@@ -12,7 +12,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { reviewSummary, testimonials } from '../data/review.data'
 
-// A photo from the journey each guest took, shown beside their review.
+// Destination photos illustrate the routes mentioned in guest reviews.
 
 export function Reviews() {
   const { track, edges, count, step } = useReviews()

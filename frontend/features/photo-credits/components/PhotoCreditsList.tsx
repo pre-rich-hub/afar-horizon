@@ -13,9 +13,9 @@ export function PhotoCreditsList() {
               <span className="min-w-0 text-sm leading-relaxed">
                 <span className="block font-medium text-foreground">{c.subject}</span>
                 <span className="text-muted-foreground">
-                  Photo: {c.author} ·{' '}
-                  <a href={c.page} target="_blank" rel="noopener noreferrer" className="text-primary underline-offset-4 hover:underline">
-                    {c.license}, via Wikimedia Commons
+                  Client-provided photo collection ·{' '}
+                  <a href={c.src} target="_blank" rel="noopener noreferrer" className="text-primary underline-offset-4 hover:underline">
+                    View on Cloudinary
                   </a>
                 </span>
               </span>

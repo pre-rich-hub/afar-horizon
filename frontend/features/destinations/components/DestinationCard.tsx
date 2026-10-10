@@ -1,3 +1,4 @@
+import { defaultImage } from '@/lib/config/cloudinary'
 import { InfoCard } from '@/components/common/InfoCard'
 import { cn } from '@/lib/utils'
 import { ArrowRight, CalendarDays, Clock, MapPin, Mountain } from 'lucide-react'
@@ -53,7 +54,7 @@ export function DestinationFeatureCard({
       )}
     >
       <Image
-        src={d.image || '/placeholder.svg'}
+        src={d.image || defaultImage}
         alt={d.imageAlt ?? `${d.name}, Ethiopia`}
         fill
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"

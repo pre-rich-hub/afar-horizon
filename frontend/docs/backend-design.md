@@ -241,7 +241,7 @@ Retrieve full tour details, including day-by-day itineraries and list of visited
   {
     "slug": "the-historic-route",
     "title": "The Historic Route",
-    "image": "/images/gondar.png",
+    "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/gondar.png",
     "days": "11 Days",
     "nights": 10,
     "style": "Cultural · Private",

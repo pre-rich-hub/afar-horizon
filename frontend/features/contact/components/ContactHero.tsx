@@ -6,8 +6,8 @@ export function ContactHero() {
         eyebrow="Speak With a Designer"
         title="Every journey begins with a conversation"
         lede="No call centres and no templates. Write to us and an Addis-based designer replies personally, usually the same day."
-        image="/images/traveler-portrait.png"
-        imageAlt="A traveller looking out over the Ethiopian highlands at dawn"
+        image="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/afar.png"
+        imageAlt="Afar region, Ethiopia"
         crumbs={[{ label: 'Home', href: '/' }, { label: 'Contact' }]}
         meta={[
           { label: 'Reply Time', value: 'Within 24 hrs' },

@@ -1,3 +1,4 @@
+import { defaultImage } from '@/lib/config/cloudinary'
 import { LinkButton } from '@/components/common/LinkButton'
 import { Reveal } from '@/components/common/Reveal'
 import { contact } from '@/lib/constants/company'
@@ -18,13 +19,13 @@ export function CtaBand({
   text,
   primary = { label: 'Plan My Journey', href: '/plan' },
   secondary,
-  image = '/images/luxury-lodge.png',
+  image = 'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/simien-mountains.png',
 }: CtaBandProps) {
   return (
     <section className="relative isolate overflow-hidden bg-primary text-primary-foreground">
       <div className="absolute inset-0 -z-10 opacity-25">
         <Image
-          src={image || '/placeholder.svg'}
+          src={image || defaultImage}
           alt=""
           aria-hidden
           fill

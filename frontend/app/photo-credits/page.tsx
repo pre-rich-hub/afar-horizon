@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Photo Credits',
-  description: 'Credits and licences for the third-party photographs used on this website.',
+  description: 'The client-provided destination and expedition photo collection used on this website.',
   alternates: { canonical: '/photo-credits' },
   robots: { index: false },
 }

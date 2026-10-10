@@ -8,8 +8,7 @@ import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import { type ReactNode } from 'react'
 
-// Freely licensed photographs from Wikimedia Commons; the credit line shown
-// under each slide is required by their licences.
+// Client-provided Cloudinary photos; attribution is shown when supplied.
 
 export function HeroSlideshow({ children }: { children?: ReactNode }) {
   const { index, current, prev } = useHeroSlideshow()
@@ -54,7 +53,7 @@ export function HeroSlideshow({ children }: { children?: ReactNode }) {
           rel="noopener noreferrer"
           className="underline-offset-2 hover:text-background hover:underline"
         >
-          Photo: {current.credit}, {current.license}
+          {current.credit ? `Photo: ${current.credit}${current.license ? `, ${current.license}` : ''}` : 'Client-provided photo collection'}
         </a>
       </p>
     </>

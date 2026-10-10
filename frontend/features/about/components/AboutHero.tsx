@@ -6,8 +6,8 @@ export function AboutHero() {
   return (
     <section className="relative isolate flex min-h-[88svh] items-end overflow-hidden">
         <Image
-          src="/images/danakil.png"
-          alt="Salt and sulphur terraces of the Danakil Depression at dusk"
+          src="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png"
+          alt="Danakil Depression, Afar"
           fill
           priority
           sizes="100vw"

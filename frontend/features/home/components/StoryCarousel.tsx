@@ -1,5 +1,7 @@
 'use client'
 
+import { defaultImage } from '@/lib/config/cloudinary'
+
 import { useStoryCarousel } from '../hooks/useStoryCarousel'
 
 import { Reveal } from '@/components/common/Reveal'
@@ -62,7 +64,7 @@ export function StoryCarousel({ tours = staticTours }: { tours?: Tour[] }) {
                 )}
               >
                 <Image
-                  src={t.image || '/placeholder.svg'}
+                  src={t.image || defaultImage}
                   alt={clone ? '' : t.title}
                   fill
                   sizes="(max-width: 640px) 78vw, (max-width: 768px) 46vw, (max-width: 1024px) 38vw, 27vw"

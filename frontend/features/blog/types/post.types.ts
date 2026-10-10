@@ -5,6 +5,7 @@ export type Post = {
   date: string
   readTime: string
   image: string
+  imageAlt?: string
   author: string
   authorRole: string
   excerpt: string

@@ -6,8 +6,8 @@ export function GroundOpsHero() {
       eyebrow="Ground Operations"
       title="You bring the traveller. We handle the ground."
       lede="Local ground operations in Ethiopia for international tour operators, travel advisors, specialist agencies and travel designers."
-      image="/images/hero-danakil/dallol-aerial.jpg"
-      imageAlt="Aerial view of the hydrothermal fields at Dallol"
+      image="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/dallol.png"
+      imageAlt="Dallol in the Danakil Depression"
       crumbs={[{ label: 'Home', href: '/' }, { label: 'Ground Operations' }]}
     />
   )

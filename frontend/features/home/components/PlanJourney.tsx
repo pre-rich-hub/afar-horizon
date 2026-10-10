@@ -11,7 +11,7 @@ export function PlanJourney() {
     >
       <div className="absolute inset-0 opacity-15">
         <Image
-          src="/images/hero-danakil/salt-flats.jpg"
+          src="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-assale.png"
           alt=""
           aria-hidden
           fill

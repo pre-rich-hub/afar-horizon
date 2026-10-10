@@ -5,9 +5,9 @@ export function PhotoCreditsHero() {
     <PageHero
         eyebrow="Photo Credits"
         title="Photographs on this site"
-        lede="Some photographs are freely licensed images from Wikimedia Commons, resized for the web. We are grateful to the photographers below."
-        image="/images/hero-danakil/salt-flats.jpg"
-        imageAlt="Salt crust in the Danakil Depression"
+        lede="The destination and expedition photographs on this site were supplied by the client and are hosted on Cloudinary. Browse the collection below."
+        image="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-assale.png"
+        imageAlt="Lake Assale in the Danakil Depression"
         crumbs={[{ label: 'Home', href: '/' }, { label: 'Photo Credits' }]}
       />
   )

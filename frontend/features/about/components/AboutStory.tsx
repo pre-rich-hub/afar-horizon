@@ -7,8 +7,8 @@ export function AboutStory() {
           <Chapter
             eyebrow="The road out of Addis"
             title="Before the Afar became an itinerary."
-            image="/images/hero-simien.png"
-            imageAlt="Mist lifting off the escarpment of the Ethiopian highlands at sunrise"
+            image="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/simien-mountains.png"
+            imageAlt="Simien Mountains, Ethiopia"
           >
             <p>
               There is a road out of Addis Ababa we never tire of taking. The city
@@ -35,8 +35,8 @@ export function AboutStory() {
             <Chapter
               eyebrow="Then we started guiding"
               title="Seeing home through new eyes."
-              image="/images/coffee-ceremony.png"
-              imageAlt="Coffee poured from a clay jebena during a traditional ceremony"
+              image="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/afar.png"
+              imageAlt="Afar region, Ethiopia"
               reverse
             >
               <p>

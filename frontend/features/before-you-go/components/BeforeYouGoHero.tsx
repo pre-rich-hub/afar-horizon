@@ -6,8 +6,8 @@ export function BeforeYouGoHero() {
         eyebrow="Before You Go"
         title="What the journey is really like"
         lede="The Danakil and northern Ethiopia are not ordinary sightseeing. Here is what to expect, honestly, so you arrive prepared rather than surprised."
-        image="/images/hero-danakil/dallol-aerial.jpg"
-        imageAlt="Aerial view of the hydrothermal fields at Dallol"
+        image="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/dallol.png"
+        imageAlt="Dallol in the Danakil Depression"
         crumbs={[{ label: 'Home', href: '/' }, { label: 'Before You Go' }]}
       />
   )

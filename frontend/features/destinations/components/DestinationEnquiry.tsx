@@ -1,3 +1,4 @@
+import { defaultImage } from '@/lib/config/cloudinary'
 import { Reveal } from '@/components/common/Reveal'
 import { EnquiryForm } from '@/features/enquiries'
 import Image from 'next/image'
@@ -33,7 +34,7 @@ export function DestinationEnquiry({ d, others }: { d: Destination; others: Dest
                   >
                     <span className="relative h-14 w-14 shrink-0 overflow-hidden rounded-sm">
                       <Image
-                        src={o.image || '/placeholder.svg'}
+                        src={o.image || defaultImage}
                         alt=""
                         aria-hidden
                         fill

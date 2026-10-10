@@ -1,3 +1,4 @@
+import { defaultImage } from '@/lib/config/cloudinary'
 import { cn } from '@/lib/utils'
 import { ArrowRight, type LucideIcon } from 'lucide-react'
 import Image from 'next/image'
@@ -43,7 +44,7 @@ export function InfoCard({
     >
       <div className="relative aspect-[4/3] overflow-hidden bg-charcoal">
         <Image
-          src={image || '/placeholder.svg'}
+          src={image || defaultImage}
           alt={imageAlt}
           fill
           sizes={sizes}

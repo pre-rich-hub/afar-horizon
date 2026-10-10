@@ -7,7 +7,7 @@ export function GalleryPlanning() {
         text="Tell us which of these places pulls at you, and a designer will shape a journey around the light, the season and the pace you prefer."
         primary={{ label: 'Plan Your Journey', href: '/contact' }}
         secondary={{ label: 'Browse Expeditions', href: '/expeditions' }}
-        image="/images/danakil.png"
+        image="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png"
       />
   )
 }

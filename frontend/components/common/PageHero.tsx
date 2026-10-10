@@ -1,3 +1,4 @@
+import { defaultImage } from '@/lib/config/cloudinary'
 import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -29,7 +30,7 @@ export function PageHero({
     <section className="relative isolate flex min-h-[74svh] items-end overflow-hidden pt-28 sm:min-h-[68svh] lg:min-h-[76vh]">
       <div className="absolute inset-0 -z-10">
         <Image
-          src={image || '/placeholder.svg'}
+          src={image || defaultImage}
           alt={imageAlt}
           fill
           priority

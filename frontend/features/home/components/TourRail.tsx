@@ -1,5 +1,7 @@
 'use client'
 
+import { defaultImage } from '@/lib/config/cloudinary'
+
 import { useTourRail } from '../hooks/useTourRail'
 
 import { CARD, INSET, SCROLL_PAD } from '../data/tour-rail.data'
@@ -113,7 +115,7 @@ function TourPanel({ tour: t }: { tour: Tour }) {
       )}
     >
       <Image
-        src={t.image || '/placeholder.svg'}
+        src={t.image || defaultImage}
         alt={t.title}
         fill
         sizes="(max-width: 640px) 78vw, 340px"
@@ -164,7 +166,7 @@ function CustomPanel() {
       )}
     >
       <Image
-        src="/images/hero-simien.png"
+        src="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/simien-mountains.png"
         alt=""
         fill
         sizes="340px"

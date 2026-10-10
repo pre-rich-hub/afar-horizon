@@ -6,7 +6,7 @@ export function BlogPlanning() {
         title="Read something that changed your mind?"
         text="Most of these essays started as an answer to a guest question. Ask us yours and it may well become the next one."
         secondary={{ label: 'Browse Expeditions', href: '/expeditions' }}
-        image="/images/hero-simien.png"
+        image="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/simien-mountains.png"
       />
   )
 }

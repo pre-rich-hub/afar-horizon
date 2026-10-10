@@ -1,3 +1,4 @@
+import { defaultImage } from '@/lib/config/cloudinary'
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Post } from '../types/post.types';
@@ -12,8 +13,8 @@ export function PostCard({ post, wide }: { post: Post; wide?: boolean }) {
           }`}
         >
           <Image
-            src={post.image || '/placeholder.svg'}
-            alt={post.title}
+            src={post.image || defaultImage}
+            alt={post.imageAlt ?? post.title}
             fill
             sizes={wide ? '(max-width: 1024px) 100vw, 60vw' : '(max-width: 768px) 100vw, 33vw'}
             className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"

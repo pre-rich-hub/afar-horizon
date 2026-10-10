@@ -7,7 +7,8 @@ export const posts: Post[] = [
     category: 'Planning',
     date: 'June 18, 2026',
     readTime: '9 min read',
-    image: '/images/hero-simien.png',
+    image: 'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/simien-mountains.png',
+    imageAlt: 'Simien Mountains, Ethiopia',
     author: 'Selam Bekele',
     authorRole: 'Head of Journey Design',
     excerpt:
@@ -27,7 +28,8 @@ export const posts: Post[] = [
     category: 'Destinations',
     date: 'May 30, 2026',
     readTime: '7 min read',
-    image: '/images/lalibela.png',
+    image: 'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lalibela.png',
+    imageAlt: 'Lalibela, Ethiopia',
     author: 'Yohannes Tesfaye',
     authorRole: 'Senior Guide, Northern Circuit',
     excerpt:
@@ -45,7 +47,8 @@ export const posts: Post[] = [
     category: 'Culture',
     date: 'May 9, 2026',
     readTime: '6 min read',
-    image: '/images/coffee-ceremony.png',
+    image: 'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/afar.png',
+    imageAlt: 'Afar region, Ethiopia — illustrative destination photo',
     author: 'Marta Alemu',
     authorRole: 'Culture & Community Lead',
     excerpt:
@@ -63,7 +66,8 @@ export const posts: Post[] = [
     category: 'Practical',
     date: 'April 22, 2026',
     readTime: '5 min read',
-    image: '/images/danakil.png',
+    image: 'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png',
+    imageAlt: 'Danakil Depression, Afar',
     author: 'Selam Bekele',
     authorRole: 'Head of Journey Design',
     excerpt:
@@ -81,7 +85,8 @@ export const posts: Post[] = [
     category: 'Responsible Travel',
     date: 'April 3, 2026',
     readTime: '8 min read',
-    image: '/images/omo-valley.png',
+    image: 'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/hadar.png',
+    imageAlt: 'Hadar, Afar, Ethiopia — illustrative Ethiopian landscape',
     author: 'Marta Alemu',
     authorRole: 'Culture & Community Lead',
     excerpt:
