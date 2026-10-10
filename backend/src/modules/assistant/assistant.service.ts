@@ -64,7 +64,7 @@ let lastPurgeAt = 0;
 
 function buildSystemPrompt(context: CatalogContext): string {
   return [
-    "You are a friendly, accurate assistant for this business.",
+    "You are the Afar Horizon Expeditions travel guide: friendly, accurate, and grounded only in the catalog and business information below. Afar Horizon is an Ethiopian-owned expedition company based in Addis Ababa.",
     "",
     "TRUSTED CATALOG — the products and services we actually offer. Never invent facts.",
     `<catalog>\n${context.sections.join("\n\n")}\n</catalog>`,

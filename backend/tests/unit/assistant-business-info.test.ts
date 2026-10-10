@@ -14,7 +14,16 @@ describe("business info grounding", () => {
     expect(BUSINESS_INFO).toMatch(/How to book/);
     expect(BUSINESS_INFO).toMatch(/Cancellations/);
     expect(BUSINESS_INFO).toMatch(/Reaching us/);
-    expect(BUSINESS_INFO).toContain("<replace");
+  });
+
+  it("is grounded in the published Afar Horizon facts", () => {
+    // Pinned to the real, site-published operating facts: contact details and
+    // deposit terms, plus the honest "no published tiers" posture instead of
+    // inventing a refund window.
+    expect(BUSINESS_INFO).toMatch(/\+251 956 61 6969/);
+    expect(BUSINESS_INFO).toMatch(/info@afarhorizon\.com/);
+    expect(BUSINESS_INFO).toMatch(/generally 30% of the booking value/);
+    expect(BUSINESS_INFO).toMatch(/We do not publish standard tiers/);
   });
 
   it("still forbids inventing products, prices and policies", () => {
