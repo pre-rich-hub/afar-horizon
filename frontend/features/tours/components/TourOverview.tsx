@@ -1,6 +1,5 @@
 import { BookingCard } from '@/components/common/BookingCard'
 import { Reveal } from '@/components/common/Reveal'
-import { accessUpdate } from '@/lib/constants/travelAdvice'
 import { AlertTriangle, MapPin, Moon, Utensils } from 'lucide-react'
 import { expeditionConditionsNote } from '../data/tour.data'
 import type { Tour } from '../types/tour.types'
@@ -144,13 +143,6 @@ export function TourOverview({ t }: { t: Tour }) {
               <p className="font-semibold text-foreground">Operating subject to current access and conditions</p>
               {t.accessNote && <p>{t.accessNote}</p>}
               <p>{expeditionConditionsNote}</p>
-              <p>
-                <span className="font-medium text-foreground">Official travel advice ({accessUpdate.checked}):</span>{' '}
-                {accessUpdate.text}{' '}
-                <a href={accessUpdate.source} target="_blank" rel="noopener noreferrer" className="text-primary underline-offset-4 hover:underline">
-                  Read the current advice
-                </a>
-              </p>
             </div>
           </Reveal>
         </div>

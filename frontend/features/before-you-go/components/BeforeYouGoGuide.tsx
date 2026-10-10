@@ -1,5 +1,4 @@
 import { Reveal } from '@/components/common/Reveal'
-import { accessUpdate } from '@/lib/constants/travelAdvice'
 import Link from 'next/link'
 import { packing, respect, topics } from '../data/before-you-go.data'
 
@@ -36,15 +35,6 @@ export function BeforeYouGoGuide() {
                   {p}
                 </p>
               ))}
-              {t.id === 'safety' && (
-                <p className="border-l-2 border-accent bg-muted/60 px-4 py-3 text-sm leading-relaxed text-muted-foreground">
-                  <span className="font-medium text-foreground">Official travel advice ({accessUpdate.checked}):</span>{' '}
-                  {accessUpdate.text}{' '}
-                  <a href={accessUpdate.source} target="_blank" rel="noopener noreferrer" className="text-primary underline-offset-4 hover:underline">
-                    Read the current advice
-                  </a>
-                </p>
-              )}
             </div>
           </Reveal>
         ))}

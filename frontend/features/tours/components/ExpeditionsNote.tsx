@@ -1,5 +1,4 @@
 import { Reveal } from '@/components/common/Reveal'
-import { accessUpdate } from '@/lib/constants/travelAdvice'
 import { expeditionConditionsNote } from '../data/tour.data'
 
 export function ExpeditionsNote() {
@@ -20,12 +19,6 @@ export function ExpeditionsNote() {
               Prices are starting prices per person. Your final quotation depends on group
               size, dates, route, vehicles, accommodation and domestic flights, and we confirm
               it with you before you pay anything.
-            </p>
-            <p className="mt-5 text-pretty text-sm leading-relaxed text-background/60">
-              Official travel advice ({accessUpdate.checked}): {accessUpdate.text}{' '}
-              <a href={accessUpdate.source} target="_blank" rel="noopener noreferrer" className="text-background underline underline-offset-4">
-                Read the current advice
-              </a>
             </p>
           </Reveal>
         </div>

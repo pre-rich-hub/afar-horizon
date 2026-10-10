@@ -1,5 +1,4 @@
 import { Reveal } from '@/components/common/Reveal'
-import { accessUpdate } from '@/lib/constants/travelAdvice'
 import { AlertTriangle, Check } from 'lucide-react'
 import type { Destination } from '../types/destination.types'
 
@@ -46,14 +45,6 @@ export function DestinationHighlights({ d }: { d: Destination }) {
                 <div className="text-pretty text-sm leading-relaxed text-muted-foreground">
                   <p className="font-semibold text-foreground">{d.note.title}</p>
                   <p className="mt-2">{d.note.text}</p>
-                  {(d.group === 'danakil' || d.region.startsWith('Tigray') || d.group === 'hub') && (
-                    <p className="mt-2">
-                      Official travel advice ({accessUpdate.checked}): {accessUpdate.text}{' '}
-                      <a href={accessUpdate.source} target="_blank" rel="noopener noreferrer" className="text-primary underline-offset-4 hover:underline">
-                        Read the current advice
-                      </a>
-                    </p>
-                  )}
                 </div>
               </div>
             )}

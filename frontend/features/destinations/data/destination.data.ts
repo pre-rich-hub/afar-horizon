@@ -79,10 +79,6 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    note: {
-      title: 'Subject to current access',
-      text: 'Access in Afar depends on current conditions, local authority requirements and official advice. We confirm what is possible for your dates before quoting.',
-    },
     faqs: [
       {
         q: 'How hot is the Danakil?',
@@ -150,10 +146,6 @@ export const destinations: Destination[] = [
         text: 'We don’t want to travel through communities. We want to travel with them. Cultural encounters should benefit both sides, and interaction must be welcomed, never staged.',
       },
     ],
-    note: {
-      title: 'Subject to current access',
-      text: 'Access in Afar depends on current conditions, local authority requirements and official advice. We confirm what is possible for your dates before quoting.',
-    },
     places: ['Lake Afdera', 'Erta Ale', 'Dallol', 'Lake Asale', 'Hamed Ela', 'Semera'],
   },
   {
@@ -267,10 +259,6 @@ export const destinations: Destination[] = [
       'Camel caravans carry the salt west to Berahile, the region’s main salt-trading town, now linked by road to Mekelle; historians think the trade has run for well over a thousand years. Trucks are gradually replacing camels, which makes the caravans you may still see more precious.',
       'The connection between landscape and livelihood is what makes Lake Assale worth understanding. Where work is under way, we watch from a respectful distance and never stage it.',
     ],
-    note: {
-      title: 'Subject to current access',
-      text: 'Access in Afar depends on current conditions, local authority requirements and official advice. We confirm what is possible for your dates before quoting.',
-    },
     places: ['Lake Asale', 'Hamed Ela'],
   },
   {
@@ -300,10 +288,6 @@ export const destinations: Destination[] = [
       'The lake is up to about 80 metres deep and holds roughly 160 grams of salt per litre. The white rectangles around its shore are evaporation ponds, where salt is produced from the brine; the deposits around it are among the largest in the region.',
       'On most of our Danakil expeditions, Afdera is the first stop after the descent from Semera, and on longer journeys we spend a night here. It becomes a natural pause: a place to slow down, look back at the road and understand how varied Afar really is.',
     ],
-    note: {
-      title: 'Subject to current access',
-      text: 'Access in Afar depends on current conditions, local authority requirements and official advice. We confirm what is possible for your dates before quoting.',
-    },
     places: ['Lake Afdera'],
   },
 
@@ -513,10 +497,6 @@ export const destinations: Destination[] = [
       'From there, Gondar, the Simien, Axum, Gheralta and Lalibela follow, with the Danakil as the other world below sea level. We can build it around history, culture, mountains, desert, photography, faith, food, people or geology, using domestic flights where they save days on the road.',
       'Moving between the Danakil and the Simien takes you from heat and dehydration to altitude and cold within days, so we plan rest and pacing as carefully as the route.',
     ],
-    note: {
-      title: 'Subject to current access',
-      text: 'Routes through Tigray (Axum and Gheralta) and parts of Afar depend on current conditions and official advice. We confirm access for your dates before quoting.',
-    },
     places: ['Lalibela', 'Gheralta', 'Aksum', 'Simien Mountains', 'Gondar', 'Lake Tana', 'Erta Ale', 'Dallol'],
   },
 ]
