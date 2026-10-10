@@ -1,5 +1,5 @@
 import { Reveal } from '@/components/common/Reveal'
-import { PlanJourneyForm } from '@/features/enquiries'
+import { EnquiryForm } from '@/features/enquiries'
 import type { Tour } from '../types/tour.types'
 
 export function TourEnquiry({ t }: { t: Tour }) {
@@ -27,7 +27,7 @@ export function TourEnquiry({ t }: { t: Tour }) {
             </p>
           </Reveal>
           <Reveal delay={120}>
-            <PlanJourneyForm subject={`${t.days} ${t.title}`} />
+            <EnquiryForm subject={`${t.days} ${t.title}`} defaultStyles={[]} />
           </Reveal>
         </div>
       </section>
