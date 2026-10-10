@@ -6,14 +6,16 @@ import Link from 'next/link'
 import type { Destination } from '../types/destination.types'
 
 export function DestinationJourneys({ d, fallback }: { d: Destination; fallback: Tour[] }) {
+  const placeNames = d.places ?? [d.name]
+  const includesDestination = fallback.some((t) => t.places.some((place) => placeNames.includes(place)))
   return (<div className="border-t border-border pt-12 lg:col-start-1 lg:row-start-3 lg:mt-14">
             <Reveal className="mb-10 flex flex-col justify-between gap-6 sm:mb-12 md:flex-row md:items-end">
               <div className="max-w-2xl">
                 <p className="eyebrow mb-4 text-accent sm:mb-5">
-                  Expeditions Including {d.name}
+                  {includesDestination ? `Expeditions Including ${d.name}` : 'Explore Our Expeditions'}
                 </p>
                 <h2 className="text-balance text-3xl leading-[1.1] text-foreground sm:text-4xl">
-                  Routes that pass through here
+                  {includesDestination ? 'Routes that pass through here' : 'Other journeys to consider'}
                 </h2>
               </div>
               <Link

@@ -7,6 +7,7 @@ import { formatDuration, getStartEnd } from '../utils/tour.utils'
 
 export function TourOverview({ t }: { t: Tour }) {
   const startEnd = getStartEnd(t)
+  const priceOnRequest = t.from === 'Price on request'
 
   return (
     <section className="shell grid gap-12 py-16 sm:py-20 lg:grid-cols-[1fr_360px] lg:gap-x-16 lg:gap-y-0 xl:grid-cols-[1fr_380px] xl:gap-x-20 lg:py-28">
@@ -64,8 +65,8 @@ export function TourOverview({ t }: { t: Tour }) {
         <Reveal delay={120}>
           <BookingCard
             label="Pricing"
-            title={`From ${t.from.split(' per')[0]}`}
-            subtitle="per person, confirmed on quotation"
+            title={priceOnRequest ? t.from : `From ${t.from.split(' per')[0]}`}
+            subtitle={priceOnRequest ? 'confirmed on quotation' : 'per person, confirmed on quotation'}
             rows={[
               { k: 'Duration', v: formatDuration(t) },
               { k: 'Start & finish', v: startEnd },

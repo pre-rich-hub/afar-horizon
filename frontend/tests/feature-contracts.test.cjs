@@ -9,14 +9,14 @@ function mockFetch(t, implementation) {
 }
 const success = data => Response.json({ success: true, data })
 
-test('tour catalogue keeps static content, overlays price/featured, and falls back on failure', async t => {
+test('tour catalogue overlays prices, preserves curated features, and falls back on failure', async t => {
   const load = createLoader()
   const { tours } = load('@/features/tours/data/tour.data')
   const { getToursData, getTourData } = load('@/features/tours/utils/tour.catalog')
   const live = { canonical: { slug: tours[0].slug }, adultPrice: 1200, isFeatured: false, name: 'API title' }
   mockFetch(t, async url => success(url.includes('/slug/') ? live : { items: [live] }))
   const result = await getToursData()
-  assert.deepEqual(result[0], { ...tours[0], from: '$1,200 per person', featured: false })
+  assert.deepEqual(result[0], { ...tours[0], from: '$1,200 per person' })
   assert.deepEqual(result.slice(1), tours.slice(1))
   assert.deepEqual(await getTourData(tours[0].slug), result[0])
   assert.equal(await getTourData('missing-tour'), undefined)

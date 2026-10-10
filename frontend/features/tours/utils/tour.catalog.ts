@@ -4,7 +4,7 @@ import type { ApiTour } from '../types/tour-api.types'
 import type { Tour } from '../types/tour.types'
 import { getTour as getStaticTour } from './tour.utils'
 
-// Only live price and featured status overlay the static catalogue.
+// Live prices overlay the static catalogue; featured selection stays curated.
 
 function formatPrice(price: number | null): string | null {
   if (price === null || price === undefined) return null
@@ -15,10 +15,9 @@ function overlayLive(staticTour: Tour, live: ApiTour): Tour {
   const price = formatPrice(live.adultPrice)
   return {
     ...staticTour,
-    // Price/featured overlay only — everything else stays on the static
+    // Price overlay only — everything else stays on the static
     // record so rendering is byte-identical with the frozen UI.
     ...(price ? { from: price } : {}),
-    ...(typeof live.isFeatured === 'boolean' ? { featured: live.isFeatured } : {}),
   }
 }
 

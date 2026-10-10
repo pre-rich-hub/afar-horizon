@@ -10,13 +10,14 @@ export function TourCard({
   sizes?: string
 }) {
   const [kind] = t.style.split(' · ')
+  const priceOnRequest = t.from === 'Price on request'
   return (
     <InfoCard
       href={`/expeditions/${t.slug}`}
       image={t.image}
       imageAlt={t.title}
       badge={kind}
-      eyebrow={`From ${t.from.replace(' per person', '')} per person`}
+      eyebrow={priceOnRequest ? t.from : `From ${t.from.replace(' per person', '')} per person`}
       title={t.title}
       summary={t.teaser}
       facts={[

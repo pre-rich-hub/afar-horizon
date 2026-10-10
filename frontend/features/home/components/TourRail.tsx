@@ -52,7 +52,7 @@ export function TourRail({ tours }: { tours: Tour[] }) {
           </h2>
           <p className="mt-6 text-pretty font-serif text-lg italic leading-relaxed text-secondary-foreground/65">
             Private expeditions we operate ourselves, each with an honest
-            day-by-day route. These are our most requested; there are thirteen in all.
+            day-by-day route. Explore six featured journeys from our seventeen expeditions.
           </p>
         </div>
 

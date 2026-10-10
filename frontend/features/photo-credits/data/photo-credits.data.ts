@@ -2,6 +2,8 @@
 // Each licence requires attribution; CC BY-SA and FAL also require that
 // adapted versions (ours are resized and compressed) keep the same licence.
 export const credits = [
+  { src: '/images/destinations/awash-waterfall.jpg', subject: 'Awash waterfall, Awash National Park', author: 'Jean Rebiffé', license: 'CC BY 2.0', page: 'https://commons.wikimedia.org/wiki/File:Awash_waterfalls,_Ethiopia_(16960503700).jpg' },
+  { src: '/images/destinations/lucy-cast.jpg', subject: 'Museum cast of Lucy, American Museum of Natural History', author: 'Vicpeters', license: 'CC BY 4.0', page: 'https://commons.wikimedia.org/wiki/File:Lucy_cast.jpg' },
   { src: '/images/hero-danakil/dallol-springs.jpg', subject: 'Dallol, Danakil Depression', author: 'A. Savin', license: 'Free Art License', page: 'https://commons.wikimedia.org/wiki/File:ET_Afar_asv2018-01_img48_Dallol.jpg' },
   { src: '/images/hero-danakil/dallol-sulfur.jpg', subject: 'Sulphur springs, Dallol', author: 'A. Savin', license: 'Free Art License', page: 'https://commons.wikimedia.org/wiki/File:ET_Afar_asv2018-01_img36_Dallol.jpg' },
   { src: '/images/hero-danakil/dallol-aerial.jpg', subject: 'Dallol from above', author: 'Thomas Fuhrmann', license: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Ethiopia_-_Dallol.jpg' },

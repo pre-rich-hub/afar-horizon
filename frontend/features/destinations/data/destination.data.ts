@@ -291,6 +291,184 @@ export const destinations: Destination[] = [
     places: ['Lake Afdera'],
   },
 
+  {
+    slug: 'hamed-ela',
+    group: 'danakil',
+    name: 'Hamed Ela',
+    headline: 'A base in the heart of salt country',
+    region: 'Afar Region · Danakil',
+    tag: 'Expedition Base',
+    image: '/images/hero-danakil/salt-cutters.jpg',
+    seoTitle: 'Hamed Ela | Danakil Camp & Expedition Guide',
+    imageAlt: 'A salt cutter shaping blocks on Lake Asale in Afar',
+    seoDescription:
+      'Understand Hamed Ela’s role in a Danakil expedition, basic camp expectations and journeys to Lake Assale and Dallol.',
+    teaser: 'Between the desert crossing and the salt plain, a place to rest and prepare for the next early start.',
+    intro:
+      'Hamed Ela is part of the working landscape of Afar and a base for the salt-country section of a Danakil expedition. Time here connects the journey to Lake Assale and Dallol with the practical realities of travelling in the desert.',
+    bestTime: danakilSeason,
+    duration: '1 – 3 nights within an expedition',
+    altitude: 'Afar lowlands',
+    highlights: [
+      'A base for Lake Assale and Dallol, when accessible',
+      'Early departures into salt country',
+      'Basic expedition camp life',
+      'Understanding the connection between salt, trade and Afar communities',
+    ],
+    paragraphs: [
+      'After the crossing from Erta Ale, Hamed Ela provides a pause before the next stage of the expedition. The rhythm follows the environment: arrive, rest, hydrate and prepare for outings during the cooler hours.',
+      'This is a settlement and a place of work, not a staged cultural attraction. Conversations and photography depend on local activity and consent. Salt workers and caravan movements are never guaranteed features of a departure.',
+    ],
+    sections: [
+      {
+        title: 'What to expect at camp',
+        text: 'Expect basic expedition accommodation rather than hotel comforts. Sleeping arrangements, washing facilities and camp locations are confirmed with your route. Carry your personal essentials and do not assume reliable connectivity or charging facilities.',
+      },
+      {
+        title: 'Planning the salt-country days',
+        text: 'Lake Assale and Dallol visits are planned around heat, current access and local guidance. Longer itineraries leave room for rest and photography rather than treating every stop as a fixed appointment.',
+      },
+    ],
+    note: {
+      title: 'Camp arrangements follow the route',
+      text: 'The overnight location and facilities depend on the confirmed expedition plan. Ask about the arrangements for your dates before departure.',
+    },
+    faqs: [
+      {
+        q: 'Is Hamed Ela a hotel stay?',
+        a: 'Plan for basic camp conditions. Your quotation and pre-departure briefing explain the accommodation and facilities available for your expedition.',
+      },
+      {
+        q: 'Will we see salt caravans?',
+        a: 'Only if activity and timing allow. We observe the salt trade as it happens and do not stage it for visitors.',
+      },
+    ],
+    places: ['Hamed Ela', 'Lake Asale', 'Dallol'],
+  },
+  {
+    slug: 'semera',
+    group: 'danakil',
+    name: 'Semera',
+    headline: 'Prepare for the journey into Afar',
+    region: 'Afar Region',
+    tag: 'Expedition Gateway',
+    image: '/images/hero-danakil/salt-flats.jpg',
+    seoTitle: 'Semera | Afar & Danakil Departure Guide',
+    imageAlt: 'Salt flats in the Danakil Depression, reached on expeditions from Semera',
+    seoDescription:
+      'Plan a Danakil expedition starting in Semera: arrival coordination, preparation, onward travel and the route into Afar.',
+    teaser: 'The meeting point for many Afar journeys, where arrival becomes expedition preparation.',
+    intro:
+      'Semera is the starting and finishing point for most of the Afar Horizon Danakil catalogue. Its role is practical: meet the team, review the route and prepare before travelling toward Lake Afdera, the volcanic landscape and salt country.',
+    bestTime: 'Plan around your expedition dates',
+    duration: 'Arrival and departure, as arranged',
+    altitude: 'Afar lowlands',
+    highlights: [
+      'Arrival coordination before the expedition',
+      'Route and equipment briefing',
+      'Preparation for heat, water and basic camps',
+      'Connections toward Lake Afdera and the Danakil',
+    ],
+    paragraphs: [
+      'Share your arrival details before confirming a departure. Flights, overland connections and accommodation need to fit the expedition schedule; reaching the gateway and beginning the desert route are separate parts of the plan.',
+      'The preparation matters as much as the first viewpoint. Use the briefing to discuss walking, personal equipment, water, photography interests and onward travel. Your confirmed itinerary states where the journey starts and what transfers are included.',
+    ],
+    sections: [
+      {
+        title: 'Arriving from Addis Ababa',
+        text: 'Ask the team to coordinate your proposed arrival with the expedition. Transport availability and connection times are checked for your dates; do not assume a same-day connection or an included flight unless it is stated in your quotation.',
+      },
+      {
+        title: 'Semera or Mekelle?',
+        text: 'The current core catalogue starts from Semera. A highlands connection through Mekelle is a different route choice and depends on access and the wider itinerary. Choose the gateway with the team before arranging your onward travel.',
+      },
+    ],
+    faqs: [
+      {
+        q: 'Do all packages return to Semera?',
+        a: 'The core Danakil expeditions do. Combined highlands journeys can have a different endpoint; check the start and finish shown on your selected package.',
+      },
+      {
+        q: 'Are flights and arrival accommodation included?',
+        a: 'Only when listed in your confirmed quotation. Share your connection plans so that transfers, accommodation and expedition timing can be coordinated.',
+      },
+    ],
+    places: ['Semera'],
+  },
+
+  // Background: EWCA's Awash guide and Visit Ethiopia's Lower Awash guide.
+  {
+    slug: 'awash-national-park',
+    group: 'danakil',
+    name: 'Awash National Park',
+    headline: 'Another landscape at the edge of Afar',
+    region: 'Afar & Oromia',
+    tag: 'Wildlife & Landscape',
+    image: '/images/destinations/awash-waterfall.jpg',
+    imageAlt: 'The Awash River waterfall in Awash National Park, Ethiopia',
+    seoTitle: 'Awash National Park | Wildlife & Afar Travel Guide',
+    seoDescription: 'Explore the wildlife, river landscape and volcanic plains of Awash National Park, with practical guidance for a possible Afar journey extension.',
+    teaser: 'River, savanna and volcanic terrain add a different chapter to an Afar journey.',
+    intro: 'Awash National Park spans Afar and Oromia. The Awash River, acacia woodland and open volcanic plains offer a contrast to the salt and geothermal landscapes of the Danakil.',
+    bestTime: 'September – March; confirm conditions',
+    duration: 'An extension, planned separately',
+    altitude: 'Rift Valley lowlands',
+    highlights: [
+      'The Awash River gorge and waterfall',
+      'Acacia savanna and volcanic plains',
+      'Wildlife observation, with no guaranteed sightings',
+      'Landscape and bird photography',
+    ],
+    paragraphs: [
+      'Oryx, gazelles, kudu and baboons are among the park’s wildlife. Observation depends on local conditions and the animals themselves. Keep a respectful distance and follow park guidance.',
+      'This guide introduces a possible extension rather than adding a park stop to every Danakil package. Discuss the extra travel time, accommodation and transport before combining the two areas.',
+    ],
+    sections: [
+      { title: 'Plan an extension separately', text: 'Existing Danakil packages do not include Awash National Park. A visit requires a separate confirmed route and quotation, with park access and overnight arrangements checked for your dates.' },
+    ],
+    note: { title: 'A guide, not a guaranteed departure', text: 'Ask the team whether an Awash extension can be arranged for your journey before making onward bookings.' },
+    faqs: [
+      { q: 'Is Awash included in the published Danakil expeditions?', a: 'No. Treat it as a separate extension to discuss when planning your wider trip.' },
+    ],
+    places: ['Awash National Park'],
+  },
+  {
+    slug: 'hadar',
+    group: 'danakil',
+    name: 'Hadar & the Lower Awash Valley',
+    headline: 'Afar’s place in the story of human origins',
+    region: 'Afar Region',
+    tag: 'Human Origins',
+    image: '/images/destinations/lucy-cast.jpg',
+    imageAlt: 'A cast of Lucy’s skeleton at the American Museum of Natural History',
+    seoTitle: 'Hadar & Lower Awash Valley | Afar Human Origins Guide',
+    seoDescription: 'Learn about Hadar, the discovery of Lucy and the Lower Awash Valley, with clear guidance on discussing a possible specialist visit.',
+    teaser: 'Beyond volcanoes and salt, Afar holds evidence of a much older human story.',
+    intro: 'Hadar is associated with the 1974 discovery of Lucy, a partial Australopithecus afarensis skeleton dated to around 3.2 million years ago. It brings a human-origins perspective to the landscapes of Afar.',
+    bestTime: 'Subject to specialist access arrangements',
+    duration: 'A specialist visit, if confirmed',
+    altitude: 'Lower Awash Valley',
+    highlights: [
+      'The discovery of Lucy and its significance',
+      'Understanding a fossil-bearing landscape',
+      'The relationship between geology and human origins',
+      'Responsible planning for a specialist heritage visit',
+    ],
+    paragraphs: [
+      'The Lower Awash Valley is a place to understand through context and careful interpretation. Its importance is not a promise of finding fossils on a walk or seeing original specimens in the field.',
+      'The photograph accompanying this guide shows a museum cast of Lucy, not the original fossil or an exhibit at Hadar. This is a knowledge guide; a field visit requires separate confirmation of access, local arrangements and a suitable itinerary.',
+    ],
+    sections: [
+      { title: 'Discuss the purpose of a visit', text: 'Tell the team whether your interest is general history, geology or specialist study. A research or heritage site should not be treated as an ordinary sightseeing stop, and no visit is included in the current published packages.' },
+    ],
+    note: { title: 'Visitor access must be confirmed', text: 'Do not assume unrestricted access or a scheduled tour. A visit is considered only after the necessary local arrangements have been checked.' },
+    faqs: [
+      { q: 'Will I see Lucy’s original skeleton at Hadar?', a: 'This guide concerns the discovery landscape. It does not promise access to original specimens or a museum display at the site.' },
+      { q: 'Can Hadar be added to a Danakil package?', a: 'Ask about a separately planned specialist visit. Access, timing and logistics must be confirmed before it can form part of your itinerary.' },
+    ],
+    places: ['Hadar', 'Lower Awash Valley'],
+  },
+
   // ── The Northern Highlands ────────────────────────────────────────────
   {
     slug: 'gheralta',
@@ -464,6 +642,132 @@ export const destinations: Destination[] = [
       'Fasilides’ Bath is a sunken royal pool that is filled every year for Timkat, Ethiopian Epiphany, on 19 January (20 January in leap years), when the city gathers for the blessing of the waters. The most memorable moments often happen away from the monuments: a coffee ceremony, a meal, a walk through town.',
     ],
     places: ['Gondar'],
+  },
+
+  {
+    slug: 'mekelle',
+    group: 'highlands',
+    name: 'Mekelle',
+    headline: 'Plan the connection between highlands and lowlands',
+    region: 'Tigray',
+    tag: 'Highlands Gateway',
+    image: '/images/destinations/gheralta-cliffs.jpg',
+    seoTitle: 'Mekelle | Highlands & Danakil Gateway Guide',
+    imageAlt: 'Gheralta cliffs in the northern highlands, part of proposed journeys through Mekelle',
+    seoDescription:
+      'Understand Mekelle’s role in proposed highlands-to-Afar journeys and how to plan a gateway connection with current access checks.',
+    teaser: 'A highlands gateway to consider when connecting Gheralta, Axum and the journey into Afar.',
+    intro:
+      'Mekelle, also written Mekele, appears in proposed journeys connecting the northern highlands with Afar. It belongs in the planning conversation for those routes, rather than being treated as an interchangeable departure point for every Danakil package.',
+    bestTime: 'Subject to access and your wider route',
+    duration: 'A gateway stop, as arranged',
+    altitude: 'Northern highlands',
+    highlights: [
+      'Planning the transition from the highlands toward Afar',
+      'Connections with Gheralta and Axum itineraries',
+      'Comparing a highlands start with the Semera catalogue',
+      'Coordinating arrival and onward travel around the confirmed route',
+    ],
+    paragraphs: [
+      'A journey from the highlands into Afar tells a different story from a Semera round trip. Mountain landscapes, history and the descent toward the lowlands become part of the expedition, with additional time needed for the connections.',
+      'The proposed Mekelle-to-Semera and Axum-to-Afar journeys remain conditions-dependent concepts. This guide helps explain the route choice; it does not announce a scheduled departure or guarantee that a connection is currently available.',
+    ],
+    sections: [
+      {
+        title: 'Choosing the right gateway',
+        text: 'For the published core Danakil packages, use the stated Semera start and finish. If your wider journey includes the highlands, discuss Mekelle with the team before booking connections or assuming that a package can simply be reversed.',
+      },
+      {
+        title: 'Confirm the whole journey',
+        text: 'Arrival transport, road access, accommodation and onward connections need to work together. These are checked for your proposed dates before a highlands-to-Afar itinerary is confirmed.',
+      },
+    ],
+    note: {
+      title: 'A conditions-dependent connection',
+      text: 'Mekelle is in Tigray. Routes through the region require current operational checks; this page does not confirm travel availability.',
+    },
+    faqs: [
+      {
+        q: 'Can I start a published Danakil package in Mekelle?',
+        a: 'The current core packages start in Semera. Ask about a tailored highlands connection; its feasibility and itinerary must be confirmed separately.',
+      },
+      {
+        q: 'Is the Mountain to Horizon expedition available here?',
+        a: 'It is a proposed, conditions-dependent route rather than a confirmed catalogue departure. Discuss your dates and interests with the team.',
+      },
+    ],
+    places: ['Mekelle', 'Mekele'],
+  },
+  // Background: Visit Ethiopia's Lake Tana and Bahir Dar destination guide.
+  {
+    slug: 'bahir-dar',
+    group: 'highlands',
+    name: 'Bahir Dar',
+    headline: 'A lakeside base for the northern journey',
+    region: 'Amhara · Lake Tana',
+    tag: 'Lakeside Gateway',
+    image: '/images/lake-tana.png',
+    imageAlt: 'Lake Tana, explored from the lakeside city of Bahir Dar',
+    seoTitle: 'Bahir Dar | Lake Tana & Northern Ethiopia Guide',
+    seoDescription: 'Plan time in Bahir Dar, the gateway to Lake Tana, with guidance on lake visits and its place in Northern Ethiopia itineraries.',
+    teaser: 'Lake journeys, a city pause and onward connections through the historic north.',
+    intro: 'Bahir Dar is a base for exploring Lake Tana and a stop in the Northern Ethiopia catalogue. It offers a change of pace between travel days, with the lake shaping the experience.',
+    bestTime: highlandSeason,
+    duration: '1 – 2 nights within a northern itinerary',
+    altitude: 'Northern highlands',
+    highlights: [
+      'Lake Tana boat journeys',
+      'Monastery visits where accessible',
+      'Time around the city and its market',
+      'Onward connections toward Gondar',
+    ],
+    paragraphs: [
+      'Bahir Dar provides the practical base; Lake Tana provides the lake and monastery experience. The two guides complement each other without assuming that every stay follows the same programme.',
+      'The existing northern packages begin their lake chapter here. The Afar-led Grand Northern Ethiopia Expedition approaches from the opposite direction and finishes in Bahir Dar.',
+    ],
+    sections: [
+      { title: 'Coordinate arrival and onward travel', text: 'Connections, transfers and overnight stays should fit your confirmed itinerary. Ask which flights and ground transfers are included before booking your onward journey.' },
+      { title: 'Allow time for the lake', text: 'A lake outing needs its own schedule. The boat route, monastery visits and any Blue Nile excursion are confirmed according to available time and conditions.' },
+    ],
+    faqs: [
+      { q: 'Is Bahir Dar a separate trip or part of a longer journey?', a: 'The current catalogue includes it within northern itineraries. Ask about tailoring the time here to your arrival and onward plans.' },
+    ],
+    places: ['Bahir Dar', 'Lake Tana'],
+  },
+  {
+    slug: 'lake-tana',
+    group: 'highlands',
+    name: 'Lake Tana',
+    headline: 'A journey across water and living heritage',
+    region: 'Amhara · Bahir Dar',
+    tag: 'Lake & Monasteries',
+    image: '/images/lake-tana.png',
+    imageAlt: 'Lake Tana in Ethiopia’s northern highlands',
+    seoTitle: 'Lake Tana | Monasteries & Northern Ethiopia Journeys',
+    seoDescription: 'Discover Lake Tana through boat journeys and monastery visits from Bahir Dar, as part of a tailored Northern Ethiopia itinerary.',
+    teaser: 'A lake chapter of the historic north, approached by boat from Bahir Dar.',
+    intro: 'Lake Tana is the source of the Blue Nile and is known for monasteries on its islands and peninsulas. A boat journey from Bahir Dar connects the landscape with religious heritage.',
+    bestTime: highlandSeason,
+    duration: 'A lake day within a northern itinerary',
+    altitude: 'Northern highlands',
+    highlights: [
+      'Boat journeys from Bahir Dar',
+      'Selected island and peninsula monasteries',
+      'Religious art and historical interpretation',
+      'Lake landscapes and bird observation',
+    ],
+    paragraphs: [
+      'Lake visits are planned around the time available, boat conditions and the monasteries open to visitors. A shorter outing and a full lake day offer different possibilities; your confirmed itinerary identifies the intended route.',
+      'Monasteries are places of worship. Follow local instructions on dress, access and photography, and allow the guide to explain the setting rather than treating the visit as a series of photo stops.',
+    ],
+    sections: [
+      { title: 'Choose the lake itinerary with your guide', text: 'Do not assume that every island or monastery is included. Discuss walking, boat travel and any visitor restrictions when the lake day is planned.' },
+    ],
+    faqs: [
+      { q: 'Are boat trips included in every northern package?', a: 'Check the day-by-day itinerary and confirmed quotation. The boat route and visits are agreed for your departure.' },
+      { q: 'Is a Blue Nile Falls visit the same as a lake trip?', a: 'No. It is a separate excursion whose timing and inclusion must be confirmed in your itinerary.' },
+    ],
+    places: ['Lake Tana'],
   },
 
   // ── Hub ───────────────────────────────────────────────────────────────

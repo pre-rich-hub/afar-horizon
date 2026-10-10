@@ -7,6 +7,7 @@ export type Destination = {
   region: string
   tag: string
   image: string
+  imageAlt?: string
   teaser: string
   intro: string
   bestTime: string

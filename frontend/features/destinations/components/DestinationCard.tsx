@@ -17,7 +17,7 @@ export function DestinationInfoCard({
     <InfoCard
       href={`/destinations/${d.slug}`}
       image={d.image}
-      imageAlt={`${d.name}, Ethiopia`}
+      imageAlt={d.imageAlt ?? `${d.name}, Ethiopia`}
       badge={d.tag}
       eyebrow={d.region}
       title={d.name}
@@ -54,7 +54,7 @@ export function DestinationFeatureCard({
     >
       <Image
         src={d.image || '/placeholder.svg'}
-        alt={`${d.name}, Ethiopia`}
+        alt={d.imageAlt ?? `${d.name}, Ethiopia`}
         fill
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
         className="object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-[1.06]"

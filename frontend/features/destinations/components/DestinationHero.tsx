@@ -8,7 +8,7 @@ export function DestinationHero({ d }: { d: Destination }) {
         title={d.name}
         lede={d.headline ? `${d.headline}.` : d.intro}
         image={d.image}
-        imageAlt={`${d.name}, Ethiopia`}
+        imageAlt={d.imageAlt ?? `${d.name}, Ethiopia`}
         crumbs={[
           { label: 'Home', href: '/' },
           { label: 'Destinations', href: '/destinations' },
