@@ -1,33 +1,33 @@
-
+import { destinationImageBase } from '@/lib/config/cloudinary'
 export const shots = [
   {
-    src: '/images/lalibela.png',
+    src: `${destinationImageBase}/lalibela.png`,
     location: 'Lalibela',
-    description: 'Sunlight falling into the rock cut Bete Maryam church.',
+    description: 'Rock-hewn churches and living traditions in the northern highlands.',
   },
   {
-    src: '/images/hero-simien.png',
+    src: `${destinationImageBase}/simien-mountains.png`,
     location: 'Simien Mountains',
-    description: 'Gelada troops foraging along the vertical basalt rim.',
+    description: 'Highland escarpments and walking routes above the clouds.',
   },
   {
-    src: '/images/danakil.png',
+    src: `${destinationImageBase}/danakil-depression.png`,
     location: 'Danakil Depression',
-    description: 'Acid deposits and salt pans 100 meters below sea level.',
+    description: 'Volcanic landscapes and salt country in the Afar Triangle.',
   },
   {
-    src: '/images/hero-danakil/salt-cutters.jpg',
+    src: `${destinationImageBase}/lake-assale.png`,
     location: 'Lake Assale',
-    description: 'Salt cut into blocks by hand, as it has been for generations.',
+    description: 'Salt plains shaped by generations of work in the Danakil.',
   },
   {
-    src: '/images/festival-timkat.png',
+    src: `${destinationImageBase}/gondar.png`,
     location: 'Gondar',
-    description: 'White-robed processional crowds around Fasilides’ Pool.',
+    description: 'Royal heritage and historic landmarks in northern Ethiopia.',
   },
   {
-    src: '/images/lake-tana.png',
+    src: `${destinationImageBase}/lake-tana.png`,
     location: 'Lake Tana',
-    description: 'Parchment gospels preserved on thatched island sanctuaries.',
+    description: 'Lake journeys and island monasteries near Bahir Dar.',
   },
 ]
