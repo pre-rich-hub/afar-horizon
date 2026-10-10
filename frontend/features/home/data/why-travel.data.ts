@@ -1,11 +1,12 @@
 import { promises } from '@/lib/constants/company'
+import { destinationImageBase } from '@/lib/config/cloudinary'
 
 export const promiseImages = [
-  { image: '/images/addis-skyline.png', alt: 'Addis Ababa at dusk from the Entoto hills' },
-  { image: '/images/hero-danakil/dallol-aerial.jpg', alt: 'Hydrothermal fields at Dallol seen from above' },
-  { image: '/images/coffee-ceremony.png', alt: 'Coffee poured from a jebena during a coffee ceremony' },
-  { image: '/images/hero-danakil/salt-flats.jpg', alt: 'Salt crust stretching to the horizon in the Danakil' },
-  { image: '/images/hero-simien.png', alt: 'Mist rolling through the Simien Mountains at sunrise' },
+  { image: `${destinationImageBase}/afar.png`, alt: 'Afar region, Ethiopia' },
+  { image: `${destinationImageBase}/dallol.png`, alt: 'Dallol in the Danakil Depression' },
+  { image: `${destinationImageBase}/gheralta.png`, alt: 'Gheralta in the northern Ethiopian highlands' },
+  { image: `${destinationImageBase}/hamed-ela.png`, alt: 'Hamed Ela in the Danakil Depression' },
+  { image: `${destinationImageBase}/simien-mountains.png`, alt: 'Simien Mountains, Ethiopia' },
 ]
 
 export const slides = promises.map((p, i) => ({ ...p, ...promiseImages[i % promiseImages.length] }))
