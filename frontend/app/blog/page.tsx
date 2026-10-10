@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'The Journal',
   description:
-    'Planning guidance, destination essays and dispatches from the designers and guides who run our Ethiopian journeys.',
+    'Afar and Danakil travel guides: when to visit, what to pack, Erta Ale, Dallol and the salt lakes, alongside culture and northern Ethiopia journeys.',
 }
 
 export default function BlogPage() {

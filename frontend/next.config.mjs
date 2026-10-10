@@ -20,6 +20,7 @@ const nextConfig = {
       { source: '/tours', destination: '/expeditions', permanent: true },
       { source: '/tours/danakil-expedition', destination: '/expeditions/danakil-deep', permanent: true },
       { source: '/tours/:slug', destination: '/expeditions', permanent: true },
+      { source: '/blog/responsible-travel-in-the-omo', destination: '/blog/responsible-travel-in-afar', permanent: true },
     ]
   },
   async rewrites() {
