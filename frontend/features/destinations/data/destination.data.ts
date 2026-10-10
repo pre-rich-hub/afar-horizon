@@ -1,3 +1,4 @@
+import { destinationImageBase } from '@/lib/config/cloudinary'
 import type { Destination, DestinationGroup } from '../types/destination.types'
 
 // The destination library: the client's destination copy (Oct 2026),
@@ -21,8 +22,6 @@ export const destinationGroups: { id: DestinationGroup; title: string; text: str
     text: 'One region, many worlds, connected by the roads between them.',
   },
 ]
-
-const destinationImageBase = 'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803'
 
 const danakilSeason = 'Nov – Jan'
 const highlandSeason = 'Oct – Mar'
