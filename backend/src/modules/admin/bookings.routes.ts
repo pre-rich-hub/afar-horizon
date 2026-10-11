@@ -1,5 +1,6 @@
 import { Router } from "express";
 import type { Router as RouterType } from "express";
+import { waitUntil } from "@vercel/functions";
 import { z } from "zod";
 import { prisma } from "../../config/database.js";
 import { logger } from "../../config/pino.js";
@@ -28,14 +29,18 @@ export async function updateBookingStatus(
     include: { tour: true },
   });
 
-  sendBookingStatusEmail({
-    email: booking.email,
-    fullName: booking.fullName,
-    tourName: booking.tour?.tourName ?? "Tour",
-    bookingId: booking.id,
-    chosenDate: booking.chosenDate.toISOString().slice(0, 10),
-    status,
-  }).catch((err) => logger.error({ err }, "Booking status email failed"));
+  // waitUntil keeps the serverless function alive until the send resolves;
+  // a mail outage is logged, never surfaced to the caller.
+  waitUntil(
+    sendBookingStatusEmail({
+      email: booking.email,
+      fullName: booking.fullName,
+      tourName: booking.tour?.tourName ?? "Tour",
+      bookingId: booking.id,
+      chosenDate: booking.chosenDate.toISOString().slice(0, 10),
+      status,
+    }).catch((err) => logger.error({ err }, "Booking status email failed")),
+  );
 
   return booking;
 }

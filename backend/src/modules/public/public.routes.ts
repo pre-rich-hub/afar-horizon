@@ -1,5 +1,6 @@
 import { Router } from "express";
 import type { Router as RouterType } from "express";
+import { waitUntil } from "@vercel/functions";
 import { prisma } from "../../config/database.js";
 import { asyncHandler } from "../../utils/async-handler.js";
 import { ok } from "../../utils/api-response.js";
@@ -61,14 +62,18 @@ publicRouter.post(
       select: { id: true },
     });
 
-    // Fire and forget: a mail outage must not fail a submission that is
-    // already safely written. The error is logged, not swallowed.
-    sendContactAdminEmail({ name, email, message }).catch((error) => {
-      console.error("Contact notification email failed", {
-        contactId: contact.id,
-        error: error instanceof Error ? error.message : String(error),
-      });
-    });
+    // Fire and forget, kept alive by waitUntil so Vercel does not freeze the
+    // function before the SMTP conversation finishes. A mail outage must not
+    // fail a submission that is already safely written; the error is logged,
+    // not swallowed.
+    waitUntil(
+      sendContactAdminEmail({ name, email, message }).catch((error) => {
+        console.error("Contact notification email failed", {
+          contactId: contact.id,
+          error: error instanceof Error ? error.message : String(error),
+        });
+      }),
+    );
 
     return ok(res, "Enquiry submitted successfully", { id: contact.id }, 201);
   }),
