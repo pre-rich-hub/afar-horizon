@@ -28,7 +28,7 @@ import Link from '@/components/common/SiteLink'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { languages, localePath, splitLocalePath } from '@/lib/i18n/locales'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useId, useRef, useState } from 'react'
 
 // Cards shown in the desktop dropdowns: the signature expeditions and one
 // destination from each part of the north.
@@ -92,6 +92,7 @@ export function SiteNav({paths = []}: {paths?: readonly string[]}) {
   const [urlSuffix, setUrlSuffix] = useState('')
   const lang = languages.find(language => language.locale === locale) ?? languages[0]
   const langRef = useRef<HTMLDivElement>(null)
+  const languageListId = useId()
 
   useEffect(() => {
     const update = () => setUrlSuffix(window.location.search + window.location.hash)
@@ -122,6 +123,9 @@ export function SiteNav({paths = []}: {paths?: readonly string[]}) {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
+        if (langRef.current?.contains(document.activeElement)) {
+          langRef.current.querySelector('button')?.focus()
+        }
         setOpen(false)
         setLangOpen(false)
       }
@@ -426,7 +430,7 @@ export function SiteNav({paths = []}: {paths?: readonly string[]}) {
             <div ref={langRef} className="relative">
               <button
                 aria-label={tr('changeLanguage')}
-                aria-haspopup="listbox"
+                aria-controls={languageListId}
                 aria-expanded={langOpen}
                 onClick={() => setLangOpen((v) => !v)}
                 className={cn(
@@ -449,7 +453,9 @@ export function SiteNav({paths = []}: {paths?: readonly string[]}) {
               </button>
 
               <ul
-                role="listbox"
+                id={languageListId}
+                inert={!langOpen}
+                aria-hidden={!langOpen}
                 aria-label={tr('language')}
                 className={cn(
                   'absolute right-0 top-12 w-44 overflow-hidden rounded-sm border border-border bg-popover shadow-xl transition-all duration-200',
@@ -459,12 +465,11 @@ export function SiteNav({paths = []}: {paths?: readonly string[]}) {
                 )}
               >
                 {languages.map((l) => (
-                  <li key={l.code}>
+                  <li key={l.locale}>
                     <a
                       translate="no"
                       data-locale-link
-                      role="option"
-                      aria-selected={l.code === lang.code}
+                      aria-current={l.code === lang.code ? 'page' : undefined}
                       href={localePath(paths.includes(pathname) ? pathname : '/', l.locale) + urlSuffix}
                       onClick={() => {
                         setLangOpen(false)
