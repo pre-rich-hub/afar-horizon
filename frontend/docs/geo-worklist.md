@@ -1,6 +1,6 @@
 # GEO worklist for Afar Horizon
 
-Prepared 11 October 2026. Separate follow-up to the English SEO phases; no AI-visibility outcome has been measured or promised. Phase 6 launch dependencies remain open.
+Updated 11 October 2026. The initial English answer improvements and four-language drafts are implemented locally. Live English homepage indexing directives, robots and the 58-URL sitemap have been checked. Search Console verification, client review and visibility measurement remain pending. See [the implementation record](../../geo.md) and [manual visibility sheet](geo-visibility.csv). No AI-visibility outcome has been measured or promised.
 
 Google's AI Search guidance retains ordinary SEO foundations: accessible pages, useful textual content, internal links, suitable images and schema consistent with visible information. It does not require an additional AI-specific file or schema. This guidance concerns Google Search; it is not a guarantee about other answer engines. [Google AI features guidance](https://developers.google.com/search/docs/appearance/ai-features).
 

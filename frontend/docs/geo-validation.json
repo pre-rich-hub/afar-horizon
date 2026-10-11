@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-11",
+  "pages": [
+    {
+      "path": "/faq",
+      "faqQuestions": 26,
+      "schemaMatchesVisible": true
+    },
+    {
+      "path": "/blog/when-to-visit-ethiopia",
+      "answerVisible": true
+    },
+    {
+      "path": "/blog/packing-for-the-highlands",
+      "answerVisible": true
+    },
+    {
+      "path": "/blog/erta-ale-what-to-expect",
+      "answerVisible": true
+    },
+    {
+      "path": "/blog/semera-danakil-expedition-planning",
+      "answerVisible": true
+    },
+    {
+      "path": "/fr/faq",
+      "faqQuestions": 26,
+      "schemaMatchesVisible": true
+    },
+    {
+      "path": "/fr/blog/when-to-visit-ethiopia",
+      "answerVisible": true
+    },
+    {
+      "path": "/fr/blog/packing-for-the-highlands",
+      "answerVisible": true
+    },
+    {
+      "path": "/fr/blog/erta-ale-what-to-expect",
+      "answerVisible": true
+    },
+    {
+      "path": "/fr/blog/semera-danakil-expedition-planning",
+      "answerVisible": true
+    },
+    {
+      "path": "/es/faq",
+      "faqQuestions": 26,
+      "schemaMatchesVisible": true
+    },
+    {
+      "path": "/es/blog/when-to-visit-ethiopia",
+      "answerVisible": true
+    },
+    {
+      "path": "/es/blog/packing-for-the-highlands",
+      "answerVisible": true
+    },
+    {
+      "path": "/es/blog/erta-ale-what-to-expect",
+      "answerVisible": true
+    },
+    {
+      "path": "/es/blog/semera-danakil-expedition-planning",
+      "answerVisible": true
+    },
+    {
+      "path": "/de/faq",
+      "faqQuestions": 26,
+      "schemaMatchesVisible": true
+    },
+    {
+      "path": "/de/blog/when-to-visit-ethiopia",
+      "answerVisible": true
+    },
+    {
+      "path": "/de/blog/packing-for-the-highlands",
+      "answerVisible": true
+    },
+    {
+      "path": "/de/blog/erta-ale-what-to-expect",
+      "answerVisible": true
+    },
+    {
+      "path": "/de/blog/semera-danakil-expedition-planning",
+      "answerVisible": true
+    },
+    {
+      "path": "/zh-Hans/faq",
+      "faqQuestions": 26,
+      "schemaMatchesVisible": true
+    },
+    {
+      "path": "/zh-Hans/blog/when-to-visit-ethiopia",
+      "answerVisible": true
+    },
+    {
+      "path": "/zh-Hans/blog/packing-for-the-highlands",
+      "answerVisible": true
+    },
+    {
+      "path": "/zh-Hans/blog/erta-ale-what-to-expect",
+      "answerVisible": true
+    },
+    {
+      "path": "/zh-Hans/blog/semera-danakil-expedition-planning",
+      "answerVisible": true
+    }
+  ],
+  "liveBaseline": {
+    "homepageRobots": "index, follow",
+    "blockingHeader": false,
+    "sitemapURLs": 58
+  },
+  "visibilityMeasured": false
+}

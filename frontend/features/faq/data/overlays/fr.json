@@ -83,7 +83,7 @@
         },
         "3": {
           "q": "À quel point l'Erta Ale est-elle physiquement exigeante ?",
-          "a": "L'approche dure environ 10 km à pied sur un sol volcanique inégal et exposé, chronométrée pour les heures les plus fraîches. Ce n'est pas technique, mais vous avez besoin d'une forme physique raisonnable."
+          "a": "Erta Ale comporte un terrain volcanique inégal et exposé. La distance de marche, les horaires et la zone d’observation dépendent de l’itinéraire confirmé et des consignes locales. Renseignez-vous sur les exigences de votre départ et signalez toute difficulté de mobilité ou de condition physique avant de réserver."
         },
         "4": {
           "q": "Que dois-je emporter pour le Danakil ?",
@@ -92,6 +92,18 @@
         "5": {
           "q": "Puis-je combiner le Danakil avec Gheralta, Axum ou le Simien ?",
           "a": "Oui, lorsque l'itinéraire est opérationnellement possible. Nos expéditions de 9 et 10 jours combinent le Danakil avec Axum et Gheralta, et nous pouvons construire d'autres combinaisons sur demande."
+        },
+        "6": {
+          "q": "D’où partent les expéditions Danakil d’Afar Horizon ?",
+          "a": "La plupart de nos principaux forfaits en Afar et dans le Danakil partent de Semera. Confirmez les points de départ et d’arrivée dans votre devis avant de réserver vos vols ou la suite du voyage ; les voyages combinés peuvent se terminer dans les hauts plateaux du nord."
+        },
+        "7": {
+          "q": "Comment choisir entre un séjour court et un séjour plus long dans le Danakil ?",
+          "a": "Danakil Essentials est notre itinéraire de trois jours couvrant Erta Ale, la plaine salée du lac Asale et Dallol. Danakil Deep parcourt ces paysages principaux en quatre jours avec davantage de repos. Les itinéraires plus longs peuvent offrir plus de temps pour la photographie, le lac Afdera et les explications du guide. Vérifiez le programme quotidien et les conditions d’accès avant de choisir."
+        },
+        "8": {
+          "q": "Quand planifier une expédition en Afar et dans le Danakil ?",
+          "a": "Notre catalogue recommande la période de novembre à janvier. L’Afar reste chaud, même pendant les mois les plus frais. Confirmez les conditions d’exploitation pour vos dates ; une recommandation saisonnière n’est pas une confirmation de départ."
         }
       }
     },

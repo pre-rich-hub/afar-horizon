@@ -83,7 +83,7 @@
         },
         "3": {
           "q": "¿Qué exigencia física es Erta Ale?",
-          "a": "La aproximación es de aproximadamente 10 km a pie a través de terreno volcánico expuesto e irregular, programado para las horas más frías. No es técnico, pero necesitas una buena forma física."
+          "a": "Erta Ale presenta terreno volcánico irregular y expuesto. La distancia a pie, los horarios y la zona de observación dependen de la ruta confirmada y las indicaciones locales. Pregunta por las exigencias de tu salida y comenta cualquier limitación de movilidad o condición física antes de reservar."
         },
         "4": {
           "q": "¿Qué debo llevar en la maleta para el Danakil?",
@@ -92,6 +92,18 @@
         "5": {
           "q": "¿Puedo combinar el Danakil con Gheralta, Axum o el Simien?",
           "a": "Sí, cuando la ruta sea operativamente posible. Nuestras expediciones de 9 y 10 días combinan Danakil con Axum y Gheralta, y podemos crear otras combinaciones a pedido."
+        },
+        "6": {
+          "q": "¿Desde dónde parten las expediciones al Danakil de Afar Horizon?",
+          "a": "La mayoría de nuestros principales paquetes de Afar y el Danakil salen de Semera. Confirma los puntos de inicio y final en tu presupuesto antes de reservar vuelos o conexiones; los viajes combinados pueden terminar en las tierras altas del norte."
+        },
+        "7": {
+          "q": "¿Cómo elegir entre un viaje corto y uno más largo al Danakil?",
+          "a": "Danakil Essentials es nuestra ruta de tres días que incluye Erta Ale, la llanura salina del lago Asale y Dallol. Danakil Deep recorre estos paisajes principales en cuatro días con más descanso. Las rutas más largas pueden ofrecer más tiempo para fotografía, el lago Afdera y explicaciones del guía. Consulta el itinerario diario y el acceso actual antes de elegir."
+        },
+        "8": {
+          "q": "¿Cuándo planificar una expedición a Afar y el Danakil?",
+          "a": "Nuestro catálogo recomienda de noviembre a enero como periodo preferido. Afar sigue siendo caluroso, incluso en los meses más frescos. Confirma las condiciones operativas para tus fechas; una recomendación estacional no confirma una salida."
         }
       }
     },

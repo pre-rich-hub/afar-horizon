@@ -83,7 +83,7 @@
         },
         "3": {
           "q": "Wie körperlich anstrengend ist Erta Ale?",
-          "a": "Der Zustieg erfolgt etwa 10 km zu Fuß über unebenes, exponiertes Vulkangelände, zeitlich auf die kühleren Stunden abgestimmt. Es ist nicht technisch, aber man braucht eine angemessene Fitness."
+          "a": "Am Erta Ale erwartet Sie unebenes, exponiertes vulkanisches Gelände. Gehstrecke, Zeitplan und Beobachtungsbereich hängen von der bestätigten Route und örtlichen Vorgaben ab. Erkundigen Sie sich nach den Anforderungen Ihrer Reise und besprechen Sie Einschränkungen der Mobilität oder Fitness vor der Buchung."
         },
         "4": {
           "q": "Was soll ich für den Danakil einpacken?",
@@ -92,6 +92,18 @@
         "5": {
           "q": "Kann ich das Danakil mit Gheralta, Axum oder dem Simien kombinieren?",
           "a": "Ja, wenn die Route betriebsbereit ist. Unsere 9- und 10-tägigen Expeditionen kombinieren Danakil mit Axum und Gheralta. Auf Anfrage können wir auch andere Kombinationen zusammenstellen."
+        },
+        "6": {
+          "q": "Wo beginnen die Danakil-Expeditionen von Afar Horizon?",
+          "a": "Die meisten unserer Kernreisen nach Afar und in die Danakil beginnen in Semera. Bestätigen Sie Start- und Endpunkt im Angebot, bevor Sie Flüge oder Weiterreisen buchen; kombinierte Reisen können im nördlichen Hochland enden."
+        },
+        "7": {
+          "q": "Wie wähle ich zwischen einer kurzen und einer längeren Danakil-Reise?",
+          "a": "Danakil Essentials ist unsere dreitägige Route mit Erta Ale, der Salzebene am Asale-See und Dallol. Danakil Deep besucht diese Hauptlandschaften an vier Tagen mit mehr Ruhezeit. Längere Routen können mehr Zeit für Fotografie, den Afdera-See und Erläuterungen bieten. Prüfen Sie den Tagesablauf und die aktuelle Zugänglichkeit, bevor Sie wählen."
+        },
+        "8": {
+          "q": "Wann sollte ich eine Expedition nach Afar und in die Danakil planen?",
+          "a": "Unser Katalog empfiehlt November bis Januar als bevorzugten Planungszeitraum. Afar bleibt auch in den kühleren Monaten heiß. Bestätigen Sie die Betriebsbedingungen für Ihre Termine; eine saisonale Empfehlung bestätigt noch keinen Reisetermin."
         }
       }
     },

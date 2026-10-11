@@ -16,7 +16,7 @@ export const posts: Post[] = [
     "excerpt": "Timing an Afar expedition means planning around heat, daylight and the confirmed route. Start with the cooler season, then build the rest of your Ethiopian journey around it.",
     "body": [
       {
-        "text": "If the Danakil is the reason you are coming to Ethiopia, choose your dates around Afar first. A comfortable month in the northern highlands does not automatically make it a comfortable month on the salt plain. The two landscapes need different plans, particularly when they share one itinerary.",
+        "text": "November to January is the preferred planning window in our catalogue for Afar and the Danakil Depression. The lowlands remain hot even then. Confirm your dates and route with the team before booking connections, and allow for early starts, rest and changing access conditions.",
         "links": [
           {
             "text": "Danakil",
@@ -84,7 +84,7 @@ export const posts: Post[] = [
     "excerpt": "Prepare for heat, uneven ground and basic camps in Afar, with a separate layer of clothing if your journey continues into the northern highlands.",
     "body": [
       {
-        "text": "Pack for the journey you have booked, rather than for an imagined resort stay. The core Danakil route involves road travel, exposed landscapes, walks and basic expedition camps. A bag that is easy to organise is more useful than a large suitcase full of things you cannot comfortably carry or find after dark."
+        "text": "For an Afar and Danakil expedition, pack lightweight covering clothes, a sun hat, sturdy walking shoes, a headlamp, a reusable water bottle, a power bank and your usual personal essentials. Protect electronics from dust, add a warm layer for a highland extension, and confirm which camp equipment your package supplies."
       },
       {
         "heading": "Clothing and footwear for volcanic ground",
@@ -268,7 +268,7 @@ export const posts: Post[] = [
     "excerpt": "The approach, the camp and the changing volcano all shape an Erta Ale visit. Plan for the experience without expecting a guaranteed lava display.",
     "body": [
       {
-        "text": "Erta Ale is a volcano visit within a remote expedition, not a roadside lookout. The journey includes preparation, travel through Afar and an approach across volcanic terrain. Understanding those parts before you book is more useful than judging the entire trip by a single dramatic image of the crater.",
+        "text": "An Erta Ale visit involves travel through Afar, volcanic terrain and viewing arrangements confirmed for your route. A visible lava lake or particular eruption is not guaranteed. Ask about recent observations, walking distance, timing and camp facilities before choosing your expedition.",
         "links": [
           {
             "text": "Erta Ale",
@@ -394,7 +394,7 @@ export const posts: Post[] = [
     "excerpt": "Coordinate your arrival, choose a realistic pace and understand the camp arrangements before setting out from the gateway to Afar.",
     "body": [
       {
-        "text": "Semera is the starting point for most of our core Afar and Danakil packages. Its role is practical: meet the expedition team, review the route and make sure arrival arrangements fit the first stage of the journey. Treat that preparation as part of the trip rather than a gap before the scenery begins.",
+        "text": "Semera is the starting point for most of our core Afar and Danakil packages. Share your arrival date, number of travellers and preferred pace before choosing a route. Confirm the start and finish points, transfers and overnight stays in your quotation; a combined highland journey may finish elsewhere.",
         "links": [
           {
             "text": "Semera",

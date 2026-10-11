@@ -85,7 +85,7 @@ export const faqGroups: { title: string; items: { q: string; a: string }[] }[] =
       },
       {
         q: 'How physically demanding is Erta Ale?',
-        a: 'The approach is roughly 10 km on foot across uneven, exposed volcanic ground, timed for the cooler hours. It is not technical, but you need reasonable fitness.',
+        a: 'Erta Ale involves uneven, exposed volcanic ground. Walking distance, timing and the observation area depend on the confirmed route and local guidance. Ask about the demands of your departure and discuss mobility or fitness concerns before booking.',
       },
       {
         q: 'What should I pack for the Danakil?',
@@ -94,6 +94,18 @@ export const faqGroups: { title: string; items: { q: string; a: string }[] }[] =
       {
         q: 'Can I combine the Danakil with Gheralta, Axum or the Simien?',
         a: 'Yes, when the route is operationally possible. Our 9- and 10-day expeditions combine the Danakil with Axum and Gheralta, and we can build other combinations on request.',
+      },
+      {
+        q: "Where do Afar Horizon’s Danakil expeditions start?",
+        a: "Most of our core Afar and Danakil packages start in Semera. Confirm the start and finish points in your quotation before booking flights or onward travel; combined journeys can end in the northern highlands.",
+      },
+      {
+        q: "How do I choose between a short and a longer Danakil trip?",
+        a: "Danakil Essentials is our three-day route covering Erta Ale, the Lake Asale salt plain and Dallol. Danakil Deep covers those main landscapes over four days with more rest. Longer routes can allow more time for photography, Lake Afdera and interpretation. Check the day-by-day itinerary and current access before choosing.",
+      },
+      {
+        q: "When should I plan an Afar and Danakil expedition?",
+        a: "Our catalogue recommends November to January as the preferred planning window. Afar remains hot, including in the cooler months. Confirm operating conditions for your dates rather than treating a seasonal recommendation as a confirmed departure.",
       },
     ],
   },
