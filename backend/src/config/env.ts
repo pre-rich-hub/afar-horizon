@@ -126,4 +126,9 @@ if (parsed.ASSISTANT_ENABLED) {
 }
 
 export const env = parsed;
-export const isProduction = parsed.NODE_ENV === "production";
+// NODE_ENV is not reliably "production" inside Vercel's function runtime, so a
+// deployment that forgot (or could not) set it looked like development: pretty
+// logs, verbose errors and non-secure cookies. Treat any Vercel runtime as
+// production regardless of NODE_ENV.
+export const isProduction =
+  parsed.NODE_ENV === "production" || Boolean(process.env.VERCEL);

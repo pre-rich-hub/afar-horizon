@@ -1,6 +1,11 @@
 import pino from "pino";
-import { env, isProduction } from "./env.js";
+import { isProduction } from "./env.js";
 
+// Pretty logs are a local convenience. In production the plain JSON logger is
+// required: the pino-pretty transport resolves its target at import time and
+// spawns a worker thread, so an unresolvable target takes the whole process
+// down before a single request is served. `isProduction` covers Vercel even
+// when NODE_ENV is not set there; see config/env.ts.
 export const logger = pino({
   level: isProduction ? "info" : "debug",
   transport: isProduction
