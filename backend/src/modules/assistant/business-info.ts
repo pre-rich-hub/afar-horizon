@@ -36,7 +36,7 @@ export const BUSINESS_INFO = `## How to book
 - Hours: Monday to Saturday, 8:00 AM to 5:30 PM
 
 ## About Afar Horizon
-- Afar Horizon Expeditions is locally owned and operated in Ethiopia, with local leadership and local operational relationships. Our founder and lead guide is Tesema Teven, born and raised in the shadow of the Simien Mountains.
+- Afar Horizon Expeditions is locally owned and operated in Ethiopia, with local leadership and local operational relationships. Our founder and lead guide is Tesema (Tevan), born and raised in the shadow of the Simien Mountains.
 - Our office is in Addis Ababa; Danakil expeditions start from Semera, the gateway to the Afar lowlands.
 - Private journeys are our core service. We arrange airport transfers, hotels and intercity transport as part of your journey.
 - We cover the Danakil & Afar (1-8 days), Danakil & the Highlands (8-15 days) and Northern Ethiopia (12-21 days): Lake Tana, Gondar, the Simien Mountains, Aksum, Gheralta and Lalibela.

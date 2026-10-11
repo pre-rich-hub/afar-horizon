@@ -10,15 +10,15 @@ export const faqGroups: { title: string; items: { q: string; a: string }[] }[] =
         a: 'Yes. Afar Horizon Expeditions is locally owned and operated in Ethiopia, with local leadership and local operational relationships.',
       },
       {
-        q: 'Who is Tesema Teven?',
-        a: 'Tesema Teven is our founder and lead guide. He was born and raised in the shadow of the Simien Mountains, and built Afar Horizon to take travellers from those mountains to the landscapes of Afar.',
+        q: 'Who is Tesema (Tevan)?',
+        a: 'Tesema (Tevan) is our founder and lead guide. He was born and raised in the shadow of the Simien Mountains, and built Afar Horizon to take travellers from those mountains to the landscapes of Afar.',
       },
       {
         q: 'Where are you based?',
         a: 'Our office is in Addis Ababa, and our Danakil expeditions start from Semera, the gateway to the Afar lowlands.',
       },
       {
-        q: 'Can I speak directly with Tesema?',
+        q: 'Can I speak directly with Tesema (Tevan)?',
         a: 'Yes. Send a message through WhatsApp or the Plan My Journey form and ask for him.',
       },
     ],
