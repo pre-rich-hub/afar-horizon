@@ -14,9 +14,9 @@ VisaMark,
 XIcon,
 YouTubeIcon,
 } from '@/components/common/BrandMarks'
-import { destinations as baseDestinations } from '@/features/destinations'
+import { useDestinationsCopy, destinations as baseDestinations } from '@/features/destinations'
 import { NewsletterForm } from '@/features/newsletter'
-import { expeditionCollections as baseExpeditionCollections } from '@/features/tours'
+import { useToursCopy, expeditionCollections as baseExpeditionCollections } from '@/features/tours'
 import { contact } from '@/lib/constants/company'
 import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react'
 import Link from '@/components/common/SiteLink'
@@ -50,46 +50,7 @@ const socials: { name: string; href: string; icon: React.ReactNode }[] = [
   },
 ]
 
-const columns = [
-  {
-    title: 'Expeditions',
-    links: [
-      ...baseExpeditionCollections.map((c) => ({ label: c.title, href: `/expeditions#${c.id}` })),
-      { label: 'Specialist Travel', href: '/specialist-travel' },
-      { label: 'Ground Operations', href: '/ground-operations' },
-      { label: 'Plan My Journey', href: '/plan' },
-    ],
-    more: { label: 'All expeditions', href: '/expeditions' },
-  },
-  {
-    title: 'Destinations',
-    links: [
-      'danakil-depression',
-      'afar',
-      'erta-ale',
-      'dallol',
-      'gheralta',
-      'axum',
-      'lalibela',
-      'simien-mountains',
-    ].map((slug) => {
-      const d = baseDestinations.find((x) => x.slug === slug)!
-      return { label: d.name, href: `/destinations/${d.slug}` }
-    }),
-    more: { label: 'All destinations', href: '/destinations' },
-  },
-  {
-    title: 'Company',
-    links: [
-      { label: 'About Us', href: '/about' },
-      { label: 'Before You Go', href: '/before-you-go' },
-      { label: 'FAQ', href: '/faq' },
-      { label: 'Gallery', href: '/gallery' },
-      { label: 'Journal', href: '/blog' },
-      { label: 'Contact', href: '/contact' },
-    ],
-  },
-]
+
 
 // Logo tiles: brand marks are set in type and simple shapes on light cards.
 const logoTile =
@@ -135,6 +96,48 @@ const payments: { name: string; mark: React.ReactNode }[] = [
 
 export function SiteFooter() {
   const tr = useTranslations('UI.layout.SiteFooter')
+  const destinations = useDestinationsCopy('destination.destinations', baseDestinations)
+  const expeditionCollections = useToursCopy('tour.expeditionCollections', baseExpeditionCollections)
+  const columns = [
+    {
+      title: tr('expeditions'),
+      links: [
+        ...expeditionCollections.map((c) => ({ label: c.title, href: `/expeditions#${c.id}` })),
+        { label: tr('specialistTravel'), href: '/specialist-travel' },
+        { label: tr('groundOperations'), href: '/ground-operations' },
+        { label: tr('planMyJourney'), href: '/plan' },
+      ],
+      more: { label: tr('allExpeditions'), href: '/expeditions' },
+    },
+    {
+      title: tr('destinations'),
+      links: [
+        'danakil-depression',
+        'afar',
+        'erta-ale',
+        'dallol',
+        'gheralta',
+        'axum',
+        'lalibela',
+        'simien-mountains',
+      ].map((slug) => {
+        const d = destinations.find((x) => x.slug === slug)!
+        return { label: d.name, href: `/destinations/${d.slug}` }
+      }),
+      more: { label: tr('allDestinations'), href: '/destinations' },
+    },
+    {
+      title: tr('company'),
+      links: [
+        { label: tr('aboutUs'), href: '/about' },
+        { label: tr('beforeYouGo'), href: '/before-you-go' },
+        { label: tr('faq'), href: '/faq' },
+        { label: tr('gallery'), href: '/gallery' },
+        { label: tr('journal'), href: '/blog' },
+        { label: tr('contact'), href: '/contact' },
+      ],
+    },
+  ]
 
   return (
     <footer className="bg-charcoal text-background">
@@ -157,7 +160,7 @@ export function SiteFooter() {
             <ul className="mt-8 space-y-4 text-[15px] text-background/80">
               <li className="flex items-start gap-3.5">
                 <MapPin className="mt-0.5 h-[18px] w-[18px] shrink-0 text-accent" strokeWidth={1.6} />
-                <span className="max-w-[30ch]">{contact.address}</span>
+                <span className="max-w-[30ch]">{tr('address')}</span>
               </li>
               <li>
                 <a

@@ -35,9 +35,9 @@ export function PlanJourney() {
             {tr('tellUsYourDatesHowManyDays')}</p>
           <ul className="mt-10 space-y-4">
             {[
-              'Locally owned and operated in Ethiopia',
-              'Clear pricing: what is included and what is not',
-              'Honest about conditions before you book',
+              tr('locallyOwned'),
+              tr('clearPricing'),
+              tr('honestConditions'),
             ].map((item) => (
               <li
                 key={item}

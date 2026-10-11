@@ -48,7 +48,22 @@
         "builtBy": "构建",
         "melbaTechnology": "Melba Technology",
         "privacyPolicy": "隐私政策",
-        "termsAmpConditions": "条款和条件"
+        "termsAmpConditions": "条款和条件",
+        "expeditions": "探险旅行",
+        "destinations": "目的地",
+        "company": "公司",
+        "specialistTravel": "专题旅行",
+        "groundOperations": "地接服务",
+        "planMyJourney": "规划我的旅程",
+        "allExpeditions": "所有探险行程",
+        "allDestinations": "所有目的地",
+        "aboutUs": "关于我们",
+        "beforeYouGo": "出行须知",
+        "faq": "常见问题",
+        "gallery": "相册",
+        "journal": "旅行日志",
+        "contact": "联系我们",
+        "address": "亚的斯亚贝巴，埃塞俄比亚"
       },
       "SiteNav": {
         "afarHorizonExpeditionsHome": "Afar Horizon Expeditions — 主页",
@@ -473,7 +488,10 @@
       "PlanJourney": {
         "planYourJourney": "计划你的旅程",
         "planYourExpeditionWithUs": "计划您的 阿法尔 旅程与我们一起探险",
-        "tellUsYourDatesHowManyDays": "告诉我们您的日期、您有多少天以及您想体验什么。我们检查当前条件，构建路线并发送明确的报价。首先是对话，而不是即时预订。"
+        "tellUsYourDatesHowManyDays": "告诉我们您的日期、您有多少天以及您想体验什么。我们检查当前条件，构建路线并发送明确的报价。首先是对话，而不是即时预订。",
+        "locallyOwned": "埃塞俄比亚当地拥有并运营",
+        "clearPricing": "价格透明：清楚说明包含与不包含的项目",
+        "honestConditions": "预订前如实说明旅行条件"
       },
       "SignatureDestinations": {
         "whereWeTravel": "我们去哪里",

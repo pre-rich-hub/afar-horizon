@@ -48,7 +48,22 @@
         "builtBy": "Construido por",
         "melbaTechnology": "Melba Technology",
         "privacyPolicy": "Política de privacidad",
-        "termsAmpConditions": "Términos y condiciones"
+        "termsAmpConditions": "Términos y condiciones",
+        "expeditions": "Expediciones",
+        "destinations": "Destinos",
+        "company": "Empresa",
+        "specialistTravel": "Viajes especializados",
+        "groundOperations": "Operaciones en destino",
+        "planMyJourney": "Planificar mi viaje",
+        "allExpeditions": "Todas las expediciones",
+        "allDestinations": "Todos los destinos",
+        "aboutUs": "Sobre nosotros",
+        "beforeYouGo": "Antes de viajar",
+        "faq": "Preguntas frecuentes",
+        "gallery": "Galería",
+        "journal": "Diario de viaje",
+        "contact": "Contacto",
+        "address": "Adís Abeba, Etiopía"
       },
       "SiteNav": {
         "afarHorizonExpeditionsHome": "Afar Horizon Expeditions — inicio",
@@ -473,7 +488,10 @@
       "PlanJourney": {
         "planYourJourney": "Planificar su viaje",
         "planYourExpeditionWithUs": "Planifique su expedición con nosotros",
-        "tellUsYourDatesHowManyDays": "Cuéntanos tus fechas, cuántos días tienes y qué quieres experimentar. Comprobamos las condiciones actuales, construimos la ruta y enviamos un presupuesto claro. Primero una conversación, nunca una reserva instantánea."
+        "tellUsYourDatesHowManyDays": "Cuéntanos tus fechas, cuántos días tienes y qué quieres experimentar. Comprobamos las condiciones actuales, construimos la ruta y enviamos un presupuesto claro. Primero una conversación, nunca una reserva instantánea.",
+        "locallyOwned": "Empresa local, de propiedad y gestión etíope",
+        "clearPricing": "Precios claros: qué está incluido y qué no",
+        "honestConditions": "Información honesta sobre las condiciones antes de reservar"
       },
       "SignatureDestinations": {
         "whereWeTravel": "Adónde viajamos",

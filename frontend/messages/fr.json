@@ -48,7 +48,22 @@
         "builtBy": "Construit par",
         "melbaTechnology": "Melba Technology",
         "privacyPolicy": "Politique de confidentialité",
-        "termsAmpConditions": "Conditions générales"
+        "termsAmpConditions": "Conditions générales",
+        "expeditions": "Expéditions",
+        "destinations": "Destinations",
+        "company": "Entreprise",
+        "specialistTravel": "Voyages spécialisés",
+        "groundOperations": "Opérations au sol",
+        "planMyJourney": "Planifier mon voyage",
+        "allExpeditions": "Toutes les expéditions",
+        "allDestinations": "Toutes les destinations",
+        "aboutUs": "À propos de nous",
+        "beforeYouGo": "Avant de partir",
+        "faq": "Questions fréquentes",
+        "gallery": "Galerie",
+        "journal": "Carnet de voyage",
+        "contact": "Contact",
+        "address": "Addis-Abeba, Éthiopie"
       },
       "SiteNav": {
         "afarHorizonExpeditionsHome": "Afar Horizon Expeditions — accueil",
@@ -473,7 +488,10 @@
       "PlanJourney": {
         "planYourJourney": "Planifier votre voyage",
         "planYourExpeditionWithUs": "Planifiez votre expédition avec nous",
-        "tellUsYourDatesHowManyDays": "Dites-nous vos dates, de combien de jours vous disposez et ce que vous souhaitez vivre. Nous vérifions les conditions actuelles, construisons l''itinéraire et envoyons un devis clair. Une conversation d''abord, jamais une réservation instantanée."
+        "tellUsYourDatesHowManyDays": "Dites-nous vos dates, de combien de jours vous disposez et ce que vous souhaitez vivre. Nous vérifions les conditions actuelles, construisons l''itinéraire et envoyons un devis clair. Une conversation d''abord, jamais une réservation instantanée.",
+        "locallyOwned": "Entreprise locale, détenue et exploitée en Éthiopie",
+        "clearPricing": "Tarifs clairs : ce qui est inclus et ce qui ne l’est pas",
+        "honestConditions": "Des informations honnêtes sur les conditions avant de réserver"
       },
       "SignatureDestinations": {
         "whereWeTravel": "Où voyageons-nous",

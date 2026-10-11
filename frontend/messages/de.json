@@ -48,7 +48,22 @@
         "builtBy": "Aufgebaut von",
         "melbaTechnology": "Melba Technology",
         "privacyPolicy": "Datenschutzerklärung",
-        "termsAmpConditions": "Allgemeine Geschäftsbedingungen"
+        "termsAmpConditions": "Allgemeine Geschäftsbedingungen",
+        "expeditions": "Expeditionen",
+        "destinations": "Reiseziele",
+        "company": "Unternehmen",
+        "specialistTravel": "Spezialreisen",
+        "groundOperations": "Organisation vor Ort",
+        "planMyJourney": "Meine Reise planen",
+        "allExpeditions": "Alle Expeditionen",
+        "allDestinations": "Alle Reiseziele",
+        "aboutUs": "Über uns",
+        "beforeYouGo": "Vor der Reise",
+        "faq": "Häufige Fragen",
+        "gallery": "Galerie",
+        "journal": "Reisejournal",
+        "contact": "Kontakt",
+        "address": "Addis Abeba, Äthiopien"
       },
       "SiteNav": {
         "afarHorizonExpeditionsHome": "Afar Horizon Expeditions – Startseite",
@@ -473,7 +488,10 @@
       "PlanJourney": {
         "planYourJourney": "Planen Sie Ihre Reise",
         "planYourExpeditionWithUs": "Planen Sie Ihre Expedition mit uns",
-        "tellUsYourDatesHowManyDays": "Sagen Sie uns Ihre Daten, wie viele Tage Sie haben und was Sie erleben möchten. Wir prüfen die aktuellen Bedingungen, bauen die Route und senden Ihnen ein klares Angebot. Zuerst ein Gespräch, niemals eine sofortige Buchung."
+        "tellUsYourDatesHowManyDays": "Sagen Sie uns Ihre Daten, wie viele Tage Sie haben und was Sie erleben möchten. Wir prüfen die aktuellen Bedingungen, bauen die Route und senden Ihnen ein klares Angebot. Zuerst ein Gespräch, niemals eine sofortige Buchung.",
+        "locallyOwned": "In Äthiopien ansässig, in lokalem Besitz und lokal betrieben",
+        "clearPricing": "Klare Preise: was enthalten ist und was nicht",
+        "honestConditions": "Ehrliche Informationen zu den Bedingungen vor der Buchung"
       },
       "SignatureDestinations": {
         "whereWeTravel": "Wohin wir reisen",

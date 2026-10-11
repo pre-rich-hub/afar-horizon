@@ -28,6 +28,8 @@ async function main() {
     english.set(route, page)
   }
   for (const locale of locales) {
+    const messages = require('../messages/' + locale + '.json')
+    const translate = require('next-intl').createTranslator({locale, messages})
     for (const route of routes) {
       const path = localePath(route, locale), page = await get(path)
       assert.equal(page.status, 200, path)
@@ -51,6 +53,20 @@ async function main() {
       }
       const main = page.html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)?.[1]
       assert(main, path + ' main')
+      const footer = page.html.match(/<footer\b[^>]*>([\s\S]*?)<\/footer>/)?.[1]
+      assert(footer, path + ' footer')
+      const footerText = new Set(texts(footer))
+      for (const key of ['expeditions', 'destinations', 'company', 'specialistTravel', 'groundOperations', 'planMyJourney', 'allExpeditions', 'allDestinations', 'aboutUs', 'beforeYouGo', 'faq', 'gallery', 'journal', 'contact', 'address']) {
+        assert(footerText.has(normalize(translate('UI.layout.SiteFooter.' + key))), path + ' translated footer: ' + key)
+      }
+      if (route === '/') {
+        const journey = main.match(/<section\b[^>]*id="plan"[^>]*>([\s\S]*?)<\/section>/)?.[1]
+        assert(journey, path + ' journey section')
+        const journeyText = new Set(texts(journey))
+        for (const key of ['locallyOwned', 'clearPricing', 'honestConditions']) {
+          assert(journeyText.has(normalize(translate('UI.home.PlanJourney.' + key))), path + ' translated journey point: ' + key)
+        }
+      }
       const visible = new Set(texts(main))
       const original = texts(english.get(route).html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)?.[1] || '')
       const untranslated = original.filter(text => text.length > 80 && !/[$€£]\s*\d/.test(text) && visible.has(text))

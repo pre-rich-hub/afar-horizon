@@ -48,7 +48,22 @@
         "builtBy": "Built by",
         "melbaTechnology": "Melba Technology",
         "privacyPolicy": "Privacy Policy",
-        "termsAmpConditions": "Terms & Conditions"
+        "termsAmpConditions": "Terms & Conditions",
+        "expeditions": "Expeditions",
+        "destinations": "Destinations",
+        "company": "Company",
+        "specialistTravel": "Specialist Travel",
+        "groundOperations": "Ground Operations",
+        "planMyJourney": "Plan My Journey",
+        "allExpeditions": "All expeditions",
+        "allDestinations": "All destinations",
+        "aboutUs": "About Us",
+        "beforeYouGo": "Before You Go",
+        "faq": "FAQ",
+        "gallery": "Gallery",
+        "journal": "Journal",
+        "contact": "Contact",
+        "address": "Addis Ababa, Ethiopia"
       },
       "SiteNav": {
         "afarHorizonExpeditionsHome": "Afar Horizon Expeditions — home",
@@ -473,7 +488,10 @@
       "PlanJourney": {
         "planYourJourney": "Plan Your Journey",
         "planYourExpeditionWithUs": "Plan your expedition with us",
-        "tellUsYourDatesHowManyDays": "Tell us your dates, how many days you have and what you want to experience. We check current conditions, build the route and send a clear quotation. A conversation first, never an instant booking."
+        "tellUsYourDatesHowManyDays": "Tell us your dates, how many days you have and what you want to experience. We check current conditions, build the route and send a clear quotation. A conversation first, never an instant booking.",
+        "locallyOwned": "Locally owned and operated in Ethiopia",
+        "clearPricing": "Clear pricing: what is included and what is not",
+        "honestConditions": "Honest about conditions before you book"
       },
       "SignatureDestinations": {
         "whereWeTravel": "Where We Travel",
