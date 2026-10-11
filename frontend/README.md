@@ -11,6 +11,67 @@ cp .env.example .env.local  # Set API_BASE_URL for the separate Express backend
 pnpm dev                   # http://localhost:3000
 ```
 
+### SEO environment
+
+The confirmed canonical origin is `https://afarhorizon.com`. Copy the values in
+`.env.example` into local configuration and set them separately in the hosting
+environment. Production builds require `SITE_URL`; invalid origins fail the build.
+
+```dotenv
+SITE_URL=https://afarhorizon.com
+SEO_INDEXABLE=true
+DEPLOYMENT_ENV=production
+```
+
+Indexing requires all three conditions: a production build, an explicit
+`SEO_INDEXABLE=true`, and a production deployment marker. A conflicting preview,
+staging or development marker always forces noindex. Vercel's `VERCEL_ENV` and
+Netlify's `CONTEXT` are recognized; other hosts should set `DEPLOYMENT_ENV`
+explicitly. Set `SEO_INDEXABLE=false` or `DEPLOYMENT_ENV=preview` on staging and
+preview deployments. Never use a preview URL as `SITE_URL`: canonical links always
+refer to the confirmed production origin.
+
+Development without `SITE_URL` falls back to localhost and remains noindex.
+Private admin/login pages and the enquiry/credit utility pages remain noindex
+even when production indexing is enabled. A production rebuild is needed after
+changing these settings because static page metadata is generated at build time.
+
+Shared configuration lives in `lib/config/site.ts`, and public route metadata is
+created through `lib/seo/metadata.ts`. These produce complete page-specific
+canonical, Open Graph and Twitter metadata instead of inheriting another page's
+social fields. Run `node --test tests/seo.test.cjs` to check origin validation,
+indexing controls and metadata behavior.
+
+After building, start the local production server and check the rendered metadata:
+`node tests/verify-seo-build.cjs --base-url=http://localhost:3000`.
+For a preview build, add `--preview`; use the same deployment markers when building
+and starting the server. The baseline reports are in `docs/seo-phase1-baseline.md`.
+
+### Crawl and indexing checks
+
+`app/sitemap.ts` combines the 11 public static routes in `lib/seo/routes.ts` with
+feature-owned destinations, expeditions and blog articles. Production currently
+publishes 56 URLs; catalogue additions appear on the next build. Preview/staging
+builds publish an empty sitemap and do not advertise it in `robots.txt`.
+Modification dates are omitted until trustworthy editorial timestamps exist.
+
+`robots.txt` allows public pages and assets and excludes API crawling. It leaves
+noindex pages crawlable so search engines can read their directives. `proxy.ts`
+also sends `X-Robots-Tag` on preview responses and private/utility pages, including
+unauthenticated admin redirects. Authentication still comes from the admin layout.
+Catalogue detail routes use `dynamicParams=false`: publish new entries by rebuilding;
+unknown slugs return 404 rather than a streamed not-found page with status 200.
+
+Run `node tests/verify-crawl.cjs --base-url=http://localhost:3000` against the built
+server; add `--preview` for a preview build. This checks the sitemap, every listed
+page's status/canonical/indexing, internal-link reachability, old redirects, missing
+slugs, the removed coffee article, query canonicals and admin protection.
+
+Configure HTTP and www redirects at the hosting/CDN layer to the confirmed
+`https://afarhorizon.com` origin, preserving path/query. The app removes trailing
+slashes and query variants use the base page canonical. Host redirects are a live
+deployment check; the app does not trust arbitrary Host headers to select a domain.
+
 | Command | Purpose |
 | --- | --- |
 | `pnpm dev` | Development server |

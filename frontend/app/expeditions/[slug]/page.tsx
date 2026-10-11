@@ -1,6 +1,9 @@
+import { createPageMetadata } from '@/lib/seo/metadata'
 import { getRelatedTours, getTour, getTourData, RelatedTours, TourEnquiry, TourFaqs, TourHero, TourInclusions, TourOverview, TourPlanning, tours } from '@/features/tours'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+
+export const dynamicParams = false
 
 export function generateStaticParams() {
   return tours.map((t) => ({ slug: t.slug }))
@@ -14,12 +17,13 @@ export async function generateMetadata({
   const { slug } = await params
   const t = getTour(slug)
   if (!t) return { title: 'Expedition not found' }
-  return {
+  return createPageMetadata({
     title: `${t.days} ${t.title}`,
     description: t.summary,
-    alternates: { canonical: `/expeditions/${t.slug}` },
-    openGraph: { title: t.title, description: t.summary, images: [t.image] },
-  }
+    path: `/expeditions/${t.slug}`,
+    image: t.image,
+    imageAlt: t.title,
+  })
 }
 
 export default async function ExpeditionPage({

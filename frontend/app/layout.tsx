@@ -1,3 +1,5 @@
+import { site } from '@/lib/config/site'
+import { createPageMetadata, pageTitle } from '@/lib/seo/metadata'
 import { SiteFooter } from '@/components/layout/SiteFooter'
 import { SiteNav } from '@/components/layout/SiteNav'
 import { FloatingSupport } from '@/features/support'
@@ -20,29 +22,18 @@ const cormorant = Cormorant_Garamond({
 })
 
 export const metadata: Metadata = {
+  ...createPageMetadata({
+    title: 'Private Afar & Danakil Expeditions',
+    description: 'Private Afar and Danakil expeditions with a locally owned Ethiopian operator, connecting volcanoes, salt country and the northern highlands.',
+    path: '/',
+  }),
+  metadataBase: new URL(site.url),
   title: {
-    default: 'Afar Horizon Expeditions — The Soul of Ethiopia, Curated',
-    template: '%s · Afar Horizon Expeditions',
+    default: pageTitle('Private Afar & Danakil Expeditions'),
+    template: `%s | ${site.name}`,
   },
-  description:
-    'Private, tailor-made luxury journeys through Ethiopia. Walk through kingdoms carved from stone, wake above the clouds, and share coffee with families who have welcomed travellers for generations.',
-  keywords: [
-    'Luxury Ethiopia Tours',
-    'Private Ethiopia Tours',
-    'Lalibela',
-    'Simien Mountains',
-    'Danakil Depression',
-    'Erta Ale',
-    'Dallol',
-    'Gheralta',
-    'Ethiopia travel',
-  ],
-  openGraph: {
-    title: 'Afar Horizon Expeditions — The Soul of Ethiopia, Curated',
-    description:
-      'Private, tailor-made luxury journeys through Ethiopia, designed around you.',
-    type: 'website',
-  },
+  // Each page declares its own canonical; do not inherit the homepage's URL.
+  alternates: { canonical: null },
 }
 
 export const viewport: Viewport = {

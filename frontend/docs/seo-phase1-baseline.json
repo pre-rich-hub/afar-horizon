@@ -1,0 +1,645 @@
+{
+  "sourceCommit": "52e8dc1",
+  "date": "2026-10-10",
+  "environment": "Local production build before Phase 1 changes; remote Cloudinary images; simulated Lighthouse throttling.",
+  "canonicalOriginConfirmed": "https://afarhorizon.com",
+  "searchConsole": "No account data supplied; live search baseline deferred to Phase 6.",
+  "rawReports": "/tmp/afar-seo-phase1-baseline",
+  "routeInventory": [
+    {
+      "route": "/about",
+      "title": "About Us · Afar Horizon Expeditions",
+      "description": "Afar Horizon Expeditions is a locally owned travel company in Addis Ababa, designing private journeys from the salt flats of the Afar to the highlands of northern Ethiopia.",
+      "canonical": null,
+      "robots": null
+    },
+    {
+      "route": "/before-you-go",
+      "title": "Before You Go · Afar Horizon Expeditions",
+      "description": "What a Danakil and Northern Ethiopia expedition is really like: heat, 4×4 roads, walking, camping, food and water, connectivity, safety, packing and respect.",
+      "canonical": "/before-you-go",
+      "robots": null
+    },
+    {
+      "route": "/blog/dallol-geothermal-landscape",
+      "title": "Dallol: reading the colours of the Danakil · Afar Horizon Expeditions",
+      "description": "Look beyond the photograph to understand Dallol as a changing geothermal landscape, visited with local guidance as part of a Danakil expedition.",
+      "canonical": null,
+      "robots": null
+    },
+    {
+      "route": "/blog/erta-ale-what-to-expect",
+      "title": "Erta Ale: what to expect from the volcano visit · Afar Horizon Expeditions",
+      "description": "The approach, the camp and the changing volcano all shape an Erta Ale visit. Plan for the experience without expecting a guaranteed lava display.",
+      "canonical": null,
+      "robots": null
+    },
+    {
+      "route": "/blog/lake-assale-and-lake-afdera",
+      "title": "Lake Assale and Lake Afdera: two sides of Afar’s salt country · Afar Horizon Expeditions",
+      "description": "The salt plain at Lake Assale and the waters of Lake Afdera reveal different connections between landscape, livelihoods and the Danakil route.",
+      "canonical": null,
+      "robots": null
+    },
+    {
+      "route": "/blog/lalibela-at-dawn",
+      "title": "Lalibela at dawn: how to see the rock churches properly · Afar Horizon Expeditions",
+      "description": "Most visitors arrive at ten in the morning and see a monument. Arrive at five and you see a living city instead.",
+      "canonical": null,
+      "robots": null
+    },
+    {
+      "route": "/blog/packing-for-the-highlands",
+      "title": "What to pack for an Afar and Danakil expedition · Afar Horizon Expeditions",
+      "description": "Prepare for heat, uneven ground and basic camps in Afar, with a separate layer of clothing if your journey continues into the northern highlands.",
+      "canonical": null,
+      "robots": null
+    },
+    {
+      "route": "/blog/planning-northern-ethiopia-route",
+      "title": "Planning a northern Ethiopia journey: choose depth over distance · Afar Horizon Expeditions",
+      "description": "Build a wider Ethiopian journey around the places that matter to you, with time for the highlands, historic sites and lake country.",
+      "canonical": null,
+      "robots": null
+    },
+    {
+      "route": "/blog/responsible-travel-in-afar",
+      "title": "Responsible travel in Afar: people beyond the landscape · Afar Horizon Expeditions",
+      "description": "Afar is home, a workplace and a cultural landscape. Respectful visits begin with local guidance, consent and an understanding of the salt economy.",
+      "canonical": null,
+      "robots": null
+    },
+    {
+      "route": "/blog/semera-danakil-expedition-planning",
+      "title": "Starting in Semera: how to plan your Danakil expedition · Afar Horizon Expeditions",
+      "description": "Coordinate your arrival, choose a realistic pace and understand the camp arrangements before setting out from the gateway to Afar.",
+      "canonical": null,
+      "robots": null
+    },
+    {
+      "route": "/blog/when-to-visit-ethiopia",
+      "title": "When to visit Afar and the Danakil Depression · Afar Horizon Expeditions",
+      "description": "Timing an Afar expedition means planning around heat, daylight and the confirmed route. Start with the cooler season, then build the rest of your Ethiopian journey around it.",
+      "canonical": null,
+      "robots": null
+    },
+    {
+      "route": "/blog",
+      "title": "The Journal · Afar Horizon Expeditions",
+      "description": "Afar and Danakil travel guides: when to visit, what to pack, Erta Ale, Dallol and the salt lakes, alongside culture and northern Ethiopia journeys.",
+      "canonical": null,
+      "robots": null
+    },
+    {
+      "route": "/contact",
+      "title": "Contact Us · Afar Horizon Expeditions",
+      "description": "Speak directly with an Addis-based travel designer about your Ethiopian journey. We are available Monday to Saturday, 8:00 AM - 5:30 PM.",
+      "canonical": null,
+      "robots": null
+    },
+    {
+      "route": "/destinations/afar",
+      "title": "Afar Ethiopia Travel | Danakil &amp; Afar Expeditions | Afar Horizon",
+      "description": "Discover Afar beyond the Danakil: desert landscapes, salt culture, volcanic geology and local life with an Ethiopian-owned expedition company.",
+      "canonical": "/destinations/afar",
+      "robots": null
+    },
+    {
+      "route": "/destinations/awash-national-park",
+      "title": "Awash National Park | Wildlife &amp; Afar Travel Guide | Afar Horizon",
+      "description": "Explore the wildlife, river landscape and volcanic plains of Awash National Park, with practical guidance for a possible Afar journey extension.",
+      "canonical": "/destinations/awash-national-park",
+      "robots": null
+    },
+    {
+      "route": "/destinations/axum",
+      "title": "Axum Ethiopia | Ancient Kingdom, Obelisks &amp; History | Afar Horizon",
+      "description": "Explore Axum, centre of the ancient Aksumite kingdom and a UNESCO World Heritage Site: monumental stelae, royal tombs and the church of St Mary of Zion.",
+      "canonical": "/destinations/axum",
+      "robots": null
+    },
+    {
+      "route": "/destinations/bahir-dar",
+      "title": "Bahir Dar | Lake Tana &amp; Northern Ethiopia Guide | Afar Horizon",
+      "description": "Plan time in Bahir Dar, the gateway to Lake Tana, with guidance on lake visits and its place in Northern Ethiopia itineraries.",
+      "canonical": "/destinations/bahir-dar",
+      "robots": null
+    },
+    {
+      "route": "/destinations/dallol",
+      "title": "Dallol Ethiopia | Danakil Geothermal Landscape &amp; Tours | Afar Horizon",
+      "description": "Explore Dallol in Ethiopia’s Danakil Depression: acid hot springs, salt chimneys, mineral colours and volcanic geology, below sea level.",
+      "canonical": "/destinations/dallol",
+      "robots": null
+    },
+    {
+      "route": "/destinations/danakil-depression",
+      "title": "Danakil Depression Ethiopia | Tours &amp; Expeditions | Afar Horizon",
+      "description": "Explore the Danakil Depression with a locally owned Ethiopian expedition operator: Erta Ale, Dallol, Lake Assale and Afar, with professional local logistics.",
+      "canonical": "/destinations/danakil-depression",
+      "robots": null
+    },
+    {
+      "route": "/destinations/erta-ale",
+      "title": "Erta Ale Volcano Ethiopia | Trekking &amp; Danakil Expeditions | Afar Horizon",
+      "description": "Experience Erta Ale volcano in Ethiopia’s Danakil Depression with a locally operated expedition team. What you can see today, the walk, and how conditions change.",
+      "canonical": "/destinations/erta-ale",
+      "robots": null
+    },
+    {
+      "route": "/destinations/gheralta",
+      "title": "Gheralta Ethiopia | Rock-Hewn Churches &amp; Mountain Treks | Afar Horizon",
+      "description": "Explore Gheralta’s sandstone mountains and rock-hewn churches, including Abuna Yemata Guh and Maryam Korkor, with a locally operated Ethiopian team.",
+      "canonical": "/destinations/gheralta",
+      "robots": null
+    },
+    {
+      "route": "/destinations/gondar",
+      "title": "Gondar Ethiopia | Castles, History &amp; Private Tours | Afar Horizon",
+      "description": "Explore Gondar: the UNESCO-listed royal enclosure of Fasil Ghebbi, Debre Birhan Selassie, Fasilides’ Bath and Timkat, gateway to the Simien Mountains.",
+      "canonical": "/destinations/gondar",
+      "robots": null
+    },
+    {
+      "route": "/destinations/hadar",
+      "title": "Hadar &amp; Lower Awash Valley | Afar Human Origins Guide | Afar Horizon",
+      "description": "Learn about Hadar, the discovery of Lucy and the Lower Awash Valley, with clear guidance on discussing a possible specialist visit.",
+      "canonical": "/destinations/hadar",
+      "robots": null
+    },
+    {
+      "route": "/destinations/hamed-ela",
+      "title": "Hamed Ela | Danakil Camp &amp; Expedition Guide | Afar Horizon",
+      "description": "Understand Hamed Ela’s role in a Danakil expedition, basic camp expectations and journeys to Lake Assale and Dallol.",
+      "canonical": "/destinations/hamed-ela",
+      "robots": null
+    },
+    {
+      "route": "/destinations/lake-afdera",
+      "title": "Lake Afdera Ethiopia | Salt Lake in Afar | Afar Horizon",
+      "description": "Discover Lake Afdera (Afrera), a hypersaline lake more than 100 m below sea level in Ethiopia’s Afar region, fed by hot springs and ringed by salt works.",
+      "canonical": "/destinations/lake-afdera",
+      "robots": null
+    },
+    {
+      "route": "/destinations/lake-assale",
+      "title": "Lake Assale Ethiopia | Danakil Salt Lake &amp; Salt Caravans | Afar Horizon",
+      "description": "Visit Lake Assale (Lake Karum) in Ethiopia’s Danakil Depression and discover salt flats, Afar salt cutting and the camel caravans of the salt trade.",
+      "canonical": "/destinations/lake-assale",
+      "robots": null
+    },
+    {
+      "route": "/destinations/lake-tana",
+      "title": "Lake Tana | Monasteries &amp; Northern Ethiopia Journeys | Afar Horizon",
+      "description": "Discover Lake Tana through boat journeys and monastery visits from Bahir Dar, as part of a tailored Northern Ethiopia itinerary.",
+      "canonical": "/destinations/lake-tana",
+      "robots": null
+    },
+    {
+      "route": "/destinations/lalibela",
+      "title": "Lalibela Ethiopia | Rock-Hewn Churches &amp; Private Tours | Afar Horizon",
+      "description": "Discover Lalibela’s eleven rock-hewn churches, a UNESCO World Heritage Site, through local guiding, cultural interpretation and private journeys.",
+      "canonical": "/destinations/lalibela",
+      "robots": null
+    },
+    {
+      "route": "/destinations/mekelle",
+      "title": "Mekelle | Highlands &amp; Danakil Gateway Guide | Afar Horizon",
+      "description": "Understand Mekelle’s role in proposed highlands-to-Afar journeys and how to plan a gateway connection with current access checks.",
+      "canonical": "/destinations/mekelle",
+      "robots": null
+    },
+    {
+      "route": "/destinations/northern-ethiopia",
+      "title": "Northern Ethiopia Tours | Danakil, Gheralta, Axum &amp; Simien | Afar Horizon",
+      "description": "Plan a private Northern Ethiopia journey connecting the Danakil, Afar, Gheralta, Axum, Lalibela, the Simien, Gondar and Lake Tana, subject to current access.",
+      "canonical": "/destinations/northern-ethiopia",
+      "robots": null
+    },
+    {
+      "route": "/destinations/semera",
+      "title": "Semera | Afar &amp; Danakil Departure Guide | Afar Horizon",
+      "description": "Plan a Danakil expedition starting in Semera: arrival coordination, preparation, onward travel and the route into Afar.",
+      "canonical": "/destinations/semera",
+      "robots": null
+    },
+    {
+      "route": "/destinations/simien-mountains",
+      "title": "Simien Mountains Ethiopia | Trekking, Wildlife &amp; Expeditions | Afar Horizon",
+      "description": "Trek the Simien Mountains, a UNESCO World Heritage national park, with an Ethiopian mountain guide: escarpments, gelada, Walia ibex and Ras Dashen.",
+      "canonical": "/destinations/simien-mountains",
+      "robots": null
+    },
+    {
+      "route": "/destinations",
+      "title": "Destinations · Afar Horizon Expeditions",
+      "description": "The Danakil Depression, Afar, Erta Ale, Dallol, Lake Assale, Gheralta, Axum, Lalibela, the Simien Mountains and Gondar: the places in northern Ethiopia we operate in.",
+      "canonical": "/destinations",
+      "robots": null
+    },
+    {
+      "route": "/expeditions/afar-geology-and-culture",
+      "title": "8 Days Afar Geology &amp; Culture · Afar Horizon Expeditions",
+      "description": "Our specialist-style Afar expedition, with a day focused on people rather than scenery and an extended Dallol geology day. Suited to photographers, geologists, documentary travellers, researchers and writers.",
+      "canonical": "/expeditions/afar-geology-and-culture",
+      "robots": null
+    },
+    {
+      "route": "/expeditions/afar-to-the-highlands",
+      "title": "9 Days Afar to the Highlands · Afar Horizon Expeditions",
+      "description": "Five days in the Danakil, then the road climbs out of the desert into farmland and the highlands: two nights in Aksum and a final day in Gheralta. It connects the extreme geological landscape with northern Ethiopia’s ancient civilisations.",
+      "canonical": "/expeditions/afar-to-the-highlands",
+      "robots": null
+    },
+    {
+      "route": "/expeditions/beyond-the-highlights",
+      "title": "5 Days Beyond the Highlights · Afar Horizon Expeditions",
+      "description": "Five days adds a night at Lake Afdera and a full second day around Erta Ale, so the volcano is not squeezed into a single evening. Designed for travellers who want more than photographs.",
+      "canonical": "/expeditions/beyond-the-highlights",
+      "robots": null
+    },
+    {
+      "route": "/expeditions/danakil-and-gheralta",
+      "title": "10 Days Danakil &amp; Gheralta · Afar Horizon Expeditions",
+      "description": "One of our flagship combinations: the full Danakil route, two nights in Aksum, then Gheralta with a dedicated church-walking day. The walk to the church is part of the experience.",
+      "canonical": "/expeditions/danakil-and-gheralta",
+      "robots": null
+    },
+    {
+      "route": "/expeditions/danakil-deep",
+      "title": "4 Days Danakil Deep · Afar Horizon Expeditions",
+      "description": "The landscape is huge, the roads are difficult, the heat is real and the camps are basic. Four days covers Erta Ale, Lake Asale and Dallol with an afternoon of rest built in, which also gives us flexibility around road conditions, weather and volcanic access.",
+      "canonical": "/expeditions/danakil-deep",
+      "robots": null
+    },
+    {
+      "route": "/expeditions/danakil-essentials",
+      "title": "3 Days Danakil Essentials · Afar Horizon Expeditions",
+      "description": "Three days connects the three main stories of the Danakil: the volcano, the salt and the geology. It is demanding, with long drives and basic camps, but you see how much the landscape changes within a small region.",
+      "canonical": "/expeditions/danakil-essentials",
+      "robots": null
+    },
+    {
+      "route": "/expeditions/danakil-explorer",
+      "title": "6 Days Danakil Explorer · Afar Horizon Expeditions",
+      "description": "Six days moves beyond the famous landscapes and gives more attention to the human geography of Afar: how salt is worked, how it moves into wider trade, and how people live in this environment.",
+      "canonical": "/expeditions/danakil-explorer",
+      "robots": null
+    },
+    {
+      "route": "/expeditions/danakil-first-look",
+      "title": "2 Days Danakil First Look · Afar Horizon Expeditions",
+      "description": "Two days takes you beyond an introduction and into the volcanic landscape around Erta Ale. It is deliberately not sold as &quot;everything in two days&quot;: Dallol and the salt flats need a longer trip.",
+      "canonical": "/expeditions/danakil-first-look",
+      "robots": null
+    },
+    {
+      "route": "/expeditions/danakil-photography-expedition",
+      "title": "7 Days Danakil Photography Expedition · Afar Horizon Expeditions",
+      "description": "Photograph the volcanic landscapes of Erta Ale, the salt flats of Lake Asale, Dallol’s mineral details and Afar life on a private seven-day expedition. Dawn, dusk and possible night sessions shape the schedule, with time for rest, image backups and equipment care between shoots.",
+      "canonical": "/expeditions/danakil-photography-expedition",
+      "robots": null
+    },
+    {
+      "route": "/expeditions/from-axum-to-the-afar-horizon",
+      "title": "9 Days From Axum to the Afar Horizon · Afar Horizon Expeditions",
+      "description": "Spend two nights in Axum before travelling through Gheralta and Mekelle toward Afar. A staging stop precedes the Danakil section through Lake Afdera, Erta Ale, Lake Asale and Dallol. The nine-day route ends in Semera and remains conditions-dependent.",
+      "canonical": "/expeditions/from-axum-to-the-afar-horizon",
+      "robots": null
+    },
+    {
+      "route": "/expeditions/from-mountain-to-horizon",
+      "title": "8 Days From Mountain to Horizon · Afar Horizon Expeditions",
+      "description": "Begin in Mekelle, spend time among Gheralta’s mountains and churches, then descend into Afar for Lake Afdera, Erta Ale, Lake Asale and Dallol. This conditions-dependent itinerary ends in Semera and is confirmed only after route and access checks.",
+      "canonical": "/expeditions/from-mountain-to-horizon",
+      "robots": null
+    },
+    {
+      "route": "/expeditions/grand-horizon-ethiopia",
+      "title": "21 Days Grand Horizon Ethiopia · Afar Horizon Expeditions",
+      "description": "Our flagship journey. It is not sold as &quot;see everything&quot;: no honest 21-day itinerary can. Instead it connects several of the country’s defining landscapes and historical chapters, from Lake Tana and the Simien to Aksum, Gheralta, the Danakil and Lalibela.",
+      "canonical": "/expeditions/grand-horizon-ethiopia",
+      "robots": null
+    },
+    {
+      "route": "/expeditions/grand-northern-ethiopia-expedition",
+      "title": "15 Days Grand Northern Ethiopia Expedition · Afar Horizon Expeditions",
+      "description": "A fifteen-day expedition connecting the Danakil with Axum, Gondar, the Simien Mountains and Bahir Dar. Desert camps, highland hotels, mountain walking and a Lake Tana boat journey form distinct chapters, with the final route confirmed around access and transport arrangements.",
+      "canonical": "/expeditions/grand-northern-ethiopia-expedition",
+      "robots": null
+    },
+    {
+      "route": "/expeditions/into-the-danakil",
+      "title": "7 Days Into the Danakil · Afar Horizon Expeditions",
+      "description": "A week gives each part of the Danakil its own day: the volcano, the salt, the trade, the people and the geology of Dallol. The narrative of the week runs heat, volcano, salt, water, trade, people, geology.",
+      "canonical": "/expeditions/into-the-danakil",
+      "robots": null
+    },
+    {
+      "route": "/expeditions/northern-ethiopia-essentials",
+      "title": "12 Days Northern Ethiopia Essentials · Afar Horizon Expeditions",
+      "description": "The essential northern journey, connecting lake monasteries, royal Gondar, mountain landscapes, ancient Aksum and the living churches of Gheralta and Lalibela.",
+      "canonical": "/expeditions/northern-ethiopia-essentials",
+      "robots": null
+    },
+    {
+      "route": "/expeditions/northern-ethiopia-grand-horizon",
+      "title": "15 Days Northern Ethiopia Grand Horizon · Afar Horizon Expeditions",
+      "description": "This is not the 12-day journey with three empty days added. The extra time goes to Addis, a deeper day in Gondar, a third Simien day and a full church-and-mountain day in Gheralta.",
+      "canonical": "/expeditions/northern-ethiopia-grand-horizon",
+      "robots": null
+    },
+    {
+      "route": "/expeditions/the-afar-edge",
+      "title": "1 Day The Afar Edge · Afar Horizon Expeditions",
+      "description": "One day cannot honestly deliver the whole Danakil Depression, and we do not pretend that it can. The Afar Edge introduces the descent from the highlands into the Afar lowlands and the salt environment around Lake Afdera.",
+      "canonical": "/expeditions/the-afar-edge",
+      "robots": null
+    },
+    {
+      "route": "/expeditions",
+      "title": "Expeditions · Afar Horizon Expeditions",
+      "description": "Private expeditions into the Danakil Depression, Afar and Northern Ethiopia, from a one-day Afar introduction to a 21-day journey. Locally operated from Ethiopia.",
+      "canonical": null,
+      "robots": null
+    },
+    {
+      "route": "/faq",
+      "title": "Frequently Asked Questions · Afar Horizon Expeditions",
+      "description": "Answers about Afar Horizon Expeditions: private Danakil and Northern Ethiopia trips, prices, deposits, what is included, changing conditions and specialist travel.",
+      "canonical": "/faq",
+      "robots": null
+    },
+    {
+      "route": "/gallery",
+      "title": "Gallery · Afar Horizon Expeditions",
+      "description": "Salt flats, rock-hewn churches, highland wildlife and living traditions — a gallery of Ethiopia as our travellers see it.",
+      "canonical": null,
+      "robots": null
+    },
+    {
+      "route": "/ground-operations",
+      "title": "Ground Operations · Afar Horizon Expeditions",
+      "description": "Ethiopia ground operations for international tour operators, agencies, researchers and specialist groups: 4×4 vehicles, guides, camps, accommodation and expedition support.",
+      "canonical": "/ground-operations",
+      "robots": null
+    },
+    {
+      "route": "/",
+      "title": "Afar Horizon Expeditions — The Soul of Ethiopia, Curated",
+      "description": "Private, tailor-made luxury journeys through Ethiopia. Walk through kingdoms carved from stone, wake above the clouds, and share coffee with families who have welcomed travellers for generations.",
+      "canonical": null,
+      "robots": null
+    },
+    {
+      "route": "/photo-credits",
+      "title": "Photo Credits · Afar Horizon Expeditions",
+      "description": "The client-provided destination and expedition photo collection used on this website.",
+      "canonical": "/photo-credits",
+      "robots": "noindex"
+    },
+    {
+      "route": "/specialist-travel",
+      "title": "Specialist Travel · Afar Horizon Expeditions",
+      "description": "Custom Ethiopian expeditions for photographers, filmmakers, researchers, universities, trekkers, runners and private groups, with local logistics in the Danakil and the north.",
+      "canonical": "/specialist-travel",
+      "robots": null
+    },
+    {
+      "route": "/plan",
+      "rendering": "dynamic",
+      "canonical": "/plan",
+      "note": "Source metadata; response tested separately."
+    }
+  ],
+  "reports": [
+    {
+      "report": "article-desktop.json",
+      "url": "http://127.0.0.1:3101/blog/when-to-visit-ethiopia",
+      "formFactor": "desktop",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-10T19:19:58.479Z",
+      "scores": {
+        "performance": 64,
+        "accessibility": 84,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "lcpMs": 18579,
+      "cls": 0,
+      "tbtMs": 217,
+      "transferBytes": 27167670,
+      "warnings": []
+    },
+    {
+      "report": "article-mobile.json",
+      "url": "http://127.0.0.1:3101/blog/when-to-visit-ethiopia",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-10T19:18:32.996Z",
+      "scores": {
+        "performance": 43,
+        "accessibility": 92,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "lcpMs": 20655,
+      "cls": 0,
+      "tbtMs": 1635,
+      "transferBytes": 27103741,
+      "warnings": [
+        "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
+      ]
+    },
+    {
+      "report": "destination-desktop.json",
+      "url": "http://127.0.0.1:3101/destinations/danakil-depression",
+      "formFactor": "desktop",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-10T19:13:54.189Z",
+      "scores": {
+        "performance": 59,
+        "accessibility": 85,
+        "best-practices": 96,
+        "seo": 92
+      },
+      "lcpMs": 15147,
+      "cls": 0,
+      "tbtMs": 238,
+      "transferBytes": 27098501,
+      "warnings": []
+    },
+    {
+      "report": "destination-mobile.json",
+      "url": "http://127.0.0.1:3101/destinations/danakil-depression",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-10T19:12:27.457Z",
+      "scores": {
+        "performance": 46,
+        "accessibility": 93,
+        "best-practices": 96,
+        "seo": 92
+      },
+      "lcpMs": 19454,
+      "cls": 0,
+      "tbtMs": 1408,
+      "transferBytes": 21424520,
+      "warnings": [
+        "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
+      ]
+    },
+    {
+      "report": "enquiry-desktop.json",
+      "url": "http://127.0.0.1:3101/plan",
+      "formFactor": "desktop",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-10T19:26:40.130Z",
+      "scores": {
+        "performance": 72,
+        "accessibility": 84,
+        "best-practices": 96,
+        "seo": 92
+      },
+      "lcpMs": 4013,
+      "cls": 0,
+      "tbtMs": 166,
+      "transferBytes": 24210070,
+      "warnings": []
+    },
+    {
+      "report": "enquiry-mobile.json",
+      "url": "http://127.0.0.1:3101/plan",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-10T19:25:08.577Z",
+      "scores": {
+        "performance": 46,
+        "accessibility": 92,
+        "best-practices": 96,
+        "seo": 92
+      },
+      "lcpMs": 18269,
+      "cls": 0,
+      "tbtMs": 1197,
+      "transferBytes": 24134398,
+      "warnings": [
+        "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
+      ]
+    },
+    {
+      "report": "gallery-desktop.json",
+      "url": "http://127.0.0.1:3101/gallery",
+      "formFactor": "desktop",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-10T19:23:15.705Z",
+      "scores": {
+        "performance": 65,
+        "accessibility": 84,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "lcpMs": 21660,
+      "cls": 0,
+      "tbtMs": 132,
+      "transferBytes": 47406706,
+      "warnings": []
+    },
+    {
+      "report": "gallery-mobile.json",
+      "url": "http://127.0.0.1:3101/gallery",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-10T19:21:38.518Z",
+      "scores": {
+        "performance": 45,
+        "accessibility": 92,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "lcpMs": 21438,
+      "cls": 0,
+      "tbtMs": 1303,
+      "transferBytes": 36340153,
+      "warnings": [
+        "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
+      ]
+    },
+    {
+      "report": "home-desktop.json",
+      "url": "http://127.0.0.1:3101/",
+      "formFactor": "desktop",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-10T19:10:17.980Z",
+      "scores": {
+        "performance": 67,
+        "accessibility": 81,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "lcpMs": 855,
+      "cls": 0.00009747659959475709,
+      "tbtMs": 508,
+      "transferBytes": 47469826,
+      "warnings": []
+    },
+    {
+      "report": "home-mobile.json",
+      "url": "http://127.0.0.1:3101/",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-10T19:08:22.270Z",
+      "scores": {
+        "performance": 47,
+        "accessibility": 96,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "lcpMs": 4247,
+      "cls": 0.0005751998136254416,
+      "tbtMs": 1627,
+      "transferBytes": 38568550,
+      "warnings": [
+        "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
+      ]
+    },
+    {
+      "report": "package-desktop.json",
+      "url": "http://127.0.0.1:3101/expeditions/danakil-essentials",
+      "formFactor": "desktop",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-10T19:16:55.891Z",
+      "scores": {
+        "performance": 65,
+        "accessibility": 85,
+        "best-practices": 96,
+        "seo": 92
+      },
+      "lcpMs": 19511,
+      "cls": 0,
+      "tbtMs": 118,
+      "transferBytes": 24011887,
+      "warnings": []
+    },
+    {
+      "report": "package-mobile.json",
+      "url": "http://127.0.0.1:3101/expeditions/danakil-essentials",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-10T19:15:30.653Z",
+      "scores": {
+        "performance": 46,
+        "accessibility": 93,
+        "best-practices": 96,
+        "seo": 92
+      },
+      "lcpMs": 17318,
+      "cls": 0,
+      "tbtMs": 1226,
+      "transferBytes": 23934390,
+      "warnings": [
+        "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
+      ]
+    }
+  ]
+}

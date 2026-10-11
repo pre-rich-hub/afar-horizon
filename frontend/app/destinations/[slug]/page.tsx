@@ -1,6 +1,10 @@
+import { createPageMetadata } from '@/lib/seo/metadata'
 import { DestinationEnquiry, DestinationHero, DestinationOverview, DestinationPlanning, destinations, getDestination, getDestinationRelations } from '@/features/destinations'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+
+// The catalogue is authoritative; reject unknown slugs before streamed rendering.
+export const dynamicParams = false
 
 export function generateStaticParams() {
   return destinations.map((d) => ({ slug: d.slug }))
@@ -16,12 +20,13 @@ export async function generateMetadata({
   if (!d) return { title: 'Destination not found' }
   const title = d.seoTitle ?? d.name
   const description = d.seoDescription ?? d.intro
-  return {
-    title: { absolute: `${title} | Afar Horizon` },
+  return createPageMetadata({
+    title,
     description,
-    alternates: { canonical: `/destinations/${d.slug}` },
-    openGraph: { title, description, images: [d.image] },
-  }
+    path: `/destinations/${d.slug}`,
+    image: d.image,
+    imageAlt: d.imageAlt ?? `${d.name}, Ethiopia`,
+  })
 }
 
 export default async function DestinationPage({

@@ -1,6 +1,9 @@
+import { createPageMetadata } from '@/lib/seo/metadata'
 import { ArticleBody, ArticleHeader, ArticleImage, ArticlePlanning, getPost, getRelatedPosts, posts, RelatedPosts } from '@/features/blog'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+
+export const dynamicParams = false
 
 export function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }))
@@ -14,17 +17,15 @@ export async function generateMetadata({
   const { slug } = await params
   const p = getPost(slug)
   if (!p) return { title: 'Article not found' }
-  return {
+  return createPageMetadata({
     title: p.title,
     description: p.excerpt,
-    authors: [{ name: p.author }],
-    openGraph: {
-      title: p.title,
-      description: p.excerpt,
-      type: 'article',
-      images: [p.image],
-    },
-  }
+    path: `/blog/${p.slug}`,
+    image: p.image,
+    imageAlt: p.imageAlt ?? p.title,
+    type: 'article',
+    author: p.author,
+  })
 }
 
 export default async function ArticlePage({

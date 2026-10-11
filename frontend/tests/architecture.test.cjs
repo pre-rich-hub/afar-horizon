@@ -37,7 +37,7 @@ test('feature boundaries have explicit public entry points and no domain cycles'
         if (folder === 'lib') assert.ok(!specifier.startsWith('@/features/'), `${relative}: infrastructure depends on a feature`)
       }
       if (relative.startsWith('app/')) {
-        assert.match(path.basename(file), /^(page|layout|loading|not-found)\.tsx$/, `Unexpected route implementation: ${relative}`)
+        assert.match(path.basename(file), /^(?:(page|layout|loading|not-found)\.tsx|(sitemap|robots)\.ts)$/, `Unexpected route implementation: ${relative}`)
         assert.ok(!fs.readFileSync(file, 'utf8').includes('fetch('), `${relative}: request belongs in a feature`)
       }
     }

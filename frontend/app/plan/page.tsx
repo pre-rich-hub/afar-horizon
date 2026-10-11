@@ -1,13 +1,15 @@
+import { createPageMetadata } from '@/lib/seo/metadata'
 import { PlanHero, PlanRequest } from '@/features/plan'
 import { getTour } from '@/features/tours'
-import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Plan My Journey',
-  description:
-    'Tell us your dates, interests and travel style and we will help design your private Danakil, Afar or Northern Ethiopia expedition.',
-  alternates: { canonical: '/plan' },
-}
+export const metadata = createPageMetadata({
+  "title": "Plan Your Private Afar & Ethiopia Journey",
+  "description": "Share your dates, interests and preferred pace. Plan a private Danakil expedition, an Afar journey or a combined northern Ethiopia route with our team.",
+  "path": "/plan",
+  "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-assale.png",
+  "imageAlt": "Lake Assale, Ethiopia",
+  "index": false
+})
 
 export default async function PlanPage({
   searchParams,

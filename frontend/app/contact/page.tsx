@@ -1,11 +1,13 @@
+import { createPageMetadata } from '@/lib/seo/metadata'
 import { ContactEnquiry, ContactHero, ContactProcess, ContactPromises } from '@/features/contact'
-import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Contact Us',
-  description:
-    'Speak directly with an Addis-based travel designer about your Ethiopian journey. We are available Monday to Saturday, 8:00 AM - 5:30 PM.',
-}
+export const metadata = createPageMetadata({
+  "title": "Contact Us to Plan Your Afar Journey",
+  "description": "Speak with Afar Horizon about private Danakil expeditions, Afar travel and northern Ethiopia routes. Share your dates, interests and planning questions.",
+  "path": "/contact",
+  "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/afar.png",
+  "imageAlt": "Afar, Ethiopia"
+})
 
 export default function ContactPage() {
   return (

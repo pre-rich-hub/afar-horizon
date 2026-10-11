@@ -1,12 +1,13 @@
+import { createPageMetadata } from '@/lib/seo/metadata'
 import { GroundOpsHandle, GroundOpsHero, GroundOpsIntro, GroundOpsPartner, GroundOpsServices } from '@/features/ground-operations'
-import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Ground Operations',
-  description:
-    'Ethiopia ground operations for international tour operators, agencies, researchers and specialist groups: 4×4 vehicles, guides, camps, accommodation and expedition support.',
-  alternates: { canonical: '/ground-operations' },
-}
+export const metadata = createPageMetadata({
+  "title": "Ethiopia Ground Operations & Expedition Support",
+  "description": "Local ground support for tour operators, film crews and research teams in Afar and northern Ethiopia: vehicles, guides, camps and route coordination.",
+  "path": "/ground-operations",
+  "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/dallol.png",
+  "imageAlt": "Dallol, Ethiopia"
+})
 
 export default function GroundOperationsPage() {
   return (

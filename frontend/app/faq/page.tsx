@@ -1,12 +1,13 @@
+import { createPageMetadata } from '@/lib/seo/metadata'
 import { FaqGroups, FaqHero, FaqPlanning, FaqStructuredData } from '@/features/faq'
-import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Frequently Asked Questions',
-  description:
-    'Answers about Afar Horizon Expeditions: private Danakil and Northern Ethiopia trips, prices, deposits, what is included, changing conditions and specialist travel.',
-  alternates: { canonical: '/faq' },
-}
+export const metadata = createPageMetadata({
+  "title": "Afar & Danakil Expedition FAQs",
+  "description": "Find answers about private Afar and Danakil expeditions: booking, inclusions, camps, walking, changing conditions and journeys into northern Ethiopia.",
+  "path": "/faq",
+  "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/dallol.png",
+  "imageAlt": "Dallol, Ethiopia"
+})
 
 export default function FaqPage() {
   return (

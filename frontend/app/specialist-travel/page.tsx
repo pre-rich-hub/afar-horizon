@@ -1,12 +1,13 @@
+import { createPageMetadata } from '@/lib/seo/metadata'
 import { SpecialistHero, SpecialistNavigation, SpecialistPlanning, SpecialistPricing, SpecialistTracks } from '@/features/specialist-travel'
-import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Specialist Travel',
-  description:
-    'Custom Ethiopian expeditions for photographers, filmmakers, researchers, universities, trekkers, runners and private groups, with local logistics in the Danakil and the north.',
-  alternates: { canonical: '/specialist-travel' },
-}
+export const metadata = createPageMetadata({
+  "title": "Specialist Afar & Ethiopia Expeditions",
+  "description": "Plan photography, filming, research and mountain journeys in Afar and northern Ethiopia, with local route planning and expedition logistics.",
+  "path": "/specialist-travel",
+  "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/dallol.png",
+  "imageAlt": "Dallol, Ethiopia"
+})
 
 export default function SpecialistTravelPage() {
   return (

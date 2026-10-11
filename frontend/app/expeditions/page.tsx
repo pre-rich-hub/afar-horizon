@@ -1,11 +1,13 @@
+import { createPageMetadata } from '@/lib/seo/metadata'
 import { ExpeditionCollections, ExpeditionsHero, ExpeditionsNote, ExpeditionsPlanning, getToursData } from '@/features/tours'
-import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Expeditions',
-  description:
-    'Private expeditions into the Danakil Depression, Afar and Northern Ethiopia, from a one-day Afar introduction to a 21-day journey. Locally operated from Ethiopia.',
-}
+export const metadata = createPageMetadata({
+  "title": "Private Danakil & Ethiopia Tour Packages",
+  "description": "Compare private Afar and Danakil expeditions, combined highlands routes and northern Ethiopia tours. Explore durations, itineraries and inclusions.",
+  "path": "/expeditions",
+  "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652748/LakeAfdera.png",
+  "imageAlt": "Lake Afdera, Afar, Ethiopia"
+})
 
 export default async function ExpeditionsPage() {
   const tours = await getToursData()

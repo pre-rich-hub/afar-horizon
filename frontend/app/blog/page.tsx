@@ -1,11 +1,13 @@
+import { createPageMetadata } from '@/lib/seo/metadata'
 import { BlogHero, BlogNewsletter, BlogPlanning, FeaturedPost, getPostCollection, PostArchive } from '@/features/blog'
-import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'The Journal',
-  description:
-    'Afar and Danakil travel guides: when to visit, what to pack, Erta Ale, Dallol and the salt lakes, alongside culture and northern Ethiopia journeys.',
-}
+export const metadata = createPageMetadata({
+  "title": "Afar & Danakil Travel Guides",
+  "description": "Plan your Afar journey with guides to Danakil seasons, packing, Erta Ale, Dallol, salt lakes and Semera, alongside wider Ethiopian travel stories.",
+  "path": "/blog",
+  "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/afar.png",
+  "imageAlt": "Afar, Ethiopia"
+})
 
 export default function BlogPage() {
   const { featured, rest } = getPostCollection()
