@@ -1,0 +1,766 @@
+{
+  "UI": {
+    "common": {
+      "BookingCard": {
+        "askAQuestion": "Stellen Sie eine Frage"
+      },
+      "CtaBand": {
+        "planMyJourney": "Meine Reise planen",
+        "orCallUsDirectlyOn": "Oder rufen Sie uns direkt an",
+        "speakWithADesigner": "Sprechen Sie mit einem Designer"
+      },
+      "PageHero": {
+        "breadcrumb": "Breadcrumb"
+      },
+      "PageSkeleton": {
+        "loading": "Laden"
+      },
+      "SectionNav": {
+        "onThisPage": "Auf dieser Seite"
+      },
+      "InfoCard": {
+        "explore": "Erkunden"
+      },
+      "NotFound": {
+        "error": "Fehler 404",
+        "title": "Diese Straße erscheint nicht auf unserer Karte",
+        "description": "Die von Ihnen gesuchte Seite ist umgezogen oder existiert nie. Das Land ist glücklicherweise immer noch dort, wo wir es verlassen haben.",
+        "home": "Zurück zum Anfang",
+        "destinations": "Reiseziele ansehen",
+        "or": "Oder",
+        "contact": "schreiben Sie an einen Designer",
+        "instead": "stattdessen."
+      }
+    },
+    "layout": {
+      "SiteFooter": {
+        "afarHorizonExpeditionsHome": "Afar Horizon Expeditions – Startseite",
+        "afarHorizonExpeditionsLogo": "Afar Horizon Expeditions Logo",
+        "introducingTravellersToOneOfHumanityApos": "Reisende in eine der ältesten Zivilisationen der Menschheit einführen – mit Sorgfalt, Wissen und stillem Luxus.",
+        "continueExploringEthiopia": "Erkunden Sie Äthiopien weiter",
+        "curatedTravelStoriesAndSeasonalInspirationFrom": "Kuratierte Reisegeschichten und saisonale Inspirationen von unseren Designern. Vier Briefe pro Jahr, nie mehr.",
+        "trustedTravelPlatforms": "Vertrauenswürdige Reise Plattformen",
+        "findAndReviewUsWhereSeasonedTravellers": "Finden und bewerten Sie uns, wo erfahrene Reisende planen.",
+        "weAccept": "Wir akzeptieren",
+        "securePaymentsByCardOrPaypal": "Sichere Zahlungen per Karte oder PayPal.",
+        "copy": "©",
+        "afarHorizonExpeditionsAllRightsReserved": "Afar Horizon Expeditions. Alle Rechte vorbehalten.",
+        "builtBy": "Aufgebaut von",
+        "melbaTechnology": "Melba Technology",
+        "privacyPolicy": "Datenschutzerklärung",
+        "termsAmpConditions": "Allgemeine Geschäftsbedingungen"
+      },
+      "SiteNav": {
+        "afarHorizonExpeditionsHome": "Afar Horizon Expeditions – Startseite",
+        "afarHorizonExpeditionsLogo": "Afar Horizon Expeditions Logo",
+        "afarTigrayAmhara": "In der Ferne · Tigray · Amhara",
+        "ourDestinations": "Unsere Ziele",
+        "fromTheSaltAndVolcanoesOfThe": "Vom Salz und den Vulkanen des Danakil bis zu den Klippenkirchen, alten Königreichen und Bergen des Nordens.",
+        "viewAllDestinations": "Alle Ziele anzeigen",
+        "afarDanakilNorthernEthiopia": "Afar · Danakil · Nordäthiopien",
+        "ourExpeditions": "Unsere Expeditionen",
+        "privateExpeditionsFromOneDayToThree": "Private Expeditionen von einem Tag bis zu drei Wochen, durchgeführt von unserem eigenen Team vor Ort.",
+        "exploreAllExpeditions": "Alle Expeditionen erkunden",
+        "from": "Von",
+        "changeLanguage": "Sprache ändern",
+        "language": "Sprache",
+        "closeMenu": "Menü schließen",
+        "openMenu": "Menü öffnen"
+      }
+    },
+    "about": {
+      "AboutApproach": {
+        "theKindOfTravelWeBelieveIn": "Die Art von Reisen, an die wir glauben",
+        "theRightThingsAtTheRightPace": "Die richtigen Dinge. Im richtigen Tempo."
+      },
+      "AboutBrief": {
+        "inBrief": "Kurz gesagt",
+        "whoWhereAndHowWePlan": "Wer, wo und wie wir planen.",
+        "planWithUs": "Planen Sie mit uns"
+      },
+      "AboutHero": {
+        "danakilDepressionAfar": "Danakil Depression, Afar",
+        "breadcrumb": "Breadcrumb",
+        "home": "Startseite",
+        "aboutUs": "Über uns",
+        "aboutAfarHorizonExpeditions": "Über Afar Horizon Expeditions",
+        "ldquoWeWantPeopleToExperienceThe": "„Wir möchten, dass die Menschen das Äthiopien, das wir kennen, erleben – und nicht nur besuchen.“",
+        "aLocallyOwnedTeamInAddisAbaba": "Ein lokal geführtes Team in Addis Abeba, das private Reisen vom Salz und Feuer der Afar bis in die alten Hochländer des Landes entwirft."
+      },
+      "AboutPlanning": {
+        "startWithAConversation": "Beginnen Sie mit einem Gespräch",
+        "tellUsHowMuchTimeYouHave": "Erzählen Sie uns, wie viel Zeit Sie haben und was Sie an Äthiopien reizt. Ein Designer wird Ihnen innerhalb eines Tages mit ehrlichen Ratschlägen und einem ersten Überblick über die Reise antworten.",
+        "planWithUs": "Planen Sie mit uns",
+        "browseExpeditions": "Expeditionen durchsuchen"
+      },
+      "AboutStory": {
+        "theRoadOutOfAddis": "Die Straße aus Addis",
+        "beforeTheAfarBecameAnItinerary": "Bevor die Afar zu einer Reiseroute wurde.",
+        "simienMountainsEthiopia": "Simien-Gebirge, Äthiopien",
+        "thereIsARoadOutOfAddis": "Es gibt eine Straße aus Addis Abeba heraus, die wir nie müde werden, zu nehmen. Die Stadt hinter Ihnen wird dünner, das Hochland faltet sich zusammen und das Land fällt zum Rift hin ab – bis die Luft heiß und weit wird und sich der Afar bis zum Horizont öffnet. Es erinnert uns jedes Mal daran, warum wir uns für diese Arbeit entschieden haben.",
+        "weNamedTheCompanyForThatHorizon": "Wir haben das Unternehmen nach diesem Horizont benannt. Lange bevor diese Orte auf einem Reiseplan standen, waren sie einfach Teil unseres Landes: die Salzkarawanen der Danakil, die Marktstädte im Hochland, die in den Felsen von Lalibela gehauenen Kirchen.",
+        "overTheYearsWeLearnedHowA": "Im Laufe der Jahre haben wir gelernt, wie sich eine vertraute Straße mit der Jahreszeit verändert, wie ein Festtag eine Stadt über Nacht verwandeln kann und wie die Wüste ihren eigenen Zeitplan einhält. Einen Ort zu kennen ist etwas anderes, als einfach nur den Weg durch ihn zu kennen.",
+        "thenWeStartedGuiding": "Dann haben wir mit der Führung begonnen",
+        "seeingHomeThroughNewEyes": "Heimat mit neuen Augen sehen.",
+        "afarRegionEthiopia": "Afar-Region, Äthiopien",
+        "aTravellerStopsToWatchAGelada": "Ein Reisender hält an, um eine Gelada-Truppe zu beobachten, und stellt noch eine Frage. Jemand fragt sich, warum ein Dorf genau dort liegt, wo es liegt. Jemand probiert zum ersten Mal äthiopischen Kaffee direkt an der Quelle. Jemand erreicht den Rand von Erta Ale und verstummt.",
+        "guidingTaughtUsToNoticeWhatWe": "Die Führung lehrte uns, das zu bemerken, was wir einst für selbstverständlich hielten, und zeigte uns, dass die Aufgabe darin besteht, den Menschen zu helfen, zu verstehen, wo sie sind – und nicht nur darin, den Weg zu weisen.",
+        "thatIsWhyEveryJourneyIsBuilt": "Deshalb wird jede Reise persönlich zusammengestellt. Ein Paar, das Ruhe sucht, ein Fotograf, der auf das Licht wartet, und ein Wanderer, der für die Hochsämonen trainiert, brauchen ganz unterschiedliche Reisen. Der erste Schritt ist immer zuzuhören."
+      }
+    },
+    "beforeyougo": {
+      "BeforeYouGoGuide": {
+        "onThisPage": "Auf dieser Seite",
+        "whatToPack": "Was Sie einpacken sollten",
+        "travelWithRespect": "Reisen mit Respekt",
+        "heatRemotenessRoughRoadsBasicCampsAnd": "Hitze, Abgeschiedenheit, holprige Straßen, einfache Lager und frühe Starts sind Teil einer Danakil-Expedition. Keines davon sollte Ihnen Angst machen, aber mit allen sollte man rechnen. Auf dieser Seite wird jedes einzelne erklärt und was wir dagegen tun.",
+        "altitudeOrHeat": "Höhe oder Hitze?",
+        "ethiopiaCanChallengeYourBodyInOpposite": "Äthiopien kann Ihren Körper auf unterschiedliche Weise herausfordern, manchmal innerhalb derselben Woche. Aus diesem Grund erläutern wir die Anforderungen Ihrer spezifischen Route und verwenden nicht nur einen Schwierigkeitsgrad.",
+        "whatToPackForTheDanakil": "Was Sie für den Danakil einpacken sollten",
+        "mostImportantlyDoNotUnderestimateTheHeat": "Das Wichtigste: Unterschätzen Sie die Hitze nicht. Für medizinischen Rat konsultieren Sie vor Ihrer Reise einen qualifizierten Arzt und stellen Sie sicher, dass Ihre Reiseversicherung abgelegene Gebiete abdeckt.",
+        "photographPeopleNotAtPeopleAGood": "Fotografieren Sie Menschen, nicht Menschen. Ein gutes Foto sollte für die Person vor Ihrer Kamera kein schlechtes Erlebnis bedeuten.",
+        "aFewWordsHelp": "Ein paar Worte helfen:",
+        "selam": "Selam",
+        "hello": "(Hallo),",
+        "amesegenallo": "Amesegenallo",
+        "thankYou": "(Danke).",
+        "stillHaveQuestions": "Haben Sie noch Fragen?",
+        "readOur": "Lesen Sie unsere",
+        "faq": "FAQ",
+        "compare": ", vergleichen",
+        "expeditions": "Expeditionen",
+        "orAskUsAboutCurrentConditionsFor": ", oder fragen Sie uns nach den aktuellen Bedingungen für Ihre Termine."
+      },
+      "BeforeYouGoHero": {
+        "beforeYouGo": "Bevor Sie losfahren",
+        "whatTheJourneyIsReallyLike": "Wie die Reise wirklich aussieht",
+        "theDanakilAndNorthernEthiopiaAreNot": "Der Danakil und Nordäthiopien sind keine gewöhnlichen Sehenswürdigkeiten. Ehrlich gesagt, hier ist, was Sie erwartet, damit Sie vorbereitet und nicht überrascht ankommen.",
+        "dallolInTheDanakilDepression": "Dallol in der Danakil-Senke",
+        "home": "Startseite"
+      },
+      "BeforeYouGoPlanning": {
+        "askAboutCurrentConditions": "Erkundigen Sie sich nach den aktuellen Bedingungen",
+        "tellUsYourDatesAndWeWill": "Sagen Sie uns Ihre Termine und wir sagen Ihnen ehrlich, was ist möglich, was die Route beinhaltet und was wir empfehlen würden.",
+        "readTheFaq": "Lesen Sie die FAQ"
+      }
+    },
+    "blog": {
+      "ArticleBody": {
+        "writtenBy": "Geschrieben von",
+        "questionsAboutAnyOfTheAboveAre": ". Fragen zu den oben genannten Punkten sind jederzeit willkommen –",
+        "writeToUs": "schreiben Sie uns",
+        "furtherReading": "Weiterführende Literatur:",
+        "readNext": "Weiter lesen"
+      },
+      "ArticleHeader": {
+        "breadcrumb": "Breadcrumb",
+        "home": "Startseite",
+        "theJournal": "Das Tagebuch",
+        "updated": "Aktualisiert"
+      },
+      "ArticlePlanning": {
+        "readyToSeeItForYourself": "Bereit, es selbst zu sehen?",
+        "everyEssayHereComesOutOfA": "Jeder Aufsatz hier ist das Ergebnis einer Reise, die wir für jemanden entworfen haben. Sagen Sie uns, wie Sie sich bei Ihnen anfühlen sollen.",
+        "seeDestinations": "Reiseziele ansehen"
+      },
+      "BlogHero": {
+        "theJournal": "Das Tagebuch",
+        "fieldNotesFromAfarAndBeyond": "Feldnotizen von Afar und darüber hinaus",
+        "planYourJourneyIntoAfarWhenTo": "Planen Sie Ihre Reise nach Afar: wann was man besuchen sollte, was man einpacken sollte und wie man die Vulkane, das Salzland und die Gemeinden des Danakil versteht. Erkunden Sie zusammen mit diesen Reiseführern die Kultur und die historischen Routen Äthiopiens im weiteren Sinne.",
+        "afarRegionEthiopia": "Afar-Region, Äthiopien",
+        "home": "Startseite",
+        "journal": "Journal"
+      },
+      "BlogNewsletter": {
+        "theLetter": "Der Brief",
+        "oneLetterASeasonNoMoreThan": "Ein Buchstabe pro Saison, nicht mehr als das.",
+        "festivalDatesWorthPlanningAroundNewLodges": "Festivaltermine, die es zu planen gilt, neue Lodges Wir haben tatsächlich ausgeschlafen und gelegentlich ein ehrliches Wort darüber, wohin wir diesen Monat nicht gehen sollten."
+      },
+      "BlogPlanning": {
+        "readSomethingThatChangedYourMind": "Lesen Sie etwas, das Ihre Meinung geändert hat?",
+        "mostOfTheseEssaysStartedAsAn": "Die meisten dieser Aufsätze begannen als Antwort auf eine Frage eines Gastes. Fragen Sie uns nach Ihrem Angebot und vielleicht wird es das nächste.",
+        "browseExpeditions": "Expeditionen durchsuchen"
+      },
+      "FeaturedPost": {
+        "latestDispatch": "Letzte Meldung"
+      },
+      "PostArchive": {
+        "archive": "Archiv",
+        "everythingWeHaveWrittenDown": "Alles, was wir aufgeschrieben haben",
+        "sixEssaysAndCountingFiledByWhat": "Sechs Aufsätze und mehr, geordnet nach dem, wofür sie tatsächlich nützlich sind."
+      },
+      "PostsGrid": {
+        "filterArticlesByCategory": "Artikel nach Kategorie filtern",
+        "nothingFiledUnderThisYet": "Dazu ist noch nichts eingetragen."
+      },
+      "RelatedPosts": {
+        "moreFromTheJournal": "Mehr aus dem Tagebuch",
+        "alsoWorthYourTime": "Auch die Höhe lohnt sich",
+        "allWriting": "Alles Schreiben"
+      }
+    },
+    "contact": {
+      "ContactEnquiry": {
+        "getInTouch": "Kontaktieren Sie uns",
+        "tellUsAboutTheJourneyInYour": "Erzählen Sie uns von der Reise in Ihrem Kopf",
+        "howeverRoughTheIdeaItIsEnough": "Wie grob die Idee auch sein mag, sie reicht aus. Wir werden mit Fragen, einer Route, die eine Überlegung wert ist, und einer klaren Antwort auf die Kosten zurückkommen.",
+        "telephone": "Telefon",
+        "whatsapp": "WhatsApp",
+        "email": "E-Mail",
+        "office": "Büro",
+        "hours": "Stunden"
+      },
+      "ContactHero": {
+        "speakWithADesigner": "Sprechen Sie mit einem Designer",
+        "everyJourneyBeginsWithAConversation": "Jede Reise beginnt mit einem Gespräch",
+        "noCallCentresAndNoTemplatesWrite": "Keine Callcenter und keine Vorlagen. Schreiben Sie uns und ein in Addis ansässiger Designer antwortet persönlich, normalerweise am selben Tag.",
+        "afarRegionEthiopia": "Afar-Region, Äthiopien",
+        "home": "Startseite",
+        "contact": "Kontakt",
+        "replyTime": "Antwortzeit",
+        "basedIn": "Basis in",
+        "support": "Unterstützung",
+        "deposit": "Anzahlung"
+      },
+      "ContactProcess": {
+        "whatHappensNext": "Was als Nächstes passiert",
+        "howAJourneyGetsDesigned": "Wie eine Reise gestaltet wird",
+        "fourStepsAndNoMoneyChangesHands": "Vier Schritte, und kein Geld wechselt den Besitzer, bis Ihnen der dritte direkt vor Augen führt."
+      },
+      "ContactPromises": {
+        "ourPromise": "Unser Versprechen",
+        "whatYouGetFromWorkingWithUs": "Was Sie von der Zusammenarbeit mit uns bekommen"
+      }
+    },
+    "destinations": {
+      "DestinationBooking": {
+        "planYourVisit": "Planen Sie Ihren Besuch",
+        "planMyJourney": "Meine Reise planen",
+        "askAboutCurrentConditions": "Erkundigen Sie sich nach den aktuellen Bedingungen",
+        "suggestedStay": "Empfohlener Aufenthalt",
+        "bestTime": "Beste Zeit",
+        "altitude": "Höhe",
+        "region": "Region"
+      },
+      "DestinationCard": {
+        "explore": "Erkunden"
+      },
+      "DestinationEnquiry": {
+        "planThisDestination": "Planen Sie dieses Ziel",
+        "build": "Erstellen",
+        "intoYourJourney": "in Ihre Reise",
+        "tellUsWhatYouAreCuriousAbout": "Sagen Sie uns, worauf Sie neugierig sind, was Sie fotografieren möchten und wie langsam oder schnell Sie reisen möchten. Wir gestalten die Reise rund um Sie herum und bestätigen die aktuellen Bedingungen für Ihre Termine.",
+        "alsoConsider": "Bedenken Sie auch"
+      },
+      "DestinationGrid": {
+        "valueValue": "{value0} {value1}",
+        "destination": "Ziel",
+        "destinations": "Reiseziele"
+      },
+      "DestinationHero": {
+        "valueValue": "{value0} · {value1}",
+        "home": "Startseite",
+        "destinations": "Ziele",
+        "bestTime": "Beste Zeit",
+        "suggestedStay": "Empfohlener Aufenthalt",
+        "altitude": "Höhe",
+        "region": "Region"
+      },
+      "DestinationHighlights": {
+        "highlights": "Höhepunkte",
+        "questionsTravellersAsk": "Fragen, die Reisende stellen"
+      },
+      "DestinationJourneys": {
+        "exploreOurExpeditions": "Erkunden Sie unsere Expeditionen",
+        "routesThatPassThroughHere": "Routen, die hier durchgehen",
+        "otherJourneysToConsider": "Andere Reisen, die Sie in Betracht ziehen sollten",
+        "allExpeditions": "Alle Expeditionen",
+        "expeditionsIncluding": "Expeditionen mit {value0}"
+      },
+      "DestinationOverview": {
+        "whyWeGo": "Warum wir gehen",
+        "planningYourVisitRead": "Planen Sie Ihren Besuch? Lesen"
+      },
+      "DestinationPlanning": {
+        "yourEthiopiaShouldNotFeelLikeSomeone": "Ihr Äthiopien sollte sich nicht wie die Reiseroute eines anderen anfühlen",
+        "askAboutRoadConditionsTheSeasonOr": "Erkundigen Sie sich nach den Straßenverhältnissen, der Jahreszeit oder wie ein Tag hier wirklich aussieht. Sie erhalten eine klare Antwort vom Team, das die Route durchführt.",
+        "allDestinations": "Alle Ziele"
+      },
+      "DestinationsHero": {
+        "whereWeTravel": "Wohin wir reisen",
+        "fromTheLowestLandscapesToTheHighest": "Von den niedrigsten Landschaften zu den höchsten Horizonten",
+        "saltAndVolcanoesInAfarCliffChurches": "Salz und Vulkane in Afar, Felsenkirchen in Gheralta, das alte Königreich Axum und die Berge der Simien. Dies sind die Orte, die wir von Grund auf kennen.",
+        "ertaAleVolcanoInAfarEthiopia": "Erta Ale-Vulkan in Afar, Äthiopien",
+        "home": "Startseite",
+        "destinations": "Ziele",
+        "lowestPoint": "Tiefster Punkt",
+        "highestPoint": "Höchster Punkt",
+        "danakilSeason": "Danakil-Saison"
+      },
+      "DestinationsPlanning": {
+        "notSureWhereToStart": "Ich weiß nicht, wohin Start?",
+        "tellUsHowManyDaysYouHave": "Sagen Sie uns, wie viele Tage Sie haben und was Sie anzieht, ob Salz und Vulkane, Klippenkirchen oder Berge, und wir schlagen Ihnen eine Route vor, die für die aktuellen Bedingungen geeignet ist.",
+        "browseExpeditions": "Expeditionen durchsuchen"
+      }
+    },
+    "enquiries": {
+      "EnquiryForm": {
+        "requestReceived": "Anfrage erhalten",
+        "weReadEveryRequestPersonallyAndWill": "Wir lesen jede Anfrage persönlich und antworten per E-Mail oder WhatsApp, in der Regel innerhalb eines Werktages.",
+        "enquiryAbout": "Anfrage zu",
+        "fullName": "Vollständiger Name",
+        "yourName": "Ihr Name",
+        "emailAddress": "E-Mail-Adresse",
+        "youEmailCom": "you@email.com",
+        "preferredTravelDates": "Bevorzugte Reisedaten",
+        "eGMarch2026": "z.B. März 2026",
+        "numberOfTravellers": "Anzahl der Reisenden",
+        "2Adults": "2 Erwachsene",
+        "whatKindOfJourneyDoYouImagine": "Was für eine Reise stellst du dir vor?",
+        "tellUsAboutTheJourneyYouVe": "Erzählen Sie uns von der Reise, die Sie sich vorgestellt haben",
+        "howManyDaysYouHaveWhatYou": "Wie viele Tage haben Sie, was möchten Sie sehen, alles, was wir wissen sollten...",
+        "beginTheConversation": "Beginnen Sie das Gespräch",
+        "weReplyPersonallyYourDetailsAreNever": "Wir antworten persönlich. Ihre Daten werden niemals weitergegeben.",
+        "fallbackError": "Etwas ist schief gelaufen – bitte versuchen Sie es noch einmal."
+      },
+      "FormParts": {
+        "sending": "Wird gesendet…",
+        "requestReceived": "Anfrage erhalten",
+        "fallbackError": "Etwas ist schief gelaufen. Bitte versuchen Sie es noch einmal."
+      },
+      "PartnerForm": {
+        "thankYouWeWillReviewYourProgramme": "Danke. Wir prüfen Ihr Programm und kommen mit Fragen oder einem Geländevorschlag zurück, normalerweise innerhalb von zwei Arbeitstagen.",
+        "sendPartnerRequest": "Partner senden Anfrage",
+        "weReplyPersonallyNetRatesAndCommission": "Wir antworten persönlich. Nettotarife und Provisionsstrukturen werden mit zugelassenen Partnern besprochen.",
+        "yourCompany": "Ihr Unternehmen",
+        "company": "Unternehmen",
+        "country": "Land",
+        "contactName": "Kontaktname",
+        "email": "E-Mail",
+        "whatsappPhone": "WhatsApp / Telefon",
+        "theProgramme": "Das Programm",
+        "travelDates": "Reisedaten",
+        "groupSize": "Gruppengröße",
+        "destinations": "Ziele",
+        "eGDanakilGheraltaLalibela": "z.B. Danakil, Gheralta, Lalibela",
+        "servicesRequired": "Erforderliche Leistungen",
+        "yourProgrammeOrQuestions": "Ihr Programm oder Ihre Fragen"
+      }
+    },
+    "faq": {
+      "FaqHero": {
+        "faq": "FAQ",
+        "questionsTravellersAsk": "Fragen, die Reisende stellen",
+        "straightAnswersAboutHowWeWorkWhat": "Klare Antworten darüber, wie wir arbeiten, was eine Danakil-Expedition beinhaltet und wie die Buchung funktioniert.",
+        "dallolInTheDanakilDepression": "Dallol in der Danakil-Senke",
+        "home": "Startseite"
+      },
+      "FaqPlanning": {
+        "didnTFindYourQuestion": "Haben Sie Ihre Frage nicht gefunden?",
+        "askUsAboutCurrentConditionsYourDates": "Fragen Sie uns nach den aktuellen Bedingungen, Ihren Daten oder anderem. Sie erhalten eine ehrliche Antwort vom Team, das die Route durchführt.",
+        "beforeYouGo": "Bevor Sie losfahren"
+      }
+    },
+    "gallery": {
+      "GalleryCollection": {
+        "theCollection": "Die Sammlung",
+        "momentsFromTheRoad": "Momente abseits der Straße",
+        "exploreMountainLandscapesRockHewnChurchesLocal": "Entdecken Sie Berglandschaften, Felsenkirchen, lokales Kunsthandwerk und Momente auf der Reise. Filtern Sie nach Thema und tippen Sie dann auf ein Foto, um es vollständig anzuzeigen und die Bildunterschrift zu lesen."
+      },
+      "GalleryGrid": {
+        "filterPhotos": "Fotos filtern",
+        "openValueValue": "Öffnen Sie {value0}, {value1}",
+        "all": "Alle"
+      },
+      "GalleryHero": {
+        "theGallery": "Die Galerie",
+        "ethiopiaSeenSlowly": "Äthiopien, langsam gesehen",
+        "saltAndFireInTheAfarStone": "Salz und Feuer im Afar, Stein Kirchen im Norden, Nebel auf den Hochebenen und die Menschen, die jeden Ort zu dem machen, was er ist.",
+        "simienMountainsEthiopia": "Simien-Gebirge, Äthiopien",
+        "home": "Startseite",
+        "gallery": "Galerie"
+      },
+      "GalleryPlanning": {
+        "seeItForYourself": "Überzeugen Sie sich selbst",
+        "tellUsWhichOfThesePlacesPulls": "Sagen Sie uns, welcher dieser Orte Sie anzieht, und ein Designer wird eine Reise rund um das Licht, die Jahreszeit und das Tempo entwerfen, die Sie bevorzugen.",
+        "planYourJourney": "Planen Sie Ihre Reise",
+        "browseExpeditions": "Expeditionen durchsuchen"
+      },
+      "Lightbox": {
+        "valuePhotoValueOfValue": "{value0}, Foto {value1} von {value2}",
+        "closeGallery": "Galerie schließen",
+        "previousPhoto": "Vorheriges Foto",
+        "nextPhoto": "Nächstes Foto"
+      }
+    },
+    "groundoperations": {
+      "GroundOpsHandle": {
+        "whatWeHandle": "Was wir erledigen",
+        "theWholeGroundOperationOrTheParts": "Der gesamte Bodenbetrieb oder die Teile, die Sie benötigen"
+      },
+      "GroundOpsHero": {
+        "groundOperations": "Boden Operationen",
+        "youBringTheTravellerWeHandleThe": "Sie bringen den Reisenden mit. Wir kümmern uns um den Boden.",
+        "localGroundOperationsInEthiopiaForInternational": "Lokale Bodenoperationen in Äthiopien für internationale Reiseveranstalter, Reiseberater, Spezialagenturen und Reisedesigner.",
+        "dallolInTheDanakilDepression": "Dallol in der Danakil-Senke",
+        "home": "Startseite"
+      },
+      "GroundOpsIntro": {
+        "oneLocalPartner": "Ein lokaler Partner",
+        "oneResponsibleContactOneTeamOnThe": "Ein verantwortlicher Ansprechpartner, ein Team vor Ort",
+        "insteadOfAnOverseasAgencyCoordinatingFive": "Anstelle einer ausländischen Agentur, die fünf verschiedene äthiopische Lieferanten koordiniert, fungiert Afar Horizon als Ihr lokaler Betriebspartner. Sie bleiben Ihrem Kunden nahe; Wir bleiben in der Nähe des Betriebs.",
+        "weSpecialiseInTheDanakilAfarAnd": "Wir sind auf Danakil, Afar und Nordäthiopien spezialisiert, wo abgelegene Routen, Hitze und wechselnde Zugangsmöglichkeiten lokale Kenntnisse zu einem Teil des Produkts machen."
+      },
+      "GroundOpsPartner": {
+        "sendYourProgramme": "Senden Sie Ihr Programm",
+        "needEthiopiaOnTheGround": "Benötigen Sie Äthiopien vor Ort?",
+        "sendYourDatesGroupSizeDestinationsAccommodation": "Senden Sie Ihre Daten, Gruppengröße, Reiseziele, Unterkunftsebene, Fahrzeuge, Reiseführer und alle besonderen Anforderungen. Wir überprüfen es und unterbreiten Ihnen einen professionellen äthiopischen Bodenvorschlag."
+      },
+      "GroundOpsServices": {
+        "forTravelCompanies": "Für Reiseunternehmen",
+        "howWeWorkWithPartners": "Wie wir mit Partnern zusammenarbeiten"
+      }
+    },
+    "home": {
+      "DestinationIndex": {
+        "fromTheLowestLandscapesToTheHighest": "Von den niedrigsten Landschaften zu den höchsten Horizonten",
+        "sevenAfarDestinationsAndThreeNorthernHighland": "Sieben Fernreiseziele und drei Highlights im nördlichen Hochland.",
+        "viewAllDestinations": "Alle Ziele anzeigen"
+      },
+      "Experiences": {
+        "travelWithAPurpose": "Reisen mit Sinn",
+        "builtAround": "Aufgebaut",
+        "whatYouCameFor": "wofür Sie gekommen sind",
+        "someTravellersComeForTheLightSome": "Einige Reisende kommen wegen des Lichts, andere wegen der Geologie, einige wegen der Kirchen, wieder andere, um ein Programm für ihre eigenen Kunden durchzuführen. Wir planen für jeden.",
+        "discoverMore": "Mehr entdecken",
+        "exploreAllExpeditions": "Alle Expeditionen erkunden"
+      },
+      "Gallery": {
+        "photoGallery": "Fotogalerie",
+        "animateKb1": "animate-kb-1",
+        "animateKb2": "animate-kb-2",
+        "valueEthiopia": "{value0}, Äthiopien",
+        "capturedMoments": "· Eingefangene Momente",
+        "goToSlideValue": "Gehen Sie zur Folie {value0}",
+        "pauseSlideshow": "Diashow anhalten",
+        "playSlideshow": "Diashow abspielen",
+        "previousSlide": "Vorherige Folie",
+        "nextSlide": "Nächste Folie"
+      },
+      "Hero": {
+        "beyondTheHorizonIntoAfar": "Jenseits des Horizonts in Afar",
+        "privateExpeditionsIntoTheDanakilAndNorthern": "Private Expeditionen in den Danakil und Nordäthiopien. Wir kümmern uns um die Reise."
+      },
+      "HeroActions": {
+        "takeMeTo": "Nehmen Sie mich mit",
+        "notSureWhere": "Nicht sicher, wo?",
+        "planMyJourney": "Meine Reise planen",
+        "searchDestinationsAndJourneys": "Ziele und Reisen suchen",
+        "search": "Suchen",
+        "suggestions": "Vorschläge",
+        "noMatches": "Keine Übereinstimmungen",
+        "popularDestinations": "Beliebte Reiseziele",
+        "nothingMatchesLdquo": "Nichts stimmt überein mit „",
+        "rdquoYetPressEnterToBrowseEvery": "“ noch nicht. Drücken Sie die Eingabetaste, um jede Reise zu durchsuchen, oder lassen Sie uns eine Reise rund um diese Reise planen."
+      },
+      "HeroSlideshow": {
+        "clientProvidedPhotoCollection": "Vom Kunden bereitgestellte Fotosammlung"
+      },
+      "PlanJourney": {
+        "planYourJourney": "Planen Sie Ihre Reise",
+        "planYourExpeditionWithUs": "Planen Sie Ihre Expedition mit uns",
+        "tellUsYourDatesHowManyDays": "Sagen Sie uns Ihre Daten, wie viele Tage Sie haben und was Sie erleben möchten. Wir prüfen die aktuellen Bedingungen, bauen die Route und senden Ihnen ein klares Angebot. Zuerst ein Gespräch, niemals eine sofortige Buchung."
+      },
+      "SignatureDestinations": {
+        "whereWeTravel": "Wohin wir reisen",
+        "afarTheDanakilAndTheNorth": "Afar, der Danakil und der Norden",
+        "volcanoSaltAndGeothermalColourBelowSea": "Vulkan, Salz und geothermische Farbe unter dem Meeresspiegel; Klippenkirchen, alte Königreiche und Berge darüber.",
+        "exploreAllDestinations": "Alle Reiseziele erkunden"
+      },
+      "StoryCarousel": {
+        "everyExpedition": "Jede Expedition",
+        "saltFire": "Salz, Feuer,",
+        "stoneAndMountain": "Steine und Berge",
+        "fromASingleDayInAfarTo": "Von einem einzigen Tag in Afar bis zu drei Wochen quer durch den Norden. Jede Expedition ist eine geplante Route, die wir selbst durchführen und die wir anpassen, wenn sich die Bedingungen vor Ort ändern.",
+        "signatureJourneys": "Signature-Reisen",
+        "viewTrip": "Ansehen Reise",
+        "rarr": "→",
+        "previousJourney": "Vorherige Reise",
+        "nextJourney": "Nächste Reise"
+      },
+      "TourRail": {
+        "chooseYourHorizon": "Wählen Sie Ihren Horizont",
+        "fromOneDayInAfarTo": "Von einem Tag in Afar bis",
+        "threeWeeksInTheNorth": "drei Wochen im Norden",
+        "remarkableJourneysReshapedAroundYou": "Bemerkenswerte Reisen, die um Sie herum neu gestaltet werden.",
+        "featuredTours": "Besondere Touren",
+        "privateExpeditionsWeOperateOurselvesEachWith": "Private Expeditionen führen wir selbst durch, jede mit einer ehrlichen Tagesroute. Entdecken Sie sechs ausgewählte Reisen unserer siebzehn Expeditionen.",
+        "viewAll": "Alle anzeigen",
+        "nights": "Nächte",
+        "from": "Von",
+        "perPerson": "pro Person",
+        "exploreTrip": "Erkunden Sie die Reise",
+        "customTrips": "Individuelle Reisen",
+        "createYourOwn": "Eigene erstellen",
+        "itinerary": "Reiseroute",
+        "iHaveSixDaysAndWantThe": "„Ich habe sechs Tage Zeit und möchte Danakil und Gheralta.“ Teilen Sie uns Ihre Daten und Interessen mit und wir werden die Route nach Ihren Wünschen zusammenstellen.",
+        "createTrip": "Reise erstellen",
+        "previousTours": "Vorherige Touren",
+        "nextTours": "Nächste Touren"
+      },
+      "WhyTravel": {
+        "notJustATour": "Nicht nur eine Tour",
+        "whyAfarHorizon": "Warum Afar Horizon",
+        "whyTravelWithAfarHorizon": "Warum mit Afar Horizon reisen",
+        "goToSlideValueValue": "Gehen Sie zur Folie {value0}: {value1}",
+        "previousReason": "Vorheriger Grund",
+        "nextReason": "Nächster Grund"
+      }
+    },
+    "legal": {
+      "LegalContent": {
+        "afarHorizonExpeditions": "Afar Horizon Expeditionen",
+        "home": "Startseite",
+        "lastUpdated": "Letzte Aktualisierung:",
+        "october112026": "11. Oktober 2026"
+      }
+    },
+    "newsletter": {
+      "NewsletterForm": {
+        "thankYouTheNextLetterWillFind": "Danke – der nächste Brief wird Sie finden.",
+        "emailAddress": "E-Mail-Adresse",
+        "yourEmail": "Ihre E-Mail",
+        "join": "Beitreten"
+      }
+    },
+    "photocredits": {
+      "PhotoCreditsHero": {
+        "photoCredits": "Bildnachweis",
+        "photographsOnThisSite": "Fotos auf dieser Website",
+        "theDestinationAndExpeditionPhotographsOnThis": "Die Ziel- und Expeditionsfotos auf dieser Website wurden vom Kunden bereitgestellt und werden auf Cloudinary gehostet. Durchsuchen Sie die Sammlung unten.",
+        "lakeAssaleInTheDanakilDepression": "Der Assalesee in der Danakil-Senke",
+        "home": "Startseite"
+      },
+      "PhotoCreditsList": {
+        "clientProvidedPhotoCollection": "Vom Kunden bereitgestellte Fotosammlung ·",
+        "viewOnCloudinary": "Auf Cloudinary anzeigen"
+      }
+    },
+    "plan": {
+      "PlanHero": {
+        "planMyJourney": "Meine Reise planen",
+        "tellUsWhereYouWantToGo": "Sagen Sie uns, wohin Sie wollen",
+        "weWillHelpYouWorkOutHow": "Wir helfen Ihnen dabei, den Weg dorthin zu finden. Sie brauchen keine perfekte Reiseroute: „Ich habe zwei Wochen“ oder „Ich möchte den Danakil sehen“ reicht für den Anfang.",
+        "lakeAssaleInTheDanakilDepression": "Der Assalesee in der Danakil-Senke",
+        "home": "Startseite"
+      },
+      "PlanRequest": {
+        "howItWorks": "Wie es funktioniert",
+        "aConversationFirstNotAnInstantBooking": "Zuerst ein Gespräch, keine sofortige Buchung",
+        "preferToTalk": "Lieber reden?",
+        "whatsapp": "WhatsApp",
+        "planningForAGroupOfClientsUse": "Planen Sie für eine Gruppe von Kunden? Nutzen Sie unsere",
+        "partnerForm": "Partnerformular",
+        "instead": "stattdessen."
+      }
+    },
+    "specialisttravel": {
+      "SpecialistHero": {
+        "specialistTravel": "Spezialreisen",
+        "yourPurposeIsDifferentSoYourJourney": "Ihr Zweck ist anders, daher sollte Ihre Reise auch sein",
+        "someTravellersArriveWithACameraA": "Manche Reisende kommen mit einer Kamera, einer Forschungsfrage, einem Filmteam oder einem Laufziel an. Diese Reisen erfordern eine andere Logistik, und wir bauen sie nach Ihren Wünschen auf.",
+        "dallolInTheDanakilDepression": "Dallol in der Danakil-Senke",
+        "home": "Startseite"
+      },
+      "SpecialistNavigation": {
+        "specialistTravel": "Spezialreisen"
+      },
+      "SpecialistPlanning": {
+        "tellUsWhatYouArePlanning": "Sagen Sie uns, was Sie planen",
+        "shareYourPurposeDatesGroupSizeAnd": "Teilen Sie Ihr Ziel, Ihre Daten, Ihre Gruppengröße und die Orte mit, die Sie erreichen müssen. Wir sagen Ihnen, was unter den aktuellen Bedingungen möglich ist und wie wir es durchführen würden.",
+        "groundOperations": "Boden Operationen"
+      },
+      "SpecialistPricing": {
+        "howSpecialistTripsArePriced": "So werden die Preise für Spezialreisen berechnet",
+        "specialistWorkIsQuotedIndividuallyRatherThan": "Spezialarbeiten werden einzeln und nicht anhand einer Preisliste angeboten, da Fahrzeuge, Zusätzliche Tage, Ausrüstung, Genehmigungen und Personal hängen davon ab, was Sie benötigen. Teilen Sie uns Ihren Zweck und Ihre Daten mit und wir werden Ihnen ein Angebot unterbreiten."
+      }
+    },
+    "support": {
+      "FloatingSupport": {
+        "contactUsOnWhatsapp": "Kontaktieren Sie uns auf WhatsApp",
+        "chatOnWhatsapp": "Auf WhatsApp chatten",
+        "openAiAssistant": "Offener KI-Assistent",
+        "aiTravelAssistant": "KI-Reiseassistent",
+        "afarHorizonAiGuide": "Afar Horizon AI Guide",
+        "expertSupportOnline": "Expertenunterstützung · Online",
+        "closeChat": "Chat schließen",
+        "askAQuestionAboutEthiopia": "Stellen Sie eine Frage zu Äthiopien...",
+        "sendMessage": "Nachricht senden"
+      },
+      "SupportChat": {
+        "welcome": "Selam! Ich bin Ihr Afar Horizon KI-Assistent. Wie kann ich Ihnen heute bei der Gestaltung Ihrer privaten Reise durch die Seele Äthiopiens helfen?",
+        "limit": "Ich habe vorerst eine Grenze erreicht. Für ein persönliches, maßgeschneidertes Angebot nutzen Sie bitte unser Anfrageformular (/contact) oder chatten Sie mit uns auf WhatsApp.",
+        "personalHelp": "Für sofortige persönliche Hilfe kontaktieren Sie uns über WhatsApp."
+      }
+    },
+    "tours": {
+      "ExpeditionCollections": {
+        "expeditionCollections": "Expeditionssammlungen"
+      },
+      "ExpeditionsHero": {
+        "expeditions": "Expeditionen",
+        "chooseYourHorizon": "Wählen Sie Ihren Horizont",
+        "fromASingleDayInAfarTo": "Von einem einzigen Tag in Afar bis zu drei Wochen in ganz Nordäthiopien. Jede Reiseroute ist eine geplante Route, die wir selbst durchführen und anpassen, wenn sich die Bedingungen vor Ort ändern.",
+        "lakeAfderaInTheAfarRegion": "Der Afdera-See in der Afar-Region",
+        "home": "Startseite",
+        "length": "Länge",
+        "danakilGateway": "Danakil Gateway",
+        "style": "Stil"
+      },
+      "ExpeditionsNote": {
+        "howOurItinerariesWork": "Wie unsere Reiserouten funktionieren",
+        "aPlannedRouteNotAPromiseFrom": "Eine geplante Route, kein Versprechen der Natur",
+        "pricesAreStartingPricesPerPersonYour": "Preise sind Startpreise pro Person. Ihr endgültiges Angebot hängt von der Gruppengröße, den Daten, der Route, den Fahrzeugen, der Unterkunft und den Inlandsflügen ab und wir bestätigen es mit Ihnen, bevor Sie etwas bezahlen."
+      },
+      "ExpeditionsPlanning": {
+        "notSureWhichExpeditionFits": "Nicht sicher, welche Expedition passt?",
+        "tellUsYourDatesHowManyDays": "Teilen Sie uns Ihre Daten mit, wie viele Tage Sie haben und was Sie am liebsten erleben möchten. Wir bauen die Route nach Ihren Wünschen.",
+        "seeDestinations": "Reiseziele ansehen"
+      },
+      "RelatedTours": {
+        "otherExpeditions": "Andere Expeditionen",
+        "youMayAlsoBeWeighingUp": "Vielleicht wägen Sie auch ab",
+        "allExpeditions": "Alle Expeditionen"
+      },
+      "TourEnquiry": {
+        "enquire": "Anfragen",
+        "make": "Machen",
+        "yours": "Ihre",
+        "sendUsYourDatesAndGroupSize": "Senden Sie uns Ihre Termine und Gruppengröße. Wir überprüfen die aktuellen Bedingungen, bestätigen die Route und senden Ihnen ein klares Angebot, bevor Sie sich zu irgendetwas verpflichten.",
+        "from": "· von"
+      },
+      "TourFaqs": {
+        "beforeYouGo": "Bevor Sie losfahren",
+        "questionsTravellersAsk": "Fragen, die Reisende stellen"
+      },
+      "TourHero": {
+        "home": "Startseite",
+        "expeditions": "Expeditionen",
+        "duration": "Dauer",
+        "startFinish": "Start und Ziel",
+        "difficulty": "Schwierigkeitsgrad",
+        "pricing": "Preise",
+        "from": "Von"
+      },
+      "TourInclusions": {
+        "whatIsIncluded": "Was inbegriffen ist",
+        "notIncluded": "Nicht inbegriffen"
+      },
+      "TourOverview": {
+        "theJourney": "Die Reise",
+        "whoItIsFor": "Für wen es ist",
+        "considerAnotherItineraryIf": "Erwägen Sie eine andere Reiseroute, wenn",
+        "places": "Orte",
+        "pricing": "Preise",
+        "checkMyDates": "Meine Daten prüfen",
+        "askAboutCurrentConditions": "Erkundigen Sie sich nach den aktuellen Bedingungen",
+        "dayByDay": "Tag für Tag",
+        "thePlannedRoute": "Die geplante Route",
+        "exactTimingsCampLocationsAndAccessAre": "Genaue Zeiten, Lagerorte und Zugang werden für Ihre Daten bestätigt.",
+        "overnight": "Übernachtung",
+        "noOvernight": "Keine Übernachtung",
+        "meals": "Mahlzeiten",
+        "operatingSubjectToCurrentAccessAndConditions": "Der Betrieb unterliegt den aktuellen Zugangs- und Bedingungen.",
+        "duration": "Dauer",
+        "startFinish": "Start und Ziel",
+        "difficulty": "Schwierigkeitsgrad",
+        "group": "Gruppe",
+        "bestSeason": "Beste Jahreszeit",
+        "confirmedOnQuotation": "im Angebot bestätigt",
+        "perPersonConfirmedOnQuotation": "pro Person, bestätigt im Angebot",
+        "fromPrice": "Ab {value0}"
+      },
+      "TourPlanning": {
+        "questionsBeforeYouEnquire": "Fragen, bevor Sie sich erkundigen?",
+        "heatRoadTimeHowHardTheWalking": "Hitze, Fahrzeit, wie anstrengend das Gehen wirklich ist, was Camping im Danakil bedeutet. Wenn Sie uns etwas fragen, werden wir ehrlich antworten.",
+        "allExpeditions": "Alle Expeditionen"
+      }
+    }
+  },
+  "Common": {
+    "skipToContent": "Zum Inhalt springen"
+  },
+  "Pages": {
+    "about_title": "Über unser äthiopisches Expeditionsteam",
+    "about_description": "Treffen Sie Afar Horizon Expeditions, einen Einheimischen Ein eigenes äthiopisches Unternehmen plant private Reisen in die Ferne, nach Danakil und ins nördliche Hochland von Addis Abeba aus.",
+    "about_imageAlt": "Afar, Äthiopien",
+    "before-you-go_title": "Vorbereitung auf die Afar- und Danakil-Reise",
+    "before-you-go_description": "Vorbereitung auf eine Afar- oder Danakil-Expedition: Hitze, Wandern, Basislager, Packen, Essen, Wasser und respektvolles Reisen, mit Hinweisen für den Norden Hochland.",
+    "before-you-go_imageAlt": "Dallol, Äthiopien",
+    "blog_title": "Afar und Danakil-Reiseführer",
+    "blog_description": "Planen Sie Ihre Afar-Reise mit Reiseführern zu den Jahreszeiten in Danakil, zum Packen, Erta Ale, Dallol, Salzseen und Semera sowie weiteren äthiopischen Reisegeschichten.",
+    "blog_imageAlt": "Afar, Äthiopien",
+    "contact_title": "Kontaktieren Sie uns, um Ihre Afar-Reise zu planen",
+    "contact_description": "Sprechen Sie mit Afar Horizon über private Danakil-Expeditionen, Fernreisen und Nordäthiopien-Routen. Teilen Sie Ihre Termine, Interessen und Planungsfragen mit.",
+    "contact_imageAlt": "Afar, Äthiopien",
+    "destinations_title": "Afar, Danakil und Nordäthiopien Reiseziele",
+    "destinations_description": "Entdecken Sie Erta Ale, Dallol, Lake Assale und Lake Afdera in Afar, neben Gheralta, Lalibela und dem nördlichen Hochland. Finden Sie Orte für Ihre Reise.",
+    "destinations_imageAlt": "Erta Ale, Äthiopien",
+    "expeditions_title": "Private Danakil- und Äthiopien-Tourpakete",
+    "expeditions_description": "Vergleichen Sie private Afar- und Danakil-Expeditionen, kombinierte Hochlandrouten und Nordäthiopien-Touren. Entdecken Sie Dauer, Reiserouten und Einschlüsse.",
+    "expeditions_imageAlt": "Lake Afdera, Afar, Äthiopien",
+    "faq_title": "FAQs zur Afar- und Danakil-Expedition",
+    "faq_description": "Hier finden Sie Antworten zu privaten Afar- und Danakil-Expeditionen: Buchung, Inklusivleistungen, Camps, Wanderungen, wechselnde Bedingungen und Reisen in den Norden Äthiopiens.",
+    "faq_imageAlt": "Dallol, Äthiopien",
+    "gallery_title": "Afar und Nordäthiopien-Fotogalerie",
+    "gallery_description": "Entdecken Sie Fotos von Afar, der Danakil-Senke, Salzseen, Vulkanen und Nordäthiopien. Entdecken Sie Landschaften und Kulturerbe entlang unserer Routen.",
+    "gallery_imageAlt": "Simien-Gebirge, Äthiopien",
+    "ground-operations_title": "Bodenoperationen und Expeditionsunterstützung in Äthiopien",
+    "ground-operations_description": "Lokale Unterstützung vor Ort für Reiseveranstalter, Filmteams und Forschungsteams in Afar und Nordäthiopien: Fahrzeuge, Führer, Lager und Routenkoordination.",
+    "ground-operations_imageAlt": "Dallol, Äthiopien",
+    "home_title": "Private Afar- und Danakil-Expeditionen",
+    "home_description": "Erkunden Sie Afar, Erta Ale, Dallol und die Salzseen von Danakil mit einem lokalen äthiopischen Betreiber. Private Expeditionen und Reisen ins nördliche Hochland.",
+    "home_imageAlt": "Danakil Depression, Äthiopien",
+    "photo-credits_title": "Website-Fotosammlung",
+    "photo-credits_description": "Durchsuchen Sie die vom Kunden bereitgestellten Afar Horizon-Ziel- und Expeditionsfotos, die auf Cloudinary gehostet werden, mit Links zur Originalfotosammlung.",
+    "photo-credits_imageAlt": "Assale-See, Äthiopien",
+    "plan_title": "Planen Sie Ihre private Afar- und Äthiopien-Reise",
+    "plan_description": "Teilen Sie Ihre Daten, Interessen und Ihr bevorzugtes Tempo mit. Planen Sie mit unserem Team eine private Danakil-Expedition, eine Afar-Reise oder eine kombinierte Nordäthiopien-Route.",
+    "plan_imageAlt": "Assale-See, Äthiopien",
+    "privacy_title": "Datenschutzerklärung",
+    "privacy_description": "Wie Afar Horizon Expeditions Website-Anfragen, Newsletter-Abonnements, Gespräche mit Reiseassistenten und Website-Analysen bearbeitet.",
+    "specialist-travel_title": "Spezialist für Afar- und Äthiopien-Expeditionen",
+    "specialist-travel_description": "Planen Sie Foto-, Film-, Recherche- und Bergreisen in Afar und Nordäthiopien mit lokaler Routenplanung und Expeditionslogistik.",
+    "specialist-travel_imageAlt": "Dallol, Äthiopien",
+    "terms_title": "Website-Nutzungsbedingungen",
+    "terms_description": "Website-Bedingungen für Afar Horizon Expeditions: Reiseinformationen, Angebote, geänderter Zugang, der Reiseassistent und verantwortungsvolle Website-Nutzung."
+  },
+  "Schema": {
+    "home": "Startseite",
+    "expeditions": "Expeditionen",
+    "destinations": "Ziele",
+    "blog": "Das Tagebuch"
+  },
+  "Catalogue": {
+    "expedition": "Expedition",
+    "private": "Privat",
+    "dayExpedition": "Tagesexpedition",
+    "cultural": "Kultur",
+    "trekking": "Trekking",
+    "photography": "Fotografie",
+    "geology": "Geology",
+    "culture": "Kultur",
+    "journeys": "Reisen",
+    "landscapes": "Landschaften",
+    "heritage": "Kulturerbe",
+    "danakil": "Danakil",
+    "afar": "In der Ferne",
+    "planning": "Planung",
+    "fieldNotes": "Field Notes",
+    "destinations": "Ziele",
+    "journey": "Reise",
+    "destination": "Ziel",
+    "priceOnRequest": "Preis auf Anfrage",
+    "nights": "{count, plural, one {# Nacht} other {# Nächte}}"
+  }
+}

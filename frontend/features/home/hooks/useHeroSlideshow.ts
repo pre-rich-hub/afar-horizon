@@ -1,10 +1,12 @@
 'use client'
+import {useHomeCopy} from '../data/localized'
 
-import { INTERVAL, slides } from '../data/hero-slideshow.data'
+import { INTERVAL, slides as baseSlides } from '../data/hero-slideshow.data'
 
 import { useEffect, useRef, useState } from 'react'
 
 export function useHeroSlideshow() {
+  const slides = useHomeCopy('hero-slideshow.slides', baseSlides)
   const [index, setIndex] = useState(0)
   const [started, setStarted] = useState(false)
   const [prepared, setPrepared] = useState<number | null>(null)

@@ -1,20 +1,25 @@
+import {useBlogCopy} from '../data/localized'
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { SectionHeading } from '@/components/common/SectionHeading'
 import type { Post } from '../types/post.types'
 import { PostsGrid } from './PostsGrid'
 
-export function PostArchive({ rest }: { rest: Post[] }) {
+export function PostArchive({ rest: baserest }: { rest: Post[] }) {
+  const rest = useBlogCopy('post.posts', baserest)
+
+  const tr = useTranslations('UI.blog.PostArchive')
+
   return (
-    <TranslationBoundary><section className="border-t border-border">
+    <section className="border-t border-border">
         <div className="shell py-16 sm:py-20 lg:py-28">
           <SectionHeading
-            eyebrow="Archive"
-            title="Everything we have written down"
-            aside="Six essays and counting, filed by what they are actually useful for."
+            eyebrow={tr('archive')}
+            title={tr('everythingWeHaveWrittenDown')}
+            aside={tr('sixEssaysAndCountingFiledByWhat')}
           />
           <PostsGrid posts={rest} />
         </div>
-      </section></TranslationBoundary>
+      </section>
   )
 }

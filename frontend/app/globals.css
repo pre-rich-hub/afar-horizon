@@ -232,3 +232,11 @@
   box-shadow: 0 0 0 3px color-mix(in oklab, var(--primary) 14%, transparent);
 }
 
+
+/* Script-appropriate fallbacks keep Chinese readable without changing Latin typography. */
+html[lang="zh-Hans"] body {
+  font-family: var(--font-inter), "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+}
+html[lang="zh-Hans"] :is(h1, h2, h3, h4, h5, h6, .font-serif) {
+  font-family: var(--font-cormorant), "Songti SC", "Noto Serif CJK SC", SimSun, serif;
+}

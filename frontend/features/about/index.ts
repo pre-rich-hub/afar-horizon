@@ -5,3 +5,5 @@ export { AboutNavigation } from './components/AboutNavigation'
 export { AboutPlanning } from './components/AboutPlanning'
 export { AboutStory } from './components/AboutStory'
 export { businessSchema } from './utils/business.schema'
+
+export { getAboutCopy, useAboutCopy } from './data/localized'

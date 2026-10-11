@@ -1,0 +1,92 @@
+{
+  "legal.privacy": {
+    "title": "Datenschutzerklärung",
+    "intro": "Wie werden Informationen verwendet, wenn Sie Afar Horizon Expeditions durchsuchen, nach einer Reise fragen oder unseren Reiseassistenten verwenden?",
+    "sections": {
+      "0": {
+        "title": "Reiseanfragen",
+        "paragraphs": {
+          "0": "Unser Kontakt und Reiseplanungsformulare senden Ihren Namen, Ihre E-Mail-Adresse und Ihre Nachricht an unser Team. In einem Planungsformular eingegebene Reisepräferenzen sind in dieser Nachricht enthalten. Wir verwenden diese Informationen, um Ihre Anfrage zu beantworten und die Route und Dienstleistungen zu besprechen, an denen Sie interessiert sind.",
+          "1": "Bitte teilen Sie nur die Informationen mit, die für Ihre Anfrage erforderlich sind. Senden Sie keine Passkopien, Zahlungskartendetails oder sensible medizinische Informationen über die Website-Formulare oder den Reiseassistenten."
+        }
+      },
+      "1": {
+        "title": "Newsletter-Abonnements",
+        "paragraphs": {
+          "0": "Das Newsletter-Formular sendet Ihre E-Mail-Adresse an unseren Abonnementdienst. Das Abonnieren erfolgt unabhängig vom Senden einer Anfrage. Kontaktieren Sie uns, wenn Sie möchten, dass Ihre E-Mail-Adresse aus der Abonnementliste entfernt wird."
+        }
+      },
+      "2": {
+        "title": "Reiseassistent",
+        "paragraphs": {
+          "0": "Der Assistent sendet Ihre Nachrichten und eine Konversationskennung an unser Backend. Konversationsnachrichten werden gespeichert, um den Kontext für Antworten bereitzustellen. Ein konfigurierter KI-Dienst verarbeitet die Nachrichten, die zur Generierung einer Antwort erforderlich sind. Das Backend verwendet außerdem eine gehashte Netzwerkkennung und Nutzungszähler, um den Zugriff zu verwalten und Missbrauch zu verhindern.",
+          "1": "Verwenden Sie den Assistenten für allgemeine Reisefragen. Kontaktieren Sie das Team direkt für Buchungsbestätigungen, individuelle Anforderungen oder Informationen, die Sie lieber nicht an einen KI-Dienst weitergeben möchten."
+        }
+      },
+      "3": {
+        "title": "Website-Dienste und technische Informationen",
+        "paragraphs": {
+          "0": "Unsere Hosting-, Datenbank-, E-Mail- und KI-Dienste verarbeiten Informationen, die für den Betrieb der Website und die Beantwortung von Anfragen erforderlich sind. Bilder werden von Cloudinary geladen. Durch den Besuch dieser Dienste können technische Details wie Ihre Netzwerkadresse und Browser-Anfrageinformationen an deren Anbieter übermittelt werden.",
+          "1": "Die Produktionswebsite enthält Vercel Web Analytics für Seitennutzungsstatistiken. Der Standarddienst verwendet aggregierte Messungen und verwendet keine Tracking-Cookies von Drittanbietern. Bei der Administratoranmeldung wird ein Sitzungscookie verwendet. Der Reiseassistent speichert eine Konversationskennung, während die Seite geöffnet ist.",
+          "2": "Wenn die optionale Conversion-Messung aktiviert ist, zählen wir Kontaktlink-Klicks, Paketanfrageabsichten und erfolgreich akzeptierte Formulareinsendungen über die öffentliche Seite und eine Formular- oder Kanalkategorie. Wir senden keine Formularnamen, E-Mail-Adressen, Telefonnummern, Nachrichten oder URL-Abfrageinhalte an Analytics. Die Conversion-Messung ist derzeit deaktiviert."
+        },
+        "link": {
+          "label": "Vercel Web Analytics-Datenschutzinformationen"
+        }
+      },
+      "4": {
+        "title": "Fragen zu Ihren Informationen",
+        "paragraphs": {
+          "0": "Kontaktieren Sie Afar Horizon Expeditions, um Fragen zu den über die Website übermittelten Informationen, deren Aufbewahrung, Korrektur oder Löschung zu stellen oder Newsletter-Nachrichten zu stoppen. Geben Sie genügend Kontext an, damit wir Ihre Anfrage oder Ihr Abonnement finden können. Fügen Sie der ursprünglichen Anfrage keine vertraulichen Dokumente bei.",
+          "1": "Dieser Hinweis beschreibt die Dienste der Website. Wenn für eine bestätigte Buchung weitere Informationen oder die Weitergabe an Unterkunfts-, Transport- oder andere Reiseanbieter erforderlich sind, besprechen Sie diese Verwendung mit dem Team, bevor Sie die Details angeben."
+        }
+      }
+    }
+  },
+  "legal.terms": {
+    "title": "Website-Nutzungsbedingungen",
+    "intro": "Wie Sie unsere Reiseinformationen, Planungsformulare und den Reiseassistenten nutzen und was Sie vor der Buchung einer Expedition bestätigen müssen.",
+    "sections": {
+      "0": {
+        "title": "Reiseinformationen und Zitate",
+        "paragraphs": {
+          "0": "Auf der Website werden Reiseziele und Vorschläge für private Reiserouten vorgestellt. Durch das Senden einer Anfrage oder die Verwendung des Assistenten wird weder ein Platz reserviert noch die Verfügbarkeit bestätigt oder eine Buchung erstellt.",
+          "1": "Die angezeigten Preise und Reisedetails sind Startinformationen. Bitten Sie das Team um ein Angebot, in dem Ihre Daten, Route, Dienstleistungen sowie Ein- und Ausschlüsse bestätigt werden, bevor Sie Reisevorbereitungen treffen. Die Zahlungs-, Stornierungs- und Rückerstattungsbedingungen müssen in den Buchungsbedingungen für Ihre Reise festgelegt sein; Diese Seite ersetzt sie nicht."
+        }
+      },
+      "1": {
+        "title": "Zugang und wechselnde Bedingungen",
+        "paragraphs": {
+          "0": "Zufahrt, Straßen, Wetter, vulkanische Aktivität, örtliche Anweisungen und Transportvereinbarungen können sich auf eine Expedition auswirken. Eine veröffentlichte Reiseroute ist keine Bestätigung dafür, dass eine Route zu bestimmten Terminen verkehrt.",
+          "1": "Naturereignisse, sichtbare Lava, Wildtiere, Salzverarbeitungsaktivitäten, Karawanen und Zeremonien sind nicht garantiert. Besprechen Sie mit dem Team die Gehanforderungen, die Camp-Arrangements und die aktuelle Route und prüfen Sie die offiziellen Reisehinweise, die für Ihre Umstände relevant sind."
+        },
+        "link": {
+          "label": "Bevor Sie losfahren"
+        }
+      },
+      "2": {
+        "title": "Reiseassistent und externe Links",
+        "paragraphs": {
+          "0": "Der Reiseassistent liefert automatisierte Planungsinformationen und kann Fehler machen. Eine Abreise, ein Angebot, eine Genehmigung oder eine Buchung kann nicht bestätigt werden. Bestätigen Sie wichtige Details mit dem Team.",
+          "1": "Externe Websites werden von ihren eigenen Anbietern betrieben. Ihre Informationen und Bedingungen können sich unabhängig von dieser Website ändern."
+        }
+      },
+      "3": {
+        "title": "Verantwortungsvolle Nutzung der Website",
+        "paragraphs": {
+          "0": "Verwenden Sie die Formulare und den Assistenten für legitime Anfragen. Reichen Sie keine schädlichen Dateien oder Inhalte ein, geben Sie sich nicht als eine andere Person aus, versuchen Sie nicht, auf eingeschränkte Verwaltungsseiten zuzugreifen und stören Sie nicht den Dienst.",
+          "1": "Fragen Sie uns, bevor Sie Website-Texte, Fotos oder Branding für Veröffentlichungen oder kommerzielle Zwecke wiederverwenden. Bildrechte und -genehmigungen können beim Fotografen oder einem anderen Rechteinhaber liegen."
+        }
+      },
+      "4": {
+        "title": "Kontakt und Datenschutz",
+        "paragraphs": {
+          "0": "Wenn etwas auf der Website ungenau erscheint oder Sie eine vorgeschlagene Reise klären müssen, wenden Sie sich an Afar Horizon Expeditions. Unsere Datenschutzrichtlinie beschreibt die von den Website-Formularen und dem Assistenten verarbeiteten Informationen."
+        },
+        "link": {
+          "label": "Lesen Sie die Datenschutzerklärung"
+        }
+      }
+    }
+  }
+}

@@ -1,11 +1,15 @@
 'use client'
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+import {useToursCopy} from '@/features/tours'
+import {useDestinationsCopy} from '@/features/destinations'
+import {useSharedCopy} from '@/lib/i18n/localized'
+import { useLocale, useTranslations } from 'next-intl'
+import type {Locale} from '@/lib/i18n/locales'
 
 
-import { destinationGroups, destinationsInGroup, getDestination } from '@/features/destinations'
-import { expeditionCollections, tours } from '@/features/tours'
+import { destinationGroups as baseDestinationGroups, destinationsInGroup, getDestination } from '@/features/destinations'
+import { expeditionCollections as baseExpeditionCollections, tours as baseTours } from '@/features/tours'
 import { contact } from '@/lib/constants/company'
-import { navLinks, planJourneyLink } from '@/lib/constants/navigation'
+import { navLinks as baseNavLinks, planJourneyLink as basePlanJourneyLink } from '@/lib/constants/navigation'
 import { cn } from '@/lib/utils'
 import {
 ArrowRight,
@@ -21,15 +25,14 @@ import Link from '@/components/common/SiteLink'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { languages, localePath, splitLocalePath } from '@/lib/i18n/locales'
-import { useSiteTranslation } from '@/components/common/TranslationBoundary'
 import { useEffect, useRef, useState } from 'react'
 
 // Cards shown in the desktop dropdowns: the signature expeditions and one
 // destination from each part of the north.
-const navExpeditions = ['danakil-deep', 'danakil-and-gheralta', 'northern-ethiopia-grand-horizon']
-  .map((slug) => tours.find((t) => t.slug === slug))
+const baseNavExpeditions = ['danakil-deep', 'danakil-and-gheralta', 'northern-ethiopia-grand-horizon']
+  .map((slug) => baseTours.find((t) => t.slug === slug))
   .filter((t) => t !== undefined)
-const navDestinations = ['danakil-depression', 'dallol', 'gheralta', 'lalibela']
+const baseNavDestinations = ['danakil-depression', 'dallol', 'gheralta', 'lalibela']
   .map((slug) => getDestination(slug))
   .filter((d) => d !== undefined)
 
@@ -41,28 +44,38 @@ function Wordmark({
   tone: 'light' | 'dark'
   onClick?: () => void
 }) {
+  const tr = useTranslations('UI.layout.SiteNav')
+
   return (
-    <TranslationBoundary><Link
+    <Link
       href="/"
       onClick={onClick}
-      aria-label="Afar Horizon Expeditions — home"
+      aria-label={tr('afarHorizonExpeditionsHome')}
       className="flex items-center"
     >
       <img
         src={tone === 'light' ? '/images/logo-light.png' : '/images/logo.png'}
-        alt="Afar Horizon Expeditions Logo"
+        alt={tr('afarHorizonExpeditionsLogo')}
         width={520}
         height={341}
         className="h-12 w-auto object-contain transition-transform duration-300 hover:scale-105 sm:h-14"
       />
-    </Link></TranslationBoundary>
+    </Link>
   )
 }
 
-export function SiteNav() {
+export function SiteNav({paths = []}: {paths?: readonly string[]}) {
+  const tr = useTranslations('UI.layout.SiteNav')
+  const navLinks = useSharedCopy('navigation.navLinks', baseNavLinks)
+  const destinationGroups = useDestinationsCopy('destination.destinationGroups', baseDestinationGroups)
+  const expeditionCollections = useToursCopy('tour.expeditionCollections', baseExpeditionCollections)
+  const planJourneyLink = useSharedCopy('navigation.planJourneyLink', basePlanJourneyLink)
+
+  const navExpeditions = useToursCopy('tour.tours', baseNavExpeditions)
+  const navDestinations = useDestinationsCopy('destination.destinations', baseNavDestinations)
   const currentPath = usePathname()
   const pathname = splitLocalePath(currentPath).path
-  const { locale, paths } = useSiteTranslation()
+  const locale = useLocale() as Locale
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
@@ -123,7 +136,7 @@ export function SiteNav() {
   const tone: 'light' | 'dark' = scrolled ? 'dark' : 'light'
 
   return (
-    <TranslationBoundary><>
+    <>
       <header
         className={cn(
           'fixed inset-x-0 top-0 z-50 transition-all duration-500',
@@ -145,7 +158,7 @@ export function SiteNav() {
               const active = isActive(link.href)
               const hasDropdown = Boolean(link.menu)
               return (
-                <TranslationBoundary key={link.href}><li key={link.href} className={cn('group py-5', link.menu === 'links' && 'relative')}>
+                <li key={link.href} className={cn('group py-5', link.menu === 'links' && 'relative')}>
                   <Link
                     href={link.href}
                     className={cn(
@@ -177,14 +190,13 @@ export function SiteNav() {
                       <div className="shell grid grid-cols-[1fr_3.2fr] gap-12 py-10">
                         <div className="flex flex-col justify-between">
                           <div>
-                            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-accent mb-2 block">Afar · Tigray · Amhara</span>
-                            <h3 className="font-serif text-2xl text-foreground mb-4">Our Destinations</h3>
+                            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-accent mb-2 block">{tr('afarTigrayAmhara')}</span>
+                            <h3 className="font-serif text-2xl text-foreground mb-4">{tr('ourDestinations')}</h3>
                             <p className="text-xs text-muted-foreground leading-relaxed">
-                              From the salt and volcanoes of the Danakil to the cliff churches, ancient kingdoms and mountains of the north.
-                            </p>
+                              {tr('fromTheSaltAndVolcanoesOfThe')}</p>
                             <ul className="mt-6 space-y-2.5 border-t border-border pt-5">
                               {destinationGroups.map((g) => (
-                                <TranslationBoundary key={g.id}><li key={g.id}>
+                                <li key={g.id}>
                                   <Link
                                     href={`/destinations#${g.id}`}
                                     className="flex items-baseline justify-between gap-3 text-[13px] text-foreground/80 transition-colors hover:text-accent"
@@ -192,7 +204,7 @@ export function SiteNav() {
                                     {g.title}
                                     <span className="text-[10px] text-muted-foreground">{destinationsInGroup(g.id).length}</span>
                                   </Link>
-                                </li></TranslationBoundary>
+                                </li>
                               ))}
                             </ul>
                           </div>
@@ -200,13 +212,13 @@ export function SiteNav() {
                             href="/destinations"
                             className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-accent hover:text-accent/80 transition-colors mt-6"
                           >
-                            View All Destinations <ArrowRight className="h-3.5 w-3.5" />
+                            {tr('viewAllDestinations')}{' '}<ArrowRight className="h-3.5 w-3.5" />
                           </Link>
                         </div>
 
                         <div className="grid grid-cols-4 gap-6">
                           {navDestinations.map((d) => (
-                            <TranslationBoundary key={d.slug}><Link
+                            <Link
                               key={d.slug}
                               href={`/destinations/${d.slug}`}
                               className="group/item flex flex-col gap-3.5 rounded-lg overflow-hidden p-2.5 transition-all duration-300 hover:bg-muted/50"
@@ -234,7 +246,7 @@ export function SiteNav() {
                                   {d.teaser}
                                 </p>
                               </div>
-                            </Link></TranslationBoundary>
+                            </Link>
                           ))}
                         </div>
                       </div>
@@ -244,7 +256,7 @@ export function SiteNav() {
                   {link.menu === 'links' && link.children && (
                     <div className="absolute top-full z-45 -ml-4 w-64 border-t-2 border-accent bg-background/98 py-2 text-foreground shadow-2xl backdrop-blur-2xl transition-all duration-300 opacity-0 invisible -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-hover:pointer-events-auto">
                       {link.children.map((c) => (
-                        <TranslationBoundary key={c.href}><Link
+                        <Link
                           key={c.href}
                           href={c.href}
                           className="block px-4 py-2.5 transition-colors hover:bg-muted/60"
@@ -253,7 +265,7 @@ export function SiteNav() {
                           {c.text && (
                             <span className="mt-0.5 block text-[11px] leading-snug text-muted-foreground">{c.text}</span>
                           )}
-                        </Link></TranslationBoundary>
+                        </Link>
                       ))}
                     </div>
                   )}
@@ -263,14 +275,13 @@ export function SiteNav() {
                       <div className="shell grid grid-cols-[1fr_3.2fr] gap-12 py-10">
                         <div className="flex flex-col justify-between">
                           <div>
-                            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-accent mb-2 block">Afar · Danakil · Northern Ethiopia</span>
-                            <h3 className="font-serif text-2xl text-foreground mb-4">Our Expeditions</h3>
+                            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-accent mb-2 block">{tr('afarDanakilNorthernEthiopia')}</span>
+                            <h3 className="font-serif text-2xl text-foreground mb-4">{tr('ourExpeditions')}</h3>
                             <p className="text-xs text-muted-foreground leading-relaxed">
-                              Private expeditions from one day to three weeks, operated by our own team on the ground.
-                            </p>
+                              {tr('privateExpeditionsFromOneDayToThree')}</p>
                             <ul className="mt-6 space-y-2.5 border-t border-border pt-5">
                               {expeditionCollections.map((c) => (
-                                <TranslationBoundary key={c.id}><li key={c.id}>
+                                <li key={c.id}>
                                   <Link
                                     href={`/expeditions#${c.id}`}
                                     className="flex items-baseline justify-between gap-3 text-[13px] text-foreground/80 transition-colors hover:text-accent"
@@ -278,7 +289,7 @@ export function SiteNav() {
                                     {c.title}
                                     <span className="whitespace-nowrap text-[10px] text-muted-foreground">{c.span}</span>
                                   </Link>
-                                </li></TranslationBoundary>
+                                </li>
                               ))}
                             </ul>
                           </div>
@@ -286,13 +297,13 @@ export function SiteNav() {
                             href="/expeditions"
                             className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-accent hover:text-accent/80 transition-colors mt-6"
                           >
-                            Explore All Expeditions <ArrowRight className="h-3.5 w-3.5" />
+                            {tr('exploreAllExpeditions')}{' '}<ArrowRight className="h-3.5 w-3.5" />
                           </Link>
                         </div>
 
                         <div className="grid grid-cols-3 gap-6">
                           {navExpeditions.map((t) => (
-                            <TranslationBoundary key={t.slug}><Link
+                            <Link
                               key={t.slug}
                               href={`/expeditions/${t.slug}`}
                               className="group/item flex flex-col gap-3.5 rounded-lg overflow-hidden p-2.5 transition-all duration-300 hover:bg-muted/50"
@@ -320,17 +331,17 @@ export function SiteNav() {
                                   {t.teaser}
                                 </p>
                                 <div className="mt-2.5 flex items-center justify-between border-t border-border/60 pt-2">
-                                  <span className="text-[10px] text-muted-foreground uppercase tracking-wider">From</span>
+                                  <span className="text-[10px] text-muted-foreground uppercase tracking-wider">{tr('from')}</span>
                                   <span className="text-xs font-bold text-accent">{t.from.split(' per ')[0]}</span>
                                 </div>
                               </div>
-                            </Link></TranslationBoundary>
+                            </Link>
                           ))}
                         </div>
                       </div>
                     </div>
                   )}
-                </li></TranslationBoundary>
+                </li>
               )
             })}
           </ul>
@@ -338,7 +349,7 @@ export function SiteNav() {
           <div className="flex items-center gap-2 sm:gap-3">
             <div ref={langRef} className="relative">
               <button
-                aria-label="Change language"
+                aria-label={tr('changeLanguage')}
                 aria-haspopup="listbox"
                 aria-expanded={langOpen}
                 onClick={() => setLangOpen((v) => !v)}
@@ -363,7 +374,7 @@ export function SiteNav() {
 
               <ul
                 role="listbox"
-                aria-label="Language"
+                aria-label={tr('language')}
                 className={cn(
                   'absolute right-0 top-12 w-44 overflow-hidden rounded-sm border border-border bg-popover shadow-xl transition-all duration-200',
                   langOpen
@@ -372,7 +383,7 @@ export function SiteNav() {
                 )}
               >
                 {languages.map((l) => (
-                  <TranslationBoundary key={l.code}><li key={l.code}>
+                  <li key={l.code}>
                     <a
                       translate="no"
                       data-locale-link
@@ -389,7 +400,7 @@ export function SiteNav() {
                         <Check className="h-4 w-4 text-accent" />
                       )}
                     </a>
-                  </li></TranslationBoundary>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -402,7 +413,7 @@ export function SiteNav() {
             </Link>
 
             <button
-              aria-label={open ? 'Close menu' : 'Open menu'}
+              aria-label={open ? tr('closeMenu') : tr('openMenu')}
               aria-expanded={open}
               onClick={() => setOpen((v) => !v)}
               className={cn(
@@ -435,7 +446,7 @@ export function SiteNav() {
             {navLinks.map((link, i) => {
               const active = isActive(link.href)
               return (
-                <TranslationBoundary key={link.href}><li key={link.href} className="border-b border-border">
+                <li key={link.href} className="border-b border-border">
                   <Link
                     href={link.href}
                     onClick={() => setOpen(false)}
@@ -470,7 +481,7 @@ export function SiteNav() {
                   {link.children && (
                     <ul className="-mt-2 flex flex-wrap gap-x-5 gap-y-2 pb-5 pl-8">
                       {link.children.map((c) => (
-                        <TranslationBoundary key={c.href}><li key={c.href}>
+                        <li key={c.href}>
                           <Link
                             href={c.href}
                             onClick={() => setOpen(false)}
@@ -478,11 +489,11 @@ export function SiteNav() {
                           >
                             {c.label}
                           </Link>
-                        </li></TranslationBoundary>
+                        </li>
                       ))}
                     </ul>
                   )}
-                </li></TranslationBoundary>
+                </li>
               )
             })}
           </ul>
@@ -490,11 +501,11 @@ export function SiteNav() {
           <div className="mt-8">
             <span className="mb-3 flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
               <Globe className="h-3.5 w-3.5" />
-              Language
-            </span>
+              {tr('language')}</span>
             <div className="flex flex-wrap gap-2">
               {languages.map((l) => (
-                <TranslationBoundary key={l.code}><a
+                <a
+                  key={l.locale}
                   translate="no"
                   data-locale-link
                   href={localePath(paths.includes(pathname) ? pathname : '/', l.locale) + urlSuffix}
@@ -507,7 +518,7 @@ export function SiteNav() {
                   )}
                 >
                   {l.label}
-                </a></TranslationBoundary>
+                </a>
               ))}
             </div>
           </div>
@@ -541,6 +552,6 @@ export function SiteNav() {
           </Link>
         </div>
       </div>
-    </></TranslationBoundary>
+    </>
   )
 }

@@ -1,5 +1,7 @@
+import {useCatalogueLabel} from '@/lib/i18n/labels'
+import {useBlogCopy} from '../data/localized'
+import { useLocale, useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import { ChevronRight } from 'lucide-react'
 import Image from 'next/image'
@@ -7,33 +9,39 @@ import Link from '@/components/common/SiteLink'
 import type { Post } from '../types/post.types'
 import { formatEditorialDate } from '@/lib/utils/date'
 
-export function ArticleHeader({ post }: { post: Post }) {
+export function ArticleHeader({ post: basepost }: { post: Post }) {
+  const catalogueLabel = useCatalogueLabel()
+
+  const post = useBlogCopy('post.posts', basepost)
+
+  const locale = useLocale()
+  const tr = useTranslations('UI.blog.ArticleHeader')
+
   return (
-    <TranslationBoundary><header className="border-b border-border">
+    <header className="border-b border-border">
         <div className="shell pb-12 pt-32 sm:pb-16 sm:pt-36 lg:pt-40">
           <Reveal className="mx-auto max-w-3xl">
-            <nav aria-label="Breadcrumb" className="mb-8 flex flex-wrap items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground sm:text-[11px]">
-              <Link href="/" className="transition-colors hover:text-primary">Home</Link>
+            <nav aria-label={tr('breadcrumb')} className="mb-8 flex flex-wrap items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground sm:text-[11px]">
+              <Link href="/" className="transition-colors hover:text-primary">{tr('home')}</Link>
               <ChevronRight aria-hidden className="h-3 w-3 opacity-50" />
               <Link
                 href="/blog"
                 className="group inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:text-primary sm:text-[11px]"
               >
-                The Journal
-              </Link>
+                {tr('theJournal')}</Link>
               <ChevronRight aria-hidden className="h-3 w-3 opacity-50" />
               <span aria-current="page" className="normal-case tracking-normal">{post.title}</span>
             </nav>
 
             <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-              <span className="text-accent">{post.category}</span>
+              <span className="text-accent">{catalogueLabel(post.category)}</span>
               <span className="h-3 w-px bg-border" aria-hidden />
-              {post.publishedAt ? <time dateTime={post.publishedAt}>{formatEditorialDate(post.publishedAt)}</time> : post.date}
+              {post.publishedAt ? <time dateTime={post.publishedAt}>{formatEditorialDate(post.publishedAt, locale)}</time> : post.date}
               <span className="h-3 w-px bg-border" aria-hidden />
               {post.readTime}
               {post.updatedAt && <>
                 <span className="h-3 w-px bg-border" aria-hidden />
-                <span>Updated <time dateTime={post.updatedAt}>{formatEditorialDate(post.updatedAt)}</time></span>
+                <span>{tr('updated')}{' '}<time dateTime={post.updatedAt}>{formatEditorialDate(post.updatedAt, locale)}</time></span>
               </>}
             </p>
 
@@ -67,6 +75,6 @@ export function ArticleHeader({ post }: { post: Post }) {
             </div>
           </Reveal>
         </div>
-      </header></TranslationBoundary>
+      </header>
   )
 }

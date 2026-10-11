@@ -1,0 +1,20 @@
+{
+  "contact.steps": {
+    "0": {
+      "title": "Sie schreiben, wir hören zu",
+      "text": "Ein Satz reicht für den Anfang. Termine, Tempo, Höhentoleranz und wie sich die Reise anfühlen soll."
+    },
+    "1": {
+      "title": "Wir entwerfen eine Route",
+      "text": "Innerhalb von 24 Stunden sendet ein benannter Designer einen ersten Entwurf mit zwei oder drei Optionen und ehrlichen Preisen."
+    },
+    "2": {
+      "title": "Wir zeichnen sie neu",
+      "text": "Normalerweise zweimal, manchmal viermal. Es wird nichts gebucht und es wird keine Anzahlung erhoben, bis es Ihnen richtig erscheint."
+    },
+    "3": {
+      "title": "Wir sind da",
+      "text": "Abholung bei der Ankunft, Führung durch die gesamte Reise und 24-Stunden-Verbindung zu Ihrem Designer für die gesamte Reise."
+    }
+  }
+}

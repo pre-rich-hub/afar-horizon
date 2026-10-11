@@ -1,29 +1,33 @@
+import {useDestinationsCopy} from '../data/localized'
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import { AlertTriangle, Check } from 'lucide-react'
 import type { Destination } from '../types/destination.types'
 
-export function DestinationHighlights({ d }: { d: Destination }) {
-  return (<TranslationBoundary><Reveal className="border-t border-border pt-12 lg:col-start-1 lg:row-start-2 lg:mt-14">
+export function DestinationHighlights({ d: based }: { d: Destination }) {
+  const d = useDestinationsCopy('destination.destinations', based)
+
+  const tr = useTranslations('UI.destinations.DestinationHighlights')
+
+  return (<Reveal className="border-t border-border pt-12 lg:col-start-1 lg:row-start-2 lg:mt-14">
             <p className="eyebrow mb-6 text-primary">
-              Highlights
-            </p>
+              {tr('highlights')}</p>
             <ul className="grid gap-5 sm:grid-cols-2 sm:gap-x-10">
               {d.highlights.map((h) => (
-                <TranslationBoundary key={h}><li key={h} className="flex items-start gap-3.5">
+                <li key={h} className="flex items-start gap-3.5">
                   <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">
                     <Check className="h-3 w-3" />
                   </span>
                   <span className="text-pretty text-sm leading-relaxed text-foreground sm:text-base">
                     {h}
                   </span>
-                </li></TranslationBoundary>
+                </li>
               ))}
             </ul>
 
             {d.sections?.map((sec) => (
-              <TranslationBoundary key={sec.title}><div key={sec.title} className="mt-12">
+              <div key={sec.title} className="mt-12">
                 <h3 className="font-serif text-2xl text-foreground sm:text-[1.75rem]">{sec.title}</h3>
                 {sec.text && (
                   <p className="mt-3 max-w-2xl text-pretty leading-relaxed text-muted-foreground">{sec.text}</p>
@@ -31,14 +35,14 @@ export function DestinationHighlights({ d }: { d: Destination }) {
                 {sec.items && (
                   <ul className="mt-4 grid gap-2.5 sm:grid-cols-2 sm:gap-x-10">
                     {sec.items.map((item) => (
-                      <TranslationBoundary key={item}><li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-foreground">
+                      <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-foreground">
                         <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                         {item}
-                      </li></TranslationBoundary>
+                      </li>
                     ))}
                   </ul>
                 )}
-              </div></TranslationBoundary>
+              </div>
             ))}
 
             {d.note && (
@@ -53,16 +57,16 @@ export function DestinationHighlights({ d }: { d: Destination }) {
 
             {d.faqs && d.faqs.length > 0 && (
               <div className="mt-12">
-                <h3 className="font-serif text-2xl text-foreground sm:text-[1.75rem]">Questions travellers ask</h3>
+                <h3 className="font-serif text-2xl text-foreground sm:text-[1.75rem]">{tr('questionsTravellersAsk')}</h3>
                 <dl className="mt-4 divide-y divide-border border-y border-border">
                   {d.faqs.map((f) => (
-                    <TranslationBoundary key={f.q}><div key={f.q} className="py-5">
+                    <div key={f.q} className="py-5">
                       <dt className="font-medium text-foreground">{f.q}</dt>
                       <dd className="mt-1.5 text-pretty text-sm leading-relaxed text-muted-foreground">{f.a}</dd>
-                    </div></TranslationBoundary>
+                    </div>
                   ))}
                 </dl>
               </div>
             )}
-          </Reveal></TranslationBoundary>)
+          </Reveal>)
 }

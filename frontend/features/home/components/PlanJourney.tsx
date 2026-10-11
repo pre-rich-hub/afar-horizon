@@ -1,13 +1,15 @@
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import { EnquiryForm } from '@/features/enquiries'
 import { Check } from 'lucide-react'
 import Image from 'next/image'
 
 export function PlanJourney() {
+  const tr = useTranslations('UI.home.PlanJourney')
+
   return (
-    <TranslationBoundary><section
+    <section
       id="plan"
       className="relative overflow-hidden bg-primary text-primary-foreground"
     >
@@ -26,23 +28,18 @@ export function PlanJourney() {
       <div className="shell relative grid gap-12 py-20 lg:grid-cols-[1fr_1.1fr] lg:gap-20 lg:py-32">
         <Reveal>
           <p className="eyebrow mb-6 text-accent">
-            Plan Your Journey
-          </p>
+            {tr('planYourJourney')}</p>
           <h2 className="max-w-[16ch] text-balance font-serif text-[2.1rem] leading-[1.08] sm:text-5xl lg:text-[3.4rem]">
-            Plan your expedition with us
-          </h2>
+            {tr('planYourExpeditionWithUs')}</h2>
           <p className="mt-7 max-w-md text-pretty text-base leading-relaxed text-primary-foreground/80 sm:text-lg">
-            Tell us your dates, how many days you have and what you want to
-            experience. We check current conditions, build the route and send a
-            clear quotation. A conversation first, never an instant booking.
-          </p>
+            {tr('tellUsYourDatesHowManyDays')}</p>
           <ul className="mt-10 space-y-4">
             {[
               'Locally owned and operated in Ethiopia',
               'Clear pricing: what is included and what is not',
               'Honest about conditions before you book',
             ].map((item) => (
-              <TranslationBoundary key={item}><li
+              <li
                 key={item}
                 className="flex items-start gap-3 text-sm leading-relaxed text-primary-foreground/90 sm:text-base"
               >
@@ -50,7 +47,7 @@ export function PlanJourney() {
                   <Check className="h-3 w-3" />
                 </span>
                 {item}
-              </li></TranslationBoundary>
+              </li>
             ))}
           </ul>
         </Reveal>
@@ -59,6 +56,6 @@ export function PlanJourney() {
           <EnquiryForm defaultStyles={[]} />
         </Reveal>
       </div>
-    </section></TranslationBoundary>
+    </section>
   )
 }

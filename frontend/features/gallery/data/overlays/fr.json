@@ -1,0 +1,238 @@
+{
+  "gallery.galleryCategories": {
+    "0": "Paysages",
+    "1": "Patrimoine",
+    "2": "Culture",
+    "3": "Voyages"
+  },
+  "gallery.galleryPhotos": {
+    "gallery1": {
+      "alt": "Crêtes de montagne déchiquetées et pentes herbeuses sous un ciel bleu clair",
+      "title": "Escarpements du Simien",
+      "location": "Montagnes du Simien",
+      "caption": "Une large vue sur les escarpements des hautes terres et les crêtes étagées des montagnes du Simien."
+    },
+    "gallery2": {
+      "alt": "Un visiteur regardant les crêtes montagneuses escarpées depuis un point de vue herbeux",
+      "title": "Une pause au dessus des vallées",
+      "location": "Montagnes du Simien",
+      "caption": "Un moment à un point de vue des hautes terres, avec des crêtes abruptes qui s'étendent au loin."
+    },
+    "gallery3": {
+      "alt": "Une tente sur un sol rocheux avec le soleil bas à l'horizon",
+      "title": "Camping au coucher du soleil",
+      "location": "Ethiopie",
+      "caption": "Une soirée au camp alors que les dernières lumières tombent sur le paysage rocheux."
+    },
+    "gallery4": {
+      "alt": "Deux visiteurs sur une passerelle en pierre menant à une tour du château de Gondar",
+      "title": "Aux portes du château",
+      "location": "Gondar",
+      "caption": "Une visite du patrimoine royal de Gondar, encadré par des murs en pierre et une haute tour du château."
+    },
+    "gallery5": {
+      "alt": "Une église taillée dans le roc en forme de croix entourée d'une profonde tranchée en pierre à Lalibela",
+      "title": "Une église taillée dans la roche",
+      "location": "Lalibela",
+      "caption": "L'église Saint-Georges, en forme de croix, se dresse dans une tranchée creusée dans la roche environnante."
+    },
+    "gallery6": {
+      "alt": "Un avion à hélice d'Ethiopian Airlines sur une aire de trafic d'aéroport sous un ciel nuageux",
+      "title": "Le voyage commence",
+      "location": "Ethiopie",
+      "caption": "Un moment entre deux destinations, avec un avion régional qui attend sur l'aire de trafic."
+    },
+    "gallery7": {
+      "alt": "Un visiteur assis à côté d'un artisan et d'un tour de potier dans un atelier",
+      "title": "A l'atelier de poterie",
+      "location": "Ethiopie",
+      "caption": "Des récipients en argile et un tour de potier offrent un aperçu du métier pratiqué dans cet atelier."
+    },
+    "gallery8": {
+      "alt": "Deux personnes debout devant une petite maison au toit rouge et aux motifs muraux peints",
+      "title": "Un accueil en chemin",
+      "location": "Ethiopie",
+      "caption": "Un portrait partagé à l’extérieur d’une maison, avec des motifs peints sur les murs."
+    },
+    "gallery9": {
+      "alt": "Un groupe de voyageurs assis à l’intérieur d’un véhicule de tourisme",
+      "title": "Sur la route ensemble",
+      "location": "Ethiopie",
+      "caption": "Un portrait de groupe lors du trajet routier entre les arrêts."
+    },
+    "gallery10": {
+      "alt": "Un voyageur avec un sac à dos debout sur des rochers au-dessus des vallées de montagne",
+      "title": "Parcourir les hauts plateaux",
+      "location": "Montagnes du Simien",
+      "caption": "Des points de vue rocheux s'ouvrent sur les profondes vallées et les crêtes des hauts plateaux du Simien."
+    },
+    "gallery11": {
+      "alt": "Un voyageur en sac à dos face à un large panorama de crêtes montagneuses abruptes",
+      "title": "Surplombant les crêtes",
+      "location": "Montagnes du Simien",
+      "caption": "Une halte tranquille sur le sentier pour admirer l'ampleur des montagnes environnantes."
+    },
+    "gallery12": {
+      "alt": "Un paysage de voyage et de montagne encadré par deux hautes parois rocheuses",
+      "title": "Une vue entre les rochers",
+      "location": "Montagnes du Simien",
+      "caption": "Une étroite brèche dans les rochers encadre le sentier et le paysage des hautes terres au-delà."
+    },
+    "gallery13": {
+      "alt": "Des gens enveloppés dans un tissu coloré, debout à côté d’un versant rocheux d’une montagne",
+      "title": "Portraits des Highlands",
+      "location": "Nord de l'Éthiopie",
+      "caption": "Un portrait le long d'une route de montagne, avec des falaises abruptes s'élevant en arrière-plan."
+    },
+    "gallery14": {
+      "alt": "Quatre personnes assises ensemble à côté d'un gros rocher avec des montagnes derrière elles",
+      "title": "Un rassemblement à flanc de montagne",
+      "location": "Nord de l'Éthiopie",
+      "caption": "Un groupe reposant sur un sol rocheux sur fond de vastes montagnes."
+    },
+    "gallery15": {
+      "alt": "Quatre personnes enveloppées dans des châles rassemblées près d'une paroi rocheuse",
+      "title": "Visages des hauts plateaux",
+      "location": "Nord de l'Éthiopie",
+      "caption": "Un portrait plus rapproché du groupe, avec des châles colorés et le rocher de la montagne derrière eux."
+    },
+    "gallery16": {
+      "alt": "Marches en pierre menant à la porte d'une grande église taillée dans le roc",
+      "title": "Entre dans l'église",
+      "location": "Lalibela",
+      "caption": "Un point de vue bas met en valeur la façade sculptée et les marches menant à l'église."
+    },
+    "gallery17": {
+      "alt": "Un luminaire circulaire en métal suspendu devant des rideaux à motifs dans une église en pierre",
+      "title": "À l'intérieur du sanctuaire",
+      "location": "Lalibela",
+      "caption": "Des textiles à motifs et un luminaire suspendu en métal se dressent contre l’intérieur creusé dans la roche de l’église."
+    },
+    "gallery18": {
+      "alt": "Une vue rapprochée de motifs géométriques et floraux sculptés dans du bois sombre",
+      "title": "Un détail en bois sculpté",
+      "location": "Lalibela",
+      "caption": "Un examen attentif des motifs géométriques et des formes florales d’un détail en bois sculpté."
+    },
+    "gallery19": {
+      "alt": "Deux ouvertures cintrées séparées par une colonne en pierre sculptée",
+      "title": "Portes en pierre",
+      "location": "Lalibela",
+      "caption": "Des ouvertures jumelées et une colonne centrale révèlent les détails de l'architecture taillée dans la roche."
+    },
+    "gallery20": {
+      "alt": "Une église taillée dans le roc à côté d'un bassin rectangulaire d'eau verte dans une cour en pierre",
+      "title": "La cour de l'église engloutie",
+      "location": "Lalibela",
+      "caption": "La façade de l'église fait face à une cour en contrebas avec une piscine entourée de roche sculptée."
+    },
+    "gallery21": {
+      "alt": "Un visiteur tenant un bâton en bois à l’intérieur d’une église taillée dans le roc",
+      "title": "Un moment à l'intérieur de l'église",
+      "location": "Lalibela",
+      "caption": "Le visiteur s'arrête parmi les murs de pierre et les textiles de l'intérieur de l'église."
+    },
+    "gallery22": {
+      "alt": "Un rassemblement de fidèles vêtus de châles blancs à l’intérieur d’une église en pierre",
+      "title": "Rassemblement pour le culte",
+      "location": "Lalibela",
+      "caption": "Des châles blancs et des vêtements de cérémonie remplissent l'église lors d'un rassemblement pour le culte."
+    },
+    "gallery23": {
+      "alt": "Les fidèles rassemblés dans des châles blancs sous de hautes colonnes de pierre",
+      "title": "Traditions ecclésiales vivantes",
+      "location": "Lalibela",
+      "caption": "Une vue plus large de la congrégation rassemblée dans l'intérieur creusé dans la roche."
+    },
+    "gallery24": {
+      "alt": "Des hommes en vêtements blancs tenant des bâtons en bois lors d'un rassemblement à l'église",
+      "title": "Bâtons et châles de cérémonie",
+      "location": "Lalibela",
+      "caption": "Des vêtements blancs et des bâtons en bois font partie de la scène intérieure de l'église."
+    },
+    "gallery25": {
+      "alt": "Deux visiteurs assis tenant des bâtons en bois à côté de peintures religieuses",
+      "title": "Apprendre à l'intérieur de l'église",
+      "location": "Lalibela",
+      "caption": "Une pause à l'intérieur de l'église, entourée de peintures, textiles et pierres sculptées."
+    },
+    "gallery26": {
+      "alt": "Quatre motifs floraux circulaires sur un panneau peint divisé par une bordure en forme de croix",
+      "title": "Motifs peints",
+      "location": "Nord de l'Éthiopie",
+      "caption": "Des cocardes florales et des bordures colorées révèlent le détail décoratif d'un panneau peint."
+    },
+    "gallery27": {
+      "alt": "Un groupe assis autour d'une table basse avec des tasses et une cafetière dans une pièce aux murs en pierre",
+      "title": "Une pause café",
+      "location": "Ethiopie",
+      "caption": "Une pause café partagée, avec des petites tasses et une cafetière disposées à côté du groupe."
+    },
+    "gallery28": {
+      "alt": "Un visiteur assis avec un groupe sur un sol rocheux dans les montagnes",
+      "title": "Rencontre sur le sentier de montagne",
+      "location": "Nord de l'Éthiopie",
+      "caption": "Un portrait de groupe lors d’une pause sur la route de montagne."
+    },
+    "gallery29": {
+      "alt": "Une église en pierre avec une porte cintrée, des marches et une croix au-dessus du toit",
+      "title": "Une entrée d'église en pierre",
+      "location": "Nord de l'Éthiopie",
+      "caption": "Des maçonneries, un arc central et une croix sur le toit encadrent l'entrée de l'église."
+    },
+    "gallery30": {
+      "alt": "Deux visiteurs à l'intérieur d'une église peinte avec de gros tambours disposés sur un tapis rouge",
+      "title": "Peintures et tambours de cérémonie",
+      "location": "Nord de l'Éthiopie",
+      "caption": "Des peintures murales religieuses entourent une exposition de grands tambours de cérémonie."
+    },
+    "gallery31": {
+      "alt": "Châteaux en pierre et murs crénelés à côté de pelouses vertes sous un ciel nuageux",
+      "title": "L'enceinte royale de Gondar",
+      "location": "Gondar",
+      "caption": "Une large vue sur les châteaux et les murs de pierre de l’enceinte royale de Gondar."
+    },
+    "gallery32": {
+      "alt": "Deux visiteurs assis parmi les racines exposées d'un grand arbre à côté d'un chemin en pierre",
+      "title": "Se reposer sous les racines",
+      "location": "Ethiopie",
+      "caption": "Une pause ombragée à côté des racines tortueuses d’un grand arbre."
+    },
+    "gallery33": {
+      "alt": "Un voyageur aux bras tendus debout sur des rochers sous un coucher de soleil orange",
+      "title": "Coucher de soleil sur un sol rocheux",
+      "location": "Ethiopie",
+      "caption": "Le soleil couchant colore le ciel au-dessus d’un vaste paysage rocheux."
+    },
+    "gallery34": {
+      "alt": "Un voyageur se découpant sur un point de vue rocheux sous un ciel bleu et orange du soir",
+      "title": "Dernière lumière au point de vue",
+      "location": "Ethiopie",
+      "caption": "Une figure au point de vue donne une impression d'échelle au paysage ouvert du soir."
+    },
+    "gallery35": {
+      "alt": "Un voyageur debout sur un plateau rocheux avec le soleil près de l'horizon",
+      "title": "Regarder le soleil se coucher",
+      "location": "Ethiopie",
+      "caption": "Un arrêt au coucher du soleil sur le plateau, avec un terrain sombre qui s'étend au loin."
+    },
+    "gallery36": {
+      "alt": "Un voyageur avec les bras écartés debout sur un sol rocheux dans la lumière dorée du soir",
+      "title": "Une soirée sur le plateau",
+      "location": "Ethiopie",
+      "caption": "La chaude lumière du soir tombe sur les rochers lors d'une pause sur le plateau."
+    },
+    "gallery37": {
+      "alt": "Voyageurs marchant sur une roche sombre et fracturée sous un ciel brumeux",
+      "title": "À travers le terrain volcanique",
+      "location": "Ethiopie",
+      "caption": "Une scène de marche sur un terrain volcanique accidenté, avec une brume adoucissant la distance."
+    },
+    "gallery38": {
+      "alt": "Un voyageur portant des lunettes de soleil et une écharpe enveloppée, debout au bord d'un lac turquoise",
+      "title": "Une pause au bord du lac",
+      "location": "Ethiopie",
+      "caption": "Un portrait au bord d’une eau turquoise, avec une végétation riveraine et des collines lointaines derrière lui."
+    }
+  }
+}

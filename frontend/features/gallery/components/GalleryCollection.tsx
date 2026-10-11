@@ -1,18 +1,23 @@
+import {useGalleryCopy} from '../data/localized'
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { SectionHeading } from '@/components/common/SectionHeading'
-import { galleryCategories, galleryPhotos } from '../data/gallery.data'
+import { galleryCategories as baseGalleryCategories, galleryPhotos as baseGalleryPhotos } from '../data/gallery.data'
 import { GalleryGrid } from './GalleryGrid'
 
 export function GalleryCollection() {
+  const tr = useTranslations('UI.gallery.GalleryCollection')
+  const galleryPhotos = useGalleryCopy('gallery.galleryPhotos', baseGalleryPhotos)
+  const galleryCategories = useGalleryCopy('gallery.galleryCategories', baseGalleryCategories)
+
   return (
-    <TranslationBoundary><section className="shell py-16 sm:py-20 lg:py-28">
+    <section className="shell py-16 sm:py-20 lg:py-28">
         <SectionHeading
-          eyebrow="The Collection"
-          title="Moments from the road"
-          aside="Explore mountain landscapes, rock-hewn churches, local crafts and moments along the journey. Filter by theme, then tap any photograph to see it in full and read its caption."
+          eyebrow={tr('theCollection')}
+          title={tr('momentsFromTheRoad')}
+          aside={tr('exploreMountainLandscapesRockHewnChurchesLocal')}
         />
-        <GalleryGrid photos={galleryPhotos} categories={galleryCategories} />
-      </section></TranslationBoundary>
+        <GalleryGrid photos={galleryPhotos} categories={baseGalleryCategories} categoryLabels={galleryCategories} />
+      </section>
   )
 }

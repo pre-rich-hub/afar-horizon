@@ -1,5 +1,5 @@
 'use client'
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+import { useTranslations } from 'next-intl'
 
 
 import { Check } from 'lucide-react'
@@ -7,20 +7,21 @@ import { useState } from 'react'
 import { subscribe } from '../api/newsletter.api'
 
 export function NewsletterForm() {
+  const tr = useTranslations('UI.newsletter.NewsletterForm')
+
   const [done, setDone] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
   if (done) {
     return (
-      <TranslationBoundary><p className="flex w-full max-w-sm items-center gap-3 border border-accent/40 px-5 py-4 text-sm text-background/80">
+      <p className="flex w-full max-w-sm items-center gap-3 border border-accent/40 px-5 py-4 text-sm text-background/80">
         <Check className="h-4 w-4 shrink-0 text-accent" />
-        Thank you — the next letter will find you.
-      </p></TranslationBoundary>
+        {tr('thankYouTheNextLetterWillFind')}</p>
     )
   }
 
   return (
-    <TranslationBoundary><form
+    <form
       onSubmit={async (e) => {
         e.preventDefault()
         setError(null)
@@ -37,27 +38,25 @@ export function NewsletterForm() {
       className="flex w-full max-w-sm flex-col gap-2 sm:flex-row"
     >
       <label htmlFor="newsletter-email" className="sr-only">
-        Email address
-      </label>
+        {tr('emailAddress')}</label>
       <input
         id="newsletter-email"
         name="email"
         type="email"
         required
-        placeholder="Your email"
+        placeholder={tr('yourEmail')}
         className="w-full rounded-full border border-background/25 bg-transparent px-5 py-3.5 text-sm text-background placeholder:text-background/45 focus:border-accent focus:outline-none"
       />
       <button
         type="submit"
         className="whitespace-nowrap rounded-full bg-accent px-6 py-3.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-accent-foreground transition-colors duration-300 hover:bg-accent/90"
       >
-        Join
-      </button>
+        {tr('join')}</button>
       {error ? (
         <p className="text-xs text-red-600" role="alert">
           {error}
         </p>
       ) : null}
-    </form></TranslationBoundary>
+    </form>
   )
 }

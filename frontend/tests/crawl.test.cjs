@@ -51,7 +51,13 @@ test('previews advertise no sitemap while noindex pages remain crawlable', () =>
 
 test('response headers protect previews, utilities and unauthenticated admin redirects', () => {
   for (const indexable of [true, false]) {
-    const { proxy } = createLoader({ '@/lib/config/site': { site: { ...site, indexable } } })('@/proxy')
+    const {NextResponse} = require('next/server')
+    const { proxy } = createLoader({
+      '@/lib/config/site': { site: { ...site, indexable } },
+      '@/i18n/routing': {routing: {}},
+      'next-intl/middleware': () => () => NextResponse.next(),
+      '@/i18n/public-paths': {publicPaths: new Set(['/', '/destinations/erta-ale', '/plan', '/photo-credits', '/missing'])},
+    })('@/proxy')
     for (const path of ['/', '/destinations/erta-ale', '/plan', '/photo-credits', '/admin', '/admin/tours', '/login', '/missing']) {
       const header = proxy({ nextUrl: { pathname: path } }).headers.get('X-Robots-Tag')
       const expected = !indexable || path.startsWith('/admin') || path === '/login'
@@ -59,4 +65,18 @@ test('response headers protect previews, utilities and unauthenticated admin red
       assert.equal(header, expected, path)
     }
   }
+})
+
+test('unknown catalogue URLs rewrite to the static error route with an explicit 404', () => {
+  const {NextResponse} = require('next/server')
+  const {proxy} = createLoader({
+    '@/lib/config/site': {site: {...site, indexable: true}},
+    '@/i18n/routing': {routing: {}},
+    '@/i18n/public-paths': {publicPaths: new Set(['/'])},
+    'next-intl/middleware': () => () => NextResponse.next(),
+  })('@/proxy')
+  const response = proxy({url: 'https://www.afarhorizon.com/fr/destinations/missing', nextUrl: {pathname: '/fr/destinations/missing'}})
+  assert.equal(response.status, 404)
+  assert.equal(response.headers.get('x-robots-tag'), 'noindex, nofollow')
+  assert.equal(new URL(response.headers.get('x-middleware-rewrite')).pathname, '/_not-found')
 })

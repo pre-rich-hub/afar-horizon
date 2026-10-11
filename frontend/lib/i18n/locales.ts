@@ -20,7 +20,7 @@ export const approvedTranslations: Record<DraftLocale, readonly string[]> = {
 
 export function splitLocalePath(path: string): { locale: Locale; path: string } {
   const [first, ...rest] = path.slice(1).split('/')
-  return isLocale(first) && first !== 'en'
+  return isLocale(first)
     ? { locale: first, path: rest.length ? `/${rest.join('/')}` : '/' }
     : { locale: 'en', path }
 }

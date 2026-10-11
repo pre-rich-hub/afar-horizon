@@ -1,0 +1,116 @@
+{
+  "faq.faqGroups": {
+    "0": {
+      "title": "À propos d'Afar Horizon",
+      "items": {
+        "0": {
+          "q": "Afar Horizon Expeditions est-elle une entreprise locale ?",
+          "a": "Oui. Afar Horizon Expeditions est détenu et exploité localement en Éthiopie, avec un leadership local et des relations opérationnelles locales."
+        },
+        "1": {
+          "q": "Qui est Tesema Teven ?",
+          "a": "Tesema Teven est notre fondatrice et guide principale. Il est né et a grandi à l'ombre des montagnes du Simien, et a construit Afar Horizon pour emmener les voyageurs de ces montagnes vers les paysages d'Afar."
+        },
+        "2": {
+          "q": "Où êtes-vous basé ?",
+          "a": "Notre bureau est à Addis-Abeba et nos expéditions au Danakil partent de Semera, la porte d'entrée des basses terres de l'Afar."
+        },
+        "3": {
+          "q": "Puis-je parler directement avec Tesema ?",
+          "a": "Oui. Envoyez un message via WhatsApp ou le formulaire Plan My Journey et demandez-le."
+        }
+      }
+    },
+    "1": {
+      "title": "Planification et réservation",
+      "items": {
+        "0": {
+          "q": "Organisez-vous des visites privées ?",
+          "a": "Oui. Les voyages privés sont notre service principal. Chaque expédition sur ce site se déroule en privé pour votre groupe."
+        },
+        "1": {
+          "q": "Pouvez-vous organiser un itinéraire personnalisé ?",
+          "a": "Oui. Vous pouvez partir d'une destination, d'un intérêt, d'un nombre de jours ou simplement d'une idée, et nous construisons l'itinéraire autour d'elle."
+        },
+        "2": {
+          "q": "Qu'est-ce qui est inclus dans le prix ?",
+          "a": "Chaque page d'expédition répertorie exactement ce qui est et n'est pas inclus. Sur les expéditions Danakil, cela signifie généralement un 4×4 privé, un chauffeur, un guide, des éclaireurs locaux si nécessaire, du carburant, de l'eau, du matériel de camping, les repas indiqués et les modalités d'accès locales."
+        },
+        "3": {
+          "q": "Qu'est-ce qui n'est généralement pas inclus ?",
+          "a": "Sauf ajout des vols internationaux et intérieurs, de votre visa éthiopien, de votre assurance voyage, de votre équipement personnel, de l'alcool, des pourboires et de tout ce qui n'est pas répertorié."
+        },
+        "4": {
+          "q": "Les prix du site Web sont-ils définitifs ?",
+          "a": "Non. Ce sont des prix de départ par personne. Votre devis dépend de la taille du groupe, de l'itinéraire, de la saison, des véhicules, de l'hébergement, des permis et des vols, et nous le confirmons avant que vous payiez quoi que ce soit."
+        },
+        "5": {
+          "q": "Quel dépôt est requis ?",
+          "a": "Notre dépôt standard est généralement de 30 % de la valeur de la réservation. Certaines réservations spécialisées ou urgentes nécessitent un dépôt différent ; le montant exact est indiqué dans votre devis."
+        },
+        "6": {
+          "q": "Fournissez-vous des transferts aéroport et hôtels ?",
+          "a": "Oui. Nous organisons les transferts aéroport, hôtels et transports interurbains dans le cadre de votre voyage."
+        },
+        "7": {
+          "q": "Pouvez-vous organiser des vols intérieurs ?",
+          "a": "Nous les planifions dans votre itinéraire et aidons à la coordination, sous réserve de disponibilité et des modalités de paiement de la compagnie aérienne. Ils sont indiqués au tarif en vigueur."
+        },
+        "8": {
+          "q": "Combien de temps à l'avance dois-je réserver ?",
+          "a": "Pour les voyages privés et spécialisés, mieux vaut être plus tôt, car les véhicules, l'hébergement et le personnel spécialisé doivent être coordonnés. Pour le Danakil pendant la saison la plus fraîche, quelques mois à l'avance sont raisonnables."
+        },
+        "9": {
+          "q": "Comment demander un devis ?",
+          "a": "Utilisez le formulaire Planifier mon voyage ou envoyez-nous un message sur WhatsApp avec vos dates, le nombre de voyageurs et ce que vous souhaitez vivre."
+        }
+      }
+    },
+    "2": {
+      "title": "Le Danakil et ses conditions",
+      "items": {
+        "0": {
+          "q": "Exploitez-vous le Danakil toute l'année ?",
+          "a": "Les conditions d'exploitation varient selon la saison, l'itinéraire, la météo, la sécurité et l'accès local. Les mois les plus frais sont la période privilégiée. Nous confirmons les conditions actuelles avant de réserver."
+        },
+        "1": {
+          "q": "Que se passe-t-il si les conditions changent ?",
+          "a": "Nous ajustons l'itinéraire, le calendrier ou les activités pour protéger votre sécurité et le cœur de l'expérience, et je vous le dirai le plus tôt possible. Si un itinéraire devient inapproprié, nous pouvons le modifier ou l'annuler : personnes avant les itinéraires."
+        },
+        "2": {
+          "q": "Verrai-je de la lave à Erta Ale ?",
+          "a": "Aucun phénomène naturel ne peut être garanti. Une expédition Erta Ale est un voyage dans une région volcanique, pas un spectacle de lave garanti."
+        },
+        "3": {
+          "q": "À quel point l'Erta Ale est-elle physiquement exigeante ?",
+          "a": "L'approche dure environ 10 km à pied sur un sol volcanique inégal et exposé, chronométrée pour les heures les plus fraîches. Ce n'est pas technique, mais vous avez besoin d'une forme physique raisonnable."
+        },
+        "4": {
+          "q": "Que dois-je emporter pour le Danakil ?",
+          "a": "Vêtements légers et respirants à manches longues, chapeau à larges bords, lunettes de soleil, crème solaire, chaussures de marche solides, lampe frontale, bouteille réutilisable, batterie externe et médicaments personnels. Notre page Avant de partir présente la liste complète."
+        },
+        "5": {
+          "q": "Puis-je combiner le Danakil avec Gheralta, Axum ou le Simien ?",
+          "a": "Oui, lorsque l'itinéraire est opérationnellement possible. Nos expéditions de 9 et 10 jours combinent le Danakil avec Axum et Gheralta, et nous pouvons construire d'autres combinaisons sur demande."
+        }
+      }
+    },
+    "3": {
+      "title": "Voyages spécialisés et partenaires",
+      "items": {
+        "0": {
+          "q": "Les photographes peuvent-ils personnaliser les voyages ?",
+          "a": "Oui. Nous concevons autour de la lumière, des arrêts sur le terrain plus longs, de la photographie de nuit et du temps supplémentaire dans les endroits qui comptent pour vous."
+        },
+        "1": {
+          "q": "Pouvez-vous soutenir les équipes de tournage et les chercheurs ?",
+          "a": "Oui. Nous fournissons les véhicules, les chauffeurs, les guides, la logistique de terrain et la coordination locale. Les autorisations de tournage et de recherche restent soumises aux autorités compétentes."
+        },
+        "2": {
+          "q": "Travaillez-vous avec des agences de voyages à l'étranger ?",
+          "a": "Oui. Nous fournissons des opérations au sol aux tour-opérateurs et agences internationaux, y compris des opérations en marque blanche. Consultez notre page Opérations au sol."
+        }
+      }
+    }
+  }
+}

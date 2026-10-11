@@ -1,22 +1,24 @@
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { PageHero } from '@/components/common/PageHero'
 
 export function ContactHero() {
+  const tr = useTranslations('UI.contact.ContactHero')
+
   return (
-    <TranslationBoundary><PageHero
-        eyebrow="Speak With a Designer"
-        title="Every journey begins with a conversation"
-        lede="No call centres and no templates. Write to us and an Addis-based designer replies personally, usually the same day."
+    <PageHero
+        eyebrow={tr('speakWithADesigner')}
+        title={tr('everyJourneyBeginsWithAConversation')}
+        lede={tr('noCallCentresAndNoTemplatesWrite')}
         image="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/afar.png"
-        imageAlt="Afar region, Ethiopia"
-        crumbs={[{ label: 'Home', href: '/' }, { label: 'Contact' }]}
+        imageAlt={tr('afarRegionEthiopia')}
+        crumbs={[{ label: tr('home'), href: '/' }, { label: tr('contact') }]}
         meta={[
-          { label: 'Reply Time', value: 'Within 24 hrs' },
-          { label: 'Based In', value: 'Addis Ababa' },
-          { label: 'Support', value: '24/7 In-Country' },
-          { label: 'Deposit', value: 'Only When Right' },
+          { label: tr('replyTime'), value: 'Within 24 hrs' },
+          { label: tr('basedIn'), value: 'Addis Ababa' },
+          { label: tr('support'), value: '24/7 In-Country' },
+          { label: tr('deposit'), value: 'Only When Right' },
         ]}
-      /></TranslationBoundary>
+      />
   )
 }

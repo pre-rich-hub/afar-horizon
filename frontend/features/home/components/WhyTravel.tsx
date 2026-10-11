@@ -1,10 +1,11 @@
 'use client'
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+import {useHomeCopy} from '../data/localized'
+import { useTranslations } from 'next-intl'
 
 
 import { useWhyTravel } from '../hooks/useWhyTravel'
 
-import { LAYERS, slides } from '../data/why-travel.data'
+import { LAYERS, slides as baseSlides } from '../data/why-travel.data'
 
 import { Reveal } from '@/components/common/Reveal'
 import { cn } from '@/lib/utils'
@@ -15,10 +16,13 @@ import Image from 'next/image'
 // card's own width) and scale. Cards further than two steps away tuck behind.
 
 export function WhyTravel() {
+  const tr = useTranslations('UI.home.WhyTravel')
+  const slides = useHomeCopy('why-travel.slides', baseSlides)
+
   const { n, active, paused, setPaused, dragStart, go, onPointerUp } = useWhyTravel()
 
   return (
-    <TranslationBoundary><section
+    <section
       id="why-us"
       aria-labelledby="why-us-title"
       className="relative overflow-hidden bg-background py-20 sm:py-24 lg:py-32"
@@ -27,13 +31,12 @@ export function WhyTravel() {
 
       <Reveal className="shell relative mb-12 text-center sm:mb-16">
         <p className="eyebrow mb-5 justify-center text-accent">
-          Not just a tour
-        </p>
+          {tr('notJustATour')}</p>
         <h2
           id="why-us-title"
           className="text-balance text-4xl leading-[1.05] text-foreground sm:text-5xl"
         >
-          Why Afar Horizon<span className="text-accent">?</span>
+          {tr('whyAfarHorizon')}<span className="text-accent">?</span>
         </h2>
       </Reveal>
 
@@ -41,7 +44,7 @@ export function WhyTravel() {
         <div
           role="region"
           aria-roledescription="carousel"
-          aria-label="Why travel with Afar Horizon"
+          aria-label={tr('whyTravelWithAfarHorizon')}
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
           onFocus={() => setPaused(true)}
@@ -67,7 +70,7 @@ export function WhyTravel() {
               const isActive = offset === 0
 
               return (
-                <TranslationBoundary key={s.title}><button
+                <button
                   key={s.title}
                   type="button"
                   tabIndex={isActive ? -1 : depth === 1 ? 0 : -1}
@@ -96,7 +99,7 @@ export function WhyTravel() {
                       isActive && !paused && 'scale-[1.05]',
                     )}
                   />
-                </button></TranslationBoundary>
+                </button>
               )
             })}
 
@@ -107,7 +110,7 @@ export function WhyTravel() {
           <div className="shell mt-12 sm:mt-14">
             <div className="mx-auto grid max-w-[60ch] text-center" aria-live="polite">
               {slides.map((s, i) => (
-                <TranslationBoundary key={s.title}><div
+                <div
                   key={s.title}
                   aria-hidden={i !== active}
                   className={cn(
@@ -121,7 +124,7 @@ export function WhyTravel() {
                   <p className="mt-4 text-pretty leading-relaxed text-muted-foreground sm:text-lg">
                     {s.text}
                   </p>
-                </div></TranslationBoundary>
+                </div>
               ))}
             </div>
 
@@ -131,11 +134,11 @@ export function WhyTravel() {
               </span>
               <div className="flex gap-1.5">
                 {slides.map((s, i) => (
-                  <TranslationBoundary key={s.title}><button
+                  <button
                     key={s.title}
                     type="button"
                     onClick={() => go(i)}
-                    aria-label={`Go to slide ${i + 1}: ${s.title}`}
+                    aria-label={tr('goToSlideValueValue', { value0: String(i + 1), value1: String(s.title) })}
                     aria-current={i === active}
                     className="group flex h-6 items-center"
                   >
@@ -147,7 +150,7 @@ export function WhyTravel() {
                           : 'w-5 bg-foreground/25 group-hover:bg-foreground/50',
                       )}
                     />
-                  </button></TranslationBoundary>
+                  </button>
                 ))}
               </div>
               <span className="font-serif text-sm tabular-nums text-muted-foreground">
@@ -157,24 +160,26 @@ export function WhyTravel() {
           </div>
         </div>
       </Reveal>
-    </section></TranslationBoundary>
+    </section>
   )
 }
 
 function Arrow({ side, onClick }: { side: 'left' | 'right'; onClick: () => void }) {
+  const tr = useTranslations('UI.home.WhyTravel')
+
   const Icon = side === 'left' ? ChevronLeft : ChevronRight
   return (
-    <TranslationBoundary><button
+    <button
       type="button"
       onClick={onClick}
       onPointerDown={(e) => e.stopPropagation()}
-      aria-label={side === 'left' ? 'Previous reason' : 'Next reason'}
+      aria-label={side === 'left' ? tr('previousReason') : tr('nextReason')}
       className={cn(
         'absolute top-1/2 z-40 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-background text-accent shadow-[0_8px_24px_-8px_oklch(0.185_0.012_58/0.45)] transition-all duration-300 hover:scale-110 hover:bg-accent hover:text-accent-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring sm:h-12 sm:w-12',
         side === 'left' ? 'left-0 -translate-x-1/2' : 'right-0 translate-x-1/2',
       )}
     >
       <Icon className="h-5 w-5" strokeWidth={1.75} />
-    </button></TranslationBoundary>
+    </button>
   )
 }

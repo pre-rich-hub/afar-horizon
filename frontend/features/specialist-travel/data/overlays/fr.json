@@ -1,0 +1,67 @@
+{
+  "specialist-travel.tracks": {
+    "photography": {
+      "title": "Photographes",
+      "lede": "Construit autour de la lumière, du lieu et du temps, avec des arrêts sur le terrain plus longs et la patience d'attendre les bonnes conditions.",
+      "alt": "Piscines minérales vertes et formations de sel dans le paysage de Danakil",
+      "items": {
+        "0": "Photographie de lever, coucher de soleil et de nuit",
+        "1": "Positionnement à l'heure d'or et départs anticipés",
+        "2": "Escales plus longues à Dallol, Erta Ale et la plaine salée plaine",
+        "3": "Paysage, habitants et faune",
+        "4": "Logistique de l'équipement et protection contre la poussière et le sel",
+        "5": "Repérage de lieux et horaires flexibles"
+      }
+    },
+    "film": {
+      "title": "Films et médias",
+      "lede": "Les déplacements de production nécessitent de la précision. Nous nous occupons du terrain afin que l'équipe puisse se concentrer sur le travail.",
+      "alt": "Croute de sel et eaux peu profondes au lac Assale au coucher du soleil",
+      "items": {
+        "0": "Véhicules et chauffeurs professionnels",
+        "1": "Guides locaux et repérages",
+        "2": "Mouvements d'équipage et transport d'équipement",
+        "3": "Hébergement et logistique sur le terrain",
+        "4": "Planification des sites distants",
+        "5": "Coordination et présentations locales"
+      },
+      "note": "Les autorisations de tournage restent soumises aux autorités compétentes et aux exigences du site."
+    },
+    "research": {
+      "title": "Chercheurs et universités",
+      "lede": "Logistique de terrain pour la géologie, la géographie, l'anthropologie, l'archéologie et les études environnementales, dans certains des paysages les plus étudiés d'Afrique.",
+      "alt": "Lave incandescente dans un cratère volcanique à Erta Ale",
+      "items": {
+        "0": "Transport local et soutien dans les zones éloignées",
+        "1": "Hébergement et camps sur le terrain",
+        "2": "Guides et coordination communautaire",
+        "3": "Planification des itinéraires pour les sites de terrain",
+        "4": "Aide à l’interprétation si disponible",
+        "5": "Logistique pour les équipements scientifiques"
+      }
+    },
+    "trekking": {
+      "title": "Trekking, course à pied et voyage en montagne",
+      "lede": "L'Éthiopie est un pays d'altitude. Notre fondateur a grandi dans le Simien, et c'est dans les voyages en montagne que cette entreprise a vu le jour.",
+      "alt": "Escarpements verdoyants et escarpés des montagnes du Simien",
+      "items": {
+        "0": "Planification du trek du Simien, scouts et camping",
+        "1": "Mules et porteurs le cas échéant",
+        "2": "Repas, eau et transferts",
+        "3": "Groupes de course et événements de montagne : itinéraires, points d'eau et véhicules d'assistance",
+        "4": "Support du sommet pour Ras Dashen"
+      }
+    },
+    "groups": {
+      "title": "Groupes privés",
+      "lede": "Familles, amis, clubs et groupes d'entreprises voyageant selon leur propre horaire.",
+      "alt": "Un visiteur au bord d'une falaise dans le paysage montagneux de Gheralta",
+      "items": {
+        "0": "Véhicules privés et guides dédiés",
+        "1": "Arpentage prévu autour du groupe",
+        "2": "Améliorations de confort là où l'infrastructure le permet",
+        "3": "Expériences culturelles : café, nourriture et vie locale"
+      }
+    }
+  }
+}

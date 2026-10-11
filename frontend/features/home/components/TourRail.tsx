@@ -1,5 +1,7 @@
 'use client'
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+import {useCatalogueLabel} from '@/lib/i18n/labels'
+import {useToursCopy} from '@/features/tours'
+import { useTranslations } from 'next-intl'
 
 
 import { defaultImage } from '@/lib/config/cloudinary'
@@ -17,26 +19,29 @@ import Link from '@/components/common/SiteLink'
 // Left inset that lines the first item up with the 1280px page shell, while
 // still letting the rail bleed off both edges of the viewport.
 
-export function TourRail({ tours }: { tours: Tour[] }) {
+export function TourRail({ tours: basetours }: { tours: Tour[] }) {
+  const tours = useToursCopy('tour.tours', basetours)
+
+  const tr = useTranslations('UI.home.TourRail')
+
   const { track, edges, step } = useTourRail()
 
   return (
-    <TranslationBoundary><div className="relative">
+    <div className="relative">
       {/* Phones and tablets: heading sits above the rail */}
       <div className="shell mb-8 sm:mb-10 lg:hidden">
-        <p className="eyebrow mb-4 text-accent">Choose Your Horizon</p>
+        <p className="eyebrow mb-4 text-accent">{tr('chooseYourHorizon')}</p>
         <h2 className="text-balance text-[2rem] leading-[1.05] text-secondary-foreground sm:text-5xl">
-          From one day in Afar to <em className="italic text-accent">three weeks in the north</em>
+          {tr('fromOneDayInAfarTo')}{' '}<em className="italic text-accent">{tr('threeWeeksInTheNorth')}</em>
         </h2>
         <p className="mt-3 text-pretty font-serif text-base italic leading-relaxed text-secondary-foreground/65 sm:text-lg">
-          Remarkable journeys, reshaped around you.
-        </p>
+          {tr('remarkableJourneysReshapedAroundYou')}</p>
       </div>
 
       <div
         ref={track}
         role="region"
-        aria-label="Featured tours"
+        aria-label={tr('featuredTours')}
         className={cn(
           'flex snap-x snap-mandatory items-stretch gap-4 overflow-x-auto pb-2 [scrollbar-width:none] sm:gap-5 lg:gap-6 [&::-webkit-scrollbar]:hidden',
           INSET,
@@ -46,22 +51,19 @@ export function TourRail({ tours }: { tours: Tour[] }) {
         {/* Intro panel travels with the cards, as the first item in the rail */}
         <div className="hidden w-[340px] shrink-0 snap-start flex-col justify-center pr-10 lg:flex">
           <p className="eyebrow mb-6 text-accent">
-            Choose Your Horizon
-          </p>
+            {tr('chooseYourHorizon')}</p>
           <h2
             id="tours-title"
             className="text-balance text-4xl leading-[1.05] text-secondary-foreground sm:text-5xl"
           >
-            From one day in Afar to <em className="italic text-accent">three weeks in the north</em>
+            {tr('fromOneDayInAfarTo')}{' '}<em className="italic text-accent">{tr('threeWeeksInTheNorth')}</em>
           </h2>
           <p className="mt-6 text-pretty font-serif text-lg italic leading-relaxed text-secondary-foreground/65">
-            Private expeditions we operate ourselves, each with an honest
-            day-by-day route. Explore six featured journeys from our seventeen expeditions.
-          </p>
+            {tr('privateExpeditionsWeOperateOurselvesEachWith')}</p>
         </div>
 
         {tours.map((t) => (
-          <TranslationBoundary key={t.slug}><TourPanel key={t.slug} tour={t} /></TranslationBoundary>
+          <TourPanel key={t.slug} tour={t} />
         ))}
 
         <CustomPanel />
@@ -72,8 +74,7 @@ export function TourRail({ tours }: { tours: Tour[] }) {
             href="/expeditions"
             className="group inline-flex items-center gap-2 whitespace-nowrap border border-secondary-foreground/30 px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-secondary-foreground transition-colors duration-300 hover:border-accent hover:bg-accent hover:text-accent-foreground"
           >
-            View all
-            <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+            {tr('viewAll')}<ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </div>
       </div>
@@ -99,16 +100,22 @@ export function TourRail({ tours }: { tours: Tour[] }) {
         <RailButton side="left" disabled={edges.start} onClick={() => step(-1)} />
         <RailButton side="right" disabled={edges.end} onClick={() => step(1)} />
       </div>
-    </div></TranslationBoundary>
+    </div>
   )
 }
 
-function TourPanel({ tour: t }: { tour: Tour }) {
+function TourPanel({ tour: baset }: { tour: Tour }) {
+  const catalogueLabel = useCatalogueLabel()
+
+  const t = useToursCopy('tour.tours', baset)
+
+  const tr = useTranslations('UI.home.TourRail')
+
   const kind = t.style.split(' · ')[0]
   const price = t.from.replace(' per person', '')
 
   return (
-    <TranslationBoundary><Link
+    <Link
       href={`/expeditions/${t.slug}`}
       data-card
       className={cn(
@@ -126,12 +133,11 @@ function TourPanel({ tour: t }: { tour: Tour }) {
       <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 via-50% to-charcoal/30" />
 
       <span className="absolute right-5 top-5 text-[10px] font-semibold uppercase tracking-[0.2em] text-background text-shadow-soft">
-        {t.nights} Nights
-      </span>
+        {t.nights} {tr('nights')}</span>
 
       <div className="absolute inset-x-0 bottom-0 p-6 sm:p-7">
         <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-accent">
-          {kind} · {t.season}
+          {catalogueLabel(kind)} · {t.season}
         </p>
         <h3 className="mt-2.5 text-balance font-serif text-[1.75rem] leading-[1.08] text-background">
           {t.title}
@@ -144,23 +150,23 @@ function TourPanel({ tour: t }: { tour: Tour }) {
               {t.teaser}
             </p>
             <p className="pt-2 font-serif text-[15px] italic text-sand/80">
-              From {price} per person
-            </p>
+              {tr('from')}{' '}{price} {tr('perPerson')}</p>
           </div>
         </div>
 
         <span className="mt-5 inline-flex items-center gap-2 border border-background/70 px-5 py-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-background transition-all duration-300 group-hover:border-accent group-hover:bg-accent group-hover:text-accent-foreground">
-          Explore Trip
-          <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+          {tr('exploreTrip')}<ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
         </span>
       </div>
-    </Link></TranslationBoundary>
+    </Link>
   )
 }
 
 function CustomPanel() {
+  const tr = useTranslations('UI.home.TourRail')
+
   return (
-    <TranslationBoundary><Link
+    <Link
       href="/plan"
       className={cn(
         CARD,
@@ -176,23 +182,19 @@ function CustomPanel() {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-charcoal/50 to-charcoal/90" />
       <span className="absolute right-5 top-5 text-[10px] font-semibold uppercase tracking-[0.2em] text-background text-shadow-soft">
-        Custom trips
-      </span>
+        {tr('customTrips')}</span>
       <div className="relative">
         <span className="mb-6 block h-px w-12 bg-accent" />
         <h3 className="font-serif text-[2.1rem] leading-[1.05] text-background">
-          Create your own <em className="italic text-accent">itinerary</em>
+          {tr('createYourOwn')}{' '}<em className="italic text-accent">{tr('itinerary')}</em>
         </h3>
         <p className="mt-4 max-w-[28ch] text-pretty text-sm leading-relaxed text-background/75">
-          “I have six days and want the Danakil and Gheralta.” Tell us your
-          dates and interests and we will build the route around you.
-        </p>
+          {tr('iHaveSixDaysAndWantThe')}</p>
         <span className="mt-8 inline-flex items-center gap-2 bg-accent px-5 py-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-accent-foreground transition-all duration-300 group-hover:bg-sand">
-          Create Trip
-          <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+          {tr('createTrip')}<ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
         </span>
       </div>
-    </Link></TranslationBoundary>
+    </Link>
   )
 }
 
@@ -207,19 +209,21 @@ function RailButton({
   onClick: () => void
   className?: string
 }) {
+  const tr = useTranslations('UI.home.TourRail')
+
   const Icon = side === 'left' ? ChevronLeft : ChevronRight
   return (
-    <TranslationBoundary><button
+    <button
       type="button"
       onClick={onClick}
       disabled={disabled}
-      aria-label={side === 'left' ? 'Previous tours' : 'Next tours'}
+      aria-label={side === 'left' ? tr('previousTours') : tr('nextTours')}
       className={cn(
         'flex h-12 w-12 items-center justify-center rounded-full border border-secondary-foreground/25 bg-charcoal/55 text-secondary-foreground backdrop-blur-md transition-all duration-300 hover:border-accent hover:bg-accent hover:text-accent-foreground disabled:cursor-default disabled:opacity-30 disabled:hover:border-secondary-foreground/25 disabled:hover:bg-charcoal/55 disabled:hover:text-secondary-foreground',
         className,
       )}
     >
       <Icon className="h-5 w-5" strokeWidth={1.5} />
-    </button></TranslationBoundary>
+    </button>
   )
 }

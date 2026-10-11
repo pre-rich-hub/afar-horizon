@@ -1,0 +1,44 @@
+{
+  "about.sections": {
+    "in-brief": {
+      "label": "Kurz gesagt"
+    },
+    "our-story": {
+      "label": "Unsere Geschichte"
+    },
+    "our-approach": {
+      "label": "Unser Ansatz"
+    },
+    "plan": {
+      "label": "Planen Sie mit uns"
+    }
+  },
+  "about.brief": {
+    "0": {
+      "title": "Wer wir sind",
+      "text": "Afar Horizon Expeditions ist ein lokal geführtes Reiseunternehmen Unternehmen: ein kleines Addis Abeba-Team aus Reisedesignern, Gelehrtenführern und Fahrern, die seit Jahren Seite an Seite arbeiten."
+    },
+    "1": {
+      "title": "Wo wir tätig sind",
+      "text": "Unser Büro befindet sich in Bole Medhaniallem, Cape Verde Street 1000, Addis Abeba, Äthiopien. Wir reisen durch Äthiopien – das Danakil- und Afar-Tiefland, den historischen Norden, das Simien- und Bale-Hochland und das Omo-Tal im Süden."
+    },
+    "2": {
+      "title": "So funktioniert die Planung",
+      "text": "Planung beginnt mit einem Gespräch, nicht mit einem festen Paket. Sagen Sie uns Ihre Daten, Ihr Tempo und was Sie hierher zieht; In einem schriftlichen Vorschlag wird dann die Reise vollständig dargelegt."
+    }
+  },
+  "about.principles": {
+    "0": {
+      "title": "Raum für das Unerwartete",
+      "text": "Eine Karawane, die im Morgengrauen das Salz überquert, ein Gespräch an einem Kaffeestand am Straßenrand, ein Bergrücken, der durch die Wolke auftaucht. Der Moment, an den sich Reisende am meisten erinnern, ist oft der, der nie auf der Reiseroute stand – also lassen wir Platz dafür."
+    },
+    "1": {
+      "title": "Ehrliche Beratung",
+      "text": "Wenn eine Route zu viel Zeit in Anspruch nimmt, sagen wir das. Wenn die Danakil-Hitze oder die örtlichen Bedingungen den Plan ändern, passen wir ihn an. Wildtiersichtungen, klarer Himmel und Kraterblick werden erhofft, aber nie versprochen."
+    },
+    "2": {
+      "title": "Respekt vor den Orten, die wir teilen",
+      "text": "Die Afar, das Hochland und der Süden sind Heimat, bevor sie Ziele sind. Wir reisen mit ortsansässigen Führern, fragen vor dem Fotografieren nach und bewegen uns in einem Tempo, das Gemeinden und Landschaften so hinterlässt, wie wir sie vorgefunden haben."
+    }
+  }
+}

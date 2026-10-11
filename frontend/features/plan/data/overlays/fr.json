@@ -1,0 +1,20 @@
+{
+  "plan.steps": {
+    "0": {
+      "title": "Posez",
+      "text": "Envoyez vos dates, vos intérêts et le nombre de jours dont vous disposez. Une idée suffit."
+    },
+    "1": {
+      "title": "Discutez",
+      "text": "Nous pouvons poser quelques questions par e-mail ou WhatsApp et vous dire honnêtement quelles conditions actuelles le permettent."
+    },
+    "2": {
+      "title": "Citation",
+      "text": "Vous recevez un itinéraire avec un prix clair, ce qui est inclus et ce qui ne l'est pas."
+    },
+    "3": {
+      "title": "Confirmer",
+      "text": "Un acompte, généralement de 30 %, confirme la réservation. Nous organisons ensuite les véhicules, le personnel, les permis et l'hébergement."
+    }
+  }
+}

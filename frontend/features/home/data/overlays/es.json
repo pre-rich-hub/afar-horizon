@@ -1,0 +1,284 @@
+{
+  "experiences.experiences": {
+    "0": {
+      "kicker": "Luz y paisaje",
+      "title": "Expediciones fotográficas",
+      "alt": "Pozas minerales de colores y formaciones de sal en el Danakil",
+      "text": "Paradas de campo más largas, tomas fotográficas al amanecer y por la noche en Dallol, Erta Ale y la llanura de sal, con tiempo para esperar la luz."
+    },
+    "1": {
+      "kicker": "Rift y volcán",
+      "title": "Geología y cultura",
+      "alt": "Capas geológicas expuestas en una formación rocosa de Afar",
+      "text": "Ocho días para comprender el Triángulo de Afar: el volcán, la economía de la sal y las personas que viven con ambos."
+    },
+    "2": {
+      "kicker": "Acantilados e iglesias",
+      "title": "Danakil y las Tierras Altas",
+      "alt": "Un visitante junto a un acantilado en el paisaje montañoso de Gheralta",
+      "text": "Desde el desierto de sal hasta Los obeliscos de Aksum y las iglesias de los acantilados de Gheralta, en nueve o diez días."
+    },
+    "3": {
+      "kicker": "Para compañías de viajes",
+      "title": "Tierra Operaciones",
+      "alt": "Camellos reunidos en la llanura de sal cerca de Hamed Ela al atardecer",
+      "text": "Vehículos, guías, campamentos y permisos para operadores turísticos, equipos de filmación y equipos de investigación. Un socio local sobre el terreno."
+    }
+  },
+  "gallery.shots": {
+    "lalibela": {
+      "location": "Lalibela",
+      "description": "Iglesias excavadas en la roca y tradiciones vivas en las tierras altas del norte."
+    },
+    "simien-mountains": {
+      "location": "Montañas Simien",
+      "description": "Escarpes de montaña y rutas de senderismo por encima de las nubes."
+    },
+    "danakil-depression": {
+      "location": "Depresión de Danakil",
+      "description": "Paisajes volcánicos y tierras saladas en el Triángulo de Afar."
+    },
+    "lake-assale": {
+      "location": "Lago Assale",
+      "description": "Llanuras de sal formadas por generaciones de trabajo en Danakil."
+    },
+    "gondar": {
+      "location": "gondar",
+      "description": "Patrimonio real y monumentos históricos en el norte de Etiopía."
+    },
+    "lake-tana": {
+      "location": "Lago Tana",
+      "description": "Viajes por lagos y monasterios insulares cerca de Bahir Dar."
+    }
+  },
+  "hero-actions.index": {
+    "0": {
+      "title": "Depresión de Danakil",
+      "meta": "Región de Afar"
+    },
+    "1": {
+      "title": "Lejos",
+      "meta": "Región de Afar"
+    },
+    "2": {
+      "title": "Erta Ale",
+      "meta": "Región de Afar · Danakil"
+    },
+    "3": {
+      "title": "Dallol",
+      "meta": "Región de Afar · Danakil"
+    },
+    "4": {
+      "title": "Lago Assale",
+      "meta": "Región de Afar · Danakil"
+    },
+    "5": {
+      "title": "Lago Afdera",
+      "meta": "Región de Afar · Danakil"
+    },
+    "6": {
+      "title": "Ela Hamed",
+      "meta": "Región de Afar · Danakil"
+    },
+    "7": {
+      "title": "Semera",
+      "meta": "Región de Afar"
+    },
+    "8": {
+      "title": "Parque Nacional Awash",
+      "meta": "Afar y Oromia"
+    },
+    "9": {
+      "title": "Hadar y el valle inferior de Awash",
+      "meta": "Región de Afar"
+    },
+    "10": {
+      "title": "geralta",
+      "meta": "Tigray"
+    },
+    "11": {
+      "title": "aksum",
+      "meta": "Tigray"
+    },
+    "12": {
+      "title": "Lalibela",
+      "meta": "Amhara"
+    },
+    "13": {
+      "title": "Montañas Simien",
+      "meta": "Amhara"
+    },
+    "14": {
+      "title": "gondar",
+      "meta": "Amhara"
+    },
+    "15": {
+      "title": "mekel",
+      "meta": "Tigray"
+    },
+    "16": {
+      "title": "Bahir-Dar",
+      "meta": "Amhara · Lago Tana"
+    },
+    "17": {
+      "title": "Lago Tana",
+      "meta": "Amhara · Bahir Dar"
+    },
+    "18": {
+      "title": "Norte de Etiopía",
+      "meta": "Lejos · Tigray · Amhara"
+    },
+    "19": {
+      "title": "Lo esencial de Danakil",
+      "meta": "3 Días · Expedición · Privado"
+    },
+    "20": {
+      "title": "Danakil Profundo",
+      "meta": "4 Días · Expedición · Privado"
+    },
+    "21": {
+      "title": "Más allá de lo más destacado",
+      "meta": "5 Días · Expedición · Privado"
+    },
+    "22": {
+      "title": "Expedición fotográfica de Danakil",
+      "meta": "7 Días · Fotografía Especializada · Privado"
+    },
+    "23": {
+      "title": "Geología y cultura de Afar",
+      "meta": "8 Días · Especialista · Privado"
+    },
+    "24": {
+      "title": "El borde de Afar",
+      "meta": "1 Día · Expedición de un Día · Privado"
+    },
+    "25": {
+      "title": "Primer vistazo a Danakil",
+      "meta": "2 Días · Expedición · Privado"
+    },
+    "26": {
+      "title": "Explorador de Danakil",
+      "meta": "6 Días · Expedición · Privado"
+    },
+    "27": {
+      "title": "En Danakil",
+      "meta": "7 Días · Expedición · Privado"
+    },
+    "28": {
+      "title": "Danakil y Gheralta",
+      "meta": "10 Días · Expedición · Cultural"
+    },
+    "29": {
+      "title": "Afar al Tierras Altas",
+      "meta": "9 Días · Expedición · Cultural"
+    },
+    "30": {
+      "title": "De la montaña al horizonte",
+      "meta": "8 Días · Expedición Propuesta · Privada"
+    },
+    "31": {
+      "title": "De Axum al Afar Horizon",
+      "meta": "9 Días · Expedición Propuesta · Privada"
+    },
+    "32": {
+      "title": "Gran Expedición al Norte de Etiopía",
+      "meta": "15 Días · Expedición Combinada · Privado / Grupo Pequeño"
+    },
+    "33": {
+      "title": "Esenciales del norte de Etiopía",
+      "meta": "12 Días · Cultural · Privado"
+    },
+    "34": {
+      "title": "Gran horizonte del norte de Etiopía",
+      "meta": "15 Días · Cultural · Trekking"
+    },
+    "35": {
+      "title": "Gran Horizonte Etiopía",
+      "meta": "21 Días · Expedición · Cultural"
+    }
+  },
+  "hero-actions.popular": {
+    "0": {
+      "title": "Depresión de Danakil",
+      "meta": "Región de Afar"
+    },
+    "1": {
+      "title": "Lejos",
+      "meta": "Región de Afar"
+    },
+    "2": {
+      "title": "Erta Ale",
+      "meta": "Región de Afar · Danakil"
+    },
+    "3": {
+      "title": "Dallol",
+      "meta": "Región de Afar · Danakil"
+    }
+  },
+  "hero-slideshow.slides": {
+    "danakil-depression": {
+      "alt": "Piscinas de minerales verdes y formaciones de sal en el paisaje de Danakil",
+      "place": "Depresión de Danakil"
+    },
+    "Erta_Ale_approach": {
+      "alt": "Lava resplandeciente dentro de un cráter volcánico en Erta Ale",
+      "place": "Paisaje volcánico Erta Ale"
+    },
+    "lake-assale": {
+      "alt": "Costra de sal y aguas poco profundas en el lago Assale al atardecer",
+      "place": "Lago Assale, Afar"
+    },
+    "lake-afdera": {
+      "alt": "Agua azul verdosa y una orilla con costra de sal en el lago Afdera",
+      "place": "Lago Afdera, Afar"
+    },
+    "afar": {
+      "alt": "Caravana de camellos cruzando una llanura de sal al atardecer en Afar",
+      "place": "Región de Afar"
+    }
+  },
+  "why-travel.promiseImages": {
+    "0": {
+      "alt": "Región de Afar, Etiopía"
+    },
+    "1": {
+      "alt": "Dallol en la depresión de Danakil"
+    },
+    "2": {
+      "alt": "Gheralta en las tierras altas del norte de Etiopía"
+    },
+    "3": {
+      "alt": "Hamed Ela en la depresión de Danakil"
+    },
+    "4": {
+      "alt": "Montañas Simien, Etiopía"
+    }
+  },
+  "why-travel.slides": {
+    "0": {
+      "title": "Localmente de propiedad y operación",
+      "text": "Operamos desde Etiopía, con nuestros propios guías, conductores y personal de campo. Tratas directamente con las personas que organizan tu viaje.",
+      "alt": "Región de Afar, Etiopía"
+    },
+    "1": {
+      "title": "Conocimientos de expedición",
+      "text": "Los paisajes remotos requieren más que una reserva en línea. Planificamos el agua, la calefacción, las rutas, los campamentos y el acceso actual antes de prometer nada.",
+      "alt": "Dallol en la depresión de Danakil"
+    },
+    "2": {
+      "title": "Guía humano",
+      "text": "Personas reales con experiencia real del terreno, que te explican lo que estás viendo en lugar de simplemente señalarlo.",
+      "alt": "Gheralta en las tierras altas del norte de Etiopía"
+    },
+    "3": {
+      "title": "Nosotros nos encargamos de la logística",
+      "text": "Vehículos 4×4, scouts locales, permisos, campamentos, hoteles y traslados. Un equipo responsable de toda la operación terrestre.",
+      "alt": "Hamed Ela en la depresión de Danakil"
+    },
+    "4": {
+      "title": "Privadas y flexibles",
+      "text": "No es necesario que su viaje se ajuste a una plantilla. Cuando las condiciones cambian, adaptamos la ruta en torno a la seguridad y lo que es importante para usted.",
+      "alt": "Montañas Simien, Etiopía"
+    }
+  }
+}

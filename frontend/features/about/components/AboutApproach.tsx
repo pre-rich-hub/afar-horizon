@@ -1,21 +1,24 @@
+import {useAboutCopy} from '../data/localized'
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
-import { principles } from '../data/about.data'
+import { principles as basePrinciples } from '../data/about.data'
 
 export function AboutApproach() {
+  const tr = useTranslations('UI.about.AboutApproach')
+  const principles = useAboutCopy('about.principles', basePrinciples)
+
   return (
-    <TranslationBoundary><section id="our-approach" className="scroll-mt-32 shell py-20 sm:py-24 lg:py-32">
+    <section id="our-approach" className="scroll-mt-32 shell py-20 sm:py-24 lg:py-32">
         <Reveal className="mb-12 max-w-2xl sm:mb-16">
-          <p className="eyebrow mb-5 text-accent">The kind of travel we believe in</p>
+          <p className="eyebrow mb-5 text-accent">{tr('theKindOfTravelWeBelieveIn')}</p>
           <h2 className="text-balance text-3xl leading-[1.1] text-foreground sm:text-4xl lg:text-5xl">
-            The right things. At the right pace.
-          </h2>
+            {tr('theRightThingsAtTheRightPace')}</h2>
         </Reveal>
 
         <ol className="divide-y divide-border border-y border-border">
           {principles.map((p, i) => (
-            <TranslationBoundary key={p.title}><Reveal
+            <Reveal
               key={p.title}
               as="li"
               delay={i * 80}
@@ -28,9 +31,9 @@ export function AboutApproach() {
               <p className="text-pretty leading-relaxed text-muted-foreground sm:col-start-2 sm:text-lg lg:col-start-3">
                 {p.text}
               </p>
-            </Reveal></TranslationBoundary>
+            </Reveal>
           ))}
         </ol>
-      </section></TranslationBoundary>
+      </section>
   )
 }

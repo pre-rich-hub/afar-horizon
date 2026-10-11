@@ -1,50 +1,48 @@
 {
   "date": "2026-10-11",
+  "architecture": "next-intl explicit locale routes and feature overlays",
   "origin": "http://127.0.0.1:3101",
   "EnglishPages": 60,
   "draftPages": 240,
   "sitemapURLs": 58,
-  "invalidRoutesChecked": 6,
+  "invalidRoutesChecked": 5,
+  "EnglishPrefixRedirect": true,
   "reports": [
     {
       "locale": "fr",
       "pages": 60,
-      "sourceStrings": 2166,
-      "missingDictionaryEntries": 0,
-      "untranslatedLongParagraphs": 0,
       "noindex": true,
       "selfCanonical": true,
-      "draftHreflangExcluded": true
+      "draftHreflangExcluded": true,
+      "untranslatedLongParagraphs": 0,
+      "inlineLinksPreserved": true
     },
     {
       "locale": "es",
       "pages": 60,
-      "sourceStrings": 2166,
-      "missingDictionaryEntries": 0,
-      "untranslatedLongParagraphs": 0,
       "noindex": true,
       "selfCanonical": true,
-      "draftHreflangExcluded": true
+      "draftHreflangExcluded": true,
+      "untranslatedLongParagraphs": 0,
+      "inlineLinksPreserved": true
     },
     {
       "locale": "de",
       "pages": 60,
-      "sourceStrings": 2166,
-      "missingDictionaryEntries": 0,
-      "untranslatedLongParagraphs": 0,
       "noindex": true,
       "selfCanonical": true,
-      "draftHreflangExcluded": true
+      "draftHreflangExcluded": true,
+      "untranslatedLongParagraphs": 0,
+      "inlineLinksPreserved": true
     },
     {
       "locale": "zh-Hans",
       "pages": 60,
-      "sourceStrings": 2166,
-      "missingDictionaryEntries": 0,
-      "untranslatedLongParagraphs": 0,
       "noindex": true,
       "selfCanonical": true,
-      "draftHreflangExcluded": true
+      "draftHreflangExcluded": true,
+      "untranslatedLongParagraphs": 0,
+      "inlineLinksPreserved": true
     }
   ]
 }

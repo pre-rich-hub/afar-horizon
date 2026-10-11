@@ -1,0 +1,83 @@
+{
+  "before-you-go.topics": {
+    "heat": {
+      "title": "Chaleur",
+      "text": {
+        "0": "Le Danakil est l'un des endroits habités les plus chauds de la planète. Même pendant les mois les plus frais, de novembre à janvier, attendez-vous à une chaleur importante.",
+        "1": "Nous planifions chaque journée en fonction de cela : départs tôt, heures les plus chaudes passées à se reposer à l'ombre et marche programmée pour le soir ou tôt le matin. Buvez avant d'avoir soif."
+      }
+    },
+    "roads": {
+      "title": "Routes et voyages en 4×4",
+      "text": {
+        "0": "Un kilomètre n'est pas toujours qu'un kilomètre. Les pistes isolées du Danakil nécessitent des véhicules 4×4 et des chauffeurs qui les connaissent, et certaines journées sont de longs transferts terrestres sur un terrain accidenté et poussiéreux.",
+        "1": "Nous décidons du déroulement d'une journée en fonction de l'état de la route, de la lumière du jour, de la météo, du véhicule et des informations locales. Nous préférons arriver plus tard et en toute sécurité plutôt que de promettre une heure d'arrivée irréaliste."
+      }
+    },
+    "walking": {
+      "title": "Marcher",
+      "text": {
+        "0": "La marche de Danakil peut impliquer une chaleur exposée et un sol inégal. À Erta Ale, la distance, le timing et la zone d'observation dépendent de l'approche confirmée et du guidage local. Renseignez-vous sur les promenades prévues pour votre itinéraire et apportez des chaussures adaptées et une lampe frontale si nécessaire.",
+        "1": "Certaines églises sur falaise de Gheralta sont abruptes et exposées. grimpe; discuter des alternatives accessibles avant de confirmer une visite. Dans le Simien, l'altitude, le froid et le relief entraînent des exigences différentes de celles des basses terres."
+      }
+    },
+    "camping": {
+      "title": "Hébergement et camping",
+      "text": {
+        "0": "Nous ne décrivons jamais le camping du Danakil comme un luxe. Les camps éloignés peuvent nécessiter des conditions de couchage basiques, souvent en plein air à Hamed Ela, avec des installations sanitaires limitées, une électricité limitée, des toilettes simples et des repas en plein air.",
+        "1": "Ce n'est pas un échec du voyage ; c'est la nature du lieu. Dans les hauts plateaux, nous choisissons des hôtels, des lodges et des maisons d'hôtes pour leur emplacement, leur propreté, leur fiabilité et le niveau de confort que vous demandez."
+      }
+    },
+    "food-water": {
+      "title": "Nourriture et eau",
+      "text": {
+        "0": "Les repas de l'expédition sont préparés par notre équipe et planifiés autour de la logistique du désert. Nous transportons de l'eau potable pour le parcours et le groupe ; apportez également votre propre bouteille ou système d'hydratation.",
+        "1": "Informez-nous de vos besoins alimentaires avant le départ afin que nous puissions les planifier. Dans les hauts plateaux, essayez l'injera et une cérémonie du café ; nos guides vous expliqueront ce que vous mangez."
+      }
+    },
+    "connectivity": {
+      "title": "Téléphones, internet et argent",
+      "text": {
+        "0": "Attendez-vous à peu ou pas de signal mobile dans certaines parties du Danakil et à une recharge limitée. Apportez une banque d'alimentation, des batteries de rechange et des câbles.",
+        "1": "L'Éthiopie est en grande partie un environnement monétaire en dehors des villes. Ne comptez pas sur une seule carte ou un seul guichet automatique ; emportez une sauvegarde raisonnable et renseignez-vous avant le départ sur les paiements sur votre itinéraire."
+      }
+    },
+    "safety": {
+      "title": "Sécurité et conditions changeantes",
+      "text": {
+        "0": "Le Danakil est un environnement d'expédition éloigné, et l'accès à certaines parties d'Afar et du Tigré peut changer. Nous vérifions les conditions actuelles avant de proposer et à nouveau avant le départ, et nous modifierons ou annulerons un itinéraire lorsque les conditions l'exigeront.",
+        "1": "Quand quelque chose change sur la route, nous comprenons ce qui s'est passé, vérifions la situation sur le terrain, expliquons ce que cela signifie pour vous, proposons des options réalistes, décidons de la plus sûre, reconstruisons la logistique et vous tenons informés.",
+        "2": "L'activité volcanique à Erta Ale, les caravanes de chameaux sur le sel et l'accès à Dallol ne sont jamais garantis. Nous planifions de manière responsable en fonction des conditions que nous trouvons."
+      }
+    },
+    "flexibility": {
+      "title": "Flexibilité et démarrage anticipé",
+      "text": {
+        "0": "Les jours commencent souvent avant l'aube. Les horaires exacts, les emplacements des camps et les itinéraires sont confirmés pour vos dates et peuvent changer selon la journée.",
+        "1": "La flexibilité est peut-être la chose la plus importante que vous apportez. Un voyageur bien informé qui s'attend à cela appréciera bien plus le Danakil que celui qui attend une brochure."
+      }
+    }
+  },
+  "before-you-go.packing": {
+    "0": "Vêtements légers et respirants à manches longues",
+    "1": "Chapeau à larges bords et lunettes de soleil",
+    "2": "Crème solaire et protection des lèvres",
+    "3": "Chaussures de marche robustes (et sandales pour le camp)",
+    "4": "Une couche chaude pour les nuits plus fraîches et les hauts plateaux",
+    "5": "Lampe frontale",
+    "6": "Bouteille ou système d'hydratation réutilisable",
+    "7": "Banque d'alimentation, batteries et câbles de rechange",
+    "8": "Protection contre la poussière pour téléphone et appareil photo",
+    "9": "Lingettes, désinfectant pour les mains et une petite serviette",
+    "10": "Médicaments personnels dans leur emballage d'origine",
+    "11": "Vêtements de couchage et produits d'hygiène personnelle"
+  },
+  "before-you-go.respect": {
+    "0": "Demandez avant de photographier des personnes, des cérémonies et des enfants (demandez à leur tuteur)",
+    "1": "Habillez-vous modestement dans les églises et suivez le guide de l'église locale",
+    "2": "Ne traitez pas les gens comme un décor et n'interrompez pas le travail pour une photographie",
+    "3": "Saluer les gens, respecter les aînés et accepter gracieusement l'hospitalité",
+    "4": "Achetez localement là où vous pouvez",
+    "5": "Écoutez votre guide : il explique le contexte"
+  }
+}

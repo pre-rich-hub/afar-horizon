@@ -1,5 +1,5 @@
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { defaultImage } from '@/lib/config/cloudinary'
 import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
@@ -28,8 +28,10 @@ export function PageHero({
   meta,
   align = 'left',
 }: PageHeroProps) {
+  const tr = useTranslations('UI.common.PageHero')
+
   return (
-    <TranslationBoundary><section className="relative isolate flex min-h-[74svh] items-end overflow-hidden pt-28 sm:min-h-[68svh] lg:min-h-[76vh]">
+    <section className="relative isolate flex min-h-[74svh] items-end overflow-hidden pt-28 sm:min-h-[68svh] lg:min-h-[76vh]">
       <div className="absolute inset-0 -z-10">
         <Image
           src={image || defaultImage}
@@ -47,11 +49,11 @@ export function PageHero({
       <div className="shell pb-12 sm:pb-16 lg:pb-20">
         {crumbs.length > 0 && (
           <nav
-            aria-label="Breadcrumb"
+            aria-label={tr('breadcrumb')}
             className="mb-6 flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] uppercase tracking-[0.16em] text-background/60"
           >
             {crumbs.map((c, i) => (
-              <TranslationBoundary key={c.label}><span key={c.label} className="flex items-center gap-2">
+              <span key={c.label} className="flex items-center gap-2">
                 {c.href ? (
                   <Link
                     href={c.href}
@@ -65,7 +67,7 @@ export function PageHero({
                 {i < crumbs.length - 1 && (
                   <ChevronRight className="h-3 w-3 opacity-50" />
                 )}
-              </span></TranslationBoundary>
+              </span>
             ))}
           </nav>
         )}
@@ -97,18 +99,18 @@ export function PageHero({
         {meta && meta.length > 0 && (
           <dl className="mt-9 grid grid-cols-2 gap-px overflow-hidden border border-background/20 bg-background/15 sm:mt-12 md:grid-cols-4">
             {meta.map((m) => (
-              <TranslationBoundary key={m.label}><div key={m.label} className="bg-charcoal/40 px-5 py-4 sm:px-6">
+              <div key={m.label} className="bg-charcoal/40 px-5 py-4 sm:px-6">
                 <dt className="text-[10px] uppercase tracking-[0.18em] text-background/55">
                   {m.label}
                 </dt>
                 <dd className="mt-1.5 font-serif text-xl text-background sm:text-2xl">
                   {m.value}
                 </dd>
-              </div></TranslationBoundary>
+              </div>
             ))}
           </dl>
         )}
       </div>
-    </section></TranslationBoundary>
+    </section>
   )
 }

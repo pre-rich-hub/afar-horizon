@@ -1,5 +1,5 @@
 'use client'
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+import { useTranslations } from 'next-intl'
 
 
 import { Reveal } from '@/components/common/Reveal'
@@ -21,24 +21,28 @@ const frame: Record<GalleryPhoto['shape'], string> = {
 export function GalleryGrid({
   photos,
   categories,
+  categoryLabels = categories,
 }: {
   photos: GalleryPhoto[]
   categories: GalleryCategory[]
+  categoryLabels?: string[]
 }) {
+  const tr = useTranslations('UI.gallery.GalleryGrid')
+
   const [filter, setFilter] = useState<GalleryCategory | typeof ALL>(ALL)
   const [open, setOpen] = useState<number | null>(null)
 
   const visible = filter === ALL ? photos : photos.filter((p) => p.category === filter)
 
   return (
-    <TranslationBoundary><>
-      <div role="group" aria-label="Filter photos" className="mb-10 flex flex-wrap gap-2 sm:mb-14">
+    <>
+      <div role="group" aria-label={tr('filterPhotos')} className="mb-10 flex flex-wrap gap-2 sm:mb-14">
         {[ALL, ...categories].map((c) => {
           const on = c === filter
           const n = c === ALL ? photos.length : photos.filter((p) => p.category === c).length
           return (
-            <TranslationBoundary key={c}><button
-              key={c}
+            <button
+              key={c === ALL ? tr('all') : categoryLabels[categories.indexOf(c as GalleryCategory)]}
               type="button"
               aria-pressed={on}
               onClick={() => setFilter(c as GalleryCategory | typeof ALL)}
@@ -49,23 +53,23 @@ export function GalleryGrid({
                   : 'border-border bg-card text-muted-foreground hover:border-primary/50 hover:text-foreground',
               )}
             >
-              {c}
+              {c === ALL ? tr('all') : categoryLabels[categories.indexOf(c as GalleryCategory)]}
               <span className={cn('tabular-nums', on ? 'text-primary-foreground/60' : 'text-muted-foreground/60')}>
                 {n}
               </span>
-            </button></TranslationBoundary>
+            </button>
           )
         })}
       </div>
 
       <ul className="columns-1 gap-5 sm:columns-2 lg:columns-3 lg:gap-6">
         {visible.map((p, i) => (
-          <TranslationBoundary key={p.src}><li key={p.src} className="mb-5 break-inside-avoid lg:mb-6">
+          <li key={p.src} className="mb-5 break-inside-avoid lg:mb-6">
             <Reveal delay={(i % 3) * 90}>
               <button
                 type="button"
                 onClick={() => setOpen(i)}
-                aria-label={`Open ${p.title}, ${p.location}`}
+                aria-label={tr('openValueValue', { value0: String(p.title), value1: String(p.location) })}
                 className={cn(
                   'group relative block w-full touch-manipulation overflow-hidden rounded-sm bg-muted text-left transition-transform duration-300 active:scale-[0.98] active:duration-100',
                   frame[p.shape],
@@ -84,7 +88,7 @@ export function GalleryGrid({
                 </span>
                 <span className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
                   <span className="block text-[10px] font-semibold uppercase tracking-[0.2em] text-accent">
-                    {p.category} · {p.location}
+                    {categoryLabels[categories.indexOf(p.category)]} · {p.location}
                   </span>
                   <span className="mt-1.5 block font-serif text-2xl leading-tight text-background">
                     {p.title}
@@ -92,7 +96,7 @@ export function GalleryGrid({
                 </span>
               </button>
             </Reveal>
-          </li></TranslationBoundary>
+          </li>
         ))}
       </ul>
 
@@ -104,6 +108,6 @@ export function GalleryGrid({
           onIndexChange={setOpen}
         />
       )}
-    </></TranslationBoundary>
+    </>
   )
 }

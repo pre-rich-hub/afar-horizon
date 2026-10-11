@@ -1,14 +1,18 @@
 'use client'
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+import {useHomeCopy} from '../data/localized'
+import { useTranslations } from 'next-intl'
 
 
-import { shots } from '../data/gallery.data'
+import { shots as baseShots } from '../data/gallery.data'
 
 import { ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react'
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 
 export function Gallery() {
+  const tr = useTranslations('UI.home.Gallery')
+  const shots = useHomeCopy('gallery.shots', baseShots)
+
   const [activeIndex, setActiveIndex] = useState(0)
   const [isPlaying, setIsPlaying] = useState(true)
   const [previous, setPrevious] = useState<number | null>(null)
@@ -50,10 +54,10 @@ export function Gallery() {
   }, [isPlaying, inView, activeIndex])
 
   return (
-    <TranslationBoundary><section
+    <section
       ref={viewport}
       id="journal"
-      aria-label="Photo gallery"
+      aria-label={tr('photoGallery')}
       className="group/viewport relative isolate h-[100svh] min-h-[560px] w-full overflow-hidden bg-charcoal"
     >
       {shots.map((shot, idx) => {
@@ -61,9 +65,9 @@ export function Gallery() {
         if (!isActive && idx !== previous && idx !== prepared) return null
         const displayed = (isActive && (previous === null || loaded.has(activeIndex))) || (idx === previous && !loaded.has(activeIndex))
         // Alternate animation direction/style
-        const kbClass = idx % 2 === 0 ? 'animate-kb-1' : 'animate-kb-2'
+        const kbClass = idx % 2 === 0 ? tr('animateKb1') : tr('animateKb2')
         return (
-          <TranslationBoundary key={`${idx}-${shot.src}`}><div
+          <div
             key={`${idx}-${shot.src}`}
             aria-hidden={!isActive}
             className={`absolute inset-0 transition-opacity duration-[2000ms] ease-in-out ${displayed ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
@@ -75,13 +79,13 @@ export function Gallery() {
                 loadedFrames.current.add(idx)
                 setLoaded(current => new Set(current).add(idx))
               }}
-              alt={`${shot.location}, Ethiopia`}
+              alt={tr('valueEthiopia', { value0: String(shot.location) })}
               fill
               sizes="100vw"
               loading={inView ? 'eager' : 'lazy'}
               className={`object-cover ${isActive ? kbClass : 'scale-100'}`}
             />
-          </div></TranslationBoundary>
+          </div>
         )
       })}
 
@@ -94,8 +98,7 @@ export function Gallery() {
         <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between sm:gap-6">
           <div key={activeIndex} className="max-w-md text-balance [animation:fade-up_0.8s_ease_both]">
             <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-accent">
-              {String(activeIndex + 1).padStart(2, '0')} / {String(shots.length).padStart(2, '0')} · Captured Moments
-            </span>
+              {String(activeIndex + 1).padStart(2, '0')} / {String(shots.length).padStart(2, '0')} {tr('capturedMoments')}</span>
             <h3 className="mt-2 font-serif text-3xl font-normal tracking-wide text-white sm:text-4xl lg:text-5xl">
               {shots[activeIndex].location}
             </h3>
@@ -109,7 +112,7 @@ export function Gallery() {
               {shots.map((_, idx) => {
                 const isActive = idx === activeIndex
                 return (
-                  <TranslationBoundary key={idx}><button
+                  <button
                     key={idx}
                     onClick={() => {
                       select(idx)
@@ -117,8 +120,8 @@ export function Gallery() {
                     }}
                     className={`h-1.5 rounded-full transition-all duration-500 cursor-pointer ${isActive ? 'w-8 bg-accent' : 'w-2 bg-white/40 hover:bg-white/80'
                       }`}
-                    aria-label={`Go to slide ${idx + 1}`}
-                  /></TranslationBoundary>
+                    aria-label={tr('goToSlideValue', { value0: String(idx + 1) })}
+                  />
                 )
               })}
             </div>
@@ -126,21 +129,21 @@ export function Gallery() {
               <button
                 onClick={() => setIsPlaying(!isPlaying)}
                 className="p-3 rounded-full bg-charcoal/50 backdrop-blur-md border border-sand/20 hover:border-accent hover:bg-accent hover:text-accent-foreground text-sand transition-all duration-300 cursor-pointer"
-                aria-label={isPlaying ? 'Pause slideshow' : 'Play slideshow'}
+                aria-label={isPlaying ? tr('pauseSlideshow') : tr('playSlideshow')}
               >
                 {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
               </button>
               <button
                 onClick={() => select((activeIndex - 1 + shots.length) % shots.length)}
                 className="p-3 rounded-full bg-charcoal/50 backdrop-blur-md border border-sand/20 hover:border-accent hover:bg-accent hover:text-accent-foreground text-sand transition-all duration-300 cursor-pointer"
-                aria-label="Previous slide"
+                aria-label={tr('previousSlide')}
               >
                 <ChevronLeft className="w-4 h-4" />
               </button>
               <button
                 onClick={() => select((activeIndex + 1) % shots.length)}
                 className="p-3 rounded-full bg-charcoal/50 backdrop-blur-md border border-sand/20 hover:border-accent hover:bg-accent hover:text-accent-foreground text-sand transition-all duration-300 cursor-pointer"
-                aria-label="Next slide"
+                aria-label={tr('nextSlide')}
               >
                 <ChevronRight className="w-4 h-4" />
               </button>
@@ -184,6 +187,6 @@ export function Gallery() {
             className="absolute bottom-0 left-0 right-0 h-[3px] bg-accent/90 z-30 origin-left animate-progress-grow"
           />
         )}
-    </section></TranslationBoundary>
+    </section>
   )
 }

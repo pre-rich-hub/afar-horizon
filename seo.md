@@ -303,6 +303,14 @@ This is a source-code audit, not a claim about current production rankings, inde
 - Validation: all nine test files, the separate TypeScript check and the production build pass. Rendered checks cover 240 draft pages, localized schema, canonical/noindex rules, 58 English sitemap URLs and six invalid routes. Browser checks cover 28 responsive layouts, four deep-link language-switch flows, gallery keyboard controls and eight mocked enquiry failure/retry flows without real submissions or runtime exceptions. English regression checks pass all five SEO verifier groups. Evidence: [rendered checks](frontend/docs/seo-phase8-validation.json) and [browser checks](frontend/docs/seo-phase8-browser.json).
 - Domain connection, Search Console and live measurement remain Phase 6 dependencies. No translated page has been approved, deployed or submitted for indexing.
 
+### Phase 8 architecture migration — 11 October 2026
+
+- Replaced the custom sentence-key dictionaries and translated catch-all with next-intl 4.14.9, explicit `app/[locale]` routes, stable UI messages and feature-owned editorial overlays, following the structure of `pre-rich-hub/ethioafro2`.
+- Preserved English public URLs, `/zh-Hans`, the current design, catalogue facts, reviews, numerical prices and backend submission values. Added locale-aware dates/plural counts and script-appropriate Chinese font fallbacks. Retained article inline links and completed four draft sets for the 38 updated gallery images.
+- The [review sheet](frontend/docs/translation-review.csv) now has 2,946 stable-key rows. The [review guide](frontend/docs/seo-phase8-translations.md) explains the new ownership and editing workflow; sentence keys and scope regeneration no longer apply.
+- Existing indexing, self-canonical, safe JSON-LD and preview safeguards remain. All translated routes are still unapproved/noindex and absent from sitemap/hreflang. Native-language review and the external launch dependencies remain pending.
+- Validation: build, separate TypeScript check, all nine test files, all 300 public pages and all five English SEO verifier groups pass. Browser checks cover 28 layouts, four language-switch flows, translated gallery filters/keyboard controls and eight mocked enquiry lifecycles with unchanged backend option values. Unknown records return HTTP 404 before streaming; public static generation is preserved. Updated evidence is in the Phase 8 rendered/browser reports. No migration deployment was performed.
+
 ## Verification and rollout for each phase
 
 From `frontend/`, run the appropriate checks after implementation:

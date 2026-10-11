@@ -15,7 +15,7 @@ function files(directory) {
 test('feature boundaries have explicit public entry points and no domain cycles', () => {
   assert.equal(fs.existsSync(path.join(root, 'src')), false)
   const edges = new Map()
-  for (const folder of ['app', 'features', 'components', 'lib']) {
+  for (const folder of ['app', 'features', 'components', 'lib', 'i18n']) {
     for (const file of files(path.join(root, folder))) {
       const relative = path.relative(root, file).replaceAll(path.sep, '/')
       const domain = relative.startsWith('features/') ? relative.split('/')[1] : null
@@ -28,7 +28,7 @@ test('feature boundaries have explicit public entry points and no domain cycles'
         if (specifier.startsWith('@/features/')) {
           const [, , target, ...rest] = specifier.split('/')
           assert.notEqual(target, domain, `${relative}: own-feature imports must be relative`)
-          assert.ok(rest.length === 0 || (target === 'auth' && rest.join('/') === 'server' && folder === 'app'), `${relative}: private feature import ${specifier}`)
+          assert.ok(rest.length === 0 || (folder === 'i18n' && rest.join('/') === 'catalogue') || (target === 'auth' && rest.join('/') === 'server' && folder === 'app'), `${relative}: private feature import ${specifier}`)
           if (domain && !statement.importClause?.isTypeOnly) {
             if (!edges.has(domain)) edges.set(domain, new Set())
             edges.get(domain).add(target)

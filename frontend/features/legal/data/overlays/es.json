@@ -1,0 +1,92 @@
+{
+  "legal.privacy": {
+    "title": "Política de privacidad",
+    "intro": "Cómo se utiliza la información cuando navegas por Afar Horizon Expeditions, preguntas sobre un viaje o utilizas nuestro asistente de viajes.",
+    "sections": {
+      "0": {
+        "title": "Consultas sobre viajes",
+        "paragraphs": {
+          "0": "Nuestro contacto y los formularios de planificación de viajes envían su nombre, dirección de correo electrónico y mensaje a nuestro equipo. Las preferencias de viaje ingresadas en un formulario de planificación se incluyen en ese mensaje. Utilizamos esta información para responder a su solicitud y analizar la ruta y los servicios que le interesan.",
+          "1": "Por favor, comparta solo la información necesaria para su consulta. No envíe copias de pasaporte, detalles de tarjetas de pago o información médica confidencial a través de los formularios del sitio web o del asistente de viaje."
+        }
+      },
+      "1": {
+        "title": "Suscripciones al boletín informativo",
+        "paragraphs": {
+          "0": "El formulario del boletín envía su dirección de correo electrónico a nuestro servicio de suscripción. Suscribirse es independiente de realizar una consulta. Contáctanos si deseas eliminar tu correo electrónico de la lista de suscripción."
+        }
+      },
+      "2": {
+        "title": "Asistente de viaje",
+        "paragraphs": {
+          "0": "El asistente envía sus mensajes y un identificador de conversación a nuestro backend. Los mensajes de conversación se almacenan para proporcionar contexto para las respuestas; un servicio de IA configurado procesa los mensajes necesarios para generar una respuesta. El backend también utiliza un identificador de red cifrado y contadores de uso para gestionar el acceso y evitar el uso indebido.",
+          "1": "Utiliza el asistente para preguntas generales sobre viajes. Póngase en contacto con el equipo directamente para confirmar la reserva, requisitos individuales o información que preferiría no compartir con un servicio de IA."
+        }
+      },
+      "3": {
+        "title": "Servicios web e información técnica",
+        "paragraphs": {
+          "0": "Nuestros servicios de alojamiento, base de datos, correo electrónico e inteligencia artificial procesan la información necesaria para operar el sitio web y responder a las solicitudes. Las imágenes se cargan desde Cloudinary. Visitar estos servicios puede transmitir detalles técnicos como su dirección de red e información de solicitud del navegador a sus proveedores.",
+          "1": "El sitio web de producción incluye Vercel Web Analytics para estadísticas de uso de la página. Su servicio estándar utiliza mediciones agregadas y no utiliza cookies de seguimiento de terceros. El inicio de sesión de administrador utiliza una cookie de sesión; el asistente de viaje mantiene un identificador de conversación en la memoria mientras la página está abierta.",
+          "2": "Si se habilita la medición de conversión opcional, contamos los clics en enlaces de contacto, la intención de consulta de paquetes y los envíos de formularios aceptados exitosamente usando la página pública y una categoría de formulario o canal. No enviamos nombres de formularios, direcciones de correo electrónico, números de teléfono, mensajes o contenidos de consultas de URL a Analytics. La medición de conversiones está actualmente deshabilitada."
+        },
+        "link": {
+          "label": "Información de privacidad de Vercel Web Analytics"
+        }
+      },
+      "4": {
+        "title": "Preguntas sobre su información",
+        "paragraphs": {
+          "0": "Comuníquese con Afar Horizon Expeditions para preguntar sobre la información enviada a través del sitio web, su retención, correcciones o eliminación, o para detener los mensajes del boletín. Incluya suficiente contexto para que podamos localizar su consulta o suscripción; no incluya documentos confidenciales en la solicitud inicial.",
+          "1": "Este aviso describe los servicios del sitio web. Si una reserva confirmada requiere más información o compartirla con alojamiento, transporte u otros proveedores de viaje, discuta ese uso con el equipo antes de proporcionar los detalles."
+        }
+      }
+    }
+  },
+  "legal.terms": {
+    "title": "Términos del sitio web",
+    "intro": "Cómo utilizar nuestra información de viaje, formularios de planificación y asistente de viaje, y qué confirmar antes de reservar una expedición.",
+    "sections": {
+      "0": {
+        "title": "Información y cotizaciones sobre viajes",
+        "paragraphs": {
+          "0": "El sitio web presenta destinos e itinerarios privados propuestos. Enviar una consulta o utilizar el asistente no reserva un lugar, confirma disponibilidad ni crea una reserva.",
+          "1": "Los precios mostrados y los detalles del itinerario son información inicial. Solicite al equipo una cotización confirmando sus fechas, ruta, servicios, inclusiones y exclusiones antes de realizar los arreglos de viaje. Las condiciones de pago, cancelación y reembolso deben establecerse en los términos de reserva proporcionados para su viaje; esta página no los reemplaza."
+        }
+      },
+      "1": {
+        "title": "Acceso y condiciones cambiantes",
+        "paragraphs": {
+          "0": "El acceso, las carreteras, el clima, la actividad volcánica, las instrucciones locales y los arreglos de transporte pueden afectar una expedición. Un itinerario publicado no es una confirmación de que una ruta esté operando para fechas particulares.",
+          "1": "Eventos naturales, lava visible, vida silvestre, actividad salinera, caravanas y ceremonias no están garantizados. Confirme las demandas de caminata, los arreglos del campamento y la ruta actual con el equipo, y consulte los consejos de viaje oficiales relevantes para sus circunstancias."
+        },
+        "link": {
+          "label": "Antes de ir"
+        }
+      },
+      "2": {
+        "title": "Asistente de viaje y enlaces externos",
+        "paragraphs": {
+          "0": "El asistente de viaje proporciona información de planificación automatizada y puede cometer errores. No puede confirmar una salida, cotización, permiso o reserva. Verifique los detalles importantes con el equipo.",
+          "1": "Los sitios web externos son operados por sus propios proveedores. Su información y términos pueden cambiar independientemente de este sitio web."
+        }
+      },
+      "3": {
+        "title": "Uso responsable del sitio web",
+        "paragraphs": {
+          "0": "Utilice los formularios y el asistente para solicitudes legítimas. No envíe archivos o contenidos maliciosos, no se haga pasar por otra persona, no intente acceder a páginas de administración restringidas ni interfiera con el servicio.",
+          "1": "Consúltanos antes de reutilizar textos, fotografías o marcas de sitios web para publicación o uso comercial. Los derechos y permisos de la imagen pueden pertenecer al fotógrafo u otro titular de los derechos."
+        }
+      },
+      "4": {
+        "title": "Contacto y privacidad",
+        "paragraphs": {
+          "0": "Si algo en el sitio web parece inexacto o necesita aclarar un viaje propuesto, comuníquese con Afar Horizon Expeditions. Nuestra Política de Privacidad describe la información manejada por los formularios y el asistente del sitio web."
+        },
+        "link": {
+          "label": "Lee la Política de Privacidad"
+        }
+      }
+    }
+  }
+}

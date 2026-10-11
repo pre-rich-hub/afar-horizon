@@ -11,3 +11,5 @@ export { RelatedPosts } from './components/RelatedPosts'
 export { posts } from './data/post.data'
 export { getPost, getPostCollection, getRelatedPosts } from './utils/post.utils'
 export { postSchema } from './utils/post.schema'
+
+export { getBlogCopy, useBlogCopy } from './data/localized'

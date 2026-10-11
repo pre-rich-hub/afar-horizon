@@ -1,0 +1,20 @@
+{
+  "contact.steps": {
+    "0": {
+      "title": "Tú escribes, nosotros escuchamos",
+      "text": "Una frase es suficiente para empezar. Fechas, ritmo, tolerancia a la altitud y cómo quieres que se sienta el viaje."
+    },
+    "1": {
+      "title": "Redactamos una ruta",
+      "text": "En 24 horas, un diseñador designado envía un primer esquema con dos o tres opciones y precios honestos."
+    },
+    "2": {
+      "title": "La redibujamos",
+      "text": "Generalmente dos veces, a veces cuatro veces. No se reserva nada ni se cobra ningún depósito hasta que usted lo lea correctamente."
+    },
+    "3": {
+      "title": "Estamos ahí",
+      "text": "Recepción a la llegada, guía durante todo el viaje y una cola de 24 horas con su diseñador durante todo el viaje."
+    }
+  }
+}

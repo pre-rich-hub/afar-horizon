@@ -1,31 +1,35 @@
+import {useToursCopy} from '../data/localized'
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import type { Tour } from '../types/tour.types'
 
-export function TourFaqs({ t }: { t: Tour }) {
+export function TourFaqs({ t: baset }: { t: Tour }) {
+  const t = useToursCopy('tour.tours', baset)
+
+  const tr = useTranslations('UI.tours.TourFaqs')
+
   if (!t.faqs?.length) return null
 
   return (
-    <TranslationBoundary><section className="border-t border-border">
+    <section className="border-t border-border">
       <div className="shell grid gap-10 py-16 sm:py-20 lg:grid-cols-[1fr_1.6fr] lg:gap-20 lg:py-28">
         <Reveal>
-          <p className="eyebrow mb-5 text-accent">Before you go</p>
+          <p className="eyebrow mb-5 text-accent">{tr('beforeYouGo')}</p>
           <h2 className="max-w-[16ch] text-balance text-3xl leading-[1.1] text-foreground sm:text-4xl">
-            Questions travellers ask
-          </h2>
+            {tr('questionsTravellersAsk')}</h2>
         </Reveal>
         <Reveal delay={120}>
           <dl className="divide-y divide-border border-y border-border">
             {t.faqs.map((f) => (
-              <TranslationBoundary key={f.q}><div key={f.q} className="py-6">
+              <div key={f.q} className="py-6">
                 <dt className="font-serif text-xl text-foreground">{f.q}</dt>
                 <dd className="mt-2 text-pretty leading-relaxed text-muted-foreground">{f.a}</dd>
-              </div></TranslationBoundary>
+              </div>
             ))}
           </dl>
         </Reveal>
       </div>
-    </section></TranslationBoundary>
+    </section>
   )
 }

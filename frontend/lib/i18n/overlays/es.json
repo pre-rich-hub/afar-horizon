@@ -1,0 +1,67 @@
+{
+  "company.promises": {
+    "0": {
+      "title": "Localmente de propiedad y operación",
+      "text": "Operamos desde Etiopía, con nuestros propios guías, conductores y personal de campo. Tratas directamente con las personas que organizan tu viaje."
+    },
+    "1": {
+      "title": "Conocimientos de expedición",
+      "text": "Los paisajes remotos requieren más que una reserva en línea. Planificamos el agua, la calefacción, las rutas, los campamentos y el acceso actual antes de prometer nada."
+    },
+    "2": {
+      "title": "Guía humano",
+      "text": "Personas reales con experiencia real del terreno, que te explican lo que estás viendo en lugar de simplemente señalarlo."
+    },
+    "3": {
+      "title": "Nosotros nos encargamos de la logística",
+      "text": "Vehículos 4×4, scouts locales, permisos, campamentos, hoteles y traslados. Un equipo responsable de toda la operación terrestre."
+    },
+    "4": {
+      "title": "Privadas y flexibles",
+      "text": "No es necesario que su viaje se ajuste a una plantilla. Cuando las condiciones cambian, adaptamos la ruta en torno a la seguridad y lo que es importante para usted."
+    }
+  },
+  "navigation.navLinks": {
+    "0": {
+      "label": "Expediciones"
+    },
+    "1": {
+      "label": "Destinos"
+    },
+    "2": {
+      "label": "Antes de ir"
+    },
+    "3": {
+      "label": "Especialistas y socios",
+      "children": {
+        "0": {
+          "label": "Viajes especializados",
+          "text": "Fotografía, cine, investigación y trekking"
+        },
+        "1": {
+          "label": "Tierra Operaciones",
+          "text": "Para operadores turísticos y agencias"
+        }
+      }
+    },
+    "4": {
+      "label": "Sobre nosotros"
+    },
+    "5": {
+      "label": "Galería"
+    }
+  },
+  "navigation.planJourneyLink": {
+    "label": "Planificar mi viaje"
+  },
+  "journeyStyles.journeyStyles": {
+    "0": "Privado",
+    "1": "Grupo pequeño",
+    "2": "Aventura",
+    "3": "Cultural",
+    "4": "Fotografía",
+    "5": "senderismo",
+    "6": "Investigación",
+    "7": "Familia"
+  }
+}

@@ -1,22 +1,24 @@
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { PageHero } from '@/components/common/PageHero'
 
 export function ExpeditionsHero({ count }: { count: number }) {
+  const tr = useTranslations('UI.tours.ExpeditionsHero')
+
   return (
-    <TranslationBoundary><PageHero
-        eyebrow="Expeditions"
-        title="Choose your horizon"
-        lede="From a single day in Afar to three weeks across Northern Ethiopia. Every itinerary is a planned route that we operate ourselves and adapt when conditions on the ground change."
+    <PageHero
+        eyebrow={tr('expeditions')}
+        title={tr('chooseYourHorizon')}
+        lede={tr('fromASingleDayInAfarTo')}
         image="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652748/LakeAfdera.png"
-        imageAlt="Lake Afdera in the Afar region"
-        crumbs={[{ label: 'Home', href: '/' }, { label: 'Expeditions' }]}
+        imageAlt={tr('lakeAfderaInTheAfarRegion')}
+        crumbs={[{ label: tr('home'), href: '/' }, { label: tr('expeditions') }]}
         meta={[
-          { label: 'Expeditions', value: String(count) },
-          { label: 'Length', value: '1 – 21 Days' },
-          { label: 'Danakil Gateway', value: 'Semera' },
-          { label: 'Style', value: 'Private' },
+          { label: tr('expeditions'), value: String(count) },
+          { label: tr('length'), value: '1 – 21 Days' },
+          { label: tr('danakilGateway'), value: 'Semera' },
+          { label: tr('style'), value: 'Private' },
         ]}
-      /></TranslationBoundary>
+      />
   )
 }

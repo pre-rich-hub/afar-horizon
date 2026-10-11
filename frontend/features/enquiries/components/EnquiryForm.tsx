@@ -1,8 +1,9 @@
 'use client'
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+import {useSharedCopy} from '@/lib/i18n/localized'
+import { useTranslations } from 'next-intl'
 
 
-import { journeyStyles } from '@/lib/constants/journeyStyles'
+import { journeyStyles as baseJourneyStyles } from '@/lib/constants/journeyStyles'
 import { ArrowRight, Check } from 'lucide-react'
 import { useRef, useState } from 'react'
 import { createEnquirySubmission } from '../utils/submission'
@@ -10,10 +11,16 @@ import { createEnquirySubmission } from '../utils/submission'
 export function EnquiryForm({
   defaultStyles = ['Private'],
   subject,
+  subjectLabel = subject,
 }: {
   defaultStyles?: string[]
   subject?: string
+  subjectLabel?: string
 }) {
+  const tr = useTranslations('UI.enquiries.EnquiryForm')
+  const styleLabels = useSharedCopy('journeyStyles.journeyStyles', baseJourneyStyles)
+
+  const journeyStyles = baseJourneyStyles
   const [selected, setSelected] = useState<string[]>(defaultStyles)
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -27,23 +34,20 @@ export function EnquiryForm({
 
   if (submitted) {
     return (
-      <TranslationBoundary><div className="flex min-h-[420px] flex-col items-center justify-center border border-border bg-card px-6 py-16 text-center">
+      <div className="flex min-h-[420px] flex-col items-center justify-center border border-border bg-card px-6 py-16 text-center">
         <span className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground">
           <Check className="h-6 w-6" />
         </span>
         <h3 className="font-serif text-3xl text-foreground">
-          Request received
-        </h3>
+          {tr('requestReceived')}</h3>
         <p className="mt-4 max-w-sm text-pretty leading-relaxed text-muted-foreground">
-          We read every request personally and will reply by email or
-          WhatsApp, usually within one working day.
-        </p>
-      </div></TranslationBoundary>
+          {tr('weReadEveryRequestPersonallyAndWill')}</p>
+      </div>
     )
   }
 
   return (
-    <TranslationBoundary><div className="border border-border bg-card p-6 shadow-[0_28px_70px_-40px_oklch(0.185_0.012_58/0.4)] sm:p-8 lg:p-10">
+    <div className="border border-border bg-card p-6 shadow-[0_28px_70px_-40px_oklch(0.185_0.012_58/0.4)] sm:p-8 lg:p-10">
       <form
         onSubmit={async (e) => {
           e.preventDefault()
@@ -70,7 +74,7 @@ export function EnquiryForm({
             setSubmitted(true)
           } catch (err) {
             setError(
-              err instanceof Error ? err.message : 'Something went wrong — please try again.',
+              err instanceof Error ? err.message : tr('fallbackError'),
             )
           } finally { setSending(false) }
         }}
@@ -78,47 +82,46 @@ export function EnquiryForm({
       >
         {subject ? (
           <p className="border-l-2 border-accent bg-muted/60 px-4 py-3 text-sm leading-relaxed text-muted-foreground">
-            Enquiry about{' '}
-            <span className="font-medium text-foreground">{subject}</span>
+            {tr('enquiryAbout')}{' '}
+            <span className="font-medium text-foreground">{subjectLabel}</span>
           </p>
         ) : null}
 
         <div className="grid gap-5 sm:grid-cols-2">
-          <Field label="Full name" id="name">
-            <input id="name" name="name" required className="input" placeholder="Your name" />
+          <Field label={tr('fullName')} id="name">
+            <input id="name" name="name" required className="input" placeholder={tr('yourName')} />
           </Field>
-          <Field label="Email address" id="email">
+          <Field label={tr('emailAddress')} id="email">
             <input
               id="email"
               name="email"
               type="email"
               required
               className="input"
-              placeholder="you@email.com"
+              placeholder={tr('youEmailCom')}
             />
           </Field>
         </div>
 
         <div className="grid gap-5 sm:grid-cols-2">
-          <Field label="Preferred travel dates" id="when">
-            <input id="when" name="when" className="input" placeholder="e.g. March 2026" />
+          <Field label={tr('preferredTravelDates')} id="when">
+            <input id="when" name="when" className="input" placeholder={tr('eGMarch2026')} />
           </Field>
-          <Field label="Number of travellers" id="travellers">
-            <input id="travellers" name="travellers" className="input" placeholder="2 adults" />
+          <Field label={tr('numberOfTravellers')} id="travellers">
+            <input id="travellers" name="travellers" className="input" placeholder={tr('2Adults')} />
           </Field>
         </div>
 
         <div>
           <span className="mb-3 block text-sm font-medium text-foreground">
-            What kind of journey do you imagine?
-          </span>
+            {tr('whatKindOfJourneyDoYouImagine')}</span>
           <div className="flex flex-wrap gap-2">
             {journeyStyles.map((style) => {
               const active = selected.includes(style)
               return (
-                <TranslationBoundary key={style}><button
+                <button
                   type="button"
-                  key={style}
+                  key={styleLabels[journeyStyles.indexOf(style)]}
                   aria-pressed={active}
                   onClick={() => toggle(style)}
                   className={`border px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.14em] transition-colors duration-200 ${
@@ -127,20 +130,20 @@ export function EnquiryForm({
                       : 'border-border bg-background text-muted-foreground hover:border-primary/50 hover:text-foreground'
                   }`}
                 >
-                  {style}
-                </button></TranslationBoundary>
+                  {styleLabels[journeyStyles.indexOf(style)]}
+                </button>
               )
             })}
           </div>
         </div>
 
-        <Field label="Tell us about the journey you've imagined" id="dream">
+        <Field label={tr('tellUsAboutTheJourneyYouVe')} id="dream">
           <textarea
             id="dream"
             name="dream"
             rows={4}
             className="input resize-none"
-            placeholder="How many days you have, what you want to see, anything we should know..."
+            placeholder={tr('howManyDaysYouHaveWhatYou')}
           />
         </Field>
 
@@ -155,14 +158,12 @@ export function EnquiryForm({
           disabled={sending}
           className="group inline-flex w-full items-center justify-center gap-2.5 bg-primary px-8 py-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary-foreground transition-colors duration-300 hover:bg-charcoal sm:w-auto"
         >
-          Begin the conversation
-          <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+          {tr('beginTheConversation')}<ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
         </button>
         <p className="text-xs leading-relaxed text-muted-foreground">
-          We reply personally. Your details are never shared.
-        </p>
+          {tr('weReplyPersonallyYourDetailsAreNever')}</p>
       </form>
-    </div></TranslationBoundary>
+    </div>
   )
 }
 
@@ -176,11 +177,11 @@ function Field({
   children: React.ReactNode
 }) {
   return (
-    <TranslationBoundary><label htmlFor={id} className="block">
+    <label htmlFor={id} className="block">
       <span className="mb-2 block text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
         {label}
       </span>
       {children}
-    </label></TranslationBoundary>
+    </label>
   )
 }

@@ -1,16 +1,18 @@
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { PageHero } from '@/components/common/PageHero'
 
 export function FaqHero() {
+  const tr = useTranslations('UI.faq.FaqHero')
+
   return (
-    <TranslationBoundary><PageHero
-        eyebrow="FAQ"
-        title="Questions travellers ask"
-        lede="Straight answers about how we work, what a Danakil expedition involves and how booking works."
+    <PageHero
+        eyebrow={tr('faq')}
+        title={tr('questionsTravellersAsk')}
+        lede={tr('straightAnswersAboutHowWeWorkWhat')}
         image="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png"
-        imageAlt="Dallol in the Danakil Depression"
-        crumbs={[{ label: 'Home', href: '/' }, { label: 'FAQ' }]}
-      /></TranslationBoundary>
+        imageAlt={tr('dallolInTheDanakilDepression')}
+        crumbs={[{ label: tr('home'), href: '/' }, { label: tr('faq') }]}
+      />
   )
 }

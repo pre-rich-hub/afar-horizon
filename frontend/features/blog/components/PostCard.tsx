@@ -1,15 +1,21 @@
-import { TranslatedText } from '@/components/common/TranslatedText'
+import {useLocale} from 'next-intl'
+import {useCatalogueLabel} from '@/lib/i18n/labels'
+import {useBlogCopy} from '../data/localized'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { formatEditorialDate } from '@/lib/utils/date'
 import { defaultImage } from '@/lib/config/cloudinary'
 import Image from 'next/image';
 import Link from '@/components/common/SiteLink';
 import type { Post } from '../types/post.types';
 
-export function PostCard({ post, wide }: { post: Post; wide?: boolean }) {
+export function PostCard({ post: basepost, wide }: { post: Post; wide?: boolean }) {
+  const catalogueLabel = useCatalogueLabel()
+
+  const post = useBlogCopy('post.posts', basepost)
+  const locale = useLocale()
+
   return (
-    <TranslationBoundary><article className="group">
+    <article className="group">
       <Link href={`/blog/${post.slug}`} className="block">
         <div
           className={`relative overflow-hidden rounded-xl ${
@@ -26,9 +32,9 @@ export function PostCard({ post, wide }: { post: Post; wide?: boolean }) {
         </div>
         <div className="mt-5">
           <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-            <span className="text-primary">{post.category}</span>
+            <span className="text-primary">{catalogueLabel(post.category)}</span>
             <span className="h-3 w-px bg-border" aria-hidden />
-            {post.publishedAt ? <time dateTime={post.publishedAt}>{formatEditorialDate(post.publishedAt)}</time> : post.date}
+            {post.publishedAt ? <time dateTime={post.publishedAt}>{formatEditorialDate(post.publishedAt, locale)}</time> : post.date}
             <span className="h-3 w-px bg-border" aria-hidden />
             {post.readTime}
           </p>
@@ -40,10 +46,10 @@ export function PostCard({ post, wide }: { post: Post; wide?: boolean }) {
             {post.title}
           </h3>
           <p className="mt-3 max-w-[52ch] text-pretty text-sm leading-relaxed text-muted-foreground">
-            <TranslatedText text={post.excerpt} />
+            {post.excerpt}
           </p>
         </div>
       </Link>
-    </article></TranslationBoundary>
+    </article>
   )
 }

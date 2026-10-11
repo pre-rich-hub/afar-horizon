@@ -1,0 +1,67 @@
+{
+  "specialist-travel.tracks": {
+    "photography": {
+      "title": "Fotografen",
+      "lede": "Aufgebaut auf Licht, Ort und Zeit, mit längeren Aufenthalten vor Ort und der Geduld, auf die richtigen Bedingungen zu warten.",
+      "alt": "Grüne Mineralbecken und Salzformationen in der Danakil-Landschaft",
+      "items": {
+        "0": "Sonnenaufgangs-, Sonnenuntergangs- und Nachtfotografie",
+        "1": "Golden-Hour-Positionierung und frühe Abfahrten",
+        "2": "Längere Stopps in Dallol, Erta Ale und der Salzebene",
+        "3": "Landschaft, Menschen und Tierwelt",
+        "4": "Ausrüstungslogistik und Schutz vor Staub und Salz",
+        "5": "Standortsuche und flexible Zeitpläne"
+      }
+    },
+    "film": {
+      "title": "Film und Medien",
+      "lede": "Produktionsreisen erfordern Präzision. Wir kümmern uns um den Boden, damit sich die Crew auf die Arbeit konzentrieren kann.",
+      "alt": "Salzkruste und flaches Wasser am Assale-See bei Sonnenuntergang",
+      "items": {
+        "0": "Fahrzeuge und Berufskraftfahrer",
+        "1": "Lokale Reiseführer und Location-Scouting",
+        "2": "Besatzungsbewegungen und Ausrüstungstransport",
+        "3": "Unterkunft und Feldlogistik",
+        "4": "Fernstandortplanung",
+        "5": "Lokale Koordination und Einführung"
+      },
+      "note": "Dreharbeiten Genehmigungen unterliegen weiterhin den jeweiligen Behörden und Standortanforderungen."
+    },
+    "research": {
+      "title": "Forscher & Universitäten",
+      "lede": "Feldlogistik für Geologie, Geographie, Anthropologie, Archäologie und Umweltstudien in einigen der am besten untersuchten Landschaften Afrikas.",
+      "alt": "Glühende Lava in einem Vulkankrater bei Erta Ale",
+      "items": {
+        "0": "Lokaler Transport und Unterstützung in abgelegenen Gebieten",
+        "1": "Unterkunft und Feldlager",
+        "2": "Führer und Gemeinschaftskoordination",
+        "3": "Routenplanung für Feldstandorte",
+        "4": "Dolmetscherunterstützung, sofern verfügbar",
+        "5": "Logistik für wissenschaftliche Ausrüstung"
+      }
+    },
+    "trekking": {
+      "title": "Trekking, Laufen und Bergreisen",
+      "lede": "Äthiopien ist ein Land der Höhe. Unser Gründer wuchs in den Simien auf und Bergreisen waren der Ausgangspunkt für dieses Unternehmen.",
+      "alt": "Steile grüne Abhänge im Simien-Gebirge",
+      "items": {
+        "0": "Simien-Trek-Planung, Pfadfinder und Camping",
+        "1": "Maultiere und Träger, wo angebracht",
+        "2": "Mahlzeiten, Wasser und Transfers",
+        "3": "Laufgruppen und Bergveranstaltungen: Routen, Wasserstellen und Begleitfahrzeuge",
+        "4": "Gipfel Unterstützung für Ras Dashen"
+      }
+    },
+    "groups": {
+      "title": "Private Gruppen",
+      "lede": "Familien, Freunde, Vereine und Firmengruppen, die nach eigenem Zeitplan reisen.",
+      "alt": "Ein Besucher neben einer Klippe in der Gheralta-Berglandschaft",
+      "items": {
+        "0": "Private Fahrzeuge und engagierte Reiseführer",
+        "1": "Geplante Abfolge der Gruppe",
+        "2": "Komfort-Upgrades, wo die Infrastruktur es zulässt",
+        "3": "Kulturerlebnisse: Kaffee, Essen und lokales Leben"
+      }
+    }
+  }
+}

@@ -1,25 +1,29 @@
+import {useDestinationsCopy} from '../data/localized'
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { PageHero } from '@/components/common/PageHero'
-import { destinations } from '../data/destination.data'
+import { destinations as baseDestinations } from '../data/destination.data'
 
 export function DestinationsHero() {
+  const tr = useTranslations('UI.destinations.DestinationsHero')
+  const destinations = useDestinationsCopy('destination.destinations', baseDestinations)
+
   const ertaAle = destinations.find((d) => d.slug === 'erta-ale')!
 
   return (
-    <TranslationBoundary><PageHero
-        eyebrow="Where We Travel"
-        title="From the lowest landscapes to the highest horizons"
-        lede="Salt and volcanoes in Afar, cliff churches in Gheralta, the ancient kingdom of Axum and the mountains of the Simien. These are the places we know from the ground up."
+    <PageHero
+        eyebrow={tr('whereWeTravel')}
+        title={tr('fromTheLowestLandscapesToTheHighest')}
+        lede={tr('saltAndVolcanoesInAfarCliffChurches')}
         image={ertaAle.image}
-        imageAlt="Erta Ale volcano in Afar, Ethiopia"
-        crumbs={[{ label: 'Home', href: '/' }, { label: 'Destinations' }]}
+        imageAlt={tr('ertaAleVolcanoInAfarEthiopia')}
+        crumbs={[{ label: tr('home'), href: '/' }, { label: tr('destinations') }]}
         meta={[
-          { label: 'Destinations', value: String(destinations.length) },
-          { label: 'Lowest Point', value: 'Below sea level' },
-          { label: 'Highest Point', value: '4,550 m' },
-          { label: 'Danakil Season', value: 'Nov – Jan' },
+          { label: tr('destinations'), value: String(destinations.length) },
+          { label: tr('lowestPoint'), value: 'Below sea level' },
+          { label: tr('highestPoint'), value: '4,550 m' },
+          { label: tr('danakilSeason'), value: 'Nov – Jan' },
         ]}
-      /></TranslationBoundary>
+      />
   )
 }

@@ -1,0 +1,77 @@
+{
+  "ground-operations.handle": {
+    "0": {
+      "title": "Transport",
+      "items": {
+        "0": "Flughafentransfers",
+        "1": "Private Fahrzeuge",
+        "2": "4×4-Einsätze",
+        "3": "Intercity-Transport",
+        "4": "Fernstraßenlogistik"
+      }
+    },
+    "1": {
+      "title": "Menschen",
+      "items": {
+        "0": "Professioneller Fahrer",
+        "1": "National und lokal Reiseführer",
+        "2": "Pfadfinder",
+        "3": "Köche und Camp-Teams",
+        "4": "Lokale Dolmetscher, wo verfügbar"
+      }
+    },
+    "2": {
+      "title": "Unterkunft",
+      "items": {
+        "0": "Hotels und Lodges",
+        "1": "Gästehäuser",
+        "2": "Expeditionslager",
+        "3": "Premium-Upgrades, sofern verfügbar"
+      }
+    },
+    "3": {
+      "title": "Expeditionslogistik",
+      "items": {
+        "0": "Ausrüstung, Wasser und Nahrung",
+        "1": "Camp-Organisation",
+        "2": "Route Koordination",
+        "3": "Genehmigungen und örtlicher Zugang",
+        "4": "Backup- und Notfallplanung"
+      }
+    }
+  },
+  "ground-operations.services": {
+    "0": {
+      "title": "White-Label-Operationen",
+      "text": "Ihre Marke bleibt im Vordergrund. Wir leiten den äthiopischen Betrieb."
+    },
+    "1": {
+      "title": "Benutzerdefinierte Reiseroutenentwicklung",
+      "text": "Senden Sie die Interessen Ihres Kunden und wir helfen Ihnen, diese in eine praktikable Route umzuwandeln."
+    },
+    "2": {
+      "title": "Nettopreise",
+      "text": "Verfügbar für zugelassene Handelspartner."
+    },
+    "3": {
+      "title": "Auftragsstrukturen",
+      "text": "Je nach Art, Produkt und Volumen der Partnerschaft."
+    },
+    "4": {
+      "title": "Gruppenoperationen",
+      "text": "Unterstützung für Privat-, Fach- und Kleingruppen."
+    },
+    "5": {
+      "title": "Lokale Unterstützung, wenn sich Pläne ändern",
+      "text": "Wo es operativ möglich ist, reagiert unser Team vor Ort, wenn die Bedingungen es erfordern Veränderung."
+    }
+  },
+  "ground-operations.principles": {
+    "0": "Klare Preise",
+    "1": "Klare Inklusivleistungen",
+    "2": "Klare Zahlungsbedingungen",
+    "3": "Klare Stornobedingungen",
+    "4": "Klare Betriebskommunikation",
+    "5": "Keine versteckten Überraschungen"
+  }
+}

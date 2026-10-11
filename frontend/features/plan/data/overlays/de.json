@@ -1,0 +1,20 @@
+{
+  "plan.steps": {
+    "0": {
+      "title": "Fragen",
+      "text": "Senden Sie Ihre Daten, Interessen und wie viele Tage Sie haben. Eine Idee genügt."
+    },
+    "1": {
+      "title": "Besprechen",
+      "text": "Vielleicht stellen wir ein paar Fragen per E-Mail oder WhatsApp und sagen Ihnen ehrlich, was die aktuellen Bedingungen zulassen."
+    },
+    "2": {
+      "title": "Angebot",
+      "text": "Sie erhalten eine Route mit einem klaren Preis, was inbegriffen ist und was nicht."
+    },
+    "3": {
+      "title": "Bestätigen",
+      "text": "Eine Anzahlung, normalerweise 30 %, bestätigt die Buchung. Anschließend organisieren wir Fahrzeuge, Personal, Genehmigungen und Unterkunft."
+    }
+  }
+}

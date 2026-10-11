@@ -1,16 +1,18 @@
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { PageHero } from '@/components/common/PageHero'
 
 export function BlogHero() {
+  const tr = useTranslations('UI.blog.BlogHero')
+
   return (
-    <TranslationBoundary><PageHero
-        eyebrow="The Journal"
-        title="Field notes from Afar and beyond"
-        lede="Plan your journey into Afar: when to visit, what to pack, and how to understand the volcanoes, salt country and communities of the Danakil. Alongside these guides, explore the culture and historic routes of wider Ethiopia."
+    <PageHero
+        eyebrow={tr('theJournal')}
+        title={tr('fieldNotesFromAfarAndBeyond')}
+        lede={tr('planYourJourneyIntoAfarWhenTo')}
         image="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/afar.png"
-        imageAlt="Afar region, Ethiopia"
-        crumbs={[{ label: 'Home', href: '/' }, { label: 'Journal' }]}
-      /></TranslationBoundary>
+        imageAlt={tr('afarRegionEthiopia')}
+        crumbs={[{ label: tr('home'), href: '/' }, { label: tr('journal') }]}
+      />
   )
 }

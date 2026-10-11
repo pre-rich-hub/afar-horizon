@@ -1,21 +1,25 @@
+import {useContactCopy} from '../data/localized'
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import { SectionHeading } from '@/components/common/SectionHeading'
-import { steps } from '../data/contact.data'
+import { steps as baseSteps } from '../data/contact.data'
 
 export function ContactProcess() {
+  const tr = useTranslations('UI.contact.ContactProcess')
+  const steps = useContactCopy('contact.steps', baseSteps)
+
   return (
-    <TranslationBoundary><section className="border-y border-border bg-muted/40">
+    <section className="border-y border-border bg-muted/40">
         <div className="shell py-16 sm:py-20 lg:py-28">
           <SectionHeading
-            eyebrow="What Happens Next"
-            title="How a journey gets designed"
-            aside="Four steps, and no money changes hands until the third one reads right to you."
+            eyebrow={tr('whatHappensNext')}
+            title={tr('howAJourneyGetsDesigned')}
+            aside={tr('fourStepsAndNoMoneyChangesHands')}
           />
           <div className="grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
             {steps.map((s, i) => (
-              <TranslationBoundary key={s.n}><Reveal
+              <Reveal
                 key={s.n}
                 delay={i * 90}
                 className="border-t border-border pt-6"
@@ -27,10 +31,10 @@ export function ContactProcess() {
                 <p className="mt-3 text-pretty text-sm leading-relaxed text-muted-foreground">
                   {s.text}
                 </p>
-              </Reveal></TranslationBoundary>
+              </Reveal>
             ))}
           </div>
         </div>
-      </section></TranslationBoundary>
+      </section>
   )
 }

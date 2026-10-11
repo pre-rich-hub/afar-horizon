@@ -1,6 +1,5 @@
-import { TranslatedText } from '@/components/common/TranslatedText'
+import {useTranslations} from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { defaultImage } from '@/lib/config/cloudinary'
 import { cn } from '@/lib/utils'
 import { ArrowRight, type LucideIcon } from 'lucide-react'
@@ -21,7 +20,7 @@ export function InfoCard({
   title,
   summary,
   facts,
-  cta = 'Explore',
+  cta: suppliedCta,
   sizes = '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw',
   className,
 }: {
@@ -37,8 +36,10 @@ export function InfoCard({
   sizes?: string
   className?: string
 }) {
+  const tr = useTranslations('UI.common.InfoCard')
+  const cta = suppliedCta ?? tr('explore')
   return (
-    <TranslationBoundary><Link
+    <Link
       href={href}
       className={cn(
         'group flex h-full touch-manipulation flex-col overflow-hidden border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_60px_-30px_oklch(0.185_0.012_58/0.45)] active:scale-[0.97] active:border-accent active:shadow-[0_20px_40px_-24px_oklch(0.185_0.012_58/0.5)] active:duration-100',
@@ -71,15 +72,15 @@ export function InfoCard({
 
       <div className="flex flex-1 flex-col px-6 pb-6 pt-6 sm:px-7">
         <p className="text-pretty text-[15px] leading-relaxed text-muted-foreground">
-          <TranslatedText text={summary} />
+          {summary}
         </p>
 
         <ul className="mt-5 grid grid-cols-2 gap-x-4 gap-y-3">
           {facts.map(({ icon: Icon, label }) => (
-            <TranslationBoundary key={label}><li key={label} className="flex min-w-0 items-start gap-2.5 text-sm leading-snug text-foreground/85">
+            <li key={label} className="flex min-w-0 items-start gap-2.5 text-sm leading-snug text-foreground/85">
               <Icon aria-hidden className="mt-px h-4 w-4 shrink-0 text-accent" strokeWidth={1.5} />
               <span>{label}</span>
-            </li></TranslationBoundary>
+            </li>
           ))}
         </ul>
 
@@ -90,6 +91,6 @@ export function InfoCard({
           </div>
         </div>
       </div>
-    </Link></TranslationBoundary>
+    </Link>
   )
 }

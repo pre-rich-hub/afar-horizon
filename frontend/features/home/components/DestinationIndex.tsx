@@ -1,11 +1,11 @@
 'use client'
-import { TranslatedText } from '@/components/common/TranslatedText'
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+import {useDestinationsCopy} from '@/features/destinations'
+import { useTranslations } from 'next-intl'
 
 
 import { TextLink } from '@/components/common/LinkButton'
 import { Reveal } from '@/components/common/Reveal'
-import { destinations } from '@/features/destinations'
+import { destinations as baseDestinations } from '@/features/destinations'
 import { cn } from '@/lib/utils'
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
@@ -24,11 +24,14 @@ const featuredDestinationSlugs = [
   'lalibela',
   'gondar',
 ]
-const featuredDestinations = featuredDestinationSlugs.map(
-  (slug) => destinations.find((destination) => destination.slug === slug)!,
+const baseFeaturedDestinations = featuredDestinationSlugs.map(
+  (slug) => baseDestinations.find((destination) => destination.slug === slug)!,
 )
 
 export function DestinationIndex() {
+  const tr = useTranslations('UI.home.DestinationIndex')
+  const featuredDestinations = useDestinationsCopy('destination.destinations', baseFeaturedDestinations)
+
   const [active, setActive] = useState(0)
   const [previous, setPrevious] = useState<number | null>(null)
   const [loaded, setLoaded] = useState(new Set<string>())
@@ -40,7 +43,7 @@ export function DestinationIndex() {
   const current = featuredDestinations[active]
 
   return (
-    <TranslationBoundary><section
+    <section
       id="destination-index"
       aria-labelledby="destination-index-title"
       className="bg-background"
@@ -51,7 +54,7 @@ export function DestinationIndex() {
         {/* Keep the outgoing photo for the existing cross-fade. */}
         <div className="relative aspect-[4/3] overflow-hidden bg-charcoal sm:aspect-[16/10] lg:aspect-auto lg:min-h-[min(100svh,860px)]">
           {featuredDestinations.filter((_, i) => i === active || i === previous).map((d) => (
-            <TranslationBoundary key={d.slug}><Image
+            <Image
               key={d.slug}
               onLoad={() => setLoaded(current => new Set(current).add(d.slug))}
               src={d.image}
@@ -64,7 +67,7 @@ export function DestinationIndex() {
                 (d.slug === current.slug && (previous === null || loaded.has(current.slug))) || (d.slug !== current.slug && !loaded.has(current.slug))
                   ? 'scale-100 opacity-100' : 'scale-[1.06] opacity-0',
               )}
-            /></TranslationBoundary>
+            />
           ))}
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-charcoal/5 to-transparent" />
 
@@ -74,7 +77,7 @@ export function DestinationIndex() {
                 {current.tag} · {current.region}
               </p>
               <p className="mt-3 max-w-[38ch] text-pretty font-serif text-xl leading-snug text-background sm:text-2xl">
-                <TranslatedText text={current.teaser} />
+                {current.teaser}
               </p>
             </div>
           </div>
@@ -86,15 +89,14 @@ export function DestinationIndex() {
             <p
               className="font-serif text-xl text-accent sm:text-2xl"
             >
-              From the lowest landscapes to the highest horizons
-            </p>
+              {tr('fromTheLowestLandscapesToTheHighest')}</p>
             <div className="mt-5 h-px w-full bg-border" />
 
             <ul className="mt-8 sm:mt-10">
               {featuredDestinations.map((d, i) => {
                 const isActive = i === active
                 return (
-                  <TranslationBoundary key={d.slug}><li key={d.slug}>
+                  <li key={d.slug}>
                     <Link
                       href={`/destinations/${d.slug}`}
                       onMouseEnter={() => select(i)}
@@ -129,7 +131,7 @@ export function DestinationIndex() {
                         )}
                       />
                     </Link>
-                  </li></TranslationBoundary>
+                  </li>
                 )
               })}
             </ul>
@@ -137,34 +139,35 @@ export function DestinationIndex() {
             <div className="mt-10 h-px w-full bg-border sm:mt-12" />
             <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
               <p className="text-sm text-muted-foreground">
-                Seven Afar destinations and three northern highland highlights.
-              </p>
-              <TextLink href="/destinations">View all destinations</TextLink>
+                {tr('sevenAfarDestinationsAndThreeNorthernHighland')}</p>
+              <TextLink href="/destinations">{tr('viewAllDestinations')}</TextLink>
             </div>
           </Reveal>
         </div>
       </div>
-    </section></TranslationBoundary>
+    </section>
   )
 }
 
 // Phones and tablets: a two-column grid of photo tiles, each linking
 // straight to its destination — no hover needed.
 function MobileIndex() {
+  const tr = useTranslations('UI.home.DestinationIndex')
+  const featuredDestinations = useDestinationsCopy('destination.destinations', baseFeaturedDestinations)
+
   return (
-    <TranslationBoundary><div className="shell py-16 sm:py-20 lg:hidden">
+    <div className="shell py-16 sm:py-20 lg:hidden">
       <Reveal>
         <h2
           id="destination-index-title"
           className="text-center font-serif text-[2.1rem] leading-tight text-foreground sm:text-4xl"
         >
-          From the lowest landscapes to the highest horizons
-        </h2>
+          {tr('fromTheLowestLandscapesToTheHighest')}</h2>
       </Reveal>
 
       <ul className="mt-8 grid grid-cols-2 gap-3 sm:mt-10 sm:grid-cols-3 sm:gap-4">
         {featuredDestinations.map((d, i) => (
-          <TranslationBoundary key={d.slug}><li key={d.slug}>
+          <li key={d.slug}>
             <Reveal delay={(i % 2) * 80}>
               <Link
                 href={`/destinations/${d.slug}`}
@@ -183,13 +186,13 @@ function MobileIndex() {
                 </span>
               </Link>
             </Reveal>
-          </li></TranslationBoundary>
+          </li>
         ))}
       </ul>
 
       <div className="mt-10 flex justify-center">
-        <TextLink href="/destinations">View all destinations</TextLink>
+        <TextLink href="/destinations">{tr('viewAllDestinations')}</TextLink>
       </div>
-    </div></TranslationBoundary>
+    </div>
   )
 }

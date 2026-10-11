@@ -1,15 +1,17 @@
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { CtaBand } from '@/components/common/CtaBand'
 
 export function GalleryPlanning() {
+  const tr = useTranslations('UI.gallery.GalleryPlanning')
+
   return (
-    <TranslationBoundary><CtaBand
-        title="See it for yourself"
-        text="Tell us which of these places pulls at you, and a designer will shape a journey around the light, the season and the pace you prefer."
-        primary={{ label: 'Plan Your Journey', href: '/contact' }}
-        secondary={{ label: 'Browse Expeditions', href: '/expeditions' }}
+    <CtaBand
+        title={tr('seeItForYourself')}
+        text={tr('tellUsWhichOfThesePlacesPulls')}
+        primary={{ label: tr('planYourJourney'), href: '/contact' }}
+        secondary={{ label: tr('browseExpeditions'), href: '/expeditions' }}
         image="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png"
-      /></TranslationBoundary>
+      />
   )
 }

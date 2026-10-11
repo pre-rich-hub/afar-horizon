@@ -1,0 +1,238 @@
+{
+  "gallery.galleryCategories": {
+    "0": "Paisajes",
+    "1": "Patrimonio",
+    "2": "Cultura",
+    "3": "Viajes"
+  },
+  "gallery.galleryPhotos": {
+    "gallery1": {
+      "alt": "Cordilleras escarpadas y laderas cubiertas de hierba bajo un cielo azul claro",
+      "title": "Escarpes de Simien",
+      "location": "Montañas Simien",
+      "caption": "Una vista amplia de las escarpaduras de las tierras altas y las crestas estratificadas de las montañas Simien."
+    },
+    "gallery2": {
+      "alt": "Un visitante contempla las escarpadas crestas montañosas desde un punto de vista cubierto de hierba.",
+      "title": "Una pausa sobre los valles",
+      "location": "Montañas Simien",
+      "caption": "Un momento en un mirador de montaña, con crestas empinadas que se extienden a lo lejos."
+    },
+    "gallery3": {
+      "alt": "Una tienda de campaña sobre un terreno rocoso con el sol bajo en el horizonte",
+      "title": "Acampar al atardecer",
+      "location": "Etiopía",
+      "caption": "Una tarde en el campamento mientras las últimas luces caen sobre el paisaje rocoso."
+    },
+    "gallery4": {
+      "alt": "Dos visitantes en un camino de piedra que conduce hacia la torre de un castillo en Gondar",
+      "title": "A las puertas del castillo",
+      "location": "gondar",
+      "caption": "Una visita al patrimonio real de Gondar, enmarcado por muros de piedra y una alta torre del castillo."
+    },
+    "gallery5": {
+      "alt": "Una iglesia en forma de cruz excavada en la roca rodeada por una profunda trinchera de piedra en Lalibela",
+      "title": "Una iglesia tallada en la roca",
+      "location": "Lalibela",
+      "caption": "La Iglesia de San Jorge, en forma de cruz, se encuentra dentro de una trinchera excavada en la roca circundante."
+    },
+    "gallery6": {
+      "alt": "Un avión de hélice de Etiopía Airlines en la plataforma de un aeropuerto bajo un cielo nublado",
+      "title": "el viaje comienza",
+      "location": "Etiopía",
+      "caption": "Un momento entre destinos, con un avión regional esperando en la plataforma."
+    },
+    "gallery7": {
+      "alt": "Un visitante sentado junto a un artesano y un torno de alfarería en un taller.",
+      "title": "En el taller de alfarería",
+      "location": "Etiopía",
+      "caption": "Vasijas de barro y un torno de alfarero permiten vislumbrar el oficio que se practica en este taller."
+    },
+    "gallery8": {
+      "alt": "Dos personas paradas afuera de una pequeña casa con techo rojo y motivos en las paredes pintadas",
+      "title": "Una bienvenida en el camino",
+      "location": "Etiopía",
+      "caption": "Un retrato compartido fuera de una casa, con motivos pintados en sus paredes."
+    },
+    "gallery9": {
+      "alt": "Un grupo de viajeros sentados dentro de un vehículo de pasajeros.",
+      "title": "En el camino juntos",
+      "location": "Etiopía",
+      "caption": "Un retrato de grupo durante el viaje por carretera entre paradas."
+    },
+    "gallery10": {
+      "alt": "Un viajero con una mochila parada sobre rocas sobre valles montañosos",
+      "title": "Caminando por las tierras altas",
+      "location": "Montañas Simien",
+      "caption": "Los miradores rocosos se abren a los profundos valles y crestas de las tierras altas de Simien."
+    },
+    "gallery11": {
+      "alt": "Un viajero mochilero frente a un amplio panorama de empinadas crestas montañosas.",
+      "title": "Mirando hacia las crestas",
+      "location": "Montañas Simien",
+      "caption": "Una parada tranquila en el sendero para contemplar la escala de las montañas circundantes."
+    },
+    "gallery12": {
+      "alt": "Un paisaje viajero y de montaña enmarcado por dos altas paredes rocosas.",
+      "title": "Una vista entre las rocas",
+      "location": "Montañas Simien",
+      "caption": "Una estrecha brecha en las rocas enmarca el sendero y el paisaje de las tierras altas más allá."
+    },
+    "gallery13": {
+      "alt": "Personas envueltas en telas coloridas de pie junto a la ladera de una montaña rocosa",
+      "title": "Retratos de las tierras altas",
+      "location": "Norte de Etiopía",
+      "caption": "Un retrato a lo largo de una ruta de montaña, con escarpados acantilados al fondo."
+    },
+    "gallery14": {
+      "alt": "Cuatro personas sentadas juntas junto a una gran roca con montañas detrás",
+      "title": "Una reunión en la montaña",
+      "location": "Norte de Etiopía",
+      "caption": "Un grupo descansando sobre un terreno rocoso con un amplio telón de fondo montañoso."
+    },
+    "gallery15": {
+      "alt": "Cuatro personas envueltas en chales reunidas junto a una pared de roca",
+      "title": "Rostros de las tierras altas",
+      "location": "Norte de Etiopía",
+      "caption": "Un retrato más cercano del grupo, con mantones coloridos y la roca de la montaña detrás."
+    },
+    "gallery16": {
+      "alt": "Escalones de piedra que conducen a la entrada de una alta iglesia excavada en la roca",
+      "title": "Pasos hacia la iglesia",
+      "location": "Lalibela",
+      "caption": "Un mirador bajo enfatiza la fachada tallada y las escaleras que conducen a la iglesia."
+    },
+    "gallery17": {
+      "alt": "Un accesorio circular de metal suspendido ante cortinas estampadas en una iglesia de piedra",
+      "title": "Dentro del santuario",
+      "location": "Lalibela",
+      "caption": "Textiles estampados y un accesorio de metal suspendido se destacan contra el interior excavado en la roca de la iglesia."
+    },
+    "gallery18": {
+      "alt": "Una visión cercana de motivos geométricos y florales tallados en madera oscura.",
+      "title": "Un detalle de madera tallada",
+      "location": "Lalibela",
+      "caption": "Una mirada de cerca a los patrones geométricos y las formas florales de un detalle de madera tallada."
+    },
+    "gallery19": {
+      "alt": "Dos aberturas arqueadas separadas por una columna de piedra tallada.",
+      "title": "Puertas en piedra",
+      "location": "Lalibela",
+      "caption": "Las aberturas emparejadas y una columna central revelan los detalles de la arquitectura excavada en la roca."
+    },
+    "gallery20": {
+      "alt": "Una iglesia excavada en la roca junto a un estanque rectangular de agua verde en un patio de piedra",
+      "title": "El patio de la iglesia hundido",
+      "location": "Lalibela",
+      "caption": "La fachada de la iglesia da a un patio hundido con una piscina rodeada de roca tallada."
+    },
+    "gallery21": {
+      "alt": "Un visitante sosteniendo un bastón de madera dentro de una iglesia excavada en la roca.",
+      "title": "Un momento dentro de la iglesia.",
+      "location": "Lalibela",
+      "caption": "Un visitante se detiene entre los muros de piedra y los textiles del interior de la iglesia."
+    },
+    "gallery22": {
+      "alt": "Una reunión de fieles con mantones blancos dentro de una iglesia de piedra",
+      "title": "Reunirse para adorar",
+      "location": "Lalibela",
+      "caption": "Mantones blancos y prendas ceremoniales llenan la iglesia durante una reunión de adoración."
+    },
+    "gallery23": {
+      "alt": "Los fieles se reunieron con chales blancos debajo de altas columnas de piedra.",
+      "title": "Tradiciones vivas de la iglesia",
+      "location": "Lalibela",
+      "caption": "Una vista más amplia de la congregación reunida dentro del interior excavado en la roca."
+    },
+    "gallery24": {
+      "alt": "Hombres vestidos de blanco sosteniendo bastones de madera durante una reunión en la iglesia",
+      "title": "Bastones y mantones ceremoniales",
+      "location": "Lalibela",
+      "caption": "Vestimentas blancas y bastones de madera forman parte de la escena del interior de la iglesia."
+    },
+    "gallery25": {
+      "alt": "Dos visitantes sentados sosteniendo bastones de madera junto a pinturas religiosas",
+      "title": "Aprendiendo dentro de la iglesia",
+      "location": "Lalibela",
+      "caption": "Una pausa en el interior de la iglesia, rodeada de pinturas, textiles y piedra tallada."
+    },
+    "gallery26": {
+      "alt": "Cuatro motivos florales circulares sobre un panel pintado dividido por un borde en forma de cruz",
+      "title": "Patrones pintados",
+      "location": "Norte de Etiopía",
+      "caption": "Los círculos florales y los bordes de colores revelan el detalle decorativo de un panel pintado."
+    },
+    "gallery27": {
+      "alt": "Un grupo sentado alrededor de una mesa baja con tazas y una cafetera en una habitación con paredes de piedra.",
+      "title": "una parada de café",
+      "location": "Etiopía",
+      "caption": "Una parada de café compartida, con tazas pequeñas y una cafetera dispuesta al lado del grupo."
+    },
+    "gallery28": {
+      "alt": "Un visitante sentado con un grupo sobre un terreno rocoso en las montañas",
+      "title": "Encuentro en el sendero de la montaña",
+      "location": "Norte de Etiopía",
+      "caption": "Un retrato de grupo durante una pausa en la ruta de montaña."
+    },
+    "gallery29": {
+      "alt": "Una iglesia de piedra con una entrada arqueada, escalones de entrada y una cruz sobre el techo.",
+      "title": "Una entrada de piedra a la iglesia",
+      "location": "Norte de Etiopía",
+      "caption": "La mampostería, un arco central y una cruz en el tejado enmarcan la entrada de la iglesia."
+    },
+    "gallery30": {
+      "alt": "Dos visitantes dentro de una iglesia pintada con grandes tambores dispuestos sobre una alfombra roja",
+      "title": "Pinturas y tambores ceremoniales.",
+      "location": "Norte de Etiopía",
+      "caption": "Pinturas murales religiosas rodean una exhibición de grandes tambores ceremoniales."
+    },
+    "gallery31": {
+      "alt": "Castillos de piedra y muros almenados junto a prados verdes bajo un cielo nublado",
+      "title": "El recinto real de Gondar",
+      "location": "gondar",
+      "caption": "Una vista amplia de los castillos y muros de piedra dentro del recinto real de Gondar."
+    },
+    "gallery32": {
+      "alt": "Dos visitantes sentados entre las raíces expuestas de un gran árbol junto a un camino de piedra",
+      "title": "Descansando debajo de las raíces",
+      "location": "Etiopía",
+      "caption": "Una pausa en la sombra junto a las raíces retorcidas de un gran árbol."
+    },
+    "gallery33": {
+      "alt": "Un viajero con los brazos extendidos parado sobre las rocas bajo una puesta de sol naranja",
+      "title": "Puesta de sol sobre suelo rocoso",
+      "location": "Etiopía",
+      "caption": "El sol poniente colorea el cielo sobre un amplio paisaje rocoso."
+    },
+    "gallery34": {
+      "alt": "Un viajero recortada en un mirador rocoso bajo un cielo nocturno azul y naranja",
+      "title": "Última luz en el mirador.",
+      "location": "Etiopía",
+      "caption": "Una figura en el mirador da una sensación de escala al paisaje abierto del atardecer."
+    },
+    "gallery35": {
+      "alt": "Un viajero parado en una meseta rocosa con el sol cerca del horizonte",
+      "title": "Mirando la puesta del sol",
+      "location": "Etiopía",
+      "caption": "Una parada al atardecer en la meseta, con un terreno oscuro que se extiende a lo lejos."
+    },
+    "gallery36": {
+      "alt": "Un viajero con los brazos extendidos de pie sobre un terreno rocoso en la luz dorada del atardecer",
+      "title": "Una tarde en la meseta",
+      "location": "Etiopía",
+      "caption": "La cálida luz del atardecer cae sobre las rocas durante una pausa en la meseta."
+    },
+    "gallery37": {
+      "alt": "Viajeros caminando sobre rocas oscuras fracturadas bajo un cielo brumoso",
+      "title": "A través del terreno volcánico",
+      "location": "Etiopía",
+      "caption": "Una escena de caminata a través de un terreno volcánico irregular, con la neblina suavizando la distancia."
+    },
+    "gallery38": {
+      "alt": "Un viajero con gafas de sol y una bufanda envuelta junto a un lago turquesa",
+      "title": "Una pausa junto al lago",
+      "location": "Etiopía",
+      "caption": "Un retrato junto al agua turquesa, con vegetación costera y colinas distantes detrás."
+    }
+  }
+}

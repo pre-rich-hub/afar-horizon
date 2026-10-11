@@ -14,7 +14,7 @@ export function isoDate(value: string) {
   return value
 }
 
-export function formatEditorialDate(value: string) {
-  return new Intl.DateTimeFormat('en', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
+export function formatEditorialDate(value: string, locale = 'en') {
+  return new Intl.DateTimeFormat(locale, { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
     .format(new Date(`${isoDate(value)}T00:00:00Z`))
 }

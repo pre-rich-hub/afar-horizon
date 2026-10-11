@@ -1,7 +1,7 @@
-import { TranslatedText } from '@/components/common/TranslatedText'
+import {useHomeCopy} from '../data/localized'
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
-import { experiences, panelTone } from '../data/experiences.data'
+import { experiences as baseExperiences, panelTone as basePanelTone } from '../data/experiences.data'
 
 import { Reveal } from '@/components/common/Reveal'
 import { cn } from '@/lib/utils'
@@ -14,19 +14,20 @@ import Link from '@/components/common/SiteLink'
 // like a spreadsheet.
 
 export function Experiences() {
+  const tr = useTranslations('UI.home.Experiences')
+  const experiences = useHomeCopy('experiences.experiences', baseExperiences)
+  const panelTone = useHomeCopy('experiences.panelTone', basePanelTone)
+
   return (
-    <TranslationBoundary><section id="experiences" className="bg-background py-20 sm:py-24 lg:py-32">
+    <section id="experiences" className="bg-background py-20 sm:py-24 lg:py-32">
       <Reveal className="shell mb-14 text-center sm:mb-20">
         <p className="eyebrow mb-5 justify-center text-accent">
-          Travel With a Purpose
-        </p>
+          {tr('travelWithAPurpose')}</p>
         <h2 className="text-balance text-4xl leading-[1.05] text-foreground sm:text-5xl lg:text-6xl">
-          Built around <em className="italic">what you came for</em>
+          {tr('builtAround')}{' '}<em className="italic">{tr('whatYouCameFor')}</em>
         </h2>
         <p className="mx-auto mt-6 max-w-[50ch] text-pretty leading-relaxed text-muted-foreground sm:text-lg">
-          Some travellers come for the light, some for the geology, some for the
-          churches, some to run a programme for their own clients. We plan for each.
-        </p>
+          {tr('someTravellersComeForTheLightSome')}</p>
       </Reveal>
 
       <div className="mx-auto grid w-full max-w-[1120px] gap-x-6 gap-y-16 px-5 sm:px-6 md:grid-cols-2 lg:gap-x-8 lg:gap-y-20 lg:px-10">
@@ -34,7 +35,7 @@ export function Experiences() {
           const dark = panelTone[i] === 'dark'
           const rightColumn = i % 2 === 1
           return (
-            <TranslationBoundary key={e.title}><Reveal key={e.title} delay={(i % 2) * 140}>
+            <Reveal key={e.title} delay={(i % 2) * 140}>
               <Link href={e.href} className="group block">
                 <div className="relative aspect-[7/5] overflow-hidden rounded-sm bg-muted">
                   <Image
@@ -73,7 +74,7 @@ export function Experiences() {
                       dark ? 'text-secondary-foreground/75' : 'text-foreground/70',
                     )}
                   >
-                    <TranslatedText text={e.text} />
+                    {e.text}
                   </p>
                   <span
                     className={cn(
@@ -83,12 +84,11 @@ export function Experiences() {
                         : 'border-foreground/25 text-foreground group-hover:border-foreground',
                     )}
                   >
-                    Discover More
-                    <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                    {tr('discoverMore')}<ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
                   </span>
                 </div>
               </Link>
-            </Reveal></TranslationBoundary>
+            </Reveal>
           )
         })}
       </div>
@@ -98,10 +98,9 @@ export function Experiences() {
           href="/expeditions"
           className="group inline-flex items-center gap-2.5 rounded-full bg-accent px-9 py-4 text-[11px] font-semibold uppercase tracking-[0.18em] text-accent-foreground shadow-[0_12px_32px_-14px_oklch(0.705_0.098_76/0.8)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary hover:text-primary-foreground sm:text-xs"
         >
-          Explore All Expeditions
-          <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+          {tr('exploreAllExpeditions')}<ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
         </Link>
       </Reveal>
-    </section></TranslationBoundary>
+    </section>
   )
 }

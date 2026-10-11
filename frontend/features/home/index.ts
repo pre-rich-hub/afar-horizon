@@ -8,3 +8,5 @@ export { Reviews } from './components/Reviews'
 export { SignatureDestinations } from './components/SignatureDestinations'
 export { StoryCarousel } from './components/StoryCarousel'
 export { WhyTravel } from './components/WhyTravel'
+
+export { getHomeCopy, useHomeCopy } from './data/localized'

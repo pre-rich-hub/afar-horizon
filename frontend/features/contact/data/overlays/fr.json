@@ -1,0 +1,20 @@
+{
+  "contact.steps": {
+    "0": {
+      "title": "Vous écrivez, nous écoutons",
+      "text": "Une phrase suffit pour commencer. Dates, rythme, tolérance à l'altitude et ce que vous souhaitez ressentir lors du voyage."
+    },
+    "1": {
+      "title": "Nous élaborons un itinéraire",
+      "text": "Dans les 24 heures, un designer nommé envoie un premier aperçu avec deux ou trois options et honnête tarifs."
+    },
+    "2": {
+      "title": "Nous la redessinons",
+      "text": "Généralement deux fois, parfois quatre fois. Rien n'est réservé et aucun dépôt n'est prélevé tant qu'il ne vous convient pas."
+    },
+    "3": {
+      "title": "Nous sommes là",
+      "text": "Rencontre à l'arrivée, guidé tout au long et une ligne 24 heures sur 24 avec votre concepteur pendant tout le voyage."
+    }
+  }
+}

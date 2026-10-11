@@ -1,5 +1,5 @@
 'use client'
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+import { useTranslations } from 'next-intl'
 
 
 import { cn } from '@/lib/utils';
@@ -7,6 +7,8 @@ import { useEffect, useState } from 'react';
 
 // Sticky in-page navigation that highlights the section currently in view.
 export function SectionNav({ items }: { items: { id: string; label: string }[] }) {
+  const tr = useTranslations('UI.common.SectionNav')
+
   const [active, setActive] = useState(items[0]?.id)
 
   useEffect(() => {
@@ -25,13 +27,13 @@ export function SectionNav({ items }: { items: { id: string; label: string }[] }
   }, [items])
 
   return (
-    <TranslationBoundary><nav
-      aria-label="On this page"
+    <nav
+      aria-label={tr('onThisPage')}
       className="sticky top-16 z-30 border-b border-border bg-background/92 backdrop-blur-xl sm:top-[68px]"
     >
       <ul className="shell flex gap-7 overflow-x-auto [scrollbar-width:none] sm:gap-10 [&::-webkit-scrollbar]:hidden">
         {items.map(({ id, label }) => (
-          <TranslationBoundary key={id}><li key={id} className="shrink-0">
+          <li key={id} className="shrink-0">
             <a
               href={`#${id}`}
               aria-current={active === id ? 'true' : undefined}
@@ -48,9 +50,9 @@ export function SectionNav({ items }: { items: { id: string; label: string }[] }
                 )}
               />
             </a>
-          </li></TranslationBoundary>
+          </li>
         ))}
       </ul>
-    </nav></TranslationBoundary>
+    </nav>
   )
 }

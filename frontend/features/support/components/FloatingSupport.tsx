@@ -1,32 +1,36 @@
 'use client'
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+import {useSupportCopy} from '../data/localized'
+import { useTranslations } from 'next-intl'
 
 
 import { useSupportChat } from '../hooks/useSupportChat'
 
-import { QUICK_QUESTIONS } from '../data/support.data'
+import { QUICK_QUESTIONS as baseQUICK_QUESTIONS } from '../data/support.data'
 
 import { Bot, MessageSquare, Send, Sparkle, X } from 'lucide-react'
 
 // Custom WhatsApp SVG Icon to look consistent and sharp
 function WhatsAppIcon({ className = 'h-5 w-5' }: { className?: string }) {
     return (
-        <TranslationBoundary><svg
+        <svg
             className={className}
             viewBox="0 0 24 24"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
         >
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-        </svg></TranslationBoundary>
+        </svg>
     )
 }
 
 export function FloatingSupport() {
+  const tr = useTranslations('UI.support.FloatingSupport')
+  const QUICK_QUESTIONS = useSupportCopy('support.QUICK_QUESTIONS', baseQUICK_QUESTIONS)
+
   const { isOpen, setIsOpen, messages, input, setInput, isTyping, isStreaming, chatEndRef, whatsappUrl, handleSendMessage } = useSupportChat()
 
     return (
-        <TranslationBoundary><>
+        <>
             {/* Stacked floating action buttons at bottom-right */}
             <div className="fixed bottom-6 right-6 z-40 flex flex-col gap-3 items-end">
                 {/* WhatsApp Float Button */}
@@ -34,19 +38,18 @@ export function FloatingSupport() {
                     href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Contact us on WhatsApp"
+                    aria-label={tr('contactUsOnWhatsapp')}
                     className="flex h-12 w-12 items-center justify-center rounded-full bg-whatsapp text-white shadow-lg transition-all duration-300 hover:scale-110 active:scale-95 hover:bg-whatsapp-hover border border-white/10 group relative"
                 >
                     <WhatsAppIcon className="h-6 w-6" />
                     <span className="absolute right-14 scale-0 rounded bg-charcoal border border-white/5 px-2.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-sand transition-all group-hover:scale-100 whitespace-nowrap shadow-md">
-                        Chat on WhatsApp
-                    </span>
+                        {tr('chatOnWhatsapp')}</span>
                 </a>
 
                 {/* AI Assistant Chat Toggle Button */}
                 <button
                     onClick={() => setIsOpen((prev) => !prev)}
-                    aria-label="Open AI Assistant"
+                    aria-label={tr('openAiAssistant')}
                     className={`flex h-14 w-14 items-center justify-center rounded-full shadow-2xl transition-all duration-500 hover:scale-105 active:scale-95 group relative border cursor-pointer ${isOpen
                         ? 'bg-accent border-accent text-accent-foreground hover:bg-sand'
                         : 'bg-accent text-accent-foreground border-accent hover:bg-sand shadow-[0_12px_32px_-12px_oklch(0.705_0.098_76/0.8)]'
@@ -65,8 +68,7 @@ export function FloatingSupport() {
                         </>
                     )}
                     <span className="absolute right-16 scale-0 rounded bg-charcoal border border-white/5 px-2.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-sand transition-all group-hover:scale-100 whitespace-nowrap shadow-md">
-                        AI travel Assistant
-                    </span>
+                        {tr('aiTravelAssistant')}</span>
                 </button>
             </div>
 
@@ -87,16 +89,14 @@ export function FloatingSupport() {
                         </div>
                         <div>
                             <h3 className="font-serif text-base font-semibold tracking-wide flex items-center gap-1.5 text-accent-foreground">
-                                Afar Horizon AI Guide
-                            </h3>
+                                {tr('afarHorizonAiGuide')}</h3>
                             <p className="text-[9px] text-accent-foreground/70 tracking-widest uppercase font-mono">
-                                Expert support · Online
-                            </p>
+                                {tr('expertSupportOnline')}</p>
                         </div>
                     </div>
                     <button
                         onClick={() => setIsOpen(false)}
-                        aria-label="Close Chat"
+                        aria-label={tr('closeChat')}
                         className="text-accent-foreground/70 hover:text-accent-foreground transition-colors p-1 hover:bg-charcoal/10 rounded-full cursor-pointer"
                     >
                         <X className="h-4 w-4" />
@@ -106,7 +106,7 @@ export function FloatingSupport() {
                 {/* Message Area */}
                 <div className="flex-1 overflow-y-auto p-5 space-y-4 bg-neutral-950/40 custom-scrollbar">
                     {messages.map((msg) => (
-                        <TranslationBoundary key={msg.id}><div
+                        <div
                             key={msg.id}
                             className={`flex gap-2.5 max-w-[85%] ${msg.sender === 'user' ? 'ml-auto flex-row-reverse' : 'mr-auto'
                                 }`}
@@ -124,7 +124,7 @@ export function FloatingSupport() {
                             >
                                 <p data-no-translate={msg.id !== 'welcome'} className="whitespace-pre-line">{msg.text}</p>
                             </div>
-                        </div></TranslationBoundary>
+                        </div>
                     ))}
 
                     {/* Typing simulation */}
@@ -146,13 +146,13 @@ export function FloatingSupport() {
                 {/* Quick Suggestion Chips */}
                 <div className="px-4 py-2 bg-neutral-950 border-t border-white/10 flex gap-2 overflow-x-auto scrollbar-none whitespace-nowrap">
                     {QUICK_QUESTIONS.map((q) => (
-                        <TranslationBoundary key={q}><button
+                        <button
                             key={q}
                             onClick={() => handleSendMessage(q)}
                             className="text-[10px] font-medium tracking-wide border border-white/10 hover:border-accent bg-neutral-900/60 hover:bg-accent/10 px-3 py-1.5 rounded-full text-sand/70 hover:text-white transition-all duration-200 cursor-pointer"
                         >
                             {q}
-                        </button></TranslationBoundary>
+                        </button>
                     ))}
                 </div>
 
@@ -169,13 +169,13 @@ export function FloatingSupport() {
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
                         disabled={isStreaming}
-                        placeholder="Ask a question about Ethiopia..."
+                        placeholder={tr('askAQuestionAboutEthiopia')}
                         className="flex-1 bg-neutral-900/60 border border-white/10 focus:border-accent focus:ring-1 focus:ring-accent rounded-full px-4 py-2.5 text-xs text-white placeholder:text-sand/40 outline-none transition-all duration-200 disabled:opacity-50"
                     />
                     <button
                         type="submit"
                         disabled={isStreaming || !input.trim()}
-                        aria-label="Send message"
+                        aria-label={tr('sendMessage')}
                         className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent text-accent-foreground hover:bg-accent/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed shadow-md cursor-pointer"
                     >
                         <Send className="h-4 w-4" />
@@ -198,6 +198,6 @@ export function FloatingSupport() {
                     background: rgba(255, 255, 255, 0.2);
                 }
             `}</style>
-        </></TranslationBoundary>
+        </>
     )
 }

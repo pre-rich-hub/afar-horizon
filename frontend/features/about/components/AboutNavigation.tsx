@@ -1,10 +1,12 @@
+import {useAboutCopy} from '../data/localized'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { SectionNav } from '@/components/common/SectionNav'
-import { sections } from '../data/about.data'
+import { sections as baseSections } from '../data/about.data'
 
 export function AboutNavigation() {
+  const sections = useAboutCopy('about.sections', baseSections)
+
   return (
-    <TranslationBoundary><SectionNav items={sections} /></TranslationBoundary>
+    <SectionNav items={sections} />
   )
 }

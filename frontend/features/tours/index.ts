@@ -15,3 +15,5 @@ export type { Tour } from './types/tour.types'
 export { getTourData, getToursData } from './utils/tour.catalog'
 export { getRelatedTours, getTour, toursInCollection } from './utils/tour.utils'
 export { tourSchema } from './utils/tour.schema'
+
+export { getToursCopy, useToursCopy } from './data/localized'

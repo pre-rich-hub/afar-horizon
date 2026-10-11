@@ -1,0 +1,83 @@
+{
+  "before-you-go.topics": {
+    "heat": {
+      "title": "Calor",
+      "text": {
+        "0": "El Danakil es uno de los lugares habitados más calurosos de la Tierra. Incluso en los meses más fríos, de noviembre a enero, se espera un calor significativo.",
+        "1": "Planificamos cada día en torno a esto: salidas temprano, las horas más calurosas descansando a la sombra y caminatas programadas para la tarde o la madrugada. Bebe antes de tener sed."
+      }
+    },
+    "roads": {
+      "title": "Carreteras y viajes en 4×4",
+      "text": {
+        "0": "Un kilómetro no siempre es sólo un kilómetro. Las pistas remotas de Danakil necesitan vehículos 4×4 y conductores que los conozcan, y algunos días son largos traslados por tierra en terreno accidentado y polvoriento.",
+        "1": "Decidimos cómo transcurre un día según las condiciones de la carretera, la luz del día, el clima, el vehículo y la información local. Preferimos llegar más tarde y con seguridad que prometer una hora de llegada poco realista."
+      }
+    },
+    "walking": {
+      "title": "Caminar",
+      "text": {
+        "0": "Caminar por Danakil puede implicar calor expuesto y terreno irregular. En Erta Ale, la distancia, el tiempo y el área de observación dependen de la aproximación confirmada y de la orientación local. Pregunta por los paseos previstos para tu ruta y lleva calzado adecuado y una lámpara frontal cuando sea necesario.",
+        "1": "Algunas iglesias en los acantilados de Gheralta implican subidas empinadas y expuestas; discutir alternativas accesibles antes de confirmar una visita. En Simien, la altitud, el frío y el terreno plantean exigencias diferentes a las de las tierras bajas."
+      }
+    },
+    "camping": {
+      "title": "Alojamiento y campamentos",
+      "text": {
+        "0": "Nunca describimos acampar en Danakil como un lujo. Los campamentos remotos pueden significar arreglos básicos para dormir, a menudo al aire libre en Hamed Ela, con instalaciones limitadas para lavarse, electricidad limitada, baños sencillos y comidas al aire libre.",
+        "1": "Eso no es un fracaso del viaje; es la naturaleza del lugar. En las tierras altas elegimos hoteles, albergues y casas de huéspedes por su ubicación, limpieza, confiabilidad y el nivel de comodidad que usted solicita."
+      }
+    },
+    "food-water": {
+      "title": "Comida y agua",
+      "text": {
+        "0": "Nuestro equipo prepara las comidas de expedición y las planifica en torno a la logística del desierto. Llevamos agua potable para la ruta y el grupo; trae también tu propia botella o sistema de hidratación.",
+        "1": "Infórmenos sobre los requisitos dietéticos antes de la salida para que podamos planificarlos. En las tierras altas, pruebe la injera y una ceremonia del café; nuestros guías te explicarán lo que estás comiendo."
+      }
+    },
+    "connectivity": {
+      "title": "Teléfonos, Internet y dinero",
+      "text": {
+        "0": "Espere poca o ninguna señal móvil en algunas partes de Danakil y una carga limitada. Traiga un banco de energía, baterías de repuesto y cables.",
+        "1": "Etiopía es en gran medida un entorno de efectivo fuera de las ciudades. No confíe en una sola tarjeta o cajero automático; lleve una copia de seguridad sensata y pregúntenos antes de la salida sobre los pagos en su ruta."
+      }
+    },
+    "safety": {
+      "title": "Seguridad y condiciones cambiantes",
+      "text": {
+        "0": "El Danakil es un entorno de expedición remoto y el acceso en partes de Afar y Tigray puede cambiar. Verificamos las condiciones actuales antes de cotizar y nuevamente antes de la salida, y cambiaremos o cancelaremos una ruta cuando las condiciones lo requieran.",
+        "1": "Cuando algo cambia en el camino, entendemos lo que pasó, verificamos la situación en el terreno, explicamos lo que significa para ustedes, ofrecemos opciones realistas, decidimos cuál es la más segura, reconstruimos la logística y los mantenemos informados.",
+        "2": "La actividad volcánica en Erta Ale, las caravanas de camellos en la sal y el acceso a Dallol nunca están garantizados. Planificamos responsablemente en función de las condiciones que encontramos."
+      }
+    },
+    "flexibility": {
+      "title": "Flexibilidad y comienzo temprano",
+      "text": {
+        "0": "Los días suelen comenzar antes del amanecer. Los horarios exactos, las ubicaciones de los campamentos y las rutas se confirman para las fechas y pueden cambiar según el día.",
+        "1": "La flexibilidad puede ser lo más importante que traigas. Un viajero bien informado que espera esto disfruta del Danakil mucho más que uno que espera un folleto."
+      }
+    }
+  },
+  "before-you-go.packing": {
+    "0": "Ropa ligera y transpirable de manga larga",
+    "1": "Sombrero de ala ancha y gafas de sol",
+    "2": "Protección solar y labial",
+    "3": "Zapatos resistentes para caminar (y sandalias para el campamento)",
+    "4": "Una capa cálida para las noches más frescas y las tierras altas",
+    "5": "Linterna frontal",
+    "6": "Botella reutilizable o sistema de hidratación",
+    "7": "Banco de energía, baterías y cables de repuesto",
+    "8": "Protección contra el polvo para teléfono y cámara",
+    "9": "Toallitas, desinfectante para manos y una toalla pequeña",
+    "10": "Medicación personal en embalaje original",
+    "11": "Ropa de dormir y artículos de higiene personal"
+  },
+  "before-you-go.respect": {
+    "0": "Pregunte antes de fotografiar personas, ceremonias y niños (pregúntele a su tutor)",
+    "1": "Vístase con modestia en las iglesias y siga la guía de la iglesia local",
+    "2": "No trate a las personas como escenario ni interrumpa el trabajo para una fotografía",
+    "3": "Saluda a las personas, respeta a los mayores y acepta la hospitalidad con cortesía",
+    "4": "Compre localmente donde pueda",
+    "5": "Escuche a su guía: le explican el contexto"
+  }
+}

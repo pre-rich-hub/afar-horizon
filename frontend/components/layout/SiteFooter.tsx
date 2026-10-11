@@ -1,5 +1,5 @@
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import {
 FacebookIcon,
 GetYourGuideMark,
@@ -14,9 +14,9 @@ VisaMark,
 XIcon,
 YouTubeIcon,
 } from '@/components/common/BrandMarks'
-import { destinations } from '@/features/destinations'
+import { destinations as baseDestinations } from '@/features/destinations'
 import { NewsletterForm } from '@/features/newsletter'
-import { expeditionCollections } from '@/features/tours'
+import { expeditionCollections as baseExpeditionCollections } from '@/features/tours'
 import { contact } from '@/lib/constants/company'
 import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react'
 import Link from '@/components/common/SiteLink'
@@ -54,7 +54,7 @@ const columns = [
   {
     title: 'Expeditions',
     links: [
-      ...expeditionCollections.map((c) => ({ label: c.title, href: `/expeditions#${c.id}` })),
+      ...baseExpeditionCollections.map((c) => ({ label: c.title, href: `/expeditions#${c.id}` })),
       { label: 'Specialist Travel', href: '/specialist-travel' },
       { label: 'Ground Operations', href: '/ground-operations' },
       { label: 'Plan My Journey', href: '/plan' },
@@ -73,7 +73,7 @@ const columns = [
       'lalibela',
       'simien-mountains',
     ].map((slug) => {
-      const d = destinations.find((x) => x.slug === slug)!
+      const d = baseDestinations.find((x) => x.slug === slug)!
       return { label: d.name, href: `/destinations/${d.slug}` }
     }),
     more: { label: 'All destinations', href: '/destinations' },
@@ -135,25 +135,25 @@ const payments: { name: string; mark: React.ReactNode }[] = [
 ]
 
 export function SiteFooter() {
+  const tr = useTranslations('UI.layout.SiteFooter')
+
   return (
-    <TranslationBoundary><footer className="bg-charcoal text-background">
+    <footer className="bg-charcoal text-background">
       <div className="shell pb-10 pt-16 sm:pt-20 lg:pt-24">
         <div className="grid gap-12 lg:grid-cols-[1.35fr_1fr_1fr_1fr] lg:gap-x-12 lg:gap-y-14">
           {/* Brand, contact and socials */}
           <div className="lg:row-span-2">
-            <Link href="/" className="inline-flex" aria-label="Afar Horizon Expeditions — home">
+            <Link href="/" className="inline-flex" aria-label={tr('afarHorizonExpeditionsHome')}>
               <img
                 src="/images/logo-light.png"
-                alt="Afar Horizon Expeditions Logo"
+                alt={tr('afarHorizonExpeditionsLogo')}
                 width={520}
                 height={341}
                 className="h-28 w-auto object-contain"
               />
             </Link>
             <p className="mt-6 max-w-sm text-pretty text-[15px] leading-relaxed text-background/65">
-              Introducing travellers to one of humanity&apos;s oldest
-              civilisations — with care, knowledge, and quiet luxury.
-            </p>
+              {tr('introducingTravellersToOneOfHumanityApos')}</p>
 
             <ul className="mt-8 space-y-4 text-[15px] text-background/80">
               <li className="flex items-start gap-3.5">
@@ -182,34 +182,34 @@ export function SiteFooter() {
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               {socials.map((s) => (
-                <TranslationBoundary key={s.name}><a
+                <a
                   key={s.name}
                   href={s.href}
                   aria-label={s.name}
                   className="flex h-12 w-12 items-center justify-center rounded-full bg-background shadow-[0_8px_20px_-10px_black] transition-transform duration-300 hover:-translate-y-1"
                 >
                   {s.icon}
-                </a></TranslationBoundary>
+                </a>
               ))}
             </div>
           </div>
 
           {/* Link columns */}
           {columns.map((col) => (
-            <TranslationBoundary key={col.title}><nav key={col.title} aria-label={col.title}>
+            <nav key={col.title} aria-label={col.title}>
               <h3 className="mb-6 font-sans text-[12px] font-semibold uppercase tracking-[0.26em] text-accent">
                 {col.title}
               </h3>
               <ul className="space-y-4">
                 {col.links.map((link) => (
-                  <TranslationBoundary key={link.label}><li key={link.label}>
+                  <li key={link.label}>
                     <Link
                       href={link.href}
                       className="text-[15px] text-background/80 transition-colors duration-300 hover:text-accent"
                     >
                       {link.label}
                     </Link>
-                  </li></TranslationBoundary>
+                  </li>
                 ))}
               </ul>
               {col.more && (
@@ -221,19 +221,16 @@ export function SiteFooter() {
                   <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
               )}
-            </nav></TranslationBoundary>
+            </nav>
           ))}
 
           {/* Newsletter, spanning the link columns */}
           <div className="flex flex-col gap-6 lg:col-span-3 lg:col-start-2 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-md">
               <p className="font-serif text-[1.9rem] leading-tight text-background">
-                Continue exploring Ethiopia
-              </p>
+                {tr('continueExploringEthiopia')}</p>
               <p className="mt-2 text-[15px] leading-relaxed text-background/65">
-                Curated travel stories and seasonal inspiration from our
-                designers. Four letters a year, never more.
-              </p>
+                {tr('curatedTravelStoriesAndSeasonalInspirationFrom')}</p>
             </div>
             <NewsletterForm />
           </div>
@@ -243,33 +240,29 @@ export function SiteFooter() {
         <div className="mt-16 grid gap-12 border-t border-background/15 pt-14 lg:grid-cols-[4fr_3fr] lg:gap-14">
           <div>
             <p className="font-serif text-[1.9rem] leading-tight text-background">
-              Trusted travel platforms
-            </p>
+              {tr('trustedTravelPlatforms')}</p>
             <p className="mt-2 text-[15px] text-background/60">
-              Find and review us where seasoned travellers plan.
-            </p>
+              {tr('findAndReviewUsWhereSeasonedTravellers')}</p>
             <ul className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
               {platforms.map((p) => (
-                <TranslationBoundary key={p.name}><li key={p.name}>
+                <li key={p.name}>
                   <a href={p.href} aria-label={p.name} className={logoTile}>
                     {p.mark}
                   </a>
-                </li></TranslationBoundary>
+                </li>
               ))}
             </ul>
           </div>
           <div>
             <p className="font-serif text-[1.9rem] leading-tight text-background">
-              We accept
-            </p>
+              {tr('weAccept')}</p>
             <p className="mt-2 text-[15px] text-background/60">
-              Secure payments by card or PayPal.
-            </p>
+              {tr('securePaymentsByCardOrPaypal')}</p>
             <ul className="mt-6 grid grid-cols-3 gap-3">
               {payments.map((p) => (
-                <TranslationBoundary key={p.name}><li key={p.name} aria-label={p.name} className={logoTile}>
+                <li key={p.name} aria-label={p.name} className={logoTile}>
                   {p.mark}
-                </li></TranslationBoundary>
+                </li>
               ))}
             </ul>
           </div>
@@ -277,30 +270,25 @@ export function SiteFooter() {
 
         <div className="mt-14 grid gap-4 border-t border-background/15 pt-8 text-[13px] text-background/50 md:grid-cols-[1fr_auto_1fr] md:items-center md:gap-8">
           <p>
-            &copy; {new Date().getFullYear()} Afar Horizon Expeditions. All rights
-            reserved.
-          </p>
+            {tr('copy')}{' '}{new Date().getFullYear()} {tr('afarHorizonExpeditionsAllRightsReserved')}</p>
           <p className="text-[15px] text-background/70 md:text-center">
-            Built by{' '}
+            {tr('builtBy')}{' '}
             <a
               href="https://melba.et"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-background transition-colors hover:text-accent"
             >
-              Melba Technology
-            </a>
+              {tr('melbaTechnology')}</a>
           </p>
           <div className="flex flex-wrap gap-x-8 gap-y-2 md:justify-end">
             <Link href="/privacy" className="transition-colors hover:text-background/85">
-              Privacy Policy
-            </Link>
+              {tr('privacyPolicy')}</Link>
             <Link href="/terms" className="transition-colors hover:text-background/85">
-              Terms &amp; Conditions
-            </Link>
+              {tr('termsAmpConditions')}</Link>
           </div>
         </div>
       </div>
-    </footer></TranslationBoundary>
+    </footer>
   )
 }

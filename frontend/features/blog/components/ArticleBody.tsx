@@ -1,19 +1,25 @@
+import {useBlogCopy} from '../data/localized'
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal';
 import { ArrowRight } from 'lucide-react';
 import Link from '@/components/common/SiteLink';
 import type { Post } from '../types/post.types';
 import { articleParagraph } from '../utils/article.utils';
 
-export function ArticleBody({ post, next }: { post: Post; next: Post }) {
+export function ArticleBody({ post: basepost, next: basenext }: { post: Post; next: Post }) {
+  const post = useBlogCopy('post.posts', basepost)
+  const next = useBlogCopy('post.posts', basenext)
+
+  const tr = useTranslations('UI.blog.ArticleBody')
+
   return (
-    <TranslationBoundary><div className="shell py-14 sm:py-16 lg:py-20">
+    <div className="shell py-14 sm:py-16 lg:py-20">
         <div className="mx-auto max-w-2xl">
           {post.body.map((value, i) => {
             const para = articleParagraph(value)
             return (
-            <TranslationBoundary key={i}><Reveal key={i} delay={i * 50}>
+            <Reveal key={i} delay={i * 50}>
               {para.heading && <h2 className="mt-10 text-balance font-serif text-2xl leading-tight text-foreground sm:text-3xl">{para.heading}</h2>}
               <p
                 className={
@@ -26,29 +32,27 @@ export function ArticleBody({ post, next }: { post: Post; next: Post }) {
                   ? <Link key={j} href={part.href} className="text-primary underline decoration-accent/50 underline-offset-4 transition-colors hover:text-accent">{part.text}</Link>
                   : part.text)}
               </p>
-            </Reveal></TranslationBoundary>
+            </Reveal>
           )})}
 
           <Reveal className="mt-14 border-t border-border pt-8">
             <p className="text-sm leading-relaxed text-muted-foreground">
-              Written by{' '}
+              {tr('writtenBy')}{' '}
               <span className="font-medium text-foreground">{post.author}</span>,{' '}
-              {post.authorRole.toLowerCase()}. Questions about any of the above
-              are always welcome —{' '}
+              {post.authorRole.toLowerCase()}{tr('questionsAboutAnyOfTheAboveAre')}{' '}
               <Link
                 href="/contact"
                 className="border-b border-accent/50 pb-0.5 text-primary transition-colors hover:border-accent hover:text-accent"
               >
-                write to us
-              </Link>
+                {tr('writeToUs')}</Link>
               .
             </p>
             {post.sources && <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              Further reading:{' '}
-              {post.sources.map((source, i) => <TranslationBoundary key={source.href}><span key={source.href}>
+              {tr('furtherReading')}{' '}
+              {post.sources.map((source, i) => <span key={source.href}>
                 {i > 0 && '; '}
                 <a href={source.href} className="text-primary underline underline-offset-4 hover:text-accent">{source.text}</a>
-              </span></TranslationBoundary>)}.
+              </span>)}.
             </p>}
           </Reveal>
 
@@ -58,8 +62,7 @@ export function ArticleBody({ post, next }: { post: Post; next: Post }) {
               className="group block border border-border bg-card p-6 transition-colors hover:border-primary/40 sm:p-8"
             >
               <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-accent">
-                Read Next
-              </p>
+                {tr('readNext')}</p>
               <p className="mt-3 text-balance font-serif text-xl text-foreground transition-colors group-hover:text-primary sm:text-2xl">
                 {next.title}
               </p>
@@ -70,6 +73,6 @@ export function ArticleBody({ post, next }: { post: Post; next: Post }) {
             </Link>
           </Reveal>
         </div>
-      </div></TranslationBoundary>
+      </div>
   )
 }

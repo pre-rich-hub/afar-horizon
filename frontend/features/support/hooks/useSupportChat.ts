@@ -1,4 +1,5 @@
 'use client'
+import {useTranslations} from 'next-intl'
 
 import type { Message } from '../types/support.types'
 
@@ -7,12 +8,13 @@ import { useEffect, useRef, useState } from 'react'
 import { streamAssistantChat } from '../api/support.api'
 
 export function useSupportChat() {
+    const tr = useTranslations('UI.support.SupportChat')
     const [isOpen, setIsOpen] = useState(false)
     const [messages, setMessages] = useState<Message[]>([
         {
             id: 'welcome',
             sender: 'bot',
-            text: 'Selam! I am your Afar Horizon AI Assistant. How can I help you design your private journey through the soul of Ethiopia today?',
+            text: tr('welcome'),
             timestamp: new Date(),
         },
     ])
@@ -95,14 +97,14 @@ export function useSupportChat() {
             onDone: (done) => {
                 if (done.handoff.type !== 'none') {
                     appendBotMessage(
-                        'I have reached a limit for now. For a personal tailor-made proposal, please use our Enquiry Form (/contact) or chat with us on WhatsApp.'
+                        tr('limit')
                     )
                 }
                 finishStream()
             },
             onError: (message) => {
                 appendBotMessage(message)
-                appendBotMessage('For immediate personal help, reach out to us on WhatsApp.')
+                appendBotMessage(tr('personalHelp'))
                 finishStream()
             },
         })

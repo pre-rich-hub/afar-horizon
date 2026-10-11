@@ -1,0 +1,44 @@
+{
+  "about.sections": {
+    "in-brief": {
+      "label": "En resumen"
+    },
+    "our-story": {
+      "label": "Nuestra historia"
+    },
+    "our-approach": {
+      "label": "Nuestro enfoque"
+    },
+    "plan": {
+      "label": "Planifique con nosotros"
+    }
+  },
+  "about.brief": {
+    "0": {
+      "title": "Quiénes somos",
+      "text": "Afar Horizon Expeditions es un Empresa de viajes de propiedad local: un pequeño equipo de Addis Abeba formado por diseñadores de viajes, guías académicos y conductores que han trabajado codo con codo durante años."
+    },
+    "1": {
+      "title": "Dónde operamos",
+      "text": "Nuestra oficina está en Bole Medhaniallem, Cape Verde Street 1000, Addis Abeba, Etiopía. Viajamos a través de Etiopía: las tierras bajas de Danakil y Afar, el norte histórico, las tierras altas de Simien y Bale y el valle de Omo en el sur."
+    },
+    "2": {
+      "title": "Cómo funciona la planificación",
+      "text": "La planificación comienza con una conversación, no con un paquete fijo. Cuéntanos tus fechas, tu ritmo y qué te atrae aquí; luego, una propuesta escrita describe el viaje en su totalidad."
+    }
+  },
+  "about.principles": {
+    "0": {
+      "title": "Espacio para lo inesperado",
+      "text": "Una caravana que cruza la sal con las primeras luces del día, una conversación en un puesto de café al borde de la carretera, una cresta que aparece a través de la nube. El momento que más recuerdan los viajeros suele ser el que nunca estuvo en el itinerario, por eso dejamos espacio para ello."
+    },
+    "1": {
+      "title": "Consejos honestos",
+      "text": "Si una ruta exige demasiado tiempo del que disponemos, lo decimos. Si el calor de Danakil o las condiciones locales cambian el plan, lo adaptamos. Avistamientos de vida silvestre, cielos despejados y vistas de cráteres son algo que se espera, pero nunca se prometen."
+    },
+    "2": {
+      "title": "Respeto por los lugares que compartimos",
+      "text": "Los Afar, las tierras altas y el sur son hogares antes que destinos. Viajamos con guías locales, preguntamos antes de fotografiar y nos movemos a un ritmo que deja las comunidades y los paisajes tal como los encontramos."
+    }
+  }
+}

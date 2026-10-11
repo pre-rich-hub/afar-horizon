@@ -1,5 +1,5 @@
 'use client'
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+import { useTranslations } from 'next-intl'
 
 
 import { ChevronLeft, ChevronRight, X } from 'lucide-react'
@@ -22,6 +22,8 @@ export function Lightbox({
   onClose: () => void
   onIndexChange: (index: number) => void
 }) {
+  const tr = useTranslations('UI.gallery.Lightbox')
+
   const photo = photos[index]
   const closeRef = useRef<HTMLButtonElement>(null)
   const touchX = useRef<number | null>(null)
@@ -51,10 +53,10 @@ export function Lightbox({
   }, [index, count, onClose, onIndexChange])
 
   return (
-    <TranslationBoundary><div
+    <div
       role="dialog"
       aria-modal="true"
-      aria-label={`${photo.title}, photo ${index + 1} of ${count}`}
+      aria-label={tr('valuePhotoValueOfValue', { value0: String(photo.title), value1: String(index + 1), value2: String(count) })}
       className="fixed inset-0 z-[70] flex flex-col bg-charcoal/97 text-background backdrop-blur-sm [animation:fade-up_0.35s_ease_both]"
       onTouchStart={(e) => (touchX.current = e.touches[0].clientX)}
       onTouchEnd={(e) => {
@@ -72,7 +74,7 @@ export function Lightbox({
           ref={closeRef}
           type="button"
           onClick={onClose}
-          aria-label="Close gallery"
+          aria-label={tr('closeGallery')}
           className="flex h-11 w-11 items-center justify-center rounded-full border border-background/25 transition-colors hover:border-accent hover:bg-accent hover:text-accent-foreground"
         >
           <X className="h-5 w-5" strokeWidth={1.5} />
@@ -104,22 +106,24 @@ export function Lightbox({
           {photo.caption}
         </p>
       </div>
-    </div></TranslationBoundary>
+    </div>
   )
 }
 
 function LightboxArrow({ side, onClick }: { side: 'left' | 'right'; onClick: () => void }) {
+  const tr = useTranslations('UI.gallery.Lightbox')
+
   const Icon = side === 'left' ? ChevronLeft : ChevronRight
   return (
-    <TranslationBoundary><button
+    <button
       type="button"
       onClick={onClick}
-      aria-label={side === 'left' ? 'Previous photo' : 'Next photo'}
+      aria-label={side === 'left' ? tr('previousPhoto') : tr('nextPhoto')}
       className={`absolute top-1/2 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-background/25 bg-charcoal/40 backdrop-blur-sm transition-colors hover:border-accent hover:bg-accent hover:text-accent-foreground sm:flex ${
         side === 'left' ? 'left-5 lg:left-8' : 'right-5 lg:right-8'
       }`}
     >
       <Icon className="h-5 w-5" strokeWidth={1.5} />
-    </button></TranslationBoundary>
+    </button>
   )
 }

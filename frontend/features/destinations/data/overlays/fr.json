@@ -1,0 +1,740 @@
+{
+  "destination.destinationGroups": {
+    "danakil": {
+      "title": "Afar et le Danakil",
+      "text": "Désert, sel, volcans et les gens qui vivent avec eux."
+    },
+    "highlands": {
+      "title": "Les hautes terres du nord",
+      "text": "Églises de falaises, royaumes antiques, montagnes et villes royales."
+    },
+    "hub": {
+      "title": "Nord de l'Éthiopie",
+      "text": "Une région, plusieurs mondes, reliés par les routes qui les relient."
+    }
+  },
+  "destination.destinations": {
+    "danakil-depression": {
+      "guideSlug": "when-to-visit-ethiopia",
+      "name": "Danakil Dépression",
+      "headline": "Là où la terre semble vivante",
+      "region": "Région Afar",
+      "tag": "Expédition",
+      "imageAlt": "Piscines minérales vertes et formations de sel dans le paysage de Danakil",
+      "seoTitle": "Dépression de Danakil Éthiopie | Tours et expéditions",
+      "seoDescription": "Explorez la dépression de Danakil avec un opérateur d'expédition éthiopien local : Erta Ale, Dallol, Lake Assale et Afar, avec une logistique locale professionnelle.",
+      "teaser": "Salines, volcans, couleur géothermique et culture adaptée à l'un des endroits les plus chauds où vivent les gens.",
+      "intro": "Le Danakil se situe dans le triangle Afar, où la plaque arabe et les deux plaques africaines se séparent. Le sel s'étend à perte de vue, les paysages volcaniques s'élèvent du désert et les gens ont bâti leur vie dans un environnement que les étrangers appellent souvent simplement « extrême ».",
+      "bestTime": "novembre – janvier",
+      "duration": "3 – 8 jours",
+      "altitude": "Jusqu'à environ 125 m sous le niveau de la mer",
+      "highlights": {
+        "0": "Erta Ale : un volcan bouclier basaltique et un paysage de caldeira changeant",
+        "1": "Dallol : sources acides, cheminées de sel et couleur minérale",
+        "2": "Lac Assale : la plaine salée, à environ 120 m sous le niveau de la mer",
+        "3": "Lac Afdera : un lac hypersalin alimenté par des sources chaudes",
+        "4": "Hamed Ela : le village des sauniers et notre camp de base",
+        "5": "Les communautés Afar et le commerce du sel séculaire"
+      },
+      "paragraphs": {
+        "0": "À environ 125 mètres sous le niveau de la mer, le Danakil est l'un des endroits les plus bas d'Afrique et l'un des endroits les plus chauds de la planète où vivent les gens : la colonie de Dallol a enregistré une température annuelle moyenne de 34 °C entre 1960 et 1966. Les informations touristiques officielles éthiopiennes nomment Erta Ale, Dallol, le lac Assale et le lac Afdera parmi ses principaux attractions.",
+        "1": "Cela fait aussi partie de l’histoire de l’humanité. En 1974, à Hadar, dans la région d'Afar, des chercheurs ont découvert « Lucy », un squelette d'Australopithecus afarensis vieux de 3,2 millions d'années, c'est pourquoi Afar est souvent qualifié de berceau de l'humanité.",
+        "2": "Le Danakil n'est pas vide. Il est vivant et on y vit."
+      },
+      "sections": {
+        "0": {
+          "title": "Le Danakil n'est pas un parc à thème",
+          "text": "Il n'y a pas de routes confortables vers chaque site, et aucune garantie que la nature fonctionnera sur calendrier. Les conditions changent, les itinéraires changent et l'activité volcanique change. C'est ce qui fait du Danakil une destination d'expédition. Notre travail consiste à gérer la logistique tout en vous donnant l'espace nécessaire pour découvrir le paysage."
+        },
+        "1": {
+          "title": "Comment se déroule habituellement une expédition Danakil",
+          "text": "La plupart des expéditions commencent à Semera. La première journée descend jusqu'au lac Afdera (généralement trois à quatre heures de route), puis continue jusqu'à la base de l'Erta Ale pour une promenade nocturne jusqu'au cratère. Le lendemain, traversée du désert jusqu'à Hamed Ela, base de la plaine salée du lac Assale et de Dallol. Les expéditions plus longues ajoutent des nuits à Afdera, Erta Ale et Hamed Ela plutôt qu'un trajet supplémentaire."
+        },
+        "2": {
+          "title": "Pourquoi voyager avec un opérateur local",
+          "text": "Le Danakil nécessite plus qu'une réservation. L'autorité éthiopienne du tourisme décrit les pistes isolées de Danakil comme nécessitant des véhicules 4×4 et des compétences en navigation, et recommande des opérateurs expérimentés possédant plusieurs véhicules. Chaque expédition que nous organisons comprend :",
+          "items": {
+            "0": "Planification des itinéraires et informations d'accès actuelles",
+            "1": "Véhicules 4×4 adaptés",
+            "2": "Personnel de terrain expérimenté et Afar local guides",
+            "3": "Gestion de l'eau et de la chaleur",
+            "4": "Logistique du camp",
+            "5": "Planification d'urgence"
+          }
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Quelle est la température du Danakil ?",
+          "a": "Extrêmement chaud. Dallol détient le record de la température annuelle moyenne la plus élevée de tous les lieux habités, environ 34 °C. Même pendant la saison la plus fraîche, de novembre à janvier, attendez-vous à une chaleur importante, c'est pourquoi les journées commencent tôt et les heures les plus chaudes sont réservées au repos."
+        },
+        "1": {
+          "q": "Le Danakil est-il sûr ?",
+          "a": "Il s'agit d'un environnement d'expédition éloigné et les conditions régionales doivent toujours être vérifiées avant le départ. Les conseils officiels restreignent actuellement les voyages dans certaines parties d'Afar, nous confirmons donc ce qui est possible et responsable de vos dates avant de proposer, et nous modifions ou annulons un itinéraire lorsque les conditions l'exigent."
+        },
+        "2": {
+          "q": "Puis-je visiter sans opérateur ?",
+          "a": "Non. Les itinéraires éloignés nécessitent des véhicules 4 × 4, des guides Afar locaux et des modalités d'accès. Voyager avec un opérateur expérimenté est fortement recommandé."
+        },
+        "3": {
+          "q": "Combien de temps dois-je y passer ?",
+          "a": "Un minimum de deux nuits est généralement nécessaire pour l'itinéraire classique d'Erta Ale, du lac Assale et de Dallol. Quatre jours ou plus permettent du repos et une expédition plus lente."
+        }
+      }
+    },
+    "afar": {
+      "guideSlug": "responsible-travel-in-afar",
+      "name": "Au loin",
+      "headline": "Une terre qui enseigne la résilience",
+      "region": "Région Afar",
+      "tag": "Personnes et paysage",
+      "imageAlt": "Caravane de chameaux traversée d'une plaine salée au coucher du soleil en Afar",
+      "seoTitle": "Afar Ethiopie Voyage | Expéditions Danakil et Afar",
+      "seoDescription": "Découvrez l'Afar au-delà du Danakil : paysages désertiques, culture du sel, géologie volcanique et vie locale avec une société d'expédition éthiopienne.",
+      "teaser": "Plus que la dépression de Danakil : un peuple, une culture et une frontière géologique.",
+      "intro": "Afar est un paysage façonné par la chaleur, la distance, le mouvement et la rareté, et le foyer de personnes dont la vie est adaptée à l'un des environnements les plus exigeants de la planète. Nous présentons le paysage et les gens ensemble.",
+      "bestTime": "novembre – janvier",
+      "duration": "1 à 8 jours",
+      "altitude": "Sous le niveau de la mer jusqu'au bord des montagnes",
+      "highlights": {
+        "0": "Le Danakil Dépression, Erta Ale et Dallol",
+        "1": "Lac Assale et lac Afdera",
+        "2": "Découpe du sel et caravanes de chameaux vers Berahile",
+        "3": "Nourriture et café Afar",
+        "4": "Camping dans le désert",
+        "5": "Hadar, où \"Lucy\" a été trouvée en 1974"
+      },
+      "paragraphs": {
+        "0": "Le triangle Afar est l'une des régions géologiques les plus actives au monde : l'endroit où la plaque arabique et les deux plaques africaines se rencontrent et se séparent, créant des volcans, des lacs salés, des failles et des sources chaudes à travers de vastes horizons.",
+        "1": "Mais la géologie ne représente que la moitié de l'histoire. Les gens vivent ici, travaillent ici et y élèvent des familles, se déplaçant dans ce paysage avec des connaissances acquises au fil des générations. Pendant des siècles, le sel coupé à la main dans le Danakil était transporté à dos de chameau vers les hautes terres, et les blocs de sel appelés amole étaient utilisés comme monnaie dans toute l'Éthiopie. C'est pourquoi nous ne présentons jamais Afar comme une collection de « paysages extrêmes »."
+      },
+      "sections": {
+        "0": {
+          "title": "Voyagez avec respect",
+          "text": "Lorsque nous rencontrons les communautés, nous demandons aux voyageurs de :",
+          "items": {
+            "0": "Demandez avant de photographier des personnes",
+            "1": "Respectez les espaces privés",
+            "2": "Suivez les conseils locaux",
+            "3": "Évitez de traiter les gens comme des accessoires photographiques",
+            "4": "Achetez localement lorsque cela est approprié",
+            "5": "Écoutez plus qu'ils ne parlent"
+          }
+        },
+        "1": {
+          "title": "Notre principe",
+          "text": "Nous ne voulons pas voyager à travers les communautés. Nous voulons voyager avec eux. Les rencontres culturelles doivent profiter aux deux parties, et l'interaction doit être bienvenue, jamais mise en scène."
+        }
+      }
+    },
+    "erta-ale": {
+      "guideSlug": "erta-ale-what-to-expect",
+      "name": "Erta Ale",
+      "headline": "Le volcan au bord du désert",
+      "region": "Région Afar · Danakil",
+      "tag": "Volcan",
+      "imageAlt": "Cratère volcanique et panache ascendant à Erta Ale",
+      "seoTitle": "Volcan Erta Ale Éthiopie | Trekking et expéditions Danakil",
+      "seoDescription": "Explorez le volcan Erta Ale dans la dépression de Danakil en Éthiopie avec une équipe d'expédition locale. Découvrez l'approche, les modalités d'observation et les conditions changeantes.",
+      "teaser": "Vous ne conduisez pas jusqu'à Erta Ale. Vous marchez vers lui, dans l'obscurité, à travers un sol volcanique exposé.",
+      "intro": "Erta Ale est un volcan bouclier basaltique situé à Afar. L'approche fait partie de l'expérience, tout comme le terrain volcanique, la chaleur et le paysage ouvert. Ce que vous pouvez voir dépend du volcan et de l'itinéraire confirmé pour votre visite.",
+      "bestTime": "novembre – janvier",
+      "duration": "1 – 2 nuits",
+      "altitude": "585 m (GVP du Smithsonian)",
+      "highlights": {
+        "0": "Une approche à travers un terrain volcanique, avec une distance confirmée pour votre itinéraire",
+        "1": "La zone de la caldeira et du cratère sous le ciel nocturne",
+        "2": "Un camp simple près du bord, avec une fenêtre d'observation tôt le matin",
+        "3": "Interprétation géologique de votre guide"
+      },
+      "paragraphs": {
+        "0": "Erta Ale est connue pour une longue histoire d'activité de lac de lave, mais le paysage volcanique visible change. Les rapports du Smithsonian décrivent des coulées de lave et l'évolution de l'activité thermique en 2024 et 2025 ; ce sont des observations datées, pas une description de ce qui sera visible à votre départ.",
+        "1": "Le rapport du Smithsonian de fin novembre 2025 enregistre des chutes de cendres sur l'Erta Ale après l'éruption voisine de Hayli Gubbi et une nouvelle zone effondrée dans la caldeira. Demandez à l'équipe des observations récentes et les modalités d'observation prévues plutôt que de traiter une photographie plus ancienne comme une promesse.",
+        "2": "Erta Ale est une visite volcanique isolée avec un terrain exposé et accidenté. La distance de marche, le calendrier, l'emplacement du camp et les zones d'observation dépendent de l'approche confirmée et des directives locales actuelles. Discutez des exigences de marche pour votre itinéraire particulier avant de réserver."
+      },
+      "note": {
+        "title": "Changements d'activité volcanique",
+        "text": "Erta Ale est un système naturel. Son activité change, et un lac de lave ou un spectacle particulier n'est jamais garanti. Avant de réserver, nous vous disons honnêtement ce qui est actuellement vu et le jour où votre guide décide à quelle distance vous pouvez vous rendre en toute sécurité."
+      },
+      "faqs": {
+        "0": {
+          "q": "Quelle est la difficulté de la promenade Erta Ale ?",
+          "a": "L'approche traverse un terrain volcanique inégal. La distance et le timing dépendent de l'itinéraire confirmé et des conditions actuelles ; demandez à l'équipe quelle marche est prévue pour vos rendez-vous. Des chaussures adaptées, une lampe frontale et une discussion honnête sur votre confort de marche sont une préparation utile."
+        },
+        "1": {
+          "q": "Que vais-je voir ?",
+          "a": "La vaste caldeira, les coulées de basalte frais et, en fonction de l'activité actuelle, les évents incandescents et le dégazage, souvent mieux visibles à la tombée de la nuit et à l'aube. Nous partageons les rapports récents avant votre voyage."
+        },
+        "2": {
+          "q": "Que se passe-t-il si les conditions volcaniques changent ?",
+          "a": "Votre guide décide le jour à quelle distance il est possible de s'approcher en toute sécurité, et nous ajustons le plan. Certaines nuits, le volcan est calme ; Parfois, l'accès est fermé."
+        }
+      }
+    },
+    "dallol": {
+      "guideSlug": "dallol-geothermal-landscape",
+      "name": "Dallol",
+      "headline": "Quand la terre se peint",
+      "region": "Région Afar · Danakil",
+      "tag": "Géothermique",
+      "imageAlt": "Piscines minérales vertes et formations de sel dans le paysage de Danakil",
+      "seoTitle": "Dallol Éthiopie | Paysage géothermique et visites de Danakil",
+      "seoDescription": "Explorez Dallol à Dépression de Danakil en Éthiopie : sources chaudes acides, cheminées de sel, couleurs minérales et géologie volcanique, sous le niveau de la mer.",
+      "teaser": "Jaune, orange, blanc, vert et rouille : la géologie se déroule devant vous.",
+      "intro": "Dallol ne ressemble pas aux paysages que la plupart des voyageurs associent à l'Afrique. Les couleurs peuvent paraître presque artificielles. Mais ce n'est pas de la décoration : les minéraux, les processus géothermiques, le sel, la chaleur et l'eau la créent, et les couleurs ont une histoire.",
+      "bestTime": "novembre – janvier",
+      "duration": "Une demi-journée, depuis Hamed Ela",
+      "altitude": "À propos 48 m sous le niveau de la mer",
+      "highlights": {
+        "0": "Sources chaudes jusqu'à environ 95 °C, parmi les eaux les plus acides de la planète",
+        "1": "Cheminées de sel, terrasses de soufre et bassins verts et jaunes",
+        "2": "Les cheminées volcaniques terrestres les plus basses connues au monde",
+        "3": "La Montagne Noire et le cratère d'explosion de 1926",
+        "4": "Lumière matinale et températures plus gérables"
+      },
+      "paragraphs": {
+        "0": "Dallol est assis sur un dôme de sel de plusieurs kilomètres d'épaisseur, au-dessus d'un corps de magma. Les eaux souterraines chauffées par le bas dissolvent le sel et les minéraux et montent au fur et à mesure des sources jusqu'à environ 95 °C, avec un pH qui peut descendre en dessous de 1. À mesure que l'eau s'évapore, elle laisse des formations jaunes, vertes, oranges et blanches qui changent de saison en saison.",
+        "1": "Les cratères de Dallol, à environ 45 mètres ou plus sous le niveau de la mer, sont les cheminées volcaniques terrestres les plus basses connues au monde. La seule éruption enregistrée était une explosion provoquée par de la vapeur en 1926, qui a laissé un cratère d'environ 30 mètres de large au pied de la Montagne Noire. Pendant une grande partie du XXe siècle, les sociétés minières ont exploité la potasse contenue dans le sel situé en dessous ; vous pouvez encore voir des traces des œuvres anciennes.",
+        "2": "Nous visitons tôt, avant la chaleur la plus forte. Votre guide vous explique les couleurs minérales, les formations salines et l'activité volcanique plutôt que de simplement vous donner le temps de les photographier."
+      },
+      "note": {
+        "title": "Les zones géothermiques peuvent être dangereuses",
+        "text": "Le sol peut être une fine croûte recouverte d'eau chaude acide et certaines zones libèrent des gaz toxiques. Les visiteurs doivent suivre leur guide local et rester dans les zones de sécurité désignées. L'accès dépend des conditions actuelles et des instructions locales et n'est jamais supposé."
+      }
+    },
+    "lake-assale": {
+      "guideSlug": "lake-assale-and-lake-afdera",
+      "name": "Lac Assale",
+      "headline": "Là où le sel devient un mode de vie",
+      "region": "Région Afar · Danakil",
+      "tag": "Pays Salé",
+      "imageAlt": "Croute de sel et eaux peu profondes au lac Assale au coucher du soleil",
+      "seoTitle": "Lac Assale Éthiopie | Lac salé Danakil et caravanes de sel",
+      "seoDescription": "Visitez le lac Assale (lac Karum) dans la dépression de Danakil en Éthiopie et découvrez les salines, la coupe de sel Afar et les caravanes de chameaux du commerce du sel.",
+      "teaser": "La route blanche : une plaine salée qui est travail, commerce et histoire, pas seulement un paysage.",
+      "intro": "Le lac Assale, également appelé lac Karum, se trouve à environ 120 mètres sous le niveau de la mer. Le sel domine le paysage et la surface peut paraître presque infinie, mais ce n’est pas un désert vide. C'est l'un des paysages fonctionnels les plus anciens d'Éthiopie.",
+      "bestTime": "novembre – janvier",
+      "duration": "Un après-midi et une matinée",
+      "altitude": "Environ 120 m sous le niveau de la mer",
+      "highlights": {
+        "0": "La plaine salée au coucher du soleil, à mesure que la couleur change",
+        "1": "Sel coupé à la main en blocs, où les travaux sont en cours",
+        "2": "Caravanes de chameaux, en fonction du moment et de l'activité",
+        "3": "Nuit à Hamed Ela, le campement des sauniers"
+      },
+      "paragraphs": {
+        "0": "Chaque matin pendant la saison de travail, les hommes se dirigent vers le lit asséché du lac pour ramasser la croûte de sel avec des haches et des poteaux en bois et la façonner en blocs. Pendant des siècles, ces blocs, appelés amole, ont été utilisés comme monnaie dans toute l'Éthiopie.",
+        "1": "Les caravanes de chameaux transportent le sel vers l'ouest jusqu'à Berahile, la principale ville de commerce du sel de la région, désormais reliée par la route à Mekelle ; les historiens pensent que ce commerce existe depuis plus de mille ans. Les camions remplacent progressivement les chameaux, ce qui rend les caravanes que vous voyez encore plus précieuses.",
+        "2": "Le lien entre le paysage et les moyens de subsistance est ce qui fait que le lac Assale mérite d'être compris. Là où des travaux sont en cours, nous observons à distance respectueuse et ne les mettons jamais en scène."
+      }
+    },
+    "lake-afdera": {
+      "guideSlug": "lake-assale-and-lake-afdera",
+      "name": "Lac Afdera",
+      "headline": "Le désert a un lac",
+      "region": "Région Afar · Danakil",
+      "tag": "Lac Salé",
+      "imageAlt": "L'eau d'un lac bleu-vert et une rive en croûte de sel au lac Afdera",
+      "seoTitle": "Lac Afdera Éthiopie | Lac Salé à Afar",
+      "seoDescription": "Découvrez le lac Afdera (Afrera), un lac hypersalin situé à plus de 100 m sous le niveau de la mer dans la région Afar en Éthiopie, alimenté par des sources chaudes et entouré de salines.",
+      "teaser": "Après des heures de marais salants et de terrain volcanique, l'eau apparaît dans le désert.",
+      "intro": "Le lac Afdera, également appelé Afrera, offre une autre facette d'Afar. Il se trouve à plus de 100 mètres sous le niveau de la mer et couvre environ 117 kilomètres carrés, sans rivière qui s'y jette : les sources chaudes le long du rivage l'alimentent à la place.",
+      "bestTime": "novembre – janvier",
+      "duration": "Un arrêt ou une nuit",
+      "altitude": "Plus de 100 m sous la mer niveau",
+      "highlights": {
+        "0": "Eau hypersaline, plus de quatre fois plus salée que la mer",
+        "1": "Sources chaudes le long du rivage",
+        "2": "Étangs d'évaporation de sel et salines locales",
+        "3": "Une pause naturelle sur la route. vers Erta Ale"
+      },
+      "paragraphs": {
+        "0": "Le lac mesure jusqu'à environ 80 mètres de profondeur et contient environ 160 grammes de sel par litre. Les rectangles blancs autour de sa rive sont des bassins d'évaporation, où le sel est produit à partir de la saumure ; les gisements qui l'entourent sont parmi les plus importants de la région.",
+        "1": "Sur la plupart de nos Danakil Pour les expéditions, Afdera est la première étape après la descente de Semera, et lors de voyages plus longs, nous passons une nuit ici. Cela devient une pause naturelle : un endroit pour ralentir, regarder la route et comprendre à quel point Afar est vraiment varié."
+      }
+    },
+    "hamed-ela": {
+      "guideSlug": "responsible-travel-in-afar",
+      "name": "Hamed Ela",
+      "headline": "Une base au cœur du pays du sel.",
+      "region": "Région Afar · Danakil",
+      "tag": "Base d'expédition",
+      "imageAlt": "Des chameaux rassemblés sur la plaine salée près de Hamed Ela au coucher du soleil",
+      "seoTitle": "Hamed Éla | Guide du camp et de l'expédition de Danakil",
+      "seoDescription": "Comprenez le rôle de Hamed Ela dans une expédition à Danakil, les attentes de base du camp et les voyages vers le lac Assale et Dallol.",
+      "teaser": "Entre la traversée du désert et la plaine salée, un endroit pour se reposer et se préparer pour le prochain départ matinal.",
+      "intro": "Hamed Ela fait partie du paysage industriel d'Afar et constitue une base pour la section des pays salés d'une expédition Danakil. Le temps ici relie le voyage vers le lac Assale et Dallol avec les réalités pratiques du voyage dans le désert.",
+      "bestTime": "novembre – janvier",
+      "duration": "1 à 3 nuits au sein d'une expédition",
+      "altitude": "Bases terres d'Afar",
+      "highlights": {
+        "0": "Une base pour le lac Assale et Dallol, lorsqu'ils sont accessibles",
+        "1": "Départs anticipés vers le pays du sel",
+        "2": "La vie du camp d'expédition de base",
+        "3": "Comprendre le lien entre le sel, le commerce et les communautés Afar"
+      },
+      "paragraphs": {
+        "0": "Après la traversée depuis Erta Ale, Hamed Ela prévoit une pause avant la prochaine étape de l'expédition. Le rythme suit l'environnement : arriver, se reposer, s'hydrater et préparer les sorties pendant les heures les plus fraîches.",
+        "1": "Il s'agit d'un établissement et d'un lieu de travail, pas d'une attraction culturelle mise en scène. Les conversations et la photographie dépendent de l’activité et du consentement locaux. Les sauniers et les mouvements de caravanes ne sont jamais des caractéristiques garanties d'un départ."
+      },
+      "sections": {
+        "0": {
+          "title": "À quoi s'attendre au camp",
+          "text": "Attendez-vous à un hébergement d'expédition de base plutôt qu'au confort d'un hôtel. Les modalités de couchage, les installations sanitaires et les emplacements de camp sont confirmés avec votre itinéraire. Emportez vos essentiels personnels et ne présumez pas d'une connectivité ou d'installations de recharge fiables."
+        },
+        "1": {
+          "title": "Planifier les journées au pays du sel",
+          "text": "Les visites du lac Assale et de Dallol sont planifiées en fonction de la chaleur, de l'accès actuel et des conseils locaux. Les itinéraires plus longs laissent place au repos et à la photographie plutôt que de traiter chaque arrêt comme un rendez-vous fixe."
+        }
+      },
+      "note": {
+        "title": "Les arrangements du camp suivent l'itinéraire",
+        "text": "Le lieu de nuit et les installations dépendent du plan d'expédition confirmé. Renseignez-vous sur les arrangements pour vos dates avant le départ."
+      },
+      "faqs": {
+        "0": {
+          "q": "Hamed Ela est-il un séjour à l’hôtel ?",
+          "a": "Planifiez les conditions de base du camp. Votre devis et votre briefing avant le départ expliquent l'hébergement et les installations disponibles pour votre expédition."
+        },
+        "1": {
+          "q": "Verrons-nous des caravanes de sel ?",
+          "a": "Seulement si l'activité et le calendrier le permettent. Nous observons le commerce du sel tel qu'il se déroule et ne le mettons pas en scène pour les visiteurs."
+        }
+      }
+    },
+    "semera": {
+      "guideSlug": "semera-danakil-expedition-planning",
+      "name": "Sémera",
+      "headline": "Préparez-vous pour le voyage vers Afar",
+      "region": "Région Afar",
+      "tag": "Passerelle d'expédition",
+      "imageAlt": "Vue aérienne des routes et des bâtiments de Semera",
+      "seoTitle": "Semera | Guide de départ Afar et Danakil",
+      "seoDescription": "Planifiez une expédition Danakil commençant à Semera : coordination de l'arrivée, préparation, poursuite du voyage et itinéraire vers Afar.",
+      "teaser": "Le point de rendez-vous de nombreux voyages Afar, où l'arrivée devient expédition. préparation.",
+      "intro": "Semera est le point de départ et d'arrivée de la plupart du catalogue Afar Horizon Danakil. Son rôle est pratique : rencontrer l'équipe, revoir l'itinéraire et se préparer avant de voyager vers le lac Afdera, le paysage volcanique et le pays du sel.",
+      "bestTime": "Planifiez en fonction des dates de votre expédition",
+      "duration": "Arrivée et départ, comme convenu",
+      "altitude": "Bases terres d'Afar",
+      "highlights": {
+        "0": "Coordination de l'arrivée avant l'expédition",
+        "1": "Brefing sur les itinéraires et l'équipement",
+        "2": "Préparation du chauffage, de l'eau et des camps de base",
+        "3": "Connexions vers le lac Afdera et le Danakil"
+      },
+      "paragraphs": {
+        "0": "Partagez les détails de votre arrivée avant de confirmer un départ. Les vols, les liaisons terrestres et l'hébergement doivent correspondre au programme de l'expédition ; atteindre la porte d'entrée et commencer la route du désert sont des parties distinctes du plan.",
+        "1": "La préparation compte autant que le premier point de vue. Profitez du briefing pour discuter de la marche, de l'équipement personnel, de l'eau, des intérêts en matière de photographie et de la suite du voyage. Votre itinéraire confirmé indique où commence le voyage et quels transferts sont inclus."
+      },
+      "sections": {
+        "0": {
+          "title": "Arrivant d'Addis-Abeba",
+          "text": "Demandez à l'équipe de coordonner votre proposition d'arrivée avec l'expédition. La disponibilité des transports et les horaires de correspondance sont vérifiés pour vos dates ; ne supposez pas une correspondance le jour même ou un vol inclus, sauf indication contraire dans votre devis."
+        },
+        "1": {
+          "title": "Semera ou Mekelle ?",
+          "text": "Le catalogue principal actuel démarre à partir de Semera. Une connexion vers les hauts plateaux via Mekelle est un choix d'itinéraire différent et dépend de l'accès et de l'itinéraire plus large. Choisissez la passerelle avec l'équipe avant d'organiser votre voyage ultérieur."
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Tous les forfaits retournent-ils à Semera ?",
+          "a": "Les principales expéditions Danakil le font. Les voyages combinés dans les hautes terres peuvent avoir un point final différent ; vérifiez le départ et l'arrivée indiqués sur le forfait sélectionné."
+        },
+        "1": {
+          "q": "Les vols et l'hébergement à l'arrivée sont-ils inclus ?",
+          "a": "Uniquement lorsque cela est indiqué dans votre devis confirmé. Partagez vos plans de correspondance afin que les transferts, l'hébergement et le calendrier de l'expédition puissent être coordonnés."
+        }
+      }
+    },
+    "awash-national-park": {
+      "name": "Parc national Awash",
+      "headline": "Un autre paysage aux portes de l'Afar",
+      "region": "Afar et Oromia",
+      "tag": "Faune et paysage",
+      "imageAlt": "Chute d'eau sur les corniches rocheuses du parc national Awash",
+      "seoTitle": "Parc national Awash | Faune et Afar Guide de voyage",
+      "seoDescription": "Explorez la faune, le paysage fluvial et les plaines volcaniques du parc national d'Awash, avec des conseils pratiques pour une éventuelle prolongation du voyage Afar.",
+      "teaser": "Rivières, savanes et terrains volcaniques ajoutent un chapitre différent à un voyage Afar.",
+      "intro": "Le parc national Awash s'étend sur Afar et Oromia. La rivière Awash, les forêts d'acacias et les plaines volcaniques ouvertes offrent un contraste avec les paysages salins et géothermiques du Danakil.",
+      "bestTime": "Septembre – mars ; confirmer les conditions",
+      "duration": "Une extension, prévue séparément",
+      "altitude": "Bases terres de la vallée du Rift",
+      "highlights": {
+        "0": "Les gorges et la cascade de la rivière Awash",
+        "1": "Savane d'acacias et plaines volcaniques",
+        "2": "Observation de la faune, sans observation garantie",
+        "3": "Photographie de paysages et d'oiseaux"
+      },
+      "paragraphs": {
+        "0": "Oryx, gazelles, koudous et babouins font partie de la faune du parc. L'observation dépend des conditions locales et des animaux eux-mêmes. Gardez une distance respectueuse et suivez les indications du parc.",
+        "1": "Ce guide présente une extension possible plutôt que d'ajouter un arrêt de parc à chaque forfait Danakil. Discutez du temps de trajet supplémentaire, de l'hébergement et du transport avant de combiner les deux domaines."
+      },
+      "sections": {
+        "0": {
+          "title": "Planifiez une extension séparément",
+          "text": "Les forfaits Danakil existants n'incluent pas le parc national d'Awash. Une visite nécessite un itinéraire et un devis confirmés distincts, avec l'accès au parc et les modalités de nuit vérifiées pour vos dates."
+        }
+      },
+      "note": {
+        "title": "Un guide, pas un départ garanti",
+        "text": "Demandez à l'équipe si une extension Awash peut être organisée pour votre voyage avant d'effectuer des réservations ultérieures."
+      },
+      "faqs": {
+        "0": {
+          "q": "Awash est-il inclus dans les expéditions Danakil publiées ?",
+          "a": "Non. Traitez-le comme une extension distincte à discuter lors de la planification de votre voyage plus large."
+        }
+      }
+    },
+    "hadar": {
+      "name": "Hadar et la basse vallée de l'Awash",
+      "headline": "La place d'Afar dans l'histoire des origines humaines",
+      "region": "Région Afar",
+      "tag": "Origines humaines",
+      "imageAlt": "Rivière et des rives verdoyantes dans le paysage Awash",
+      "seoTitle": "Hadar et la basse vallée de l'Awash | Guide des origines humaines Afar",
+      "seoDescription": "En savoir plus Hadar, la découverte de Lucy et de la basse vallée de l'Awash, avec des conseils clairs pour discuter d'une éventuelle visite spécialisée.",
+      "teaser": "Au-delà des volcans et du sel, Afar recèle les traces d'une histoire humaine beaucoup plus ancienne.",
+      "intro": "Hadar est associé à la découverte en 1974 de Lucy, un squelette partiel d'Australopithecus afarensis daté d'il y a environ 3,2 millions d'années. Il apporte une perspective d'origine humaine aux paysages d'Afar.",
+      "bestTime": "Sous réserve d'accords d'accès spécialisés",
+      "duration": "Une visite spécialisée, si confirmée",
+      "altitude": "Basse vallée de l'Awash",
+      "highlights": {
+        "0": "La découverte de Lucy et sa signification",
+        "1": "Comprendre un paysage fossilifère",
+        "2": "La relation entre la géologie et les origines humaines",
+        "3": "Planification responsable d'une visite spécialisée du patrimoine"
+      },
+      "paragraphs": {
+        "0": "La basse vallée de l'Awash est un endroit pour comprendre à travers le contexte et une interprétation minutieuse. Son importance n'est pas une promesse de trouver des fossiles lors d'une promenade ou de voir des spécimens originaux sur le terrain.",
+        "1": "Ceci est un guide de connaissances ; une visite sur le terrain nécessite une confirmation séparée de l'accès, des arrangements locaux et un itinéraire adapté."
+      },
+      "sections": {
+        "0": {
+          "title": "Discutez du but d'une visite",
+          "text": "Dites à l'équipe si votre intérêt est l'histoire générale, la géologie ou les études spécialisées. Un site de recherche ou de patrimoine ne doit pas être traité comme une simple halte touristique, et aucune visite n'est incluse dans les forfaits actuellement publiés."
+        }
+      },
+      "note": {
+        "title": "L'accès des visiteurs doit être confirmé",
+        "text": "Ne présumez pas d'un accès illimité ni d'une visite programmée. Une visite n'est envisagée qu'après vérification des dispositions locales nécessaires."
+      },
+      "faqs": {
+        "0": {
+          "q": "Vais-je voir le squelette original de Lucy à Hadar ?",
+          "a": "Ce guide concerne le paysage découverte. Il ne promet pas l'accès aux spécimens originaux ni à une exposition muséale sur le site."
+        },
+        "1": {
+          "q": "Le Hadar peut-il être ajouté à un forfait Danakil ?",
+          "a": "Renseignez-vous sur une visite spécialisée planifiée séparément. L'accès, le calendrier et la logistique doivent être confirmés avant de pouvoir faire partie de votre itinéraire."
+        }
+      }
+    },
+    "gheralta": {
+      "name": "Gheralta",
+      "headline": "Églises au-dessus des nuages",
+      "region": "Tigré",
+      "tag": "Églises rupestres",
+      "imageAlt": "Un visiteur au bord d'une falaise dans le paysage montagneux de Gheralta",
+      "seoTitle": "Gheralta Éthiopie | Églises taillées dans le roc et randonnées en montagne",
+      "seoDescription": "Explorez les montagnes de grès de Gheralta et les églises taillées dans le roc, notamment Abuna Yemata Guh et Maryam Korkor, avec une équipe éthiopienne gérée localement.",
+      "teaser": "Falaises de grès, églises cachées et sentiers qui y mènent.",
+      "intro": "Gheralta est le point de rencontre du paysage et de la foi. Des montagnes de grès s'élèvent des plaines environnantes et des églises sont cachées dans les falaises, accessibles par des sentiers qui peuvent demander un réel effort physique. Le voyage vers une église fait partie de l'histoire.",
+      "bestTime": "Octobre à mars",
+      "duration": "2 – 3 jours",
+      "altitude": "Plateau et falaises des Highlands",
+      "highlights": {
+        "0": "Abuna Yemata Guh, sculpté dans une flèche rocheuse avec des dénivelés d'environ 200 m",
+        "1": "Maryam Korkor et Daniel Korkor, côte à côte au bord d'une falaise",
+        "2": "Intérieurs peints vieux de plusieurs siècles",
+        "3": "La randonnée en montagne à travers les villages agricoles",
+        "4": "Photographie et interprétation culturelle"
+      },
+      "paragraphs": {
+        "0": "Le Tigré compte environ 120 églises rupestres, creusées dans les falaises, les grottes et les plateaux entre le IVe et le XVe siècle environ, et Gheralta possède certaines des plus remarquables. Ce sont toujours des lieux de culte.",
+        "1": "Abuna Yemata Guh est le plus connu. La tradition le relie à Abuna Yemata, l'un des neuf saints qui ont propagé le christianisme en Éthiopie, et il est sculpté sur le côté d'une flèche en grès. La dernière partie de l'ascension se fait pieds nus, sans cordes, le long d'une corniche au-dessus d'un long dénivelé. À l'intérieur, les fresques de deux dômes ont survécu pendant des siècles sans avoir besoin d'être repeintes.",
+        "2": "Maryam Korkor et Daniel Korkor sont assis l'un à côté de l'autre au sommet d'une falaise, atteint par une montée raide offrant une large vue sur le plateau. Des églises plus faciles se trouvent à proximité pour les voyageurs qui préfèrent garder les pieds sur un terrain plat. Nous construisons la journée autour d'un rythme confortable, pas d'une course pour collecter des églises."
+      },
+      "sections": {
+        "0": {
+          "title": "Étiquette de l'église",
+          "items": {
+            "0": "Habillez-vous modestement",
+            "1": "Demandez avant de prendre des photos",
+            "2": "Respecter le culte en cours",
+            "3": "Suivez le guide de l'église locale",
+            "4": "Ne montez pas et ne touchez pas les éléments religieux fragiles"
+          }
+        }
+      },
+      "note": {
+        "title": "Accès au Tigré",
+        "text": "Gheralta se trouve dans le Tigré, où l'accès peut changer. Nous confirmons les conditions actuelles avant de proposer un itinéraire et nous n'encourageons jamais les voyageurs à prendre des risques inutiles pour une photo."
+      }
+    },
+    "axum": {
+      "name": "Aksoum",
+      "headline": "Là où l'histoire est toujours présente",
+      "region": "Tigré",
+      "tag": "Ancien Royaume",
+      "imageAlt": "Obélisque en pierre sculptée à Axoum sous un ciel bleu",
+      "seoTitle": "Axum Éthiopie | Ancien Royaume, obélisques et histoire",
+      "seoDescription": "Explorez Axum, centre de l'ancien royaume aksumite et site du patrimoine mondial de l'UNESCO : stèles monumentales, tombeaux royaux et église Sainte-Marie de Sion.",
+      "teaser": "Avant la carte moderne, il y avait Axoum.",
+      "intro": "Axoum était le cœur d'un puissant royaume situé entre l'Afrique, l'Arabie et le monde antique au sens large. L'UNESCO la classe au patrimoine mondial et la décrit comme le centre de la civilisation aksumite, dont le commerce reliait le nord-est de l'Afrique à la mer Rouge et au-delà.",
+      "bestTime": "Octobre à mars",
+      "duration": "1 – 2 jours",
+      "altitude": "Environ 2 100 m",
+      "highlights": {
+        "0": "Le parc des stèles du nord, y compris l'obélisque d'Axoum de 24 m",
+        "1": "La Grande Stèle tombée : 33 m de long et environ 520 tonnes",
+        "2": "Stèle et tombeaux royaux du roi Ezana",
+        "3": "L'église Sainte-Marie de Sion",
+        "4": "Interprétation historique guidée"
+      },
+      "paragraphs": {
+        "0": "Les stèles sont la signature de la ville. Le plus haut encore debout, celui du roi Ezana, mesure environ 21 mètres de haut. La Grande Stèle, longue de 33 mètres et pesant environ 520 tonnes, est probablement tombée et s'est brisée lors de son élévation et repose toujours là où elle est tombée.",
+        "1": "L'obélisque d'Axoum de 24 mètres, sculpté au IVe siècle avec de fausses portes et fenêtres, a été transporté à Rome en 1937 pendant l'occupation italienne. Il est rentré en trois morceaux en avril 2005 et a été reconstruit en 2008, un moment de célébration nationale.",
+        "2": "Axum est aussi le cœur spirituel de l'Église orthodoxe éthiopienne : l'église Sainte-Marie de Sion est, par tradition, le lieu de repos de l'Arche d'Alliance. Nous ne voulons pas que vous vous contentiez de photographier les monuments. Nous voulons que vous compreniez pourquoi ils sont là."
+      },
+      "note": {
+        "title": "Accès au Tigré",
+        "text": "Axoum se trouve dans le Tigré, où l'accès peut changer. Nous confirmons les conditions actuelles avant de proposer un itinéraire qui l'inclut."
+      }
+    },
+    "lalibela": {
+      "guideSlug": "lalibela-at-dawn",
+      "name": "Lalibela",
+      "headline": "La pierre, la foi et l'humain imagination",
+      "region": "Amhara",
+      "tag": "Patrimoine vivant",
+      "imageAlt": "Entrée et marches d'église taillées dans le roc à Lalibela",
+      "seoTitle": "Lalibela Éthiopie | Églises taillées dans le roc et visites privées",
+      "seoDescription": "Découvrez les onze églises rupestres de Lalibela, site du patrimoine mondial de l'UNESCO, grâce à des guides locaux, une interprétation culturelle et des voyages privés.",
+      "teaser": "Une ville creusée dans la roche, et toujours un lieu de culte.",
+      "intro": "Plutôt que de construire des églises en hauteur, les bâtisseurs médiévaux les ont creusées dans la roche. L'UNESCO a inscrit les onze églises monolithiques de Lalibela au patrimoine mondial depuis 1978. Mais l'histoire est plus grande que la pierre : Lalibela reste un lieu religieux vivant.",
+      "bestTime": "Octobre à mars",
+      "duration": "1 – 2 jours",
+      "altitude": "Environ 2 480 m",
+      "highlights": {
+        "0": "Onze églises taillées dans la roche, reliées par des tranchées et tunnels",
+        "1": "Bete Giyorgis, l'église en forme de croix sculptée d'en haut",
+        "2": "Tôt le matin, les cloches des églises et les fidèles",
+        "3": "Histoire, architecture et tradition vivante de votre guide"
+      },
+      "paragraphs": {
+        "0": "Les églises portent le nom du roi Gebre Meskel Lalibela de la dynastie Zagwe, qui régna vers 1181-1221 et, par tradition, entreprit de construire une nouvelle Jérusalem. Cinq églises se trouvent au nord de la petite rivière que la ville appelle le Jourdain, cinq au sud et une se démarque.",
+        "1": "Celle-ci est Bete Giyorgis, l'église de Saint-Georges : une église en forme de croix taillée directement dans la roche, de sorte que son toit soit au niveau du sol qui l'entoure.",
+        "2": "Réveillez-vous tôt et marchez avant la chaleur. Écoutez les cloches, regardez les fidèles se déplacer dans les espaces anciens, puis asseyez-vous pour prendre un café, car l’histoire de l’Éthiopie n’est pas gardée derrière une vitre. Les visiteurs doivent en faire l'expérience avec respect."
+      }
+    },
+    "simien-mountains": {
+      "name": "Montagnes du Simien",
+      "headline": "Les montagnes qui ont commencé l'histoire",
+      "region": "Amhara",
+      "tag": "Randonnée",
+      "imageAlt": "Escarpements verdoyants et escarpés des montagnes du Simien",
+      "seoTitle": "Montagnes du Simien Éthiopie | Trekking, faune et expéditions",
+      "seoDescription": "Trekking dans les montagnes du Simien, un parc national classé au patrimoine mondial de l'UNESCO, avec un guide de montagne éthiopien : escarpements, gelada, Walia ibex et Ras Dashen.",
+      "teaser": "Là où le plateau éthiopien s'effondre soudainement dans de profondes vallées.",
+      "intro": "C'est personnel. Notre fondateur, Tesema Teven, est né et a grandi à l'ombre de ces montagnes. Le Simien n'est pas un produit de plus dans un catalogue ; c'est là qu'il a appris ce que signifie connaître un paysage.",
+      "bestTime": "Octobre à mars",
+      "duration": "2 – 4 jours",
+      "altitude": "Jusqu'à 4 550 m (Ras Dashen)",
+      "highlights": {
+        "0": "Promenades sur l'escarpement à Sankaber, Geech, Imet Gogo et Chenek",
+        "1": "Troupes Gelada dans les prairies",
+        "2": "Le bouquetin Walia, que l'on ne trouve nulle part ailleurs sur Terre",
+        "3": "Ras Dashen, le plus haut sommet d'Éthiopie, lors de randonnées plus longues",
+        "4": "Scouts locaux, villages de montagne et café sur le sentier"
+      },
+      "paragraphs": {
+        "0": "Le parc national des monts Simien s'étend sur environ 412 kilomètres carrés et est inscrit au patrimoine mondial de l'UNESCO depuis 1978. Il a été inscrit sur la liste des sites en danger en 1996, lorsque le bouquetin Walia était en déclin, et supprimé en 2017 après le rétablissement de ses populations.",
+        "1": "C'est le refuge du bouquetin Walia, une chèvre de montagne que l'on ne trouve qu'ici, de la gelada et du rare loup éthiopien. Ras Dashen, culminant à environ 4 550 mètres, est le point culminant d'Éthiopie.",
+        "2": "Nous ne considérons pas le trekking comme une simple marche entre les camps. Vous rencontrez des éclaireurs locaux, vous promenez dans des paysages agricoles, vous arrêtez pour prendre un café, regardez des geladas et, si les conditions le permettent, grimpez plus haut. Le défi ici est l'altitude, le froid et le terrain plutôt que la chaleur."
+      }
+    },
+    "gondar": {
+      "name": "Gondar",
+      "headline": "La ville royale des hauts plateaux",
+      "region": "Amhara",
+      "tag": "Ville royale",
+      "imageAlt": "Château en pierre avec tours à Gondar",
+      "seoTitle": "Gondar Éthiopie | Châteaux, histoire et visites privées",
+      "seoDescription": "Explorez Gondar : l'enceinte royale de Fasil Ghebbi, Debre Birhan Selassie, Fasilides' Bath et Timkat, porte d'entrée du Simien, classée au patrimoine mondial de l'UNESCO. Montagnes.",
+      "teaser": "Châteaux en pierre, églises peintes et montagnes qui attendent au-delà de la ville.",
+      "intro": "L'empereur Fasilides fit de Gondar sa capitale permanente en 1636 et, pendant plus de deux siècles, elle fut le siège des empereurs d'Éthiopie. C'est aujourd'hui le pont entre l'histoire du nord et les monts du Simien.",
+      "bestTime": "Octobre à mars",
+      "duration": "1 – 2 jours",
+      "altitude": "Environ 2 100 m",
+      "highlights": {
+        "0": "Fasil Ghebbi, l'enceinte royale, site du patrimoine mondial de l'UNESCO",
+        "1": "Debre Birhan Selassie et son plafond d'anges peints",
+        "2": "Les bains de Fasilides, remplis chaque mois de janvier pour Timkat",
+        "3": "Café, repas et promenades en ville"
+      },
+      "paragraphs": {
+        "0": "Fasil Ghebbi, la ville forteresse de Fasilides et de ses successeurs, est entourée d'un mur d'environ 900 mètres de long. Ses palais, églises et bâtiments mélangent la tradition locale avec les influences arabes, indiennes et baroques apportées par les missionnaires jésuites.",
+        "1": "Debre Birhan Selassie a été construite sous l'empereur Iyasu I (1682-1706) et est la seule église de Gondar à avoir survécu à l'invasion mahdiste de 1888, par la légende protégée par un essaim de les abeilles. Son plafond est recouvert de rangées de visages d'anges ailés.",
+        "2": "Le bain de Fasilides est une piscine royale engloutie qui est remplie chaque année pour Timkat, l'Épiphanie éthiopienne, le 19 janvier (20 janvier les années bissextiles), lorsque la ville se rassemble pour la bénédiction du eaux. Les moments les plus mémorables se déroulent souvent loin des monuments : une cérémonie du café, un repas, une promenade en ville."
+      }
+    },
+    "mekelle": {
+      "name": "Mekele",
+      "headline": "Planifier la connexion entre les hauts plateaux et les basses terres",
+      "region": "Tigré",
+      "tag": "Passerelle des Hautes Terres",
+      "imageAlt": "Grand monument sur fond de ciel bleu à Mekelle",
+      "seoTitle": "Mekelle | Guide des Hautes Terres et de la passerelle Danakil",
+      "seoDescription": "Comprenez le rôle de Mekelle dans voyages proposés entre les hautes terres et Afar et comment planifier une connexion par passerelle avec les contrôles d'accès actuels.",
+      "teaser": "Une porte d'entrée dans les hautes terres à considérer lors de la connexion de Gheralta, Axum et du voyage vers Afar.",
+      "intro": "Mekelle, également écrit Mekele, apparaît dans les voyages proposés reliant les hauts plateaux du nord avec Afar. Il appartient à la conversation de planification de ces itinéraires, plutôt que d'être traité comme un point de départ interchangeable pour chaque forfait Danakil.",
+      "bestTime": "Sous réserve d'accès et de votre itinéraire plus large",
+      "duration": "Un arrêt passerelle, comme prévu",
+      "altitude": "Hauts plateaux du Nord",
+      "highlights": {
+        "0": "Planifier la transition des hauts plateaux vers Afar",
+        "1": "Connexions avec les itinéraires de Gheralta et Axum",
+        "2": "Comparer un départ des hauts plateaux avec le catalogue Semera",
+        "3": "Coordonner l'arrivée et la suite du voyage autour de l'itinéraire confirmé"
+      },
+      "paragraphs": {
+        "0": "Un voyage depuis les hauts plateaux jusqu'à Afar raconte une histoire différente d'un aller-retour à Semera. Les paysages de montagne, l'histoire et la descente vers les plaines font partie de l'expédition, avec du temps supplémentaire nécessaire pour les correspondances.",
+        "1": "Les voyages proposés de Mekelle à Semera et d'Axum à Afar restent des concepts dépendants des conditions. Ce guide permet d'expliquer le choix de l'itinéraire ; il n'annonce pas de départ programmé ni ne garantit qu'une connexion est actuellement disponible."
+      },
+      "sections": {
+        "0": {
+          "title": "Choisissez la bonne porte d'entrée",
+          "text": "Pour les packages Danakil de base publiés, utilisez le début et la fin Semera indiqués. Si votre voyage plus large inclut les hauts plateaux, discutez de Mekelle avec l'équipe avant de réserver des correspondances ou en supposant qu'un forfait peut simplement être inversé."
+        },
+        "1": {
+          "title": "Confirmez l'intégralité du voyage",
+          "text": "Le transport d'arrivée, l'accès routier, l'hébergement et les correspondances ultérieures doivent fonctionner ensemble. Celles-ci sont vérifiées pour les dates proposées avant qu'un itinéraire des hautes terres vers l'Afar ne soit confirmé."
+        }
+      },
+      "note": {
+        "title": "Une connexion dépendante des conditions",
+        "text": "Mekelle se trouve dans le Tigré. Les itinéraires à travers la région nécessitent des contrôles opérationnels en cours ; cette page ne confirme pas la disponibilité des voyages."
+      },
+      "faqs": {
+        "0": {
+          "q": "Puis-je démarrer un forfait Danakil publié à Mekelle ?",
+          "a": "Les forfaits de base actuels commencent à Semera. Renseignez-vous sur une connexion sur mesure avec les Highlands ; sa faisabilité et son itinéraire doivent être confirmés séparément."
+        },
+        "1": {
+          "q": "L’expédition Mountain to Horizon est-elle disponible ici ?",
+          "a": "Il s'agit d'un itinéraire proposé, dépendant des conditions plutôt que d'un départ confirmé par catalogue. Discutez de vos dates et intérêts avec l’équipe."
+        }
+      }
+    },
+    "bahir-dar": {
+      "name": "Baher Dar",
+      "headline": "Une base au bord du lac pour le voyage vers le nord",
+      "region": "Amhara · Lac Tana",
+      "tag": "Passerelle au bord du lac",
+      "imageAlt": "Bébé au bord du lac et rivage verdoyant près de Bahir Dar",
+      "seoTitle": "Bahir Dar | Guide du lac Tana et du nord de l'Éthiopie",
+      "seoDescription": "Planifiez du temps à Bahir Dar, la porte d'entrée du lac Tana, avec des conseils sur les visites du lac et sa place dans les itinéraires du nord de l'Éthiopie.",
+      "teaser": "Voyages sur les lacs, pause en ville et correspondances à travers le nord historique.",
+      "intro": "Bahir Dar est une base pour découverte du lac Tana et arrêt dans le catalogue du nord de l'Ethiopie. Il offre un changement de rythme entre les jours de voyage, le lac façonnant l'expérience.",
+      "bestTime": "Octobre à mars",
+      "duration": "1 à 2 nuits au sein d'un itinéraire nordique",
+      "altitude": "Hauts plateaux du Nord",
+      "highlights": {
+        "0": "Bateau sur le lac Tana voyages",
+        "1": "Visites du monastère là où elles sont accessibles",
+        "2": "Le temps autour de la ville et de son marché",
+        "3": "Connexions suivantes vers Gondar"
+      },
+      "paragraphs": {
+        "0": "Bahir Dar constitue la base pratique ; Le lac Tana offre l'expérience du lac et du monastère. Les deux guides se complètent sans pour autant supposer que chaque séjour suit le même programme.",
+        "1": "Les forfaits nordiques existants commencent ici leur chapitre sur les lacs. L'expédition du Grand Nord de l'Éthiopie dirigée par Afar approche dans la direction opposée et se termine à Bahir Dar."
+      },
+      "sections": {
+        "0": {
+          "title": "Coordonner l'arrivée et la suite du voyage",
+          "text": "Les connexions, les transferts et les nuitées doivent correspondre à votre itinéraire confirmé. Renseignez-vous sur les vols et les transferts terrestres inclus avant de réserver votre voyage ultérieur."
+        },
+        "1": {
+          "title": "Prévoyez du temps pour le lac",
+          "text": "Une sortie sur un lac nécessite son propre programme. L'itinéraire en bateau, les visites du monastère et toute excursion sur le Nil Bleu sont confirmés en fonction du temps et des conditions disponibles."
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Bahir Dar est-il un voyage séparé ou une partie d'un voyage plus long ?",
+          "a": "Le catalogue actuel l'inclut dans les itinéraires nordiques. Renseignez-vous pour adapter l'heure ici à votre arrivée et à vos projets de continuation."
+        }
+      }
+    },
+    "lake-tana": {
+      "name": "Lac Tana",
+      "headline": "Un voyage à travers l'eau et le patrimoine vivant",
+      "region": "Amhara · Bahir Dar",
+      "tag": "Lac et monastères",
+      "imageAlt": "Coucher de soleil sur le lac Tana et un rivage lointain",
+      "seoTitle": "Lac Tana | Monastères et voyages dans le nord de l'Éthiopie",
+      "seoDescription": "Découvrez le lac Tana à travers des voyages en bateau et des visites de monastères depuis Bahir Dar, dans le cadre d'un itinéraire sur mesure dans le nord de l'Éthiopie.",
+      "teaser": "Un chapitre lacustre du nord historique, accessible en bateau depuis Bahir Dar.",
+      "intro": "Le lac Tana est la source du Nil Bleu et est connu pour les monastères sur ses îles et péninsules. Un voyage en bateau depuis Bahir Dar relie le paysage au patrimoine religieux.",
+      "bestTime": "Octobre à mars",
+      "duration": "Une journée sur un lac dans un itinéraire nordique",
+      "altitude": "Hauts plateaux du Nord",
+      "highlights": {
+        "0": "Voyages en bateau depuis Bahir Dar",
+        "1": "Monastères sélectionnés sur les îles et les péninsules",
+        "2": "Art religieux et interprétation historique",
+        "3": "Paysages lacustres et observation des oiseaux"
+      },
+      "paragraphs": {
+        "0": "Les visites du lac sont planifiées en fonction du temps disponible, des conditions des bateaux et des monastères ouverts aux visiteurs. Une sortie plus courte et une journée complète au lac offrent différentes possibilités ; votre itinéraire confirmé identifie l'itinéraire prévu.",
+        "1": "Les monastères sont des lieux de culte. Suivez les instructions locales sur la tenue vestimentaire, l'accès et la photographie, et laissez le guide expliquer le cadre plutôt que de traiter la visite comme une série d'arrêts photo."
+      },
+      "sections": {
+        "0": {
+          "title": "Choisissez l'itinéraire du lac avec votre guide",
+          "text": "Ne présumez pas que chaque île ou monastère est inclus. Discutez de la marche, des déplacements en bateau et de toute restriction de visite lorsque la journée au lac est prévue."
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Les excursions en bateau sont-elles incluses dans chaque forfait nordique ?",
+          "a": "Vérifier l'itinéraire jour par jour et le devis confirmé. L'itinéraire du bateau et les visites sont convenus pour votre départ."
+        },
+        "1": {
+          "q": "Une visite aux chutes du Nil Bleu est-elle la même chose qu'une excursion sur un lac ?",
+          "a": "Non. Il s'agit d'une excursion distincte dont le calendrier et l'inclusion doivent être confirmés dans votre itinéraire."
+        }
+      }
+    },
+    "northern-ethiopia": {
+      "guideSlug": "planning-northern-ethiopia-route",
+      "name": "Nord de l'Éthiopie",
+      "headline": "Une région, plusieurs mondes",
+      "region": "Afar · Tigré · Amhara",
+      "tag": "Tout le voyage",
+      "imageAlt": "Escarpements rocheux et vallées verdoyantes des hautes terres du nord de l'Éthiopie",
+      "seoTitle": "Circuits du nord de l'Éthiopie | Danakil, Gheralta, Axum et Simien",
+      "seoDescription": "Planifiez un voyage privé dans le nord de l'Éthiopie reliant le Danakil, l'Afar, Gheralta, Axum, Lalibela, le Simien, Gondar et le lac Tana, sous réserve de l'accès actuel.",
+      "teaser": "Plusieurs mondes reliés par les routes, et plus riches ensemble que n'importe lequel d'entre eux seul.",
+      "intro": "Le nord de l'Éthiopie n'est pas une expérience unique. Lalibela vous offre des églises taillées dans la roche, des falaises de Gheralta et des églises cachées, l'histoire ancienne d'Axum, le désert et le pays volcanique d'Afar, les hautes montagnes du Simien et Gondar et le lac Tana en Éthiopie royale et monastique.",
+      "bestTime": "Octobre à mars ; meilleur Danakil de novembre à janvier",
+      "duration": "9 – 21 jours",
+      "altitude": "Sous le niveau de la mer jusqu'à 4 550 m",
+      "highlights": {
+        "0": "Lalibela : la foi gravée dans la pierre",
+        "1": "Gheralta : des églises cachées dans les montagnes",
+        "2": "Axoum : une civilisation ancienne",
+        "3": "Afar et le Danakil : sel et volcan",
+        "4": "Le Simien : hautes montagnes",
+        "5": "Gondar et lac Tana : Éthiopie royale et monastique"
+      },
+      "paragraphs": {
+        "0": "Le lac Tana, le plus grand lac d'Éthiopie et source du Nil Bleu, compte des monastères sur une vingtaine de ses îles et péninsules, dont beaucoup ont entre 400 et 800 ans ; Ura Kidane Mehret, sur la péninsule de Zege, est connue pour ses murs peints. Le lac est devenu une réserve de biosphère de l'UNESCO en 2014, et les chutes du Nil Bleu, Tis Issat (« eau fumante »), se trouvent à environ 30 km de Bahir Dar.",
+        "1": "De là, Gondar, le Simien, Axoum, Gheralta et Lalibela suivent, le Danakil étant l'autre monde sous le niveau de la mer. Nous pouvons le construire autour de l'histoire, de la culture, des montagnes, du désert, de la photographie, de la foi, de la nourriture, des gens ou de la géologie, en utilisant les vols intérieurs qui leur permettent de gagner des jours sur la route.",
+        "2": "Se déplacer entre le Danakil et le Simien vous fait passer de la chaleur et de la déshydratation à l'altitude et au froid en quelques jours, nous planifions donc le repos et le rythme aussi soigneusement que l'itinéraire."
+      }
+    }
+  }
+}

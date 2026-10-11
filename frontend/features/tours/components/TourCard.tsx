@@ -1,24 +1,29 @@
+import {useCatalogueLabel} from '@/lib/i18n/labels'
+import {useToursCopy} from '../data/localized'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { InfoCard } from '@/components/common/InfoCard'
 import { CalendarDays, Clock, MapPin, Users } from 'lucide-react'
 import type { Tour } from '../types/tour.types'
 
 export function TourCard({
-  tour: t,
+  tour: baset,
   sizes,
 }: {
   tour: Tour
   sizes?: string
 }) {
+  const catalogueLabel = useCatalogueLabel()
+
+  const t = useToursCopy('tour.tours', baset)
+
   const [kind] = t.style.split(' · ')
   const priceOnRequest = t.from === 'Price on request'
   return (
-    <TranslationBoundary><InfoCard
+    <InfoCard
       href={`/expeditions/${t.slug}`}
       image={t.image}
       imageAlt={t.imageAlt ?? t.title}
-      badge={kind}
+      badge={catalogueLabel(kind)}
       eyebrow={priceOnRequest ? t.from : `From ${t.from.replace(' per person', '')} per person`}
       title={t.title}
       summary={t.teaser}
@@ -32,6 +37,6 @@ export function TourCard({
         },
       ]}
       sizes={sizes}
-    /></TranslationBoundary>
+    />
   )
 }

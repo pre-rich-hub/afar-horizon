@@ -1,5 +1,5 @@
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { defaultImage } from '@/lib/config/cloudinary'
 import { LinkButton } from '@/components/common/LinkButton'
 import { Reveal } from '@/components/common/Reveal'
@@ -16,15 +16,19 @@ interface CtaBandProps {
 }
 
 export function CtaBand({
-  eyebrow = 'Speak With a Designer',
+  eyebrow: suppliedEyebrow,
   title,
   text,
-  primary = { label: 'Plan My Journey', href: '/plan' },
+  primary: suppliedPrimary,
   secondary,
   image = 'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/simien-mountains.png',
 }: CtaBandProps) {
+  const tr = useTranslations('UI.common.CtaBand')
+  const eyebrow = suppliedEyebrow ?? tr('speakWithADesigner')
+  const primary = suppliedPrimary ?? {label: tr('planMyJourney'), href: '/plan'}
+
   return (
-    <TranslationBoundary><section className="relative isolate overflow-hidden bg-primary text-primary-foreground">
+    <section className="relative isolate overflow-hidden bg-primary text-primary-foreground">
       <div className="absolute inset-0 -z-10 opacity-25">
         <Image
           src={image || defaultImage}
@@ -50,7 +54,7 @@ export function CtaBand({
               {text}
             </p>
             <p className="mt-6 text-sm text-primary-foreground/70">
-              Or call us directly on{' '}
+              {tr('orCallUsDirectlyOn')}{' '}
               <a
                 href={`tel:${contact.phone.replace(/[^\d+]/g, '')}`}
                 className="border-b border-accent/50 pb-0.5 text-background transition-colors hover:border-accent hover:text-accent"
@@ -76,6 +80,6 @@ export function CtaBand({
           </div>
         </Reveal>
       </div>
-    </section></TranslationBoundary>
+    </section>
   )
 }

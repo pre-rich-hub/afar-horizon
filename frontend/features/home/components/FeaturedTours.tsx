@@ -1,14 +1,16 @@
+import {useToursCopy} from '@/features/tours'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import type { Tour } from '@/features/tours'
-import { tours as staticTours } from '@/features/tours'
+import { tours as baseStaticTours } from '@/features/tours'
 import { TourRail } from './TourRail'
 
-export function FeaturedTours({ tours = staticTours }: { tours?: Tour[] }) {
+export function FeaturedTours({ tours: basetours = baseStaticTours }: { tours?: Tour[] }) {
+  const tours = useToursCopy('tour.tours', basetours)
+
   const featured = tours.filter((t) => t.featured)
 
   return (
-    <TranslationBoundary><section
+    <section
       id="tours"
       aria-labelledby="tours-title"
       className="relative isolate overflow-hidden bg-secondary py-20 text-secondary-foreground sm:py-24 lg:py-28"
@@ -16,7 +18,7 @@ export function FeaturedTours({ tours = staticTours }: { tours?: Tour[] }) {
       <Contours />
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_20%_50%,oklch(0.42_0.06_48/0.4),transparent_60%)]" />
       <TourRail tours={featured} />
-    </section></TranslationBoundary>
+    </section>
   )
 }
 
@@ -24,7 +26,7 @@ export function FeaturedTours({ tours = staticTours }: { tours?: Tour[] }) {
 // the highlands.
 function Contours() {
   return (
-    <TranslationBoundary><svg
+    <svg
       aria-hidden
       className="pointer-events-none absolute -left-40 top-1/2 -z-10 h-[140%] w-auto -translate-y-1/2 text-sand opacity-[0.07]"
       viewBox="0 0 600 800"
@@ -35,15 +37,15 @@ function Contours() {
       {Array.from({ length: 9 }, (_, i) => {
         const k = i * 26
         return (
-          <TranslationBoundary key={i}><path
+          <path
             key={i}
             d={`M ${120 + k * 0.4} ${700 - k * 0.3}
                 C ${-40 + k} ${520 - k * 0.2}, ${60 + k * 0.6} ${260 + k * 0.3}, ${260 + k * 0.2} ${220 + k * 0.5}
                 S ${560 - k * 0.6} ${330 + k * 0.2}, ${470 - k * 0.5} ${520 - k * 0.4}
                 S ${260 + k * 0.3} ${760 - k * 0.6}, ${120 + k * 0.4} ${700 - k * 0.3}`}
-          /></TranslationBoundary>
+          />
         )
       })}
-    </svg></TranslationBoundary>
+    </svg>
   )
 }

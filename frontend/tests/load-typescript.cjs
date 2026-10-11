@@ -17,6 +17,7 @@ function createLoader(overrides = {}, root = path.resolve(__dirname, '..')) {
     const file = [base, `${base}.ts`, `${base}.tsx`, path.join(base, 'index.ts')]
       .find(candidate => fs.existsSync(candidate) && fs.statSync(candidate).isFile())
     if (!file) throw new Error(`Cannot resolve ${specifier} from ${parent}`)
+    if (file.endsWith('.json')) return JSON.parse(fs.readFileSync(file, 'utf8'))
     if (cache.has(file)) return cache.get(file).exports
     const module = { exports: {} }
     cache.set(file, module)

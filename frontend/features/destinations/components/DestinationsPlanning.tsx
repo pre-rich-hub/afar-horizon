@@ -1,14 +1,16 @@
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { CtaBand } from '@/components/common/CtaBand'
 
 export function DestinationsPlanning() {
+  const tr = useTranslations('UI.destinations.DestinationsPlanning')
+
   return (
-    <TranslationBoundary><CtaBand
-        title="Not sure where to start?"
-        text="Tell us how many days you have and what pulls at you, whether it is salt and volcanoes, cliff churches or mountains, and we will suggest a route that works for current conditions."
-        secondary={{ label: 'Browse Expeditions', href: '/expeditions' }}
+    <CtaBand
+        title={tr('notSureWhereToStart')}
+        text={tr('tellUsHowManyDaysYouHave')}
+        secondary={{ label: tr('browseExpeditions'), href: '/expeditions' }}
         image="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/simien-mountains.png"
-      /></TranslationBoundary>
+      />
   )
 }

@@ -1,0 +1,77 @@
+{
+  "ground-operations.handle": {
+    "0": {
+      "title": "Transport",
+      "items": {
+        "0": "Transferts aéroport",
+        "1": "Véhicules privés",
+        "2": "Opérations 4×4",
+        "3": "Transport interurbain",
+        "4": "Logistique routière à distance"
+      }
+    },
+    "1": {
+      "title": "Personnes",
+      "items": {
+        "0": "Chauffeurs professionnels",
+        "1": "Guides nationaux et locaux",
+        "2": "Éclaireurs",
+        "3": "Cuisins et équipes du camp",
+        "4": "Interprètes locaux si disponibles"
+      }
+    },
+    "2": {
+      "title": "Hébergement",
+      "items": {
+        "0": "Hôtels et lodges",
+        "1": "Maisons d'hôtes",
+        "2": "Camps d'expédition",
+        "3": "Surclassements premium là où ils sont disponibles"
+      }
+    },
+    "3": {
+      "title": "Logistique de l'expédition",
+      "items": {
+        "0": "Équipement, eau et nourriture",
+        "1": "Organisation du camp",
+        "2": "Coordination des itinéraires",
+        "3": "Permis et accès local",
+        "4": "Planification de sauvegarde et d'urgence"
+      }
+    }
+  },
+  "ground-operations.services": {
+    "0": {
+      "title": "Opérations en marque blanche",
+      "text": "Votre marque reste devant. Nous gérons l'opération éthiopienne."
+    },
+    "1": {
+      "title": "Développement d'itinéraire personnalisé",
+      "text": "Envoyez les intérêts de votre client et nous vous aiderons à les transformer en un itinéraire réalisable."
+    },
+    "2": {
+      "title": "Tarifs nets",
+      "text": "Disponible pour les partenaires commerciaux agréés."
+    },
+    "3": {
+      "title": "Structures de commission",
+      "text": "Selon le type de partenariat, le produit et le volume."
+    },
+    "4": {
+      "title": "Opérations de groupe",
+      "text": "Soutien aux groupes privés, spécialisés et petits groupes."
+    },
+    "5": {
+      "title": "Soutien local lorsque les plans changent",
+      "text": "Là où cela est opérationnellement possible, notre équipe sur le terrain répond lorsque les conditions le permettent. changement."
+    }
+  },
+  "ground-operations.principles": {
+    "0": "Tarifs clairs",
+    "1": "Inclusions claires",
+    "2": "Conditions de paiement claires",
+    "3": "Conditions d'annulation claires",
+    "4": "Communication opérationnelle claire",
+    "5": "Aucune surprise cachée"
+  }
+}

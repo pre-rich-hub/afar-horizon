@@ -137,8 +137,9 @@ live Cloudinary response summaries alongside it.
 ```text
 frontend/
 ├── app/                 Routes, layouts, metadata, loading and not-found states
-│   ├── (site)/          English compositions, /login and guarded /admin routes
-│   ├── (localized)/    Language layout and public catch-all compositions
+│   ├── [locale]/        Shared public route compositions for all five languages
+│   ├── (site)/          English /login and guarded /admin routes
+│   └── layout.tsx       Shared metadata defaults and global CSS
 │   └── …                Global CSS, sitemap, robots and icon routes
 ├── features/
 │   ├── legal/           Privacy and website terms content
@@ -164,7 +165,7 @@ frontend/
 │   ├── api/             JSON and admin request transports
 │   ├── utils/           Class names and date formatting
 │   ├── constants/       Shared navigation, contact details, and brand promises
-│   ├── i18n/            Locale routes, translation drafts, scopes and metadata
+│   ├── i18n/            Overlay merge, shared labels and approval safeguards
 │   └── config/          Server-side backend URL configuration
 ├── public/              Images and icons, with their original URLs
 └── tests/               Contract and ownership checks
@@ -178,7 +179,7 @@ frontend/
   backend endpoint calls. Add a subfolder only when it has a real responsibility.
 - Homepage-only presentations stay in `features/home`, even when they display
   destinations or tours. They reuse domain data and cards through feature exports.
-- Cross-feature consumers import from `@/features/<feature>`. Feature internals
+- Cross-feature consumers import from `@/features/<feature>`. Data-only `catalogue.ts` exports are also public entry points for the routing proxy. Feature internals
   use relative imports; `index.ts` explicitly exports the consumer-facing surface.
 - Authentication's `features/auth/server.ts` is a separate server-only entry point.
   Never re-export it from the client-facing auth index.
@@ -236,4 +237,4 @@ Use `--preview` for preview indexing expectations and `--output=docs/seo-reports
 
 ## Language drafts
 
-French, Spanish, German and Simplified Chinese use `/fr`, `/es`, `/de` and `/zh-Hans`; English keeps existing URLs. All translations are noindex drafts until client review. See the [review workflow](docs/seo-phase8-translations.md) and [translation spreadsheet](docs/translation-review.csv). Shared presentation components use translation boundaries and explicit translated text where server composition requires it; `SiteLink` keeps public links in the current language. Source data, form payloads and business facts retain their existing values.
+French, Spanish, German and Simplified Chinese use `/fr`, `/es`, `/de` and `/zh-Hans`; English keeps existing URLs. All translations are noindex drafts until client review. See the [review workflow](docs/seo-phase8-translations.md) and [translation spreadsheet](docs/translation-review.csv). Public routes use next-intl, stable UI keys in `messages/`, and feature-owned translation overlays; `SiteLink` keeps public links in the current language. English source data, numerical prices, form payload values and business facts retain their existing values. `i18n/` configures routing, requests and navigation; no sentence-matching runtime or route scope generator remains.

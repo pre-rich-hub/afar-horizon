@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import { site } from '@/lib/config/site'
-import { languageAlternates } from '@/lib/i18n/locales'
+import { localePath, isApprovedTranslation, type Locale, languageAlternates } from '@/lib/i18n/locales'
 
 type PageMetadata = {
   title: string
+  locale?: Locale
   description: string
   path: string
   image?: string
@@ -22,12 +23,12 @@ export function pageTitle(title: string) {
 export function createPageMetadata({
   title, description, path, image = site.defaultImage,
   imageAlt = 'Danakil Depression, Afar, Ethiopia', index = true,
-  type = 'website', author,
+  type = 'website', author, locale = 'en',
 }: PageMetadata): Metadata {
   if (!path.startsWith('/') || path.startsWith('//') || path.includes('?') || path.includes('#')) {
     throw new Error('Page metadata needs an absolute route path without query parameters or fragments.')
   }
-  const url = new URL(path, `${site.url}/`).href
+  const url = new URL(localePath(path, locale), `${site.url}/`).href
   if (new URL(url).origin !== site.url || path.includes('\\')) {
     throw new Error('Canonical paths must stay on the configured site origin.')
   }
@@ -38,11 +39,11 @@ export function createPageMetadata({
     title: { absolute: fullTitle },
     description,
     alternates: { canonical: url, ...(languageAlternates(path, site.url) ? { languages: languageAlternates(path, site.url) } : {}) },
-    robots: { index: site.indexable && index, follow: true },
+    robots: { index: site.indexable && index && isApprovedTranslation(locale, path), follow: true },
     ...(author ? { authors: [{ name: author }] } : {}),
     openGraph: {
       title: fullTitle, description, url, siteName: site.name,
-      type, images,
+      type, images, locale: locale.replace('-', '_'),
     },
     twitter: { card: 'summary_large_image', title: fullTitle, description, images },
   }

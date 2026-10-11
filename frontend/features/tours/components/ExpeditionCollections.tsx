@@ -1,19 +1,25 @@
+import {useToursCopy} from '../data/localized'
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import { SectionHeading } from '@/components/common/SectionHeading'
-import { expeditionCollections } from '../data/tour.data'
+import { expeditionCollections as baseExpeditionCollections } from '../data/tour.data'
 import type { Tour } from '../types/tour.types'
 import { TourCard } from './TourCard'
 
-export function ExpeditionCollections({ tours }: { tours: Tour[] }) {
+export function ExpeditionCollections({ tours: basetours }: { tours: Tour[] }) {
+  const tours = useToursCopy('tour.tours', basetours)
+
+  const tr = useTranslations('UI.tours.ExpeditionCollections')
+  const expeditionCollections = useToursCopy('tour.expeditionCollections', baseExpeditionCollections)
+
   return (
-    <TranslationBoundary><>
+    <>
       {/* Collection index */}
-      <nav aria-label="Expedition collections" className="border-b border-border">
+      <nav aria-label={tr('expeditionCollections')} className="border-b border-border">
         <ul className="shell grid py-4 sm:grid-cols-3 sm:py-6">
           {expeditionCollections.map((c, i) => (
-            <TranslationBoundary key={c.id}><li key={c.id} className={i > 0 ? 'border-t border-border sm:border-l sm:border-t-0' : ''}>
+            <li key={c.id} className={i > 0 ? 'border-t border-border sm:border-l sm:border-t-0' : ''}>
               <a
                 href={`#${c.id}`}
                 className={`group flex flex-col gap-1 py-4 transition-colors sm:py-2 ${i > 0 ? 'sm:px-8' : 'sm:pr-8'}`}
@@ -25,7 +31,7 @@ export function ExpeditionCollections({ tours }: { tours: Tour[] }) {
                   {c.title}
                 </span>
               </a>
-            </li></TranslationBoundary>
+            </li>
           ))}
         </ul>
       </nav>
@@ -33,7 +39,7 @@ export function ExpeditionCollections({ tours }: { tours: Tour[] }) {
       {expeditionCollections.map((c, ci) => {
         const items = tours.filter((t) => t.collection === c.id)
         return (
-          <TranslationBoundary key={c.id}><section
+          <section
             key={c.id}
             id={c.id}
             className={ci > 0 ? 'scroll-mt-24 border-t border-border' : 'scroll-mt-24'}
@@ -42,15 +48,15 @@ export function ExpeditionCollections({ tours }: { tours: Tour[] }) {
               <SectionHeading eyebrow={c.span} title={c.title} aside={c.text} />
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
                 {items.map((t, i) => (
-                  <TranslationBoundary key={t.slug}><Reveal key={t.slug} delay={(i % 3) * 90} className="h-full">
+                  <Reveal key={t.slug} delay={(i % 3) * 90} className="h-full">
                     <TourCard tour={t} />
-                  </Reveal></TranslationBoundary>
+                  </Reveal>
                 ))}
               </div>
             </div>
-          </section></TranslationBoundary>
+          </section>
         )
       })}
-    </></TranslationBoundary>
+    </>
   )
 }

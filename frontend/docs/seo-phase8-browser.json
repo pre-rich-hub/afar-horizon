@@ -113,7 +113,7 @@
       "width": 1440,
       "overflow": false,
       "lang": "fr",
-      "h1": "Danakil Deep",
+      "h1": "Danakil Profondeur",
       "analytics": 0
     },
     {
@@ -169,7 +169,7 @@
       "width": 1440,
       "overflow": false,
       "lang": "es",
-      "h1": "Danakil Deep",
+      "h1": "Danakil Profundo",
       "analytics": 0
     },
     {
@@ -273,7 +273,7 @@
       "width": 390,
       "overflow": false,
       "lang": "zh-Hans",
-      "h1": "Erta Ale",
+      "h1": "尔塔艾尔啤酒",
       "analytics": 0
     },
     {
@@ -281,7 +281,7 @@
       "width": 1440,
       "overflow": false,
       "lang": "zh-Hans",
-      "h1": "Danakil Deep",
+      "h1": "达纳基尔深渊",
       "analytics": 0
     },
     {
@@ -325,6 +325,20 @@
       "deepLinkPreserved": true,
       "languageLinkNavigated": true,
       "queryAndFragmentPreserved": true
+    }
+  ],
+  "missingReports": [
+    {
+      "path": "/destinations/not-a-real-place",
+      "status": 404,
+      "existingPresentation": true,
+      "staticEnglishFallback": true
+    },
+    {
+      "path": "/fr/blog/not-a-real-article",
+      "status": 404,
+      "existingPresentation": true,
+      "staticEnglishFallback": true
     }
   ]
 }

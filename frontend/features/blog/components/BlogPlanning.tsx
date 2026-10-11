@@ -1,14 +1,16 @@
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { CtaBand } from '@/components/common/CtaBand'
 
 export function BlogPlanning() {
+  const tr = useTranslations('UI.blog.BlogPlanning')
+
   return (
-    <TranslationBoundary><CtaBand
-        title="Read something that changed your mind?"
-        text="Most of these essays started as an answer to a guest question. Ask us yours and it may well become the next one."
-        secondary={{ label: 'Browse Expeditions', href: '/expeditions' }}
+    <CtaBand
+        title={tr('readSomethingThatChangedYourMind')}
+        text={tr('mostOfTheseEssaysStartedAsAn')}
+        secondary={{ label: tr('browseExpeditions'), href: '/expeditions' }}
         image="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/simien-mountains.png"
-      /></TranslationBoundary>
+      />
   )
 }

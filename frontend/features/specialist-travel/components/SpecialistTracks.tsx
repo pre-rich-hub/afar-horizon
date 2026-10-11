@@ -1,14 +1,16 @@
+import {useSpecialistTravelCopy} from '../data/localized'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import Image from 'next/image'
-import { tracks } from '../data/specialist-travel.data'
+import { tracks as baseTracks } from '../data/specialist-travel.data'
 
 export function SpecialistTracks() {
+  const tracks = useSpecialistTravelCopy('specialist-travel.tracks', baseTracks)
+
   return (
-    <TranslationBoundary><>
+    <>
       {tracks.map((t, i) => (
-        <TranslationBoundary key={t.id}><section key={t.id} id={t.id} className="scroll-mt-24 border-b border-border">
+        <section key={t.id} id={t.id} className="scroll-mt-24 border-b border-border">
           <div className="shell grid gap-10 py-16 sm:py-20 lg:grid-cols-2 lg:items-center lg:gap-16 lg:py-24">
             <Reveal className={i % 2 ? 'lg:order-2' : ''}>
               <div className="relative aspect-[4/3] overflow-hidden rounded-sm">
@@ -20,17 +22,17 @@ export function SpecialistTracks() {
               <p className="mt-5 text-pretty leading-relaxed text-muted-foreground sm:text-lg">{t.lede}</p>
               <ul className="mt-7 space-y-2.5">
                 {t.items.map((item) => (
-                  <TranslationBoundary key={item}><li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-foreground">
+                  <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-foreground">
                     <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                     {item}
-                  </li></TranslationBoundary>
+                  </li>
                 ))}
               </ul>
               {t.note && <p className="mt-5 text-xs leading-relaxed text-muted-foreground">{t.note}</p>}
             </Reveal>
           </div>
-        </section></TranslationBoundary>
+        </section>
       ))}
-    </></TranslationBoundary>
+    </>
   )
 }

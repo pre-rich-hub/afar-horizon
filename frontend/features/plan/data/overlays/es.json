@@ -1,0 +1,20 @@
+{
+  "plan.steps": {
+    "0": {
+      "title": "Preguntar",
+      "text": "Envía tus fechas, intereses y cuántos días tienes. Una idea basta."
+    },
+    "1": {
+      "title": "Discute",
+      "text": "Podemos hacerle algunas preguntas por correo electrónico o WhatsApp y decirle honestamente qué lo permiten las condiciones actuales."
+    },
+    "2": {
+      "title": "Cita",
+      "text": "Recibes una ruta con un precio claro, lo que está incluido y lo que no."
+    },
+    "3": {
+      "title": "Confirmar",
+      "text": "Un depósito, generalmente del 30 %, confirma la reserva. Luego organizamos los vehículos, el personal, los permisos y el alojamiento."
+    }
+  }
+}

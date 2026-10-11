@@ -1,15 +1,16 @@
+import type {Locale} from '@/lib/i18n/locales'
 import { breadcrumbSchema, schemaUrl } from '@/lib/seo/schema'
 import type { Destination } from '../types/destination.types'
 
-export function destinationSchema(destination: Destination) {
+export function destinationSchema(destination: Destination, locale: Locale = 'en', labels = {home: 'Home', index: 'Destinations'}) {
   const path = `/destinations/${destination.slug}`
   return {
     '@context': 'https://schema.org',
     '@graph': [
-      breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'Destinations', path: '/destinations' }, { name: destination.name, path }]),
+      breadcrumbSchema([{ name: labels.home, path: '/' }, { name: labels.index, path: '/destinations' }, { name: destination.name, path }], locale),
       {
-        '@type': 'TouristDestination', '@id': `${schemaUrl(path)}#destination`,
-        url: schemaUrl(path), name: destination.name, description: destination.intro, image: destination.image,
+        '@type': 'TouristDestination', '@id': `${schemaUrl(path, locale)}#destination`,
+        url: schemaUrl(path, locale), name: destination.name, description: destination.intro, image: destination.image,
       },
     ],
   }

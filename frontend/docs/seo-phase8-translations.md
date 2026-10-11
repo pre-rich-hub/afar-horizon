@@ -1,46 +1,59 @@
-# Phase 8 language drafts and review
+# Language architecture and client review
 
-English retains its existing URLs. French (`/fr`), Spanish (`/es`), German (`/de`) and Simplified Chinese (`/zh-Hans`) reuse the same feature components and design. Each language has 60 public pages: the existing 58 indexable English pages plus the planning and photo-credit utilities. Private, API and login routes have no translated equivalents. Language links retain the current public path and, after hydration, its query string and fragment. There are no language redirects based on IP or browser settings.
+English keeps its existing public URLs. French (`/fr`), Spanish (`/es`), German (`/de`) and Simplified Chinese (`/zh-Hans`) share explicit routes in `app/[locale]/`. Each language has 60 public pages: the 58 indexable English pages plus planning and photo credits. Admin and login stay outside the locale tree. Browser language and IP do not trigger language changes. Redundant `/en/...` URLs redirect to the English URL without a prefix.
 
-All four sets are **drafts**. Each has its own canonical URL, translated metadata and HTML language, but is noindex and excluded from sitemaps and hreflang. The switcher provides review access. English indexing rules remain unchanged. `approvedTranslations` in `lib/i18n/locales.ts` is empty; do not populate it before review. Planning/photo-credit utilities remain noindex even after language approval.
+The architecture follows the next-intl pattern in `pre-rich-hub/ethioafro2`, while preserving Afar Horizon's SEO publication safeguards. It does not copy that project's client data, page design, locale codes or indexing policy.
 
-## Client review
+## Where text belongs
 
-Open [translation-review.csv](translation-review.csv), which contains 2,166 English source strings and four draft columns. These are machine-assisted initial translations generated once through the Google Translate web service, with selected manual terminology/action corrections. No translation provider is contacted by the running site. The drafts have not been approved by a native-language reviewer.
+- `i18n/routing.ts`, `request.ts` and `navigation.ts` configure next-intl. Automatic alternate links are disabled because unapproved translations must not advertise themselves to search engines.
+- `messages/{en,fr,es,de,zh-Hans}.json` contains stable UI keys, page metadata and schema breadcrumb labels. Components use `useTranslations`; async route metadata uses `getTranslations`.
+- `features/<feature>/data/overlays/{locale}.json` owns translated editorial fields. `data/localized.ts` exposes that feature's copy getters/hooks through its public exports. Catalogue records use their existing slug; gallery photos use the uploaded filename. Small nested lists use position keys.
+- `lib/i18n/feature-copy.ts` merges these overlays without depending on features. Missing fields retain the English source for draft review. It also protects routing fields, prices, dates, category/filter identifiers and backend values from accidental overlay edits.
+- Shared navigation labels and form style labels use `lib/i18n/overlays/`. Enum labels and plural night counts use stable `Catalogue` messages; selected form values remain English. Confirmed publication/update dates use locale-aware formatting without changing their ISO dates.
+- `SiteLink` retains public language URLs; the native language links retain path, query and fragment. JSON-LD is serialized safely on the server with localized route URLs and a shared company identity.
 
-Review complete pages in the running site as well as the spreadsheet. Check tone, destination names, tourism terminology, navigation, accessible image descriptions, title/description snippets, form errors and success messages, legal meaning and paragraph flow. Some articles contain inline links, so adjacent translated fragments need particular attention for grammar. Verify that Simplified Chinese is the client's intended Chinese variant; Traditional Chinese is not included.
+English feature data remains the source of truth. No runtime translation service is used. Reviews, numerical prices, company facts and images have not been rewritten. Chinese uses script-appropriate system font fallbacks; Simplified Chinese still needs client confirmation.
 
-Record corrections and reviewer notes in the spreadsheet, then apply approved text to `lib/i18n/drafts/{locale}.json`. Keys are normalized English text; values are the translations. Preserve the keys. Reviews, business identity and numeric prices intentionally remain unchanged. Source company facts, catalogue records and prices were not rewritten. Dynamic visitor messages and API-supplied messages are not translated by dictionary matching; the assistant is instructed to respond in the customer's language while retaining the same business grounding. That backend prompt change requires a backend deployment separately.
+## Review and publication
 
-Approve only fully reviewed routes, including their metadata, shared navigation, forms, image descriptions and schema text. Add each approved English route path to that language's `approvedTranslations` list. The code then enables indexing for eligible routes, reciprocal English/language/x-default alternates and translated sitemap entries. Run the approval unit tests and rendered SEO checks after promotion; the draft-only rendered verifier intentionally expects zero approvals and must be adapted when publication begins. Domain connection and Search Console remain Phase 6 prerequisites for live monitoring.
+All 240 translated pages remain **client-review drafts**, with correct HTML language, translated metadata, self-canonicals and noindex. They are absent from the sitemap and hreflang. `approvedTranslations` in `lib/i18n/locales.ts` remains empty. Planning and photo credits remain noindex even after approval.
+
+[translation-review.csv](translation-review.csv) contains 2,946 stable-key review rows, with owner, key, English source, all four drafts, status, reviewer and notes. Drafts reuse the earlier translations and include machine-assisted additions for the updated gallery and interface text. Article paragraphs were prepared with protected link placeholders so the links remain intact. Native-language quality and legal meaning are not established by automated checks.
+
+Review complete pages alongside the spreadsheet: tone, names, tourism terminology, accessibility labels, metadata, form states, legal meaning and grammar around links. Apply a UI correction to its key in `messages/<locale>.json`; apply feature content corrections to the owning overlay JSON. Preserve identifiers, ICU placeholders and HTML-free link data. For linked article paragraphs, their `links[].text` must occur in the paragraph's text.
+
+Approve a route only after its content, metadata, shared navigation, forms, image descriptions and schema are reviewed. Add its original English path to that language's `approvedTranslations`. The existing SEO helpers then enable eligible indexing, reciprocal English/language/x-default alternates and translated sitemap entries. Adapt the draft-only rendered verifier when approvals begin. Domain connection and Search Console remain separate launch dependencies.
 
 ## Keeping translations current
 
-The exact English text is the translation key. New or edited English copy falls back to English until a matching reviewed entry exists; this is acceptable for review drafts, and must be resolved before publishing a translation. Add new keys to `source.en.json`, all four dictionaries and the review sheet. Keep unused keys out when retired. Rebuild route scopes after changing copy or catalogue content. The server uses the full dictionary for metadata; each page sends shared UI text and the appropriate route scope to the browser.
+Edit English UI values without renaming their keys, and update the corresponding locale values. Add new keys to every messages file. English feature content can change independently of an overlay key; update the translated record fields and review sheet when its meaning changes. Add catalogue records under their new slugs. If a nested positional list is reordered, update its overlay positions too. Never publish an English fallback as an approved translation.
 
-From `frontend/`, against a local production build:
+No route scope regeneration is required. UI messages are loaded by language; feature overlays are imported by their owning feature rather than through one site-wide catalogue registry.
+
+## Verification
+
+From `frontend/`:
 
 ```sh
-npm run build
-npm run start -- --port 3101
-# In a second terminal:
-npm run seo:check -- --inventory-only
-SEO_BASE_URL=http://127.0.0.1:3101 node scripts/i18n-scopes.cjs
 npm run typecheck
 node --test tests/*.test.cjs
-# Rebuild/restart after regenerating scopes.
-node tests/verify-i18n.cjs
+npm run build
+npm run start -- --port 3101
+# In another terminal:
+SEO_BASE_URL=http://127.0.0.1:3101 node tests/verify-i18n.cjs
 npm run seo:check -- --base-url=http://127.0.0.1:3101
 node tests/verify-i18n-browser.cjs
 ```
 
-The browser verifier mocks every contact API request; it must never send a real enquiry. Local/draft pages send no analytics. Backend dependencies are absent in this workspace, so the backend's full test suite was not run; the changed language instruction and unchanged factual grounding are checked by the frontend's focused test loader. No live AI-provider request was made.
+The unit checks cover matching UI keys, valid ICU messages, protected feature fields, gallery draft coverage and article link retention. The rendered check covers all 300 public pages, draft canonical/indexing rules, schema URLs, inline links, sitemap exclusion and invalid routes. The browser verifier mocks contact requests; it must never send real enquiries. Local/draft pages send no analytics. Dynamic customer messages and API responses are not translated by sentence matching; the existing assistant prompt asks the backend to reply in the customer's language.
 
-See [Next.js internationalization](https://nextjs.org/docs/app/guides/internationalization) and [Google localized-page guidance](https://developers.google.com/search/docs/specialty/international/localized-versions). Publishing is pending review; draft implementation does not establish international rankings or complete the live launch prerequisites.
+See [next-intl routing](https://next-intl.dev/docs/routing/setup), [next-intl messages](https://next-intl.dev/docs/usage/translations), and [Google localized-page guidance](https://developers.google.com/search/docs/specialty/international/localized-versions).
 
-## Validation — 11 October 2026
+## Migration verification — 11 October 2026
 
-- Production build and separate TypeScript check pass; all nine test files pass.
-- [Rendered verification](seo-phase8-validation.json): 240 language pages return 200 with correct language, translated titles, self-canonicals, noindex metadata/headers, localized schema and language-preserving main-content links. The 2,166-key dictionaries are complete, no matched long source paragraphs remain untranslated, draft hreflang/sitemap entries are absent, and six invalid/private language routes return 404. This checks matching source copy and technical behavior, not native-language quality or every possible future API response.
-- [Browser verification](seo-phase8-browser.json): 28 representative layouts across 390/1024/1440px without horizontal overflow; gallery keyboard controls; four real language-switch navigation flows preserving planning query/fragment; eight journey/partner enquiry flows with duplicate prevention, failure, retry and translated success. All requests were mocked and no runtime exceptions or draft analytics requests occurred.
-- All five English rendered SEO verifier groups pass, covering 60 public pages and 58 sitemap URLs. No deployment or Search Console submission was performed.
+The production build, separate TypeScript check and all nine test files passed. [Rendered verification](seo-phase8-validation.json) covers 60 English and 240 draft pages, language metadata, canonical/noindex rules, localized schema, inline links, 58 English sitemap entries, five invalid language routes and the English-prefix redirect. All five English SEO verifier groups passed.
+
+[Browser verification](seo-phase8-browser.json) passed 28 layouts at 390/1024/1440px, four real language-switch flows with query/fragment preservation, translated gallery filtering and keyboard controls, and eight mocked enquiry failure/retry flows. Selected journey/service options retained their original backend values; no real enquiries, browser runtime exceptions or draft analytics requests occurred. Invalid URLs use the static English error page with the existing presentation and receive HTTP 404 before streaming. Two browser checks confirm its rendered heading and status; the final server log contains no fallback errors.
+
+Changes have not been committed, pushed or deployed as part of this migration. Native-language approval and launch account/domain work remain pending.

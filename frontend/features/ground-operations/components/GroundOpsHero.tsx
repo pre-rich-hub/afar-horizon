@@ -1,16 +1,18 @@
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { PageHero } from '@/components/common/PageHero'
 
 export function GroundOpsHero() {
+  const tr = useTranslations('UI.groundoperations.GroundOpsHero')
+
   return (
-    <TranslationBoundary><PageHero
-      eyebrow="Ground Operations"
-      title="You bring the traveller. We handle the ground."
-      lede="Local ground operations in Ethiopia for international tour operators, travel advisors, specialist agencies and travel designers."
+    <PageHero
+      eyebrow={tr('groundOperations')}
+      title={tr('youBringTheTravellerWeHandleThe')}
+      lede={tr('localGroundOperationsInEthiopiaForInternational')}
       image="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png"
-      imageAlt="Dallol in the Danakil Depression"
-      crumbs={[{ label: 'Home', href: '/' }, { label: 'Ground Operations' }]}
-    /></TranslationBoundary>
+      imageAlt={tr('dallolInTheDanakilDepression')}
+      crumbs={[{ label: tr('home'), href: '/' }, { label: tr('groundOperations') }]}
+    />
   )
 }

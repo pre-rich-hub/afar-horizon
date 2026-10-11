@@ -1,0 +1,77 @@
+{
+  "ground-operations.handle": {
+    "0": {
+      "title": "Transporte",
+      "items": {
+        "0": "Traslados al aeropuerto",
+        "1": "Vehículos privados",
+        "2": "Operaciones 4×4",
+        "3": "Transporte interurbano",
+        "4": "Logística de carreteras remotas"
+      }
+    },
+    "1": {
+      "title": "Personas",
+      "items": {
+        "0": "Conductores profesionales",
+        "1": "Nacional y local guías",
+        "2": "Exploradores",
+        "3": "Cocineros y equipos de campamento",
+        "4": "Intérpretes locales cuando estén disponibles"
+      }
+    },
+    "2": {
+      "title": "Alojamiento",
+      "items": {
+        "0": "Hoteles y albergues",
+        "1": "Casas de huéspedes",
+        "2": "Campamentos de expedición",
+        "3": "Mejoras premium cuando estén disponibles"
+      }
+    },
+    "3": {
+      "title": "Logística de expedición",
+      "items": {
+        "0": "Equipo, agua y comida",
+        "1": "Organización del campamento",
+        "2": "Coordinación de rutas",
+        "3": "Permisos y acceso local",
+        "4": "Respaldo y planificación de contingencias"
+      }
+    }
+  },
+  "ground-operations.services": {
+    "0": {
+      "title": "Operaciones de marca blanca",
+      "text": "Tu marca se mantiene al frente. Dirigimos la operación en Etiopía."
+    },
+    "1": {
+      "title": "Desarrollo de itinerarios personalizados",
+      "text": "Envíe los intereses de su cliente y le ayudaremos a convertirlos en una ruta viable."
+    },
+    "2": {
+      "title": "Tarifas netas",
+      "text": "Disponible para socios comerciales aprobados."
+    },
+    "3": {
+      "title": "Estructuras de comisiones",
+      "text": "Según tipo de asociación, producto y volumen."
+    },
+    "4": {
+      "title": "Operaciones del grupo",
+      "text": "Apoyo para privados, especialistas y pequeños grupos."
+    },
+    "5": {
+      "title": "Apoyo local cuando cambian los planes",
+      "text": "Cuando es operativamente posible, nuestro equipo sobre el terreno responde cuando las condiciones cambian."
+    }
+  },
+  "ground-operations.principles": {
+    "0": "Precios claros",
+    "1": "Inclusiones claras",
+    "2": "Condiciones de pago claras",
+    "3": "Condiciones de cancelación claras",
+    "4": "Comunicación operativa clara",
+    "5": "Sin sorpresas ocultas"
+  }
+}

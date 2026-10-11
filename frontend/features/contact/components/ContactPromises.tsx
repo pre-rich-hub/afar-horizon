@@ -1,20 +1,24 @@
+import {useSharedCopy} from '@/lib/i18n/localized'
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import { SectionHeading } from '@/components/common/SectionHeading'
-import { promises } from '@/lib/constants/company'
+import { promises as basePromises } from '@/lib/constants/company'
 
 export function ContactPromises() {
+  const tr = useTranslations('UI.contact.ContactPromises')
+  const promises = useSharedCopy('company.promises', basePromises)
+
   return (
-    <TranslationBoundary><section className="shell py-16 sm:py-20 lg:py-28">
+    <section className="shell py-16 sm:py-20 lg:py-28">
         <SectionHeading
-          eyebrow="Our Promise"
-          title="What you get from working with us"
+          eyebrow={tr('ourPromise')}
+          title={tr('whatYouGetFromWorkingWithUs')}
           align="center"
         />
         <div className="grid gap-x-10 gap-y-10 sm:grid-cols-2">
           {promises.map((p, i) => (
-            <TranslationBoundary key={p.title}><Reveal
+            <Reveal
               key={p.title}
               delay={i * 90}
               className="border-t border-border pt-6"
@@ -25,9 +29,9 @@ export function ContactPromises() {
               <p className="text-pretty leading-relaxed text-muted-foreground">
                 {p.text}
               </p>
-            </Reveal></TranslationBoundary>
+            </Reveal>
           ))}
         </div>
-      </section></TranslationBoundary>
+      </section>
   )
 }

@@ -1,0 +1,67 @@
+{
+  "specialist-travel.tracks": {
+    "photography": {
+      "title": "Fotógrafos",
+      "lede": "Construido en torno a la luz, la ubicación y el tiempo, con paradas de campo más largas y la paciencia para esperar las condiciones adecuadas.",
+      "alt": "Piscinas de minerales verdes y formaciones de sal en el paisaje de Danakil",
+      "items": {
+        "0": "Fotografía de amaneceres, atardeceres y noches",
+        "1": "Posicionamiento en la hora dorada y salidas anticipadas",
+        "2": "Paradas más largas en Dallol, Erta Ale y la llanura de sal",
+        "3": "Paisaje, gente y vida silvestre",
+        "4": "Logística del equipo y protección contra el polvo y la sal",
+        "5": "Búsqueda de ubicaciones y horarios flexibles"
+      }
+    },
+    "film": {
+      "title": "Cine y medios",
+      "lede": "Los viajes de producción necesitan precisión. Nos ocupamos del terreno para que el equipo pueda concentrarse en el trabajo.",
+      "alt": "Costra de sal y aguas poco profundas en el lago Assale al atardecer",
+      "items": {
+        "0": "Vehículos y conductores profesionales",
+        "1": "Guías locales y exploración de localizaciones",
+        "2": "Movimientos de la tripulación y transporte de equipo",
+        "3": "Alojamiento y logística de campo",
+        "4": "Planificación de ubicaciones remotas",
+        "5": "Coordinación local y presentaciones"
+      },
+      "note": "Los permisos de filmación siguen sujetos a las autoridades pertinentes y a los requisitos del sitio."
+    },
+    "research": {
+      "title": "Investigadores y universidades",
+      "lede": "Logística de campo para geología, geografía, antropología, arqueología y estudios ambientales, en algunos de los paisajes más estudiados de África.",
+      "alt": "Lava resplandeciente dentro de un cráter volcánico en Erta Ale",
+      "items": {
+        "0": "Transporte local y apoyo en áreas remotas",
+        "1": "Alojamiento y campamentos",
+        "2": "Guías y coordinación comunitaria",
+        "3": "Planificación de rutas para sitios de campo",
+        "4": "Apoyo de interpretación donde disponible",
+        "5": "Logística para equipos científicos"
+      }
+    },
+    "trekking": {
+      "title": "Trekking, running y viajes de montaña",
+      "lede": "Etiopía es un país de altitud. Nuestro fundador creció en Simien y los viajes a la montaña fueron donde comenzó esta empresa.",
+      "alt": "Empinadas y verdes escarpas en las montañas Simien",
+      "items": {
+        "0": "Planificación del viaje Simien, exploradores y campamentos",
+        "1": "Mulas y porteadores cuando corresponda",
+        "2": "Comidas, agua y traslados",
+        "3": "Grupos de corredores y pruebas de montaña: rutas, puntos de agua y vehículos de apoyo",
+        "4": "Apoyo de la cumbre para Ras Dashen"
+      }
+    },
+    "groups": {
+      "title": "Grupos privados",
+      "lede": "Familias, amigos, clubes y grupos corporativos que viajan según su propio horario.",
+      "alt": "Un visitante junto a un acantilado en el paisaje montañoso de Gheralta",
+      "items": {
+        "0": "Vehículos privados y guías dedicados",
+        "1": "Paso planificado en función del grupo",
+        "2": "Mejoras de comodidad donde la infraestructura lo permite",
+        "3": "Experiencias culturales: café, comida y vida local"
+      }
+    }
+  }
+}

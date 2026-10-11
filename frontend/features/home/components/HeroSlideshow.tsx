@@ -1,10 +1,11 @@
 'use client'
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+import {useHomeCopy} from '../data/localized'
+import { useTranslations } from 'next-intl'
 
 
 import { useHeroSlideshow } from '../hooks/useHeroSlideshow'
 
-import { slides } from '../data/hero-slideshow.data'
+import { slides as baseSlides } from '../data/hero-slideshow.data'
 
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
@@ -13,16 +14,19 @@ import { type ReactNode } from 'react'
 // Client-provided Cloudinary photos; attribution is shown when supplied.
 
 export function HeroSlideshow({ children }: { children?: ReactNode }) {
+  const tr = useTranslations('UI.home.HeroSlideshow')
+  const slides = useHomeCopy('hero-slideshow.slides', baseSlides)
+
   const { index, current, prev, prepared, markLoaded } = useHeroSlideshow()
 
   return (
-    <TranslationBoundary><>
+    <>
       <div className="absolute inset-0 -z-10">
         {slides.map((slide, i) => {
           const visible = i === index || i === prev
           if (!visible && i !== prepared) return null
           return (
-            <TranslationBoundary key={`${i}-${slide.src}`}><div
+            <div
               key={`${i}-${slide.src}`}
               aria-hidden={i !== index}
               className={cn(
@@ -45,7 +49,7 @@ export function HeroSlideshow({ children }: { children?: ReactNode }) {
                   i % 2 === 1 && 'origin-top-right',
                 )}
               />
-            </div></TranslationBoundary>
+            </div>
           )
         })}
         {children}
@@ -59,9 +63,9 @@ export function HeroSlideshow({ children }: { children?: ReactNode }) {
           rel="noopener noreferrer"
           className="underline-offset-2 hover:text-background hover:underline"
         >
-          {current.credit ? `Photo: ${current.credit}${current.license ? `, ${current.license}` : ''}` : 'Client-provided photo collection'}
+          {current.credit ? `Photo: ${current.credit}${current.license ? `, ${current.license}` : ''}` : tr('clientProvidedPhotoCollection')}
         </a>
       </p>
-    </></TranslationBoundary>
+    </>
   )
 }

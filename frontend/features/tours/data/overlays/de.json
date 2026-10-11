@@ -1,0 +1,1837 @@
+{
+  "tour.expeditionCollections": {
+    "danakil": {
+      "title": "Danakil & Afar",
+      "span": "1 – 8 Tage",
+      "text": "Private Expeditionen von Semera in die Danakil-Senke: Erta Ale, Lake Afdera, Hamed Ela, Lake Asale und Dallol. Längere Reisen verlängern die Zeit, nicht nur die Entfernung."
+    },
+    "danakil-highlands": {
+      "title": "Danakil und die Highlands",
+      "span": "8 – 15 Tage",
+      "text": "Reisen, die Afar und das nördliche Hochland verbinden: Steigen Sie von Mekelle oder Axum in Richtung Danakil ab oder beginnen Sie im Salzland und fahren Sie weiter in Richtung des historischen Nordens."
+    },
+    "northern-ethiopia": {
+      "title": "Nord-Äthiopien",
+      "span": "12 – 21 Tage",
+      "text": "Der Tana-See, Gondar, die Simien-Berge, Aksum, Gheralta und Lalibela, wobei der Danakil auf der 21-tägigen Reise hinzugefügt wurde."
+    }
+  },
+  "tour.tours": {
+    "danakil-essentials": {
+      "title": "Danakil Essentials",
+      "imageAlt": "Kamelsilhouetten gegen Sonnenuntergang auf der Salzebene",
+      "days": "3 Tage",
+      "season": "Beste November-Januar-Zeit",
+      "difficulty": "Anspruchsvolle",
+      "teaser": "Erta Ale, die Salzebene des Lake Asale und Dallol: der kompakte Klassiker.",
+      "summary": "Drei Tage verbinden die drei Hauptgeschichten des Danakil: den Vulkan, das Salz und die Geologie. Es ist anspruchsvoll, mit langen Fahrten und einfachen Lagern, aber man sieht, wie sehr sich die Landschaft innerhalb einer kleinen Region verändert.",
+      "why": "Die kürzeste Route, die Erta Ale, Lake Asale und Dallol zusammen umfasst.",
+      "idealFor": "Reisende, die die wichtigsten Danakil-Landschaften genießen möchten und sich mit Hitze, langen 4×4-Tagen und einfachen Camps wohlfühlen.",
+      "notFor": "Reisende, die frühe Starts und lange Tage nicht mögen. Das 4-tägige Danakil Deep deckt dieselben Orte mit mehr Ruhe ab.",
+      "includes": {
+        "0": "Privater 4×4-Expeditionsfahrzeug",
+        "1": "Professioneller Fahrer",
+        "2": "Englischsprachiger Führer",
+        "3": "Lokale Afar-Führer und Pfadfinder, wo erforderlich",
+        "4": "Treibstoff",
+        "5": "Trinken Sie Wasser",
+        "6": "Camping-Ausrüstung",
+        "7": "Mahlzeiten wie im aufgeführt Reiseplan",
+        "8": "Lokale Zugangsvereinbarungen"
+      },
+      "excludes": {
+        "0": "Internationale und Inlandsflüge, sofern nicht ausdrücklich hinzugefügt",
+        "1": "Äthiopisches Visum",
+        "2": "Reiseversicherung",
+        "3": "Persönliche Ausrüstung",
+        "4": "Alkohol",
+        "5": "Tipps",
+        "6": "Persönliche Einkäufe",
+        "7": "Nicht aufgeführte Leistungen"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Tag 1",
+          "title": "Semera → Afdera-See → Erta Ale",
+          "text": "Treffen Sie Ihr Expeditionsteam in Semera zu einer Einweisung, Wasserkontrolle und Fahrzeuginspektion und beginnen Sie dann mit dem Abstieg. Mittagessen rund um den Afdera-See, dann Weiterfahrt zum Erta Ale-Basisbereich, um sich in der stärksten Hitze auszuruhen. Später, wenn die Bedingungen es zulassen, nähern Sie sich dem vulkanischen Beobachtungsgebiet über unebenen Basalt. Gehentfernung, Zeitpunkt und Camp-Arrangements werden für die Route und die örtlichen Gegebenheiten bestätigt.",
+          "overnight": "Expeditionslager in der Nähe Erta Ale",
+          "meals": "Mittagessen, Abendessen"
+        },
+        "1": {
+          "day": "Tag 2",
+          "title": "Erta Ale → Hamed Ela",
+          "text": "Eine weitere Gelegenheit, die Vulkanlandschaft im Morgengrauen zu beobachten, wenn die Bedingungen es zulassen, dann Frühstück und ein langer Überlandtag durch die Wüste nach Hamed Ela. Wenn die Bedingungen es zulassen, besuchen Sie am späten Nachmittag die Salzebene des Lake Asale, wenn das Licht weicher wird.",
+          "overnight": "Grundlegendes oder traditionelles Open-Air-Camp, Hamed Ela",
+          "meals": "Frühstück, Mittagessen, Abendessen"
+        },
+        "2": {
+          "day": "Tag 3",
+          "title": "Dallol → Salzland → Semera",
+          "text": "Ein früher Start, um Dallol vor der Hitze zu erreichen. Ihr Reiseleiter erklärt Ihnen die Mineralformationen, Salzstrukturen und hydrothermalen Merkmale und gibt Ihnen nicht nur Zeit, sie zu fotografieren. Wenn es die Aktivität zulässt, beobachten Sie die traditionelle Salzgewinnung und den Kameltransport aus respektvoller Entfernung und kehren Sie dann nach Semera zurück.",
+          "overnight": "Keine",
+          "meals": "Frühstück, Mittagessen"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Wie schwierig ist der Danakil?",
+          "a": "Die Herausforderung besteht hauptsächlich aus Hitze, langen 4×4-Fahrten, rauen Strecken, abgelegenen Bedingungen, frühen Starts und einfachem Camping. Es handelt sich nicht um eine technische Bergsteigerexpedition, aber sie sollte nicht als gewöhnliche Besichtigungstour betrachtet werden."
+        },
+        "1": {
+          "q": "Gibt es noch einen Lavasee bei Erta Ale?",
+          "a": "Erta Ale hat eine lange Geschichte von sich verändernden Lavaseen und eruptiven Aktivitäten. Datierte Fotos und Berichte bestätigen nicht, was bei Ihrer Abreise sichtbar ist. Fragen Sie uns nach aktuellen Beobachtungen und den geplanten Besichtigungsterminen; Es kann kein Lavasee oder eine besondere Erscheinung garantiert werden."
+        },
+        "2": {
+          "q": "Sind Kamelkarawanen garantiert?",
+          "a": "Nein. Sie sind Teil der traditionellen Salzwirtschaft, aber ob Sie sie sehen, hängt vom Zeitpunkt und den Aktivitäten vor Ort ab."
+        },
+        "3": {
+          "q": "Ist Dallol immer erreichbar?",
+          "a": "Der Zugang hängt von den aktuellen Bedingungen, örtlichen Anweisungen und Sicherheitsaspekten ab. Wir bestätigen den Plan für Ihre Daten vor der Abreise."
+        },
+        "4": {
+          "q": "Ist das eine Luxusreise?",
+          "a": "Nein. Selbst bei sorgfältiger Organisation bleibt der Danakil abgelegen und die Lager sind einfach. Das ist Teil des Erlebnisses."
+        }
+      }
+    },
+    "danakil-deep": {
+      "title": "Danakil Deep",
+      "imageAlt": "Kamelkarawane mit Bergkämmen in der Ferne",
+      "days": "4 Tage",
+      "season": "Beste November-Januar-Zeit",
+      "difficulty": "Anspruchsvolle",
+      "teaser": "Unsere charakteristische Danakil-Expedition: die klassische Route mit Platz für Atmen Sie durch.",
+      "summary": "Die Landschaft ist riesig, die Straßen sind schwierig, die Hitze ist real und die Lager sind einfach. Vier Tage umfassen Erta Ale, Lake Asale und Dallol mit einem eingebauten Ruhenachmittag, der uns auch Flexibilität in Bezug auf Straßenverhältnisse, Wetter und vulkanischen Zugang gibt.",
+      "why": "Der vierte Tag ist kein Füller. Es gibt Raum zum Atmen und erleichtert der gesamten Expedition die Anpassung an sich ändernde Bedingungen.",
+      "idealFor": "Die meisten Danakil-Erstreisenden. Dies ist die Reiseroute, die wir empfehlen, wenn Sie vier Tage Zeit haben.",
+      "notFor": "Reisende, die mehr Zeit mit Afar-Gemeinschaften verbringen möchten. Erwägen Sie den 6-tägigen Danakil Explorer.",
+      "includes": {
+        "0": "Privater 4×4-Expeditionsfahrzeug",
+        "1": "Professioneller Fahrer",
+        "2": "Englischsprachiger Führer",
+        "3": "Lokale Afar-Führer und Pfadfinder, wo erforderlich",
+        "4": "Treibstoff",
+        "5": "Trinken Sie Wasser",
+        "6": "Camping-Ausrüstung",
+        "7": "Mahlzeiten wie im aufgeführt Reiseplan",
+        "8": "Lokale Zugangsvereinbarungen"
+      },
+      "excludes": {
+        "0": "Internationale und Inlandsflüge, sofern nicht ausdrücklich hinzugefügt",
+        "1": "Äthiopisches Visum",
+        "2": "Reiseversicherung",
+        "3": "Persönliche Ausrüstung",
+        "4": "Alkohol",
+        "5": "Tipps",
+        "6": "Persönliche Einkäufe",
+        "7": "Nicht aufgeführte Leistungen"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Tag 1",
+          "title": "Semera → Afdera-See → Erta Ale",
+          "text": "Einweisung, Fahrzeugvorbereitung und Wasserkontrolle, dann der Abstieg. Ein Stopp rund um den Afdera-See, dann der immer abgelegenere letzte Abschnitt in Richtung Erta Ale. Erholen Sie sich in den heißesten Stunden und wandern Sie am kühleren Abend zum Vulkangebiet.",
+          "overnight": "Expeditionslager, Erta Ale-Gebiet",
+          "meals": "Mittagessen, Abendessen"
+        },
+        "1": {
+          "day": "Tag 2",
+          "title": "Erta Ale → Wüstendurchquerung → Hamed Ela",
+          "text": "Vulkanbeobachtung am frühen Morgen, wenn die Bedingungen es zulassen, dann Frühstück und Rückkehr zu den Fahrzeugen. Auf einem langen Expeditionstransfer nach Hamed Ela weicht Lava der Wüste. Nach einer Pause besuchen Sie je nach Bedingungen die Salzlandschaft rund um den Asale-See.",
+          "overnight": "Hamed Ela",
+          "meals": "Frühstück, Mittagessen, Abendessen"
+        },
+        "2": {
+          "day": "Tag 3",
+          "title": "Dallol, Lake Asale und Salzland",
+          "text": "Ein früher Start, da Dallol am besten vor der Hitze angefahren wird. Ihr Guide erklärt die Mineralfarben, Salzformationen und die dahinter stehende vulkanische Aktivität. Fahren Sie weiter in das weitere Salzland und beobachten Sie, wo aktiv, respektvoll Salzarbeiter und Kamelkarawanen. Der Nachmittag ist zum Ausruhen da.",
+          "overnight": "Hamed Ela",
+          "meals": "Frühstück, Mittagessen, Abendessen"
+        },
+        "3": {
+          "day": "Tag 4",
+          "title": "Hamed Ela → Afdera-See → Semera",
+          "text": "Ein letzter Morgen in der Wüste, dann die Rückreise mit einem Zwischenstopp in Afdera, wo es die Zeiteinteilung zulässt. Die Landschaft ändert sich erneut, während die Straße zurück nach Semera steigt.",
+          "overnight": "Keine",
+          "meals": "Frühstück, Mittagessen"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Wie schwierig ist der Danakil?",
+          "a": "Die Herausforderung besteht hauptsächlich aus Hitze, langen 4×4-Fahrten, rauen Strecken, abgelegenen Bedingungen, frühen Starts und einfachem Camping. Es handelt sich nicht um eine technische Bergsteigerexpedition, aber sie sollte nicht als gewöhnliche Besichtigungstour betrachtet werden."
+        },
+        "1": {
+          "q": "Gibt es noch einen Lavasee bei Erta Ale?",
+          "a": "Erta Ale hat eine lange Geschichte von sich verändernden Lavaseen und eruptiven Aktivitäten. Datierte Fotos und Berichte bestätigen nicht, was bei Ihrer Abreise sichtbar ist. Fragen Sie uns nach aktuellen Beobachtungen und den geplanten Besichtigungsterminen; Es kann kein Lavasee oder eine besondere Erscheinung garantiert werden."
+        },
+        "2": {
+          "q": "Sind Kamelkarawanen garantiert?",
+          "a": "Nein. Sie sind Teil der traditionellen Salzwirtschaft, aber ob Sie sie sehen, hängt vom Zeitpunkt und den Aktivitäten vor Ort ab."
+        },
+        "3": {
+          "q": "Ist Dallol immer erreichbar?",
+          "a": "Der Zugang hängt von den aktuellen Bedingungen, örtlichen Anweisungen und Sicherheitsaspekten ab. Wir bestätigen den Plan für Ihre Daten vor der Abreise."
+        },
+        "4": {
+          "q": "Ist das eine Luxusreise?",
+          "a": "Nein. Selbst bei sorgfältiger Organisation bleibt der Danakil abgelegen und die Lager sind einfach. Das ist Teil des Erlebnisses."
+        }
+      }
+    },
+    "beyond-the-highlights": {
+      "title": "Jenseits der Höhepunkte",
+      "imageAlt": "Grüne Mineralbecken und Salzformationen in der Danakil-Landschaft",
+      "days": "5 Tage",
+      "season": "Beste November-Januar-Zeit",
+      "difficulty": "Mittel – anspruchsvoll",
+      "teaser": "Der Danakil ohne Hektik, mit einer Nacht am Lake Afdera und einem zweiten Tag im Erta Ale.",
+      "summary": "Fünf Tage kommen eine Nacht am Afdera-See und ein ganzer zweiter Tag rund um Erta Ale hinzu, sodass der Vulkan nicht an einem einzigen Abend gequetscht wird. Konzipiert für Reisende, die mehr wollen als nur Fotos.",
+      "why": "Der zusätzliche Tag in Erta Ale bietet Ruhe, geologische Interpretationen und, wenn die Bedingungen es zulassen, ein zweites Beobachtungsfenster.",
+      "idealFor": "Fotografen und Reisende, die keine überstürzten Touren mögen und möchten, dass die Expedition selbst Teil der Geschichte ist.",
+      "notFor": "Reisende mit festen Weiterverbindungen am selben Tag, da die endgültige Rückfahrt lang ist.",
+      "includes": {
+        "0": "Privater 4×4-Expeditionsfahrzeug",
+        "1": "Professioneller Fahrer",
+        "2": "Englischsprachiger Führer",
+        "3": "Lokale Afar-Führer und Pfadfinder, wo erforderlich",
+        "4": "Treibstoff",
+        "5": "Trinken Sie Wasser",
+        "6": "Camping-Ausrüstung",
+        "7": "Mahlzeiten wie im aufgeführt Reiseplan",
+        "8": "Lokale Zugangsvereinbarungen"
+      },
+      "excludes": {
+        "0": "Internationale und Inlandsflüge, sofern nicht ausdrücklich hinzugefügt",
+        "1": "Äthiopisches Visum",
+        "2": "Reiseversicherung",
+        "3": "Persönliche Ausrüstung",
+        "4": "Alkohol",
+        "5": "Tipps",
+        "6": "Persönliche Einkäufe",
+        "7": "Nicht aufgeführte Leistungen"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Tag 1",
+          "title": "Semera → Afdera-See",
+          "text": "Der Übergang vom Hochland zum Tiefland, wobei Ihr Reiseführer die Afar-Landschaft interpretiert. Zeit rund um den Afdera-See, je nach Bedingungen, und ein erstes Gespräch über Salz und Wasser in der Wüste.",
+          "overnight": "Afdera-Gebiet",
+          "meals": "Mittagessen, Abendessen"
+        },
+        "1": {
+          "day": "Tag 2",
+          "title": "Afdera-See → Erta Ale",
+          "text": "Tiefer in die Senke durch abgelegenes Vulkanland. Ruhen Sie sich bei der Ankunft in der Nähe von Erta Ale aus und genießen Sie dann das Vulkanerlebnis am Abend.",
+          "overnight": "Erta Ale-Gebiet",
+          "meals": "Frühstück, Mittagessen, Abendessen"
+        },
+        "2": {
+          "day": "Tag 3",
+          "title": "Erta Ale, ohne Eile",
+          "text": "Frühe Vulkanbeobachtung, Frühstück, dann Ruhe, geologische Interpretation und Zeit zum Fotografieren. Eine zweite Beobachtung kann arrangiert werden, wenn die Bedingungen es zulassen.",
+          "overnight": "Erta Ale-Gebiet",
+          "meals": "Frühstück, Mittagessen, Abendessen"
+        },
+        "3": {
+          "day": "Tag 4",
+          "title": "Erta Ale → Hamed Ela → Asale-See",
+          "text": "Verlassen Sie die Vulkanlandschaft und durchqueren Sie die Wüste nach Hamed Ela. Ruhen Sie sich aus und erkunden Sie dann am späten Nachmittag die Salzebene des Lake Asale, sofern die Bedingungen es zulassen.",
+          "overnight": "Hamed Ela",
+          "meals": "Frühstück, Mittagessen, Abendessen"
+        },
+        "4": {
+          "day": "Tag 5",
+          "title": "Dallol → Salzland → Semera",
+          "text": "Frühe Erkundung von Dallol und der Salzlandschaft, einschließlich traditioneller Salzverarbeitungsgebiete, wo aktiv, dann die lange Rückreise nach Semera.",
+          "overnight": "Keine",
+          "meals": "Frühstück, Mittagessen"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Wie schwierig ist der Danakil?",
+          "a": "Die Herausforderung besteht hauptsächlich aus Hitze, langen 4×4-Fahrten, rauen Strecken, abgelegenen Bedingungen, frühen Starts und einfachem Camping. Es handelt sich nicht um eine technische Bergsteigerexpedition, aber sie sollte nicht als gewöhnliche Besichtigungstour betrachtet werden."
+        },
+        "1": {
+          "q": "Gibt es noch einen Lavasee bei Erta Ale?",
+          "a": "Erta Ale hat eine lange Geschichte von sich verändernden Lavaseen und eruptiven Aktivitäten. Datierte Fotos und Berichte bestätigen nicht, was bei Ihrer Abreise sichtbar ist. Fragen Sie uns nach aktuellen Beobachtungen und den geplanten Besichtigungsterminen; Es kann kein Lavasee oder eine besondere Erscheinung garantiert werden."
+        },
+        "2": {
+          "q": "Sind Kamelkarawanen garantiert?",
+          "a": "Nein. Sie sind Teil der traditionellen Salzwirtschaft, aber ob Sie sie sehen, hängt vom Zeitpunkt und den Aktivitäten vor Ort ab."
+        },
+        "3": {
+          "q": "Ist Dallol immer erreichbar?",
+          "a": "Der Zugang hängt von den aktuellen Bedingungen, örtlichen Anweisungen und Sicherheitsaspekten ab. Wir bestätigen den Plan für Ihre Daten vor der Abreise."
+        },
+        "4": {
+          "q": "Ist das eine Luxusreise?",
+          "a": "Nein. Selbst bei sorgfältiger Organisation bleibt der Danakil abgelegen und die Lager sind einfach. Das ist Teil des Erlebnisses."
+        }
+      }
+    },
+    "danakil-photography-expedition": {
+      "title": "Danakil-Fotoexpedition",
+      "imageAlt": "Farbenfrohe Mineralbecken und Salzformationen im Danakil",
+      "days": "7 Tage",
+      "season": "Vorbehaltlich der Bedingungen und der saisonalen Eignung",
+      "difficulty": "Mittel – anspruchsvoll",
+      "teaser": "Sieben Tage rund um Licht, Geduld und die fotografischen Geschichten von Afar.",
+      "summary": "Fotografieren Sie die Vulkanlandschaften von Erta Ale, die Salzebenen des Asale-Sees, Dallols Mineraliendetails und das Afar-Leben auf einer privaten siebentägigen Expedition. Morgendämmerung, Abenddämmerung und mögliche Nachtaufnahmen prägen den Zeitplan, mit Zeit für Ruhe, Bildsicherungen und Ausrüstungspflege zwischen den Aufnahmen.",
+      "why": "Dies ist eine von der Fotografie geleitete Reise: längere Beobachtungsfenster, flexible Aufnahmezeiten und eine zweite Nacht in der Vulkanlandschaft. Die Route folgt den verfügbaren Lichtverhältnissen, Zugangswegen und örtlichen Führungen und nicht einer Besichtigungs-Checkliste.",
+      "idealFor": "Anfänger bis professionelle Fotografen, die Zeit für Landschafts-, Dokumentations-, Geologie- und Nachtfotografie haben möchten. Teilen Sie Ihre Ausrüstung und bevorzugte Motive bei der Planung mit.",
+      "notFor": "Reisende, die eine kurze Rundreise zu den Highlights, Hotelkomfort im gesamten Gebäude oder garantierte Lava-, Wohnwagen- und Porträtfotos suchen.",
+      "includes": {
+        "0": "Private Reiseroute und Routenplanung unter fotografischer Führung",
+        "1": "Privater 4×4-Expeditionstransport mit einem erfahrenen Fahrer",
+        "2": "Englischsprachiger Expeditionsführer und örtliche Afar-Unterstützung",
+        "3": "Lokale Pfadfinder- und Begleitvereinbarungen, sofern erforderlich",
+        "4": "6 Nächte Expeditionsunterkunft und Campingausrüstung",
+        "5": "Mahlzeiten wie im Reiseplan aufgeführt und Trinkwasser",
+        "6": "Fotografiefokussiertes Timing und Landschaftsinterpretation",
+        "7": "Besuche von Fotostandorten, sofern zugänglich",
+        "8": "Rückkehr nach Semera"
+      },
+      "excludes": {
+        "0": "Internationale und Inlandsflüge, sofern nicht ausdrücklich hinzugefügt",
+        "1": "Äthiopisches Visum",
+        "2": "Reiseversicherung",
+        "3": "Persönliche Ausrüstung",
+        "4": "Alkohol",
+        "5": "Tipps",
+        "6": "Persönliche Einkäufe",
+        "7": "Nicht aufgeführte Leistungen",
+        "8": "Kameras, Objektive, Stative, Speicherkarten und andere persönliche Ausrüstung",
+        "9": "Drohnen und Drohnengenehmigungen",
+        "10": "Premium-Unterkunfts-Upgrades",
+        "11": "Professioneller Fotounterricht oder Produktionsteam, sofern nicht anders angegeben",
+        "12": "Sondergenehmigungen für Dreharbeiten und Lizenzierung kommerzieller Bilder",
+        "13": "Persönliche medizinische Ausgaben und Notevakuierung"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Tag 1",
+          "title": "Semera → Afdera-See: Die Landschaft öffnet sich",
+          "text": "Treffen Sie das Team für eine Routen- und Ausrüstungsbesprechung und fahren Sie dann nach Afar in Richtung Afdera-See. Fotografieren Sie die sich verändernde Landschaft und die Salzverarbeitungsgebiete, wo Aktivität und Zugang dies zulassen. Reservieren Sie den späten Nachmittag für Landschafts-, Textur- und Sonnenuntergangskompositionen, anstatt zwischen den Stopps zu hetzen.",
+          "overnight": "Afdera-Gebiet",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "1": {
+          "day": "Tag 2",
+          "title": "Lake Afdera → Erta Ale: vulkanisches Licht",
+          "text": "Reisen Sie durch vulkanisches Gelände und suchen Sie nach Basaltstrukturen, Graten und Motiven, die das Ausmaß der Landschaft verdeutlichen. Schlagen Sie Ihr Lager auf und planen Sie die Vorgehensweise im Hinblick auf Hitze und Stromzugang. Wenn die Bedingungen es zulassen, fotografieren Sie nachts Silhouetten zur blauen Stunde und den ausgewiesenen vulkanischen Beobachtungsbereich. Es kann niemals garantiert werden, dass ein Lavasee oder eine bestimmte Erscheinung sichtbar ist.",
+          "overnight": "Erta Ale-Expeditionslager",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "2": {
+          "day": "Tag 3",
+          "title": "Erta Ale: Morgendämmerung, Details und ein weiteres Aufnahmefenster",
+          "text": "Verwenden Sie das Beobachtungsfenster im Morgengrauen, sofern zugänglich, und erkunden Sie dann geologische Texturen von geeigneten sicheren Positionen aus. Ruhen Sie sich in den heißesten Stunden aus, reinigen Sie die Ausrüstung und sichern Sie die Bilder. Möglicherweise wird zu einem späteren Zeitpunkt eine weitere Fotosession vereinbart, sodass Sie Zeit für Kompositionen haben, die über den offensichtlichen Blick auf den Krater hinausgehen.",
+          "overnight": "Erta Ale-Expeditionslager",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "3": {
+          "day": "Tag 4",
+          "title": "Erta Ale → Hamed Ela: Raum und Maßstab",
+          "text": "Durchqueren Sie die Wüste in Richtung Hamed Ela und lassen Sie sich Zeit für minimalistische Landschaften, Straßenlinien und entfernte Figuren, wo Stopps angebracht sind. Ruhen Sie sich bei der Ankunft aus und bereiten Sie sich dann auf die Wüstenfotografie am späten Nachmittag vor, sofern die Bedingungen dies zulassen. Der Schwerpunkt verlagert sich von vulkanischen Details hin zum Maßstab des Horizonts.",
+          "overnight": "Hamed Ela-Expeditionslager",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "4": {
+          "day": "Tag 5",
+          "title": "Asale-See: die menschliche Salzlandschaft",
+          "text": "Beginnen Sie früh wegen der Salzlandschaft, Schatten, Texturen und möglichen Reflexionen. Wo Salzgewinnung oder Karawanenaktivitäten zugänglich sind, fotografieren Sie respektvoll mit Genehmigung und örtlicher Anleitung. Weder Arbeiter noch Wohnwagen werden bereitgestellt oder garantiert. Lassen Sie die heißesten Stunden für Ruhe und Ausrüstungspflege übrig, mit einem weiteren Lichtfenster, wo die Route es zulässt.",
+          "overnight": "Hamed Ela-Expeditionslager",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "5": {
+          "day": "Tag 6",
+          "title": "Dallol: Mineralfarben und abstrakte Details",
+          "text": "Besuchen Sie frühzeitig, wo der Zugang erlaubt, beginnen Sie mit breiten Zusammensetzungen, bevor Sie Mineralmuster, Salztexturen und geologische Details isolieren. Folgen Sie durchgehend der ausgewiesenen Route und den örtlichen Anweisungen. Kein Foto rechtfertigt es, sicheren Boden zu verlassen. Rückkehr zum Mittagessen, Ausruhen und für Bildsicherungen, mit einer späteren Sitzung nur, wenn die Bedingungen und der Einsatzplan dies zulassen.",
+          "overnight": "Hamed Ela oder ausgewiesenes Wüstenlager",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "6": {
+          "day": "Tag 7",
+          "title": "Afar-Kulturfotografie → Semera",
+          "text": "Wo respektvolle, vorab vereinbarte Interaktionen möglich sind, erstellen Sie Umgebungsporträts, die Menschen mit ihrer Umgebung verbinden. Fragen Sie zuerst und respektieren Sie eine Ablehnung. Die letzten Fotomöglichkeiten passen zu der Rückreise nach Semera und Ihren vereinbarten Weiterreisearrangements.",
+          "overnight": "Keine",
+          "meals": "Frühstück und Mittagessen"
+        }
+      },
+      "accessNote": "Drehorte und -zeiten hängen von der aktuellen Zugänglichkeit, der Hitze, dem Wetter und den örtlichen Anweisungen ab. Vulkanische Aktivität, Karawanen, Porträts und besondere Lichtverhältnisse können niemals garantiert werden.",
+      "faqs": {
+        "0": {
+          "q": "Muss ich ein professioneller Fotograf sein?",
+          "a": "Nein. Mitmachen können Anfänger bis Profis. Teilen Sie uns Ihre Erfahrung, Ausrüstung und Interessen mit, damit der Fotoplan auf Ihre Gruppe zugeschnitten werden kann."
+        },
+        "1": {
+          "q": "Ist Fotounterricht inbegriffen?",
+          "a": "Das Paket umfasst eine auf Fotografie ausgerichtete Expeditionsplanung und -führung. Eine spezielle Schulung oder ein professioneller Workshop können separat besprochen und angeboten werden."
+        },
+        "2": {
+          "q": "Werden wir Lava- oder Kamelkarawanen fotografieren?",
+          "a": "Nur dort, wo Aktivität, Zugang und Zeitplanung dies zulassen. Weder ein Lavasee noch eine Karawane zu einem bestimmten Zeitpunkt ist garantiert."
+        },
+        "3": {
+          "q": "Wie sollte ich meine Ausrüstung vorbereiten?",
+          "a": "Bringen Sie Ersatzbatterien, Speicherkarten, Backup-Speicher und Schutz vor Staub, Hitze und Salz mit. Das Aufladen und die Konnektivität sind begrenzt. Besprechen Sie Ihren Strombedarf vor der Abreise. Ein Stativ ist nützlich für Aufnahmen bei schlechten Lichtverhältnissen."
+        },
+        "4": {
+          "q": "Kann ich Personen fotografieren oder mitbringen? Drohne?",
+          "a": "Personen nur mit Zustimmung und unter örtlicher Anleitung fotografieren. Für den Einsatz von Drohnen sind entsprechende Genehmigungen erforderlich; Ausrüstung und Drohnengenehmigungen sind in diesem Paket nicht enthalten."
+        },
+        "5": {
+          "q": "Kann der Drehplan angepasst werden?",
+          "a": "Ja. Teilen Sie uns bei Ihrer Anfrage Ihre Wunschthemen, Ausstattung und etwaige Produktionsanforderungen mit. Der endgültige Reiseplan und das Angebot spiegeln diese Bedürfnisse und die Bedingungen für Ihre Reisedaten wider."
+        }
+      }
+    },
+    "afar-geology-and-culture": {
+      "title": "Ferngeologie und Kultur",
+      "imageAlt": "Freigelegte geologische Schichten in einer Afar-Felsformation",
+      "days": "8 Tage",
+      "season": "Beste November-Januar-Zeit",
+      "difficulty": "Mittel – anspruchsvoll",
+      "teaser": "Verstehen Sie das Land, fotografieren Sie es nicht nur: Vulkane, Salz, Menschen und die Geographie des Rift.",
+      "summary": "Unsere Afar-Expedition im Spezialistenstil mit einem Tag, an dem es eher um Menschen als um Landschaften geht, und einem ausgedehnten Dallol-Geologietag. Geeignet für Fotografen, Geologen, Dokumentarreisende, Forscher und Schriftsteller.",
+      "why": "Geschaffen für Reisende, die eine Interpretation wünschen: Wie der Grabenbruch diese Landschaft geformt hat und wie Wasser, Vieh, Salz und Mobilität das tägliche Leben in Afar prägen.",
+      "idealFor": "Fotografen, Geologen, Forscher, Schriftsteller und zutiefst neugierige Reisende.",
+      "notFor": "Reisende, die den schnellsten Weg suchen, die wichtigsten Sehenswürdigkeiten zu sehen.",
+      "includes": {
+        "0": "Privater 4×4-Expeditionsfahrzeug",
+        "1": "Professioneller Fahrer",
+        "2": "Englischsprachiger Führer",
+        "3": "Lokale Afar-Führer und Pfadfinder, wo erforderlich",
+        "4": "Treibstoff",
+        "5": "Trinken Sie Wasser",
+        "6": "Camping-Ausrüstung",
+        "7": "Mahlzeiten wie im aufgeführt Reiseplan",
+        "8": "Lokale Zugangsvereinbarungen"
+      },
+      "excludes": {
+        "0": "Internationale und Inlandsflüge, sofern nicht ausdrücklich hinzugefügt",
+        "1": "Äthiopisches Visum",
+        "2": "Reiseversicherung",
+        "3": "Persönliche Ausrüstung",
+        "4": "Alkohol",
+        "5": "Tipps",
+        "6": "Persönliche Einkäufe",
+        "7": "Nicht aufgeführte Leistungen"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Tag 1",
+          "title": "Semera → Afdera-See",
+          "text": "Eine Einführung in Afar, den Afdera-See und die Salzlandschaft um ihn herum.",
+          "overnight": "Afdera-Gebiet"
+        },
+        "1": {
+          "day": "Tag 2",
+          "title": "Afdera-See → Erta Ale",
+          "text": "Durch vulkanisches Gelände nach die nächtliche Annäherung an Erta Ale.",
+          "overnight": "Erta Ale-Gebiet"
+        },
+        "2": {
+          "day": "Tag 3",
+          "title": "Erta Ale",
+          "text": "Erweiterte Vulkanbeobachtung, geologische Interpretation und Fotografie.",
+          "overnight": "Erta Ale-Gebiet"
+        },
+        "3": {
+          "day": "Tag 4",
+          "title": "Erta Ale → Hamed Ela",
+          "text": "Die Wüstenüberquerung nach Hamed Ela.",
+          "overnight": "Hamed Ela"
+        },
+        "4": {
+          "day": "Tag 5",
+          "title": "Asale-See",
+          "text": "Die Salinen, die Salzwirtschaft und die Kamelrouten waren aktiv.",
+          "overnight": "Hamed Ela"
+        },
+        "5": {
+          "day": "Tag 6",
+          "title": "Afar-Kulturlandschaft",
+          "text": "Ein Tag über Menschen. Erfahren Sie durch vorab vereinbarte Kontakte vor Ort und einen respektvollen Umgang, wie Wasser, Vieh, Salz und Mobilität das Leben hier prägen. Es kann Gespräche, Essen, traditionelle Praktiken und lokale Dolmetscher umfassen, abhängig von der Verfügbarkeit in der Gemeinde.",
+          "overnight": "Hamed Ela"
+        },
+        "6": {
+          "day": "Tag 7",
+          "title": "Dallol-Geologie",
+          "text": "Erweiterte Erkundung von Dallol: Mineralformationen, hydrothermale Aktivität, Salzstrukturen und ihre Vulkanischer Kontext.",
+          "overnight": "Hamed Ela"
+        },
+        "7": {
+          "day": "Tag 8",
+          "title": "Hamed Ela → Semera",
+          "text": "Die Rückreise mit letzten Landschaftsstopps auf dem Weg nach Semera.",
+          "overnight": "Keine"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Wie schwierig ist der Danakil?",
+          "a": "Die Herausforderung besteht hauptsächlich aus Hitze, langen 4×4-Fahrten, rauen Strecken, abgelegenen Bedingungen, frühen Starts und einfachem Camping. Es handelt sich nicht um eine technische Bergsteigerexpedition, aber sie sollte nicht als gewöhnliche Besichtigungstour betrachtet werden."
+        },
+        "1": {
+          "q": "Gibt es noch einen Lavasee bei Erta Ale?",
+          "a": "Erta Ale hat eine lange Geschichte von sich verändernden Lavaseen und eruptiven Aktivitäten. Datierte Fotos und Berichte bestätigen nicht, was bei Ihrer Abreise sichtbar ist. Fragen Sie uns nach aktuellen Beobachtungen und den geplanten Besichtigungsterminen; Es kann kein Lavasee oder eine besondere Erscheinung garantiert werden."
+        },
+        "2": {
+          "q": "Sind Kamelkarawanen garantiert?",
+          "a": "Nein. Sie sind Teil der traditionellen Salzwirtschaft, aber ob Sie sie sehen, hängt vom Zeitpunkt und den Aktivitäten vor Ort ab."
+        },
+        "3": {
+          "q": "Ist Dallol immer erreichbar?",
+          "a": "Der Zugang hängt von den aktuellen Bedingungen, örtlichen Anweisungen und Sicherheitsaspekten ab. Wir bestätigen den Plan für Ihre Daten vor der Abreise."
+        },
+        "4": {
+          "q": "Ist das eine Luxusreise?",
+          "a": "Nein. Selbst bei sorgfältiger Organisation bleibt der Danakil abgelegen und die Lager sind einfach. Das ist Teil des Erlebnisses."
+        }
+      }
+    },
+    "the-afar-edge": {
+      "title": "Die Afar-Kante",
+      "imageAlt": "Das Wasser des Afdera-Sees liegt an einem salzverkrusteten Ufer.",
+      "days": "1 Tag",
+      "season": "Beste November-Januar-Zeit",
+      "difficulty": "Leicht – mittelschwer",
+      "teaser": "Eine erste Begegnung mit dem Afar-Tiefland und dem Afdera-See an einem Tag von Semera aus.",
+      "summary": "Ein Tag kann ehrlich gesagt nicht die gesamte Danakil-Senke liefern, und wir behaupten nicht, dass dies der Fall ist. Der Abstieg vom Hochland in das Afar-Tiefland und die Salzumgebung rund um den Afdera-See führt dazu.",
+      "why": "Für Reisende, die nur einen Tag für Afar zur Verfügung haben. Die Straße selbst ist Teil des Erlebnisses: Wenn Sie Semera verlassen, wird die Vegetation dünner, vulkanisches Gelände erscheint und der Horizont weitet sich.",
+      "idealFor": "Reisende mit einem einzigen freien Tag, die die Afar-Landschaft selbst sehen möchten.",
+      "notFor": "Jeder, der Erta Ale, Dallol oder die Salinen sehen möchte. Wählen Sie für diese drei Tage oder länger.",
+      "includes": {
+        "0": "Privates 4×4-Fahrzeug",
+        "1": "Professioneller Fahrer",
+        "2": "Englischsprachiger Führer",
+        "3": "Treibstoff",
+        "4": "Trinken Sie Wasser",
+        "5": "Mittagessen",
+        "6": "Lokale Koordination und geplante Stopps"
+      },
+      "excludes": {
+        "0": "Unterkunft",
+        "1": "Inlandsflüge",
+        "2": "Reiseversicherung",
+        "3": "Persönliche Ausgaben",
+        "4": "Tipps",
+        "5": "Nicht aufgeführte Leistungen"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Tag 1",
+          "title": "Semera → Afar-Tiefland → Afdera-See → Semera",
+          "text": "Eine kurze Einweisung in Flüssigkeitszufuhr, Hitze und Fotografie-Etikette, dann der Abstieg in Richtung der Afar-Senke; Die Fahrt zum Afdera-See dauert je nach Straße normalerweise drei bis vier Stunden. Ihr Reiseführer erklärt, wie sich Höhe, Klima, vulkanische Aktivität und Besiedlung ändern, wenn die Straße abfällt. Zeit in der Nähe des Afdera-Sees, einem hypersalinen See mehr als 100 Meter unter dem Meeresspiegel, der von heißen Quellen gespeist und von Salzverdunstungsteichen umgeben ist, um über die Salzwirtschaft von Afar zu sprechen. Unterwegs Mittagessen, dann Rückkehr nach Semera, wenn sich das Nachmittagslicht ändert.",
+          "overnight": "Keine",
+          "meals": "Mittagessen"
+        }
+      }
+    },
+    "danakil-first-look": {
+      "title": "Danakil erster Blick",
+      "imageAlt": "Glühende Lava in einem Vulkankrater bei Erta Ale",
+      "days": "2 Tage",
+      "season": "Beste November-Januar-Zeit",
+      "difficulty": "Mittel – anspruchsvoll",
+      "teaser": "Der Afdera-See und eine Nacht im Erta Ale für Reisende mit sehr wenig Zeit.",
+      "summary": "Zwei Tage lang führen Sie über eine Einführung hinaus in die Vulkanlandschaft rund um Erta Ale. Es wird bewusst nicht als „Alles in zwei Tagen“ verkauft: Dallol und die Salinen brauchen eine längere Reise.",
+      "why": "Entwickelt für Reisende, deren Zeitplan extrem eng ist, die aber eine Nacht verbringen möchten in der Vulkanwüste statt eines Tagesausflugs.",
+      "idealFor": "Reisende mit zwei Tagen, für die vor allem Erta Ale wichtig ist.",
+      "notFor": "Jeder, der speziell Dallol, den Asale-See und die Salzlandschaft möchte. Wählen Sie die 3- oder 4-tägige Expedition.",
+      "includes": {
+        "0": "Privater 4×4-Expeditionsfahrzeug",
+        "1": "Professioneller Fahrer",
+        "2": "Englischsprachiger Führer",
+        "3": "Lokale Afar-Führer und Pfadfinder, wo erforderlich",
+        "4": "Treibstoff",
+        "5": "Trinken Sie Wasser",
+        "6": "Camping-Ausrüstung",
+        "7": "Mahlzeiten wie im aufgeführt Reiseplan",
+        "8": "Lokale Zugangsvereinbarungen"
+      },
+      "excludes": {
+        "0": "Internationale und Inlandsflüge, sofern nicht ausdrücklich hinzugefügt",
+        "1": "Äthiopisches Visum",
+        "2": "Reiseversicherung",
+        "3": "Persönliche Ausrüstung",
+        "4": "Alkohol",
+        "5": "Tipps",
+        "6": "Persönliche Einkäufe",
+        "7": "Nicht aufgeführte Leistungen"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Tag 1",
+          "title": "Semera → Afdera-See → Erta Ale",
+          "text": "Frühe Abreise und Übergang nach Afar, mit Stopps für Fotos und Interpretationen. Mittagessen in der Nähe des Afdera-Sees, dann tiefer in die Senke hinein auf zunehmend unebenen Straßen. Ruhen Sie sich während der heißesten Zeit des Tages in der Nähe von Erta Ale aus und wandern Sie dann bei sinkenden Temperaturen in Richtung des Vulkangebiets. Die Wanderung hängt von der aktuellen Route und den Bedingungen ab.",
+          "overnight": "Grundlegendes Expeditionslager in der Nähe von Erta Ale",
+          "meals": "Mittagessen, Abendessen"
+        },
+        "1": {
+          "day": "Tag 2",
+          "title": "Erta Ale → Afdera-See → Semera",
+          "text": "Ein Beobachtungsfenster am frühen Morgen, wenn die Bedingungen es zulassen, vor der stärksten Hitze. Zurück zu den Fahrzeugen zum Frühstück, dann die lange Rückfahrt durch die sich verändernde Wüste nach Semera.",
+          "overnight": "Keine",
+          "meals": "Frühstück, Mittagessen"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Wie schwierig ist der Danakil?",
+          "a": "Die Herausforderung besteht hauptsächlich aus Hitze, langen 4×4-Fahrten, rauen Strecken, abgelegenen Bedingungen, frühen Starts und einfachem Camping. Es handelt sich nicht um eine technische Bergsteigerexpedition, aber sie sollte nicht als gewöhnliche Besichtigungstour betrachtet werden."
+        },
+        "1": {
+          "q": "Gibt es noch einen Lavasee bei Erta Ale?",
+          "a": "Erta Ale hat eine lange Geschichte von sich verändernden Lavaseen und eruptiven Aktivitäten. Datierte Fotos und Berichte bestätigen nicht, was bei Ihrer Abreise sichtbar ist. Fragen Sie uns nach aktuellen Beobachtungen und den geplanten Besichtigungsterminen; Es kann kein Lavasee oder eine besondere Erscheinung garantiert werden."
+        },
+        "2": {
+          "q": "Sind Kamelkarawanen garantiert?",
+          "a": "Nein. Sie sind Teil der traditionellen Salzwirtschaft, aber ob Sie sie sehen, hängt vom Zeitpunkt und den Aktivitäten vor Ort ab."
+        },
+        "3": {
+          "q": "Ist Dallol immer erreichbar?",
+          "a": "Der Zugang hängt von den aktuellen Bedingungen, örtlichen Anweisungen und Sicherheitsaspekten ab. Wir bestätigen den Plan für Ihre Daten vor der Abreise."
+        },
+        "4": {
+          "q": "Ist das eine Luxusreise?",
+          "a": "Nein. Selbst bei sorgfältiger Organisation bleibt der Danakil abgelegen und die Lager sind einfach. Das ist Teil des Erlebnisses."
+        }
+      }
+    },
+    "danakil-explorer": {
+      "title": "Danakil Explorer",
+      "imageAlt": "Vulkankrater und aufsteigende Wolke bei Erta Ale",
+      "days": "6 Tage",
+      "season": "Beste November-Januar-Zeit",
+      "difficulty": "Mittel – anspruchsvoll",
+      "teaser": "Vulkane, Salz und die Menschen von Afar, mit einem ganzen Tag in der Salzwirtschaft.",
+      "summary": "Sechs Tage geht über die berühmten Landschaften hinaus und widmet der menschlichen Geographie von Afar mehr Aufmerksamkeit: wie Salz verarbeitet wird, wie es in den breiteren Handel gelangt und wie Menschen in dieser Umgebung leben.",
+      "why": "Bei einem besonderen Tag am Lake Asale geht es um das Verständnis der Salzwirtschaft und nicht um inszenierte kulturelle Unterhaltung.",
+      "idealFor": "Reisende, die sich ebenso für Menschen und Lebensunterhalt interessieren als Landschaft.",
+      "notFor": "Reisende mit nur wenigen Tagen, für die Danakil Deep die wichtigsten Sehenswürdigkeiten abdeckt.",
+      "includes": {
+        "0": "Privater 4×4-Expeditionsfahrzeug",
+        "1": "Professioneller Fahrer",
+        "2": "Englischsprachiger Führer",
+        "3": "Lokale Afar-Führer und Pfadfinder, wo erforderlich",
+        "4": "Treibstoff",
+        "5": "Trinken Sie Wasser",
+        "6": "Camping-Ausrüstung",
+        "7": "Mahlzeiten wie im aufgeführt Reiseplan",
+        "8": "Lokale Zugangsvereinbarungen"
+      },
+      "excludes": {
+        "0": "Internationale und Inlandsflüge, sofern nicht ausdrücklich hinzugefügt",
+        "1": "Äthiopisches Visum",
+        "2": "Reiseversicherung",
+        "3": "Persönliche Ausrüstung",
+        "4": "Alkohol",
+        "5": "Tipps",
+        "6": "Persönliche Einkäufe",
+        "7": "Nicht aufgeführte Leistungen"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Tag 1",
+          "title": "Semera → Afdera-See",
+          "text": "Eine Einführung in Afar auf dem Weg nach unten: der Landschaftsübergang, der Afdera-See und die Grundlagen des Salz-, Wasser- und Wüstenlebens.",
+          "overnight": "Afdera-Gebiet"
+        },
+        "1": {
+          "day": "Tag 2",
+          "title": "Afdera-See → Erta Ale",
+          "text": "Die abgelegene vulkanische Annäherung, Ruhe während der Spitzenhitze und das nächtliche Vulkanerlebnis.",
+          "overnight": "Erta Ale-Gebiet"
+        },
+        "2": {
+          "day": "Tag 3",
+          "title": "Erta Ale, zweiter Tag",
+          "text": "Morgenbeobachtung, geologische Interpretation, Fotografie und Ruhe, mit einem optionalen zweiten Beobachtungsfenster je nach Bedingungen.",
+          "overnight": "Erta Ale-Gebiet"
+        },
+        "3": {
+          "day": "Tag 4",
+          "title": "Erta Ale → Hamed Ela",
+          "text": "Eine lange Wüstenüberquerung, wobei Ihr Reiseführer unterwegs die Afar-Siedlungen und die Landschaft erklärt.",
+          "overnight": "Hamed Ela"
+        },
+        "4": {
+          "day": "Tag 5",
+          "title": "Asale-See und die Salzwirtschaft",
+          "text": "Erkunden Sie die Salzlandschaft und schauen Sie, wenn aktiv, bei der traditionellen Salzgewinnung zu. Erfahren Sie, wie Salz aus der Depression in regionale Handelsnetzwerke gelangt. Je nach Zeitpunkt und Aktivität kann es zu Kamelkarawanen kommen.",
+          "overnight": "Hamed Ela"
+        },
+        "5": {
+          "day": "Tag 6",
+          "title": "Dallol → Semera",
+          "text": "Ein früher Besuch von Dallol wegen seiner Geologie und Mineralienlandschaft, dann Rückkehr nach Semera.",
+          "overnight": "Keine"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Wie schwierig ist der Danakil?",
+          "a": "Die Herausforderung besteht hauptsächlich aus Hitze, langen 4×4-Fahrten, rauen Strecken, abgelegenen Bedingungen, frühen Starts und einfachem Camping. Es handelt sich nicht um eine technische Bergsteigerexpedition, aber sie sollte nicht als gewöhnliche Besichtigungstour betrachtet werden."
+        },
+        "1": {
+          "q": "Gibt es noch einen Lavasee bei Erta Ale?",
+          "a": "Erta Ale hat eine lange Geschichte von sich verändernden Lavaseen und eruptiven Aktivitäten. Datierte Fotos und Berichte bestätigen nicht, was bei Ihrer Abreise sichtbar ist. Fragen Sie uns nach aktuellen Beobachtungen und den geplanten Besichtigungsterminen; Es kann kein Lavasee oder eine besondere Erscheinung garantiert werden."
+        },
+        "2": {
+          "q": "Sind Kamelkarawanen garantiert?",
+          "a": "Nein. Sie sind Teil der traditionellen Salzwirtschaft, aber ob Sie sie sehen, hängt vom Zeitpunkt und den Aktivitäten vor Ort ab."
+        },
+        "3": {
+          "q": "Ist Dallol immer erreichbar?",
+          "a": "Der Zugang hängt von den aktuellen Bedingungen, örtlichen Anweisungen und Sicherheitsaspekten ab. Wir bestätigen den Plan für Ihre Daten vor der Abreise."
+        },
+        "4": {
+          "q": "Ist das eine Luxusreise?",
+          "a": "Nein. Selbst bei sorgfältiger Organisation bleibt der Danakil abgelegen und die Lager sind einfach. Das ist Teil des Erlebnisses."
+        }
+      }
+    },
+    "into-the-danakil": {
+      "title": "In die Danakil-Region",
+      "imageAlt": "Grüne Mineralbecken, umgeben von Salzformationen",
+      "days": "7 Tage",
+      "season": "Beste November-Januar-Zeit",
+      "difficulty": "Mittel – anspruchsvoll",
+      "teaser": "Eine ganze Woche unter dem Horizont, bei der es eher um Tiefe als um Geschwindigkeit geht.",
+      "summary": "Eine Woche gibt jedem Teil des Danakil seinen eigenen Tag: der Vulkan, das Salz, das Handel, die Menschen und die Geologie von Dallol. Die Erzählung der Woche dreht sich um Hitze, Vulkan, Salz, Wasser, Handel, Menschen, Geologie.",
+      "why": "Jeder zusätzliche Tag hat einen Grund: einen ganzen Tag bei Erta Ale, einen ganzen Tag im Salzland und einen speziellen Tag der Dallol-Geologie.",
+      "idealFor": "Reisende, die möchten, dass der Danakil die ganze Reise umfasst und nicht nur eine Station.",
+      "notFor": "Reisende, die lieber die Wüste mit dem Hochland verbinden möchten. Sehen Sie Danakil und Gheralta.",
+      "includes": {
+        "0": "Privater 4×4-Expeditionsfahrzeug",
+        "1": "Professioneller Fahrer",
+        "2": "Englischsprachiger Führer",
+        "3": "Lokale Afar-Führer und Pfadfinder, wo erforderlich",
+        "4": "Treibstoff",
+        "5": "Trinken Sie Wasser",
+        "6": "Camping-Ausrüstung",
+        "7": "Mahlzeiten wie im aufgeführt Reiseplan",
+        "8": "Lokale Zugangsvereinbarungen"
+      },
+      "excludes": {
+        "0": "Internationale und Inlandsflüge, sofern nicht ausdrücklich hinzugefügt",
+        "1": "Äthiopisches Visum",
+        "2": "Reiseversicherung",
+        "3": "Persönliche Ausrüstung",
+        "4": "Alkohol",
+        "5": "Tipps",
+        "6": "Persönliche Einkäufe",
+        "7": "Nicht aufgeführte Leistungen"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Tag 1",
+          "title": "Semera → Afdera-See",
+          "text": "Ankunft in Afar, dem Landschaftsübergang und dem Afdera-See.",
+          "overnight": "Afdera-Gebiet"
+        },
+        "1": {
+          "day": "Tag 2",
+          "title": "Afdera-See → Erta Ale",
+          "text": "Die vulkanische Annäherung und ein abendlicher Aufstieg und Beobachtung, sofern die Bedingungen es zulassen.",
+          "overnight": "Erta Ale-Gebiet"
+        },
+        "2": {
+          "day": "Tag 3",
+          "title": "Erta Ale",
+          "text": "Ein voller Vulkantag: Beobachtung, Ruhe, geologische Interpretation und Fotografie.",
+          "overnight": "Erta Ale-Gebiet"
+        },
+        "3": {
+          "day": "Tag 4",
+          "title": "Erta Ale → Hamed Ela",
+          "text": "Die Wüstenüberquerung, vorbei an abgelegenen Siedlungen auf dem Weg nach Hamed Ela.",
+          "overnight": "Hamed Ela"
+        },
+        "4": {
+          "day": "Tag 5",
+          "title": "Lake Asale und Salzland",
+          "text": "Die Salinen, die Salzarbeiter und der Kameltransport, sofern aktiv, mit Zeit zum Fotografieren.",
+          "overnight": "Hamed Ela"
+        },
+        "5": {
+          "day": "Tag 6",
+          "title": "Dallol-Geologietag",
+          "text": "Hydrothermale Merkmale, Salzformationen und Minerallandschaften, mit ausführlicher Interpretation durch Ihren Reiseführer.",
+          "overnight": "Hamed Ela"
+        },
+        "6": {
+          "day": "Tag 7",
+          "title": "Hamed Ela → Semera",
+          "text": "Ein letzter Morgen in der Wüste und die Rückfahrt nach Semera.",
+          "overnight": "Keine"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Wie schwierig ist der Danakil?",
+          "a": "Die Herausforderung besteht hauptsächlich aus Hitze, langen 4×4-Fahrten, rauen Strecken, abgelegenen Bedingungen, frühen Starts und einfachem Camping. Es handelt sich nicht um eine technische Bergsteigerexpedition, aber sie sollte nicht als gewöhnliche Besichtigungstour betrachtet werden."
+        },
+        "1": {
+          "q": "Gibt es noch einen Lavasee bei Erta Ale?",
+          "a": "Erta Ale hat eine lange Geschichte von sich verändernden Lavaseen und eruptiven Aktivitäten. Datierte Fotos und Berichte bestätigen nicht, was bei Ihrer Abreise sichtbar ist. Fragen Sie uns nach aktuellen Beobachtungen und den geplanten Besichtigungsterminen; Es kann kein Lavasee oder eine besondere Erscheinung garantiert werden."
+        },
+        "2": {
+          "q": "Sind Kamelkarawanen garantiert?",
+          "a": "Nein. Sie sind Teil der traditionellen Salzwirtschaft, aber ob Sie sie sehen, hängt vom Zeitpunkt und den Aktivitäten vor Ort ab."
+        },
+        "3": {
+          "q": "Ist Dallol immer erreichbar?",
+          "a": "Der Zugang hängt von den aktuellen Bedingungen, örtlichen Anweisungen und Sicherheitsaspekten ab. Wir bestätigen den Plan für Ihre Daten vor der Abreise."
+        },
+        "4": {
+          "q": "Ist das eine Luxusreise?",
+          "a": "Nein. Selbst bei sorgfältiger Organisation bleibt der Danakil abgelegen und die Lager sind einfach. Das ist Teil des Erlebnisses."
+        }
+      }
+    },
+    "danakil-and-gheralta": {
+      "title": "Danakil & Gheralta",
+      "imageAlt": "Schichtige Klippen und felsige Berge in Gheralta",
+      "days": "10 Tage",
+      "season": "Beste November-Januar-Zeit",
+      "difficulty": "Anspruchsvolle",
+      "teaser": "Von den tiefsten Landschaften der Erde bis zu den Klippenkirchen von Tigray.",
+      "summary": "Eine unserer Flaggschiff-Kombinationen: die komplette Danakil-Route, zwei Nächte in Aksum, dann Gheralta mit einem speziellen Kirchenwandertag. Der Spaziergang zur Kirche ist Teil des Erlebnisses.",
+      "why": "Dadurch hat Gheralta einen ganzen Tag Zeit, sodass die Kirche, die Sie besuchen, für Sie ausgewählt und nicht eingequetscht wird.",
+      "idealFor": "Passend für Reisende, die sowohl die Wüste als auch die Hochlandkirchen auf einer Reise erleben möchten.",
+      "notFor": "Reisende, die sich nicht in der Höhe fühlen; Einige Gheralta-Kirchen erfordern steile, exponierte Anstiege, es gibt jedoch auch einfachere Optionen.",
+      "accessNote": "Aksum und Gheralta liegen in Tigray, wo sich der Zugang ändern kann. Wir bestätigen die aktuellen Bedingungen und die Route, bevor wir Ihre Daten angeben.",
+      "includes": {
+        "0": "Privater 4×4-Expeditionsfahrzeug",
+        "1": "Professioneller Fahrer",
+        "2": "Englischsprachiger Führer",
+        "3": "Lokale Afar-Führer und Pfadfinder, wo erforderlich",
+        "4": "Treibstoff",
+        "5": "Trinken Sie Wasser",
+        "6": "Camping-Ausrüstung",
+        "7": "Mahlzeiten wie im aufgeführt Reiseplan",
+        "8": "Lokale Zugangsvereinbarungen"
+      },
+      "excludes": {
+        "0": "Internationale und Inlandsflüge, sofern nicht ausdrücklich hinzugefügt",
+        "1": "Äthiopisches Visum",
+        "2": "Reiseversicherung",
+        "3": "Persönliche Ausrüstung",
+        "4": "Alkohol",
+        "5": "Tipps",
+        "6": "Persönliche Einkäufe",
+        "7": "Nicht aufgeführte Leistungen"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Tag 1",
+          "title": "Semera → Afdera-See",
+          "text": "Eine Einführung in Afar und den Afdera-See.",
+          "overnight": "Afdera-Gebiet"
+        },
+        "1": {
+          "day": "Tag 2",
+          "title": "Afdera-See → Erta Ale",
+          "text": "Die vulkanische Annäherung an Erta Ale.",
+          "overnight": "Erta Ale-Gebiet"
+        },
+        "2": {
+          "day": "Tag 3",
+          "title": "Erta Ale",
+          "text": "Ein ausgedehnter Vulkantag, sofern die Bedingungen es zulassen.",
+          "overnight": "Erta Ale-Gebiet"
+        },
+        "3": {
+          "day": "Tag 4",
+          "title": "Erta Ale → Hamed Ela",
+          "text": "Die Wüstenüberquerung nach Hamed Ela.",
+          "overnight": "Hamed Ela"
+        },
+        "4": {
+          "day": "Tag 5",
+          "title": "Dallol, Lake Asale und Salzland",
+          "text": "Ein ausgedehnter geologischer und kultureller Tag durch Dallol und die Salzlandschaft.",
+          "overnight": "Hamed Ela"
+        },
+        "5": {
+          "day": "Tag 6",
+          "title": "Danakil → Aksum",
+          "text": "Verlassen Sie die Senke und steigen Sie ins Hochland auf.",
+          "overnight": "Aksum"
+        },
+        "6": {
+          "day": "Tag 7",
+          "title": "Aksum",
+          "text": "Ein ganzer Tag Tag zur Erkundung der Geschichte von Aksum.",
+          "overnight": "Aksum"
+        },
+        "7": {
+          "day": "Tag 8",
+          "title": "Aksum → Gheralta",
+          "text": "Ein landschaftlich reizvoller Transfer in die Sandsteinklippen, mit der Sonnenuntergangslandschaft, wenn die Bedingungen es zulassen.",
+          "overnight": "Gheralta"
+        },
+        "8": {
+          "day": "Tag 9",
+          "title": "Gheralta-Kirchentag",
+          "text": "Ein früher Start. Die Auswahl der Kirche richtet sich nach der aktuellen Zugänglichkeit, der Fitness, dem Wetter und den örtlichen Gegebenheiten. Klettern Sie durch die Landschaft, erreichen Sie die Kirche und erfahren Sie, wie ihre Architektur, ihr Glaube und der Berg zusammengehören.",
+          "overnight": "Gheralta"
+        },
+        "9": {
+          "day": "Tag 10",
+          "title": "Gheralta → weiter",
+          "text": "Ein letzter Morgen mit einem optionalen Aussichtspunkt oder einem kurzen Spaziergang, dann Transfer zu Ihrem vereinbarten Ziel.",
+          "overnight": "Keine"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Wie schwierig ist der Danakil?",
+          "a": "Die Herausforderung besteht hauptsächlich aus Hitze, langen 4×4-Fahrten, rauen Strecken, abgelegenen Bedingungen, frühen Starts und einfachem Camping. Es handelt sich nicht um eine technische Bergsteigerexpedition, aber sie sollte nicht als gewöhnliche Besichtigungstour betrachtet werden."
+        },
+        "1": {
+          "q": "Gibt es noch einen Lavasee bei Erta Ale?",
+          "a": "Erta Ale hat eine lange Geschichte von sich verändernden Lavaseen und eruptiven Aktivitäten. Datierte Fotos und Berichte bestätigen nicht, was bei Ihrer Abreise sichtbar ist. Fragen Sie uns nach aktuellen Beobachtungen und den geplanten Besichtigungsterminen; Es kann kein Lavasee oder eine besondere Erscheinung garantiert werden."
+        },
+        "2": {
+          "q": "Sind Inlandsflüge inbegriffen?",
+          "a": "Sie werden separat zum aktuell bestätigten Tarif angeboten, da sich Flugpreise und Flugpläne ändern. Wir schließen sie in Ihrem Angebot ein, damit Sie vor der Buchung den vollen Preis sehen."
+        },
+        "3": {
+          "q": "Welche Kirche werden wir in Gheralta besuchen?",
+          "a": "Ihr Reiseleiter wählt mit Ihnen je nach aktueller Zugangsmöglichkeit, Fitness, Wetter und örtlicher Anleitung aus. Einige Kirchen erfordern steile, exponierte Anstiege; andere sind leicht zu erreichen."
+        },
+        "4": {
+          "q": "Kann die Routenänderung?",
+          "a": "Ja. Flugpläne, Straßenverhältnisse und regionale Erreichbarkeit können Anpassungen erfordern. Die Reiseroute ist der Rahmen der Reise und wir passen sie bei Bedarf an."
+        }
+      }
+    },
+    "afar-to-the-highlands": {
+      "title": "Afar ins Hochland",
+      "imageAlt": "Geschnitzter Steinobelisk in Axum unter blauem Himmel",
+      "days": "9 Tage",
+      "season": "Beste November-Januar-Zeit",
+      "difficulty": "Mittel – anspruchsvoll",
+      "teaser": "Von der Salzwüste zum alten Königreich Aksum und den Sandsteinfelsen von Gheralta.",
+      "summary": "Fünf Tage im Danakil, dann führt die Straße aus der Wüste hinauf ins Ackerland und ins Hochland: zwei Nächte in Aksum und ein letzter Tag in Gheralta. Es verbindet die extreme geologische Landschaft mit den alten Zivilisationen Nordäthiopiens.",
+      "why": "Der Kontrast ist der Punkt: von den tiefsten, heißesten Landschaften Afrikas zu einem seiner ältesten Königreiche auf einer einzigen Reise.",
+      "idealFor": "Reisende, die den Danakil und etwas von der Geschichte Äthiopiens ohne eine vollständige nördliche Rundreise erleben möchten.",
+      "notFor": "Reisende, die einen ganzen Tag mit Kirchenwanderungen in Gheralta verbringen möchten. Wählen Sie Danakil & Gheralta.",
+      "accessNote": "Aksum und Gheralta liegen in Tigray, wo sich der Zugang ändern kann. Wir bestätigen die aktuellen Bedingungen und die Route, bevor wir Ihre Daten angeben.",
+      "includes": {
+        "0": "Privater 4×4-Expeditionsfahrzeug",
+        "1": "Professioneller Fahrer",
+        "2": "Englischsprachiger Führer",
+        "3": "Lokale Afar-Führer und Pfadfinder, wo erforderlich",
+        "4": "Treibstoff",
+        "5": "Trinken Sie Wasser",
+        "6": "Camping-Ausrüstung",
+        "7": "Mahlzeiten wie im aufgeführt Reiseplan",
+        "8": "Lokale Zugangsvereinbarungen"
+      },
+      "excludes": {
+        "0": "Internationale und Inlandsflüge, sofern nicht ausdrücklich hinzugefügt",
+        "1": "Äthiopisches Visum",
+        "2": "Reiseversicherung",
+        "3": "Persönliche Ausrüstung",
+        "4": "Alkohol",
+        "5": "Tipps",
+        "6": "Persönliche Einkäufe",
+        "7": "Nicht aufgeführte Leistungen"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Tag 1",
+          "title": "Semera → Afdera-See",
+          "text": "Der Abstieg nach Afar und zum Afdera-See.",
+          "overnight": "Afdera-Gebiet"
+        },
+        "1": {
+          "day": "Tag 2",
+          "title": "Afdera-See → Erta Ale",
+          "text": "Die vulkanische Annäherung und der Abend bei Erta Ale, sofern die Bedingungen es zulassen.",
+          "overnight": "Erta Ale-Gebiet"
+        },
+        "2": {
+          "day": "Tag 3",
+          "title": "Erta Ale, zweiter Tag",
+          "text": "Morgenbeobachtung, Ruhe und Geologie Interpretation.",
+          "overnight": "Erta Ale-Gebiet"
+        },
+        "3": {
+          "day": "Tag 4",
+          "title": "Erta Ale → Hamed Ela",
+          "text": "Die Wüstenüberquerung nach Hamed Ela.",
+          "overnight": "Hamed Ela"
+        },
+        "4": {
+          "day": "Tag 5",
+          "title": "Dallol und Salzland",
+          "text": "Dallol am frühen Morgen, dann die Salzlandschaft des Lake Asale.",
+          "overnight": "Hamed Ela"
+        },
+        "5": {
+          "day": "Tag 6",
+          "title": "Danakil → Aksum",
+          "text": "Die Straße steigt an, die Wüste wird zum Hochland und landwirtschaftliche Nutzfläche kehrt zurück. Ankunft in Aksum.",
+          "overnight": "Hotel, Aksum"
+        },
+        "6": {
+          "day": "Tag 7",
+          "title": "Aksum",
+          "text": "Die Stelen, Königsgräber, heiligen Stätten und die antike Stadtgeschichte. Ihr Reiseführer verbindet sie mit der Handelswelt des Roten Meeres und der langen historischen Entwicklung Äthiopiens.",
+          "overnight": "Hotel, Aksum"
+        },
+        "7": {
+          "day": "Tag 8",
+          "title": "Aksum → Gheralta",
+          "text": "In die Sandsteinlandschaften von Gheralta, mit einem Aussichtspunkt oder einem kurzen Spaziergang, je nach Ankunftszeit.",
+          "overnight": "Gheralta"
+        },
+        "8": {
+          "day": "Tag 9",
+          "title": "Gheralta → weiter",
+          "text": "Ein morgendliches Kirchen- oder Landschaftserlebnis, je nach Zugang, Fitness und Timing, dann Weiterfahrt zu Ihrem vereinbarten Endpunkt.",
+          "overnight": "Keine"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Wie schwierig ist der Danakil?",
+          "a": "Die Herausforderung besteht hauptsächlich aus Hitze, langen 4×4-Fahrten, rauen Strecken, abgelegenen Bedingungen, frühen Starts und einfachem Camping. Es handelt sich nicht um eine technische Bergsteigerexpedition, aber sie sollte nicht als gewöhnliche Besichtigungstour betrachtet werden."
+        },
+        "1": {
+          "q": "Gibt es noch einen Lavasee bei Erta Ale?",
+          "a": "Erta Ale hat eine lange Geschichte von sich verändernden Lavaseen und eruptiven Aktivitäten. Datierte Fotos und Berichte bestätigen nicht, was bei Ihrer Abreise sichtbar ist. Fragen Sie uns nach aktuellen Beobachtungen und den geplanten Besichtigungsterminen; Es kann kein Lavasee oder eine besondere Erscheinung garantiert werden."
+        },
+        "2": {
+          "q": "Sind Inlandsflüge inbegriffen?",
+          "a": "Sie werden separat zum aktuell bestätigten Tarif angeboten, da sich Flugpreise und Flugpläne ändern. Wir schließen sie in Ihrem Angebot ein, damit Sie vor der Buchung den vollen Preis sehen."
+        },
+        "3": {
+          "q": "Welche Kirche werden wir in Gheralta besuchen?",
+          "a": "Ihr Reiseleiter wählt mit Ihnen je nach aktueller Zugangsmöglichkeit, Fitness, Wetter und örtlicher Anleitung aus. Einige Kirchen erfordern steile, exponierte Anstiege; andere sind leicht zu erreichen."
+        },
+        "4": {
+          "q": "Kann die Routenänderung?",
+          "a": "Ja. Flugpläne, Straßenverhältnisse und regionale Erreichbarkeit können Anpassungen erfordern. Die Reiseroute ist der Rahmen der Reise und wir passen sie bei Bedarf an."
+        }
+      }
+    },
+    "from-mountain-to-horizon": {
+      "title": "Vom Berg zum Horizont",
+      "imageAlt": "Kamelkarawane unter felsigen Hochlandgipfeln",
+      "days": "8 Tage",
+      "season": "Abhängig vom Zugang und den Bedingungen vor Ort",
+      "difficulty": "Mittel – anspruchsvoll",
+      "teaser": "Ein geplanter achttägiger Abstieg vom Hochland von Gheralta in die Vulkane und das Salzland von Afar.",
+      "summary": "Beginnen Sie in Mekelle, verbringen Sie Zeit zwischen den Bergen und Kirchen von Gheralta und steigen Sie dann nach Afar zum Afdera-, Erta Ale-, Asale- und Dallol-See ab. Diese von den Bedingungen abhängige Reiseroute endet in Semera und wird erst nach Routen- und Zugangskontrollen bestätigt.",
+      "why": "Der Übergang ist die Geschichte: Hochlandstein, der Abstieg, vulkanischer Boden und Salz. Zwei Nächte in Gheralta lassen Raum zum Wandern, bevor die Expedition Afar betritt.",
+      "idealFor": "Reisende, die Hochlandlandschaften mit einer Danakil-Expedition verbinden möchten, einschließlich Fotografen und Privatgruppen.",
+      "notFor": "Reisende, die eine garantierte Abfahrt oder eine kurze Semera-Rundreise benötigen. Dies ist eine vorgeschlagene Route, keine geplante Abfahrt.",
+      "includes": {
+        "0": "Privater Transport mit einem professionellen Fahrer",
+        "1": "Englischsprachiger Führer",
+        "2": "Lokale Reiseführer und Scouts, wo erforderlich",
+        "3": "Unterkunft wie in Ihrem bestätigten Angebot aufgeführt",
+        "4": "Mahlzeiten wie in Ihrem bestätigten Angebot angegeben",
+        "5": "Park- und Routenanordnung (sofern zutreffend)",
+        "6": "Flughafentransfers, sofern angegeben",
+        "7": "Trinken Sie Wasser",
+        "8": "Expeditionscampingausrüstung",
+        "9": "Standard-Eintritts- und Routengebühren, sofern zutreffend",
+        "10": "Routenbesprechung vor der Abreise"
+      },
+      "excludes": {
+        "0": "Internationale Flüge",
+        "1": "Inlandsflüge (zum aktuellen Tarif)",
+        "2": "Äthiopisches Visum",
+        "3": "Reiseversicherung",
+        "4": "Alkohol und Wäsche",
+        "5": "Kameragebühren, sofern zutreffend",
+        "6": "Tipps",
+        "7": "Zusätzliche Hotelübernachtungen und nicht aufgeführte Aktivitäten"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Tag 1",
+          "title": "Mekelle: Treffen Sie das Expeditionsteam",
+          "text": "Ankommen und die Route, Ausrüstung und den bevorstehenden Übergang nach Afar überprüfen. Abhängig von der Ankunftszeit erfolgt eine kurze Einführung in die Hochlandlandschaft. Die Abreisevereinbarungen für Ihre Daten werden bestätigt.",
+          "overnight": "Mekelle",
+          "meals": "Abendessen"
+        },
+        "1": {
+          "day": "Tag 2",
+          "title": "Mek’ele → Gheralta",
+          "text": "Reisen Sie in die Sandsteinlandschaften von Gheralta. Planen Sie Zeit für Aussichtspunkte oder einen Einführungsspaziergang ein, wobei jeder Kirchenbesuch nach dem Zugang und den Gehfähigkeiten der Gruppe ausgewählt wird.",
+          "overnight": "Gheralta",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "2": {
+          "day": "Tag 3",
+          "title": "Gheralta: ein Wandertag im Hochland",
+          "text": "Erkunden Sie die Berglandschaft und ausgewählte Kirchen mit lokaler Führung. Steile oder ausgesetzte Routen sind optional und hängen von der Fitness und den Bedingungen ab; Der Tag kann auf ein sanfteres Programm abgestimmt werden.",
+          "overnight": "Gheralta",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "3": {
+          "day": "Tag 4",
+          "title": "Gheralta → Fern",
+          "text": "Verlassen Sie das Hochland und folgen Sie der sich verändernden Landschaft in Richtung Afar. Die Straßenanbindung und der Zwischenstopp werden durch Betriebskontrollen bestätigt. Machen Sie eine Pause zum Dolmetschen und Ausruhen, anstatt von einer festen Transferzeit auszugehen.",
+          "overnight": "Afar- oder Afdera-Gebiet",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "4": {
+          "day": "Tag 5",
+          "title": "Afdera → Erta Ale",
+          "text": "Fahren Sie weiter in der Vulkanlandschaft und ruhen Sie sich bei der stärksten Hitze aus. Das Anflug- und Beobachtungsfenster richtet sich nach den örtlichen Richtlinien und den aktuellen Bedingungen. Es wird keine besondere vulkanische Erscheinung versprochen.",
+          "overnight": "Erta Ale-Expeditionslager",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "5": {
+          "day": "Tag 6",
+          "title": "Erta Ale → Hamed Ela",
+          "text": "Eine frühe Beobachtung könnte möglich sein, bevor die Wüste in Richtung Hamed Ela durchquert wird. Schlagen Sie Ihr Lager auf, ruhen Sie sich aus und bereiten Sie sich auf die Tage im Salzland vor.",
+          "overnight": "Hamed Ela oder ausgewiesenes Expeditionslager",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "6": {
+          "day": "Tag 7",
+          "title": "Lake Asale und Salzland",
+          "text": "Erkunden Sie die Salzlandschaft zu geeigneten Zeiten. Wo Arbeit oder Wohnwagenaktivitäten zugänglich sind, befolgen Sie diese respektvoll und unter Anleitung der örtlichen Anleitung. Nehmen Sie sich Zeit zum Fotografieren und Ausruhen; Weder Karawanen noch Salzgewinnung werden inszeniert.",
+          "overnight": "Hamed Ela oder ausgewiesenes Expeditionslager",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "7": {
+          "day": "Tag 8",
+          "title": "Dallol → Semera",
+          "text": "Besuchen Sie Dallol und seine Mineralienlandschaft, sofern zugänglich, und folgen Sie dabei den Anweisungen des Reiseführers. Rückkehr nach Semera zum vereinbarten Endpunkt und weiteren Vorkehrungen.",
+          "overnight": "Keine",
+          "meals": "Frühstück und Mittagessen"
+        }
+      },
+      "accessNote": "Zukünftige / bedingungenabhängige Expedition. Die Veröffentlichung stellt keine Verfügbarkeitsbestätigung dar. Die Hochland-zu-Afar-Verbindung, Besuche und Unterkünfte erfordern eine datumsspezifische Betriebsgenehmigung, bevor die Route bestätigt werden kann.",
+      "faqs": {
+        "0": {
+          "q": "Ist das eine bestätigte Abreise?",
+          "a": "Nein. Es handelt sich um eine vorgeschlagene, von den Bedingungen abhängige Reiseroute. Kontaktieren Sie das Team, um Ihre Daten zu besprechen, bevor Sie den Transport oder die Unterkunft arrangieren."
+        },
+        "1": {
+          "q": "Wie unterscheidet sie sich von Afar to the Highlands?",
+          "a": "Diese Route beginnt in Mekelle und Gheralta und führt hinunter nach Afar und endet in Semera. Afar to the Highlands beginnt in Semera und führt weiter ins nördliche Hochland."
+        },
+        "2": {
+          "q": "Sind Inlandsflüge inbegriffen?",
+          "a": "Sie werden separat zum aktuell bestätigten Tarif angeboten, da sich Flugpreise und Flugpläne ändern. Wir schließen sie in Ihrem Angebot ein, damit Sie vor der Buchung den vollen Preis sehen."
+        },
+        "3": {
+          "q": "Welche Kirche werden wir in Gheralta besuchen?",
+          "a": "Ihr Reiseleiter wählt mit Ihnen je nach aktueller Zugangsmöglichkeit, Fitness, Wetter und örtlicher Anleitung aus. Einige Kirchen erfordern steile, exponierte Anstiege; andere sind leicht zu erreichen."
+        },
+        "4": {
+          "q": "Kann die Routenänderung?",
+          "a": "Ja. Flugpläne, Straßenverhältnisse und regionale Erreichbarkeit können Anpassungen erfordern. Die Reiseroute ist der Rahmen der Reise und wir passen sie bei Bedarf an."
+        }
+      }
+    },
+    "from-axum-to-the-afar-horizon": {
+      "title": "Von Axum nach Afar Horizon",
+      "imageAlt": "Geschnitztes Steindetail auf einem Axum-Obelisken",
+      "days": "9 Tage",
+      "season": "Abhängig vom Zugang und den Bedingungen vor Ort",
+      "difficulty": "Mittel – anspruchsvoll",
+      "teaser": "Eine vorgeschlagene Reise von Axums altem Königreich durch das Hochland zu den Salz- und Vulkanlandschaften von Afar.",
+      "summary": "Verbringen Sie zwei Nächte in Axum, bevor Sie über Gheralta und Mekelle nach Afar reisen. Ein Zwischenstopp geht dem Danakil-Abschnitt durch den Lake Afdera, Erta Ale, Lake Asale und Dallol voraus. Die neuntägige Route endet in Semera und bleibt von den Bedingungen abhängig.",
+      "why": "Beginnen Sie mit der Geschichte der Menschheit und enden Sie mit geologischen Landschaften. Eine spezielle Zeit in Axum und eine Zwischennacht unterscheiden diese Route von der bestehenden Reise von Semera ins Hochland.",
+      "idealFor": "Reisende, die daran interessiert sind, Archäologie, Hochlandlandschaften und Afar in einer privaten Expedition zu verbinden.",
+      "notFor": "Reisende mit festen Weiterbuchungen, die von einer unbestätigten Verbindung vom Hochland nach Afar abhängig sind.",
+      "includes": {
+        "0": "Privater Transport mit einem professionellen Fahrer",
+        "1": "Englischsprachiger Führer",
+        "2": "Lokale Reiseführer und Scouts, wo erforderlich",
+        "3": "Unterkunft wie in Ihrem bestätigten Angebot aufgeführt",
+        "4": "Mahlzeiten wie in Ihrem bestätigten Angebot angegeben",
+        "5": "Park- und Routenanordnung (sofern zutreffend)",
+        "6": "Flughafentransfers, sofern angegeben",
+        "7": "Trinken Sie Wasser",
+        "8": "Expeditionscampingausrüstung",
+        "9": "Lokale Routenkoordination und Einweisung vor der Abreise"
+      },
+      "excludes": {
+        "0": "Internationale Flüge",
+        "1": "Inlandsflüge (zum aktuellen Tarif)",
+        "2": "Äthiopisches Visum",
+        "3": "Reiseversicherung",
+        "4": "Alkohol und Wäsche",
+        "5": "Kameragebühren, sofern zutreffend",
+        "6": "Tipps",
+        "7": "Zusätzliche Hotelübernachtungen und nicht aufgeführte Aktivitäten"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Tag 1",
+          "title": "Ankunft in Axum",
+          "text": "Treffen Sie das Team und überprüfen Sie die bestätigte Route. Eine Einführungsorientierung hängt von der Ankunftszeit ab; Bereiten Sie sich auf den bevorstehenden historischen Tag vor.",
+          "overnight": "Axum",
+          "meals": "Abendessen"
+        },
+        "1": {
+          "day": "Tag 2",
+          "title": "Axum: das alte Königreich",
+          "text": "Erkunden Sie die archäologische und historische Landschaft mit einem Führer. Stelen, Gräber und Besichtigungen des religiösen Erbes werden entsprechend dem aktuellen Zugang ausgewählt, mit Zeit, um ihren Kontext zu verstehen.",
+          "overnight": "Axum",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "2": {
+          "day": "Tag 3",
+          "title": "Axum → Gheralta",
+          "text": "Reisen Sie in die Sandsteinlandschaft von Gheralta. Ein Aussichtspunkt, ein kurzer Spaziergang oder ein geeigneter Kirchenbesuch können je nach Zeitpunkt und Zugang die Gegend näherbringen.",
+          "overnight": "Gheralta",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "3": {
+          "day": "Tag 4",
+          "title": "Gheralta → Mek’ele",
+          "text": "Planen Sie Zeit für ein Hochlanderlebnis ein, bevor Sie nach Mekelle weiterfahren. Ihr Guide passt Wanderungen und Kirchenbesuche an die Fähigkeiten der Gruppe und die aktuellen Bedingungen an.",
+          "overnight": "Mekelle",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "4": {
+          "day": "Tag 5",
+          "title": "Mekelle → Semera / Afar-Aufenthaltsgebiet",
+          "text": "Machen Sie den bedingungsabhängigen Übergang in Richtung Afar. Nutzen Sie den Zwischenstopp, um sich auszuruhen, die Heizungs- und Wasserversorgung zu überprüfen und sich auf den abgelegenen Abschnitt vorzubereiten. Die Routenplanung für Ihre Daten ist bestätigt.",
+          "overnight": "Semera oder Afar-Aufenthaltsgebiet",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "5": {
+          "day": "Tag 6",
+          "title": "Semera → Afdera-See",
+          "text": "Beginnen Sie die Tieflandexpedition in Richtung Lake Afdera. Erkunden Sie den See und die Salzabbaulandschaft, wo der Zugang möglich ist, mit Interpretation und Zeit, sich an die Umgebung anzupassen.",
+          "overnight": "Afdera-Gebiet",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "6": {
+          "day": "Tag 7",
+          "title": "Afdera → Erta Ale",
+          "text": "Weiter geht es in vulkanisches Gelände. Ruhen Sie sich während der stärksten Hitze aus und nähern Sie sich dem Beobachtungsgebiet nur, wenn die aktuellen Bedingungen und die örtliche Führung es zulassen.",
+          "overnight": "Erta Ale-Expeditionslager",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "7": {
+          "day": "Tag 8",
+          "title": "Erta Ale → Hamed Ela → Asale-See",
+          "text": "Durchqueren Sie die Wüste nach Hamed Ela und bereiten Sie sich auf die Salzebene vor. Ein späterer Besuch des Lake Asale hängt vom Zeitpunkt und der Zugänglichkeit ab, Salzaktivitäten und Karawanen sind nie garantiert.",
+          "overnight": "Hamed Ela oder ausgewiesenes Danakil-Lager",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "8": {
+          "day": "Tag 9",
+          "title": "Dallol → Semera",
+          "text": "Erkunden Sie die Mineral- und Salzlandschaft bei Dallol, sofern zugänglich, und kehren Sie dann nach Semera zurück. Das Ende der Expedition und die weiteren Arrangements werden im bestätigten Plan vereinbart.",
+          "overnight": "Keine",
+          "meals": "Frühstück und Mittagessen"
+        }
+      },
+      "accessNote": "Zukünftige / bedingungenabhängige Expedition. Der Zugang in Tigray und die Verbindung nach Afar erfordern vor der Bestätigung eine Funktionsprüfung. Diese Reiseroute garantiert keine Abfahrt, Flug oder Straßenverbindung.",
+      "faqs": {
+        "0": {
+          "q": "Ist das einfach das bestehende Neun-Tage-Paket in umgekehrter Reihenfolge?",
+          "a": "Nein. Dieser Vorschlag beginnt mit zwei Nächten in Axum und führt über Mekelle und einen Afar-Stützpunkt vor dem Wüstenabschnitt. Das bestehende neuntägige Paket beginnt in Semera und endet im Hochland."
+        },
+        "1": {
+          "q": "Kann ich eine feste Abfahrt buchen?",
+          "a": "Die Route wird vorgeschlagen und ist abhängig von den Bedingungen. Besprechen Sie zuerst Termine und Zugang; Transport und Unterbringung erfolgen nur nach einem bestätigten Plan."
+        },
+        "2": {
+          "q": "Sind Inlandsflüge inbegriffen?",
+          "a": "Sie werden separat zum aktuell bestätigten Tarif angeboten, da sich Flugpreise und Flugpläne ändern. Wir schließen sie in Ihrem Angebot ein, damit Sie vor der Buchung den vollen Preis sehen."
+        },
+        "3": {
+          "q": "Welche Kirche werden wir in Gheralta besuchen?",
+          "a": "Ihr Reiseleiter wählt mit Ihnen je nach aktueller Zugangsmöglichkeit, Fitness, Wetter und örtlicher Anleitung aus. Einige Kirchen erfordern steile, exponierte Anstiege; andere sind leicht zu erreichen."
+        },
+        "4": {
+          "q": "Kann die Routenänderung?",
+          "a": "Ja. Flugpläne, Straßenverhältnisse und regionale Erreichbarkeit können Anpassungen erfordern. Die Reiseroute ist der Rahmen der Reise und wir passen sie bei Bedarf an."
+        }
+      }
+    },
+    "grand-northern-ethiopia-expedition": {
+      "title": "Große Nordäthiopien-Expedition",
+      "imageAlt": "Grüne Mineralbecken und Salzformationen in der Danakil-Landschaft",
+      "days": "15 Tage",
+      "season": "Vorbehaltlich der Route und der saisonalen Bedingungen",
+      "difficulty": "Mittel – anspruchsvoll",
+      "teaser": "Beginnen Sie in Afar, steigen Sie in Richtung Axum und Gondar auf, wandern Sie über die Simien und beenden Sie die Tour neben dem Tana-See.",
+      "summary": "Eine fünfzehntägige Expedition, die den Danakil mit Axum, Gondar, den Simien-Bergen und Bahir Dar verbindet. Wüstencamps, Hochlandhotels, Bergwanderungen und eine Bootsfahrt auf dem Tana-See bilden getrennte Kapitel, wobei die endgültige Route anhand der Zugangs- und Transportarrangements festgelegt wird.",
+      "why": "Dies ist die von Afar geführte fünfzehntägige Reise. Sie beginnt in Semera und schließt den Danakil ein, bevor sie weiter nach Norden führt, im Gegensatz zum Nordäthiopien Grand Horizon, der der historischen Hochlandroute ohne Danakil-Abschnitt folgt.",
+      "idealFor": "Reisende, die eine umfangreiche Afar-Expedition kombiniert mit der Geschichte des Nordens, mehreren Bergwandertagen und einer Seereise wünschen.",
+      "notFor": "Reisende, die eine Besichtigungstour nur im Hotel oder eine Reise ohne abgelegenes Camping und Bergwandern suchen.",
+      "includes": {
+        "0": "Privater 4×4-Transport bei abgelegenen Bodenabschnitten und einem Profi Fahrer",
+        "1": "Englischsprachiger Führer und örtliche Führer oder Pfadfinder, wo erforderlich",
+        "2": "Unterkunft entsprechend der ausgewählten Paketkategorie",
+        "3": "Expeditionscampingausrüstung und Kochunterstützung, wo erforderlich",
+        "4": "Mahlzeiten im Reiseplan aufgeführt und Trinkwasser",
+        "5": "Simien-Nationalpark-Arrangements und Trekking-Unterstützung",
+        "6": "Bootsausflug zum Tana-See und aufgeführte Eintrittspreise",
+        "7": "Flughafentransfers gemäß der bestätigten Reiseroute",
+        "8": "Routenkoordination und Planung vor der Reise"
+      },
+      "excludes": {
+        "0": "Internationale Flüge",
+        "1": "Inlandsflüge (zum aktuellen Tarif)",
+        "2": "Äthiopisches Visum",
+        "3": "Reiseversicherung",
+        "4": "Alkohol und Wäsche",
+        "5": "Kameragebühren, sofern zutreffend",
+        "6": "Tipps",
+        "7": "Zusätzliche Hotelübernachtungen und nicht aufgeführte Aktivitäten",
+        "8": "Persönliche medizinische Ausgaben und Notevakuierung"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Tag 1",
+          "title": "Semera: Ankunft und Vorbereitung",
+          "text": "Treffen Sie das Team, überprüfen Sie die Ausrüstung und lassen Sie die Expedition Revue passieren. Der Tag wird an die Ankunftszeit angepasst, mit einer Einweisung über Hitze, Wasser, Lager und die bevorstehende Route.",
+          "overnight": "Semera Hotel",
+          "meals": "Je nach Ankunftszeit"
+        },
+        "1": {
+          "day": "Tag 2",
+          "title": "Semera → Afdera → Danakil",
+          "text": "Betreten Sie die Tieflandlandschaften von Afar und machen Sie gegebenenfalls eine Pause am Afdera-See. Fahren Sie weiter zum bestätigten Expeditionslager und bereiten Sie sich auf die vulkanische Phase vor.",
+          "overnight": "Afar-Expeditionslager",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "2": {
+          "day": "Tag 3",
+          "title": "Erta Ale-Vulkanexpedition",
+          "text": "Erkunden Sie die vulkanische Umgebung gemäß den aktuellen Zugangsmöglichkeiten und den örtlichen Anweisungen. Die Beobachtung erfolgt zeitlich nach Hitze und Bedingungen, mit Ruhe und Interpretation zwischen geeigneten Aktivitätsfenstern.",
+          "overnight": "Erta Ale-Expeditionslager",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "3": {
+          "day": "Tag 4",
+          "title": "Erta Ale → Hamed Ela → Asale-See",
+          "text": "Durchqueren Sie die Wüste in Richtung Hamed Ela. Wenn Zeit und Zugang es zulassen, besuchen Sie die Salzebene des Lake Asale, wenn das Licht weicher wird.",
+          "overnight": "Hamed Ela oder ausgewiesenes Expeditionslager",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "4": {
+          "day": "Tag 5",
+          "title": "Dallol und Salzland",
+          "text": "Besuchen Sie die Mineralienlandschaft von Dallol, sofern zugänglich, gefolgt von einer Interpretation des Salzlandes. Beobachten Sie Salzabbau- oder Karawanenaktivitäten nur dort, wo sie stattfinden und die örtliche Führung dies zulässt.",
+          "overnight": "Hamed Ela oder bestätigte abgelegene Unterkunft",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "5": {
+          "day": "Tag 6",
+          "title": "Fern → Axum",
+          "text": "Beginnen Sie mit dem Übergang ins nördliche Hochland. Die Verkehrsanbindung ist für Ihre Daten bestätigt und kann an die Streckenbedingungen und verfügbaren Dienste angepasst werden.",
+          "overnight": "Axum Hotel",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "6": {
+          "day": "Tag 7",
+          "title": "Axum: das alte Königreich",
+          "text": "Ein geführter historischer Tag konzentriert sich auf die archäologische Landschaft und das religiöse Erbe, wobei die Besuche je nach Zugang und Interessen der Gruppe ausgewählt werden.",
+          "overnight": "Axum Hotel",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "7": {
+          "day": "Tag 8",
+          "title": "Axum → Gondar",
+          "text": "Reisen Sie in Richtung Gondar über die in Ihrer Reiseroute vereinbarte Verbindung. Flug- oder Überlandarrangements werden separat bestätigt und nicht angenommen.",
+          "overnight": "Gondar Hotel",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "8": {
+          "day": "Tag 9",
+          "title": "Gondar: kaiserliche Geschichte",
+          "text": "Erkunden Sie Gondars historische Stätten mit lokaler Interpretation. Nehmen Sie sich Zeit für die Stadt und die notwendigen Vorbereitungen, bevor Sie die Berge betreten.",
+          "overnight": "Gondar Hotel",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "9": {
+          "day": "Tag 10",
+          "title": "Gondar → Debark → Simien-Gebirge",
+          "text": "Fahren Sie durch Debark, um die vereinbarten Parkarrangements zu sehen, und betreten Sie dann die Simien-Landschaft. Beginnen Sie mit dem Gehen in einem Tempo, das der Gruppe und der Höhe entspricht.",
+          "overnight": "Sankaber oder ausgewählte Unterkünfte in Simien",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "10": {
+          "day": "Tag 11",
+          "title": "Sankaber → Geech",
+          "text": "Setzen Sie das Bergwanderprogramm in Richtung Geech fort, mit Steilhanglandschaften und Zeit zum Ausruhen. Der genaue Weg richtet sich nach dem Wetter, dem Zugang und der Einschätzung des Führers.",
+          "overnight": "Geech-Campingplatz",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "11": {
+          "day": "Tag 12",
+          "title": "Geech → Chenek",
+          "text": "Wandern Sie durch die Berglandschaft in Richtung Chenek, mit Aussichtspunkten und Tierbeobachtungen, sofern die Bedingungen es zulassen. Sichtungen können niemals garantiert werden.",
+          "overnight": "Chenek oder eine ausgewiesene Bergunterkunft",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "12": {
+          "day": "Tag 13",
+          "title": "Simien → Gondar → Bahir Dar",
+          "text": "Verlassen Sie die Berge und fahren Sie weiter durch Gondar in Richtung Bahir Dar. Der Wechsel vom Trekking zu einem Aufenthalt am See sorgt für einen anderen Rhythmus für die letzten Tage.",
+          "overnight": "Hotel Bahir Dar",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "13": {
+          "day": "Tag 14",
+          "title": "Tana-See und der Blaue Nil",
+          "text": "Nehmen Sie an der geplanten Bootsfahrt auf dem Tana-See mit ausgewählten Klosterbesuchen teil. Jeder Ausflug zum Blauen Nil wird je nach Zeit und Bedingungen arrangiert und im endgültigen Programm bestätigt.",
+          "overnight": "Hotel Bahir Dar",
+          "meals": "Frühstück, Mittag- und Abendessen"
+        },
+        "14": {
+          "day": "Tag 15",
+          "title": "Bahir Dar → Weiterreise",
+          "text": "Frühstück und die vereinbarten Abreisemodalitäten. Flüge, Transfers oder weitere Nächte folgen Ihrem bestätigten Angebot.",
+          "overnight": "Keine",
+          "meals": "Frühstück"
+        }
+      },
+      "accessNote": "Diese kombinierte Reiseroute hängt von der Erreichbarkeit in Afar und dem nördlichen Hochland, den Gebirgsverhältnissen und praktikablen Verkehrsverbindungen ab. Campingplätze, Wanderetappen und Übernachtungsorte sind für Ihre Termine bestätigt.",
+      "faqs": {
+        "0": {
+          "q": "Wie unterscheidet sich dies vom Grand Horizon in Nordäthiopien?",
+          "a": "Diese Route beginnt in Semera, umfasst den Danakil und endet in Bahir Dar. Nordäthiopien Grand Horizon beginnt in Addis Abeba und folgt der nördlichen historischen Route nach Lalibela ohne einen Danakil-Abschnitt."
+        },
+        "1": {
+          "q": "Worauf basiert der veröffentlichte Startpreis?",
+          "a": "Der Signature-Preis von 3.350 US-Dollar pro Person basiert auf vier Reisenden. Ihr endgültiges Angebot hängt von Terminen, Gruppengröße, Unterkunft und Expeditionslogistik ab."
+        },
+        "2": {
+          "q": "Kann die Bergwanderung angepasst werden?",
+          "a": "Besprechen Sie Fitness- und Unterkunftspräferenzen vor der Bestätigung. Alternative Arrangements erfordern eine maßgeschneiderte Route und ein individuelles Angebot."
+        },
+        "3": {
+          "q": "Sind Inlandsflüge inbegriffen?",
+          "a": "Sie werden separat zum aktuell bestätigten Tarif angeboten, da sich Flugpreise und Flugpläne ändern. Wir schließen sie in Ihrem Angebot ein, damit Sie vor der Buchung den vollen Preis sehen."
+        },
+        "4": {
+          "q": "Welche Kirche werden wir in Gheralta besuchen?",
+          "a": "Ihr Reiseleiter wählt mit Ihnen je nach aktueller Zugangsmöglichkeit, Fitness, Wetter und örtlicher Anleitung aus. Einige Kirchen erfordern steile, exponierte Anstiege; andere sind leicht zu erreichen."
+        },
+        "5": {
+          "q": "Kann die Routenänderung?",
+          "a": "Ja. Flugpläne, Straßenverhältnisse und regionale Erreichbarkeit können Anpassungen erfordern. Die Reiseroute ist der Rahmen der Reise und wir passen sie bei Bedarf an."
+        }
+      }
+    },
+    "northern-ethiopia-essentials": {
+      "title": "Nord-Äthiopien Essentials",
+      "imageAlt": "Sonnenuntergang über dem Tana-See und einer entfernten Küste",
+      "days": "12 Tage",
+      "season": "Okt – März",
+      "difficulty": "Leicht – mittelschwer",
+      "teaser": "Der Tana-See, Gondar, der Simien-Gebirge, Aksum, Gheralta und Lalibela.",
+      "summary": "Die wesentliche Reise in den Norden, die Seeklöster, das königliche Gondar, Berglandschaften, das antike Aksum und die lebenden Kirchen von Gheralta und Lalibela verbindet.",
+      "why": "Es deckt die wichtigsten nördlichen Kapitel in weniger als zwei Wochen ab, mit einem Inlandsflug dorthin Spart Tage auf der Straße.",
+      "idealFor": "Erstbesucher in Äthiopien, die Geschichte, Glauben und Berge suchen Landschaft zusammen.",
+      "notFor": "Reisende, die mehr als einen Tag Wanderung in den Simien wünschen. Wählen Sie den 15-tägigen Grand Horizon.",
+      "accessNote": "Aksum und Gheralta liegen in Tigray, wo sich der Zugang ändern kann. Wir bestätigen die aktuellen Bedingungen und die Route, bevor wir Ihre Daten angeben.",
+      "includes": {
+        "0": "Privater Transport mit einem professionellen Fahrer",
+        "1": "Englischsprachiger Führer",
+        "2": "Lokale Reiseführer und Scouts, wo erforderlich",
+        "3": "Unterkunft wie in Ihrem bestätigten Angebot aufgeführt",
+        "4": "Mahlzeiten wie in Ihrem bestätigten Angebot angegeben",
+        "5": "Park- und Routenanordnung (sofern zutreffend)",
+        "6": "Flughafentransfers, sofern angegeben",
+        "7": "Trinken Sie Wasser"
+      },
+      "excludes": {
+        "0": "Internationale Flüge",
+        "1": "Inlandsflüge (zum aktuellen Tarif)",
+        "2": "Äthiopisches Visum",
+        "3": "Reiseversicherung",
+        "4": "Alkohol und Wäsche",
+        "5": "Kameragebühren, sofern zutreffend",
+        "6": "Tipps",
+        "7": "Zusätzliche Hotelübernachtungen und nicht aufgeführte Aktivitäten"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Tag 1",
+          "title": "Ankunft in Addis Abeba",
+          "text": "Flughafenbegrüßung und Hoteltransfer, mit Einführung in Addis, wenn die Ankunftszeit es erlaubt.",
+          "overnight": "Addis Abeba"
+        },
+        "1": {
+          "day": "Tag 2",
+          "title": "Addis → Bahir Dar",
+          "text": "Inlandsflug, Hoteltransfer und Orientierung zum Tanasee.",
+          "overnight": "Bahir Dar"
+        },
+        "2": {
+          "day": "Tag 3",
+          "title": "Tana-See",
+          "text": "Eine Bootsfahrt zu einem Kloster, ausgewählt nach Zugang und Interesse sowie der kulturellen Bedeutung des Sees.",
+          "overnight": "Bahir Dar"
+        },
+        "3": {
+          "day": "Tag 4",
+          "title": "Bahir Dar → Gonder",
+          "text": "Auf der Straße ins Hochland nach Gondar und zum Royal Enclosure.",
+          "overnight": "Gonder"
+        },
+        "4": {
+          "day": "Tag 5",
+          "title": "Gonder",
+          "text": "Debre Birhan Selassie, Fasilides-Bad und andere historische Stätten, gegebenenfalls mit einem Kaffee oder einem kulturellen Erlebnis.",
+          "overnight": "Gonder"
+        },
+        "5": {
+          "day": "Tag 6",
+          "title": "Gondar → Simien-Gebirge",
+          "text": "Fahren Sie nach Debark, erledigen Sie die Parkformalitäten und betreten Sie die Berge, um einen ersten Blick auf die Böschung und den Gelada-Lebensraum zu werfen.",
+          "overnight": "Simien-Gebirge"
+        },
+        "6": {
+          "day": "Tag 7",
+          "title": "Simien-Gebirge",
+          "text": "Ein ganzer Bergtag auf einer Route, die nach Ihrer Fitness, dem Wetter und den Parkbedingungen ausgewählt wird: Aussichtspunkte auf den Steilhängen, Wildtiere und Bergdörfer.",
+          "overnight": "Simien-Gebirge"
+        },
+        "7": {
+          "day": "Tag 8",
+          "title": "Simien → Aksum",
+          "text": "Eine Hochlandreise nach Aksum.",
+          "overnight": "Aksum"
+        },
+        "8": {
+          "day": "Tag 9",
+          "title": "Aksum",
+          "text": "Die Stelen, Königsgräber, das Gebiet der Heiligen Maria von Zion und die Geschichte des aksumitischen Königreichs.",
+          "overnight": "Aksum"
+        },
+        "9": {
+          "day": "Tag 10",
+          "title": "Aksum → Gheralta",
+          "text": "Durch das nördliche Hochland nach Gheralta, mit einem Aussichtspunkt oder einer Kirche am Nachmittag, je nach Zeitpunkt.",
+          "overnight": "Gheralta"
+        },
+        "10": {
+          "day": "Tag 11",
+          "title": "Gheralta → Lalibela",
+          "text": "Ein Morgen in Gheralta, dann weiter nach Lalibela.",
+          "overnight": "Lalibela"
+        },
+        "11": {
+          "day": "Tag 12",
+          "title": "Lalibela",
+          "text": "Die in den Felsen gehauenen Kirchen, die eher als lebendige religiöse Orte denn als archäologische Stätten besichtigt werden, dann ein Flughafentransfer.",
+          "overnight": "Keine"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Sind Inlandsflüge inbegriffen?",
+          "a": "Sie werden separat zum aktuell bestätigten Tarif angeboten, da sich Flugpreise und Flugpläne ändern. Wir schließen sie in Ihrem Angebot ein, damit Sie vor der Buchung den vollen Preis sehen."
+        },
+        "1": {
+          "q": "Welche Kirche werden wir in Gheralta besuchen?",
+          "a": "Ihr Reiseleiter wählt mit Ihnen je nach aktueller Zugangsmöglichkeit, Fitness, Wetter und örtlicher Anleitung aus. Einige Kirchen erfordern steile, exponierte Anstiege; andere sind leicht zu erreichen."
+        },
+        "2": {
+          "q": "Kann die Routenänderung?",
+          "a": "Ja. Flugpläne, Straßenverhältnisse und regionale Erreichbarkeit können Anpassungen erfordern. Die Reiseroute ist der Rahmen der Reise und wir passen sie bei Bedarf an."
+        }
+      }
+    },
+    "northern-ethiopia-grand-horizon": {
+      "title": "Nord-Äthiopien Grand Horizon",
+      "imageAlt": "Steile grüne Abhänge im Simien-Gebirge",
+      "days": "15 Tage",
+      "season": "Okt – März",
+      "difficulty": "Mittel",
+      "teaser": "Der Norden mit Zeit zum Durchatmen: drei Tage in den Simien und ein ganzer Tag in Gheralta.",
+      "summary": "Dies ist nicht die 12-tägige Reise mit drei hinzugefügten Leertagen. Die zusätzliche Zeit geht nach Addis, einem tieferen Tag in Gondar, einem dritten Simien-Tag und einem kompletten Kirchen- und Bergtag in Gheralta.",
+      "why": "Langsamere Tage bedeuten längere Spaziergänge im Simien, Zeit, jeden Ort zu verstehen und Raum, sich an Wetter und Zugang anzupassen.",
+      "idealFor": "Reisende, die sowohl in den Bergen als auch an historischen Stätten wandern möchten.",
+      "notFor": "Reisende, die auch den Danakil wollen. Wählen Sie das 21-tägige Grand Horizon Äthiopien.",
+      "accessNote": "Aksum und Gheralta liegen in Tigray, wo sich der Zugang ändern kann. Wir bestätigen die aktuellen Bedingungen und die Route, bevor wir Ihre Daten angeben.",
+      "includes": {
+        "0": "Privater Transport mit einem professionellen Fahrer",
+        "1": "Englischsprachiger Führer",
+        "2": "Lokale Reiseführer und Scouts, wo erforderlich",
+        "3": "Unterkunft wie in Ihrem bestätigten Angebot aufgeführt",
+        "4": "Mahlzeiten wie in Ihrem bestätigten Angebot angegeben",
+        "5": "Park- und Routenanordnung (sofern zutreffend)",
+        "6": "Flughafentransfers, sofern angegeben",
+        "7": "Trinken Sie Wasser"
+      },
+      "excludes": {
+        "0": "Internationale Flüge",
+        "1": "Inlandsflüge (zum aktuellen Tarif)",
+        "2": "Äthiopisches Visum",
+        "3": "Reiseversicherung",
+        "4": "Alkohol und Wäsche",
+        "5": "Kameragebühren, sofern zutreffend",
+        "6": "Tipps",
+        "7": "Zusätzliche Hotelübernachtungen und nicht aufgeführte Aktivitäten"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Tag 1",
+          "title": "Ankunft in Addis Abeba",
+          "text": "Ankunft und Orientierung.",
+          "overnight": "Addis Abeba"
+        },
+        "1": {
+          "day": "Tag 2",
+          "title": "Addis Abeba",
+          "text": "Das Nationalmuseum oder ausgewählte Kulturstätten, ein Kaffeeerlebnis und eine lokale Nachbarschaft.",
+          "overnight": "Addis Abeba"
+        },
+        "2": {
+          "day": "Tag 3",
+          "title": "Addis → Bahir Dar",
+          "text": "Flug nach Bahir Dar und Einführung in den Tana-See.",
+          "overnight": "Bahir Dar"
+        },
+        "3": {
+          "day": "Tag 4",
+          "title": "Tana-See",
+          "text": "Ein Bootsausflug und Klosterbesuch mit einem Abend am See.",
+          "overnight": "Bahir Dar"
+        },
+        "4": {
+          "day": "Tag 5",
+          "title": "Bahir Dar → Gonder",
+          "text": "Die Hochlandstraße nach Gondar und zum königlichen Gehege.",
+          "overnight": "Gonder"
+        },
+        "5": {
+          "day": "Tag 6",
+          "title": "Gonder",
+          "text": "Fasilides-Bad, Debre Birhan Selassie, lokale Geschichte und Freizeit.",
+          "overnight": "Gonder"
+        },
+        "6": {
+          "day": "Tag 7",
+          "title": "Gondar → Simien-Gebirge",
+          "text": "In die Simien für die Landschaft und ihre Tierwelt.",
+          "overnight": "Simien-Gebirge"
+        },
+        "7": {
+          "day": "Tag 8",
+          "title": "Simien-Gebirge",
+          "text": "Ein ganzer Trekkingtag.",
+          "overnight": "Simien-Gebirge"
+        },
+        "8": {
+          "day": "Tag 9",
+          "title": "Simien-Gebirge, zweiter Tag",
+          "text": "Eine längere Wanderung oder eine Route mit Fokus auf Fotografie.",
+          "overnight": "Simien-Gebirge"
+        },
+        "9": {
+          "day": "Tag 10",
+          "title": "Simien → Aksum",
+          "text": "Eine Hochlandreise nach Aksum.",
+          "overnight": "Aksum"
+        },
+        "10": {
+          "day": "Tag 11",
+          "title": "Aksum",
+          "text": "Ein ganzer Tag voller Archäologie und Geschichte.",
+          "overnight": "Aksum"
+        },
+        "11": {
+          "day": "Tag 12",
+          "title": "Aksum → Gheralta",
+          "text": "Ein landschaftlich reizvoller Transfer nach Gheralta.",
+          "overnight": "Gheralta"
+        },
+        "12": {
+          "day": "Tag 13",
+          "title": "Gheralta",
+          "text": "Ein ganzer Kirchen- und Bergtag, wobei die Kirche je nach aktueller Erreichbarkeit und Ihren Fähigkeiten ausgewählt wird.",
+          "overnight": "Gheralta"
+        },
+        "13": {
+          "day": "Tag 14",
+          "title": "Gheralta → Lalibela",
+          "text": "Die Reise nach Lalibela und eine abendliche Orientierung.",
+          "overnight": "Lalibela"
+        },
+        "14": {
+          "day": "Tag 15",
+          "title": "Lalibela",
+          "text": "Ein ganzer Tag in den Felsenkirchen, dann ein Flughafentransfer.",
+          "overnight": "Keine"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Sind Inlandsflüge inbegriffen?",
+          "a": "Sie werden separat zum aktuell bestätigten Tarif angeboten, da sich Flugpreise und Flugpläne ändern. Wir schließen sie in Ihrem Angebot ein, damit Sie vor der Buchung den vollen Preis sehen."
+        },
+        "1": {
+          "q": "Welche Kirche werden wir in Gheralta besuchen?",
+          "a": "Ihr Reiseleiter wählt mit Ihnen je nach aktueller Zugangsmöglichkeit, Fitness, Wetter und örtlicher Anleitung aus. Einige Kirchen erfordern steile, exponierte Anstiege; andere sind leicht zu erreichen."
+        },
+        "2": {
+          "q": "Kann die Routenänderung?",
+          "a": "Ja. Flugpläne, Straßenverhältnisse und regionale Erreichbarkeit können Anpassungen erfordern. Die Reiseroute ist der Rahmen der Reise und wir passen sie bei Bedarf an."
+        }
+      }
+    },
+    "grand-horizon-ethiopia": {
+      "title": "Grand Horizon Äthiopien",
+      "imageAlt": "Felsige Steilhänge und grüne Hochlandtäler im Norden Äthiopiens",
+      "days": "21 Tage",
+      "season": "Beste November-Januar-Zeit",
+      "difficulty": "Mittel – anspruchsvoll",
+      "teaser": "Eine Reise, viele Äthiopien: das nördliche Hochland und das Danakil zusammen.",
+      "summary": "Unsere Flaggschiff-Reise. Es wird nicht als „Alles sehen“ verkauft: Das kann kein ehrlicher 21-Tage-Reiseplan. Stattdessen verbindet es mehrere der prägenden Landschaften und historischen Kapitel des Landes, vom Tana-See und dem Simien-See bis hin zu Aksum, Gheralta, Danakil und Lalibela.",
+      "why": "Ein Rahmen für eine private Expedition statt einer starren Gruppenreise. Flugpläne, Straßenverhältnisse und regionale Erreichbarkeit können Anpassungen erfordern.",
+      "idealFor": "Reisende mit drei Wochen, die sowohl das äthiopische Hochland als auch den Danakil wollen.",
+      "notFor": "Reisende, die auch Südäthiopien wollen; Wir planen dies als separate Erweiterung, anstatt es zu verdrängen.",
+      "accessNote": "Aksum und Gheralta liegen in Tigray, wo sich der Zugang ändern kann. Wir bestätigen die aktuellen Bedingungen und die Route, bevor wir Ihre Daten angeben.",
+      "includes": {
+        "0": "Privater Transport mit einem professionellen Fahrer",
+        "1": "Englischsprachiger Führer",
+        "2": "Lokale Reiseführer und Scouts, wo erforderlich",
+        "3": "Unterkunft wie in Ihrem bestätigten Angebot aufgeführt",
+        "4": "Mahlzeiten wie in Ihrem bestätigten Angebot angegeben",
+        "5": "Park- und Routenanordnung (sofern zutreffend)",
+        "6": "Flughafentransfers, sofern angegeben",
+        "7": "Trinken Sie Wasser",
+        "8": "Campingausrüstung und Expeditionskoch im Danakil"
+      },
+      "excludes": {
+        "0": "Internationale Flüge",
+        "1": "Inlandsflüge (zum aktuellen Tarif)",
+        "2": "Äthiopisches Visum",
+        "3": "Reiseversicherung",
+        "4": "Alkohol und Wäsche",
+        "5": "Kameragebühren, sofern zutreffend",
+        "6": "Tipps",
+        "7": "Zusätzliche Hotelübernachtungen und nicht aufgeführte Aktivitäten"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Tage 1 – 2",
+          "title": "Addis Abeba",
+          "text": "Ankunft, das Nationalmuseum, eine kulturelle Einführung, Kaffee, Märkte und das Stadtleben.",
+          "overnight": "Addis Abeba"
+        },
+        "1": {
+          "day": "Tage 3 – 4",
+          "title": "Bahir Dar und Tanasee",
+          "text": "Flug nach Bahir Dar, eine Bootsfahrt auf dem Tana-See, seinen Klöstern und der lokalen Seekultur.",
+          "overnight": "Bahir Dar"
+        },
+        "2": {
+          "day": "Tage 5 – 6",
+          "title": "Gonder",
+          "text": "Königliche Geschichte in Fasil Ghebbi, Fasilides‘ Bad und Debre Birhan Selassie.",
+          "overnight": "Gonder"
+        },
+        "3": {
+          "day": "Tage 7 – 9",
+          "title": "Simien-Gebirge",
+          "text": "Drei Tage Wandern, Gelada-Beobachtung, Steilhanglandschaften, Dorfbegegnungen und Fotografie.",
+          "overnight": "Simien-Gebirge"
+        },
+        "4": {
+          "day": "Tage 10 – 11",
+          "title": "Aksum",
+          "text": "Nach Tigray, um das antike Aksum zu erkunden: Stelen, Königsgräber und heiliges Erbe.",
+          "overnight": "Aksum"
+        },
+        "5": {
+          "day": "Tage 12 – 13",
+          "title": "Gheralta",
+          "text": "Die Sandsteinberge, eine komplette Kirchenexpedition und Landschaftswanderungen.",
+          "overnight": "Gheralta"
+        },
+        "6": {
+          "day": "Tag 14",
+          "title": "Gheralta → Fern",
+          "text": "Ein langer Übergang in die Afar-Region, da Hochland-Ackerland trockenerem Gelände weicht.",
+          "overnight": "Afar- oder Semera-Gebiet, je nach endgültiger Route"
+        },
+        "7": {
+          "day": "Tag 15",
+          "title": "See Afdera",
+          "text": "In die Danakil-Landschaft am Afdera-See mit ihrer salzigen und vulkanischen Umgebung.",
+          "overnight": "Afdera-Gebiet"
+        },
+        "8": {
+          "day": "Tag 16",
+          "title": "Erta Ale",
+          "text": "Auf nach Erta Ale können Sie sich während der Höhepunkthitze ausruhen und das abendliche Vulkanerlebnis genießen.",
+          "overnight": "Erta Ale-Gebiet"
+        },
+        "9": {
+          "day": "Tag 17",
+          "title": "Erta Ale → Hamed Ela",
+          "text": "Morgenbeobachtung, wenn die Bedingungen es erlauben, dann die Durchquerung der Wüste.",
+          "overnight": "Hamed Ela"
+        },
+        "10": {
+          "day": "Tag 18",
+          "title": "Dallol und Lake Asale",
+          "text": "Frühes Dallol, die hydrothermale Landschaft, die Salinen und die traditionelle Salzwirtschaft waren aktiv.",
+          "overnight": "Hamed Ela"
+        },
+        "11": {
+          "day": "Tag 19",
+          "title": "Danakil → Lalibela",
+          "text": "Ein langer Transfer oder eine lange Verbindung nach Lalibela, je nach aktuellen Straßen- und Flugplänen.",
+          "overnight": "Lalibela"
+        },
+        "12": {
+          "day": "Tag 20",
+          "title": "Lalibela",
+          "text": "Ein ganzer Tag in den Felsenkirchen, das letzte große Kapitel der Reise.",
+          "overnight": "Lalibela"
+        },
+        "13": {
+          "day": "Tag 21",
+          "title": "Lalibela → Addis Abeba",
+          "text": "Eine morgendliche Verbindung zurück nach Addis Abeba, wo die Reise endet.",
+          "overnight": "Keine"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Wie schwierig ist der Danakil?",
+          "a": "Die Herausforderung besteht hauptsächlich aus Hitze, langen 4×4-Fahrten, rauen Strecken, abgelegenen Bedingungen, frühen Starts und einfachem Camping. Es handelt sich nicht um eine technische Bergsteigerexpedition, aber sie sollte nicht als gewöhnliche Besichtigungstour betrachtet werden."
+        },
+        "1": {
+          "q": "Gibt es noch einen Lavasee bei Erta Ale?",
+          "a": "Erta Ale hat eine lange Geschichte von sich verändernden Lavaseen und eruptiven Aktivitäten. Datierte Fotos und Berichte bestätigen nicht, was bei Ihrer Abreise sichtbar ist. Fragen Sie uns nach aktuellen Beobachtungen und den geplanten Besichtigungsterminen; Es kann kein Lavasee oder eine besondere Erscheinung garantiert werden."
+        },
+        "2": {
+          "q": "Sind Inlandsflüge inbegriffen?",
+          "a": "Sie werden separat zum aktuell bestätigten Tarif angeboten, da sich Flugpreise und Flugpläne ändern. Wir schließen sie in Ihrem Angebot ein, damit Sie vor der Buchung den vollen Preis sehen."
+        },
+        "3": {
+          "q": "Welche Kirche werden wir in Gheralta besuchen?",
+          "a": "Ihr Reiseleiter wählt mit Ihnen je nach aktueller Zugangsmöglichkeit, Fitness, Wetter und örtlicher Anleitung aus. Einige Kirchen erfordern steile, exponierte Anstiege; andere sind leicht zu erreichen."
+        },
+        "4": {
+          "q": "Kann die Routenänderung?",
+          "a": "Ja. Flugpläne, Straßenverhältnisse und regionale Erreichbarkeit können Anpassungen erfordern. Die Reiseroute ist der Rahmen der Reise und wir passen sie bei Bedarf an."
+        }
+      }
+    }
+  }
+}

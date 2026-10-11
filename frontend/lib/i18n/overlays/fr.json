@@ -1,0 +1,67 @@
+{
+  "company.promises": {
+    "0": {
+      "title": "Détenu et exploité localement",
+      "text": "Nous opérons depuis l'Éthiopie, avec nos propres guides, chauffeurs et personnel de terrain. Vous traitez directement avec les personnes qui organisent votre voyage."
+    },
+    "1": {
+      "title": "Connaissances d'expédition",
+      "text": "Les paysages isolés nécessitent plus qu'une réservation en ligne. Nous planifions l'eau, le chauffage, les itinéraires, les camps et l'accès actuel avant de promettre quoi que ce soit."
+    },
+    "2": {
+      "title": "Guidage humain",
+      "text": "De vraies personnes avec une réelle expérience du terrain, qui expliquent ce que vous voyez plutôt que de simplement le montrer du doigt."
+    },
+    "3": {
+      "title": "Nous nous occupons de la logistique",
+      "text": "Véhicules 4×4, éclaireurs locaux, permis, camps, hôtels et transferts. Une équipe responsable de l'ensemble des opérations au sol."
+    },
+    "4": {
+      "title": "Privé et flexible",
+      "text": "Votre voyage n'a pas besoin de correspondre à un modèle. Lorsque les conditions changent, nous adaptons l'itinéraire en fonction de la sécurité et de ce qui compte pour vous."
+    }
+  },
+  "navigation.navLinks": {
+    "0": {
+      "label": "Expéditions"
+    },
+    "1": {
+      "label": "Destinations"
+    },
+    "2": {
+      "label": "Avant de partir"
+    },
+    "3": {
+      "label": "Spécialiste et partenaires",
+      "children": {
+        "0": {
+          "label": "Voyages spécialisés",
+          "text": "Photographie, cinéma, recherche et trekking"
+        },
+        "1": {
+          "label": "Opérations au sol",
+          "text": "Pour les voyagistes et les agences"
+        }
+      }
+    },
+    "4": {
+      "label": "À propos de nous"
+    },
+    "5": {
+      "label": "Galerie"
+    }
+  },
+  "navigation.planJourneyLink": {
+    "label": "Planifier mon voyage"
+  },
+  "journeyStyles.journeyStyles": {
+    "0": "Privé",
+    "1": "Petit groupe",
+    "2": "Aventure",
+    "3": "Culturelle",
+    "4": "Photographie",
+    "5": "Randonnée",
+    "6": "Recherche",
+    "7": "Famille"
+  }
+}

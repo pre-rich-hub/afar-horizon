@@ -1,21 +1,26 @@
-import { TranslatedText } from '@/components/common/TranslatedText'
+import {useBeforeYouGoCopy} from '../data/localized'
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import Link from '@/components/common/SiteLink'
-import { packing, respect, topics } from '../data/before-you-go.data'
+import { packing as basePacking, respect as baseRespect, topics as baseTopics } from '../data/before-you-go.data'
 
 export function BeforeYouGoGuide() {
+  const tr = useTranslations('UI.beforeyougo.BeforeYouGoGuide')
+  const topics = useBeforeYouGoCopy('before-you-go.topics', baseTopics)
+  const packing = useBeforeYouGoCopy('before-you-go.packing', basePacking)
+  const respect = useBeforeYouGoCopy('before-you-go.respect', baseRespect)
+
   return (
-    <TranslationBoundary><div className="shell grid gap-12 py-16 sm:py-20 lg:grid-cols-[240px_1fr] lg:gap-16 lg:py-24">
-      <nav aria-label="On this page" className="hidden lg:block">
+    <div className="shell grid gap-12 py-16 sm:py-20 lg:grid-cols-[240px_1fr] lg:gap-16 lg:py-24">
+      <nav aria-label={tr('onThisPage')} className="hidden lg:block">
         <ul className="sticky top-28 space-y-2.5 border-l border-border pl-5 text-sm">
-          {[...topics, { id: 'packing', title: 'What to pack' }, { id: 'respect', title: 'Travel with respect' }].map((t) => (
-            <TranslationBoundary key={t.id}><li key={t.id}>
+          {[...topics, { id: 'packing', title: tr('whatToPack') }, { id: 'respect', title: tr('travelWithRespect') }].map((t) => (
+            <li key={t.id}>
               <a href={`#${t.id}`} className="text-muted-foreground transition-colors hover:text-accent">
                 {t.title}
               </a>
-            </li></TranslationBoundary>
+            </li>
           ))}
         </ul>
       </nav>
@@ -23,88 +28,77 @@ export function BeforeYouGoGuide() {
       <div className="max-w-3xl">
         <Reveal>
           <p className="text-pretty text-lg leading-relaxed text-foreground sm:text-xl">
-            Heat, remoteness, rough roads, basic camps and early starts are part of a Danakil
-            expedition. None of them should frighten you, but all of them should be expected.
-            This page explains each one, and what we do about it.
-          </p>
+            {tr('heatRemotenessRoughRoadsBasicCampsAnd')}</p>
         </Reveal>
 
         {topics.map((t) => (
-          <TranslationBoundary key={t.id}><Reveal key={t.id} as="section" className="scroll-mt-28 border-t border-border pt-10 mt-12" >
+          <Reveal key={t.id} as="section" className="scroll-mt-28 border-t border-border pt-10 mt-12" >
             <h2 id={t.id} className="scroll-mt-28 font-serif text-3xl text-foreground">{t.title}</h2>
             <div className="mt-4 space-y-4">
               {t.text.map((p) => (
-                <TranslationBoundary key={p.slice(0, 30)}><p key={p.slice(0, 30)} className="text-pretty leading-relaxed text-muted-foreground">
+                <p key={p.slice(0, 30)} className="text-pretty leading-relaxed text-muted-foreground">
                   {p}
-                </p></TranslationBoundary>
+                </p>
               ))}
             </div>
-          </Reveal></TranslationBoundary>
+          </Reveal>
         ))}
 
         <Reveal as="section" className="mt-12 border-t border-border pt-10">
-          <h2 id="altitude-heat" className="scroll-mt-28 font-serif text-3xl text-foreground">Altitude or heat?</h2>
+          <h2 id="altitude-heat" className="scroll-mt-28 font-serif text-3xl text-foreground">{tr('altitudeOrHeat')}</h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            Ethiopia can challenge your body in opposite ways, sometimes within the same week.
-            That is why we explain the demands of your specific route rather than using one difficulty rating.
-          </p>
+            {tr('ethiopiaCanChallengeYourBodyInOpposite')}</p>
           <dl className="mt-6 grid gap-4 sm:grid-cols-2">
             {[
               { k: 'Danakil', v: 'Heat, dehydration, rough roads and remote conditions. Low altitude.' },
               { k: 'Simien', v: 'Altitude, cold, walking and terrain. Variable weather.' },
             ].map((r) => (
-              <TranslationBoundary key={r.k}><div key={r.k} className="border border-border bg-card p-5">
+              <div key={r.k} className="border border-border bg-card p-5">
                 <dt className="eyebrow mb-2 text-accent">{r.k}</dt>
                 <dd className="text-sm leading-relaxed text-foreground">{r.v}</dd>
-              </div></TranslationBoundary>
+              </div>
             ))}
           </dl>
         </Reveal>
 
         <Reveal as="section" className="mt-12 border-t border-border pt-10">
-          <h2 id="packing" className="scroll-mt-28 font-serif text-3xl text-foreground">What to pack for the Danakil</h2>
+          <h2 id="packing" className="scroll-mt-28 font-serif text-3xl text-foreground">{tr('whatToPackForTheDanakil')}</h2>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2 sm:gap-x-10">
             {packing.map((item) => (
-              <TranslationBoundary key={item}><li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-foreground">
+              <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-foreground">
                 <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                 {item}
-              </li></TranslationBoundary>
+              </li>
             ))}
           </ul>
           <p className="mt-6 text-pretty text-sm leading-relaxed text-muted-foreground">
-            <TranslatedText text={"Most importantly: do not underestimate the heat. For medical advice, consult a qualified healthcare professional before you travel, and make sure your travel insurance covers remote areas."} />
+            {tr('mostImportantlyDoNotUnderestimateTheHeat')}
           </p>
         </Reveal>
 
         <Reveal as="section" className="mt-12 border-t border-border pt-10">
-          <h2 id="respect" className="scroll-mt-28 font-serif text-3xl text-foreground">Travel with respect</h2>
+          <h2 id="respect" className="scroll-mt-28 font-serif text-3xl text-foreground">{tr('travelWithRespect')}</h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            Photograph people, not at people. A good photograph should not require a bad experience
-            for the person in front of your camera.
-          </p>
+            {tr('photographPeopleNotAtPeopleAGood')}</p>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2 sm:gap-x-10">
             {respect.map((item) => (
-              <TranslationBoundary key={item}><li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-foreground">
+              <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-foreground">
                 <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                 {item}
-              </li></TranslationBoundary>
+              </li>
             ))}
           </ul>
           <p className="mt-6 text-sm text-muted-foreground">
-            A few words help: <span className="text-foreground">Selam</span> (hello),{' '}
-            <span className="text-foreground">Amesegenallo</span> (thank you).
-          </p>
+            {tr('aFewWordsHelp')}{' '}<span className="text-foreground">{tr('selam')}</span> {tr('hello')}{' '}
+            <span className="text-foreground">{tr('amesegenallo')}</span> {tr('thankYou')}</p>
         </Reveal>
 
         <Reveal className="mt-14 border border-border bg-card p-6 sm:p-8">
-          <p className="font-serif text-2xl text-foreground">Still have questions?</p>
+          <p className="font-serif text-2xl text-foreground">{tr('stillHaveQuestions')}</p>
           <p className="mt-2 text-pretty text-sm leading-relaxed text-muted-foreground">
-            Read our <Link href="/faq" className="text-primary underline-offset-4 hover:underline">FAQ</Link>,
-            compare <Link href="/expeditions" className="text-primary underline-offset-4 hover:underline">expeditions</Link>,
-            or ask us about current conditions for your dates.
-          </p>
+            {tr('readOur')}{' '}<Link href="/faq" className="text-primary underline-offset-4 hover:underline">{tr('faq')}</Link>{tr('compare')}{' '}<Link href="/expeditions" className="text-primary underline-offset-4 hover:underline">{tr('expeditions')}</Link>{tr('orAskUsAboutCurrentConditionsFor')}</p>
         </Reveal>
       </div>
-    </div></TranslationBoundary>
+    </div>
   )
 }

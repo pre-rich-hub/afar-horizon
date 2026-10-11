@@ -1,5 +1,5 @@
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { cn } from '@/lib/utils'
 import { ArrowRight, Check } from 'lucide-react'
 
@@ -24,8 +24,10 @@ export function FormShell({
   submitLabel: string
   footnote: string
 }) {
+  const tr = useTranslations('UI.enquiries.FormParts')
+
   return (
-    <TranslationBoundary><div className="border border-border bg-card p-6 shadow-[0_28px_70px_-40px_oklch(0.185_0.012_58/0.4)] sm:p-8 lg:p-10">
+    <div className="border border-border bg-card p-6 shadow-[0_28px_70px_-40px_oklch(0.185_0.012_58/0.4)] sm:p-8 lg:p-10">
       <form
         onSubmit={async (e) => {
           e.preventDefault()
@@ -36,7 +38,7 @@ export function FormShell({
             setState('sent')
           } catch (err) {
             setState('idle')
-            setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.')
+            setError(err instanceof Error ? err.message : tr('fallbackError'))
           }
         }}
         className="space-y-8"
@@ -55,59 +57,63 @@ export function FormShell({
             disabled={state === 'sending'}
             className="group inline-flex w-full items-center justify-center gap-2.5 bg-primary px-8 py-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary-foreground transition-colors duration-300 hover:bg-charcoal disabled:opacity-60 sm:w-auto"
           >
-            {state === 'sending' ? 'Sending…' : submitLabel}
+            {state === 'sending' ? tr('sending') : submitLabel}
             <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
           </button>
           <p className="mt-3 text-xs leading-relaxed text-muted-foreground">{footnote}</p>
         </div>
       </form>
-    </div></TranslationBoundary>
+    </div>
   )
 }
 
 export function Sent({ text }: { text: string }) {
+  const tr = useTranslations('UI.enquiries.FormParts')
+
   return (
-    <TranslationBoundary><div className="flex min-h-[380px] flex-col items-center justify-center border border-border bg-card px-6 py-16 text-center">
+    <div className="flex min-h-[380px] flex-col items-center justify-center border border-border bg-card px-6 py-16 text-center">
       <span className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground">
         <Check className="h-6 w-6" />
       </span>
-      <h3 className="font-serif text-3xl text-foreground">Request received</h3>
+      <h3 className="font-serif text-3xl text-foreground">{tr('requestReceived')}</h3>
       <p className="mt-4 max-w-sm text-pretty leading-relaxed text-muted-foreground">{text}</p>
-    </div></TranslationBoundary>
+    </div>
   )
 }
 
 export function Group({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <TranslationBoundary><fieldset>
+    <fieldset>
       <legend className="mb-4 font-serif text-xl text-foreground">{title}</legend>
       <div className="grid gap-5 sm:grid-cols-2">{children}</div>
-    </fieldset></TranslationBoundary>
+    </fieldset>
   )
 }
 
 export function Chips({
   label,
   options,
+  labels = options,
   selected,
   toggle,
 }: {
   label: string
   options: string[]
+  labels?: string[]
   selected: string[]
   toggle: (v: string) => void
 }) {
   return (
-    <TranslationBoundary><fieldset>
+    <fieldset>
       <legend className="mb-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
         {label}
       </legend>
       <div className="flex flex-wrap gap-2">
-        {options.map((o) => {
+        {options.map((o, i) => {
           const on = selected.includes(o)
           return (
-            <TranslationBoundary key={o}><button
-              key={o}
+            <button
+              key={labels[i]}
               type="button"
               aria-pressed={on}
               onClick={() => toggle(o)}
@@ -118,22 +124,22 @@ export function Chips({
                   : 'border-border bg-background text-muted-foreground hover:border-primary/50 hover:text-foreground',
               )}
             >
-              {o}
-            </button></TranslationBoundary>
+              {labels[i]}
+            </button>
           )
         })}
       </div>
-    </fieldset></TranslationBoundary>
+    </fieldset>
   )
 }
 
 export function Field({ label, id, children }: { label: string; id: string; children: React.ReactNode }) {
   return (
-    <TranslationBoundary><label htmlFor={id} className="block">
+    <label htmlFor={id} className="block">
       <span className="mb-2 block text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
         {label}
       </span>
       {children}
-    </label></TranslationBoundary>
+    </label>
   )
 }

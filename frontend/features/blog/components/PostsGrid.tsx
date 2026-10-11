@@ -1,5 +1,6 @@
 'use client'
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+import {useBlogCopy} from '../data/localized'
+import { useTranslations } from 'next-intl'
 
 
 import { Reveal } from '@/components/common/Reveal'
@@ -7,7 +8,11 @@ import { useMemo, useState } from 'react'
 import type { Post } from '../types/post.types'
 import { PostCard } from './PostCard'
 
-export function PostsGrid({ posts }: { posts: Post[] }) {
+export function PostsGrid({ posts: baseposts }: { posts: Post[] }) {
+  const posts = useBlogCopy('post.posts', baseposts)
+
+  const tr = useTranslations('UI.blog.PostsGrid')
+
   const categories = useMemo(
     () => ['All Writing', ...Array.from(new Set(posts.map((p) => p.category)))],
     [posts],
@@ -20,16 +25,16 @@ export function PostsGrid({ posts }: { posts: Post[] }) {
       : posts.filter((p) => p.category === active)
 
   return (
-    <TranslationBoundary><div>
+    <div>
       <div
         role="group"
-        aria-label="Filter articles by category"
+        aria-label={tr('filterArticlesByCategory')}
         className="mb-12 flex flex-wrap gap-2 sm:mb-16"
       >
         {categories.map((c) => {
           const on = c === active
           return (
-            <TranslationBoundary key={c}><button
+            <button
               key={c}
               type="button"
               aria-pressed={on}
@@ -41,24 +46,23 @@ export function PostsGrid({ posts }: { posts: Post[] }) {
               }`}
             >
               {c}
-            </button></TranslationBoundary>
+            </button>
           )
         })}
       </div>
 
       <div className="grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
         {visible.map((p, i) => (
-          <TranslationBoundary key={p.slug}><Reveal key={p.slug} delay={(i % 3) * 90}>
+          <Reveal key={p.slug} delay={(i % 3) * 90}>
             <PostCard post={p} />
-          </Reveal></TranslationBoundary>
+          </Reveal>
         ))}
       </div>
 
       {visible.length === 0 && (
         <p className="py-16 text-center text-muted-foreground">
-          Nothing filed under this yet.
-        </p>
+          {tr('nothingFiledUnderThisYet')}</p>
       )}
-    </div></TranslationBoundary>
+    </div>
   )
 }

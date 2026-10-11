@@ -1,15 +1,20 @@
+import {useToursCopy} from '../data/localized'
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { CtaBand } from '@/components/common/CtaBand'
 import type { Tour } from '../types/tour.types'
 
-export function TourPlanning({ t }: { t: Tour }) {
+export function TourPlanning({ t: baset }: { t: Tour }) {
+  const t = useToursCopy('tour.tours', baset)
+
+  const tr = useTranslations('UI.tours.TourPlanning')
+
   return (
-    <TranslationBoundary><CtaBand
-        title="Questions before you enquire?"
-        text="Heat, road time, how hard the walking really is, what camping means in the Danakil. Ask us anything and we will answer honestly."
-        secondary={{ label: 'All Expeditions', href: '/expeditions' }}
+    <CtaBand
+        title={tr('questionsBeforeYouEnquire')}
+        text={tr('heatRoadTimeHowHardTheWalking')}
+        secondary={{ label: tr('allExpeditions'), href: '/expeditions' }}
         image={t.image}
-      /></TranslationBoundary>
+      />
   )
 }

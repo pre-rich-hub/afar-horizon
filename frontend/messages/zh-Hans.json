@@ -1,0 +1,766 @@
+{
+  "UI": {
+    "common": {
+      "BookingCard": {
+        "askAQuestion": "提问"
+      },
+      "CtaBand": {
+        "planMyJourney": "规划我的旅程",
+        "orCallUsDirectlyOn": "或者直接致电我们",
+        "speakWithADesigner": "与设计师交谈"
+      },
+      "PageHero": {
+        "breadcrumb": "面包屑"
+      },
+      "PageSkeleton": {
+        "loading": "正在加载"
+      },
+      "SectionNav": {
+        "onThisPage": "在此页面"
+      },
+      "InfoCard": {
+        "explore": "探索"
+      },
+      "NotFound": {
+        "error": "错误 404",
+        "title": "这条道路未出现在我们的地图上",
+        "description": "您正在寻找的页面已移动或从未存在。令人高兴的是，这个国家仍然在我们离开的地方。",
+        "home": "回到起点",
+        "destinations": "查看目的地",
+        "or": "或者",
+        "contact": "写信给设计师",
+        "instead": "。"
+      }
+    },
+    "layout": {
+      "SiteFooter": {
+        "afarHorizonExpeditionsHome": "Afar Horizon Expeditions — 主页",
+        "afarHorizonExpeditionsLogo": "Afar Horizon Expeditions 徽标",
+        "introducingTravellersToOneOfHumanityApos": "向游客介绍人类最古老的文明之一 - 充满关怀、知识和安静的奢华。",
+        "continueExploringEthiopia": "继续探索埃塞俄比亚",
+        "curatedTravelStoriesAndSeasonalInspirationFrom": "我们的设计师精心策划的旅行故事和季节性灵感。一年四封信，绝不会更多。",
+        "trustedTravelPlatforms": "值得信赖的旅游平台",
+        "findAndReviewUsWhereSeasonedTravellers": "查找并查看经验丰富的旅行者的计划。",
+        "weAccept": "我们接受",
+        "securePaymentsByCardOrPaypal": "通过卡或 PayPal 安全付款。",
+        "copy": "©",
+        "afarHorizonExpeditionsAllRightsReserved": "Afar Horizon Expeditions。保留所有权利。",
+        "builtBy": "构建",
+        "melbaTechnology": "Melba Technology",
+        "privacyPolicy": "隐私政策",
+        "termsAmpConditions": "条款和条件"
+      },
+      "SiteNav": {
+        "afarHorizonExpeditionsHome": "Afar Horizon Expeditions — 主页",
+        "afarHorizonExpeditionsLogo": "Afar Horizon Expeditions 徽标",
+        "afarTigrayAmhara": "阿法尔 · 提格雷 · 阿姆哈拉",
+        "ourDestinations": "我们的目的地",
+        "fromTheSaltAndVolcanoesOfThe": "从达纳基尔的盐和火山到悬崖教堂、古代王国和北部的山脉。",
+        "viewAllDestinations": "查看所有目的地",
+        "afarDanakilNorthernEthiopia": "阿法尔 · 达纳基尔 · 埃塞俄比亚北部",
+        "ourExpeditions": "我们的探险",
+        "privateExpeditionsFromOneDayToThree": "由我们自己的地面团队负责一天到三周的私人探险。",
+        "exploreAllExpeditions": "探索所有探险",
+        "from": "从",
+        "changeLanguage": "更改语言",
+        "language": "语言",
+        "closeMenu": "关闭菜单",
+        "openMenu": "开放菜单"
+      }
+    },
+    "about": {
+      "AboutApproach": {
+        "theKindOfTravelWeBelieveIn": "我们所信仰的旅行方式",
+        "theRightThingsAtTheRightPace": "正确的事情。以正确的速度。"
+      },
+      "AboutBrief": {
+        "inBrief": "简而言之",
+        "whoWhereAndHowWePlan": "我们的计划对象、地点和方式。",
+        "planWithUs": "与我们一起计划"
+      },
+      "AboutHero": {
+        "danakilDepressionAfar": "达纳基尔洼地，阿法尔",
+        "breadcrumb": "面包屑",
+        "home": "首页",
+        "aboutUs": "关于我们",
+        "aboutAfarHorizonExpeditions": "关于 Afar Horizon Expeditions",
+        "ldquoWeWantPeopleToExperienceThe": "“我们希望人们体验我们所了解的埃塞俄比亚，而不仅仅是参观它。”",
+        "aLocallyOwnedTeamInAddisAbaba": "亚的斯亚贝巴当地团队设计从 阿法尔 的盐与火到该国古老高地的私人旅程。"
+      },
+      "AboutPlanning": {
+        "startWithAConversation": "从对话开始",
+        "tellUsHowMuchTimeYouHave": "告诉我们您有多少时间以及是什么吸引您来到埃塞俄比亚。设计师将在一天内回复并提供诚实的建议和旅程的第一个轮廓。",
+        "planWithUs": "与我们一起计划",
+        "browseExpeditions": "浏览探险"
+      },
+      "AboutStory": {
+        "theRoadOutOfAddis": "离开亚的斯的道路",
+        "beforeTheAfarBecameAnItinerary": "在 阿法尔 成为行程之前。",
+        "simienMountainsEthiopia": "埃塞俄比亚塞米恩山脉",
+        "thereIsARoadOutOfAddis": "有一条从亚的斯亚贝巴出发的路我们乐此不疲。城市在你身后变得稀疏，高地折叠起来，土地向裂谷方向下降——直到空气变得炎热而广阔，阿法雷吉奥令牌 (阿法尔) 向地平线展开。每一次，它都会提醒我们为什么选择这项工作。",
+        "weNamedTheCompanyForThatHorizon": "我们根据这一愿景为公司命名。早在这些地方被列入旅行计划之前，它们只是我们国家的一部分：达纳基尔的盐商队、高地的集镇、拉利贝拉岩石上雕刻的教堂。",
+        "overTheYearsWeLearnedHowA": "多年来，我们了解了熟悉的道路如何随季节变化，节日如何在一夜之间改变城镇，以及沙漠如何保持自己的时间表。了解一个地方和仅仅了解它的路线是不同的。",
+        "thenWeStartedGuiding": "然后我们开始指导",
+        "seeingHomeThroughNewEyes": "用新的眼光看待家。",
+        "afarRegionEthiopia": "阿法尔 地区，埃塞俄比亚",
+        "aTravellerStopsToWatchAGelada": "一位旅行者停下来观看狒狒群体，并问了另一个问题。有人想知道为什么一个村庄坐落在它现在的位置。有人第一次在产地品尝埃塞俄比亚咖啡。有人到达尔塔阿雷山的边缘，然后就安静下来了。",
+        "guidingTaughtUsToNoticeWhatWe": "导游教会我们注意我们曾经认为理所当然的事情，并向我们表明，这项工作是帮助人们了解他们在哪里，而不仅仅是指明道路。",
+        "thatIsWhyEveryJourneyIsBuilt": "这就是为什么每一次旅程都是个性化的。一对寻求安静的情侣、一位等待黎明的摄影师和一位为高斯米恩训练的徒步旅行者需要截然不同的旅行。第一步就是倾听。"
+      }
+    },
+    "beforeyougo": {
+      "BeforeYouGoGuide": {
+        "onThisPage": "在此页面",
+        "whatToPack": "要带什么东西",
+        "travelWithRespect": "尊重旅行",
+        "heatRemotenessRoughRoadsBasicCampsAnd": "炎热、偏远、道路崎岖、基本营地和提早出发是达纳基尔探险的一部分。它们都不应该让您感到害怕，但所有这些都应该是意料之中的。本页解释了每一项，以及我们对此采取的措施。",
+        "altitudeOrHeat": "海拔还是热量？",
+        "ethiopiaCanChallengeYourBodyInOpposite": "埃塞俄比亚可以以相反的方式挑战您的身体，有时甚至在同一周内。这就是为什么我们会解释您的具体路线的要求，而不是使用一个难度等级。",
+        "whatToPackForTheDanakil": "为 Danakil 打包什么",
+        "mostImportantlyDoNotUnderestimateTheHeat": "最重要的是：不要低估热量。如需医疗建议，请在旅行前咨询合格的医疗保健专业人士，并确保您的旅行保险涵盖偏远地区。",
+        "photographPeopleNotAtPeopleAGood": "拍摄人，而不是人。一张好的照片不应该让镜头前的人有不好的经历。",
+        "aFewWordsHelp": "几句话会有所帮助：",
+        "selam": "Selam",
+        "hello": "（你好），",
+        "amesegenallo": "Amesegenallo",
+        "thankYou": "（谢谢）。",
+        "stillHaveQuestions": "还有疑问吗？",
+        "readOur": "阅读我们的",
+        "faq": "常见问题解答",
+        "compare": "、比较",
+        "expeditions": "探险",
+        "orAskUsAboutCurrentConditionsFor": "，或向我们询问您的日期的当前情况。"
+      },
+      "BeforeYouGoHero": {
+        "beforeYouGo": "行前准备",
+        "whatTheJourneyIsReallyLike": "旅程到底是什么样的",
+        "theDanakilAndNorthernEthiopiaAreNot": "达纳基尔和埃塞俄比亚北部不是普通的观光景点。老实说，以下是您所期待的，因此您到达时已做好准备，而不是感到惊讶。",
+        "dallolInTheDanakilDepression": "达纳基尔洼地的 Dallol",
+        "home": "首页"
+      },
+      "BeforeYouGoPlanning": {
+        "askAboutCurrentConditions": "询问当前状况",
+        "tellUsYourDatesAndWeWill": "告诉我们您的日期，我们会如实告诉您什么是否可行、路线涉及什么以及我们会推荐什么。",
+        "readTheFaq": "阅读常见问题解答"
+      }
+    },
+    "blog": {
+      "ArticleBody": {
+        "writtenBy": "作者：",
+        "questionsAboutAnyOfTheAboveAre": "。欢迎对以上任何问题提出疑问 —",
+        "writeToUs": "写信给我们",
+        "furtherReading": "进一步阅读：",
+        "readNext": "阅读下一步"
+      },
+      "ArticleHeader": {
+        "breadcrumb": "面包屑",
+        "home": "首页",
+        "theJournal": "日记",
+        "updated": "已更新"
+      },
+      "ArticlePlanning": {
+        "readyToSeeItForYourself": "准备好亲眼目睹了吗？",
+        "everyEssayHereComesOutOfA": "这里的每一篇文章都来自我们为某人设计的旅程。告诉我们您希望自己的感觉如何。",
+        "seeDestinations": "查看目的地"
+      },
+      "BlogHero": {
+        "theJournal": "日记",
+        "fieldNotesFromAfarAndBeyond": "来自 阿法尔 及其他领域的现场笔记",
+        "planYourJourneyIntoAfarWhenTo": "计划您的 阿法尔 之旅：何时参观、携带什么物品以及如何了解达纳基尔的火山、盐国和社区。除了这些指南之外，还可以探索埃塞俄比亚更广阔的地区的文化和历史路线。",
+        "afarRegionEthiopia": "阿法尔 地区，埃塞俄比亚",
+        "home": "首页",
+        "journal": "期刊"
+      },
+      "BlogNewsletter": {
+        "theLetter": "信",
+        "oneLetterASeasonNoMoreThan": "一个季节一个字母，仅此而已",
+        "festivalDatesWorthPlanningAroundNewLodges": "值得庆祝的节日日期计划、我们实际上睡过的新小屋，以及偶尔诚实地说本月不去哪里。"
+      },
+      "BlogPlanning": {
+        "readSomethingThatChangedYourMind": "阅读一些改变您想法的内容？",
+        "mostOfTheseEssaysStartedAsAn": "这些文章中的大多数都是作为对客人问题的回答而开始的。询问我们，它很可能会成为您的下一个。",
+        "browseExpeditions": "浏览探险"
+      },
+      "FeaturedPost": {
+        "latestDispatch": "最新调度"
+      },
+      "PostArchive": {
+        "archive": "存档",
+        "everythingWeHaveWrittenDown": "我们写下的所有内容",
+        "sixEssaysAndCountingFiledByWhat": "六篇论文并且还在不断增加，按它们的实际用途分类。"
+      },
+      "PostsGrid": {
+        "filterArticlesByCategory": "按类别过滤文章",
+        "nothingFiledUnderThisYet": "尚未在此项下提交任何内容。"
+      },
+      "RelatedPosts": {
+        "moreFromTheJournal": "来自日志的更多信息",
+        "alsoWorthYourTime": "也值得您花时间",
+        "allWriting": "所有写作"
+      }
+    },
+    "contact": {
+      "ContactEnquiry": {
+        "getInTouch": "联系",
+        "tellUsAboutTheJourneyInYour": "告诉我们您脑海中的旅程",
+        "howeverRoughTheIdeaItIsEnough": "无论这个想法多么粗略，都足够了。我们将带着问题、值得考虑的路线以及关于费用的直接答案。",
+        "telephone": "电话",
+        "whatsapp": "WhatsApp",
+        "email": "电子邮件",
+        "office": "办公室",
+        "hours": "时间"
+      },
+      "ContactHero": {
+        "speakWithADesigner": "与设计师交谈",
+        "everyJourneyBeginsWithAConversation": "每一次旅程都从对话开始",
+        "noCallCentresAndNoTemplatesWrite": "没有呼叫中心，也没有模板。写信给我们，亚的斯亚贝巴的设计师通常会在同一天亲自回复。",
+        "afarRegionEthiopia": "阿法尔 地区，埃塞俄比亚",
+        "home": "首页",
+        "contact": "联系",
+        "replyTime": "回复时间",
+        "basedIn": "基地",
+        "support": "支持",
+        "deposit": "押金"
+      },
+      "ContactProcess": {
+        "whatHappensNext": "接下来会发生什么",
+        "howAJourneyGetsDesigned": "旅程如何设计",
+        "fourStepsAndNoMoneyChangesHands": "四步，直到第三步对您来说没有钱易手。"
+      },
+      "ContactPromises": {
+        "ourPromise": "我们的承诺",
+        "whatYouGetFromWorkingWithUs": "与我们合作您会得到什么"
+      }
+    },
+    "destinations": {
+      "DestinationBooking": {
+        "planYourVisit": "计划您的访问",
+        "planMyJourney": "计划我的旅程",
+        "askAboutCurrentConditions": "询问当前状况",
+        "suggestedStay": "建议住宿",
+        "bestTime": "最佳时间",
+        "altitude": "海拔",
+        "region": "地区"
+      },
+      "DestinationCard": {
+        "explore": "探索"
+      },
+      "DestinationEnquiry": {
+        "planThisDestination": "计划这个目的地",
+        "build": "构建",
+        "intoYourJourney": "您的旅程",
+        "tellUsWhatYouAreCuriousAbout": "告诉我们您好奇什么、您想拍摄什么以及您想以多慢或多快的速度旅行。我们围绕您制定旅程，并确认您的日期的当前条件。",
+        "alsoConsider": "也考虑"
+      },
+      "DestinationGrid": {
+        "valueValue": "{value0} {value1}",
+        "destination": "目的地",
+        "destinations": "目的地"
+      },
+      "DestinationHero": {
+        "valueValue": "{value0} · {value1}",
+        "home": "首页",
+        "destinations": "目的地",
+        "bestTime": "最佳时间",
+        "suggestedStay": "建议住宿",
+        "altitude": "海拔",
+        "region": "地区"
+      },
+      "DestinationHighlights": {
+        "highlights": "亮点",
+        "questionsTravellersAsk": "旅行者提出的问题"
+      },
+      "DestinationJourneys": {
+        "exploreOurExpeditions": "探索我们的探险",
+        "routesThatPassThroughHere": "经过这里的路线",
+        "otherJourneysToConsider": "需要考虑的其他旅程",
+        "allExpeditions": "所有探险",
+        "expeditionsIncluding": "包含 {value0} 的探险之旅"
+      },
+      "DestinationOverview": {
+        "whyWeGo": "我们为什么选择",
+        "planningYourVisitRead": "规划您的访问吗？阅读"
+      },
+      "DestinationPlanning": {
+        "yourEthiopiaShouldNotFeelLikeSomeone": "您的埃塞俄比亚不应该感觉像是别人的行程",
+        "askAboutRoadConditionsTheSeasonOr": "询问路况、季节或这里的一天是什么样的。您将从负责该路线的团队那里得到直接答复。",
+        "allDestinations": "所有目的地"
+      },
+      "DestinationsHero": {
+        "whereWeTravel": "我们去哪里",
+        "fromTheLowestLandscapesToTheHighest": "从最低的景观到最高的地平线",
+        "saltAndVolcanoesInAfarCliffChurches": "阿法尔区域令牌中的盐和火山，盖拉尔塔的悬崖教堂，古老的阿克苏姆王国和锡米恩山脉。这些是我们从头到尾都了解的地方。",
+        "ertaAleVolcanoInAfarEthiopia": "埃塞俄比亚 阿法尔 的埃尔塔阿雷火山",
+        "home": "首页",
+        "destinations": "目的地",
+        "lowestPoint": "最低点",
+        "highestPoint": "最高点",
+        "danakilSeason": "达纳基尔季节"
+      },
+      "DestinationsPlanning": {
+        "notSureWhereToStart": "不确定从哪里开始？",
+        "tellUsHowManyDaysYouHave": "告诉我们您有多少天以及什么吸引着您，无论是盐和火山、悬崖教堂还是山脉，我们将建议一条适合当前条件的路线。",
+        "browseExpeditions": "浏览探险"
+      }
+    },
+    "enquiries": {
+      "EnquiryForm": {
+        "requestReceived": "已收到您的请求",
+        "weReadEveryRequestPersonallyAndWill": "我们会亲自阅读每一项请求，并通常会在一个工作日内通过电子邮件或 WhatsApp 回复。",
+        "enquiryAbout": "询问",
+        "fullName": "全名",
+        "yourName": "您的姓名",
+        "emailAddress": "电子邮件地址",
+        "youEmailCom": "you@email.com",
+        "preferredTravelDates": "首选旅行日期",
+        "eGMarch2026": "例如2026 年 3 月",
+        "numberOfTravellers": "人数旅行者",
+        "2Adults": "2 位成人",
+        "whatKindOfJourneyDoYouImagine": "您想象中的旅程是什么样的？",
+        "tellUsAboutTheJourneyYouVe": "告诉我们您想象中的旅程",
+        "howManyDaysYouHaveWhatYou": "你有多少天，你想看什么，我们应该知道什么...",
+        "beginTheConversation": "开始对话",
+        "weReplyPersonallyYourDetailsAreNever": "我们会亲自回复。我们绝不会透露您的详细信息。",
+        "fallbackError": "出了点问题 - 请重试。"
+      },
+      "FormParts": {
+        "sending": "发送中…",
+        "requestReceived": "已收到您的请求",
+        "fallbackError": "出了点问题。请重试。"
+      },
+      "PartnerForm": {
+        "thankYouWeWillReviewYourProgramme": "谢谢您。我们将审核您的计划，并通常在两个工作日内提出问题或基本建议。",
+        "sendPartnerRequest": "发送合作伙伴请求",
+        "weReplyPersonallyNetRatesAndCommission": "我们会亲自回复。净费率和佣金结构将与批准的合作伙伴讨论。",
+        "yourCompany": "您的公司",
+        "company": "公司",
+        "country": "国家",
+        "contactName": "联系人姓名",
+        "email": "电子邮件",
+        "whatsappPhone": "WhatsApp / 电话",
+        "theProgramme": "该计划",
+        "travelDates": "旅行日期",
+        "groupSize": "团体规模",
+        "destinations": "目的地",
+        "eGDanakilGheraltaLalibela": "例如达纳基尔、盖拉尔塔、拉利贝拉",
+        "servicesRequired": "所需服务",
+        "yourProgrammeOrQuestions": "您的计划或问题"
+      }
+    },
+    "faq": {
+      "FaqHero": {
+        "faq": "常见问题解答",
+        "questionsTravellersAsk": "旅行者提出的问题",
+        "straightAnswersAboutHowWeWorkWhat": "直接回答我们如何工作、达纳基尔探险涉及什么以及如何预订。",
+        "dallolInTheDanakilDepression": "达纳基尔洼地的 Dallol",
+        "home": "首页"
+      },
+      "FaqPlanning": {
+        "didnTFindYourQuestion": "没有找到您的问题？",
+        "askUsAboutCurrentConditionsYourDates": "向我们询问当前情况、您的日期或其他任何信息。您将从运营路线的团队那里得到诚实的答案。",
+        "beforeYouGo": "行前准备"
+      }
+    },
+    "gallery": {
+      "GalleryCollection": {
+        "theCollection": "收藏",
+        "momentsFromTheRoad": "离路很近",
+        "exploreMountainLandscapesRockHewnChurchesLocal": "探索山地景观、岩石凿成的教堂、当地工艺品和旅途中的时刻。按主题过滤，然后点击任何照片以查看完整内容并阅读其标题。"
+      },
+      "GalleryGrid": {
+        "filterPhotos": "过滤照片",
+        "openValueValue": "打开{value0}、{value1}",
+        "all": "所有"
+      },
+      "GalleryHero": {
+        "theGallery": "画廊",
+        "ethiopiaSeenSlowly": "埃塞俄比亚，慢慢看",
+        "saltAndFireInTheAfarStone": "阿法尔区域令牌中的盐和火，北部的石头教堂，高原上的薄雾以及使每个地方成为现在样子的人们。",
+        "simienMountainsEthiopia": "埃塞俄比亚塞米恩山脉",
+        "home": "首页",
+        "gallery": "图库"
+      },
+      "GalleryPlanning": {
+        "seeItForYourself": "亲眼看看",
+        "tellUsWhichOfThesePlacesPulls": "告诉我们这些地方中的哪一个对您有吸引力，设计师将围绕您喜欢的光线、季节和节奏打造旅程。",
+        "planYourJourney": "计划你的旅程",
+        "browseExpeditions": "浏览探险"
+      },
+      "Lightbox": {
+        "valuePhotoValueOfValue": "{value0}，{value2} 的照片 {value1}",
+        "closeGallery": "关闭图库",
+        "previousPhoto": "之前的照片",
+        "nextPhoto": "下一张照片"
+      }
+    },
+    "groundoperations": {
+      "GroundOpsHandle": {
+        "whatWeHandle": "我们处理什么",
+        "theWholeGroundOperationOrTheParts": "整个地面操作，或您需要的部分"
+      },
+      "GroundOpsHero": {
+        "groundOperations": "地面运营",
+        "youBringTheTravellerWeHandleThe": "您带上旅行者。我们负责地面。",
+        "localGroundOperationsInEthiopiaForInternational": "为国际旅行社、旅行顾问、专业机构和旅行社提供埃塞俄比亚当地地面运营服务设计师。",
+        "dallolInTheDanakilDepression": "达纳基尔洼地的 Dallol",
+        "home": "首页"
+      },
+      "GroundOpsIntro": {
+        "oneLocalPartner": "一个当地合作伙伴",
+        "oneResponsibleContactOneTeamOnThe": "一个负责任的联系人，一个实地团队",
+        "insteadOfAnOverseasAgencyCoordinatingFive": "Afar Horizon 不是协调五家不同埃塞俄比亚供应商的海外机构，而是充当您的当地运营合作伙伴。您与客户保持密切联系；我们会密切关注运营情况。",
+        "weSpecialiseInTheDanakilAfarAnd": "我们专注于达纳基尔、阿法尔 和埃塞俄比亚北部，这些地区的偏远路线、炎热天气和不断变化的访问方式使当地知识成为产品的一部分。"
+      },
+      "GroundOpsPartner": {
+        "sendYourProgramme": "发送您的节目",
+        "needEthiopiaOnTheGround": "需要埃塞俄比亚实地考察吗？",
+        "sendYourDatesGroupSizeDestinationsAccommodation": "发送您的日期、团体人数、目的地、住宿级别、车辆、导游和任何特殊要求。我们对其进行审核并返回专业的埃塞俄比亚地面提案。"
+      },
+      "GroundOpsServices": {
+        "forTravelCompanies": "对于旅游公司",
+        "howWeWorkWithPartners": "我们如何与合作伙伴合作"
+      }
+    },
+    "home": {
+      "DestinationIndex": {
+        "fromTheLowestLandscapesToTheHighest": "从最低的景观到最高的地平线",
+        "sevenAfarDestinationsAndThreeNorthernHighland": "七个阿法尔目的地和三个北部高地亮点。",
+        "viewAllDestinations": "查看所有目的地"
+      },
+      "Experiences": {
+        "travelWithAPurpose": "有意义的旅行",
+        "builtAround": "围绕",
+        "whatYouCameFor": "您来这里的目的",
+        "someTravellersComeForTheLightSome": "有些旅行者是为了光明而来，有些旅行者是为了地质，有些是为了教堂，有些是为了为自己的客户运行一个项目。我们针对每项都做了计划。",
+        "discoverMore": "发现更多",
+        "exploreAllExpeditions": "探索所有探险"
+      },
+      "Gallery": {
+        "photoGallery": "照片库",
+        "animateKb1": "animate-kb-1",
+        "animateKb2": "animate-kb-2",
+        "valueEthiopia": "{value0}, 埃塞俄比亚",
+        "capturedMoments": "·捕捉的瞬间",
+        "goToSlideValue": "转到幻灯片 {value0}",
+        "pauseSlideshow": "暂停幻灯片",
+        "playSlideshow": "播放幻灯片",
+        "previousSlide": "上一张幻灯片",
+        "nextSlide": "下一张幻灯片"
+      },
+      "Hero": {
+        "beyondTheHorizonIntoAfar": "超越地平线，走进 阿法尔",
+        "privateExpeditionsIntoTheDanakilAndNorthern": "达纳基尔和埃塞俄比亚北部的私人探险。我们负责旅程。"
+      },
+      "HeroActions": {
+        "takeMeTo": "带我去",
+        "notSureWhere": "不确定从哪里开始？",
+        "planMyJourney": "规划我的旅程",
+        "searchDestinationsAndJourneys": "搜索目的地和旅程",
+        "search": "搜索",
+        "suggestions": "建议",
+        "noMatches": "没有匹配",
+        "popularDestinations": "热门目的地",
+        "nothingMatchesLdquo": "没有任何内容匹配“",
+        "rdquoYetPressEnterToBrowseEvery": "”尚未。按 Enter 浏览每条旅程，或者让我们围绕它计划一个旅程。"
+      },
+      "HeroSlideshow": {
+        "clientProvidedPhotoCollection": "客户提供的照片集"
+      },
+      "PlanJourney": {
+        "planYourJourney": "计划你的旅程",
+        "planYourExpeditionWithUs": "计划您的 阿法尔 旅程与我们一起探险",
+        "tellUsYourDatesHowManyDays": "告诉我们您的日期、您有多少天以及您想体验什么。我们检查当前条件，构建路线并发送明确的报价。首先是对话，而不是即时预订。"
+      },
+      "SignatureDestinations": {
+        "whereWeTravel": "我们去哪里",
+        "afarTheDanakilAndTheNorth": "阿法尔、达纳基尔和北部",
+        "volcanoSaltAndGeothermalColourBelowSea": "海平面以下的火山、盐和地热颜色；悬崖教堂、古老的王国和上面的山脉。",
+        "exploreAllDestinations": "探索所有目的地"
+      },
+      "StoryCarousel": {
+        "everyExpedition": "每一次探险",
+        "saltFire": "盐、火，",
+        "stoneAndMountain": "石头和山脉",
+        "fromASingleDayInAfarTo": "从 阿法尔 的一天到穿越北部的三周。每一次探险都是我们自行规划的路线，并根据地面条件的变化进行调整。",
+        "signatureJourneys": "特色旅程",
+        "viewTrip": "查看旅行",
+        "rarr": "→",
+        "previousJourney": "之前的旅程",
+        "nextJourney": "下一个旅程"
+      },
+      "TourRail": {
+        "chooseYourHorizon": "选择您的地平线",
+        "fromOneDayInAfarTo": "从 阿法尔 的一天到",
+        "threeWeeksInTheNorth": "北方三周",
+        "remarkableJourneysReshapedAroundYou": "非凡的旅程，围绕着重塑您。",
+        "featuredTours": "特色旅游",
+        "privateExpeditionsWeOperateOurselvesEachWith": "我们自己运营私人探险，每个探险都有一条诚实的日常路线。探索我们十七次探险中的六条特色旅程。",
+        "viewAll": "查看全部",
+        "nights": "夜晚",
+        "from": "从",
+        "perPerson": "每人",
+        "exploreTrip": "探索旅行",
+        "customTrips": "自定义旅行",
+        "createYourOwn": "创建您自己的",
+        "itinerary": "行程",
+        "iHaveSixDaysAndWantThe": "“我有六天时间，想要达纳基尔和盖拉尔塔。”告诉我们您的日期和兴趣，我们将围绕您制定路线。",
+        "createTrip": "创建行程",
+        "previousTours": "之前的旅行",
+        "nextTours": "下一次游览"
+      },
+      "WhyTravel": {
+        "notJustATour": "不仅仅是一次旅行",
+        "whyAfarHorizon": "为什么选择 Afar Horizon",
+        "whyTravelWithAfarHorizon": "为什么选择 Afar Horizon 旅行",
+        "goToSlideValueValue": "转到幻灯片 {value0}：{value1}",
+        "previousReason": "之前的原因",
+        "nextReason": "下一张原因"
+      }
+    },
+    "legal": {
+      "LegalContent": {
+        "afarHorizonExpeditions": "远方地平线探险",
+        "home": "首页",
+        "lastUpdated": "最后更新：",
+        "october112026": "2026 年 10 月 11 日"
+      }
+    },
+    "newsletter": {
+      "NewsletterForm": {
+        "thankYouTheNextLetterWillFind": "谢谢您 - 下封信会找到您。",
+        "emailAddress": "电子邮件地址",
+        "yourEmail": "您的电子邮件",
+        "join": "加入"
+      }
+    },
+    "photocredits": {
+      "PhotoCreditsHero": {
+        "photoCredits": "照片来源",
+        "photographsOnThisSite": "本网站上的照片",
+        "theDestinationAndExpeditionPhotographsOnThis": "此网站上的目的地和探险照片由客户提供，并托管在 Cloudinary 上。浏览下面的系列。",
+        "lakeAssaleInTheDanakilDepression": "达纳基尔洼地的阿萨勒湖",
+        "home": "首页"
+      },
+      "PhotoCreditsList": {
+        "clientProvidedPhotoCollection": "客户提供的照片集·",
+        "viewOnCloudinary": "在 Cloudinary 上查看"
+      }
+    },
+    "plan": {
+      "PlanHero": {
+        "planMyJourney": "规划我的旅程",
+        "tellUsWhereYouWantToGo": "告诉我们您想去哪里",
+        "weWillHelpYouWorkOutHow": "我们将帮助您确定如何到达那里。您不需要完美的行程：“我有两周时间”或“我想看看达纳基尔”就足以开始。",
+        "lakeAssaleInTheDanakilDepression": "达纳基尔洼地的阿萨勒湖",
+        "home": "首页"
+      },
+      "PlanRequest": {
+        "howItWorks": "工作原理",
+        "aConversationFirstNotAnInstantBooking": "首先是对话，而不是即时预订",
+        "preferToTalk": "愿意交谈吗？",
+        "whatsapp": "WhatsApp",
+        "planningForAGroupOfClientsUse": "正在为一组客户进行规划？使用我们的",
+        "partnerForm": "合作伙伴表格",
+        "instead": "。"
+      }
+    },
+    "specialisttravel": {
+      "SpecialistHero": {
+        "specialistTravel": "专业旅行",
+        "yourPurposeIsDifferentSoYourJourney": "您的目的不同，因此您的旅程也应该不同",
+        "someTravellersArriveWithACameraA": "一些旅行者带着相机、研究问题、摄制组或跑步目标来到这里。这些旅程需要不同的后勤服务，我们围绕您打造它们。",
+        "dallolInTheDanakilDepression": "达纳基尔洼地的 Dallol",
+        "home": "首页"
+      },
+      "SpecialistNavigation": {
+        "specialistTravel": "专业旅行"
+      },
+      "SpecialistPlanning": {
+        "tellUsWhatYouArePlanning": "告诉我们您的计划",
+        "shareYourPurposeDatesGroupSizeAnd": "分享您的目的、日期、团体人数以及您需要到达的地点。我们将告诉您在当前条件下可以做什么以及我们将如何运作它。",
+        "groundOperations": "地面运营"
+      },
+      "SpecialistPricing": {
+        "howSpecialistTripsArePriced": "专业旅行如何定价",
+        "specialistWorkIsQuotedIndividuallyRatherThan": "专业作品单独报价，而不是单独报价从价格表中，因为车辆、额外天数、设备、许可证和人员配置都取决于您的需求。告诉我们您的目的和日期，我们会提出建议。"
+      }
+    },
+    "support": {
+      "FloatingSupport": {
+        "contactUsOnWhatsapp": "通过 WhatsApp 与我们联系",
+        "chatOnWhatsapp": "在 WhatsApp 上聊天",
+        "openAiAssistant": "打开 AI 助手",
+        "aiTravelAssistant": "人工智能旅行助手",
+        "afarHorizonAiGuide": "Afar Horizon AI 指南",
+        "expertSupportOnline": "专家支持 · 在线",
+        "closeChat": "关闭聊天",
+        "askAQuestionAboutEthiopia": "询问有关埃塞俄比亚...",
+        "sendMessage": "发送消息"
+      },
+      "SupportChat": {
+        "welcome": "Selam！我是您的 AFARHORIZONSHOTTOKEN 人工智能助手。我如何帮助您设计您今天穿越埃塞俄比亚灵魂的私人旅程？",
+        "limit": "我现在已经达到了极限。如需个人定制建议，请使用我们的咨询表（/联系方式）或通过 WhatsApp 与我们聊天。",
+        "personalHelp": "如需即时个人帮助，请通过 WhatsApp 联系我们。"
+      }
+    },
+    "tours": {
+      "ExpeditionCollections": {
+        "expeditionCollections": "探险收藏品"
+      },
+      "ExpeditionsHero": {
+        "expeditions": "探险队",
+        "chooseYourHorizon": "选择你的视野",
+        "fromASingleDayInAfarTo": "从 阿法尔 的一天到穿越埃塞俄比亚北部的三周。每条行程都是我们自行规划的路线，并根据当地情况的变化进行调整。",
+        "lakeAfderaInTheAfarRegion": "阿法尔 地区的阿夫德拉湖",
+        "home": "首页",
+        "length": "长度",
+        "danakilGateway": "达纳基尔网关",
+        "style": "风格"
+      },
+      "ExpeditionsNote": {
+        "howOurItinerariesWork": "我们的行程如何安排",
+        "aPlannedRouteNotAPromiseFrom": "一条计划好的路线，而不是大自然的承诺",
+        "pricesAreStartingPricesPerPersonYour": "价格为每人的起始价格。您的最终报价取决于团体人数、日期、路线、车辆、住宿和国内航班，我们会在您支付任何费用之前与您确认。"
+      },
+      "ExpeditionsPlanning": {
+        "notSureWhichExpeditionFits": "不确定哪个探险适合？",
+        "tellUsYourDatesHowManyDays": "告诉我们您的日期、您有多少天以及您最想体验什么。我们将围绕您构建路线。",
+        "seeDestinations": "查看目的地"
+      },
+      "RelatedTours": {
+        "otherExpeditions": "其他探险",
+        "youMayAlsoBeWeighingUp": "您可能也在权衡",
+        "allExpeditions": "所有探险"
+      },
+      "TourEnquiry": {
+        "enquire": "询问",
+        "make": "进行",
+        "yours": "你的",
+        "sendUsYourDatesAndGroupSize": "向我们发送您的日期和团体人数。在您做出任何承诺之前，我们将检查当前条件、确认路线并发送明确的报价。",
+        "from": "·来自"
+      },
+      "TourFaqs": {
+        "beforeYouGo": "出发之前",
+        "questionsTravellersAsk": "旅行者提出的问题"
+      },
+      "TourHero": {
+        "home": "首页",
+        "expeditions": "探险队",
+        "duration": "持续时间",
+        "startFinish": "开始和结束",
+        "difficulty": "困难",
+        "pricing": "定价",
+        "from": "从"
+      },
+      "TourInclusions": {
+        "whatIsIncluded": "包含什么",
+        "notIncluded": "不包括"
+      },
+      "TourOverview": {
+        "theJourney": "旅程",
+        "whoItIsFor": "它是为了谁",
+        "considerAnotherItineraryIf": "如果考虑其他行程",
+        "places": "地点",
+        "pricing": "定价",
+        "checkMyDates": "查看我的日期",
+        "askAboutCurrentConditions": "询问当前状况",
+        "dayByDay": "日复一日",
+        "thePlannedRoute": "计划的路线",
+        "exactTimingsCampLocationsAndAccessAre": "具体时间、营地位置和进入方式均已根据您的日期确认。",
+        "overnight": "过夜",
+        "noOvernight": "不过夜",
+        "meals": "膳食",
+        "operatingSubjectToCurrentAccessAndConditions": "根据当前的准入和条件进行运营",
+        "duration": "持续时间",
+        "startFinish": "开始和结束",
+        "difficulty": "困难",
+        "group": "团体",
+        "bestSeason": "最佳季节",
+        "confirmedOnQuotation": "报价已确认",
+        "perPersonConfirmedOnQuotation": "每人，在报价中确认",
+        "fromPrice": "{value0} 起"
+      },
+      "TourPlanning": {
+        "questionsBeforeYouEnquire": "询问前有问题吗？",
+        "heatRoadTimeHowHardTheWalking": "炎热、路途时间、步行到底有多困难、在达纳基尔露营意味着什么。询问我们任何问题，我们都会如实回答。",
+        "allExpeditions": "所有探险"
+      }
+    }
+  },
+  "Common": {
+    "skipToContent": "跳至内容"
+  },
+  "Pages": {
+    "about_title": "关于我们的埃塞俄比亚探险队",
+    "about_description": "见面Afar Horizon Expeditions，一家埃塞俄比亚当地公司，规划从亚的斯亚贝巴出发的私人 阿法尔、达纳基尔和北部高地之旅。",
+    "about_imageAlt": "阿法尔，埃塞俄比亚",
+    "before-you-go_title": "为 阿法尔 和 Danakil Travel 做准备",
+    "before-you-go_description": "为 阿法尔 或 Danakil 探险做准备：供暖、步行、基本营地、包装、食物、水尊重的旅行，并附有北部高地的注意事项。",
+    "before-you-go_imageAlt": "达洛尔，埃塞俄比亚",
+    "blog_title": "阿法尔 和 Danakil 旅行指南",
+    "blog_description": "通过达纳基尔季节、打包、尔塔阿雷、达洛尔、盐湖和塞梅拉的指南以及更广泛的埃塞俄比亚旅行故事来计划您的 阿法尔 旅程。",
+    "blog_imageAlt": "阿法尔，埃塞俄比亚",
+    "contact_title": "联系我们规划您的 阿法尔 之旅",
+    "contact_description": "与 Afar Horizon 讨论私人达纳基尔探险、阿法尔 旅行和埃塞俄比亚北部路线。分享您的日期、兴趣和规划问题。",
+    "contact_imageAlt": "阿法尔，埃塞俄比亚",
+    "destinations_title": "阿法尔、达纳基尔和埃塞俄比亚北部目的地",
+    "destinations_description": "在 阿法尔 探索埃尔塔阿雷 (Erta Ale)、达洛尔 (Dallol)、阿萨勒湖 (Lake Assale) 和阿夫德拉湖 (Lake Afdera)，以及盖拉尔塔 (Gheralta)、拉利贝拉 (Lalibela) 和北部高地。寻找适合您旅程的地点。",
+    "destinations_imageAlt": "Erta Ale，埃塞俄比亚",
+    "expeditions_title": "达纳基尔和埃塞俄比亚私人旅游套餐",
+    "expeditions_description": "比较私人 阿法尔 和 Danakil 探险、组合高地路线和埃塞俄比亚北部旅游。探索时长、行程和包含内容。",
+    "expeditions_imageAlt": "阿夫德拉湖，埃塞俄比亚 阿法尔",
+    "faq_title": "阿法尔 和 Danakil 探险队常见问题解答",
+    "faq_description": "查找有关 阿法尔 和 Danakil 私人探险的答案：预订、包含内容、营地、步行、条件变化以及埃塞俄比亚北部的旅程。",
+    "faq_imageAlt": "达洛尔，埃塞俄比亚",
+    "gallery_title": "阿法尔 和埃塞俄比亚北部照片库",
+    "gallery_description": "探索 阿法尔、达纳基尔洼地、盐湖、火山和埃塞俄比亚北部的照片。沿着我们的路线探索风景和遗产。",
+    "gallery_imageAlt": "埃塞俄比亚塞米恩山脉",
+    "ground-operations_title": "埃塞俄比亚地面行动和探险支持",
+    "ground-operations_description": "为 阿法尔 和埃塞俄比亚北部的旅行社、电影摄制组和研究团队提供当地地面支持：车辆、导游、营地和路线协调。",
+    "ground-operations_imageAlt": "达洛尔，埃塞俄比亚",
+    "home_title": "私人 阿法尔 和 Danakil 探险",
+    "home_description": "与当地埃塞俄比亚运营商一起探索 阿法尔、Erta Ale、Dallol 和 Danakil 盐湖。私人探险和北部高地之旅。",
+    "home_imageAlt": "埃塞俄比亚达纳基尔洼地",
+    "photo-credits_title": "网站照片集",
+    "photo-credits_description": "浏览客户提供的 Afar Horizon 目的地和 Cloudinary 上托管的探险照片，以及原始照片集的链接。",
+    "photo-credits_imageAlt": "埃塞俄比亚阿萨勒湖",
+    "plan_title": "计划你的私人 阿法尔 和埃塞俄比亚之旅",
+    "plan_description": "分享您的日期、兴趣和首选节奏。与我们的团队一起规划私人达纳基尔探险、阿法尔 之旅或埃塞俄比亚北部联合路线。",
+    "plan_imageAlt": "埃塞俄比亚阿萨勒湖",
+    "privacy_title": "隐私政策",
+    "privacy_description": "Afar Horizon Expeditions 如何处理网站查询、时事通讯订阅、旅行助理对话和网站分析。",
+    "specialist-travel_title": "专家 阿法尔 和埃塞俄比亚探险",
+    "specialist-travel_description": "规划 阿法尔 和埃塞俄比亚北部的摄影、拍摄、研究和山地旅行，并提供当地路线规划和探险物流。",
+    "specialist-travel_imageAlt": "达洛尔，埃塞俄比亚",
+    "terms_title": "网站条款",
+    "terms_description": "Afar Horizon Expeditions 的网站条款：旅程信息、报价、更改访问权限、旅行助理和负责任的网站使用。"
+  },
+  "Schema": {
+    "home": "首页",
+    "expeditions": "探险队",
+    "destinations": "目的地",
+    "blog": "日记"
+  },
+  "Catalogue": {
+    "expedition": "探险",
+    "private": "私人",
+    "dayExpedition": "日间探险",
+    "cultural": "文化",
+    "trekking": "徒步旅行",
+    "photography": "摄影",
+    "geology": "Geology",
+    "culture": "文化",
+    "journeys": "旅程",
+    "landscapes": "风景",
+    "heritage": "遗产",
+    "danakil": "达纳基尔",
+    "afar": "阿法尔",
+    "planning": "计划",
+    "fieldNotes": "Field Notes",
+    "destinations": "目的地",
+    "journey": "旅行",
+    "destination": "目的地",
+    "priceOnRequest": "价格应要求提供",
+    "nights": "{count} 晚"
+  }
+}

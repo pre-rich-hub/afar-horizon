@@ -1,5 +1,5 @@
+import { useTranslations } from 'next-intl'
 
-import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { ArrowUpRight } from 'lucide-react'
 import Link from '@/components/common/SiteLink'
 
@@ -11,7 +11,7 @@ export function BookingCard({
   subtitle,
   rows,
   primary,
-  secondary = { label: 'Ask a question', href: '/contact' },
+  secondary: suppliedSecondary,
 }: {
   label: string
   title: string
@@ -20,8 +20,11 @@ export function BookingCard({
   primary: { label: string; href: string }
   secondary?: { label: string; href: string }
 }) {
+  const tr = useTranslations('UI.common.BookingCard')
+  const secondary = suppliedSecondary ?? {label: tr('askAQuestion'), href: '/contact'}
+
   return (
-    <TranslationBoundary><div className="border border-linen-edge bg-linen p-1.5 shadow-[0_24px_50px_-34px_oklch(0.185_0.012_58/0.5)]">
+    <div className="border border-linen-edge bg-linen p-1.5 shadow-[0_24px_50px_-34px_oklch(0.185_0.012_58/0.5)]">
       <div className="bg-espresso px-6 py-6">
         <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-background/60">
           {label}
@@ -33,10 +36,10 @@ export function BookingCard({
       <div className="bg-parchment px-6 pb-6 pt-1.5">
         <dl className="divide-y divide-linen-edge">
           {rows.map((row) => (
-            <TranslationBoundary key={row.k}><div key={row.k} className="flex items-center justify-between gap-5 py-3.5">
+            <div key={row.k} className="flex items-center justify-between gap-5 py-3.5">
               <dt className="shrink-0 text-sm text-foreground/70">{row.k}</dt>
               <dd className="text-right text-[15px] font-semibold text-foreground">{row.v}</dd>
-            </div></TranslationBoundary>
+            </div>
           ))}
         </dl>
 
@@ -54,6 +57,6 @@ export function BookingCard({
           {secondary.label}
         </Link>
       </div>
-    </div></TranslationBoundary>
+    </div>
   )
 }

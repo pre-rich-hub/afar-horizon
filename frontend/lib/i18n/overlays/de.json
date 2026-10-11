@@ -1,0 +1,67 @@
+{
+  "company.promises": {
+    "0": {
+      "title": "In lokalem Besitz und betrieben",
+      "text": "Wir operieren von Äthiopien aus mit unseren eigenen Führern, Fahrern und Außendienstmitarbeitern. Sie arbeiten direkt mit den Menschen zusammen, die Ihre Reise durchführen."
+    },
+    "1": {
+      "title": "Expedition Wissen",
+      "text": "Entlegene Landschaften erfordern mehr als eine Online-Buchung. Wir planen Wasser, Heizung, Routen, Lager und aktuellen Zugang, bevor wir etwas versprechen."
+    },
+    "2": {
+      "title": "Menschliche Führung",
+      "text": "Echte Menschen mit echter Erfahrung vor Ort, die erklären, was Sie sehen, anstatt nur darauf zu zeigen."
+    },
+    "3": {
+      "title": "Wir kümmern uns um die Logistik",
+      "text": "4×4-Fahrzeuge, örtliche Pfadfinder, Genehmigungen, Camps, Hotels und Transfers. Ein Team ist für den gesamten Bodenbetrieb verantwortlich."
+    },
+    "4": {
+      "title": "Privat und flexibel",
+      "text": "Ihre Reise muss keiner Vorlage entsprechen. Wenn sich die Bedingungen ändern, passen wir die Route entsprechend der Sicherheit und dem, was Ihnen wichtig ist, an."
+    }
+  },
+  "navigation.navLinks": {
+    "0": {
+      "label": "Expeditionen"
+    },
+    "1": {
+      "label": "Ziele"
+    },
+    "2": {
+      "label": "Bevor Sie losfahren"
+    },
+    "3": {
+      "label": "Spezialist & Partner",
+      "children": {
+        "0": {
+          "label": "Spezialreisen",
+          "text": "Fotografie, Film, Forschung und Trekking"
+        },
+        "1": {
+          "label": "Boden Operationen",
+          "text": "Für Reiseveranstalter und Agenturen"
+        }
+      }
+    },
+    "4": {
+      "label": "Über uns"
+    },
+    "5": {
+      "label": "Galerie"
+    }
+  },
+  "navigation.planJourneyLink": {
+    "label": "Meine Reise planen"
+  },
+  "journeyStyles.journeyStyles": {
+    "0": "Privat",
+    "1": "Kleine Gruppe",
+    "2": "Abenteuer",
+    "3": "Kultur",
+    "4": "Fotografie",
+    "5": "Trekking",
+    "6": "Forschung",
+    "7": "Familie"
+  }
+}

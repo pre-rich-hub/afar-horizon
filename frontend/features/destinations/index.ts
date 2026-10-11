@@ -9,3 +9,5 @@ export { DestinationsPlanning } from './components/DestinationsPlanning'
 export { destinationGroups, destinations } from './data/destination.data'
 export { destinationsInGroup, getDestination, getDestinationForPlace, getDestinationRelations } from './utils/destination.utils'
 export { destinationSchema } from './utils/destination.schema'
+
+export { getDestinationsCopy, useDestinationsCopy } from './data/localized'

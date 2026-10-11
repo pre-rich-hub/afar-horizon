@@ -1,0 +1,238 @@
+{
+  "gallery.galleryCategories": {
+    "0": "Landschaften",
+    "1": "Kulturerbe",
+    "2": "Kultur",
+    "3": "Reisen"
+  },
+  "gallery.galleryPhotos": {
+    "gallery1": {
+      "alt": "Zerklüftete Bergrücken und grasbewachsene Hänge unter einem klaren blauen Himmel",
+      "title": "Simien-Steilhänge",
+      "location": "Simien-Gebirge",
+      "caption": "Ein weiter Blick über die steilen Berghänge und geschichteten Bergrücken des Simien-Gebirges."
+    },
+    "gallery2": {
+      "alt": "Ein Besucher blickt von einem grasbewachsenen Aussichtspunkt über schroffe Bergkämme",
+      "title": "Eine Pause über den Tälern",
+      "location": "Simien-Gebirge",
+      "caption": "Ein Moment an einem Aussichtspunkt im Hochland, mit steilen Bergrücken, die sich in der Ferne erstrecken."
+    },
+    "gallery3": {
+      "alt": "Ein Zelt auf felsigem Boden, die Sonne steht tief am Horizont",
+      "title": "Zelten bei Sonnenuntergang",
+      "location": "Äthiopien",
+      "caption": "Ein Abend im Camp, während das letzte Licht über die felsige Landschaft fällt."
+    },
+    "gallery4": {
+      "alt": "Zwei Besucher auf einem Steinweg, der zu einem Burgturm in Gondar führt",
+      "title": "Vor den Toren der Burg",
+      "location": "Gonder",
+      "caption": "Ein Besuch des königlichen Erbes von Gondar, eingerahmt von Steinmauern und einem hohen Burgturm."
+    },
+    "gallery5": {
+      "alt": "Eine kreuzförmige Felsenkirche, umgeben von einem tiefen Steingraben in Lalibela",
+      "title": "Eine aus dem Felsen gehauene Kirche",
+      "location": "Lalibela",
+      "caption": "Die kreuzförmige St.-Georgs-Kirche steht in einem Graben, der in den umliegenden Felsen gehauen wurde."
+    },
+    "gallery6": {
+      "alt": "Ein Propellerflugzeug der Ethiopian Airlines auf einem Flughafenvorfeld unter bewölktem Himmel",
+      "title": "Die Reise beginnt",
+      "location": "Äthiopien",
+      "caption": "Ein Moment zwischen den Zielen, während ein Regionalflugzeug auf dem Vorfeld wartet."
+    },
+    "gallery7": {
+      "alt": "Ein Besucher sitzt neben einem Kunsthandwerker und einer Töpferscheibe in einer Werkstatt",
+      "title": "In der Töpferwerkstatt",
+      "location": "Äthiopien",
+      "caption": "Tongefäße und eine Töpferscheibe bieten einen Einblick in das in dieser Werkstatt ausgeübte Handwerk."
+    },
+    "gallery8": {
+      "alt": "Zwei Personen stehen vor einem kleinen Haus mit rotem Dach und bemalten Wandmotiven",
+      "title": "Ein Willkommen auf dem Weg",
+      "location": "Äthiopien",
+      "caption": "Ein gemeinsames Porträt vor einem Haus mit gemalten Motiven an den Wänden."
+    },
+    "gallery9": {
+      "alt": "Eine Gruppe von Reisenden sitzt in einem Personenkraftwagen",
+      "title": "Gemeinsam unterwegs",
+      "location": "Äthiopien",
+      "caption": "Ein Gruppenporträt während der Fahrt zwischen den Stationen."
+    },
+    "gallery10": {
+      "alt": "Ein Reisender mit Rucksack steht auf Felsen über Gebirgstälern",
+      "title": "Wandern im Hochland",
+      "location": "Simien-Gebirge",
+      "caption": "Felsige Aussichtspunkte eröffnen den Blick auf die tiefen Täler und Bergrücken des Simien-Hochlandes."
+    },
+    "gallery11": {
+      "alt": "Ein Rucksackreisender vor einem weiten Panorama steiler Bergkämme",
+      "title": "Blick auf die Bergrücken",
+      "location": "Simien-Gebirge",
+      "caption": "Ein ruhiger Zwischenstopp auf dem Weg, um die Größe der umliegenden Berge zu genießen."
+    },
+    "gallery12": {
+      "alt": "Eine Wander- und Berglandschaft, umrahmt von zwei hohen Felswänden",
+      "title": "Ein Blick zwischen den Felsen",
+      "location": "Simien-Gebirge",
+      "caption": "Eine schmale Felsspalte umrahmt den Weg und die dahinter liegende Hochlandlandschaft."
+    },
+    "gallery13": {
+      "alt": "In bunte Tücher gehüllte Menschen stehen neben einem felsigen Berghang",
+      "title": "Highland-Porträts",
+      "location": "Nord-Äthiopien",
+      "caption": "Ein Porträt entlang einer Hochlandroute mit steilen Klippen im Hintergrund."
+    },
+    "gallery14": {
+      "alt": "Vier Menschen sitzen zusammen neben einem großen Felsen mit Bergen im Hintergrund",
+      "title": "Eine Versammlung am Berghang",
+      "location": "Nord-Äthiopien",
+      "caption": "Eine Gruppe ruht auf felsigem Boden vor einer weiten Bergkulisse."
+    },
+    "gallery15": {
+      "alt": "Vier in Schals gehüllte Menschen versammelten sich neben einer Felswand",
+      "title": "Gesichter des Hochlandes",
+      "location": "Nord-Äthiopien",
+      "caption": "Ein näheres Porträt der Gruppe mit bunten Tüchern und dem Bergfelsen dahinter."
+    },
+    "gallery16": {
+      "alt": "Steinstufen führen zum Eingang einer hohen Felsenkirche",
+      "title": "Schritte in die Kirche",
+      "location": "Lalibela",
+      "caption": "Ein niedriger Aussichtspunkt betont die geschnitzte Fassade und die Stufen, die in die Kirche führen."
+    },
+    "gallery17": {
+      "alt": "Eine kreisförmige Metallleuchte, die vor gemusterten Vorhängen in einer Steinkirche hängt",
+      "title": "Im Inneren des Heiligtums",
+      "location": "Lalibela",
+      "caption": "Gemusterte Textilien und eine hängende Metallhalterung heben sich vom in den Fels gehauenen Innenraum der Kirche ab."
+    },
+    "gallery18": {
+      "alt": "Eine genaue Betrachtung geometrischer und floraler Motive, die in dunkles Holz geschnitzt sind",
+      "title": "Ein geschnitztes Holzdetail",
+      "location": "Lalibela",
+      "caption": "Ein genauer Blick auf die geometrischen Muster und floralen Formen eines geschnitzten Holzdetails."
+    },
+    "gallery19": {
+      "alt": "Zwei gewölbte Öffnungen, getrennt durch eine geschnitzte Steinsäule",
+      "title": "Türen aus Stein",
+      "location": "Lalibela",
+      "caption": "Doppelte Öffnungen und eine zentrale Säule offenbaren die Details der in den Fels gehauenen Architektur."
+    },
+    "gallery20": {
+      "alt": "Eine in den Felsen gehauene Kirche neben einem rechteckigen Teich mit grünem Wasser in einem steinernen Innenhof",
+      "title": "Der versunkene Kirchenhof",
+      "location": "Lalibela",
+      "caption": "Die Kirchenfassade blickt auf einen abgesenkten Innenhof mit einem Pool, der von geschnitzten Felsen umgeben ist."
+    },
+    "gallery21": {
+      "alt": "Ein Besucher hält einen Holzstab in einer Felsenkirche",
+      "title": "Ein Moment in der Kirche",
+      "location": "Lalibela",
+      "caption": "Ein Besucher verharrt zwischen den Steinmauern und Textilien des Kirchenraums."
+    },
+    "gallery22": {
+      "alt": "Eine Versammlung von Gläubigen in weißen Schals in einer Steinkirche",
+      "title": "Zusammenkommen zum Gottesdienst",
+      "location": "Lalibela",
+      "caption": "Weiße Schals und zeremonielle Gewänder füllen die Kirche während einer Versammlung zum Gottesdienst."
+    },
+    "gallery23": {
+      "alt": "Gläubige versammelten sich in weißen Tüchern unter hohen Steinsäulen",
+      "title": "Lebendige kirchliche Traditionen",
+      "location": "Lalibela",
+      "caption": "Ein breiterer Blick auf die Gemeinde, die sich im in den Fels gehauenen Innenraum versammelt hat."
+    },
+    "gallery24": {
+      "alt": "Männer in weißen Gewändern halten während einer Kirchenversammlung Holzstäbe in der Hand",
+      "title": "Zeremonienstäbe und Schals",
+      "location": "Lalibela",
+      "caption": "Weiße Gewänder und Holzstäbe prägen das Bild im Inneren der Kirche."
+    },
+    "gallery25": {
+      "alt": "Zwei sitzende Besucher mit Holzstäben neben religiösen Gemälden",
+      "title": "Lernen in der Kirche",
+      "location": "Lalibela",
+      "caption": "Eine Pause im Inneren der Kirche, umgeben von Gemälden, Textilien und geschnitztem Stein."
+    },
+    "gallery26": {
+      "alt": "Vier kreisförmige Blumenmotive auf einer bemalten Tafel, geteilt durch eine kreuzförmige Bordüre",
+      "title": "Gemalte Muster",
+      "location": "Nord-Äthiopien",
+      "caption": "Florale Rondellen und farbige Bordüren offenbaren die dekorativen Details einer bemalten Tafel."
+    },
+    "gallery27": {
+      "alt": "Eine Gruppe sitzt um einen niedrigen Tisch mit Tassen und einer Kaffeekanne in einem Raum mit Steinwänden",
+      "title": "Eine Kaffeepause",
+      "location": "Äthiopien",
+      "caption": "Eine gemeinsame Kaffeepause, bei der kleine Tassen und eine Kaffeekanne neben der Gruppe aufgestellt werden."
+    },
+    "gallery28": {
+      "alt": "Ein Besucher sitzt mit einer Gruppe auf felsigem Boden in den Bergen",
+      "title": "Treffen auf dem Bergweg",
+      "location": "Nord-Äthiopien",
+      "caption": "Ein Gruppenporträt während einer Pause auf der Bergroute."
+    },
+    "gallery29": {
+      "alt": "Eine Steinkirche mit gewölbtem Eingang, Vordertreppen und einem Kreuz über dem Dach",
+      "title": "Ein steinerner Kircheneingang",
+      "location": "Nord-Äthiopien",
+      "caption": "Mauerwerk, ein zentraler Bogen und ein Dachkreuz umrahmen den Kircheneingang."
+    },
+    "gallery30": {
+      "alt": "Zwei Besucher in einer bemalten Kirche mit großen Trommeln auf einem roten Teppich",
+      "title": "Gemälde und zeremonielle Trommeln",
+      "location": "Nord-Äthiopien",
+      "caption": "Religiöse Wandgemälde umgeben eine Ausstellung großer Zeremonientrommeln."
+    },
+    "gallery31": {
+      "alt": "Steinburgen und Zinnenmauern neben grünen Rasenflächen unter bewölktem Himmel",
+      "title": "Gondars königliche Anlage",
+      "location": "Gonder",
+      "caption": "Ein weiter Blick auf die Burgen und Steinmauern innerhalb der königlichen Anlage von Gondar."
+    },
+    "gallery32": {
+      "alt": "Zwei Besucher sitzen zwischen freiliegenden Wurzeln eines großen Baumes neben einem Steinweg",
+      "title": "Unter den Wurzeln ruhen",
+      "location": "Äthiopien",
+      "caption": "Eine schattige Pause neben den gewundenen Wurzeln eines großen Baumes."
+    },
+    "gallery33": {
+      "alt": "Ein Reisender mit ausgestreckten Armen steht auf Felsen unter einem orangefarbenen Sonnenuntergang",
+      "title": "Sonnenuntergang auf felsigem Boden",
+      "location": "Äthiopien",
+      "caption": "Die untergehende Sonne färbt den Himmel über einer weiten, felsigen Landschaft."
+    },
+    "gallery34": {
+      "alt": "Die Silhouette eines Reisenden auf einem felsigen Aussichtspunkt unter einem blau-orangefarbenen Abendhimmel",
+      "title": "Letztes Licht am Aussichtspunkt",
+      "location": "Äthiopien",
+      "caption": "Eine Figur am Aussichtspunkt verleiht der offenen Abendlandschaft einen Eindruck von Größe."
+    },
+    "gallery35": {
+      "alt": "Ein Reisender steht auf einem Felsplateau mit der Sonne am Horizont",
+      "title": "Beobachten, wie die Sonne untergeht",
+      "location": "Äthiopien",
+      "caption": "Ein Stopp bei Sonnenuntergang auf dem Plateau, mit dunklem Gelände, das sich in die Ferne erstreckt."
+    },
+    "gallery36": {
+      "alt": "Ein Reisender mit ausgebreiteten Armen steht auf felsigem Boden im goldenen Abendlicht",
+      "title": "Ein Abend auf dem Plateau",
+      "location": "Äthiopien",
+      "caption": "Während einer Pause auf dem Plateau fällt warmes Abendlicht über die Felsen."
+    },
+    "gallery37": {
+      "alt": "Reisende, die unter einem dunstigen Himmel über dunkle, zerklüftete Felsen laufen",
+      "title": "Über das vulkanische Gelände",
+      "location": "Äthiopien",
+      "caption": "Eine Wanderszene über unebenes vulkanisches Gelände, wobei der Dunst die Entfernung mildert."
+    },
+    "gallery38": {
+      "alt": "Ein Reisender mit Sonnenbrille und eingewickeltem Schal steht an einem türkisfarbenen See",
+      "title": "Eine Pause am Seeufer",
+      "location": "Äthiopien",
+      "caption": "Ein Porträt neben türkisfarbenem Wasser, mit Küstenvegetation und fernen Hügeln dahinter."
+    }
+  }
+}
