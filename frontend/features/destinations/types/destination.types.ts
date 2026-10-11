@@ -15,6 +15,7 @@ export type Destination = {
   altitude: string
   highlights: string[]
   paragraphs: string[]
+  guideSlug?: string
   // Destination detail. Optional so the API and older records still fit.
   group?: DestinationGroup
   headline?: string

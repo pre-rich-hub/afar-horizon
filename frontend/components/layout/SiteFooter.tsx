@@ -288,10 +288,10 @@ export function SiteFooter() {
             </a>
           </p>
           <div className="flex flex-wrap gap-x-8 gap-y-2 md:justify-end">
-            <Link href="/contact" className="transition-colors hover:text-background/85">
+            <Link href="/privacy" className="transition-colors hover:text-background/85">
               Privacy Policy
             </Link>
-            <Link href="/contact" className="transition-colors hover:text-background/85">
+            <Link href="/terms" className="transition-colors hover:text-background/85">
               Terms &amp; Conditions
             </Link>
           </div>

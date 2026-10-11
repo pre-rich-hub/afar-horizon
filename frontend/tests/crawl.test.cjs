@@ -5,6 +5,7 @@ const load = createLoader()
 const { destinations } = load('@/features/destinations/data/destination.data')
 const { tours } = load('@/features/tours/data/tour.data')
 const { posts } = load('@/features/blog/data/post.data')
+const { indexableStaticRoutes } = load('@/lib/seo/routes')
 const site = { url: 'https://afarhorizon.com', indexable: true }
 
 function routeLoader(indexable, extra = {}) {
@@ -18,7 +19,7 @@ function routeLoader(indexable, extra = {}) {
 
 test('sitemap follows published catalogues and excludes utility/private URLs', () => {
   const entries = routeLoader(true)('@/app/sitemap').default()
-  assert.equal(entries.length, 11 + destinations.length + tours.length + posts.length)
+  assert.equal(entries.length, indexableStaticRoutes.length + destinations.length + tours.length + posts.length)
   assert.equal(new Set(entries.map(e => e.url)).size, entries.length)
   for (const entry of entries) {
     const url = new URL(entry.url)

@@ -13,8 +13,15 @@ export function getPostCollection() {
 import type { Post } from '../types/post.types'
 
 export function getRelatedPosts(post: Post) {
-  const index = posts.findIndex((p) => p.slug === post.slug)
-  const next = posts[(index + 1) % posts.length]
-  const more = posts.filter((p) => p.slug !== post.slug).slice(0, 3)
+  const curated = post.relatedSlugs ?? []
+  const score = (candidate: Post) => {
+    const position = curated.indexOf(candidate.slug)
+    if (position >= 0) return 100 - position
+    return (candidate.topics ?? []).filter(topic => post.topics?.includes(topic)).length * 10
+      + Number(candidate.category === post.category)
+  }
+  const relevant = posts.filter(p => p.slug !== post.slug).sort((a, b) => score(b) - score(a))
+  const next = relevant[0]
+  const more = relevant.slice(1, 4)
   return { next, more }
 }

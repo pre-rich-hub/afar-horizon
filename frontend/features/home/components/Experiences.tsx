@@ -36,7 +36,7 @@ export function Experiences() {
                 <div className="relative aspect-[7/5] overflow-hidden rounded-sm bg-muted">
                   <Image
                     src={e.image}
-                    alt={e.title}
+                    alt={e.alt}
                     fill
                     sizes="(max-width: 768px) 100vw, 560px"
                     className="object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.05]"

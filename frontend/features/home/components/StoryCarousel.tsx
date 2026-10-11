@@ -65,7 +65,7 @@ export function StoryCarousel({ tours = staticTours }: { tours?: Tour[] }) {
               >
                 <Image
                   src={t.image || defaultImage}
-                  alt={clone ? '' : t.title}
+                  alt={clone ? '' : t.imageAlt ?? t.title}
                   fill
                   sizes="(max-width: 640px) 78vw, (max-width: 768px) 46vw, (max-width: 1024px) 38vw, 27vw"
                   className="object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.06]"

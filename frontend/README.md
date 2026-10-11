@@ -49,9 +49,9 @@ and starting the server. The baseline reports are in `docs/seo-phase1-baseline.m
 
 ### Crawl and indexing checks
 
-`app/sitemap.ts` combines the 11 public static routes in `lib/seo/routes.ts` with
+`app/sitemap.ts` combines the 13 public static routes in `lib/seo/routes.ts` with
 feature-owned destinations, expeditions and blog articles. Production currently
-publishes 56 URLs; catalogue additions appear on the next build. Preview/staging
+publishes 58 URLs; catalogue additions appear on the next build. Preview/staging
 builds publish an empty sitemap and do not advertise it in `robots.txt`.
 Modification dates are omitted until trustworthy editorial timestamps exist.
 
@@ -84,6 +84,19 @@ unavailable. Form submissions, admin operations, and assistant responses require
 the backend. Tour prices and featured flags overlay the static tour catalogue;
 other tour content remains local.
 
+### Editorial content checks
+
+Articles support legacy paragraphs plus feature-owned headings and inline links.
+Editorial related-guide priorities and topics replace catalogue-order suggestions.
+Destination guides and expedition place links connect informational and itinerary pages.
+The search intent map is in `docs/seo-phase3-intent-map.md`. Privacy and website terms
+live in `features/legal/` and are linked from the footer.
+
+Run `node tests/verify-content.cjs --base-url=http://localhost:3000` against the built
+server to verify primary headings, article sections, contextual links, package/enquiry
+paths and the new legal links across all 60 public URLs. Use the metadata and crawl
+verifiers alongside it after changing route or catalogue content.
+
 ## Structure
 
 ```text
@@ -94,6 +107,7 @@ frontend/
 │   ├── admin/           Session-guarded admin routes
 │   └── …                Existing public index and dynamic detail routes
 ├── features/
+│   ├── legal/           Privacy and website terms content
 │   ├── home/            Homepage-only sections and their interactions
 │   ├── about/
 │   ├── contact/

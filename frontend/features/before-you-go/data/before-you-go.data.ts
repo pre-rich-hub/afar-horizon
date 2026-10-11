@@ -20,8 +20,8 @@ export const topics: { id: string; title: string; text: string[]; items?: string
     id: 'walking',
     title: 'Walking',
     text: [
-      'Most Danakil walking is short and easy, on uneven ground. The exception is Erta Ale: an approach of roughly 10 km across exposed volcanic terrain, done in the dark or at dawn. It is not technical, but you need reasonable fitness and sturdy shoes.',
-      'In Gheralta, some cliff churches involve steep, exposed climbs; easier options always exist. In the Simien, the challenge is altitude (up to 4,550 m) and cold rather than heat.',
+      'Danakil walking can involve exposed heat and uneven ground. At Erta Ale, the distance, timing and observation area depend on the confirmed approach and local guidance. Ask about the walks planned for your route, and bring suitable footwear and a headlamp where required.',
+      'Some Gheralta cliff churches involve steep, exposed climbs; discuss accessible alternatives before confirming a visit. In the Simien, altitude, cold and terrain bring different demands from the lowlands.',
     ],
   },
   {

@@ -25,6 +25,10 @@ export function ArticleHeader({ post }: { post: Post }) {
               {post.date}
               <span className="h-3 w-px bg-border" aria-hidden />
               {post.readTime}
+              {post.updatedAt && <>
+                <span className="h-3 w-px bg-border" aria-hidden />
+                <span>Updated <time dateTime={post.updatedAt}>{new Intl.DateTimeFormat('en', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(post.updatedAt))}</time></span>
+              </>}
             </p>
 
             <h1 className="mt-5 text-balance text-[2rem] font-medium leading-[1.1] text-foreground sm:text-4xl lg:text-[3.25rem]">

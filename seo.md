@@ -1,6 +1,6 @@
 # Afar Horizon SEO implementation roadmap
 
-Prepared: 10 October 2026. Status: Phases 1 and 2 implemented and validated locally (updated 11 October 2026). Live deployment and Search Console verification remain separate tasks.
+Prepared: 10 October 2026. Status: Phases 1–3 implemented and validated locally (updated 11 October 2026). Live deployment and Search Console verification remain separate tasks.
 
 ## Goal and working rules
 
@@ -42,7 +42,7 @@ This is a source-code audit, not a claim about current production rankings, inde
 | --- | --- | --- | --- |
 | 1 | Baseline, site identity and metadata foundations | Completed locally | [Baseline reports](frontend/docs/seo-phase1-baseline.md); metadata tests and rendered-build verifier; included in this commit |
 | 2 | Crawlability, sitemap, indexing rules and URL integrity | Completed locally; host redirects pending live verification | `tests/crawl.test.cjs`, `tests/verify-crawl.cjs`; production/preview checks passed; included in this commit |
-| 3 | Search intent, on-page content and internal links | Not started | — |
+| 3 | Search intent, on-page content and internal links | Completed locally; profile URLs and operator confirmations pending | [Intent map](frontend/docs/seo-phase3-intent-map.md); editorial/rendered checks; included in this commit |
 | 4 | Structured data and trustworthy entity information | Not started | — |
 | 5 | Image delivery, performance and mobile experience | Not started | — |
 | 6 | Production verification, Search Console and conversion measurement | Not started | — |
@@ -135,7 +135,7 @@ This is a source-code audit, not a claim about current production rankings, inde
 
 ### Implementation
 
-- [ ] Build a simple keyword-to-page map. Treat these as initial intent hypotheses; validate them with Search Console or available research, without inventing search volumes:
+- [x] Build a simple keyword-to-page map. Treat these as initial intent hypotheses; validate them with Search Console or available research, without inventing search volumes:
 
 | Intent | Primary page |
 | --- | --- |
@@ -146,14 +146,14 @@ This is a source-code audit, not a claim about current production rankings, inde
 | Combined Danakil and northern highlands journey | Combined packages and supporting northern-route article |
 | Photography / research / filming logistics | Specialist travel and ground operations, with distinct audiences |
 
-- [ ] Keep destination pages informational and package pages itinerary-led. Give similar packages distinct explanations of pace, stops and who they suit; avoid near-duplicate pages competing for one vague keyword.
-- [ ] Audit heading structure. Give each public page a clear primary heading and logical sections. Fix About's missing H1 while retaining the quote and design; avoid adding invisible keyword lists.
-- [ ] Improve article structure with useful subsection headings and contextual links. Extend the blog body model beyond plain paragraphs only when needed for headings/links, and retain support for existing data during migration.
-- [ ] Link related destinations, itineraries and articles using ordinary crawlable links with descriptive text. Replace the current arbitrary next-article relationship with topic-relevant recommendations where practical.
-- [ ] Keep the editorial focus at roughly 70% Afar or more. The current nine articles are seven Afar and two wider Ethiopia articles; do not add filler just to force an exact ratio.
-- [ ] Check photo subjects and alt text against the actual image, not just its filename. Keep decorative images' alt text empty. Do not describe a scenery image as an author portrait or a different region.
-- [ ] Check access, volcanic activity, travel timing and operational statements against current reliable sources and client confirmation. Add real editorial update dates when content changes; avoid evergreen guarantees about lava, caravans or access.
-- [ ] Obtain actual social/platform targets and resolve footer privacy/terms labels with the client. Do not fabricate legal copy or credentials. Preserve intentional company facts and reviews.
+- [x] Keep destination pages informational and package pages itinerary-led. Give similar packages distinct explanations of pace, stops and who they suit; avoid near-duplicate pages competing for one vague keyword.
+- [x] Audit heading structure. Give each public page a clear primary heading and logical sections. Fix About's missing H1 while retaining the quote and design; avoid adding invisible keyword lists.
+- [x] Improve article structure with useful subsection headings and contextual links. Extend the blog body model beyond plain paragraphs only when needed for headings/links, and retain support for existing data during migration.
+- [x] Link related destinations, itineraries and articles using ordinary crawlable links with descriptive text. Replace the current arbitrary next-article relationship with topic-relevant recommendations where practical.
+- [x] Keep the editorial focus at roughly 70% Afar or more. The current nine articles are seven Afar and two wider Ethiopia articles; do not add filler just to force an exact ratio.
+- [x] Check photo subjects and alt text against the actual image, not just its filename. Keep decorative images' alt text empty. Do not describe a scenery image as an author portrait or a different region.
+- [x] Check access, volcanic activity, travel timing and operational statements against current reliable sources and client confirmation. Add real editorial update dates when content changes; avoid evergreen guarantees about lava, caravans or access.
+- [ ] Obtain actual social/platform targets from the client. Privacy/Terms pages were requested and built; footer labels now point to them. Do not fabricate legal copy or credentials. Preserve intentional company facts and reviews.
 
 ### Complete when
 
@@ -161,6 +161,18 @@ This is a source-code audit, not a claim about current production rankings, inde
 - Pages have meaningful headings, descriptive image text and relevant links; no orphaned published details or articles.
 - Readers can move from a guide or destination to a suitable package and enquiry path.
 - Desktop/mobile layouts and all existing form and carousel interactions remain intact.
+
+### Delivery notes — 11 October 2026
+
+- Added a [search intent map](frontend/docs/seo-phase3-intent-map.md) covering all 58 current indexable URLs. No keyword volumes or rankings are invented. Existing package summaries, pace, traveller-fit and itinerary differences were retained.
+- About now has a visible H1 in the existing eyebrow position while keeping the quote and its design. Rendered checks found exactly one primary heading on all 60 public pages.
+- Nine articles now have meaningful subsection headings, contextual links and a suitable expedition CTA. Legacy plain-string paragraphs remain supported. Related-guide recommendations use editorial priority and shared topics instead of catalogue order; ten destination pages link to relevant guides, and package place chips link to specific destination pages.
+- Preserved the seven-Afar/two-wider-Ethiopia editorial balance, existing publication labels, company facts, intentional reviews and prices. Real content updates are displayed separately as 11 October 2026.
+- Reviewed 29 photo subjects. Corrected Dallol-labelled uses of the lava image to the existing mineral-pool photo; added descriptive image alts. Intentional review imagery remains untouched. Exact provenance/location and image rights still depend on the client.
+- Checked volcanic, access and cultural claims against primary references linked in the intent map and relevant articles. Removed unsupported current lava-lake statements, universal walking-distance promises and fixed Lalibela visiting-hour/ceremony claims. Date-specific routes, departures and operating arrangements still require the operator's confirmation.
+- On request, added `/privacy` and `/terms` using the existing page styles, with feature-owned content based on current site/backend behaviour. Footer links now work. These add two indexable pages: the current sitemap has 58 URLs (13 static + 19 destinations + 17 packages + 9 articles), and total public route coverage is 60 including the two noindex utility pages.
+- Privacy copy does not invent retention periods, provider contracts or regulatory certifications; website terms do not invent booking/refund conditions. The operator still needs to supply final booking conditions, deployed service/retention details and actual social/review profile URLs. Placeholder social links are preserved until those URLs arrive.
+- Validation: architecture, feature-contract, metadata, crawl and editorial tests; TypeScript; production build; rendered content across 60 pages; 58 sitemap URLs and internal-link reachability; metadata across 60 pages. Chrome checks covered About, an article, Privacy, Terms, an expedition and the homepage at 390px and 1440px, checking a single primary heading, no horizontal overflow and a working homepage carousel control. No live form submissions or deployment were made.
 
 ## Phase 4 — Add accurate structured data
 
@@ -283,4 +295,4 @@ Recheck current guidance when implementing each phase; search features and frame
 - [Google breadcrumb markup](https://developers.google.com/search/docs/appearance/structured-data/breadcrumb)
 - [Cloudinary image transformations](https://cloudinary.com/documentation/image_transformations)
 
-**Start next:** Phase 3 — search intent, headings, content and internal links. Hosting redirect verification remains a deployment dependency.
+**Start next:** Phase 4 — structured data. Hosting redirects, real profile URLs and operator-owned policy/operating confirmations remain deployment/content dependencies.

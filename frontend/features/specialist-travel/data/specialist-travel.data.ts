@@ -11,8 +11,8 @@ export const tracks: {
     id: 'photography',
     title: 'Photographers',
     lede: 'Built around light, location and time, with longer field stops and the patience to wait for the right conditions.',
-    image: 'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/dallol.png',
-    alt: 'Dallol in the Danakil Depression',
+    image: 'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png',
+    alt: "Green mineral pools and salt formations in the Danakil landscape",
     items: [
       'Sunrise, sunset and night photography',
       'Golden-hour positioning and early departures',
@@ -27,7 +27,7 @@ export const tracks: {
     title: 'Film & media',
     lede: 'Production travel needs precision. We handle the ground so the crew can focus on the work.',
     image: 'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-assale.png',
-    alt: 'Lake Assale in the Danakil Depression',
+    alt: "Salt crust and shallow water at Lake Assale at sunset",
     items: [
       'Vehicles and professional drivers',
       'Local guides and location scouting',
@@ -43,7 +43,7 @@ export const tracks: {
     title: 'Researchers & universities',
     lede: 'Field logistics for geology, geography, anthropology, archaeology and environmental studies, in some of Africa’s most studied landscapes.',
     image: 'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652743/Erta_Ale_approach.png',
-    alt: 'The approach to Erta Ale, Afar',
+    alt: "Glowing lava within a volcanic crater at Erta Ale",
     items: [
       'Local transport and remote-area support',
       'Accommodation and field camps',
@@ -58,7 +58,7 @@ export const tracks: {
     title: 'Trekking, running & mountain travel',
     lede: 'Ethiopia is a country of altitude. Our founder grew up in the Simien, and mountain travel is where this company began.',
     image: 'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/simien-mountains.png',
-    alt: 'Simien Mountains, Ethiopia',
+    alt: "Steep green escarpments in the Simien Mountains",
     items: [
       'Simien trek planning, scouts and camping',
       'Mules and porters where appropriate',
@@ -72,7 +72,7 @@ export const tracks: {
     title: 'Private groups',
     lede: 'Families, friends, clubs and corporate groups travelling on their own schedule.',
     image: 'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/gheralta.png',
-    alt: 'Gheralta, Ethiopia',
+    alt: "A visitor beside a cliff in the Gheralta mountain landscape",
     items: [
       'Private vehicles and dedicated guides',
       'Pacing planned around the group',

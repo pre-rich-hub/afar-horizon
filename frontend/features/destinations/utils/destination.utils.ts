@@ -6,6 +6,12 @@ export function getDestination(slug: string) {
   return destinations.find((d) => d.slug === slug)
 }
 
+export function getDestinationForPlace(place: string) {
+  return destinations.find(d => d.name === place)
+    ?? destinations.filter(d => d.places?.includes(place))
+      .sort((a, b) => (a.places?.length ?? 0) - (b.places?.length ?? 0))[0]
+}
+
 export function destinationsInGroup(id: DestinationGroup) {
   return destinations.filter((d) => d.group === id)
 }

@@ -1,3 +1,6 @@
+export type ArticleLink = { text: string; href: string }
+export type ArticleParagraph = { heading?: string; text: string; links?: ArticleLink[] }
+
 export type Post = {
   slug: string
   title: string
@@ -9,6 +12,11 @@ export type Post = {
   author: string
   authorRole: string
   excerpt: string
-  body: string[]
+  body: (string | ArticleParagraph)[]
+  updatedAt?: string
+  topics?: string[]
+  relatedSlugs?: string[]
+  tourSlug?: string
+  sources?: ArticleLink[]
   featured?: boolean
 }

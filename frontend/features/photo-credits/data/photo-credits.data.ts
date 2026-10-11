@@ -13,7 +13,7 @@ export const credits = [
     "subject": "Erta Ale"
   },
   {
-    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/dallol.png",
+    "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png",
     "subject": "Dallol"
   },
   {

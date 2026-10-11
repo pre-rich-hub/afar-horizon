@@ -30,12 +30,14 @@ export const destinations: Destination[] = [
   // ── Afar & the Danakil ────────────────────────────────────────────────
   {
     slug: 'danakil-depression',
+    guideSlug: 'when-to-visit-ethiopia',
     group: 'danakil',
     name: 'Danakil Depression',
     headline: 'Where the earth feels alive',
     region: 'Afar Region',
     tag: 'Expedition',
     image: `${destinationImageBase}/danakil-depression.png`,
+    imageAlt: "Green mineral pools and salt formations in the Danakil landscape",
     seoTitle: 'Danakil Depression Ethiopia | Tours & Expeditions',
     seoDescription:
       'Explore the Danakil Depression with a locally owned Ethiopian expedition operator: Erta Ale, Dallol, Lake Assale and Afar, with professional local logistics.',
@@ -46,7 +48,7 @@ export const destinations: Destination[] = [
     duration: '3 – 8 days',
     altitude: 'Down to about 125 m below sea level',
     highlights: [
-      'Erta Ale: a 613 m shield volcano with a 1.6 km summit caldera',
+      'Erta Ale: a basaltic shield volcano and changing caldera landscape',
       'Dallol: acid springs, salt chimneys and mineral colour',
       'Lake Assale: the salt plain, about 120 m below sea level',
       'Lake Afdera: a hypersaline lake fed by hot springs',
@@ -102,12 +104,14 @@ export const destinations: Destination[] = [
   },
   {
     slug: 'afar',
+    guideSlug: 'responsible-travel-in-afar',
     group: 'danakil',
     name: 'Afar',
     headline: 'A land that teaches resilience',
     region: 'Afar Region',
     tag: 'People & Landscape',
     image: `${destinationImageBase}/afar.png`,
+    imageAlt: "Camel caravan crossing a salt plain at sunset in Afar",
     seoTitle: 'Afar Ethiopia Travel | Danakil & Afar Expeditions',
     seoDescription:
       'Discover Afar beyond the Danakil: desert landscapes, salt culture, volcanic geology and local life with an Ethiopian-owned expedition company.',
@@ -151,40 +155,42 @@ export const destinations: Destination[] = [
   },
   {
     slug: 'erta-ale',
+    guideSlug: 'erta-ale-what-to-expect',
     group: 'danakil',
     name: 'Erta Ale',
     headline: 'The volcano at the edge of the desert',
     region: 'Afar Region · Danakil',
     tag: 'Volcano',
     image: `${destinationImageBase}/erta-ale.png`,
+    imageAlt: "Volcanic crater and rising plume at Erta Ale",
     seoTitle: 'Erta Ale Volcano Ethiopia | Trekking & Danakil Expeditions',
     seoDescription:
-      'Experience Erta Ale volcano in Ethiopia’s Danakil Depression with a locally operated expedition team. What you can see today, the walk, and how conditions change.',
+      'Explore Erta Ale volcano in Ethiopia’s Danakil Depression with a local expedition team. Learn about the approach, viewing arrangements and changing conditions.',
     teaser: 'You don’t drive up to Erta Ale. You walk toward it, in the dark, across exposed volcanic ground.',
     intro:
-      'Erta Ale, "smoking mountain" in Afar, is a 613-metre basaltic shield volcano with a summit caldera about 1.6 by 0.7 km. The approach is part of the experience, and so are the darkness, the heat and the silence. And the volcano itself changes.',
+      'Erta Ale is a basaltic shield volcano in Afar. The approach is part of the experience, as are the volcanic terrain, heat and open landscape. What you can see depends on the volcano and the route confirmed for your visit.',
     bestTime: danakilSeason,
     duration: '1 – 2 nights',
-    altitude: '613 m',
+    altitude: '585 m (Smithsonian GVP)',
     highlights: [
-      'A walk of roughly 10 km across basalt, with camels carrying the camp gear',
+      'An approach across volcanic terrain, with distance confirmed for your route',
       'The caldera and crater area under the night sky',
       'A simple camp near the rim, with an early-morning observation window',
       'Geological interpretation from your guide',
     ],
     paragraphs: [
-      'For more than a century Erta Ale was famous for its lava lake, present since at least 1906 and one of the longest-lived in the world. In January 2017 a large eruption sent lava flows kilometres down the flank and the lake drained. Since then, activity has been confined to the caldera: small glowing vents called hornitos, occasional fresh lava flows and degassing.',
-      'In July 2025 magma moved south from Erta Ale and, in November 2025, the neighbouring Hayli Gubbi volcano, about 15 km to the south-east, erupted for the first time in thousands of years, covering Erta Ale’s caldera in ash. What you see on any given night depends on what the volcano is doing.',
-      'Erta Ale is not a viewpoint beside a car park. The official tourism source describes an approach of about 10 km across exposed terrain, largely without shade, and advises avoiding the hottest daytime conditions. We time the walk around the cooler hours.',
+      'Erta Ale is known for a long history of lava-lake activity, but the visible volcanic landscape changes. Smithsonian reports describe lava flows and changing thermal activity in 2024 and 2025; these are dated observations, not a description of what will be visible on your departure.',
+      'The Smithsonian report for late November 2025 records ashfall across Erta Ale after the nearby Hayli Gubbi eruption and a new collapsed area in the caldera. Ask the team for recent observations and the planned viewing arrangements rather than treating an older photograph as a promise.',
+      'Erta Ale is a remote volcanic visit with exposed, uneven terrain. Walking distance, timing, camp location and observation areas depend on the confirmed approach and current local guidance. Discuss the walking demands for your particular route before booking.',
     ],
     note: {
-      title: 'There is no lava lake at present',
+      title: 'Volcanic activity changes',
       text: 'Erta Ale is a natural system. Its activity changes, and a lava lake or particular display is never guaranteed. Before you book, we tell you honestly what is currently being seen, and on the day your guide decides how close it is safe to go.',
     },
     faqs: [
       {
         q: 'How difficult is the Erta Ale walk?',
-        a: 'It is a long walk, usually around three hours, on uneven volcanic ground, done in the evening or at night to avoid the heat. It is not technical, but you need reasonable fitness, sturdy shoes and a headlamp.',
+        a: 'The approach crosses uneven volcanic terrain. Distance and timing depend on the confirmed route and current conditions; ask the team what walking is planned for your dates. Suitable footwear, a headlamp and an honest discussion of your walking comfort are useful preparation.',
       },
       {
         q: 'What will I see?',
@@ -199,12 +205,14 @@ export const destinations: Destination[] = [
   },
   {
     slug: 'dallol',
+    guideSlug: 'dallol-geothermal-landscape',
     group: 'danakil',
     name: 'Dallol',
     headline: 'When the earth paints itself',
     region: 'Afar Region · Danakil',
     tag: 'Geothermal',
-    image: `${destinationImageBase}/dallol.png`,
+    image: `${destinationImageBase}/danakil-depression.png`,
+    imageAlt: "Green mineral pools and salt formations in the Danakil landscape",
     seoTitle: 'Dallol Ethiopia | Danakil Geothermal Landscape & Tours',
     seoDescription:
       'Explore Dallol in Ethiopia’s Danakil Depression: acid hot springs, salt chimneys, mineral colours and volcanic geology, below sea level.',
@@ -234,12 +242,14 @@ export const destinations: Destination[] = [
   },
   {
     slug: 'lake-assale',
+    guideSlug: 'lake-assale-and-lake-afdera',
     group: 'danakil',
     name: 'Lake Assale',
     headline: 'Where salt becomes a way of life',
     region: 'Afar Region · Danakil',
     tag: 'Salt Country',
     image: `${destinationImageBase}/lake-assale.png`,
+    imageAlt: "Salt crust and shallow water at Lake Assale at sunset",
     seoTitle: 'Lake Assale Ethiopia | Danakil Salt Lake & Salt Caravans',
     seoDescription:
       'Visit Lake Assale (Lake Karum) in Ethiopia’s Danakil Depression and discover salt flats, Afar salt cutting and the camel caravans of the salt trade.',
@@ -264,12 +274,14 @@ export const destinations: Destination[] = [
   },
   {
     slug: 'lake-afdera',
+    guideSlug: 'lake-assale-and-lake-afdera',
     group: 'danakil',
     name: 'Lake Afdera',
     headline: 'The desert has a lake',
     region: 'Afar Region · Danakil',
     tag: 'Salt Lake',
     image: `${destinationImageBase}/lake-afdera.png`,
+    imageAlt: "Blue-green lake water and a salt-crusted shore at Lake Afdera",
     seoTitle: 'Lake Afdera Ethiopia | Salt Lake in Afar',
     seoDescription:
       'Discover Lake Afdera (Afrera), a hypersaline lake more than 100 m below sea level in Ethiopia’s Afar region, fed by hot springs and ringed by salt works.',
@@ -294,12 +306,14 @@ export const destinations: Destination[] = [
 
   {
     slug: 'hamed-ela',
+    guideSlug: 'responsible-travel-in-afar',
     group: 'danakil',
     name: 'Hamed Ela',
     headline: 'A base in the heart of salt country',
     region: 'Afar Region · Danakil',
     tag: 'Expedition Base',
     image: `${destinationImageBase}/hamed-ela.png`,
+    imageAlt: "Camels gathered on the salt plain near Hamed Ela at sunset",
     seoTitle: 'Hamed Ela | Danakil Camp & Expedition Guide',
     seoDescription:
       'Understand Hamed Ela’s role in a Danakil expedition, basic camp expectations and journeys to Lake Assale and Dallol.',
@@ -347,12 +361,14 @@ export const destinations: Destination[] = [
   },
   {
     slug: 'semera',
+    guideSlug: 'semera-danakil-expedition-planning',
     group: 'danakil',
     name: 'Semera',
     headline: 'Prepare for the journey into Afar',
     region: 'Afar Region',
     tag: 'Expedition Gateway',
     image: `${destinationImageBase}/semera.png`,
+    imageAlt: "Aerial view of roads and buildings in Semera",
     seoTitle: 'Semera | Afar & Danakil Departure Guide',
     seoDescription:
       'Plan a Danakil expedition starting in Semera: arrival coordination, preparation, onward travel and the route into Afar.',
@@ -404,6 +420,7 @@ export const destinations: Destination[] = [
     region: 'Afar & Oromia',
     tag: 'Wildlife & Landscape',
     image: `${destinationImageBase}/awash-national-park.png`,
+    imageAlt: "Waterfall over rocky ledges in Awash National Park",
     seoTitle: 'Awash National Park | Wildlife & Afar Travel Guide',
     seoDescription: 'Explore the wildlife, river landscape and volcanic plains of Awash National Park, with practical guidance for a possible Afar journey extension.',
     teaser: 'River, savanna and volcanic terrain add a different chapter to an Afar journey.',
@@ -438,7 +455,7 @@ export const destinations: Destination[] = [
     region: 'Afar Region',
     tag: 'Human Origins',
     image: `${destinationImageBase}/hadar.png`,
-    imageAlt: 'A river flowing through a green valley',
+    imageAlt: "River and green banks in the Awash landscape",
     seoTitle: 'Hadar & Lower Awash Valley | Afar Human Origins Guide',
     seoDescription: 'Learn about Hadar, the discovery of Lucy and the Lower Awash Valley, with clear guidance on discussing a possible specialist visit.',
     teaser: 'Beyond volcanoes and salt, Afar holds evidence of a much older human story.',
@@ -476,6 +493,7 @@ export const destinations: Destination[] = [
     region: 'Tigray',
     tag: 'Rock Churches',
     image: `${destinationImageBase}/gheralta.png`,
+    imageAlt: "A visitor beside a cliff in the Gheralta mountain landscape",
     seoTitle: 'Gheralta Ethiopia | Rock-Hewn Churches & Mountain Treks',
     seoDescription:
       'Explore Gheralta’s sandstone mountains and rock-hewn churches, including Abuna Yemata Guh and Maryam Korkor, with a locally operated Ethiopian team.',
@@ -523,6 +541,7 @@ export const destinations: Destination[] = [
     region: 'Tigray',
     tag: 'Ancient Kingdom',
     image: `${destinationImageBase}/axum.png`,
+    imageAlt: "Carved stone obelisk at Axum beneath a blue sky",
     seoTitle: 'Axum Ethiopia | Ancient Kingdom, Obelisks & History',
     seoDescription:
       'Explore Axum, centre of the ancient Aksumite kingdom and a UNESCO World Heritage Site: monumental stelae, royal tombs and the church of St Mary of Zion.',
@@ -552,12 +571,14 @@ export const destinations: Destination[] = [
   },
   {
     slug: 'lalibela',
+    guideSlug: 'lalibela-at-dawn',
     group: 'highlands',
     name: 'Lalibela',
     headline: 'Stone, faith and human imagination',
     region: 'Amhara',
     tag: 'Living Heritage',
     image: `${destinationImageBase}/lalibela.png`,
+    imageAlt: "Rock-hewn church entrance and steps in Lalibela",
     seoTitle: 'Lalibela Ethiopia | Rock-Hewn Churches & Private Tours',
     seoDescription:
       'Discover Lalibela’s eleven rock-hewn churches, a UNESCO World Heritage Site, through local guiding, cultural interpretation and private journeys.',
@@ -588,6 +609,7 @@ export const destinations: Destination[] = [
     region: 'Amhara',
     tag: 'Trekking',
     image: `${destinationImageBase}/simien-mountains.png`,
+    imageAlt: "Steep green escarpments in the Simien Mountains",
     seoTitle: 'Simien Mountains Ethiopia | Trekking, Wildlife & Expeditions',
     seoDescription:
       'Trek the Simien Mountains, a UNESCO World Heritage national park, with an Ethiopian mountain guide: escarpments, gelada, Walia ibex and Ras Dashen.',
@@ -619,6 +641,7 @@ export const destinations: Destination[] = [
     region: 'Amhara',
     tag: 'Royal City',
     image: `${destinationImageBase}/gondar.png`,
+    imageAlt: "Stone castle with towers in Gondar",
     seoTitle: 'Gondar Ethiopia | Castles, History & Private Tours',
     seoDescription:
       'Explore Gondar: the UNESCO-listed royal enclosure of Fasil Ghebbi, Debre Birhan Selassie, Fasilides’ Bath and Timkat, gateway to the Simien Mountains.',
@@ -650,6 +673,7 @@ export const destinations: Destination[] = [
     region: 'Tigray',
     tag: 'Highlands Gateway',
     image: `${destinationImageBase}/mekelle.png`,
+    imageAlt: "Tall monument against a blue sky in Mekelle",
     seoTitle: 'Mekelle | Highlands & Danakil Gateway Guide',
     seoDescription:
       'Understand Mekelle’s role in proposed highlands-to-Afar journeys and how to plan a gateway connection with current access checks.',
@@ -704,6 +728,7 @@ export const destinations: Destination[] = [
     region: 'Amhara · Lake Tana',
     tag: 'Lakeside Gateway',
     image: `${destinationImageBase}/bahir-dar.png`,
+    imageAlt: "Lakeside lookout and green shoreline near Bahir Dar",
     seoTitle: 'Bahir Dar | Lake Tana & Northern Ethiopia Guide',
     seoDescription: 'Plan time in Bahir Dar, the gateway to Lake Tana, with guidance on lake visits and its place in Northern Ethiopia itineraries.',
     teaser: 'Lake journeys, a city pause and onward connections through the historic north.',
@@ -738,6 +763,7 @@ export const destinations: Destination[] = [
     region: 'Amhara · Bahir Dar',
     tag: 'Lake & Monasteries',
     image: `${destinationImageBase}/lake-tana.png`,
+    imageAlt: "Sunset over Lake Tana and a distant shoreline",
     seoTitle: 'Lake Tana | Monasteries & Northern Ethiopia Journeys',
     seoDescription: 'Discover Lake Tana through boat journeys and monastery visits from Bahir Dar, as part of a tailored Northern Ethiopia itinerary.',
     teaser: 'A lake chapter of the historic north, approached by boat from Bahir Dar.',
@@ -768,12 +794,14 @@ export const destinations: Destination[] = [
   // ── Hub ───────────────────────────────────────────────────────────────
   {
     slug: 'northern-ethiopia',
+    guideSlug: 'planning-northern-ethiopia-route',
     group: 'hub',
     name: 'Northern Ethiopia',
     headline: 'One region, many worlds',
     region: 'Afar · Tigray · Amhara',
     tag: 'The Whole Journey',
     image: `${destinationImageBase}/northern-ethiopia.png`,
+    imageAlt: "Rocky escarpments and green highland valleys in northern Ethiopia",
     seoTitle: 'Northern Ethiopia Tours | Danakil, Gheralta, Axum & Simien',
     seoDescription:
       'Plan a private Northern Ethiopia journey connecting the Danakil, Afar, Gheralta, Axum, Lalibela, the Simien, Gondar and Lake Tana, subject to current access.',

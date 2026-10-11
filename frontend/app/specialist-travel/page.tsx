@@ -5,7 +5,7 @@ export const metadata = createPageMetadata({
   "title": "Specialist Afar & Ethiopia Expeditions",
   "description": "Plan photography, filming, research and mountain journeys in Afar and northern Ethiopia, with local route planning and expedition logistics.",
   "path": "/specialist-travel",
-  "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/dallol.png",
+  "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png",
   "imageAlt": "Dallol, Ethiopia"
 })
 

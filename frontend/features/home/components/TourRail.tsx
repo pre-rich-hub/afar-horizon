@@ -116,7 +116,7 @@ function TourPanel({ tour: t }: { tour: Tour }) {
     >
       <Image
         src={t.image || defaultImage}
-        alt={t.title}
+        alt={t.imageAlt ?? t.title}
         fill
         sizes="(max-width: 640px) 78vw, 340px"
         className="object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-[1.06]"

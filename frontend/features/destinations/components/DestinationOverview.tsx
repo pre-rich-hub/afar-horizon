@@ -4,8 +4,11 @@ import type { Destination } from '../types/destination.types'
 import { DestinationBooking } from './DestinationBooking'
 import { DestinationHighlights } from './DestinationHighlights'
 import { DestinationJourneys } from './DestinationJourneys'
+import { getPost } from '@/features/blog'
+import Link from 'next/link'
 
 export function DestinationOverview({ d, fallback }: { d: Destination; fallback: Tour[] }) {
+  const guide = d.guideSlug ? getPost(d.guideSlug) : undefined
   return (
     <section className="shell grid gap-14 py-16 sm:py-20 lg:grid-cols-[1fr_360px] lg:gap-x-16 lg:gap-y-0 lg:py-28 xl:grid-cols-[1fr_380px] xl:gap-x-20">
           <Reveal className="lg:col-start-1 lg:row-start-1">
@@ -27,6 +30,10 @@ export function DestinationOverview({ d, fallback }: { d: Destination; fallback:
                   {p}
                 </p>
               ))}
+              {guide && <p className="text-sm leading-relaxed text-muted-foreground">
+                Planning your visit? Read{' '}
+                <Link href={`/blog/${guide.slug}`} className="text-primary underline underline-offset-4 hover:text-accent">{guide.title}</Link>.
+              </p>}
             </div>
           </Reveal>
 

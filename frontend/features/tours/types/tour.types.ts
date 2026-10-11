@@ -13,6 +13,7 @@ export type Tour = {
   slug: string
   title: string
   image: string
+  imageAlt?: string
   days: string
   nights: number
   style: string

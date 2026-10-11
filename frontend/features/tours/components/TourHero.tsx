@@ -10,7 +10,7 @@ export function TourHero({ t }: { t: Tour }) {
         title={t.title}
         lede={t.teaser}
         image={t.image}
-        imageAlt={t.title}
+        imageAlt={t.imageAlt ?? t.title}
         crumbs={[
           { label: 'Home', href: '/' },
           { label: 'Expeditions', href: '/expeditions' },

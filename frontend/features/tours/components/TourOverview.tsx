@@ -4,8 +4,9 @@ import { AlertTriangle, MapPin, Moon, Utensils } from 'lucide-react'
 import { expeditionConditionsNote } from '../data/tour.data'
 import type { Tour } from '../types/tour.types'
 import { formatDuration, getStartEnd } from '../utils/tour.utils'
+import Link from 'next/link'
 
-export function TourOverview({ t }: { t: Tour }) {
+export function TourOverview({ t, placeLinks = {} }: { t: Tour; placeLinks?: Record<string, string> }) {
   const startEnd = getStartEnd(t)
   const priceOnRequest = t.from === 'Price on request'
 
@@ -53,7 +54,7 @@ export function TourOverview({ t }: { t: Tour }) {
                   className="inline-flex items-center gap-2 border border-border bg-card px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.14em] text-muted-foreground sm:text-[11px]"
                 >
                   <MapPin className="h-3 w-3 text-accent" />
-                  {p}
+                  {placeLinks[p] ? <Link href={placeLinks[p]} className="transition-colors hover:text-primary focus-visible:underline">{p}</Link> : p}
                 </li>
               ))}
             </ul>

@@ -5,7 +5,7 @@ export const galleryCategories: GalleryCategory[] = ['Landscapes', 'Heritage']
 export const galleryPhotos: GalleryPhoto[] = [
   {
     "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png",
-    "alt": "Danakil Depression, Ethiopia",
+    "alt": "Green mineral pools and salt formations in the Danakil landscape",
     "title": "Danakil Depression",
     "location": "Danakil Depression",
     "category": "Landscapes",
@@ -14,7 +14,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lalibela.png",
-    "alt": "Lalibela, Ethiopia",
+    "alt": "Rock-hewn church entrance and steps in Lalibela",
     "title": "Lalibela",
     "location": "Lalibela",
     "category": "Heritage",
@@ -23,7 +23,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/simien-mountains.png",
-    "alt": "Simien Mountains, Ethiopia",
+    "alt": "Steep green escarpments in the Simien Mountains",
     "title": "Simien Mountains",
     "location": "Simien Mountains",
     "category": "Landscapes",
@@ -32,7 +32,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/awash-national-park.png",
-    "alt": "Awash National Park, Ethiopia",
+    "alt": "Waterfall over rocky ledges in Awash National Park",
     "title": "Awash National Park",
     "location": "Awash National Park",
     "category": "Landscapes",
@@ -41,7 +41,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/afar.png",
-    "alt": "Afar, Ethiopia",
+    "alt": "Camel caravan crossing a salt plain at sunset in Afar",
     "title": "Afar",
     "location": "Afar",
     "category": "Landscapes",
@@ -50,7 +50,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/gondar.png",
-    "alt": "Gondar, Ethiopia",
+    "alt": "Stone castle with towers in Gondar",
     "title": "Gondar",
     "location": "Gondar",
     "category": "Heritage",
@@ -59,7 +59,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-tana.png",
-    "alt": "Lake Tana, Ethiopia",
+    "alt": "Sunset over Lake Tana and a distant shoreline",
     "title": "Lake Tana",
     "location": "Lake Tana",
     "category": "Landscapes",
@@ -68,7 +68,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-afdera.png",
-    "alt": "Lake Afdera, Ethiopia",
+    "alt": "Blue-green lake water and a salt-crusted shore at Lake Afdera",
     "title": "Lake Afdera",
     "location": "Lake Afdera",
     "category": "Landscapes",
@@ -77,7 +77,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/axum.png",
-    "alt": "Axum, Ethiopia",
+    "alt": "Carved stone obelisk at Axum beneath a blue sky",
     "title": "Axum",
     "location": "Axum",
     "category": "Heritage",
@@ -86,7 +86,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/semera.png",
-    "alt": "Semera, Ethiopia",
+    "alt": "Aerial view of roads and buildings in Semera",
     "title": "Semera",
     "location": "Semera",
     "category": "Landscapes",
@@ -95,7 +95,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/hamed-ela.png",
-    "alt": "Hamed Ela, Ethiopia",
+    "alt": "Camels gathered on the salt plain near Hamed Ela at sunset",
     "title": "Hamed Ela",
     "location": "Hamed Ela",
     "category": "Landscapes",
@@ -104,7 +104,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/gheralta.png",
-    "alt": "Gheralta, Ethiopia",
+    "alt": "A visitor beside a cliff in the Gheralta mountain landscape",
     "title": "Gheralta",
     "location": "Gheralta",
     "category": "Landscapes",
@@ -113,7 +113,7 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/erta-ale.png",
-    "alt": "Erta Ale, Ethiopia",
+    "alt": "Volcanic crater and rising plume at Erta Ale",
     "title": "Erta Ale",
     "location": "Erta Ale",
     "category": "Landscapes",

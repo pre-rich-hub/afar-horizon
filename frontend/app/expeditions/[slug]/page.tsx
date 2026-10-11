@@ -2,6 +2,7 @@ import { createPageMetadata } from '@/lib/seo/metadata'
 import { getRelatedTours, getTour, getTourData, RelatedTours, TourEnquiry, TourFaqs, TourHero, TourInclusions, TourOverview, TourPlanning, tours } from '@/features/tours'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { getDestinationForPlace } from '@/features/destinations'
 
 export const dynamicParams = false
 
@@ -22,7 +23,7 @@ export async function generateMetadata({
     description: t.summary,
     path: `/expeditions/${t.slug}`,
     image: t.image,
-    imageAlt: t.title,
+    imageAlt: t.imageAlt ?? t.title,
   })
 }
 
@@ -36,13 +37,17 @@ export default async function ExpeditionPage({
   if (!t) notFound()
 
   const { others } = getRelatedTours(t)
+  const placeLinks = Object.fromEntries(t.places.flatMap(place => {
+    const destination = getDestinationForPlace(place)
+    return destination ? [[place, `/destinations/${destination.slug}`]] : []
+  }))
 
   return (
     <>
       <TourHero t={t} />
 
       {/* Overview + itinerary, with the pricing card pinned alongside */}
-      <TourOverview t={t} />
+      <TourOverview t={t} placeLinks={placeLinks} />
 
       {/* Includes / excludes */}
       <TourInclusions t={t} />

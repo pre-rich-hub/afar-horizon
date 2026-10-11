@@ -15,7 +15,7 @@ export function TourCard({
     <InfoCard
       href={`/expeditions/${t.slug}`}
       image={t.image}
-      imageAlt={t.title}
+      imageAlt={t.imageAlt ?? t.title}
       badge={kind}
       eyebrow={priceOnRequest ? t.from : `From ${t.from.replace(' per person', '')} per person`}
       title={t.title}

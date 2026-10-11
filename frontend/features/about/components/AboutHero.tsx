@@ -21,9 +21,9 @@ export function AboutHero() {
             <ChevronRight className="h-3 w-3 opacity-50" />
             <span className="text-background/90">About Us</span>
           </nav>
-          <p className="eyebrow mb-5 text-accent [animation:fade-up_1s_ease_0.1s_both]">
-            The story starts here
-          </p>
+          <h1 className="eyebrow mb-5 font-sans text-accent [animation:fade-up_1s_ease_0.1s_both]">
+            About Afar Horizon Expeditions
+          </h1>
           <blockquote className="max-w-[22ch] text-balance font-serif text-[2.4rem] leading-[1.08] text-background text-shadow-soft [animation:fade-up_1s_ease_0.2s_both] sm:text-6xl lg:text-7xl">
             &ldquo;We want people to experience the Ethiopia we know — not just visit it.&rdquo;
           </blockquote>
