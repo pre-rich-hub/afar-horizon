@@ -18,6 +18,7 @@ export const privacy: LegalPage = {
     { title: 'Website services and technical information', paragraphs: [
       'Our hosting, database, email and AI services process information needed to operate the website and respond to requests. Images load from Cloudinary. Visiting these services can transmit technical details such as your network address and browser request information to their providers.',
       'The production website includes Vercel Web Analytics for page-use statistics. Its standard service uses aggregated measurements and does not use third-party tracking cookies. Admin sign-in uses a session cookie; the travel assistant keeps a conversation identifier in memory while the page is open.',
+      'If optional conversion measurement is enabled, we count contact-link clicks, package enquiry intent and successfully accepted form submissions using the public page and a form or channel category. We do not send form names, email addresses, telephone numbers, messages or URL query contents to analytics. Conversion measurement is currently disabled.',
     ], link: { label: 'Vercel Web Analytics privacy information', href: 'https://vercel.com/docs/analytics/privacy-policy' } },
     { title: 'Questions about your information', paragraphs: [
       'Contact Afar Horizon Expeditions to ask about information submitted through the website, its retention, corrections or deletion, or to stop newsletter messages. Include enough context for us to locate your enquiry or subscription; do not include confidential documents in the initial request.',

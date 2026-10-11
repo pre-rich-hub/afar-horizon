@@ -13,12 +13,12 @@ pnpm dev                   # http://localhost:3000
 
 ### SEO environment
 
-The confirmed canonical origin is `https://afarhorizon.com`. Copy the values in
+The confirmed canonical origin is `https://www.afarhorizon.com`. Copy the values in
 `.env.example` into local configuration and set them separately in the hosting
 environment. Production builds require `SITE_URL`; invalid origins fail the build.
 
 ```dotenv
-SITE_URL=https://afarhorizon.com
+SITE_URL=https://www.afarhorizon.com
 SEO_INDEXABLE=true
 DEPLOYMENT_ENV=production
 ```
@@ -68,7 +68,7 @@ page's status/canonical/indexing, internal-link reachability, old redirects, mis
 slugs, the removed coffee article, query canonicals and admin protection.
 
 Configure HTTP and www redirects at the hosting/CDN layer to the confirmed
-`https://afarhorizon.com` origin, preserving path/query. The app removes trailing
+`https://www.afarhorizon.com` origin, preserving path/query. The app removes trailing
 slashes and query variants use the base page canonical. Host redirects are a live
 deployment check; the app does not trust arbitrary Host headers to select a domain.
 
@@ -137,10 +137,9 @@ live Cloudinary response summaries alongside it.
 ```text
 frontend/
 ├── app/                 Routes, layouts, metadata, loading and not-found states
-│   ├── page.tsx         Homepage composition
-│   ├── (auth)/login/    Admin sign-in, still served at /login
-│   ├── admin/           Session-guarded admin routes
-│   └── …                Existing public index and dynamic detail routes
+│   ├── (site)/          English compositions, /login and guarded /admin routes
+│   ├── (localized)/    Language layout and public catch-all compositions
+│   └── …                Global CSS, sitemap, robots and icon routes
 ├── features/
 │   ├── legal/           Privacy and website terms content
 │   ├── home/            Homepage-only sections and their interactions
@@ -165,6 +164,7 @@ frontend/
 │   ├── api/             JSON and admin request transports
 │   ├── utils/           Class names and date formatting
 │   ├── constants/       Shared navigation, contact details, and brand promises
+│   ├── i18n/            Locale routes, translation drafts, scopes and metadata
 │   └── config/          Server-side backend URL configuration
 ├── public/              Images and icons, with their original URLs
 └── tests/               Contract and ownership checks
@@ -213,3 +213,27 @@ tours feature utilities.
 [`docs/backend-design.md`](docs/backend-design.md) is a planning document, not a
 complete description of the implemented backend. This checkout contains the
 frontend and expects a separate Express API.
+
+## Production verification and measurement
+
+Follow [the Phase 6 launch checklist](docs/seo-phase6-launch.md) for domain connection, Search Console and live SEO checks. `GOOGLE_SITE_VERIFICATION` optionally supplies Google's HTML-tag token for a URL-prefix property; Domain properties use DNS verification instead. Verification metadata is omitted on previews.
+
+Vercel page views run only with confirmed production configuration and `VERCEL_ENV=production`. `ANALYTICS_ENABLED=false` disables them. Event URLs retain only allowlisted public paths and drop query strings/fragments. Custom conversion events remain off by default (`ANALYTICS_CUSTOM_EVENTS_ENABLED=false`); Vercel requires Pro/Enterprise for those events. Leave them disabled on this project's Hobby plan.
+
+Prepared conversion events contain only public page and form/channel categories. Enquiry success follows an accepted API response, with concurrent submissions deduplicated within each mounted form and failures permitting retry. No personal form values are sent to analytics. Tests run with `node --test tests/measurement.test.cjs`; browser form validation must intercept `/api/v1/contact` rather than sending real enquiries.
+
+## Recurring SEO maintenance
+
+[Phase 7's workflow](docs/seo-phase7-maintenance.md) defines the review schedule, editorial backlog and local-profile dependencies. The [review log](docs/seo-maintenance-log.csv) records measured periods; the [GEO worklist](docs/geo-worklist.md) is a separate follow-up.
+
+```sh
+npm run seo:check -- --inventory-only
+npm run seo:check -- --base-url=http://127.0.0.1:3101
+npm run seo:check -- --base-url=https://www.afarhorizon.com --check-image-responses
+```
+
+Use `--preview` for preview indexing expectations and `--output=docs/seo-reports/review-date.json` to retain a dated report. These read-only checks use the local catalogue; run from the commit deployed at the target. Default reports are ignored by Git. The custom domain must serve this site before production checks can pass; account reports and field measurements are collected separately.
+
+## Language drafts
+
+French, Spanish, German and Simplified Chinese use `/fr`, `/es`, `/de` and `/zh-Hans`; English keeps existing URLs. All translations are noindex drafts until client review. See the [review workflow](docs/seo-phase8-translations.md) and [translation spreadsheet](docs/translation-review.csv). Shared presentation components use translation boundaries and explicit translated text where server composition requires it; `SiteLink` keeps public links in the current language. Source data, form payloads and business facts retain their existing values.

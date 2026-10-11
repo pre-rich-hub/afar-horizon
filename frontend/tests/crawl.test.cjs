@@ -6,7 +6,7 @@ const { destinations } = load('@/features/destinations/data/destination.data')
 const { tours } = load('@/features/tours/data/tour.data')
 const { posts } = load('@/features/blog/data/post.data')
 const { indexableStaticRoutes } = load('@/lib/seo/routes')
-const site = { url: 'https://afarhorizon.com', indexable: true }
+const site = { url: 'https://www.afarhorizon.com', indexable: true }
 
 function routeLoader(indexable, extra = {}) {
   return createLoader({

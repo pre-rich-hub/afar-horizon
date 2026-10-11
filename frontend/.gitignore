@@ -17,3 +17,6 @@ node_modules
 
 # TypeScript build cache
 tsconfig.tsbuildinfo
+
+# Recurring local SEO reports; reviewed phase evidence can be saved separately.
+docs/seo-reports/

@@ -1,4 +1,6 @@
 'use client'
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+
 
 import { destinationGroups, destinationsInGroup, getDestination } from '@/features/destinations'
 import { expeditionCollections, tours } from '@/features/tours'
@@ -15,9 +17,11 @@ Menu,
 Phone,
 X,
 } from 'lucide-react'
-import Link from 'next/link'
+import Link from '@/components/common/SiteLink'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
+import { languages, localePath, splitLocalePath } from '@/lib/i18n/locales'
+import { useSiteTranslation } from '@/components/common/TranslationBoundary'
 import { useEffect, useRef, useState } from 'react'
 
 // Cards shown in the desktop dropdowns: the signature expeditions and one
@@ -29,13 +33,6 @@ const navDestinations = ['danakil-depression', 'dallol', 'gheralta', 'lalibela']
   .map((slug) => getDestination(slug))
   .filter((d) => d !== undefined)
 
-const languages = [
-  { code: 'EN', label: 'English' },
-  { code: 'ES', label: 'Español' },
-  { code: 'FR', label: 'Français' },
-  { code: 'DE', label: 'Deutsch' },
-  { code: 'ZH', label: '中文' },
-]
 
 function Wordmark({
   tone,
@@ -45,7 +42,7 @@ function Wordmark({
   onClick?: () => void
 }) {
   return (
-    <Link
+    <TranslationBoundary><Link
       href="/"
       onClick={onClick}
       aria-label="Afar Horizon Expeditions — home"
@@ -58,17 +55,27 @@ function Wordmark({
         height={341}
         className="h-12 w-auto object-contain transition-transform duration-300 hover:scale-105 sm:h-14"
       />
-    </Link>
+    </Link></TranslationBoundary>
   )
 }
 
 export function SiteNav() {
-  const pathname = usePathname()
+  const currentPath = usePathname()
+  const pathname = splitLocalePath(currentPath).path
+  const { locale, paths } = useSiteTranslation()
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
-  const [lang, setLang] = useState(languages[0])
+  const [urlSuffix, setUrlSuffix] = useState('')
+  const lang = languages.find(language => language.locale === locale) ?? languages[0]
   const langRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const update = () => setUrlSuffix(window.location.search + window.location.hash)
+    update()
+    window.addEventListener('hashchange', update)
+    return () => window.removeEventListener('hashchange', update)
+  }, [currentPath, langOpen, open])
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 32)
@@ -116,7 +123,7 @@ export function SiteNav() {
   const tone: 'light' | 'dark' = scrolled ? 'dark' : 'light'
 
   return (
-    <>
+    <TranslationBoundary><>
       <header
         className={cn(
           'fixed inset-x-0 top-0 z-50 transition-all duration-500',
@@ -138,7 +145,7 @@ export function SiteNav() {
               const active = isActive(link.href)
               const hasDropdown = Boolean(link.menu)
               return (
-                <li key={link.href} className={cn('group py-5', link.menu === 'links' && 'relative')}>
+                <TranslationBoundary key={link.href}><li key={link.href} className={cn('group py-5', link.menu === 'links' && 'relative')}>
                   <Link
                     href={link.href}
                     className={cn(
@@ -177,7 +184,7 @@ export function SiteNav() {
                             </p>
                             <ul className="mt-6 space-y-2.5 border-t border-border pt-5">
                               {destinationGroups.map((g) => (
-                                <li key={g.id}>
+                                <TranslationBoundary key={g.id}><li key={g.id}>
                                   <Link
                                     href={`/destinations#${g.id}`}
                                     className="flex items-baseline justify-between gap-3 text-[13px] text-foreground/80 transition-colors hover:text-accent"
@@ -185,7 +192,7 @@ export function SiteNav() {
                                     {g.title}
                                     <span className="text-[10px] text-muted-foreground">{destinationsInGroup(g.id).length}</span>
                                   </Link>
-                                </li>
+                                </li></TranslationBoundary>
                               ))}
                             </ul>
                           </div>
@@ -199,7 +206,7 @@ export function SiteNav() {
 
                         <div className="grid grid-cols-4 gap-6">
                           {navDestinations.map((d) => (
-                            <Link
+                            <TranslationBoundary key={d.slug}><Link
                               key={d.slug}
                               href={`/destinations/${d.slug}`}
                               className="group/item flex flex-col gap-3.5 rounded-lg overflow-hidden p-2.5 transition-all duration-300 hover:bg-muted/50"
@@ -227,7 +234,7 @@ export function SiteNav() {
                                   {d.teaser}
                                 </p>
                               </div>
-                            </Link>
+                            </Link></TranslationBoundary>
                           ))}
                         </div>
                       </div>
@@ -237,7 +244,7 @@ export function SiteNav() {
                   {link.menu === 'links' && link.children && (
                     <div className="absolute top-full z-45 -ml-4 w-64 border-t-2 border-accent bg-background/98 py-2 text-foreground shadow-2xl backdrop-blur-2xl transition-all duration-300 opacity-0 invisible -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-hover:pointer-events-auto">
                       {link.children.map((c) => (
-                        <Link
+                        <TranslationBoundary key={c.href}><Link
                           key={c.href}
                           href={c.href}
                           className="block px-4 py-2.5 transition-colors hover:bg-muted/60"
@@ -246,7 +253,7 @@ export function SiteNav() {
                           {c.text && (
                             <span className="mt-0.5 block text-[11px] leading-snug text-muted-foreground">{c.text}</span>
                           )}
-                        </Link>
+                        </Link></TranslationBoundary>
                       ))}
                     </div>
                   )}
@@ -263,7 +270,7 @@ export function SiteNav() {
                             </p>
                             <ul className="mt-6 space-y-2.5 border-t border-border pt-5">
                               {expeditionCollections.map((c) => (
-                                <li key={c.id}>
+                                <TranslationBoundary key={c.id}><li key={c.id}>
                                   <Link
                                     href={`/expeditions#${c.id}`}
                                     className="flex items-baseline justify-between gap-3 text-[13px] text-foreground/80 transition-colors hover:text-accent"
@@ -271,7 +278,7 @@ export function SiteNav() {
                                     {c.title}
                                     <span className="whitespace-nowrap text-[10px] text-muted-foreground">{c.span}</span>
                                   </Link>
-                                </li>
+                                </li></TranslationBoundary>
                               ))}
                             </ul>
                           </div>
@@ -285,7 +292,7 @@ export function SiteNav() {
 
                         <div className="grid grid-cols-3 gap-6">
                           {navExpeditions.map((t) => (
-                            <Link
+                            <TranslationBoundary key={t.slug}><Link
                               key={t.slug}
                               href={`/expeditions/${t.slug}`}
                               className="group/item flex flex-col gap-3.5 rounded-lg overflow-hidden p-2.5 transition-all duration-300 hover:bg-muted/50"
@@ -317,19 +324,19 @@ export function SiteNav() {
                                   <span className="text-xs font-bold text-accent">{t.from.split(' per ')[0]}</span>
                                 </div>
                               </div>
-                            </Link>
+                            </Link></TranslationBoundary>
                           ))}
                         </div>
                       </div>
                     </div>
                   )}
-                </li>
+                </li></TranslationBoundary>
               )
             })}
           </ul>
 
           <div className="flex items-center gap-2 sm:gap-3">
-            <div ref={langRef} className="relative hidden sm:block lg:hidden xl:block">
+            <div ref={langRef} className="relative">
               <button
                 aria-label="Change language"
                 aria-haspopup="listbox"
@@ -365,12 +372,14 @@ export function SiteNav() {
                 )}
               >
                 {languages.map((l) => (
-                  <li key={l.code}>
-                    <button
+                  <TranslationBoundary key={l.code}><li key={l.code}>
+                    <a
+                      translate="no"
+                      data-locale-link
                       role="option"
                       aria-selected={l.code === lang.code}
+                      href={localePath(paths.includes(pathname) ? pathname : '/', l.locale) + urlSuffix}
                       onClick={() => {
-                        setLang(l)
                         setLangOpen(false)
                       }}
                       className="flex w-full items-center justify-between px-4 py-3 text-left text-sm text-popover-foreground/80 transition-colors duration-200 hover:bg-muted"
@@ -379,15 +388,15 @@ export function SiteNav() {
                       {l.code === lang.code && (
                         <Check className="h-4 w-4 text-accent" />
                       )}
-                    </button>
-                  </li>
+                    </a>
+                  </li></TranslationBoundary>
                 ))}
               </ul>
             </div>
 
             <Link
               href={planJourneyLink.href}
-              className="hidden items-center whitespace-nowrap rounded-full bg-accent px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-accent-foreground shadow-[0_8px_22px_-12px_oklch(0.705_0.098_76/0.75)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-sand lg:-mr-4 lg:inline-flex xl:-mr-[min(3.5rem,calc((100vw-1280px)/2+1rem))]"
+              className="hidden items-center whitespace-nowrap rounded-full bg-accent px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-accent-foreground shadow-[0_8px_22px_-12px_oklch(0.705_0.098_76/0.75)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-sand xl:inline-flex xl:-mr-[min(3.5rem,calc((100vw-1280px)/2+1rem))]"
             >
               {planJourneyLink.label}
             </Link>
@@ -426,7 +435,7 @@ export function SiteNav() {
             {navLinks.map((link, i) => {
               const active = isActive(link.href)
               return (
-                <li key={link.href} className="border-b border-border">
+                <TranslationBoundary key={link.href}><li key={link.href} className="border-b border-border">
                   <Link
                     href={link.href}
                     onClick={() => setOpen(false)}
@@ -461,7 +470,7 @@ export function SiteNav() {
                   {link.children && (
                     <ul className="-mt-2 flex flex-wrap gap-x-5 gap-y-2 pb-5 pl-8">
                       {link.children.map((c) => (
-                        <li key={c.href}>
+                        <TranslationBoundary key={c.href}><li key={c.href}>
                           <Link
                             href={c.href}
                             onClick={() => setOpen(false)}
@@ -469,11 +478,11 @@ export function SiteNav() {
                           >
                             {c.label}
                           </Link>
-                        </li>
+                        </li></TranslationBoundary>
                       ))}
                     </ul>
                   )}
-                </li>
+                </li></TranslationBoundary>
               )
             })}
           </ul>
@@ -485,9 +494,11 @@ export function SiteNav() {
             </span>
             <div className="flex flex-wrap gap-2">
               {languages.map((l) => (
-                <button
-                  key={l.code}
-                  onClick={() => setLang(l)}
+                <TranslationBoundary key={l.code}><a
+                  translate="no"
+                  data-locale-link
+                  href={localePath(paths.includes(pathname) ? pathname : '/', l.locale) + urlSuffix}
+                  onClick={() => setOpen(false)}
                   className={cn(
                     'rounded-full border px-4 py-2 text-sm transition-colors duration-200',
                     l.code === lang.code
@@ -496,7 +507,7 @@ export function SiteNav() {
                   )}
                 >
                   {l.label}
-                </button>
+                </a></TranslationBoundary>
               ))}
             </div>
           </div>
@@ -530,6 +541,6 @@ export function SiteNav() {
           </Link>
         </div>
       </div>
-    </>
+    </></TranslationBoundary>
   )
 }

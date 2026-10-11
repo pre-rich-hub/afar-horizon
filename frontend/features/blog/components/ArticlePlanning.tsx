@@ -1,3 +1,5 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { CtaBand } from '@/components/common/CtaBand'
 import type { Post } from '../types/post.types'
 import { getTour } from '@/features/tours'
@@ -5,11 +7,11 @@ import { getTour } from '@/features/tours'
 export function ArticlePlanning({ post }: { post: Post }) {
   const tour = post.tourSlug ? getTour(post.tourSlug) : undefined
   return (
-    <CtaBand
+    <TranslationBoundary><CtaBand
         title="Ready to see it for yourself?"
         text="Every essay here comes out of a journey we designed for someone. Tell us what you want yours to feel like."
         secondary={tour ? { label: tour.title, href: `/expeditions/${tour.slug}` } : { label: 'See Destinations', href: '/destinations' }}
         image={post.image}
-      />
+      /></TranslationBoundary>
   )
 }

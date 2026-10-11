@@ -1,13 +1,15 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { defaultImage } from '@/lib/config/cloudinary'
 import { Reveal } from '@/components/common/Reveal'
 import { EnquiryForm } from '@/features/enquiries'
 import Image from 'next/image'
-import Link from 'next/link'
+import Link from '@/components/common/SiteLink'
 import type { Destination } from '../types/destination.types'
 
 export function DestinationEnquiry({ d, others }: { d: Destination; others: Destination[] }) {
   return (
-    <section id="enquire" className="scroll-mt-24 shell grid gap-12 py-16 sm:py-20 lg:grid-cols-[1fr_1.15fr] lg:gap-20 lg:py-28">
+    <TranslationBoundary><section id="enquire" className="scroll-mt-24 shell grid gap-12 py-16 sm:py-20 lg:grid-cols-[1fr_1.15fr] lg:gap-20 lg:py-28">
         <Reveal>
           <p className="eyebrow mb-5 text-accent">
             Plan This Destination
@@ -27,7 +29,7 @@ export function DestinationEnquiry({ d, others }: { d: Destination; others: Dest
             </p>
             <ul className="grid gap-3 sm:grid-cols-2">
               {others.map((o) => (
-                <li key={o.slug}>
+                <TranslationBoundary key={o.slug}><li key={o.slug}>
                   <Link
                     href={`/destinations/${o.slug}`}
                     className="group flex items-center gap-4 border border-border bg-card p-3 transition-colors hover:border-primary/40"
@@ -51,7 +53,7 @@ export function DestinationEnquiry({ d, others }: { d: Destination; others: Dest
                       </span>
                     </span>
                   </Link>
-                </li>
+                </li></TranslationBoundary>
               ))}
             </ul>
           </div>
@@ -60,6 +62,6 @@ export function DestinationEnquiry({ d, others }: { d: Destination; others: Dest
         <Reveal delay={120}>
           <EnquiryForm subject={d.name} defaultStyles={[]} />
         </Reveal>
-      </section>
+      </section></TranslationBoundary>
   )
 }

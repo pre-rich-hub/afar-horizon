@@ -1,6 +1,8 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { cn } from '@/lib/utils'
 import { ArrowRight } from 'lucide-react'
-import Link from 'next/link'
+import Link from '@/components/common/SiteLink'
 
 type Variant = 'solid' | 'gold' | 'outline' | 'outlineLight'
 
@@ -31,7 +33,7 @@ export function LinkButton({
   withArrow?: boolean
 }) {
   return (
-    <Link
+    <TranslationBoundary><Link
       href={href}
       className={cn(base, variants[variant], 'w-full sm:w-auto', className)}
     >
@@ -39,7 +41,7 @@ export function LinkButton({
       {withArrow && (
         <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
       )}
-    </Link>
+    </Link></TranslationBoundary>
   )
 }
 
@@ -55,7 +57,7 @@ export function TextLink({
   tone?: 'primary' | 'accent'
 }) {
   return (
-    <Link
+    <TranslationBoundary><Link
       href={href}
       className={cn(
         'group/link inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.14em] transition-colors sm:text-xs',
@@ -67,6 +69,6 @@ export function TextLink({
     >
       {children}
       <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover/link:translate-x-1 group-hover:translate-x-1" />
-    </Link>
+    </Link></TranslationBoundary>
   )
 }

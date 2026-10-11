@@ -1,3 +1,5 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { defaultImage } from '@/lib/config/cloudinary'
 import { LinkButton } from '@/components/common/LinkButton'
 import { Reveal } from '@/components/common/Reveal'
@@ -22,7 +24,7 @@ export function CtaBand({
   image = 'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/simien-mountains.png',
 }: CtaBandProps) {
   return (
-    <section className="relative isolate overflow-hidden bg-primary text-primary-foreground">
+    <TranslationBoundary><section className="relative isolate overflow-hidden bg-primary text-primary-foreground">
       <div className="absolute inset-0 -z-10 opacity-25">
         <Image
           src={image || defaultImage}
@@ -74,6 +76,6 @@ export function CtaBand({
           </div>
         </Reveal>
       </div>
-    </section>
+    </section></TranslationBoundary>
   )
 }

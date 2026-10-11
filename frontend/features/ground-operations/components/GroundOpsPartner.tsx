@@ -1,9 +1,11 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import { PartnerForm } from '@/features/enquiries'
 
 export function GroundOpsPartner() {
   return (
-    <section id="partner" className="scroll-mt-24 border-t border-border bg-secondary text-secondary-foreground">
+    <TranslationBoundary><section id="partner" className="scroll-mt-24 border-t border-border bg-secondary text-secondary-foreground">
       <div className="shell grid gap-12 py-16 sm:py-20 lg:grid-cols-[1fr_1.4fr] lg:gap-20 lg:py-28">
         <Reveal>
           <p className="eyebrow mb-5 text-accent">Send your programme</p>
@@ -19,6 +21,6 @@ export function GroundOpsPartner() {
           <PartnerForm />
         </Reveal>
       </div>
-    </section>
+    </section></TranslationBoundary>
   )
 }

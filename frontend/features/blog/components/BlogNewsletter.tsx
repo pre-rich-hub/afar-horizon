@@ -1,9 +1,11 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import { NewsletterForm } from '@/features/newsletter'
 
 export function BlogNewsletter() {
   return (
-    <section className="bg-secondary text-secondary-foreground">
+    <TranslationBoundary><section className="bg-secondary text-secondary-foreground">
         <div className="shell grid gap-10 py-16 sm:py-20 lg:grid-cols-2 lg:items-center lg:py-24">
           <Reveal>
             <p className="eyebrow mb-5 text-accent">
@@ -22,6 +24,6 @@ export function BlogNewsletter() {
             <NewsletterForm />
           </Reveal>
         </div>
-      </section>
+      </section></TranslationBoundary>
   )
 }

@@ -1,10 +1,13 @@
+import { TranslatedText } from '@/components/common/TranslatedText'
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { experiences, panelTone } from '../data/experiences.data'
 
 import { Reveal } from '@/components/common/Reveal'
 import { cn } from '@/lib/utils'
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
-import Link from 'next/link'
+import Link from '@/components/common/SiteLink'
 
 // Caption panels alternate light and dark in a checkerboard, and the right
 // column's panels sit a little lower — the offset keeps the grid from feeling
@@ -12,7 +15,7 @@ import Link from 'next/link'
 
 export function Experiences() {
   return (
-    <section id="experiences" className="bg-background py-20 sm:py-24 lg:py-32">
+    <TranslationBoundary><section id="experiences" className="bg-background py-20 sm:py-24 lg:py-32">
       <Reveal className="shell mb-14 text-center sm:mb-20">
         <p className="eyebrow mb-5 justify-center text-accent">
           Travel With a Purpose
@@ -31,7 +34,7 @@ export function Experiences() {
           const dark = panelTone[i] === 'dark'
           const rightColumn = i % 2 === 1
           return (
-            <Reveal key={e.title} delay={(i % 2) * 140}>
+            <TranslationBoundary key={e.title}><Reveal key={e.title} delay={(i % 2) * 140}>
               <Link href={e.href} className="group block">
                 <div className="relative aspect-[7/5] overflow-hidden rounded-sm bg-muted">
                   <Image
@@ -70,7 +73,7 @@ export function Experiences() {
                       dark ? 'text-secondary-foreground/75' : 'text-foreground/70',
                     )}
                   >
-                    {e.text}
+                    <TranslatedText text={e.text} />
                   </p>
                   <span
                     className={cn(
@@ -85,7 +88,7 @@ export function Experiences() {
                   </span>
                 </div>
               </Link>
-            </Reveal>
+            </Reveal></TranslationBoundary>
           )
         })}
       </div>
@@ -99,6 +102,6 @@ export function Experiences() {
           <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
         </Link>
       </Reveal>
-    </section>
+    </section></TranslationBoundary>
   )
 }

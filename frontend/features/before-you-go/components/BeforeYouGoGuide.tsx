@@ -1,18 +1,21 @@
+import { TranslatedText } from '@/components/common/TranslatedText'
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
-import Link from 'next/link'
+import Link from '@/components/common/SiteLink'
 import { packing, respect, topics } from '../data/before-you-go.data'
 
 export function BeforeYouGoGuide() {
   return (
-    <div className="shell grid gap-12 py-16 sm:py-20 lg:grid-cols-[240px_1fr] lg:gap-16 lg:py-24">
+    <TranslationBoundary><div className="shell grid gap-12 py-16 sm:py-20 lg:grid-cols-[240px_1fr] lg:gap-16 lg:py-24">
       <nav aria-label="On this page" className="hidden lg:block">
         <ul className="sticky top-28 space-y-2.5 border-l border-border pl-5 text-sm">
           {[...topics, { id: 'packing', title: 'What to pack' }, { id: 'respect', title: 'Travel with respect' }].map((t) => (
-            <li key={t.id}>
+            <TranslationBoundary key={t.id}><li key={t.id}>
               <a href={`#${t.id}`} className="text-muted-foreground transition-colors hover:text-accent">
                 {t.title}
               </a>
-            </li>
+            </li></TranslationBoundary>
           ))}
         </ul>
       </nav>
@@ -27,16 +30,16 @@ export function BeforeYouGoGuide() {
         </Reveal>
 
         {topics.map((t) => (
-          <Reveal key={t.id} as="section" className="scroll-mt-28 border-t border-border pt-10 mt-12" >
+          <TranslationBoundary key={t.id}><Reveal key={t.id} as="section" className="scroll-mt-28 border-t border-border pt-10 mt-12" >
             <h2 id={t.id} className="scroll-mt-28 font-serif text-3xl text-foreground">{t.title}</h2>
             <div className="mt-4 space-y-4">
               {t.text.map((p) => (
-                <p key={p.slice(0, 30)} className="text-pretty leading-relaxed text-muted-foreground">
+                <TranslationBoundary key={p.slice(0, 30)}><p key={p.slice(0, 30)} className="text-pretty leading-relaxed text-muted-foreground">
                   {p}
-                </p>
+                </p></TranslationBoundary>
               ))}
             </div>
-          </Reveal>
+          </Reveal></TranslationBoundary>
         ))}
 
         <Reveal as="section" className="mt-12 border-t border-border pt-10">
@@ -50,10 +53,10 @@ export function BeforeYouGoGuide() {
               { k: 'Danakil', v: 'Heat, dehydration, rough roads and remote conditions. Low altitude.' },
               { k: 'Simien', v: 'Altitude, cold, walking and terrain. Variable weather.' },
             ].map((r) => (
-              <div key={r.k} className="border border-border bg-card p-5">
+              <TranslationBoundary key={r.k}><div key={r.k} className="border border-border bg-card p-5">
                 <dt className="eyebrow mb-2 text-accent">{r.k}</dt>
                 <dd className="text-sm leading-relaxed text-foreground">{r.v}</dd>
-              </div>
+              </div></TranslationBoundary>
             ))}
           </dl>
         </Reveal>
@@ -62,15 +65,14 @@ export function BeforeYouGoGuide() {
           <h2 id="packing" className="scroll-mt-28 font-serif text-3xl text-foreground">What to pack for the Danakil</h2>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2 sm:gap-x-10">
             {packing.map((item) => (
-              <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-foreground">
+              <TranslationBoundary key={item}><li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-foreground">
                 <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                 {item}
-              </li>
+              </li></TranslationBoundary>
             ))}
           </ul>
           <p className="mt-6 text-pretty text-sm leading-relaxed text-muted-foreground">
-            Most importantly: do not underestimate the heat. For medical advice, consult a qualified
-            healthcare professional before you travel, and make sure your travel insurance covers remote areas.
+            <TranslatedText text={"Most importantly: do not underestimate the heat. For medical advice, consult a qualified healthcare professional before you travel, and make sure your travel insurance covers remote areas."} />
           </p>
         </Reveal>
 
@@ -82,10 +84,10 @@ export function BeforeYouGoGuide() {
           </p>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2 sm:gap-x-10">
             {respect.map((item) => (
-              <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-foreground">
+              <TranslationBoundary key={item}><li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-foreground">
                 <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                 {item}
-              </li>
+              </li></TranslationBoundary>
             ))}
           </ul>
           <p className="mt-6 text-sm text-muted-foreground">
@@ -103,6 +105,6 @@ export function BeforeYouGoGuide() {
           </p>
         </Reveal>
       </div>
-    </div>
+    </div></TranslationBoundary>
   )
 }

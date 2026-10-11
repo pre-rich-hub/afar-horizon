@@ -1,15 +1,17 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import { EnquiryForm } from '@/features/enquiries'
 import { contact } from '@/lib/constants/company'
 import { Mail, MessageCircle, Phone } from 'lucide-react'
-import Link from 'next/link'
+import Link from '@/components/common/SiteLink'
 import { steps } from '../data/plan.data'
 
 export function PlanRequest({ subject }: { subject?: string }) {
   const whatsapp = `https://wa.me/${contact.whatsapp.replace(/[^0-9]/g, '')}`
 
   return (
-    <section className="shell grid gap-12 py-16 sm:py-20 lg:grid-cols-[1fr_1.6fr] lg:gap-20 lg:py-28">
+    <TranslationBoundary><section className="shell grid gap-12 py-16 sm:py-20 lg:grid-cols-[1fr_1.6fr] lg:gap-20 lg:py-28">
       <Reveal>
         <p className="eyebrow mb-5 text-accent">How it works</p>
         <h2 className="max-w-[18ch] text-balance text-3xl leading-[1.1] text-foreground sm:text-4xl">
@@ -17,13 +19,13 @@ export function PlanRequest({ subject }: { subject?: string }) {
         </h2>
         <ol className="mt-10 space-y-7">
           {steps.map((s, i) => (
-            <li key={s.title} className="flex gap-5">
+            <TranslationBoundary key={s.title}><li key={s.title} className="flex gap-5">
               <span className="font-serif text-2xl leading-none text-accent">{String(i + 1).padStart(2, '0')}</span>
               <div>
                 <p className="font-semibold text-foreground">{s.title}</p>
                 <p className="mt-1 text-pretty text-sm leading-relaxed text-muted-foreground">{s.text}</p>
               </div>
-            </li>
+            </li></TranslationBoundary>
           ))}
         </ol>
 
@@ -59,6 +61,6 @@ export function PlanRequest({ subject }: { subject?: string }) {
       <Reveal delay={120}>
         <EnquiryForm subject={subject} defaultStyles={[]} />
       </Reveal>
-    </section>
+    </section></TranslationBoundary>
   )
 }

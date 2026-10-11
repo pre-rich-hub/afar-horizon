@@ -1,16 +1,18 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { SectionHeading } from '@/components/common/SectionHeading'
 import { galleryCategories, galleryPhotos } from '../data/gallery.data'
 import { GalleryGrid } from './GalleryGrid'
 
 export function GalleryCollection() {
   return (
-    <section className="shell py-16 sm:py-20 lg:py-28">
+    <TranslationBoundary><section className="shell py-16 sm:py-20 lg:py-28">
         <SectionHeading
           eyebrow="The Collection"
           title="Moments from the road"
-          aside="Tap any photograph to see it in full. Every scene here sits on a route we run — ask us how to stand where the camera stood."
+          aside="Explore mountain landscapes, rock-hewn churches, local crafts and moments along the journey. Filter by theme, then tap any photograph to see it in full and read its caption."
         />
         <GalleryGrid photos={galleryPhotos} categories={galleryCategories} />
-      </section>
+      </section></TranslationBoundary>
   )
 }

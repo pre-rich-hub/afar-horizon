@@ -1,9 +1,11 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { BookingCard } from '@/components/common/BookingCard'
 import { Reveal } from '@/components/common/Reveal'
 import type { Destination } from '../types/destination.types'
 
 export function DestinationBooking({ d }: { d: Destination }) {
-  return (<aside className="lg:col-start-2 lg:row-span-3 lg:row-start-1">
+  return (<TranslationBoundary><aside className="lg:col-start-2 lg:row-span-3 lg:row-start-1">
           <div className="lg:sticky lg:top-28">
             <Reveal delay={120}>
               <BookingCard
@@ -21,5 +23,5 @@ export function DestinationBooking({ d }: { d: Destination }) {
               />
             </Reveal>
           </div>
-        </aside>)
+        </aside></TranslationBoundary>)
 }

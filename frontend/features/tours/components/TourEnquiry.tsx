@@ -1,10 +1,12 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import { EnquiryForm } from '@/features/enquiries'
 import type { Tour } from '../types/tour.types'
 
 export function TourEnquiry({ t }: { t: Tour }) {
   return (
-    <section
+    <TranslationBoundary><section
         id="enquire"
         className="border-t border-border bg-secondary text-secondary-foreground"
       >
@@ -30,6 +32,6 @@ export function TourEnquiry({ t }: { t: Tour }) {
             <EnquiryForm subject={`${t.days} ${t.title}`} defaultStyles={[]} />
           </Reveal>
         </div>
-      </section>
+      </section></TranslationBoundary>
   )
 }

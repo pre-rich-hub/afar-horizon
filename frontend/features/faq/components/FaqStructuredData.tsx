@@ -1,6 +1,8 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { JsonLd } from '@/components/common/JsonLd'
 import { faqSchema } from '../utils/faq.schema'
 
 export function FaqStructuredData() {
-  return <JsonLd data={faqSchema()} />
+  return <TranslationBoundary><JsonLd data={faqSchema()} /></TranslationBoundary>
 }

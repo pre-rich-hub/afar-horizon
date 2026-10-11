@@ -1,3 +1,6 @@
+import { TranslatedText } from '@/components/common/TranslatedText'
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import { EnquiryForm } from '@/features/enquiries'
 import { contact } from '@/lib/constants/company'
@@ -6,7 +9,7 @@ import { Detail } from './Detail'
 
 export function ContactEnquiry() {
   return (
-    <section className="shell grid gap-12 py-16 sm:py-20 lg:grid-cols-[1fr_1.15fr] lg:gap-20 lg:py-28">
+    <TranslationBoundary><section className="shell grid gap-12 py-16 sm:py-20 lg:grid-cols-[1fr_1.15fr] lg:gap-20 lg:py-28">
         <Reveal>
           <p className="eyebrow mb-5 text-accent">
             Get In Touch
@@ -15,8 +18,7 @@ export function ContactEnquiry() {
             Tell us about the journey in your head
           </h2>
           <p className="mt-6 max-w-md text-pretty leading-relaxed text-muted-foreground sm:text-lg">
-            However rough the idea, it is enough. We will come back with
-            questions, a route worth considering, and a straight answer on cost.
+            <TranslatedText text={"However rough the idea, it is enough. We will come back with questions, a route worth considering, and a straight answer on cost."} />
           </p>
 
           <dl className="mt-12 space-y-7">
@@ -58,6 +60,6 @@ export function ContactEnquiry() {
         <Reveal delay={120}>
           <EnquiryForm />
         </Reveal>
-      </section>
+      </section></TranslationBoundary>
   )
 }

@@ -1,7 +1,7 @@
 const assert = require('node:assert/strict')
 const { test } = require('node:test')
 const { createLoader } = require('./load-typescript.cjs')
-const site = { url: 'https://afarhorizon.com', name: 'Afar Horizon Expeditions' }
+const site = { url: 'https://www.afarhorizon.com', name: 'Afar Horizon Expeditions' }
 const load = createLoader({ '@/lib/config/site': { site } })
 const { serializeJsonLd } = load('@/lib/seo/json-ld')
 const { businessSchema } = load('@/features/about/utils/business.schema')

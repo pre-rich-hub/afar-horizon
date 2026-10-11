@@ -1,27 +1,29 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import { AlertTriangle, Check } from 'lucide-react'
 import type { Destination } from '../types/destination.types'
 
 export function DestinationHighlights({ d }: { d: Destination }) {
-  return (<Reveal className="border-t border-border pt-12 lg:col-start-1 lg:row-start-2 lg:mt-14">
+  return (<TranslationBoundary><Reveal className="border-t border-border pt-12 lg:col-start-1 lg:row-start-2 lg:mt-14">
             <p className="eyebrow mb-6 text-primary">
               Highlights
             </p>
             <ul className="grid gap-5 sm:grid-cols-2 sm:gap-x-10">
               {d.highlights.map((h) => (
-                <li key={h} className="flex items-start gap-3.5">
+                <TranslationBoundary key={h}><li key={h} className="flex items-start gap-3.5">
                   <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">
                     <Check className="h-3 w-3" />
                   </span>
                   <span className="text-pretty text-sm leading-relaxed text-foreground sm:text-base">
                     {h}
                   </span>
-                </li>
+                </li></TranslationBoundary>
               ))}
             </ul>
 
             {d.sections?.map((sec) => (
-              <div key={sec.title} className="mt-12">
+              <TranslationBoundary key={sec.title}><div key={sec.title} className="mt-12">
                 <h3 className="font-serif text-2xl text-foreground sm:text-[1.75rem]">{sec.title}</h3>
                 {sec.text && (
                   <p className="mt-3 max-w-2xl text-pretty leading-relaxed text-muted-foreground">{sec.text}</p>
@@ -29,14 +31,14 @@ export function DestinationHighlights({ d }: { d: Destination }) {
                 {sec.items && (
                   <ul className="mt-4 grid gap-2.5 sm:grid-cols-2 sm:gap-x-10">
                     {sec.items.map((item) => (
-                      <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-foreground">
+                      <TranslationBoundary key={item}><li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-foreground">
                         <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                         {item}
-                      </li>
+                      </li></TranslationBoundary>
                     ))}
                   </ul>
                 )}
-              </div>
+              </div></TranslationBoundary>
             ))}
 
             {d.note && (
@@ -54,13 +56,13 @@ export function DestinationHighlights({ d }: { d: Destination }) {
                 <h3 className="font-serif text-2xl text-foreground sm:text-[1.75rem]">Questions travellers ask</h3>
                 <dl className="mt-4 divide-y divide-border border-y border-border">
                   {d.faqs.map((f) => (
-                    <div key={f.q} className="py-5">
+                    <TranslationBoundary key={f.q}><div key={f.q} className="py-5">
                       <dt className="font-medium text-foreground">{f.q}</dt>
                       <dd className="mt-1.5 text-pretty text-sm leading-relaxed text-muted-foreground">{f.a}</dd>
-                    </div>
+                    </div></TranslationBoundary>
                   ))}
                 </dl>
               </div>
             )}
-          </Reveal>)
+          </Reveal></TranslationBoundary>)
 }

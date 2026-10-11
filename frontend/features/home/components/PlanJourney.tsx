@@ -1,3 +1,5 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import { EnquiryForm } from '@/features/enquiries'
 import { Check } from 'lucide-react'
@@ -5,7 +7,7 @@ import Image from 'next/image'
 
 export function PlanJourney() {
   return (
-    <section
+    <TranslationBoundary><section
       id="plan"
       className="relative overflow-hidden bg-primary text-primary-foreground"
     >
@@ -40,7 +42,7 @@ export function PlanJourney() {
               'Clear pricing: what is included and what is not',
               'Honest about conditions before you book',
             ].map((item) => (
-              <li
+              <TranslationBoundary key={item}><li
                 key={item}
                 className="flex items-start gap-3 text-sm leading-relaxed text-primary-foreground/90 sm:text-base"
               >
@@ -48,7 +50,7 @@ export function PlanJourney() {
                   <Check className="h-3 w-3" />
                 </span>
                 {item}
-              </li>
+              </li></TranslationBoundary>
             ))}
           </ul>
         </Reveal>
@@ -57,6 +59,6 @@ export function PlanJourney() {
           <EnquiryForm defaultStyles={[]} />
         </Reveal>
       </div>
-    </section>
+    </section></TranslationBoundary>
   )
 }

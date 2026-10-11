@@ -1,4 +1,6 @@
 'use client'
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+
 
 import { useWhyTravel } from '../hooks/useWhyTravel'
 
@@ -16,7 +18,7 @@ export function WhyTravel() {
   const { n, active, paused, setPaused, dragStart, go, onPointerUp } = useWhyTravel()
 
   return (
-    <section
+    <TranslationBoundary><section
       id="why-us"
       aria-labelledby="why-us-title"
       className="relative overflow-hidden bg-background py-20 sm:py-24 lg:py-32"
@@ -65,7 +67,7 @@ export function WhyTravel() {
               const isActive = offset === 0
 
               return (
-                <button
+                <TranslationBoundary key={s.title}><button
                   key={s.title}
                   type="button"
                   tabIndex={isActive ? -1 : depth === 1 ? 0 : -1}
@@ -94,7 +96,7 @@ export function WhyTravel() {
                       isActive && !paused && 'scale-[1.05]',
                     )}
                   />
-                </button>
+                </button></TranslationBoundary>
               )
             })}
 
@@ -105,7 +107,7 @@ export function WhyTravel() {
           <div className="shell mt-12 sm:mt-14">
             <div className="mx-auto grid max-w-[60ch] text-center" aria-live="polite">
               {slides.map((s, i) => (
-                <div
+                <TranslationBoundary key={s.title}><div
                   key={s.title}
                   aria-hidden={i !== active}
                   className={cn(
@@ -119,7 +121,7 @@ export function WhyTravel() {
                   <p className="mt-4 text-pretty leading-relaxed text-muted-foreground sm:text-lg">
                     {s.text}
                   </p>
-                </div>
+                </div></TranslationBoundary>
               ))}
             </div>
 
@@ -129,7 +131,7 @@ export function WhyTravel() {
               </span>
               <div className="flex gap-1.5">
                 {slides.map((s, i) => (
-                  <button
+                  <TranslationBoundary key={s.title}><button
                     key={s.title}
                     type="button"
                     onClick={() => go(i)}
@@ -145,7 +147,7 @@ export function WhyTravel() {
                           : 'w-5 bg-foreground/25 group-hover:bg-foreground/50',
                       )}
                     />
-                  </button>
+                  </button></TranslationBoundary>
                 ))}
               </div>
               <span className="font-serif text-sm tabular-nums text-muted-foreground">
@@ -155,14 +157,14 @@ export function WhyTravel() {
           </div>
         </div>
       </Reveal>
-    </section>
+    </section></TranslationBoundary>
   )
 }
 
 function Arrow({ side, onClick }: { side: 'left' | 'right'; onClick: () => void }) {
   const Icon = side === 'left' ? ChevronLeft : ChevronRight
   return (
-    <button
+    <TranslationBoundary><button
       type="button"
       onClick={onClick}
       onPointerDown={(e) => e.stopPropagation()}
@@ -173,6 +175,6 @@ function Arrow({ side, onClick }: { side: 'left' | 'right'; onClick: () => void 
       )}
     >
       <Icon className="h-5 w-5" strokeWidth={1.75} />
-    </button>
+    </button></TranslationBoundary>
   )
 }

@@ -1,3 +1,5 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import {
 FacebookIcon,
 GetYourGuideMark,
@@ -17,7 +19,7 @@ import { NewsletterForm } from '@/features/newsletter'
 import { expeditionCollections } from '@/features/tours'
 import { contact } from '@/lib/constants/company'
 import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react'
-import Link from 'next/link'
+import Link from '@/components/common/SiteLink'
 
 // Social links, shown as brand marks on white discs.
 const socials: { name: string; href: string; icon: React.ReactNode }[] = [
@@ -134,7 +136,7 @@ const payments: { name: string; mark: React.ReactNode }[] = [
 
 export function SiteFooter() {
   return (
-    <footer className="bg-charcoal text-background">
+    <TranslationBoundary><footer className="bg-charcoal text-background">
       <div className="shell pb-10 pt-16 sm:pt-20 lg:pt-24">
         <div className="grid gap-12 lg:grid-cols-[1.35fr_1fr_1fr_1fr] lg:gap-x-12 lg:gap-y-14">
           {/* Brand, contact and socials */}
@@ -180,34 +182,34 @@ export function SiteFooter() {
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               {socials.map((s) => (
-                <a
+                <TranslationBoundary key={s.name}><a
                   key={s.name}
                   href={s.href}
                   aria-label={s.name}
                   className="flex h-12 w-12 items-center justify-center rounded-full bg-background shadow-[0_8px_20px_-10px_black] transition-transform duration-300 hover:-translate-y-1"
                 >
                   {s.icon}
-                </a>
+                </a></TranslationBoundary>
               ))}
             </div>
           </div>
 
           {/* Link columns */}
           {columns.map((col) => (
-            <nav key={col.title} aria-label={col.title}>
+            <TranslationBoundary key={col.title}><nav key={col.title} aria-label={col.title}>
               <h3 className="mb-6 font-sans text-[12px] font-semibold uppercase tracking-[0.26em] text-accent">
                 {col.title}
               </h3>
               <ul className="space-y-4">
                 {col.links.map((link) => (
-                  <li key={link.label}>
+                  <TranslationBoundary key={link.label}><li key={link.label}>
                     <Link
                       href={link.href}
                       className="text-[15px] text-background/80 transition-colors duration-300 hover:text-accent"
                     >
                       {link.label}
                     </Link>
-                  </li>
+                  </li></TranslationBoundary>
                 ))}
               </ul>
               {col.more && (
@@ -219,7 +221,7 @@ export function SiteFooter() {
                   <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
               )}
-            </nav>
+            </nav></TranslationBoundary>
           ))}
 
           {/* Newsletter, spanning the link columns */}
@@ -248,11 +250,11 @@ export function SiteFooter() {
             </p>
             <ul className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
               {platforms.map((p) => (
-                <li key={p.name}>
+                <TranslationBoundary key={p.name}><li key={p.name}>
                   <a href={p.href} aria-label={p.name} className={logoTile}>
                     {p.mark}
                   </a>
-                </li>
+                </li></TranslationBoundary>
               ))}
             </ul>
           </div>
@@ -265,9 +267,9 @@ export function SiteFooter() {
             </p>
             <ul className="mt-6 grid grid-cols-3 gap-3">
               {payments.map((p) => (
-                <li key={p.name} aria-label={p.name} className={logoTile}>
+                <TranslationBoundary key={p.name}><li key={p.name} aria-label={p.name} className={logoTile}>
                   {p.mark}
-                </li>
+                </li></TranslationBoundary>
               ))}
             </ul>
           </div>
@@ -299,6 +301,6 @@ export function SiteFooter() {
           </div>
         </div>
       </div>
-    </footer>
+    </footer></TranslationBoundary>
   )
 }

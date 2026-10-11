@@ -1,4 +1,6 @@
 'use client'
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+
 
 import { defaultImage } from '@/lib/config/cloudinary'
 
@@ -10,7 +12,7 @@ import type { Tour } from '@/features/tours'
 import { cn } from '@/lib/utils'
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react'
 import Image from 'next/image'
-import Link from 'next/link'
+import Link from '@/components/common/SiteLink'
 
 // Left inset that lines the first item up with the 1280px page shell, while
 // still letting the rail bleed off both edges of the viewport.
@@ -19,7 +21,7 @@ export function TourRail({ tours }: { tours: Tour[] }) {
   const { track, edges, step } = useTourRail()
 
   return (
-    <div className="relative">
+    <TranslationBoundary><div className="relative">
       {/* Phones and tablets: heading sits above the rail */}
       <div className="shell mb-8 sm:mb-10 lg:hidden">
         <p className="eyebrow mb-4 text-accent">Choose Your Horizon</p>
@@ -59,7 +61,7 @@ export function TourRail({ tours }: { tours: Tour[] }) {
         </div>
 
         {tours.map((t) => (
-          <TourPanel key={t.slug} tour={t} />
+          <TranslationBoundary key={t.slug}><TourPanel key={t.slug} tour={t} /></TranslationBoundary>
         ))}
 
         <CustomPanel />
@@ -97,7 +99,7 @@ export function TourRail({ tours }: { tours: Tour[] }) {
         <RailButton side="left" disabled={edges.start} onClick={() => step(-1)} />
         <RailButton side="right" disabled={edges.end} onClick={() => step(1)} />
       </div>
-    </div>
+    </div></TranslationBoundary>
   )
 }
 
@@ -106,7 +108,7 @@ function TourPanel({ tour: t }: { tour: Tour }) {
   const price = t.from.replace(' per person', '')
 
   return (
-    <Link
+    <TranslationBoundary><Link
       href={`/expeditions/${t.slug}`}
       data-card
       className={cn(
@@ -152,13 +154,13 @@ function TourPanel({ tour: t }: { tour: Tour }) {
           <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
         </span>
       </div>
-    </Link>
+    </Link></TranslationBoundary>
   )
 }
 
 function CustomPanel() {
   return (
-    <Link
+    <TranslationBoundary><Link
       href="/plan"
       className={cn(
         CARD,
@@ -190,7 +192,7 @@ function CustomPanel() {
           <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
         </span>
       </div>
-    </Link>
+    </Link></TranslationBoundary>
   )
 }
 
@@ -207,7 +209,7 @@ function RailButton({
 }) {
   const Icon = side === 'left' ? ChevronLeft : ChevronRight
   return (
-    <button
+    <TranslationBoundary><button
       type="button"
       onClick={onClick}
       disabled={disabled}
@@ -218,6 +220,6 @@ function RailButton({
       )}
     >
       <Icon className="h-5 w-5" strokeWidth={1.5} />
-    </button>
+    </button></TranslationBoundary>
   )
 }

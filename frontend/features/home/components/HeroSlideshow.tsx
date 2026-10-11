@@ -1,4 +1,6 @@
 'use client'
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+
 
 import { useHeroSlideshow } from '../hooks/useHeroSlideshow'
 
@@ -14,13 +16,13 @@ export function HeroSlideshow({ children }: { children?: ReactNode }) {
   const { index, current, prev, prepared, markLoaded } = useHeroSlideshow()
 
   return (
-    <>
+    <TranslationBoundary><>
       <div className="absolute inset-0 -z-10">
         {slides.map((slide, i) => {
           const visible = i === index || i === prev
           if (!visible && i !== prepared) return null
           return (
-            <div
+            <TranslationBoundary key={`${i}-${slide.src}`}><div
               key={`${i}-${slide.src}`}
               aria-hidden={i !== index}
               className={cn(
@@ -43,7 +45,7 @@ export function HeroSlideshow({ children }: { children?: ReactNode }) {
                   i % 2 === 1 && 'origin-top-right',
                 )}
               />
-            </div>
+            </div></TranslationBoundary>
           )
         })}
         {children}
@@ -60,6 +62,6 @@ export function HeroSlideshow({ children }: { children?: ReactNode }) {
           {current.credit ? `Photo: ${current.credit}${current.license ? `, ${current.license}` : ''}` : 'Client-provided photo collection'}
         </a>
       </p>
-    </>
+    </></TranslationBoundary>
   )
 }

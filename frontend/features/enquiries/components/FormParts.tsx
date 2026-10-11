@@ -1,3 +1,5 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { cn } from '@/lib/utils'
 import { ArrowRight, Check } from 'lucide-react'
 
@@ -23,7 +25,7 @@ export function FormShell({
   footnote: string
 }) {
   return (
-    <div className="border border-border bg-card p-6 shadow-[0_28px_70px_-40px_oklch(0.185_0.012_58/0.4)] sm:p-8 lg:p-10">
+    <TranslationBoundary><div className="border border-border bg-card p-6 shadow-[0_28px_70px_-40px_oklch(0.185_0.012_58/0.4)] sm:p-8 lg:p-10">
       <form
         onSubmit={async (e) => {
           e.preventDefault()
@@ -59,28 +61,28 @@ export function FormShell({
           <p className="mt-3 text-xs leading-relaxed text-muted-foreground">{footnote}</p>
         </div>
       </form>
-    </div>
+    </div></TranslationBoundary>
   )
 }
 
 export function Sent({ text }: { text: string }) {
   return (
-    <div className="flex min-h-[380px] flex-col items-center justify-center border border-border bg-card px-6 py-16 text-center">
+    <TranslationBoundary><div className="flex min-h-[380px] flex-col items-center justify-center border border-border bg-card px-6 py-16 text-center">
       <span className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground">
         <Check className="h-6 w-6" />
       </span>
       <h3 className="font-serif text-3xl text-foreground">Request received</h3>
       <p className="mt-4 max-w-sm text-pretty leading-relaxed text-muted-foreground">{text}</p>
-    </div>
+    </div></TranslationBoundary>
   )
 }
 
 export function Group({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <fieldset>
+    <TranslationBoundary><fieldset>
       <legend className="mb-4 font-serif text-xl text-foreground">{title}</legend>
       <div className="grid gap-5 sm:grid-cols-2">{children}</div>
-    </fieldset>
+    </fieldset></TranslationBoundary>
   )
 }
 
@@ -96,7 +98,7 @@ export function Chips({
   toggle: (v: string) => void
 }) {
   return (
-    <fieldset>
+    <TranslationBoundary><fieldset>
       <legend className="mb-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
         {label}
       </legend>
@@ -104,7 +106,7 @@ export function Chips({
         {options.map((o) => {
           const on = selected.includes(o)
           return (
-            <button
+            <TranslationBoundary key={o}><button
               key={o}
               type="button"
               aria-pressed={on}
@@ -117,21 +119,21 @@ export function Chips({
               )}
             >
               {o}
-            </button>
+            </button></TranslationBoundary>
           )
         })}
       </div>
-    </fieldset>
+    </fieldset></TranslationBoundary>
   )
 }
 
 export function Field({ label, id, children }: { label: string; id: string; children: React.ReactNode }) {
   return (
-    <label htmlFor={id} className="block">
+    <TranslationBoundary><label htmlFor={id} className="block">
       <span className="mb-2 block text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
         {label}
       </span>
       {children}
-    </label>
+    </label></TranslationBoundary>
   )
 }

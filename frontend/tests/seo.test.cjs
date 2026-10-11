@@ -4,17 +4,17 @@ const { createLoader } = require('./load-typescript.cjs')
 
 const { getSiteConfig } = createLoader()('@/lib/config/site')
 const production = {
-  NODE_ENV: 'production', SITE_URL: 'https://afarhorizon.com/',
+  NODE_ENV: 'production', SITE_URL: 'https://www.afarhorizon.com/',
   SEO_INDEXABLE: 'true', DEPLOYMENT_ENV: 'production',
 }
 
 test('production metadata requires a valid origin and explicit indexing configuration', () => {
-  assert.equal(getSiteConfig(production).url, 'https://afarhorizon.com')
+  assert.equal(getSiteConfig(production).url, 'https://www.afarhorizon.com')
   assert.equal(getSiteConfig(production).indexable, true)
   assert.throws(() => getSiteConfig({ NODE_ENV: 'production' }), /SITE_URL/)
   for (const origin of [
-    'http://afarhorizon.com', 'https://afarhorizon.com/blog',
-    'https://afarhorizon.com?campaign=1', 'https://afarhorizon.com/#top',
+    'http://afarhorizon.com', 'https://www.afarhorizon.com/blog',
+    'https://www.afarhorizon.com?campaign=1', 'https://www.afarhorizon.com/#top',
     'https://user:password@afarhorizon.com', 'https://localhost:3000', 'invalid',
   ]) assert.throws(() => getSiteConfig({ ...production, SITE_URL: origin }))
   assert.throws(() => getSiteConfig({ ...production, SEO_INDEXABLE: 'yes' }), /SEO_INDEXABLE/)
@@ -45,7 +45,7 @@ test('page metadata keeps canonical and social details on the same page', () => 
   })
   assert.equal(article.title.absolute, 'Erta Ale | Afar Horizon Expeditions')
   assert.equal(pageTitle(article.title.absolute), article.title.absolute)
-  assert.equal(article.alternates.canonical, 'https://afarhorizon.com/blog/erta-ale-what-to-expect')
+  assert.equal(article.alternates.canonical, 'https://www.afarhorizon.com/blog/erta-ale-what-to-expect')
   assert.equal(article.openGraph.url, article.alternates.canonical)
   assert.equal(article.openGraph.title, article.title.absolute)
   assert.equal(article.twitter.title, article.title.absolute)
@@ -65,6 +65,6 @@ test('a page cannot enable indexing in a preview deployment', () => {
   const { createPageMetadata } = createLoader({ '@/lib/config/site': { site } })('@/lib/seo/metadata')
   const metadata = createPageMetadata({ title: 'Afar', description: 'Afar travel', path: '/', index: true })
   assert.equal(metadata.robots.index, false)
-  assert.equal(metadata.alternates.canonical, 'https://afarhorizon.com/')
+  assert.equal(metadata.alternates.canonical, 'https://www.afarhorizon.com/')
   assert.equal(metadata.openGraph.url, metadata.alternates.canonical)
 })

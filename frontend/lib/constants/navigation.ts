@@ -22,7 +22,7 @@ export const navLinks: NavLink[] = [
     ],
   },
   { label: 'About Us', href: '/about' },
-  { label: 'Journal', href: '/blog' },
+  { label: 'Gallery', href: '/gallery' },
 ]
 
 export const planJourneyLink = { label: 'Plan My Journey', href: '/plan' }

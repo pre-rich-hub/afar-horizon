@@ -1,4 +1,6 @@
 'use client'
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+
 
 import { cn } from '@/lib/utils';
 import { useEffect, useState } from 'react';
@@ -23,13 +25,13 @@ export function SectionNav({ items }: { items: { id: string; label: string }[] }
   }, [items])
 
   return (
-    <nav
+    <TranslationBoundary><nav
       aria-label="On this page"
       className="sticky top-16 z-30 border-b border-border bg-background/92 backdrop-blur-xl sm:top-[68px]"
     >
       <ul className="shell flex gap-7 overflow-x-auto [scrollbar-width:none] sm:gap-10 [&::-webkit-scrollbar]:hidden">
         {items.map(({ id, label }) => (
-          <li key={id} className="shrink-0">
+          <TranslationBoundary key={id}><li key={id} className="shrink-0">
             <a
               href={`#${id}`}
               aria-current={active === id ? 'true' : undefined}
@@ -46,9 +48,9 @@ export function SectionNav({ items }: { items: { id: string; label: string }[] }
                 )}
               />
             </a>
-          </li>
+          </li></TranslationBoundary>
         ))}
       </ul>
-    </nav>
+    </nav></TranslationBoundary>
   )
 }

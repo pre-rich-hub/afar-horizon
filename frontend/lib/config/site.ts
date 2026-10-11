@@ -5,7 +5,7 @@ type Environment = Record<string, string | undefined>
 export function getSiteConfig(env: Environment = process.env) {
   const productionBuild = env.NODE_ENV === 'production'
   if (!env.SITE_URL && productionBuild) {
-    throw new Error('SITE_URL must be set to the confirmed production origin (https://afarhorizon.com).')
+    throw new Error('SITE_URL must be set to the confirmed production origin (https://www.afarhorizon.com).')
   }
 
   const url = new URL(env.SITE_URL ?? 'http://localhost:3000')
@@ -33,6 +33,7 @@ export function getSiteConfig(env: Environment = process.env) {
     name: 'Afar Horizon Expeditions',
     url: url.origin,
     defaultImage,
+    production: productionBuild && confirmedProduction && !preview,
     indexable: productionBuild && env.SEO_INDEXABLE === 'true' && confirmedProduction && !preview,
   }
 }

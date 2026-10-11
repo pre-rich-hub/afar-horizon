@@ -1,9 +1,11 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { HeroActions } from './HeroActions'
 import { HeroSlideshow } from './HeroSlideshow'
 
 export function Hero() {
   return (
-    <section
+    <TranslationBoundary><section
       id="top"
       className="relative isolate flex min-h-[100svh] w-full flex-col justify-end overflow-hidden"
     >
@@ -28,6 +30,6 @@ export function Hero() {
           <HeroActions />
         </div>
       </div>
-    </section>
+    </section></TranslationBoundary>
   )
 }

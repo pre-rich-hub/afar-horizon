@@ -10,7 +10,7 @@ const { tours } = load('@/features/tours/data/tour.data')
 const { posts } = load('@/features/blog/data/post.data')
 const preview = process.argv.includes('--preview')
 const baseUrl = process.argv.find(arg => arg.startsWith('--base-url='))?.slice(11)
-const origin = 'https://afarhorizon.com'
+const origin = 'https://www.afarhorizon.com'
 
 function staticRoutes(dir, parts = []) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap(entry => {

@@ -1,4 +1,6 @@
 'use client'
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+
 
 import { defaultImage } from '@/lib/config/cloudinary'
 
@@ -10,7 +12,7 @@ import { tours as staticTours } from '@/features/tours'
 import { cn } from '@/lib/utils'
 import { ChevronLeft, ChevronRight, MapPin } from 'lucide-react'
 import Image from 'next/image'
-import Link from 'next/link'
+import Link from '@/components/common/SiteLink'
 
 // The list is rendered three times so the track can loop endlessly: we keep
 // the scroll position inside the middle copy and silently jump by one copy's
@@ -20,7 +22,7 @@ export function StoryCarousel({ tours = staticTours }: { tours?: Tour[] }) {
   const { track, step, slides } = useStoryCarousel({ tours })
 
   return (
-    <section
+    <TranslationBoundary><section
       id="stories"
       aria-labelledby="stories-title"
       className="overflow-hidden bg-background py-20 sm:py-24 lg:py-32"
@@ -53,7 +55,7 @@ export function StoryCarousel({ tours = staticTours }: { tours?: Tour[] }) {
           {slides.map(({ tour: t, copy, index }) => {
             const clone = copy !== 1
             return (
-              <Link
+              <TranslationBoundary key={`${copy}-${t.slug}`}><Link
                 key={`${copy}-${t.slug}`}
                 href={`/expeditions/${t.slug}`}
                 aria-hidden={clone || undefined}
@@ -91,7 +93,7 @@ export function StoryCarousel({ tours = staticTours }: { tours?: Tour[] }) {
                     </span>
                   </div>
                 </div>
-              </Link>
+              </Link></TranslationBoundary>
             )
           })}
         </div>
@@ -99,7 +101,7 @@ export function StoryCarousel({ tours = staticTours }: { tours?: Tour[] }) {
         <CarouselArrow side="left" onClick={() => step(-1)} />
         <CarouselArrow side="right" onClick={() => step(1)} />
       </Reveal>
-    </section>
+    </section></TranslationBoundary>
   )
 }
 
@@ -112,7 +114,7 @@ function CarouselArrow({
 }) {
   const Icon = side === 'left' ? ChevronLeft : ChevronRight
   return (
-    <button
+    <TranslationBoundary><button
       type="button"
       onClick={onClick}
       aria-label={side === 'left' ? 'Previous journey' : 'Next journey'}
@@ -122,6 +124,6 @@ function CarouselArrow({
       )}
     >
       <Icon className="h-5 w-5" strokeWidth={1.5} />
-    </button>
+    </button></TranslationBoundary>
   )
 }

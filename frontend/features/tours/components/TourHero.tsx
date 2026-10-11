@@ -1,3 +1,5 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { PageHero } from '@/components/common/PageHero'
 import type { Tour } from '../types/tour.types'
 import { formatDuration, getStartEnd } from '../utils/tour.utils'
@@ -5,7 +7,7 @@ import { formatDuration, getStartEnd } from '../utils/tour.utils'
 export function TourHero({ t }: { t: Tour }) {
   const priceOnRequest = t.from === 'Price on request'
   return (
-    <PageHero
+    <TranslationBoundary><PageHero
         eyebrow={t.style}
         title={t.title}
         lede={t.teaser}
@@ -22,6 +24,6 @@ export function TourHero({ t }: { t: Tour }) {
           { label: 'Difficulty', value: t.difficulty ?? t.style },
           { label: priceOnRequest ? 'Pricing' : 'From', value: priceOnRequest ? t.from : t.from.split(' ')[0] },
         ]}
-      />
+      /></TranslationBoundary>
   )
 }

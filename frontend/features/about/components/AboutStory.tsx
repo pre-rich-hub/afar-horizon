@@ -1,8 +1,10 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Chapter } from './Chapter'
 
 export function AboutStory() {
   return (
-    <section id="our-story" className="scroll-mt-32 border-y border-border bg-muted/40">
+    <TranslationBoundary><section id="our-story" className="scroll-mt-32 border-y border-border bg-muted/40">
         <div className="shell py-20 sm:py-24 lg:py-32">
           <Chapter
             eyebrow="The road out of Addis"
@@ -59,6 +61,6 @@ export function AboutStory() {
             </Chapter>
           </div>
         </div>
-      </section>
+      </section></TranslationBoundary>
   )
 }

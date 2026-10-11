@@ -1,14 +1,16 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import type { Tour } from '@/features/tours'
 import { TourCard } from '@/features/tours'
 import { ArrowRight } from 'lucide-react'
-import Link from 'next/link'
+import Link from '@/components/common/SiteLink'
 import type { Destination } from '../types/destination.types'
 
 export function DestinationJourneys({ d, fallback }: { d: Destination; fallback: Tour[] }) {
   const placeNames = d.places ?? [d.name]
   const includesDestination = fallback.some((t) => t.places.some((place) => placeNames.includes(place)))
-  return (<div className="border-t border-border pt-12 lg:col-start-1 lg:row-start-3 lg:mt-14">
+  return (<TranslationBoundary><div className="border-t border-border pt-12 lg:col-start-1 lg:row-start-3 lg:mt-14">
             <Reveal className="mb-10 flex flex-col justify-between gap-6 sm:mb-12 md:flex-row md:items-end">
               <div className="max-w-2xl">
                 <p className="eyebrow mb-4 text-accent sm:mb-5">
@@ -29,10 +31,10 @@ export function DestinationJourneys({ d, fallback }: { d: Destination; fallback:
 
             <div className="grid gap-6 sm:grid-cols-2">
               {fallback.map((t, i) => (
-                <Reveal key={t.slug} delay={(i % 2) * 90} className="h-full">
+                <TranslationBoundary key={t.slug}><Reveal key={t.slug} delay={(i % 2) * 90} className="h-full">
                   <TourCard tour={t} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 30vw" />
-                </Reveal>
+                </Reveal></TranslationBoundary>
               ))}
             </div>
-          </div>)
+          </div></TranslationBoundary>)
 }

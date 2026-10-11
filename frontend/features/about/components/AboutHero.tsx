@@ -1,10 +1,12 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { ChevronRight } from 'lucide-react'
 import Image from 'next/image'
-import Link from 'next/link'
+import Link from '@/components/common/SiteLink'
 
 export function AboutHero() {
   return (
-    <section className="relative isolate flex min-h-[88svh] items-end overflow-hidden">
+    <TranslationBoundary><section className="relative isolate flex min-h-[88svh] items-end overflow-hidden">
         <Image
           src="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png"
           alt="Danakil Depression, Afar"
@@ -33,6 +35,6 @@ export function AboutHero() {
             the salt and fire of the Afar to the country&apos;s ancient highlands.
           </p>
         </div>
-      </section>
+      </section></TranslationBoundary>
   )
 }

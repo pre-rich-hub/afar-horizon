@@ -1,8 +1,10 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { PageHero } from '@/components/common/PageHero'
 
 export function ContactHero() {
   return (
-    <PageHero
+    <TranslationBoundary><PageHero
         eyebrow="Speak With a Designer"
         title="Every journey begins with a conversation"
         lede="No call centres and no templates. Write to us and an Addis-based designer replies personally, usually the same day."
@@ -15,6 +17,6 @@ export function ContactHero() {
           { label: 'Support', value: '24/7 In-Country' },
           { label: 'Deposit', value: 'Only When Right' },
         ]}
-      />
+      /></TranslationBoundary>
   )
 }

@@ -1,3 +1,5 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 export function Detail({
   icon: Icon,
   label,
@@ -8,7 +10,7 @@ export function Detail({
   children: React.ReactNode
 }) {
   return (
-    <div className="flex items-start gap-4">
+    <TranslationBoundary><div className="flex items-start gap-4">
       <Icon className="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden />
       <div>
         <dt className="text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
@@ -18,6 +20,6 @@ export function Detail({
           {children}
         </dd>
       </div>
-    </div>
+    </div></TranslationBoundary>
   )
 }

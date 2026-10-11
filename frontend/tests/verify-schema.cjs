@@ -1,7 +1,7 @@
 // Check emitted JSON-LD against the feature builders and visible date labels.
 const assert = require('node:assert/strict')
 const { createLoader } = require('./load-typescript.cjs')
-const site = { url: 'https://afarhorizon.com', name: 'Afar Horizon Expeditions' }
+const site = { url: 'https://www.afarhorizon.com', name: 'Afar Horizon Expeditions' }
 const load = createLoader({ '@/lib/config/site': { site } })
 const { indexableStaticRoutes } = load('@/lib/seo/routes')
 const { businessSchema } = load('@/features/about/utils/business.schema')

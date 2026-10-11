@@ -1,4 +1,6 @@
 'use client'
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+
 
 import { ChevronLeft, ChevronRight, X } from 'lucide-react'
 import Image from 'next/image'
@@ -49,7 +51,7 @@ export function Lightbox({
   }, [index, count, onClose, onIndexChange])
 
   return (
-    <div
+    <TranslationBoundary><div
       role="dialog"
       aria-modal="true"
       aria-label={`${photo.title}, photo ${index + 1} of ${count}`}
@@ -102,14 +104,14 @@ export function Lightbox({
           {photo.caption}
         </p>
       </div>
-    </div>
+    </div></TranslationBoundary>
   )
 }
 
 function LightboxArrow({ side, onClick }: { side: 'left' | 'right'; onClick: () => void }) {
   const Icon = side === 'left' ? ChevronLeft : ChevronRight
   return (
-    <button
+    <TranslationBoundary><button
       type="button"
       onClick={onClick}
       aria-label={side === 'left' ? 'Previous photo' : 'Next photo'}
@@ -118,6 +120,6 @@ function LightboxArrow({ side, onClick }: { side: 'left' | 'right'; onClick: () 
       }`}
     >
       <Icon className="h-5 w-5" strokeWidth={1.5} />
-    </button>
+    </button></TranslationBoundary>
   )
 }

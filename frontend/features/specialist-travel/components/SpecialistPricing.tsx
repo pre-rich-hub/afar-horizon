@@ -1,8 +1,10 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 
 export function SpecialistPricing() {
   return (
-    <section className="shell py-16 sm:py-20">
+    <TranslationBoundary><section className="shell py-16 sm:py-20">
       <Reveal className="max-w-3xl">
         <p className="eyebrow mb-4 text-accent">How specialist trips are priced</p>
         <p className="text-pretty leading-relaxed text-muted-foreground sm:text-lg">
@@ -11,6 +13,6 @@ export function SpecialistPricing() {
           purpose and dates and we will come back with a proposal.
         </p>
       </Reveal>
-    </section>
+    </section></TranslationBoundary>
   )
 }

@@ -1,10 +1,12 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import { SectionHeading } from '@/components/common/SectionHeading'
 import { steps } from '../data/contact.data'
 
 export function ContactProcess() {
   return (
-    <section className="border-y border-border bg-muted/40">
+    <TranslationBoundary><section className="border-y border-border bg-muted/40">
         <div className="shell py-16 sm:py-20 lg:py-28">
           <SectionHeading
             eyebrow="What Happens Next"
@@ -13,7 +15,7 @@ export function ContactProcess() {
           />
           <div className="grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
             {steps.map((s, i) => (
-              <Reveal
+              <TranslationBoundary key={s.n}><Reveal
                 key={s.n}
                 delay={i * 90}
                 className="border-t border-border pt-6"
@@ -25,10 +27,10 @@ export function ContactProcess() {
                 <p className="mt-3 text-pretty text-sm leading-relaxed text-muted-foreground">
                   {s.text}
                 </p>
-              </Reveal>
+              </Reveal></TranslationBoundary>
             ))}
           </div>
         </div>
-      </section>
+      </section></TranslationBoundary>
   )
 }

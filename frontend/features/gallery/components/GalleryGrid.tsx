@@ -1,4 +1,6 @@
 'use client'
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+
 
 import { Reveal } from '@/components/common/Reveal'
 import { cn } from '@/lib/utils'
@@ -29,13 +31,13 @@ export function GalleryGrid({
   const visible = filter === ALL ? photos : photos.filter((p) => p.category === filter)
 
   return (
-    <>
+    <TranslationBoundary><>
       <div role="group" aria-label="Filter photos" className="mb-10 flex flex-wrap gap-2 sm:mb-14">
         {[ALL, ...categories].map((c) => {
           const on = c === filter
           const n = c === ALL ? photos.length : photos.filter((p) => p.category === c).length
           return (
-            <button
+            <TranslationBoundary key={c}><button
               key={c}
               type="button"
               aria-pressed={on}
@@ -51,14 +53,14 @@ export function GalleryGrid({
               <span className={cn('tabular-nums', on ? 'text-primary-foreground/60' : 'text-muted-foreground/60')}>
                 {n}
               </span>
-            </button>
+            </button></TranslationBoundary>
           )
         })}
       </div>
 
       <ul className="columns-1 gap-5 sm:columns-2 lg:columns-3 lg:gap-6">
         {visible.map((p, i) => (
-          <li key={p.src} className="mb-5 break-inside-avoid lg:mb-6">
+          <TranslationBoundary key={p.src}><li key={p.src} className="mb-5 break-inside-avoid lg:mb-6">
             <Reveal delay={(i % 3) * 90}>
               <button
                 type="button"
@@ -90,7 +92,7 @@ export function GalleryGrid({
                 </span>
               </button>
             </Reveal>
-          </li>
+          </li></TranslationBoundary>
         ))}
       </ul>
 
@@ -102,6 +104,6 @@ export function GalleryGrid({
           onIndexChange={setOpen}
         />
       )}
-    </>
+    </></TranslationBoundary>
   )
 }

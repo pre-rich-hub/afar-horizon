@@ -1,12 +1,15 @@
+import { TranslatedText } from '@/components/common/TranslatedText'
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { formatEditorialDate } from '@/lib/utils/date'
 import { defaultImage } from '@/lib/config/cloudinary'
 import Image from 'next/image';
-import Link from 'next/link';
+import Link from '@/components/common/SiteLink';
 import type { Post } from '../types/post.types';
 
 export function PostCard({ post, wide }: { post: Post; wide?: boolean }) {
   return (
-    <article className="group">
+    <TranslationBoundary><article className="group">
       <Link href={`/blog/${post.slug}`} className="block">
         <div
           className={`relative overflow-hidden rounded-xl ${
@@ -37,10 +40,10 @@ export function PostCard({ post, wide }: { post: Post; wide?: boolean }) {
             {post.title}
           </h3>
           <p className="mt-3 max-w-[52ch] text-pretty text-sm leading-relaxed text-muted-foreground">
-            {post.excerpt}
+            <TranslatedText text={post.excerpt} />
           </p>
         </div>
       </Link>
-    </article>
+    </article></TranslationBoundary>
   )
 }

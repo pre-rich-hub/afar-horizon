@@ -1,5 +1,7 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { ArrowUpRight } from 'lucide-react'
-import Link from 'next/link'
+import Link from '@/components/common/SiteLink'
 
 // Pricing / planning card used on tour and destination pages: dark header,
 // cream body of label–value rows, and two actions.
@@ -19,7 +21,7 @@ export function BookingCard({
   secondary?: { label: string; href: string }
 }) {
   return (
-    <div className="border border-linen-edge bg-linen p-1.5 shadow-[0_24px_50px_-34px_oklch(0.185_0.012_58/0.5)]">
+    <TranslationBoundary><div className="border border-linen-edge bg-linen p-1.5 shadow-[0_24px_50px_-34px_oklch(0.185_0.012_58/0.5)]">
       <div className="bg-espresso px-6 py-6">
         <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-background/60">
           {label}
@@ -31,10 +33,10 @@ export function BookingCard({
       <div className="bg-parchment px-6 pb-6 pt-1.5">
         <dl className="divide-y divide-linen-edge">
           {rows.map((row) => (
-            <div key={row.k} className="flex items-center justify-between gap-5 py-3.5">
+            <TranslationBoundary key={row.k}><div key={row.k} className="flex items-center justify-between gap-5 py-3.5">
               <dt className="shrink-0 text-sm text-foreground/70">{row.k}</dt>
               <dd className="text-right text-[15px] font-semibold text-foreground">{row.v}</dd>
-            </div>
+            </div></TranslationBoundary>
           ))}
         </dl>
 
@@ -52,6 +54,6 @@ export function BookingCard({
           {secondary.label}
         </Link>
       </div>
-    </div>
+    </div></TranslationBoundary>
   )
 }

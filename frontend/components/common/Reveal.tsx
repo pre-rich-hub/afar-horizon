@@ -1,4 +1,6 @@
 'use client'
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+
 
 import { cn } from '@/lib/utils'
 import { useEffect, useRef, useState } from 'react'
@@ -38,12 +40,12 @@ export function Reveal({
   }, [])
 
   return (
-    <Tag
+    <TranslationBoundary><Tag
       ref={ref}
       style={{ animationDelay: `${delay}ms` }}
       className={cn('reveal', visible && 'is-visible', className)}
     >
       {children}
-    </Tag>
+    </Tag></TranslationBoundary>
   )
 }

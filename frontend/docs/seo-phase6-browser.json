@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-11",
+  "mode": "Local production build; every contact API request intercepted and fulfilled; no real enquiries sent",
+  "reports": [
+    {
+      "path": "/contact",
+      "width": 390,
+      "interceptedRequests": 2,
+      "concurrentDuplicatePrevented": true,
+      "failureDisplayed": true,
+      "retryAccepted": true,
+      "analyticsRequests": 0
+    },
+    {
+      "path": "/ground-operations",
+      "width": 1440,
+      "interceptedRequests": 2,
+      "concurrentDuplicatePrevented": true,
+      "failureDisplayed": true,
+      "retryAccepted": true,
+      "analyticsRequests": 0
+    }
+  ]
+}

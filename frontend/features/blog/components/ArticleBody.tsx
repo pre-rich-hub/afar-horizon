@@ -1,17 +1,19 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal';
 import { ArrowRight } from 'lucide-react';
-import Link from 'next/link';
+import Link from '@/components/common/SiteLink';
 import type { Post } from '../types/post.types';
 import { articleParagraph } from '../utils/article.utils';
 
 export function ArticleBody({ post, next }: { post: Post; next: Post }) {
   return (
-    <div className="shell py-14 sm:py-16 lg:py-20">
+    <TranslationBoundary><div className="shell py-14 sm:py-16 lg:py-20">
         <div className="mx-auto max-w-2xl">
           {post.body.map((value, i) => {
             const para = articleParagraph(value)
             return (
-            <Reveal key={i} delay={i * 50}>
+            <TranslationBoundary key={i}><Reveal key={i} delay={i * 50}>
               {para.heading && <h2 className="mt-10 text-balance font-serif text-2xl leading-tight text-foreground sm:text-3xl">{para.heading}</h2>}
               <p
                 className={
@@ -24,7 +26,7 @@ export function ArticleBody({ post, next }: { post: Post; next: Post }) {
                   ? <Link key={j} href={part.href} className="text-primary underline decoration-accent/50 underline-offset-4 transition-colors hover:text-accent">{part.text}</Link>
                   : part.text)}
               </p>
-            </Reveal>
+            </Reveal></TranslationBoundary>
           )})}
 
           <Reveal className="mt-14 border-t border-border pt-8">
@@ -43,10 +45,10 @@ export function ArticleBody({ post, next }: { post: Post; next: Post }) {
             </p>
             {post.sources && <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               Further reading:{' '}
-              {post.sources.map((source, i) => <span key={source.href}>
+              {post.sources.map((source, i) => <TranslationBoundary key={source.href}><span key={source.href}>
                 {i > 0 && '; '}
                 <a href={source.href} className="text-primary underline underline-offset-4 hover:text-accent">{source.text}</a>
-              </span>)}.
+              </span></TranslationBoundary>)}.
             </p>}
           </Reveal>
 
@@ -68,6 +70,6 @@ export function ArticleBody({ post, next }: { post: Post; next: Post }) {
             </Link>
           </Reveal>
         </div>
-      </div>
+      </div></TranslationBoundary>
   )
 }

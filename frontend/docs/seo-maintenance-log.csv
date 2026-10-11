@@ -1,0 +1,2 @@
+review_date,status,owner,period_start,period_end,deployment_id,technical_report,indexed_pages,search_impressions,search_clicks,search_ctr_percent,pageviews,accepted_enquiries,organic_attribution_status,mobile_field_vitals,changed_urls,observation,next_action
+2026-10-11,workflow_prepared,Frontend maintainer,,,,seo-phase7-inventory.json,,,,,,,not_available,not_measured,,"19 destinations; 17 expeditions; 9 articles; 7 Afar. No live baseline collected.","Connect domain; verify Search Console; assign named report owners; collect first launch baseline."

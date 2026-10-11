@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { site } from '@/lib/config/site'
+import { languageAlternates } from '@/lib/i18n/locales'
 
 type PageMetadata = {
   title: string
@@ -36,7 +37,7 @@ export function createPageMetadata({
   return {
     title: { absolute: fullTitle },
     description,
-    alternates: { canonical: url },
+    alternates: { canonical: url, ...(languageAlternates(path, site.url) ? { languages: languageAlternates(path, site.url) } : {}) },
     robots: { index: site.indexable && index, follow: true },
     ...(author ? { authors: [{ name: author }] } : {}),
     openGraph: {

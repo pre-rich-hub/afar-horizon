@@ -1,12 +1,14 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import { ArrowRight } from 'lucide-react'
-import Link from 'next/link'
+import Link from '@/components/common/SiteLink'
 import type { Post } from '../types/post.types'
 import { PostCard } from './PostCard'
 
 export function RelatedPosts({ more }: { more: Post[] }) {
   return (
-    <section className="border-t border-border bg-muted/40">
+    <TranslationBoundary><section className="border-t border-border bg-muted/40">
         <div className="shell py-16 sm:py-20 lg:py-24">
           <Reveal className="mb-10 flex flex-col justify-between gap-6 sm:mb-14 md:flex-row md:items-end">
             <div>
@@ -28,12 +30,12 @@ export function RelatedPosts({ more }: { more: Post[] }) {
 
           <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
             {more.map((p, i) => (
-              <Reveal key={p.slug} delay={i * 90}>
+              <TranslationBoundary key={p.slug}><Reveal key={p.slug} delay={i * 90}>
                 <PostCard post={p} />
-              </Reveal>
+              </Reveal></TranslationBoundary>
             ))}
           </div>
         </div>
-      </section>
+      </section></TranslationBoundary>
   )
 }

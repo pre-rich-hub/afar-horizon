@@ -1,8 +1,11 @@
+import { TranslatedText } from '@/components/common/TranslatedText'
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { defaultImage } from '@/lib/config/cloudinary'
 import { cn } from '@/lib/utils'
 import { ArrowRight, type LucideIcon } from 'lucide-react'
 import Image from 'next/image'
-import Link from 'next/link'
+import Link from '@/components/common/SiteLink'
 
 export type InfoCardFact = { icon: LucideIcon; label: string }
 
@@ -35,7 +38,7 @@ export function InfoCard({
   className?: string
 }) {
   return (
-    <Link
+    <TranslationBoundary><Link
       href={href}
       className={cn(
         'group flex h-full touch-manipulation flex-col overflow-hidden border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_60px_-30px_oklch(0.185_0.012_58/0.45)] active:scale-[0.97] active:border-accent active:shadow-[0_20px_40px_-24px_oklch(0.185_0.012_58/0.5)] active:duration-100',
@@ -68,15 +71,15 @@ export function InfoCard({
 
       <div className="flex flex-1 flex-col px-6 pb-6 pt-6 sm:px-7">
         <p className="text-pretty text-[15px] leading-relaxed text-muted-foreground">
-          {summary}
+          <TranslatedText text={summary} />
         </p>
 
         <ul className="mt-5 grid grid-cols-2 gap-x-4 gap-y-3">
           {facts.map(({ icon: Icon, label }) => (
-            <li key={label} className="flex min-w-0 items-start gap-2.5 text-sm leading-snug text-foreground/85">
+            <TranslationBoundary key={label}><li key={label} className="flex min-w-0 items-start gap-2.5 text-sm leading-snug text-foreground/85">
               <Icon aria-hidden className="mt-px h-4 w-4 shrink-0 text-accent" strokeWidth={1.5} />
               <span>{label}</span>
-            </li>
+            </li></TranslationBoundary>
           ))}
         </ul>
 
@@ -87,6 +90,6 @@ export function InfoCard({
           </div>
         </div>
       </div>
-    </Link>
+    </Link></TranslationBoundary>
   )
 }

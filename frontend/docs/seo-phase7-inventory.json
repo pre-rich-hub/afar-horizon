@@ -1,0 +1,372 @@
+{
+  "checkedAt": "2026-10-11T08:28:10.614Z",
+  "target": null,
+  "mode": "inventory_only",
+  "inventory": {
+    "destinations": 19,
+    "expeditions": 17,
+    "articles": 9,
+    "afarArticles": 7,
+    "afarArticlePercent": 78,
+    "expectedProductionSitemapUrls": 58,
+    "staticIndexablePaths": [
+      "/",
+      "/about",
+      "/contact",
+      "/before-you-go",
+      "/faq",
+      "/gallery",
+      "/ground-operations",
+      "/specialist-travel",
+      "/destinations",
+      "/expeditions",
+      "/blog",
+      "/privacy",
+      "/terms"
+    ],
+    "records": [
+      {
+        "type": "destination",
+        "path": "/destinations/danakil-depression",
+        "title": "Danakil Depression",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/afar",
+        "title": "Afar",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/afar.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/erta-ale",
+        "title": "Erta Ale",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/erta-ale.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/dallol",
+        "title": "Dallol",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/lake-assale",
+        "title": "Lake Assale",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-assale.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/lake-afdera",
+        "title": "Lake Afdera",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-afdera.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/hamed-ela",
+        "title": "Hamed Ela",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/hamed-ela.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/semera",
+        "title": "Semera",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/semera.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/awash-national-park",
+        "title": "Awash National Park",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/awash-national-park.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/hadar",
+        "title": "Hadar & the Lower Awash Valley",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/hadar.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/gheralta",
+        "title": "Gheralta",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/gheralta.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/axum",
+        "title": "Axum",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/axum.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/lalibela",
+        "title": "Lalibela",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lalibela.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/simien-mountains",
+        "title": "Simien Mountains",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/simien-mountains.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/gondar",
+        "title": "Gondar",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/gondar.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/mekelle",
+        "title": "Mekelle",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/mekelle.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/bahir-dar",
+        "title": "Bahir Dar",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/bahir-dar.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/lake-tana",
+        "title": "Lake Tana",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-tana.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/northern-ethiopia",
+        "title": "Northern Ethiopia",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/northern-ethiopia.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/danakil-essentials",
+        "title": "Danakil Essentials",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652741/Danakil_Essentials.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/danakil-deep",
+        "title": "Danakil Deep",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652727/Danakil_Deep.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/beyond-the-highlights",
+        "title": "Beyond the Highlights",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/danakil-photography-expedition",
+        "title": "Danakil Photography Expedition",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652740/Danakil_Photography_Expedition.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/afar-geology-and-culture",
+        "title": "Afar Geology & Culture",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652742/Afar_Geolog.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/the-afar-edge",
+        "title": "The Afar Edge",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652748/LakeAfdera.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/danakil-first-look",
+        "title": "Danakil First Look",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652743/Erta_Ale_approach.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/danakil-explorer",
+        "title": "Danakil Explorer",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/erta-ale.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/into-the-danakil",
+        "title": "Into the Danakil",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652746/Into_the_Danakil.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/danakil-and-gheralta",
+        "title": "Danakil & Gheralta",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652737/Danakil_Gheralta.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/afar-to-the-highlands",
+        "title": "Afar to the Highlands",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/axum.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/from-mountain-to-horizon",
+        "title": "From Mountain to Horizon",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652741/From_Mountain_to_Horizon.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/from-axum-to-the-afar-horizon",
+        "title": "From Axum to the Afar Horizon",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652734/From_Axum_to_the_Afar_Horizon.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/grand-northern-ethiopia-expedition",
+        "title": "Grand Northern Ethiopia Expedition",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/northern-ethiopia-essentials",
+        "title": "Northern Ethiopia Essentials",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-tana.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/northern-ethiopia-grand-horizon",
+        "title": "Northern Ethiopia Grand Horizon",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/simien-mountains.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/grand-horizon-ethiopia",
+        "title": "Grand Horizon Ethiopia",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/northern-ethiopia.png"
+      },
+      {
+        "type": "article",
+        "path": "/blog/when-to-visit-ethiopia",
+        "title": "When to visit Afar and the Danakil Depression",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png",
+        "topics": [
+          "afar",
+          "planning",
+          "season"
+        ],
+        "publishedAt": "2026-06-18",
+        "updatedAt": "2026-10-11"
+      },
+      {
+        "type": "article",
+        "path": "/blog/packing-for-the-highlands",
+        "title": "What to pack for an Afar and Danakil expedition",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/hamed-ela.png",
+        "topics": [
+          "afar",
+          "planning",
+          "equipment"
+        ],
+        "publishedAt": "2026-04-22",
+        "updatedAt": "2026-10-11"
+      },
+      {
+        "type": "article",
+        "path": "/blog/responsible-travel-in-afar",
+        "title": "Responsible travel in Afar: people beyond the landscape",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/afar.png",
+        "topics": [
+          "afar",
+          "culture",
+          "salt"
+        ],
+        "publishedAt": "2026-04-03",
+        "updatedAt": "2026-10-11"
+      },
+      {
+        "type": "article",
+        "path": "/blog/dallol-geothermal-landscape",
+        "title": "Dallol: reading the colours of the Danakil",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png",
+        "topics": [
+          "afar",
+          "geology",
+          "salt"
+        ],
+        "publishedAt": "2026-10-10",
+        "updatedAt": "2026-10-11"
+      },
+      {
+        "type": "article",
+        "path": "/blog/erta-ale-what-to-expect",
+        "title": "Erta Ale: what to expect from the volcano visit",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/erta-ale.png",
+        "topics": [
+          "afar",
+          "volcano",
+          "equipment"
+        ],
+        "publishedAt": "2026-10-10",
+        "updatedAt": "2026-10-11"
+      },
+      {
+        "type": "article",
+        "path": "/blog/lake-assale-and-lake-afdera",
+        "title": "Lake Assale and Lake Afdera: two sides of Afar’s salt country",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-afdera.png",
+        "topics": [
+          "afar",
+          "salt",
+          "culture"
+        ],
+        "publishedAt": "2026-10-10",
+        "updatedAt": "2026-10-11"
+      },
+      {
+        "type": "article",
+        "path": "/blog/semera-danakil-expedition-planning",
+        "title": "Starting in Semera: how to plan your Danakil expedition",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/semera.png",
+        "topics": [
+          "afar",
+          "planning",
+          "logistics"
+        ],
+        "publishedAt": "2026-10-10",
+        "updatedAt": "2026-10-11"
+      },
+      {
+        "type": "article",
+        "path": "/blog/lalibela-at-dawn",
+        "title": "Lalibela at dawn: how to see the rock churches properly",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lalibela.png",
+        "topics": [
+          "highlands",
+          "culture",
+          "churches"
+        ],
+        "publishedAt": "2026-05-30",
+        "updatedAt": "2026-10-11"
+      },
+      {
+        "type": "article",
+        "path": "/blog/planning-northern-ethiopia-route",
+        "title": "Planning a northern Ethiopia journey: choose depth over distance",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/northern-ethiopia.png",
+        "topics": [
+          "highlands",
+          "planning",
+          "walking"
+        ],
+        "publishedAt": "2026-10-10",
+        "updatedAt": "2026-10-11"
+      }
+    ]
+  },
+  "checks": [],
+  "externalMeasurements": {
+    "searchConsole": "not_collected",
+    "pageviews": "not_collected",
+    "enquiries": "not_collected",
+    "fieldVitals": "not_collected"
+  },
+  "status": "inventory_only",
+  "imageResponseScope": "not_checked"
+}

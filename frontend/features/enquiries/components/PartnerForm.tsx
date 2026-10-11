@@ -1,7 +1,9 @@
 'use client'
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 
-import { useState } from 'react'
-import { submitContact } from '../api/enquiry.api'
+
+import { useRef, useState } from 'react'
+import { createEnquirySubmission } from '../utils/submission'
 import { serviceOptions } from '../data/plan-form.data'
 import { useChips } from '../hooks/useChips'
 import { compose } from '../utils/compose'
@@ -12,15 +14,16 @@ export function PartnerForm() {
   const services = useChips()
   const [state, setState] = useState<'idle' | 'sending' | 'sent'>('idle')
   const [error, setError] = useState<string | null>(null)
+  const submission = useRef(createEnquirySubmission())
 
   if (state === 'sent') {
     return (
-      <Sent text="Thank you. We will review your programme and come back with questions or a ground proposal, usually within two working days." />
+      <TranslationBoundary><Sent text="Thank you. We will review your programme and come back with questions or a ground proposal, usually within two working days." /></TranslationBoundary>
     )
   }
 
   return (
-    <FormShell
+    <TranslationBoundary><FormShell
       onSubmit={async (data) => {
         const get = (k: string) => String(data.get(k) ?? '').trim()
         const message = compose('Partner request (travel trade)', {
@@ -33,7 +36,7 @@ export function PartnerForm() {
           'Services required': services.selected,
           Message: get('message'),
         })
-        await submitContact({ name: get('name'), email: get('email'), message })
+        await submission.current({ name: get('name'), email: get('email'), message }, 'partner')
       }}
       state={state}
       setState={setState}
@@ -77,6 +80,6 @@ export function PartnerForm() {
       <Field label="Your programme or questions" id="p-message">
         <textarea id="p-message" name="message" rows={5} className="input resize-none" />
       </Field>
-    </FormShell>
+    </FormShell></TranslationBoundary>
   )
 }

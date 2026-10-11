@@ -1,17 +1,19 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { BookingCard } from '@/components/common/BookingCard'
 import { Reveal } from '@/components/common/Reveal'
 import { AlertTriangle, MapPin, Moon, Utensils } from 'lucide-react'
 import { expeditionConditionsNote } from '../data/tour.data'
 import type { Tour } from '../types/tour.types'
 import { formatDuration, getStartEnd } from '../utils/tour.utils'
-import Link from 'next/link'
+import Link from '@/components/common/SiteLink'
 
 export function TourOverview({ t, placeLinks = {} }: { t: Tour; placeLinks?: Record<string, string> }) {
   const startEnd = getStartEnd(t)
   const priceOnRequest = t.from === 'Price on request'
 
   return (
-    <section className="shell grid gap-12 py-16 sm:py-20 lg:grid-cols-[1fr_360px] lg:gap-x-16 lg:gap-y-0 xl:grid-cols-[1fr_380px] xl:gap-x-20 lg:py-28">
+    <TranslationBoundary><section className="shell grid gap-12 py-16 sm:py-20 lg:grid-cols-[1fr_360px] lg:gap-x-16 lg:gap-y-0 xl:grid-cols-[1fr_380px] xl:gap-x-20 lg:py-28">
         <Reveal className="lg:col-start-1 lg:row-start-1">
           <p className="eyebrow mb-5 text-accent">
             The Journey
@@ -49,13 +51,13 @@ export function TourOverview({ t, placeLinks = {} }: { t: Tour; placeLinks?: Rec
             </p>
             <ul className="flex flex-wrap gap-2">
               {t.places.map((p) => (
-                <li
+                <TranslationBoundary key={p}><li
                   key={p}
                   className="inline-flex items-center gap-2 border border-border bg-card px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.14em] text-muted-foreground sm:text-[11px]"
                 >
                   <MapPin className="h-3 w-3 text-accent" />
                   {placeLinks[p] ? <Link href={placeLinks[p]} className="transition-colors hover:text-primary focus-visible:underline">{p}</Link> : p}
-                </li>
+                </li></TranslationBoundary>
               ))}
             </ul>
           </div>
@@ -98,7 +100,7 @@ export function TourOverview({ t, placeLinks = {} }: { t: Tour; placeLinks?: Rec
 
           <ol className="relative border-l border-border pl-8 sm:pl-12">
             {t.itinerary.map((step, i) => (
-              <Reveal
+              <TranslationBoundary key={step.day}><Reveal
                 key={step.day}
                 delay={i * 70}
                 as="li"
@@ -135,7 +137,7 @@ export function TourOverview({ t, placeLinks = {} }: { t: Tour; placeLinks?: Rec
                     )}
                   </dl>
                 )}
-              </Reveal>
+              </Reveal></TranslationBoundary>
             ))}
           </ol>
 
@@ -148,6 +150,6 @@ export function TourOverview({ t, placeLinks = {} }: { t: Tour; placeLinks?: Rec
             </div>
           </Reveal>
         </div>
-      </section>
+      </section></TranslationBoundary>
   )
 }

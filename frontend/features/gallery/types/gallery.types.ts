@@ -1,4 +1,4 @@
-export type GalleryCategory = 'Landscapes' | 'Heritage' | 'Culture' | 'Wildlife' | 'Stays'
+export type GalleryCategory = 'Landscapes' | 'Heritage' | 'Culture' | 'Wildlife' | 'Stays' | 'Journeys'
 
 export type GalleryPhoto = {
   src: string

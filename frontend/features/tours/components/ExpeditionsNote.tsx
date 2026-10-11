@@ -1,9 +1,11 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import { expeditionConditionsNote } from '../data/tour.data'
 
 export function ExpeditionsNote() {
   return (
-    <section className="border-y border-border bg-secondary text-secondary-foreground">
+    <TranslationBoundary><section className="border-y border-border bg-secondary text-secondary-foreground">
         <div className="shell grid gap-8 py-16 sm:py-20 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
           <Reveal>
             <p className="eyebrow mb-4 text-accent">How our itineraries work</p>
@@ -22,6 +24,6 @@ export function ExpeditionsNote() {
             </p>
           </Reveal>
         </div>
-      </section>
+      </section></TranslationBoundary>
   )
 }

@@ -1,8 +1,10 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 
 export function GroundOpsIntro() {
   return (
-    <section className="shell grid gap-10 py-16 sm:py-20 lg:grid-cols-2 lg:gap-20 lg:py-24">
+    <TranslationBoundary><section className="shell grid gap-10 py-16 sm:py-20 lg:grid-cols-2 lg:gap-20 lg:py-24">
       <Reveal>
         <p className="eyebrow mb-5 text-accent">One local partner</p>
         <h2 className="max-w-[18ch] text-balance text-3xl leading-[1.1] text-foreground sm:text-4xl">
@@ -20,6 +22,6 @@ export function GroundOpsIntro() {
           access make local knowledge part of the product.
         </p>
       </Reveal>
-    </section>
+    </section></TranslationBoundary>
   )
 }

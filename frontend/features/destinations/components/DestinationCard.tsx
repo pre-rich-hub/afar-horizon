@@ -1,9 +1,12 @@
+import { TranslatedText } from '@/components/common/TranslatedText'
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { defaultImage } from '@/lib/config/cloudinary'
 import { InfoCard } from '@/components/common/InfoCard'
 import { cn } from '@/lib/utils'
 import { ArrowRight, CalendarDays, Clock, MapPin, Mountain } from 'lucide-react'
 import Image from 'next/image'
-import Link from 'next/link'
+import Link from '@/components/common/SiteLink'
 import type { Destination } from '../types/destination.types'
 
 /** Photo-topped card with a fact grid. Used on the Destinations listing. */
@@ -15,7 +18,7 @@ export function DestinationInfoCard({
   className?: string
 }) {
   return (
-    <InfoCard
+    <TranslationBoundary><InfoCard
       href={`/destinations/${d.slug}`}
       image={d.image}
       imageAlt={d.imageAlt ?? `${d.name}, Ethiopia`}
@@ -30,7 +33,7 @@ export function DestinationInfoCard({
         { icon: CalendarDays, label: d.duration },
       ]}
       className={className}
-    />
+    /></TranslationBoundary>
   )
 }
 
@@ -46,7 +49,7 @@ export function DestinationFeatureCard({
   className?: string
 }) {
   return (
-    <Link
+    <TranslationBoundary><Link
       href={`/destinations/${d.slug}`}
       className={cn(
         'group relative flex aspect-[4/5] flex-col justify-end overflow-hidden rounded-sm bg-charcoal touch-manipulation transition-transform duration-300 active:scale-[0.96] active:duration-100 shadow-[0_30px_60px_-34px_oklch(0.185_0.012_58/0.6)]',
@@ -72,13 +75,13 @@ export function DestinationFeatureCard({
           {d.name}
         </h3>
         <p className="mt-3 max-w-[34ch] text-pretty text-sm leading-relaxed text-background/80">
-          {d.teaser}
+          <TranslatedText text={d.teaser} />
         </p>
         <span className="mt-6 inline-flex items-center gap-2.5 rounded-sm border border-accent/70 px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-accent transition-all duration-300 group-hover:border-accent group-hover:bg-accent group-hover:text-accent-foreground">
           Explore {d.name.split(' ')[0]}
           <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
         </span>
       </div>
-    </Link>
+    </Link></TranslationBoundary>
   )
 }

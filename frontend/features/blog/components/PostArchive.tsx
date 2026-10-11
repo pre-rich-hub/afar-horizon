@@ -1,10 +1,12 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { SectionHeading } from '@/components/common/SectionHeading'
 import type { Post } from '../types/post.types'
 import { PostsGrid } from './PostsGrid'
 
 export function PostArchive({ rest }: { rest: Post[] }) {
   return (
-    <section className="border-t border-border">
+    <TranslationBoundary><section className="border-t border-border">
         <div className="shell py-16 sm:py-20 lg:py-28">
           <SectionHeading
             eyebrow="Archive"
@@ -13,6 +15,6 @@ export function PostArchive({ rest }: { rest: Post[] }) {
           />
           <PostsGrid posts={rest} />
         </div>
-      </section>
+      </section></TranslationBoundary>
   )
 }

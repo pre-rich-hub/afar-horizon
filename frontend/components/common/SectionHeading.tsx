@@ -1,3 +1,5 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { TextLink } from '@/components/common/LinkButton'
 import { Reveal } from '@/components/common/Reveal'
 import { cn } from '@/lib/utils'
@@ -27,7 +29,7 @@ export function SectionHeading({
   const body = tone === 'dark' ? 'text-background/70' : 'text-muted-foreground'
 
   return (
-    <Reveal
+    <TranslationBoundary><Reveal
       className={cn(
         'mb-10 sm:mb-14',
         aside || action
@@ -83,6 +85,6 @@ export function SectionHeading({
           )}
         </div>
       )}
-    </Reveal>
+    </Reveal></TranslationBoundary>
   )
 }

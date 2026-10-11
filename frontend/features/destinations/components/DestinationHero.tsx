@@ -1,9 +1,11 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { PageHero } from '@/components/common/PageHero'
 import type { Destination } from '../types/destination.types'
 
 export function DestinationHero({ d }: { d: Destination }) {
   return (
-    <PageHero
+    <TranslationBoundary><PageHero
         eyebrow={`${d.tag} · ${d.region}`}
         title={d.name}
         lede={d.headline ? `${d.headline}.` : d.intro}
@@ -20,6 +22,6 @@ export function DestinationHero({ d }: { d: Destination }) {
           { label: 'Altitude', value: d.altitude },
           { label: 'Region', value: d.region },
         ]}
-      />
+      /></TranslationBoundary>
   )
 }

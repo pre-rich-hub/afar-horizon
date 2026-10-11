@@ -1,3 +1,5 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { InfoCard } from '@/components/common/InfoCard'
 import { CalendarDays, Clock, MapPin, Users } from 'lucide-react'
 import type { Tour } from '../types/tour.types'
@@ -12,7 +14,7 @@ export function TourCard({
   const [kind] = t.style.split(' · ')
   const priceOnRequest = t.from === 'Price on request'
   return (
-    <InfoCard
+    <TranslationBoundary><InfoCard
       href={`/expeditions/${t.slug}`}
       image={t.image}
       imageAlt={t.imageAlt ?? t.title}
@@ -30,6 +32,6 @@ export function TourCard({
         },
       ]}
       sizes={sizes}
-    />
+    /></TranslationBoundary>
   )
 }

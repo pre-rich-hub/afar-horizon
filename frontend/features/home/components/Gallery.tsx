@@ -1,4 +1,6 @@
 'use client'
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+
 
 import { shots } from '../data/gallery.data'
 
@@ -48,7 +50,7 @@ export function Gallery() {
   }, [isPlaying, inView, activeIndex])
 
   return (
-    <section
+    <TranslationBoundary><section
       ref={viewport}
       id="journal"
       aria-label="Photo gallery"
@@ -61,7 +63,7 @@ export function Gallery() {
         // Alternate animation direction/style
         const kbClass = idx % 2 === 0 ? 'animate-kb-1' : 'animate-kb-2'
         return (
-          <div
+          <TranslationBoundary key={`${idx}-${shot.src}`}><div
             key={`${idx}-${shot.src}`}
             aria-hidden={!isActive}
             className={`absolute inset-0 transition-opacity duration-[2000ms] ease-in-out ${displayed ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
@@ -79,7 +81,7 @@ export function Gallery() {
               loading={inView ? 'eager' : 'lazy'}
               className={`object-cover ${isActive ? kbClass : 'scale-100'}`}
             />
-          </div>
+          </div></TranslationBoundary>
         )
       })}
 
@@ -107,7 +109,7 @@ export function Gallery() {
               {shots.map((_, idx) => {
                 const isActive = idx === activeIndex
                 return (
-                  <button
+                  <TranslationBoundary key={idx}><button
                     key={idx}
                     onClick={() => {
                       select(idx)
@@ -116,7 +118,7 @@ export function Gallery() {
                     className={`h-1.5 rounded-full transition-all duration-500 cursor-pointer ${isActive ? 'w-8 bg-accent' : 'w-2 bg-white/40 hover:bg-white/80'
                       }`}
                     aria-label={`Go to slide ${idx + 1}`}
-                  />
+                  /></TranslationBoundary>
                 )
               })}
             </div>
@@ -182,6 +184,6 @@ export function Gallery() {
             className="absolute bottom-0 left-0 right-0 h-[3px] bg-accent/90 z-30 origin-left animate-progress-grow"
           />
         )}
-    </section>
+    </section></TranslationBoundary>
   )
 }

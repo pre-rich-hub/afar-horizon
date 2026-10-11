@@ -1,9 +1,11 @@
 'use client'
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+
 
 import { journeyStyles } from '@/lib/constants/journeyStyles'
 import { ArrowRight, Check } from 'lucide-react'
-import { useState } from 'react'
-import { submitContact } from '../api/enquiry.api'
+import { useRef, useState } from 'react'
+import { createEnquirySubmission } from '../utils/submission'
 
 export function EnquiryForm({
   defaultStyles = ['Private'],
@@ -15,6 +17,8 @@ export function EnquiryForm({
   const [selected, setSelected] = useState<string[]>(defaultStyles)
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [sending, setSending] = useState(false)
+  const submission = useRef(createEnquirySubmission())
 
   const toggle = (style: string) =>
     setSelected((prev) =>
@@ -23,7 +27,7 @@ export function EnquiryForm({
 
   if (submitted) {
     return (
-      <div className="flex min-h-[420px] flex-col items-center justify-center border border-border bg-card px-6 py-16 text-center">
+      <TranslationBoundary><div className="flex min-h-[420px] flex-col items-center justify-center border border-border bg-card px-6 py-16 text-center">
         <span className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground">
           <Check className="h-6 w-6" />
         </span>
@@ -34,16 +38,18 @@ export function EnquiryForm({
           We read every request personally and will reply by email or
           WhatsApp, usually within one working day.
         </p>
-      </div>
+      </div></TranslationBoundary>
     )
   }
 
   return (
-    <div className="border border-border bg-card p-6 shadow-[0_28px_70px_-40px_oklch(0.185_0.012_58/0.4)] sm:p-8 lg:p-10">
+    <TranslationBoundary><div className="border border-border bg-card p-6 shadow-[0_28px_70px_-40px_oklch(0.185_0.012_58/0.4)] sm:p-8 lg:p-10">
       <form
         onSubmit={async (e) => {
           e.preventDefault()
+          if (sending) return
           setError(null)
+          setSending(true)
           const data = new FormData(e.currentTarget)
           const name = String(data.get('name') ?? '').trim()
           const email = String(data.get('email') ?? '').trim()
@@ -60,13 +66,13 @@ export function EnquiryForm({
           lines.push(dream)
 
           try {
-            await submitContact({ name, email, message: lines.join('\n') })
+            await submission.current({ name, email, message: lines.join('\n') })
             setSubmitted(true)
           } catch (err) {
             setError(
               err instanceof Error ? err.message : 'Something went wrong — please try again.',
             )
-          }
+          } finally { setSending(false) }
         }}
         className="space-y-6"
       >
@@ -110,7 +116,7 @@ export function EnquiryForm({
             {journeyStyles.map((style) => {
               const active = selected.includes(style)
               return (
-                <button
+                <TranslationBoundary key={style}><button
                   type="button"
                   key={style}
                   aria-pressed={active}
@@ -122,7 +128,7 @@ export function EnquiryForm({
                   }`}
                 >
                   {style}
-                </button>
+                </button></TranslationBoundary>
               )
             })}
           </div>
@@ -146,6 +152,7 @@ export function EnquiryForm({
 
         <button
           type="submit"
+          disabled={sending}
           className="group inline-flex w-full items-center justify-center gap-2.5 bg-primary px-8 py-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary-foreground transition-colors duration-300 hover:bg-charcoal sm:w-auto"
         >
           Begin the conversation
@@ -155,7 +162,7 @@ export function EnquiryForm({
           We reply personally. Your details are never shared.
         </p>
       </form>
-    </div>
+    </div></TranslationBoundary>
   )
 }
 
@@ -169,11 +176,11 @@ function Field({
   children: React.ReactNode
 }) {
   return (
-    <label htmlFor={id} className="block">
+    <TranslationBoundary><label htmlFor={id} className="block">
       <span className="mb-2 block text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
         {label}
       </span>
       {children}
-    </label>
+    </label></TranslationBoundary>
   )
 }

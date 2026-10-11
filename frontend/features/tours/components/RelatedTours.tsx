@@ -1,12 +1,14 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import { ArrowRight } from 'lucide-react'
-import Link from 'next/link'
+import Link from '@/components/common/SiteLink'
 import type { Tour } from '../types/tour.types'
 import { TourCard } from './TourCard'
 
 export function RelatedTours({ others }: { others: Tour[] }) {
   return (
-    <section className="shell py-16 sm:py-20 lg:py-28">
+    <TranslationBoundary><section className="shell py-16 sm:py-20 lg:py-28">
         <Reveal className="mb-10 flex flex-col justify-between gap-6 sm:mb-14 md:flex-row md:items-end">
           <div className="max-w-2xl">
             <p className="eyebrow mb-4 text-accent sm:mb-5">
@@ -27,11 +29,11 @@ export function RelatedTours({ others }: { others: Tour[] }) {
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {others.map((o, i) => (
-            <Reveal key={o.slug} delay={i * 90} className="h-full">
+            <TranslationBoundary key={o.slug}><Reveal key={o.slug} delay={i * 90} className="h-full">
               <TourCard tour={o} />
-            </Reveal>
+            </Reveal></TranslationBoundary>
           ))}
         </div>
-      </section>
+      </section></TranslationBoundary>
   )
 }

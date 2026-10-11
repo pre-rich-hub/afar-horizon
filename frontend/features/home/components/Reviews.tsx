@@ -18,7 +18,7 @@ export function Reviews() {
   const { track, edges, count, step } = useReviews()
 
   return (
-    <section id="reviews" aria-labelledby="reviews-title" className="bg-background py-20 sm:py-24 lg:py-28">
+    <section id="reviews" data-no-translate translate="no" aria-labelledby="reviews-title" className="bg-background py-20 sm:py-24 lg:py-28">
       <div className="shell grid gap-10 lg:grid-cols-[260px_1fr] lg:items-center lg:gap-12">
         {/* Summary */}
         <Reveal>

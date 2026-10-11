@@ -1,0 +1,27 @@
+{
+  "status": "machine_generated_drafts_pending_client_review",
+  "provider": "Google Translate web service; one-time draft generation, no runtime dependency",
+  "locales": [
+    {
+      "locale": "es",
+      "strings": 2166,
+      "missing": 0
+    },
+    {
+      "locale": "de",
+      "strings": 2166,
+      "missing": 0
+    },
+    {
+      "locale": "fr",
+      "strings": 2166,
+      "missing": 0
+    },
+    {
+      "locale": "zh-Hans",
+      "strings": 2166,
+      "missing": 0
+    }
+  ],
+  "manualAdjustments": "Reviewed shared action labels and headings; protected the region name Afar and the business name. Full native-language/client review remains pending."
+}

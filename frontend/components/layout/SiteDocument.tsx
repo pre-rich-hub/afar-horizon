@@ -1,12 +1,14 @@
 import { site } from '@/lib/config/site'
-import { createPageMetadata, pageTitle } from '@/lib/seo/metadata'
 import { SiteFooter } from '@/components/layout/SiteFooter'
 import { SiteNav } from '@/components/layout/SiteNav'
 import { FloatingSupport } from '@/features/support'
-import { Analytics } from '@vercel/analytics/next'
-import type { Metadata, Viewport } from 'next'
+import { SiteAnalytics } from '@/components/common/SiteAnalytics'
+import { getMeasurementConfig } from '@/lib/config/measurement'
+import { indexableStaticRoutes } from '@/lib/seo/routes'
+import { destinations } from '@/features/destinations'
+import { tours } from '@/features/tours'
+import { posts } from '@/features/blog'
 import { Cormorant_Garamond, Inter } from 'next/font/google'
-import './globals.css'
 import { JsonLd } from '@/components/common/JsonLd'
 import { businessSchema } from '@/features/about'
 
@@ -23,54 +25,45 @@ const cormorant = Cormorant_Garamond({
   display: 'swap',
 })
 
-export const metadata: Metadata = {
-  ...createPageMetadata({
-    title: 'Private Afar & Danakil Expeditions',
-    description: 'Private Afar and Danakil expeditions with a locally owned Ethiopian operator, connecting volcanoes, salt country and the northern highlands.',
-    path: '/',
-  }),
-  metadataBase: new URL(site.url),
-  title: {
-    default: pageTitle('Private Afar & Danakil Expeditions'),
-    template: `%s | ${site.name}`,
-  },
-  // Each page declares its own canonical; do not inherit the homepage's URL.
-  alternates: { canonical: null },
-}
+const measurement = getMeasurementConfig(site.production)
+const analyticsPaths = [
+  ...indexableStaticRoutes, '/plan', '/photo-credits',
+  ...destinations.map(d => `/destinations/${d.slug}`),
+  ...tours.map(t => `/expeditions/${t.slug}`),
+  ...posts.map(p => `/blog/${p.slug}`),
+]
 
-export const viewport: Viewport = {
-  themeColor: '#2a1d16',
-  colorScheme: 'light',
-  width: 'device-width',
-  initialScale: 1,
-}
-
-export default function RootLayout({
-  children,
+import { TranslationProvider, TranslationBoundary } from '@/components/common/TranslationBoundary'
+import type { Locale } from '@/lib/i18n/locales'
+import type { Messages } from '@/lib/i18n/translate'
+export function SiteDocument({
+  children, locale = 'en', messages = {},
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode; locale?: Locale; messages?: Messages
 }>) {
   return (
     <html
-      lang="en"
+      lang={locale}
       className={`${inter.variable} ${cormorant.variable} bg-background`}
     >
       <head>
         <link rel="preconnect" href="https://res.cloudinary.com" />
       </head>
       <body className="antialiased">
+        <TranslationProvider locale={locale} messages={messages} paths={analyticsPaths} origin={site.url}>
         <JsonLd data={businessSchema()} />
-        <a
+        <TranslationBoundary><a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-primary focus:px-5 focus:py-3 focus:text-xs focus:font-semibold focus:uppercase focus:tracking-[0.14em] focus:text-primary-foreground"
         >
           Skip to content
-        </a>
+        </a></TranslationBoundary>
         <SiteNav />
         <main id="main">{children}</main>
         <SiteFooter />
         <FloatingSupport />
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+        {measurement.pageviews && locale === 'en' && <SiteAnalytics paths={analyticsPaths} origin={site.url} events={measurement.events} />}
+        </TranslationProvider>
       </body>
     </html>
   )

@@ -1,0 +1,330 @@
+{
+  "date": "2026-10-11",
+  "mode": "Local production build; every contact API request intercepted and fulfilled; no real enquiries sent",
+  "reports": [
+    {
+      "path": "/fr/contact",
+      "width": 390,
+      "interceptedRequests": 2,
+      "concurrentDuplicatePrevented": true,
+      "failureDisplayed": true,
+      "retryAccepted": true,
+      "analyticsRequests": 0
+    },
+    {
+      "path": "/fr/ground-operations",
+      "width": 1440,
+      "interceptedRequests": 2,
+      "concurrentDuplicatePrevented": true,
+      "failureDisplayed": true,
+      "retryAccepted": true,
+      "analyticsRequests": 0
+    },
+    {
+      "path": "/es/contact",
+      "width": 390,
+      "interceptedRequests": 2,
+      "concurrentDuplicatePrevented": true,
+      "failureDisplayed": true,
+      "retryAccepted": true,
+      "analyticsRequests": 0
+    },
+    {
+      "path": "/es/ground-operations",
+      "width": 1440,
+      "interceptedRequests": 2,
+      "concurrentDuplicatePrevented": true,
+      "failureDisplayed": true,
+      "retryAccepted": true,
+      "analyticsRequests": 0
+    },
+    {
+      "path": "/de/contact",
+      "width": 390,
+      "interceptedRequests": 2,
+      "concurrentDuplicatePrevented": true,
+      "failureDisplayed": true,
+      "retryAccepted": true,
+      "analyticsRequests": 0
+    },
+    {
+      "path": "/de/ground-operations",
+      "width": 1440,
+      "interceptedRequests": 2,
+      "concurrentDuplicatePrevented": true,
+      "failureDisplayed": true,
+      "retryAccepted": true,
+      "analyticsRequests": 0
+    },
+    {
+      "path": "/zh-Hans/contact",
+      "width": 390,
+      "interceptedRequests": 2,
+      "concurrentDuplicatePrevented": true,
+      "failureDisplayed": true,
+      "retryAccepted": true,
+      "analyticsRequests": 0
+    },
+    {
+      "path": "/zh-Hans/ground-operations",
+      "width": 1440,
+      "interceptedRequests": 2,
+      "concurrentDuplicatePrevented": true,
+      "failureDisplayed": true,
+      "retryAccepted": true,
+      "analyticsRequests": 0
+    }
+  ],
+  "layoutReports": [
+    {
+      "path": "/fr",
+      "width": 390,
+      "overflow": false,
+      "lang": "fr",
+      "h1": "Au-delà de l'horizon, vers l'Afar",
+      "analytics": 0
+    },
+    {
+      "path": "/fr",
+      "width": 1024,
+      "overflow": false,
+      "lang": "fr",
+      "h1": "Au-delà de l'horizon, vers l'Afar",
+      "analytics": 0
+    },
+    {
+      "path": "/fr",
+      "width": 1440,
+      "overflow": false,
+      "lang": "fr",
+      "h1": "Au-delà de l'horizon, vers l'Afar",
+      "analytics": 0
+    },
+    {
+      "path": "/fr/destinations/erta-ale",
+      "width": 390,
+      "overflow": false,
+      "lang": "fr",
+      "h1": "Erta Ale",
+      "analytics": 0
+    },
+    {
+      "path": "/fr/expeditions/danakil-deep",
+      "width": 1440,
+      "overflow": false,
+      "lang": "fr",
+      "h1": "Danakil Deep",
+      "analytics": 0
+    },
+    {
+      "path": "/fr/blog/when-to-visit-ethiopia",
+      "width": 390,
+      "overflow": false,
+      "lang": "fr",
+      "h1": "Quand visiter Afar et la dépression de Danakil",
+      "analytics": 0
+    },
+    {
+      "path": "/fr/gallery",
+      "width": 390,
+      "overflow": false,
+      "lang": "fr",
+      "h1": "L'Éthiopie, vue lentement",
+      "analytics": 0
+    },
+    {
+      "path": "/es",
+      "width": 390,
+      "overflow": false,
+      "lang": "es",
+      "h1": "Más allá del horizonte, hacia Afar",
+      "analytics": 0
+    },
+    {
+      "path": "/es",
+      "width": 1024,
+      "overflow": false,
+      "lang": "es",
+      "h1": "Más allá del horizonte, hacia Afar",
+      "analytics": 0
+    },
+    {
+      "path": "/es",
+      "width": 1440,
+      "overflow": false,
+      "lang": "es",
+      "h1": "Más allá del horizonte, hacia Afar",
+      "analytics": 0
+    },
+    {
+      "path": "/es/destinations/erta-ale",
+      "width": 390,
+      "overflow": false,
+      "lang": "es",
+      "h1": "Erta Ale",
+      "analytics": 0
+    },
+    {
+      "path": "/es/expeditions/danakil-deep",
+      "width": 1440,
+      "overflow": false,
+      "lang": "es",
+      "h1": "Danakil Deep",
+      "analytics": 0
+    },
+    {
+      "path": "/es/blog/when-to-visit-ethiopia",
+      "width": 390,
+      "overflow": false,
+      "lang": "es",
+      "h1": "Cuándo visitar Afar y la depresión de Danakil",
+      "analytics": 0
+    },
+    {
+      "path": "/es/gallery",
+      "width": 390,
+      "overflow": false,
+      "lang": "es",
+      "h1": "Etiopía, vista lentamente",
+      "analytics": 0
+    },
+    {
+      "path": "/de",
+      "width": 390,
+      "overflow": false,
+      "lang": "de",
+      "h1": "Jenseits des Horizonts in Afar",
+      "analytics": 0
+    },
+    {
+      "path": "/de",
+      "width": 1024,
+      "overflow": false,
+      "lang": "de",
+      "h1": "Jenseits des Horizonts in Afar",
+      "analytics": 0
+    },
+    {
+      "path": "/de",
+      "width": 1440,
+      "overflow": false,
+      "lang": "de",
+      "h1": "Jenseits des Horizonts in Afar",
+      "analytics": 0
+    },
+    {
+      "path": "/de/destinations/erta-ale",
+      "width": 390,
+      "overflow": false,
+      "lang": "de",
+      "h1": "Erta Ale",
+      "analytics": 0
+    },
+    {
+      "path": "/de/expeditions/danakil-deep",
+      "width": 1440,
+      "overflow": false,
+      "lang": "de",
+      "h1": "Danakil Deep",
+      "analytics": 0
+    },
+    {
+      "path": "/de/blog/when-to-visit-ethiopia",
+      "width": 390,
+      "overflow": false,
+      "lang": "de",
+      "h1": "Wann man Afar und die Danakil-Senke besuchen sollte",
+      "analytics": 0
+    },
+    {
+      "path": "/de/gallery",
+      "width": 390,
+      "overflow": false,
+      "lang": "de",
+      "h1": "Äthiopien, langsam gesehen",
+      "analytics": 0
+    },
+    {
+      "path": "/zh-Hans",
+      "width": 390,
+      "overflow": false,
+      "lang": "zh-Hans",
+      "h1": "超越地平线，走进 阿法尔",
+      "analytics": 0
+    },
+    {
+      "path": "/zh-Hans",
+      "width": 1024,
+      "overflow": false,
+      "lang": "zh-Hans",
+      "h1": "超越地平线，走进 阿法尔",
+      "analytics": 0
+    },
+    {
+      "path": "/zh-Hans",
+      "width": 1440,
+      "overflow": false,
+      "lang": "zh-Hans",
+      "h1": "超越地平线，走进 阿法尔",
+      "analytics": 0
+    },
+    {
+      "path": "/zh-Hans/destinations/erta-ale",
+      "width": 390,
+      "overflow": false,
+      "lang": "zh-Hans",
+      "h1": "Erta Ale",
+      "analytics": 0
+    },
+    {
+      "path": "/zh-Hans/expeditions/danakil-deep",
+      "width": 1440,
+      "overflow": false,
+      "lang": "zh-Hans",
+      "h1": "Danakil Deep",
+      "analytics": 0
+    },
+    {
+      "path": "/zh-Hans/blog/when-to-visit-ethiopia",
+      "width": 390,
+      "overflow": false,
+      "lang": "zh-Hans",
+      "h1": "何时参观 阿法尔 和达纳基尔凹地",
+      "analytics": 0
+    },
+    {
+      "path": "/zh-Hans/gallery",
+      "width": 390,
+      "overflow": false,
+      "lang": "zh-Hans",
+      "h1": "埃塞俄比亚，慢慢看",
+      "analytics": 0
+    }
+  ],
+  "navigationReports": [
+    {
+      "locale": "fr",
+      "deepLinkPreserved": true,
+      "languageLinkNavigated": true,
+      "queryAndFragmentPreserved": true
+    },
+    {
+      "locale": "es",
+      "deepLinkPreserved": true,
+      "languageLinkNavigated": true,
+      "queryAndFragmentPreserved": true
+    },
+    {
+      "locale": "de",
+      "deepLinkPreserved": true,
+      "languageLinkNavigated": true,
+      "queryAndFragmentPreserved": true
+    },
+    {
+      "locale": "zh-Hans",
+      "deepLinkPreserved": true,
+      "languageLinkNavigated": true,
+      "queryAndFragmentPreserved": true
+    }
+  ]
+}

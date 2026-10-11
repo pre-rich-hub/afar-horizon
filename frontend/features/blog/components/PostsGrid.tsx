@@ -1,4 +1,6 @@
 'use client'
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+
 
 import { Reveal } from '@/components/common/Reveal'
 import { useMemo, useState } from 'react'
@@ -18,7 +20,7 @@ export function PostsGrid({ posts }: { posts: Post[] }) {
       : posts.filter((p) => p.category === active)
 
   return (
-    <div>
+    <TranslationBoundary><div>
       <div
         role="group"
         aria-label="Filter articles by category"
@@ -27,7 +29,7 @@ export function PostsGrid({ posts }: { posts: Post[] }) {
         {categories.map((c) => {
           const on = c === active
           return (
-            <button
+            <TranslationBoundary key={c}><button
               key={c}
               type="button"
               aria-pressed={on}
@@ -39,16 +41,16 @@ export function PostsGrid({ posts }: { posts: Post[] }) {
               }`}
             >
               {c}
-            </button>
+            </button></TranslationBoundary>
           )
         })}
       </div>
 
       <div className="grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
         {visible.map((p, i) => (
-          <Reveal key={p.slug} delay={(i % 3) * 90}>
+          <TranslationBoundary key={p.slug}><Reveal key={p.slug} delay={(i % 3) * 90}>
             <PostCard post={p} />
-          </Reveal>
+          </Reveal></TranslationBoundary>
         ))}
       </div>
 
@@ -57,6 +59,6 @@ export function PostsGrid({ posts }: { posts: Post[] }) {
           Nothing filed under this yet.
         </p>
       )}
-    </div>
+    </div></TranslationBoundary>
   )
 }

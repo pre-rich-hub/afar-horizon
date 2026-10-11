@@ -1,9 +1,11 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import { principles } from '../data/about.data'
 
 export function AboutApproach() {
   return (
-    <section id="our-approach" className="scroll-mt-32 shell py-20 sm:py-24 lg:py-32">
+    <TranslationBoundary><section id="our-approach" className="scroll-mt-32 shell py-20 sm:py-24 lg:py-32">
         <Reveal className="mb-12 max-w-2xl sm:mb-16">
           <p className="eyebrow mb-5 text-accent">The kind of travel we believe in</p>
           <h2 className="text-balance text-3xl leading-[1.1] text-foreground sm:text-4xl lg:text-5xl">
@@ -13,7 +15,7 @@ export function AboutApproach() {
 
         <ol className="divide-y divide-border border-y border-border">
           {principles.map((p, i) => (
-            <Reveal
+            <TranslationBoundary key={p.title}><Reveal
               key={p.title}
               as="li"
               delay={i * 80}
@@ -26,9 +28,9 @@ export function AboutApproach() {
               <p className="text-pretty leading-relaxed text-muted-foreground sm:col-start-2 sm:text-lg lg:col-start-3">
                 {p.text}
               </p>
-            </Reveal>
+            </Reveal></TranslationBoundary>
           ))}
         </ol>
-      </section>
+      </section></TranslationBoundary>
   )
 }

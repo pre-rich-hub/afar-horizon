@@ -1,4 +1,7 @@
 'use client'
+import { TranslatedText } from '@/components/common/TranslatedText'
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+
 
 import { TextLink } from '@/components/common/LinkButton'
 import { Reveal } from '@/components/common/Reveal'
@@ -6,8 +9,24 @@ import { destinations } from '@/features/destinations'
 import { cn } from '@/lib/utils'
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
-import Link from 'next/link'
+import Link from '@/components/common/SiteLink'
 import { useState } from 'react'
+
+const featuredDestinationSlugs = [
+  'danakil-depression',
+  'afar',
+  'erta-ale',
+  'dallol',
+  'lake-afdera',
+  'hadar',
+  'awash-national-park',
+  'simien-mountains',
+  'lalibela',
+  'gondar',
+]
+const featuredDestinations = featuredDestinationSlugs.map(
+  (slug) => destinations.find((destination) => destination.slug === slug)!,
+)
 
 export function DestinationIndex() {
   const [active, setActive] = useState(0)
@@ -15,13 +34,13 @@ export function DestinationIndex() {
   const [loaded, setLoaded] = useState(new Set<string>())
   const select = (index: number) => {
     if (index === active) return
-    setPrevious(loaded.has(destinations[active].slug) ? active : previous ?? active)
+    setPrevious(loaded.has(featuredDestinations[active].slug) ? active : previous ?? active)
     setActive(index)
   }
-  const current = destinations[active]
+  const current = featuredDestinations[active]
 
   return (
-    <section
+    <TranslationBoundary><section
       id="destination-index"
       aria-labelledby="destination-index-title"
       className="bg-background"
@@ -31,8 +50,8 @@ export function DestinationIndex() {
       <div className="hidden lg:grid lg:grid-cols-2">
         {/* Keep the outgoing photo for the existing cross-fade. */}
         <div className="relative aspect-[4/3] overflow-hidden bg-charcoal sm:aspect-[16/10] lg:aspect-auto lg:min-h-[min(100svh,860px)]">
-          {destinations.filter((_, i) => i === active || i === previous).map((d) => (
-            <Image
+          {featuredDestinations.filter((_, i) => i === active || i === previous).map((d) => (
+            <TranslationBoundary key={d.slug}><Image
               key={d.slug}
               onLoad={() => setLoaded(current => new Set(current).add(d.slug))}
               src={d.image}
@@ -45,7 +64,7 @@ export function DestinationIndex() {
                 (d.slug === current.slug && (previous === null || loaded.has(current.slug))) || (d.slug !== current.slug && !loaded.has(current.slug))
                   ? 'scale-100 opacity-100' : 'scale-[1.06] opacity-0',
               )}
-            />
+            /></TranslationBoundary>
           ))}
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-charcoal/5 to-transparent" />
 
@@ -55,7 +74,7 @@ export function DestinationIndex() {
                 {current.tag} · {current.region}
               </p>
               <p className="mt-3 max-w-[38ch] text-pretty font-serif text-xl leading-snug text-background sm:text-2xl">
-                {current.teaser}
+                <TranslatedText text={current.teaser} />
               </p>
             </div>
           </div>
@@ -72,10 +91,10 @@ export function DestinationIndex() {
             <div className="mt-5 h-px w-full bg-border" />
 
             <ul className="mt-8 sm:mt-10">
-              {destinations.map((d, i) => {
+              {featuredDestinations.map((d, i) => {
                 const isActive = i === active
                 return (
-                  <li key={d.slug}>
+                  <TranslationBoundary key={d.slug}><li key={d.slug}>
                     <Link
                       href={`/destinations/${d.slug}`}
                       onMouseEnter={() => select(i)}
@@ -110,7 +129,7 @@ export function DestinationIndex() {
                         )}
                       />
                     </Link>
-                  </li>
+                  </li></TranslationBoundary>
                 )
               })}
             </ul>
@@ -118,14 +137,14 @@ export function DestinationIndex() {
             <div className="mt-10 h-px w-full bg-border sm:mt-12" />
             <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
               <p className="text-sm text-muted-foreground">
-                Eight regions, one country, a lifetime of journeys.
+                Seven Afar destinations and three northern highland highlights.
               </p>
               <TextLink href="/destinations">View all destinations</TextLink>
             </div>
           </Reveal>
         </div>
       </div>
-    </section>
+    </section></TranslationBoundary>
   )
 }
 
@@ -133,7 +152,7 @@ export function DestinationIndex() {
 // straight to its destination — no hover needed.
 function MobileIndex() {
   return (
-    <div className="shell py-16 sm:py-20 lg:hidden">
+    <TranslationBoundary><div className="shell py-16 sm:py-20 lg:hidden">
       <Reveal>
         <h2
           id="destination-index-title"
@@ -144,8 +163,8 @@ function MobileIndex() {
       </Reveal>
 
       <ul className="mt-8 grid grid-cols-2 gap-3 sm:mt-10 sm:grid-cols-3 sm:gap-4">
-        {destinations.map((d, i) => (
-          <li key={d.slug}>
+        {featuredDestinations.map((d, i) => (
+          <TranslationBoundary key={d.slug}><li key={d.slug}>
             <Reveal delay={(i % 2) * 80}>
               <Link
                 href={`/destinations/${d.slug}`}
@@ -164,13 +183,13 @@ function MobileIndex() {
                 </span>
               </Link>
             </Reveal>
-          </li>
+          </li></TranslationBoundary>
         ))}
       </ul>
 
       <div className="mt-10 flex justify-center">
         <TextLink href="/destinations">View all destinations</TextLink>
       </div>
-    </div>
+    </div></TranslationBoundary>
   )
 }

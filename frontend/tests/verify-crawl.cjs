@@ -9,7 +9,7 @@ const { indexableStaticRoutes } = load('@/lib/seo/routes')
 const base = process.argv.find(arg => arg.startsWith('--base-url='))?.slice(11)
 assert(base, 'Provide --base-url=http://localhost:<port>')
 const preview = process.argv.includes('--preview')
-const origin = 'https://afarhorizon.com'
+const origin = 'https://www.afarhorizon.com'
 const routes = [
   ...indexableStaticRoutes,
   ...destinations.map(d => `/destinations/${d.slug}`),

@@ -1,4 +1,6 @@
 'use client'
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+
 
 import { Check } from 'lucide-react'
 import { useState } from 'react'
@@ -10,15 +12,15 @@ export function NewsletterForm() {
 
   if (done) {
     return (
-      <p className="flex w-full max-w-sm items-center gap-3 border border-accent/40 px-5 py-4 text-sm text-background/80">
+      <TranslationBoundary><p className="flex w-full max-w-sm items-center gap-3 border border-accent/40 px-5 py-4 text-sm text-background/80">
         <Check className="h-4 w-4 shrink-0 text-accent" />
         Thank you — the next letter will find you.
-      </p>
+      </p></TranslationBoundary>
     )
   }
 
   return (
-    <form
+    <TranslationBoundary><form
       onSubmit={async (e) => {
         e.preventDefault()
         setError(null)
@@ -56,6 +58,6 @@ export function NewsletterForm() {
           {error}
         </p>
       ) : null}
-    </form>
+    </form></TranslationBoundary>
   )
 }

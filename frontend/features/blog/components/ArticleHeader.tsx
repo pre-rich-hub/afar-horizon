@@ -1,13 +1,15 @@
+
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import { ChevronRight } from 'lucide-react'
 import Image from 'next/image'
-import Link from 'next/link'
+import Link from '@/components/common/SiteLink'
 import type { Post } from '../types/post.types'
 import { formatEditorialDate } from '@/lib/utils/date'
 
 export function ArticleHeader({ post }: { post: Post }) {
   return (
-    <header className="border-b border-border">
+    <TranslationBoundary><header className="border-b border-border">
         <div className="shell pb-12 pt-32 sm:pb-16 sm:pt-36 lg:pt-40">
           <Reveal className="mx-auto max-w-3xl">
             <nav aria-label="Breadcrumb" className="mb-8 flex flex-wrap items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground sm:text-[11px]">
@@ -65,6 +67,6 @@ export function ArticleHeader({ post }: { post: Post }) {
             </div>
           </Reveal>
         </div>
-      </header>
+      </header></TranslationBoundary>
   )
 }

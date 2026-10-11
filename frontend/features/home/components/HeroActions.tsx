@@ -1,17 +1,19 @@
 'use client'
+import { TranslationBoundary } from '@/components/common/TranslationBoundary'
+
 
 import { index, popular } from '../data/hero-actions.data'
 
 import { cn } from '@/lib/utils'
 import { ArrowRight, MapPin, Route, Search } from 'lucide-react'
 import Image from 'next/image'
-import Link from 'next/link'
+import Link from '@/components/common/SiteLink'
 import { useRouter } from 'next/navigation'
 import { useId, useMemo, useRef, useState } from 'react'
 
 export function HeroActions() {
   return (
-    <div className="relative mx-auto grid w-full max-w-[1080px] gap-10 [animation:fade-up_1s_ease_0.4s_both] md:grid-cols-2 md:gap-0">
+    <TranslationBoundary><div className="relative mx-auto grid w-full max-w-[1080px] gap-10 [animation:fade-up_1s_ease_0.4s_both] md:grid-cols-2 md:gap-0">
       {/* Gold hairline running from the CTAs down to the bottom of the hero */}
       <span
         aria-hidden
@@ -39,7 +41,7 @@ export function HeroActions() {
           <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
         </Link>
       </div>
-    </div>
+    </div></TranslationBoundary>
   )
 }
 
@@ -85,7 +87,7 @@ function HeroSearch() {
   const showPanel = open && (results.length > 0 || q.length > 0)
 
   return (
-    <form
+    <TranslationBoundary><form
       role="search"
       onSubmit={(e) => {
         e.preventDefault()
@@ -145,7 +147,7 @@ function HeroSearch() {
               {results.map((r, i) => {
                 const Icon = r.kind === 'Destination' ? MapPin : Route
                 return (
-                  <li
+                  <TranslationBoundary key={r.href}><li
                     key={r.href}
                     id={`${listId}-${i}`}
                     role="option"
@@ -176,7 +178,7 @@ function HeroSearch() {
                         i === highlight ? 'translate-x-0 opacity-100' : '-translate-x-1 opacity-0',
                       )}
                     />
-                  </li>
+                  </li></TranslationBoundary>
                 )
               })}
             </ul>
@@ -188,6 +190,6 @@ function HeroSearch() {
           )}
         </div>
       )}
-    </form>
+    </form></TranslationBoundary>
   )
 }

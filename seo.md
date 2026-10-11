@@ -45,8 +45,8 @@ This is a source-code audit, not a claim about current production rankings, inde
 | 3 | Search intent, on-page content and internal links | Completed locally; profile URLs and operator confirmations pending | [Intent map](frontend/docs/seo-phase3-intent-map.md); editorial/rendered checks; included in this commit |
 | 4 | Structured data and trustworthy entity information | Implemented; local and Schema.org checks passed; Google test pending | [Validation record](frontend/docs/seo-phase4-validation.md); schema tests and rendered verifier; included in this commit |
 | 5 | Image delivery, performance and mobile experience | Completed locally; field measurements and performance backlog remain | [Performance record](frontend/docs/seo-phase5-performance.md); responsive image and browser checks; included in this commit |
-| 6 | Production verification, Search Console and conversion measurement | Not started | — |
-| 7 | Ongoing content, local presence and search improvement | Not started | — |
+| 6 | Production verification, Search Console and conversion measurement | Frontend prepared; domain connection, Search Console and live measurement pending | [Launch checklist](frontend/docs/seo-phase6-launch.md); measurement tests |
+| 7 | Ongoing content, local presence and search improvement | Workflow and tooling prepared; live review cycle pending | [Maintenance workflow](frontend/docs/seo-phase7-maintenance.md), [catalogue inventory](frontend/docs/seo-phase7-inventory.json), [review log](frontend/docs/seo-maintenance-log.csv) |
 | 8 | Translation and international SEO | Deferred until translation | — |
 
 ## Phase 1 — Establish the basics
@@ -250,6 +250,14 @@ This is a source-code audit, not a claim about current production rankings, inde
 - Test enquiries generate the expected successful-submission event exactly once; failed submissions do not count as success.
 - External account or deployment dependencies that remain unresolved are explicitly recorded rather than marked complete.
 
+### Phase 6 preparation — 11 October 2026
+
+- Owner confirmed Vercel Hobby, no Search Console property and no custom-domain connection yet. The canonical domain currently serves a LiteSpeed parking page; robots and sitemap return 404. Live indexing and deployment checks remain pending.
+- Added optional production-only Google HTML verification metadata, production-only Vercel page views, URL sanitization and a measurement disable switch. Preview/local deployments do not send analytics. Domain-property DNS verification remains the preferred documented setup.
+- Prepared enquiry-success, contact-channel and package-enquiry events without personal information. Custom events default off and remain disabled on Hobby; no provider or paid plan was selected. Both enquiry forms guard concurrent submissions and retry failures; success is counted only after the backend accepts the request.
+- Validation: all eight test files, TypeScript and the production build pass; rendered metadata/content/schema checks cover 60 public pages and crawl checks cover 58 sitemap URLs. Mocked mobile journey and desktop partner forms pass duplicate-request, failure and retry checks without real enquiries.
+- Account, DNS, deployment, sitemap submission and baseline steps are recorded in the [launch checklist](frontend/docs/seo-phase6-launch.md). Phase 6 is not complete until those external checks and report access are established.
+
 ## Phase 7 — Maintain and grow useful search visibility
 
 **Outcome:** technical SEO remains healthy while content improves from actual traveller questions and results.
@@ -260,22 +268,40 @@ This is a source-code audit, not a claim about current production rankings, inde
 - [ ] Review volatile destination and access statements before promoting departures. Keep true publication/update dates, image subjects, canonical URLs and schema synchronized with editorial changes.
 - [ ] Have the owner verify eligibility and details for Google Business Profile; use the real operating address and contact details. Add genuine local/travel-directory listings and partner references where relevant, without duplicate profiles, purchased links or manufactured reviews.
 - [ ] Maintain a change log and compare search/enquiry trends over meaningful periods, accounting for seasonality. Monitor Cloudinary failures, form errors and frontend/backend catalogue discrepancies.
-- [ ] Prepare a separate GEO worklist from this foundation: clear answers, consistent entity facts and useful original expertise. Do not treat an `llms.txt` file as an SEO prerequisite or ranking improvement. [Google AI guidance](https://developers.google.com/search/docs/appearance/ai-features)
+- [x] Prepare a separate GEO worklist from this foundation: clear answers, consistent entity facts and useful original expertise. Do not treat an `llms.txt` file as an SEO prerequisite or ranking improvement. [Google AI guidance](https://developers.google.com/search/docs/appearance/ai-features)
 
 **Complete when:** a named owner, review schedule, baseline dashboard and prioritized improvement backlog exist. This phase remains ongoing; “full SEO” is a maintained process, not a one-time finished ranking result.
+
+### Phase 7 preparation — 11 October 2026
+
+- Added `npm run seo:check` to generate a current catalogue inventory and run the five existing rendered SEO verifiers against an explicit local/production/preview origin. It saves a report, reports each failure and optionally checks unique catalogue photo responses; it does not submit forms or change external services.
+- Prepared a [maintenance workflow](frontend/docs/seo-phase7-maintenance.md) with a post-launch weekly/monthly schedule, responsibilities by role, review instructions, a prioritized backlog for all nine guides, and frontend/backend catalogue reconciliation steps. Named people and live account access remain pending.
+- Added a [CSV review log](frontend/docs/seo-maintenance-log.csv) and [initial inventory](frontend/docs/seo-phase7-inventory.json): 19 destinations, 17 expeditions and nine articles, seven Afar (78%). Unmeasured search/enquiry values remain blank. No new articles, client facts, prices or reviews were changed.
+- Prepared the separate [GEO worklist](frontend/docs/geo-worklist.md), with ordinary SEO foundations and client-confirmed original expertise as priorities. No AI-specific file or special schema was added.
+- Validation: all eight test files pass. The new runner passes all five rendered checks and all 28 catalogue image-response checks against the local build; unavailable-target failure reporting also passes. Evidence is retained in the [Phase 7 validation report](frontend/docs/seo-phase7-validation.json).
+- Domain connection, Search Console, real profile URLs and a measured launch baseline remain Phase 6/owner dependencies. Phase 7 remains ongoing; this preparation does not establish rankings, recurring live reviews or business-profile eligibility.
 
 ## Phase 8 — International SEO, when translation is ready
 
 **Dependency:** client-selected languages, reviewed translations and a separate approved language-routing implementation. Do not create empty locale pages during the English phases.
 
-- [ ] Retain the current English URLs and use dedicated language prefixes for translated versions. Serve each language at a stable URL rather than swapping the same URL's text by browser preference.
+- [x] Retain the current English URLs and use dedicated language prefixes for translated versions. Serve each language at a stable URL rather than swapping the same URL's text by browser preference.
 - [ ] Translate titles, descriptions, main content, navigation, image descriptions and relevant schema fields alongside the visible UI.
 - [ ] Give every translated page a self-canonical and reciprocal `hreflang` entries for its real translated equivalents. Use English as `x-default` for this URL strategy; omit nonexistent translations.
 - [ ] Add the translated URL sets to the sitemap and language switcher. Keep unknown/missing translations honest; do not silently serve English under an untranslated indexable locale URL.
-- [ ] Set the correct HTML language. Use normal links for switching languages and avoid forcing crawler/user redirects based solely on location or browser language.
+- [x] Set the correct HTML language. Use normal links for switching languages and avoid forcing crawler/user redirects based solely on location or browser language.
 - [ ] Validate metadata, reciprocal alternates, rendering, links, redirects and forms for every supported language.
 
 **Complete when:** each published translation is reviewed, indexable at its own URL, correctly linked to its equivalents and included in search monitoring. [Google localized-page guidance](https://developers.google.com/search/docs/specialty/international/localized-versions)
+
+### Phase 8 draft implementation — 11 October 2026
+
+- Client selected French, Spanish, German and Chinese and requested drafts for review. Implemented 60 public pages per language, preserving English URLs and the feature UI; Simplified Chinese is the working variant pending confirmation.
+- Added translated content, titles/descriptions, image descriptions, relevant schema text, real language links and scoped dictionaries. Reviews, prices, company facts and form payload contracts remain intact. Private/API/auth routes are excluded.
+- All 240 translated pages are noindex drafts with self-canonicals. Approval lists are empty; draft URLs are excluded from the sitemap and hreflang. Reviewed route promotion enables reciprocal English/language/x-default alternates and eligible translated sitemap entries. Publication checkboxes remain pending native-language/client review.
+- Prepared the [2,166-string client review CSV](frontend/docs/translation-review.csv) and [review/publication workflow](frontend/docs/seo-phase8-translations.md). Machine-assisted drafts need native-language review, particularly terminology and grammar around inline links.
+- Validation: all nine test files, the separate TypeScript check and the production build pass. Rendered checks cover 240 draft pages, localized schema, canonical/noindex rules, 58 English sitemap URLs and six invalid routes. Browser checks cover 28 responsive layouts, four deep-link language-switch flows, gallery keyboard controls and eight mocked enquiry failure/retry flows without real submissions or runtime exceptions. English regression checks pass all five SEO verifier groups. Evidence: [rendered checks](frontend/docs/seo-phase8-validation.json) and [browser checks](frontend/docs/seo-phase8-browser.json).
+- Domain connection, Search Console and live measurement remain Phase 6 dependencies. No translated page has been approved, deployed or submitted for indexing.
 
 ## Verification and rollout for each phase
 
@@ -310,4 +336,4 @@ Recheck current guidance when implementing each phase; search features and frame
 - [Google breadcrumb markup](https://developers.google.com/search/docs/appearance/structured-data/breadcrumb)
 - [Cloudinary image transformations](https://cloudinary.com/documentation/image_transformations)
 
-**Start next:** Phase 6 — production verification, Search Console and conversion measurement. Phase 4's authenticated Google Rich Results Test, hosting redirects, real profile URLs and operator-owned policy/operating confirmations remain external dependencies.
+**Continue next:** Review the Phase 8 translation drafts with the client, confirm the Chinese variant and publish only approved routes. Complete Phase 6 using the launch checklist and begin Phase 7’s prepared review cycle. Phase 4's authenticated Google Rich Results Test, hosting redirects, real profile URLs and operator-owned policy/operating confirmations remain external dependencies.
