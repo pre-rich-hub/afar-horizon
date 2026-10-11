@@ -55,7 +55,7 @@ test('page metadata keeps canonical and social details on the same page', () => 
   assert.equal(article.openGraph.type, 'article')
   assert.deepEqual(article.authors, [{ name: 'Afar Horizon' }])
   assert.deepEqual(article.robots, { index: true, follow: true })
-  assert.equal(createPageMetadata({ title: 'Credits', description: 'Photos', path: '/photo-credits', index: false }).robots.index, false)
+  assert.equal(createPageMetadata({ title: 'Plan', description: 'Plan a journey', path: '/plan', index: false }).robots.index, false)
   assert.throws(() => createPageMetadata({ title: 'Bad', description: 'Bad', path: '//another.example/path' }))
   assert.throws(() => createPageMetadata({ title: 'Bad', description: 'Bad', path: '/\\another.example/path' }))
 })

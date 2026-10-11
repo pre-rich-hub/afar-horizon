@@ -87,7 +87,6 @@ const columns = [
       { label: 'Gallery', href: '/gallery' },
       { label: 'Journal', href: '/blog' },
       { label: 'Contact', href: '/contact' },
-      { label: 'Photo Credits', href: '/photo-credits' },
     ],
   },
 ]
@@ -143,7 +142,7 @@ export function SiteFooter() {
           <div className="lg:row-span-2">
             <Link href="/" className="inline-flex" aria-label="Afar Horizon Expeditions — home">
               <img
-                src="/images/logo-light.png"
+                src="/images/logo-light.webp"
                 alt="Afar Horizon Expeditions Logo"
                 width={520}
                 height={341}

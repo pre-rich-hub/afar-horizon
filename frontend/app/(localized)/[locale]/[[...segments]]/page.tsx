@@ -24,7 +24,6 @@ import * as BlogIndex from '../../../(site)/blog/page'
 import * as Privacy from '../../../(site)/privacy/page'
 import * as Terms from '../../../(site)/terms/page'
 import * as Plan from '../../../(site)/plan/page'
-import * as PhotoCredits from '../../../(site)/photo-credits/page'
 import * as Destination from '../../../(site)/destinations/[slug]/page'
 import * as Expedition from '../../../(site)/expeditions/[slug]/page'
 import * as Article from '../../../(site)/blog/[slug]/page'
@@ -38,10 +37,10 @@ const staticPages = {
   '/faq': Faq, '/gallery': Gallery, '/ground-operations': GroundOperations,
   '/specialist-travel': SpecialistTravel, '/destinations': DestinationIndex,
   '/expeditions': ExpeditionIndex, '/blog': BlogIndex, '/privacy': Privacy,
-  '/terms': Terms, '/plan': Plan, '/photo-credits': PhotoCredits,
+  '/terms': Terms, '/plan': Plan,
 } as unknown as Record<string, Route>
 const routes = [
-  ...indexableStaticRoutes, '/plan', '/photo-credits',
+  ...indexableStaticRoutes, '/plan',
   ...destinations.map(item => `/destinations/${item.slug}`),
   ...tours.map(item => `/expeditions/${item.slug}`),
   ...posts.map(item => `/blog/${item.slug}`),

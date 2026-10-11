@@ -9,9 +9,12 @@ import { navLinks, planJourneyLink } from '@/lib/constants/navigation'
 import { cn } from '@/lib/utils'
 import {
 ArrowRight,
+Camera,
 Check,
 ChevronDown,
 Globe,
+Handshake,
+type LucideIcon,
 Mail,
 Menu,
 Phone,
@@ -33,6 +36,11 @@ const navDestinations = ['danakil-depression', 'dallol', 'gheralta', 'lalibela']
   .map((slug) => getDestination(slug))
   .filter((d) => d !== undefined)
 
+// Icons for the small 'links' dropdown, keyed by child href.
+const linkIcons: Record<string, LucideIcon> = {
+  '/specialist-travel': Camera,
+  '/ground-operations': Handshake,
+}
 
 function Wordmark({
   tone,
@@ -49,7 +57,7 @@ function Wordmark({
       className="flex items-center"
     >
       <img
-        src={tone === 'light' ? '/images/logo-light.png' : '/images/logo.png'}
+        src={tone === 'light' ? '/images/logo-light.webp' : '/images/logo.webp'}
         alt="Afar Horizon Expeditions Logo"
         width={520}
         height={341}
@@ -66,6 +74,8 @@ export function SiteNav() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
+  // Desktop dropdown hidden after a click until the pointer leaves its item.
+  const [closedMenu, setClosedMenu] = useState<string | null>(null)
   const [urlSuffix, setUrlSuffix] = useState('')
   const lang = languages.find(language => language.locale === locale) ?? languages[0]
   const langRef = useRef<HTMLDivElement>(null)
@@ -145,7 +155,16 @@ export function SiteNav() {
               const active = isActive(link.href)
               const hasDropdown = Boolean(link.menu)
               return (
-                <TranslationBoundary key={link.href}><li key={link.href} className={cn('group py-5', link.menu === 'links' && 'relative')}>
+                <TranslationBoundary key={link.href}><li
+                  key={link.href}
+                  className={cn('py-5', closedMenu !== link.href && 'group')}
+                  onClick={(e) => {
+                    if (!link.menu || !(e.target as Element).closest('a')) return
+                    setClosedMenu(link.href)
+                    ;(document.activeElement as HTMLElement | null)?.blur()
+                  }}
+                  onMouseLeave={() => setClosedMenu(null)}
+                >
                   <Link
                     href={link.href}
                     className={cn(
@@ -242,19 +261,76 @@ export function SiteNav() {
                   )}
 
                   {link.menu === 'links' && link.children && (
-                    <div className="absolute top-full z-45 -ml-4 w-64 border-t-2 border-accent bg-background/98 py-2 text-foreground shadow-2xl backdrop-blur-2xl transition-all duration-300 opacity-0 invisible -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-hover:pointer-events-auto">
-                      {link.children.map((c) => (
-                        <TranslationBoundary key={c.href}><Link
-                          key={c.href}
-                          href={c.href}
-                          className="block px-4 py-2.5 transition-colors hover:bg-muted/60"
-                        >
-                          <span className="block text-[13px] text-foreground">{c.label}</span>
-                          {c.text && (
-                            <span className="mt-0.5 block text-[11px] leading-snug text-muted-foreground">{c.text}</span>
-                          )}
-                        </Link></TranslationBoundary>
-                      ))}
+                    <div className="absolute left-0 top-full w-full bg-background/98 backdrop-blur-2xl border-t border-accent/25 border-b border-border/80 shadow-2xl opacity-0 invisible -translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto z-45 text-foreground">
+                      <div className="shell grid grid-cols-[1fr_3.2fr] gap-12 py-10">
+                        <div className="flex flex-col justify-between">
+                          <div>
+                            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-accent mb-2 block">Beyond the classic route</span>
+                            <h3 className="font-serif text-2xl text-foreground mb-4">Specialist &amp; Partners</h3>
+                            <p className="text-xs text-muted-foreground leading-relaxed">
+                              Bespoke expeditions for photographers, film crews and researchers, and trusted ground handling for tour operators and agencies.
+                            </p>
+                            <ul className="mt-6 space-y-2.5 border-t border-border pt-5">
+                              {link.children.map((c) => (
+                                <TranslationBoundary key={c.href}><li key={c.href}>
+                                  <Link
+                                    href={c.href}
+                                    className="flex items-center justify-between gap-3 text-[13px] text-foreground/80 transition-colors hover:text-accent"
+                                  >
+                                    {c.label}
+                                    <ArrowRight className="h-3 w-3 text-muted-foreground" />
+                                  </Link>
+                                </li></TranslationBoundary>
+                              ))}
+                            </ul>
+                          </div>
+                          <a
+                            href={`mailto:${contact.email}`}
+                            className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-accent hover:text-accent/80 transition-colors mt-6"
+                          >
+                            <Mail className="h-3.5 w-3.5" /> Talk to Our Team
+                          </a>
+                        </div>
+
+                        <div className="grid grid-cols-2 gap-6">
+                          {link.children.map((c) => {
+                            const Icon = linkIcons[c.href] ?? ArrowRight
+                            return (
+                              <TranslationBoundary key={c.href}><Link
+                                key={c.href}
+                                href={c.href}
+                                className="group/item flex flex-col gap-3.5 rounded-lg overflow-hidden p-2.5 transition-all duration-300 hover:bg-muted/50"
+                              >
+                                <div className="relative aspect-[21/9] w-full overflow-hidden rounded-[4px]">
+                                  {c.image && (
+                                    <Image
+                                      src={c.image}
+                                      alt={c.label}
+                                      fill
+                                      sizes="(max-width: 1024px) 40vw, 480px"
+                                      className="object-cover transition-transform duration-700 group-hover/item:scale-105"
+                                    />
+                                  )}
+                                  <span className="absolute left-2.5 top-2.5 flex h-8 w-8 items-center justify-center rounded-full bg-charcoal/80 text-background backdrop-blur-md transition-colors duration-300 group-hover/item:bg-accent group-hover/item:text-accent-foreground">
+                                    <Icon className="h-4 w-4" />
+                                  </span>
+                                </div>
+                                <div className="flex items-start justify-between gap-3">
+                                  <div>
+                                    <h4 className="font-serif text-[16px] text-foreground group-hover/item:text-accent transition-colors duration-300">
+                                      {c.label}
+                                    </h4>
+                                    {c.text && (
+                                      <p className="text-[11px] text-muted-foreground/80 mt-1 leading-relaxed">{c.text}</p>
+                                    )}
+                                  </div>
+                                  <ArrowRight className="mt-1 h-4 w-4 shrink-0 -translate-x-1 text-accent opacity-0 transition-all duration-300 group-hover/item:translate-x-0 group-hover/item:opacity-100" />
+                                </div>
+                              </Link></TranslationBoundary>
+                            )
+                          })}
+                        </div>
+                      </div>
                     </div>
                   )}
 

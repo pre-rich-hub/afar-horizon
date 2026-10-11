@@ -5,7 +5,7 @@ export type NavLink = {
   label: string
   href: string
   menu?: 'expeditions' | 'destinations' | 'links'
-  children?: { label: string; href: string; text?: string }[]
+  children?: { label: string; href: string; text?: string; image?: string }[]
 }
 
 export const navLinks: NavLink[] = [
@@ -17,8 +17,8 @@ export const navLinks: NavLink[] = [
     href: '/specialist-travel',
     menu: 'links',
     children: [
-      { label: 'Specialist Travel', href: '/specialist-travel', text: 'Photography, film, research and trekking' },
-      { label: 'Ground Operations', href: '/ground-operations', text: 'For tour operators and agencies' },
+      { label: 'Specialist Travel', href: '/specialist-travel', text: 'Photography, film, research and trekking', image: 'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652743/Erta_Ale_approach.png' },
+      { label: 'Ground Operations', href: '/ground-operations', text: 'For tour operators and agencies', image: 'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-assale.png' },
     ],
   },
   { label: 'About Us', href: '/about' },

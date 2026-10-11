@@ -7,7 +7,7 @@ export const contact = {
   phone: '+251 956 61 6969',
   whatsapp: '+251 956 61 6969',
   email: 'info@afarhorizon.com',
-  address: 'Bole Medhaniallem, Cape Verde Street 1000, Addis Ababa, Ethiopia',
+  address: 'Addis Ababa, Ethiopia',
   hours: 'Monday to Saturday 8:00 AM - 5:30 PM',
 }
 

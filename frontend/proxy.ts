@@ -9,7 +9,7 @@ export function proxy(request: NextRequest) {
   const localized = splitLocalePath(path)
   if (!site.indexable || !isApprovedTranslation(localized.locale, localized.path) || path === '/login' || path === '/admin' || path.startsWith('/admin/')) {
     response.headers.set('X-Robots-Tag', 'noindex, nofollow')
-  } else if (localized.path === '/plan' || localized.path === '/photo-credits') {
+  } else if (localized.path === '/plan') {
     response.headers.set('X-Robots-Tag', 'noindex, follow')
   }
   return response

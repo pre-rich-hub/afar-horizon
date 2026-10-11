@@ -27,7 +27,7 @@ const cormorant = Cormorant_Garamond({
 
 const measurement = getMeasurementConfig(site.production)
 const analyticsPaths = [
-  ...indexableStaticRoutes, '/plan', '/photo-credits',
+  ...indexableStaticRoutes, '/plan',
   ...destinations.map(d => `/destinations/${d.slug}`),
   ...tours.map(t => `/expeditions/${t.slug}`),
   ...posts.map(p => `/blog/${p.slug}`),

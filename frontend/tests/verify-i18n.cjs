@@ -2,7 +2,7 @@ const fs = require('node:fs')
 const assert = require('node:assert/strict')
 const { createLoader } = require('./load-typescript.cjs')
 const { inventory } = require('../docs/seo-phase7-inventory.json')
-const routes = [...inventory.staticIndexablePaths, '/plan', '/photo-credits', ...inventory.records.map(item => item.path)]
+const routes = [...inventory.staticIndexablePaths, '/plan', ...inventory.records.map(item => item.path)]
 const locales = ['fr', 'es', 'de', 'zh-Hans']
 const origin = process.env.SEO_BASE_URL || 'http://127.0.0.1:3101'
 const source = require('../lib/i18n/drafts/source.en.json')

@@ -31,7 +31,7 @@ for (const dir of ['components', 'features', 'lib/constants']) for (const file o
 }
 for (const feature of ['support', 'enquiries', 'newsletter']) for (const key of data.get(feature) ?? []) shared.add(key)
 const inventory = require('../docs/seo-phase7-inventory.json').inventory
-const routes = [...inventory.staticIndexablePaths, '/plan', '/photo-credits', ...inventory.records.map(item => item.path)]
+const routes = [...inventory.staticIndexablePaths, '/plan', ...inventory.records.map(item => item.path)]
 function decode(html) {
   return html.replace(/&quot;/g, '"').replace(/&#x27;|&#39;/g, "'").replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n))
 }

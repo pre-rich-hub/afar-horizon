@@ -32,7 +32,7 @@ export const BUSINESS_INFO = `## How to book
 ## Reaching us
 - Phone / WhatsApp: +251 956 61 6969
 - Email: info@afarhorizon.com
-- Office: Bole Medhaniallem, Cape Verde Street 1000, Addis Ababa, Ethiopia
+- Office: Addis Ababa, Ethiopia
 - Hours: Monday to Saturday, 8:00 AM to 5:30 PM
 
 ## About Afar Horizon

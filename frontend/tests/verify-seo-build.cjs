@@ -59,7 +59,7 @@ function verify(html, page) {
   assert.equal(meta('twitter:image'), meta('og:image'))
   if (page.image) assert.equal(meta('og:image'), page.image, `${page.route}: wrong feature image`)
   if (page.article) assert.equal(meta('og:type'), 'article')
-  const noindex = preview || ['/plan', '/photo-credits'].includes(page.route)
+  const noindex = preview || page.route === '/plan'
   assert.equal(meta('robots')?.includes('noindex'), noindex, `${page.route}: indexing`)
   assert(!canonical.includes('localhost') && !meta('og:url').includes('localhost'))
   return { title, description: meta('description') }
