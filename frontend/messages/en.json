@@ -65,7 +65,11 @@
         "changeLanguage": "Change language",
         "language": "Language",
         "closeMenu": "Close menu",
-        "openMenu": "Open menu"
+        "openMenu": "Open menu",
+        "beyondTheClassicRoute": "Beyond the classic route",
+        "specialistAndPartners": "Specialist & Partners",
+        "talkToOurTeam": "Talk to Our Team",
+        "specialistDescription": "Bespoke expeditions for photographers, film crews and researchers, and trusted ground handling for tour operators and agencies."
       }
     },
     "about": {
@@ -721,9 +725,6 @@
     "home_title": "Private Afar & Danakil Expeditions",
     "home_description": "Explore Afar, Erta Ale, Dallol and the Danakil salt lakes with a locally owned Ethiopian operator. Private expeditions and northern highlands journeys.",
     "home_imageAlt": "Danakil Depression, Ethiopia",
-    "photo-credits_title": "Website Photo Collection",
-    "photo-credits_description": "Browse the client-provided Afar Horizon destination and expedition photographs hosted on Cloudinary, with links to the original photo collection.",
-    "photo-credits_imageAlt": "Lake Assale, Ethiopia",
     "plan_title": "Plan Your Private Afar & Ethiopia Journey",
     "plan_description": "Share your dates, interests and preferred pace. Plan a private Danakil expedition, an Afar journey or a combined northern Ethiopia route with our team.",
     "plan_imageAlt": "Lake Assale, Ethiopia",

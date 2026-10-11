@@ -65,7 +65,11 @@
         "changeLanguage": "Sprache ändern",
         "language": "Sprache",
         "closeMenu": "Menü schließen",
-        "openMenu": "Menü öffnen"
+        "openMenu": "Menü öffnen",
+        "beyondTheClassicRoute": "Abseits der klassischen Route",
+        "specialistAndPartners": "Spezialreisen und Partner",
+        "talkToOurTeam": "Sprechen Sie mit unserem Team",
+        "specialistDescription": "Maßgeschneiderte Expeditionen für Fotografen, Filmteams und Forscher sowie zuverlässige Betreuung vor Ort für Reiseveranstalter und Agenturen."
       }
     },
     "about": {
@@ -721,9 +725,6 @@
     "home_title": "Private Afar- und Danakil-Expeditionen",
     "home_description": "Erkunden Sie Afar, Erta Ale, Dallol und die Salzseen von Danakil mit einem lokalen äthiopischen Betreiber. Private Expeditionen und Reisen ins nördliche Hochland.",
     "home_imageAlt": "Danakil Depression, Äthiopien",
-    "photo-credits_title": "Website-Fotosammlung",
-    "photo-credits_description": "Durchsuchen Sie die vom Kunden bereitgestellten Afar Horizon-Ziel- und Expeditionsfotos, die auf Cloudinary gehostet werden, mit Links zur Originalfotosammlung.",
-    "photo-credits_imageAlt": "Assale-See, Äthiopien",
     "plan_title": "Planen Sie Ihre private Afar- und Äthiopien-Reise",
     "plan_description": "Teilen Sie Ihre Daten, Interessen und Ihr bevorzugtes Tempo mit. Planen Sie mit unserem Team eine private Danakil-Expedition, eine Afar-Reise oder eine kombinierte Nordäthiopien-Route.",
     "plan_imageAlt": "Assale-See, Äthiopien",

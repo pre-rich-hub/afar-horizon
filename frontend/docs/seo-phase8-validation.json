@@ -2,15 +2,15 @@
   "date": "2026-10-11",
   "architecture": "next-intl explicit locale routes and feature overlays",
   "origin": "http://127.0.0.1:3101",
-  "EnglishPages": 60,
-  "draftPages": 240,
+  "EnglishPages": 59,
+  "draftPages": 236,
   "sitemapURLs": 58,
   "invalidRoutesChecked": 5,
   "EnglishPrefixRedirect": true,
   "reports": [
     {
       "locale": "fr",
-      "pages": 60,
+      "pages": 59,
       "noindex": true,
       "selfCanonical": true,
       "draftHreflangExcluded": true,
@@ -19,7 +19,7 @@
     },
     {
       "locale": "es",
-      "pages": 60,
+      "pages": 59,
       "noindex": true,
       "selfCanonical": true,
       "draftHreflangExcluded": true,
@@ -28,7 +28,7 @@
     },
     {
       "locale": "de",
-      "pages": 60,
+      "pages": 59,
       "noindex": true,
       "selfCanonical": true,
       "draftHreflangExcluded": true,
@@ -37,7 +37,7 @@
     },
     {
       "locale": "zh-Hans",
-      "pages": 60,
+      "pages": 59,
       "noindex": true,
       "selfCanonical": true,
       "draftHreflangExcluded": true,

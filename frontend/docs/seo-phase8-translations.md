@@ -17,7 +17,7 @@ English feature data remains the source of truth. No runtime translation service
 
 ## Review and publication
 
-All 240 translated pages remain **client-review drafts**, with correct HTML language, translated metadata, self-canonicals and noindex. They are absent from the sitemap and hreflang. `approvedTranslations` in `lib/i18n/locales.ts` remains empty. Planning and photo credits remain noindex even after approval.
+All 236 translated pages remain **client-review drafts**, with correct HTML language, translated metadata, self-canonicals and noindex. They are absent from the sitemap and hreflang. `approvedTranslations` in `lib/i18n/locales.ts` remains empty. Planning remains noindex even after approval. Photo credits were removed on main and remain removed.
 
 [translation-review.csv](translation-review.csv) contains 2,946 stable-key review rows, with owner, key, English source, all four drafts, status, reviewer and notes. Drafts reuse the earlier translations and include machine-assisted additions for the updated gallery and interface text. Article paragraphs were prepared with protected link placeholders so the links remain intact. Native-language quality and legal meaning are not established by automated checks.
 
@@ -52,7 +52,7 @@ See [next-intl routing](https://next-intl.dev/docs/routing/setup), [next-intl me
 
 ## Migration verification — 11 October 2026
 
-The production build, separate TypeScript check and all nine test files passed. [Rendered verification](seo-phase8-validation.json) covers 60 English and 240 draft pages, language metadata, canonical/noindex rules, localized schema, inline links, 58 English sitemap entries, five invalid language routes and the English-prefix redirect. All five English SEO verifier groups passed.
+The production build, separate TypeScript check and all nine test files passed. [Rendered verification](seo-phase8-validation.json) covers 59 English and 236 draft pages, language metadata, canonical/noindex rules, localized schema, inline links, 58 English sitemap entries, five invalid language routes and the English-prefix redirect. All five English SEO verifier groups passed.
 
 [Browser verification](seo-phase8-browser.json) passed 28 layouts at 390/1024/1440px, four real language-switch flows with query/fragment preservation, translated gallery filtering and keyboard controls, and eight mocked enquiry failure/retry flows. Selected journey/service options retained their original backend values; no real enquiries, browser runtime exceptions or draft analytics requests occurred. Invalid URLs use the static English error page with the existing presentation and receive HTTP 404 before streaming. Two browser checks confirm its rendered heading and status; the final server log contains no fallback errors.
 

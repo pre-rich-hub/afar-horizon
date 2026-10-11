@@ -615,7 +615,7 @@ export const destinations: Destination[] = [
       'Trek the Simien Mountains, a UNESCO World Heritage national park, with an Ethiopian mountain guide: escarpments, gelada, Walia ibex and Ras Dashen.',
     teaser: 'Where the Ethiopian plateau suddenly falls away into deep valleys.',
     intro:
-      'This is personal. Our founder, Tesema Teven, was born and raised in the shadow of these mountains. The Simien is not one more product in a catalogue; it is where he learned what it means to know a landscape.',
+      'This is personal. Our founder, Tesema (Tevan), was born and raised in the shadow of these mountains. The Simien is not one more product in a catalogue; it is where he learned what it means to know a landscape.',
     bestTime: highlandSeason,
     duration: '2 – 4 days',
     altitude: 'Up to 4,550 m (Ras Dashen)',

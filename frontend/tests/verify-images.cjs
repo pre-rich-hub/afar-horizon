@@ -7,7 +7,7 @@ const { destinations } = load('@/features/destinations/data/destination.data')
 const { tours } = load('@/features/tours/data/tour.data')
 const base = process.argv.find(arg => arg.startsWith('--base-url='))?.slice(11)
 assert(base, 'Provide --base-url=http://localhost:<port>')
-const routes = [...indexableStaticRoutes, '/plan', '/photo-credits', ...posts.map(p => `/blog/${p.slug}`), ...destinations.map(d => `/destinations/${d.slug}`), ...tours.map(t => `/expeditions/${t.slug}`)]
+const routes = [...indexableStaticRoutes, '/plan', ...posts.map(p => `/blog/${p.slug}`), ...destinations.map(d => `/destinations/${d.slug}`), ...tours.map(t => `/expeditions/${t.slug}`)]
 async function main() {
   let count = 0
   for (const route of routes) {

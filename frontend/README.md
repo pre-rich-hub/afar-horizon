@@ -151,7 +151,7 @@ frontend/
 │   ├── blog/
 │   ├── gallery/
 │   ├── faq/  before-you-go/  plan/  specialist-travel/
-│   ├── ground-operations/  photo-credits/
+│   ├── ground-operations/
 │   ├── auth/            Login and session verification
 │   ├── admin/           Admin screens, resource APIs, types, and hooks
 │   ├── enquiries/       Enquiry, Plan My Journey and partner forms, and endpoint

@@ -26,7 +26,7 @@ test('sitemap follows published catalogues and excludes utility/private URLs', (
     assert.equal(url.origin, site.url)
     assert.equal(url.search, '')
     assert.equal(url.hash, '')
-    assert(!/^\/(admin|login|plan|photo-credits|api|tours)(\/|$)/.test(url.pathname))
+    assert(!/^\/(admin|login|plan|api|tours)(\/|$)/.test(url.pathname))
     assert.equal(entry.lastModified, undefined, 'Do not invent modification dates')
   }
   const future = routeLoader(true, {
@@ -56,12 +56,12 @@ test('response headers protect previews, utilities and unauthenticated admin red
       '@/lib/config/site': { site: { ...site, indexable } },
       '@/i18n/routing': {routing: {}},
       'next-intl/middleware': () => () => NextResponse.next(),
-      '@/i18n/public-paths': {publicPaths: new Set(['/', '/destinations/erta-ale', '/plan', '/photo-credits', '/missing'])},
+      '@/i18n/public-paths': {publicPaths: new Set(['/', '/destinations/erta-ale', '/plan', '/missing'])},
     })('@/proxy')
-    for (const path of ['/', '/destinations/erta-ale', '/plan', '/photo-credits', '/admin', '/admin/tours', '/login', '/missing']) {
+    for (const path of ['/', '/destinations/erta-ale', '/plan', '/admin', '/admin/tours', '/login', '/missing']) {
       const header = proxy({ nextUrl: { pathname: path } }).headers.get('X-Robots-Tag')
       const expected = !indexable || path.startsWith('/admin') || path === '/login'
-        ? 'noindex, nofollow' : ['/plan', '/photo-credits'].includes(path) ? 'noindex, follow' : null
+        ? 'noindex, nofollow' : path === '/plan' ? 'noindex, follow' : null
       assert.equal(header, expected, path)
     }
   }

@@ -7,7 +7,7 @@ const {indexableStaticRoutes} = load('@/lib/seo/routes')
 const {destinations} = load('@/features/destinations/data/destination.data')
 const {tours} = load('@/features/tours/data/tour.data')
 const {posts} = load('@/features/blog/data/post.data')
-const routes = [...indexableStaticRoutes, '/plan', '/photo-credits', ...destinations.map(d => '/destinations/' + d.slug), ...tours.map(t => '/expeditions/' + t.slug), ...posts.map(p => '/blog/' + p.slug)]
+const routes = [...indexableStaticRoutes, '/plan', ...destinations.map(d => '/destinations/' + d.slug), ...tours.map(t => '/expeditions/' + t.slug), ...posts.map(p => '/blog/' + p.slug)]
 const locales = ['fr', 'es', 'de', 'zh-Hans']
 const base = process.env.SEO_BASE_URL || 'http://127.0.0.1:3101'
 const canonicalOrigin = process.env.SITE_URL || 'https://www.afarhorizon.com'

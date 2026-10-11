@@ -1,6 +1,5 @@
 'use client'
 import {useHomeCopy} from '../data/localized'
-import { useTranslations } from 'next-intl'
 
 
 import { useHeroSlideshow } from '../hooks/useHeroSlideshow'
@@ -11,10 +10,9 @@ import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import { type ReactNode } from 'react'
 
-// Client-provided Cloudinary photos; attribution is shown when supplied.
+// Client-provided Cloudinary photos.
 
 export function HeroSlideshow({ children }: { children?: ReactNode }) {
-  const tr = useTranslations('UI.home.HeroSlideshow')
   const slides = useHomeCopy('hero-slideshow.slides', baseSlides)
 
   const { index, current, prev, prepared, markLoaded } = useHeroSlideshow()
@@ -56,15 +54,7 @@ export function HeroSlideshow({ children }: { children?: ReactNode }) {
       </div>
 
       <p className="absolute bottom-3 right-4 z-10 max-w-[70vw] truncate text-right text-[10px] tracking-wide text-background/60 sm:right-6">
-        {current.place} ·{' '}
-        <a
-          href={current.source}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline-offset-2 hover:text-background hover:underline"
-        >
-          {current.credit ? `Photo: ${current.credit}${current.license ? `, ${current.license}` : ''}` : tr('clientProvidedPhotoCollection')}
-        </a>
+        {current.place}
       </p>
     </>
   )

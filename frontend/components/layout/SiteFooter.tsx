@@ -87,7 +87,6 @@ const columns = [
       { label: 'Gallery', href: '/gallery' },
       { label: 'Journal', href: '/blog' },
       { label: 'Contact', href: '/contact' },
-      { label: 'Photo Credits', href: '/photo-credits' },
     ],
   },
 ]
@@ -145,7 +144,7 @@ export function SiteFooter() {
           <div className="lg:row-span-2">
             <Link href="/" className="inline-flex" aria-label={tr('afarHorizonExpeditionsHome')}>
               <img
-                src="/images/logo-light.png"
+                src="/images/logo-light.webp"
                 alt={tr('afarHorizonExpeditionsLogo')}
                 width={520}
                 height={341}

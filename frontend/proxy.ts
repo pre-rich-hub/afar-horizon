@@ -19,7 +19,7 @@ export function proxy(request: NextRequest) {
     return response
   }
   if (!site.indexable || privateRoute || !isApprovedTranslation(localized.locale, localized.path)) response.headers.set('X-Robots-Tag', 'noindex, nofollow')
-  else if (localized.path === '/plan' || localized.path === '/photo-credits') response.headers.set('X-Robots-Tag', 'noindex, follow')
+  else if (localized.path === '/plan') response.headers.set('X-Robots-Tag', 'noindex, follow')
   return response
 }
 export const config = {matcher: ['/((?!_next|api|.*\\..*).*)']}

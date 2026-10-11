@@ -21,7 +21,7 @@ const details = new Map([
   ...tours.map(t => [`/expeditions/${t.slug}`, tourSchema(t)]),
   ['/faq', faqSchema()],
 ])
-const routes = [...indexableStaticRoutes, '/plan', '/photo-credits', ...[...details.keys()].filter(r => r !== '/faq')]
+const routes = [...indexableStaticRoutes, '/plan', ...[...details.keys()].filter(r => r !== '/faq')]
 const normalized = value => JSON.parse(JSON.stringify(value))
 async function main() {
   for (const route of routes) {

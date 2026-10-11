@@ -345,3 +345,7 @@ Recheck current guidance when implementing each phase; search features and frame
 - [Cloudinary image transformations](https://cloudinary.com/documentation/image_transformations)
 
 **Continue next:** Review the Phase 8 translation drafts with the client, confirm the Chinese variant and publish only approved routes. Complete Phase 6 using the launch checklist and begin Phase 7’s prepared review cycle. Phase 4's authenticated Google Rich Results Test, hosting redirects, real profile URLs and operator-owned policy/operating confirmations remain external dependencies.
+
+### Main-branch integration — October 11, 2026
+
+Merged main’s icon updates, WebP logos, redesigned Specialist & Partners dropdown, photo-credit removal and confirmed Tesema (Tevan) name into the next-intl architecture. The dropdown’s new copy has draft translations in all four languages. Public coverage is now 59 English pages and 236 translated drafts; the sitemap still contains 58 English URLs. Production build, TypeScript, nine test files and rendered language/SEO verification passed.

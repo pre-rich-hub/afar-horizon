@@ -65,7 +65,11 @@
         "changeLanguage": "更改语言",
         "language": "语言",
         "closeMenu": "关闭菜单",
-        "openMenu": "开放菜单"
+        "openMenu": "开放菜单",
+        "beyondTheClassicRoute": "超越经典路线",
+        "specialistAndPartners": "专题旅行与合作伙伴",
+        "talkToOurTeam": "联系我们的团队",
+        "specialistDescription": "为摄影师、摄制组和研究人员量身定制探险旅行，并为旅游运营商和旅行社提供可靠的地接服务。"
       }
     },
     "about": {
@@ -721,9 +725,6 @@
     "home_title": "私人 阿法尔 和 Danakil 探险",
     "home_description": "与当地埃塞俄比亚运营商一起探索 阿法尔、Erta Ale、Dallol 和 Danakil 盐湖。私人探险和北部高地之旅。",
     "home_imageAlt": "埃塞俄比亚达纳基尔洼地",
-    "photo-credits_title": "网站照片集",
-    "photo-credits_description": "浏览客户提供的 Afar Horizon 目的地和 Cloudinary 上托管的探险照片，以及原始照片集的链接。",
-    "photo-credits_imageAlt": "埃塞俄比亚阿萨勒湖",
     "plan_title": "计划你的私人 阿法尔 和埃塞俄比亚之旅",
     "plan_description": "分享您的日期、兴趣和首选节奏。与我们的团队一起规划私人达纳基尔探险、阿法尔 之旅或埃塞俄比亚北部联合路线。",
     "plan_imageAlt": "埃塞俄比亚阿萨勒湖",

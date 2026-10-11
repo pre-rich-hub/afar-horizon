@@ -35,16 +35,16 @@ async function main() {
   assert(robots.headers.get('content-type').includes('text/plain'))
   const text = await robots.text()
   assert(text.includes('Allow: /') && text.includes('Disallow: /api/'))
-  assert(!/Disallow: \/(?:admin|login|plan|photo-credits)/.test(text))
+  assert(!/Disallow: \/(?:admin|login|plan)/.test(text))
   assert.equal(text.includes(`Sitemap: ${origin}/sitemap.xml`), !preview)
 
   const graph = new Map()
-  for (const path of [...routes, '/plan', '/photo-credits', '/login']) {
+  for (const path of [...routes, '/plan', '/login']) {
     const response = await get(path)
     assert.equal(response.status, 200, `${path}: public status`)
     const html = await response.text()
     const metas = [...html.matchAll(/<meta\b[^>]*>/g)].map(m => attributes(m[0]))
-    const noindex = preview || ['/plan', '/photo-credits', '/login'].includes(path)
+    const noindex = preview || ['/plan', '/login'].includes(path)
     assert.equal(metas.find(m => m.name === 'robots')?.content.includes('noindex'), noindex, `${path}: robots`)
     assert.equal(response.headers.get('x-robots-tag')?.includes('noindex') ?? false, noindex, `${path}: indexing header`)
     if (routes.includes(path)) {

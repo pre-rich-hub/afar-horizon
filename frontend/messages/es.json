@@ -65,7 +65,11 @@
         "changeLanguage": "Cambiar idioma",
         "language": "Idioma",
         "closeMenu": "Cerrar menú",
-        "openMenu": "Abrir menú"
+        "openMenu": "Abrir menú",
+        "beyondTheClassicRoute": "Más allá de la ruta clásica",
+        "specialistAndPartners": "Viajes especializados y socios",
+        "talkToOurTeam": "Habla con nuestro equipo",
+        "specialistDescription": "Expediciones a medida para fotógrafos, equipos de filmación e investigadores, y servicios locales de confianza para operadores turísticos y agencias."
       }
     },
     "about": {
@@ -721,9 +725,6 @@
     "home_title": "Expediciones privadas a Afar y Danakil",
     "home_description": "Explora Afar, Erta Ale, Dallol y los lagos salados de Danakil con un operador etíope de propiedad local. Expediciones privadas y viajes a las tierras altas del norte.",
     "home_imageAlt": "Depresión de Danakil, Etiopía",
-    "photo-credits_title": "Colección de fotografías del sitio web",
-    "photo-credits_description": "Explore las fotografías de expediciones y destinos Afar Horizon proporcionadas por el cliente alojadas en Cloudinary, con enlaces a la colección de fotografías originales.",
-    "photo-credits_imageAlt": "Lago Assale, Etiopía",
     "plan_title": "Planificar su viaje privado a Afar y Etiopía",
     "plan_description": "Comparte tus fechas, intereses y ritmo preferido. Planifique una expedición privada a Danakil, un viaje a Afar o una ruta combinada por el norte de Etiopía con nuestro equipo.",
     "plan_imageAlt": "Lago Assale, Etiopía",
