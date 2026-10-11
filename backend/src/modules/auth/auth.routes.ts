@@ -1,5 +1,6 @@
 import { Router } from "express";
 import type { Router as RouterType } from "express";
+import { waitUntil } from "@vercel/functions";
 import bcrypt from "bcryptjs";
 import { prisma } from "../../config/database.js";
 import { env } from "../../config/env.js";
@@ -110,7 +111,11 @@ authRouter.put(
     });
 
     if (admin.email) {
-      await sendPasswordChangedEmail({ email: admin.email }).catch(() => undefined);
+      // waitUntil holds the serverless function open until the send resolves;
+      // the catch keeps a mail outage from failing an already-applied change.
+      waitUntil(
+        sendPasswordChangedEmail({ email: admin.email }).catch(() => undefined),
+      );
     }
 
     return ok(res, "Password changed successfully", null);

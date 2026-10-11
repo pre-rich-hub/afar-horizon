@@ -24,6 +24,7 @@
   "dependencies": {
     "@google/genai": "^2.16.0",
     "@prisma/client": "^6.19.3",
+    "@vercel/functions": "^3.9.11",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
