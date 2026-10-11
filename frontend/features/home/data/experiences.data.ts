@@ -3,7 +3,7 @@ export const experiences = [
   {
     kicker: 'Light & landscape',
     title: 'Photography Expeditions',
-    alt: 'Colourful mineral pools and salt formations in the Danakil',
+    alt: 'A photographer above colourful mineral pools at sunset in the Danakil',
     text: 'Longer field stops, dawn and night shoots at Dallol, Erta Ale and the salt plain, with time to wait for the light.',
     image: 'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652740/Danakil_Photography_Expedition.png',
     href: '/specialist-travel#photography',
@@ -27,9 +27,9 @@ export const experiences = [
   {
     kicker: 'For travel companies',
     title: 'Ground Operations',
-    alt: 'Camels gathered on the salt plain near Hamed Ela at sunset',
+    alt: 'A group of travelers seated inside a passenger vehicle',
     text: 'Vehicles, guides, camps and permits for tour operators, film crews and research teams. One local partner on the ground.',
-    image: `${destinationImageBase}/hamed-ela.png`,
+    image: 'https://res.cloudinary.com/xsrr0wfh/image/upload/v1791702783/gallery9.jpg',
     href: '/ground-operations',
   },
 ]

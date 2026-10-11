@@ -3,7 +3,7 @@
     "0": {
       "kicker": "Luz y paisaje",
       "title": "Expediciones fotográficas",
-      "alt": "Pozas minerales de colores y formaciones de sal en el Danakil",
+      "alt": "Un fotógrafo sobre piscinas minerales de colores al atardecer en el Danakil",
       "text": "Paradas de campo más largas, tomas fotográficas al amanecer y por la noche en Dallol, Erta Ale y la llanura de sal, con tiempo para esperar la luz."
     },
     "1": {
@@ -21,7 +21,7 @@
     "3": {
       "kicker": "Para compañías de viajes",
       "title": "Tierra Operaciones",
-      "alt": "Camellos reunidos en la llanura de sal cerca de Hamed Ela al atardecer",
+      "alt": "Un grupo de viajeros sentados dentro de un vehículo de pasajeros.",
       "text": "Vehículos, guías, campamentos y permisos para operadores turísticos, equipos de filmación y equipos de investigación. Un socio local sobre el terreno."
     }
   },
@@ -279,6 +279,31 @@
       "title": "Privadas y flexibles",
       "text": "No es necesario que su viaje se ajuste a una plantilla. Cuando las condiciones cambian, adaptamos la ruta en torno a la seguridad y lo que es importante para usted.",
       "alt": "Montañas Simien, Etiopía"
+    },
+    "5": {
+      "title": "Localmente de propiedad y operación",
+      "text": "Operamos desde Etiopía, con nuestros propios guías, conductores y personal de campo. Tratas directamente con las personas que organizan tu viaje.",
+      "alt": "Erta Ale, Etiopía"
+    },
+    "6": {
+      "title": "Conocimientos de expedición",
+      "text": "Los paisajes remotos requieren más que una reserva en línea. Planificamos el agua, la calefacción, las rutas, los campamentos y el acceso actual antes de prometer nada.",
+      "alt": "Lago Afdera, Etiopía"
+    },
+    "7": {
+      "title": "Guía humano",
+      "text": "Personas reales con experiencia real del terreno, que te explican lo que estás viendo en lugar de simplemente señalarlo.",
+      "alt": "Lago Assale, Etiopía"
+    },
+    "8": {
+      "title": "Nosotros nos encargamos de la logística",
+      "text": "Vehículos 4×4, scouts locales, permisos, campamentos, hoteles y traslados. Un equipo responsable de toda la operación terrestre.",
+      "alt": "Semera, Etiopía"
+    },
+    "9": {
+      "title": "Privadas y flexibles",
+      "text": "No es necesario que su viaje se ajuste a una plantilla. Cuando las condiciones cambian, adaptamos la ruta en torno a la seguridad y lo que es importante para usted.",
+      "alt": "Dallol, Etiopía"
     }
   }
 }

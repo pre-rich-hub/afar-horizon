@@ -3,7 +3,7 @@
     "0": {
       "kicker": "Lumière et paysage",
       "title": "Expéditions photographiques",
-      "alt": "Piscines minérales colorées et formations de sel dans le Danakil",
+      "alt": "Un photographe au-dessus de bassins minéraux colorés au coucher du soleil dans le Danakil",
       "text": "Arrêts sur le terrain plus longs, tournages à l'aube et à la nuit à Dallol, Erta Ale et la plaine salée, avec le temps d'attendre la lumière."
     },
     "1": {
@@ -21,7 +21,7 @@
     "3": {
       "kicker": "Pour les agences de voyages",
       "title": "Opérations au sol",
-      "alt": "Des chameaux rassemblés sur la plaine salée près de Hamed Ela au coucher du soleil",
+      "alt": "Un groupe de voyageurs assis à l’intérieur d’un véhicule de tourisme",
       "text": "Véhicules, guides, camps et permis pour les voyagistes, les équipes de tournage et les équipes de recherche. Un partenaire local sur le terrain."
     }
   },
@@ -279,6 +279,31 @@
       "title": "Privé et flexible",
       "text": "Votre voyage n'a pas besoin de correspondre à un modèle. Lorsque les conditions changent, nous adaptons l'itinéraire en fonction de la sécurité et de ce qui compte pour vous.",
       "alt": "Montagnes du Simien, Éthiopie"
+    },
+    "5": {
+      "title": "Détenu et exploité localement",
+      "text": "Nous opérons depuis l'Éthiopie, avec nos propres guides, chauffeurs et personnel de terrain. Vous traitez directement avec les personnes qui organisent votre voyage.",
+      "alt": "Erta Ale, Éthiopie"
+    },
+    "6": {
+      "title": "Connaissances d'expédition",
+      "text": "Les paysages isolés nécessitent plus qu'une réservation en ligne. Nous planifions l'eau, le chauffage, les itinéraires, les camps et l'accès actuel avant de promettre quoi que ce soit.",
+      "alt": "Lac Afdera, Éthiopie"
+    },
+    "7": {
+      "title": "Guidage humain",
+      "text": "De vraies personnes avec une réelle expérience du terrain, qui expliquent ce que vous voyez plutôt que de simplement le montrer du doigt.",
+      "alt": "Lac Assale, Éthiopie"
+    },
+    "8": {
+      "title": "Nous nous occupons de la logistique",
+      "text": "Véhicules 4×4, éclaireurs locaux, permis, camps, hôtels et transferts. Une équipe responsable de l'ensemble des opérations au sol.",
+      "alt": "Semera, Éthiopie"
+    },
+    "9": {
+      "title": "Privé et flexible",
+      "text": "Votre voyage n'a pas besoin de correspondre à un modèle. Lorsque les conditions changent, nous adaptons l'itinéraire en fonction de la sécurité et de ce qui compte pour vous.",
+      "alt": "Dallol, Éthiopie"
     }
   }
 }

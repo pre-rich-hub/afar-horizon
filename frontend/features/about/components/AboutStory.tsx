@@ -11,8 +11,8 @@ export function AboutStory() {
           <Chapter
             eyebrow={tr('theRoadOutOfAddis')}
             title={tr('beforeTheAfarBecameAnItinerary')}
-            image="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/simien-mountains.png"
-            imageAlt={tr('simienMountainsEthiopia')}
+            image="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791702780/gallery33.jpg"
+            imageAlt={tr('sunsetTravelPhoto')}
           >
             <p>
               {tr('thereIsARoadOutOfAddis')}</p>
@@ -26,8 +26,8 @@ export function AboutStory() {
             <Chapter
               eyebrow={tr('thenWeStartedGuiding')}
               title={tr('seeingHomeThroughNewEyes')}
-              image="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/afar.png"
-              imageAlt={tr('afarRegionEthiopia')}
+              image="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791702771/gallery4.jpg"
+              imageAlt={tr('gondarTravelPhoto')}
               reverse
             >
               <p>

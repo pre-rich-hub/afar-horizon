@@ -71,7 +71,7 @@ export function WhyTravel() {
 
               return (
                 <button
-                  key={s.title}
+                  key={s.image}
                   type="button"
                   tabIndex={isActive ? -1 : depth === 1 ? 0 : -1}
                   aria-hidden={!isActive && depth !== 1}
@@ -111,7 +111,7 @@ export function WhyTravel() {
             <div className="mx-auto grid max-w-[60ch] text-center" aria-live="polite">
               {slides.map((s, i) => (
                 <div
-                  key={s.title}
+                  key={s.image}
                   aria-hidden={i !== active}
                   className={cn(
                     '[grid-area:1/1] transition-all duration-700 ease-out motion-reduce:transition-none',
@@ -135,7 +135,7 @@ export function WhyTravel() {
               <div className="flex gap-1.5">
                 {slides.map((s, i) => (
                   <button
-                    key={s.title}
+                    key={s.image}
                     type="button"
                     onClick={() => go(i)}
                     aria-label={tr('goToSlideValueValue', { value0: String(i + 1), value1: String(s.title) })}

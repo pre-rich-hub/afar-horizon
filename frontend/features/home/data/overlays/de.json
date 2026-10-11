@@ -3,7 +3,7 @@
     "0": {
       "kicker": "Licht & Landschaft",
       "title": "Fotoexpeditionen",
-      "alt": "Farbenfrohe Mineralbecken und Salzformationen im Danakil",
+      "alt": "Ein Fotograf oberhalb farbiger Mineralbecken bei Sonnenuntergang in der Danakil",
       "text": "Längere Feldstopps, Aufnahmen bei Dämmerung und Nacht in Dallol, Erta Ale und der Salzebene, mit Zeit zum Warten auf das Licht."
     },
     "1": {
@@ -21,7 +21,7 @@
     "3": {
       "kicker": "Für Reiseunternehmen",
       "title": "Boden Operationen",
-      "alt": "Kamele versammelten sich bei Sonnenuntergang auf der Salzebene in der Nähe von Hamed Ela",
+      "alt": "Eine Gruppe von Reisenden sitzt in einem Personenkraftwagen",
       "text": "Fahrzeuge, Führer, Camps und Genehmigungen für Reiseveranstalter, Filmteams und Forschungsteams. Ein lokaler Partner vor Ort."
     }
   },
@@ -279,6 +279,31 @@
       "title": "Privat und flexibel",
       "text": "Ihre Reise muss keiner Vorlage entsprechen. Wenn sich die Bedingungen ändern, passen wir die Route entsprechend der Sicherheit und dem, was Ihnen wichtig ist, an.",
       "alt": "Simien-Gebirge, Äthiopien"
+    },
+    "5": {
+      "title": "In lokalem Besitz und betrieben",
+      "text": "Wir operieren von Äthiopien aus mit unseren eigenen Führern, Fahrern und Außendienstmitarbeitern. Sie arbeiten direkt mit den Menschen zusammen, die Ihre Reise durchführen.",
+      "alt": "Erta Ale, Äthiopien"
+    },
+    "6": {
+      "title": "Expedition Wissen",
+      "text": "Entlegene Landschaften erfordern mehr als eine Online-Buchung. Wir planen Wasser, Heizung, Routen, Lager und aktuellen Zugang, bevor wir etwas versprechen.",
+      "alt": "Afdera-See, Äthiopien"
+    },
+    "7": {
+      "title": "Menschliche Führung",
+      "text": "Echte Menschen mit echter Erfahrung vor Ort, die erklären, was Sie sehen, anstatt nur darauf zu zeigen.",
+      "alt": "Assale-See, Äthiopien"
+    },
+    "8": {
+      "title": "Wir kümmern uns um die Logistik",
+      "text": "4×4-Fahrzeuge, örtliche Pfadfinder, Genehmigungen, Camps, Hotels und Transfers. Ein Team ist für den gesamten Bodenbetrieb verantwortlich.",
+      "alt": "Semera, Äthiopien"
+    },
+    "9": {
+      "title": "Privat und flexibel",
+      "text": "Ihre Reise muss keiner Vorlage entsprechen. Wenn sich die Bedingungen ändern, passen wir die Route entsprechend der Sicherheit und dem, was Ihnen wichtig ist, an.",
+      "alt": "Dallol, Äthiopien"
     }
   }
 }
