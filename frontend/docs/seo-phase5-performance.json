@@ -1,0 +1,2972 @@
+{
+  "date": "2026-10-11",
+  "environment": "Local production build; Lighthouse 12.8.2 simulated throttling; remote Cloudinary images. Single runs, not field Core Web Vitals.",
+  "baseline": "seo-phase1-baseline.json",
+  "rawReports": "/tmp/afar-seo-phase5",
+  "reports": [
+    {
+      "report": "home-desktop.json",
+      "url": "http://127.0.0.1:3101/",
+      "formFactor": "desktop",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-11T08:01:59.536Z",
+      "scores": {
+        "performance": 99,
+        "accessibility": 81,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "lcpMs": 736,
+      "cls": 0,
+      "tbtMs": 0,
+      "transferBytes": 2529873,
+      "warnings": [],
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,3,HEADER,0,NAV,0,A,0,IMG",
+                  "selector": "header.fixed > nav.shell > a.flex > img.h-12",
+                  "boundingRect": {
+                    "top": 11,
+                    "bottom": 64,
+                    "left": 65,
+                    "right": 145,
+                    "width": 80,
+                    "height": 53
+                  },
+                  "snippet": "<img src=\"/images/logo-light.png\" alt=\"Afar Horizon Expeditions Logo\" width=\"520\" height=\"341\" class=\"h-12 w-auto object-contain transition-transform duration-300 hover:scale-1…\">",
+                  "nodeLabel": "Afar Horizon Expeditions Logo"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 128.43615,
+                "percent": "17%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 30.297070517284965,
+                "percent": "4%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 577.075229482715,
+                "percent": "78%"
+              }
+            ]
+          }
+        ]
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/01e4147cff8141ee-s.p.10ked.7w885.g.woff2",
+          "type": "Font",
+          "bytes": 38076,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+          "type": "Font",
+          "bytes": 48732,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/images/logo-light.png",
+          "type": "Image",
+          "bytes": 138229,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_1600/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 387280,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ralw4hjh3s7h.js",
+          "type": "Script",
+          "bytes": 9849,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0.ep.m27jwal1.js",
+          "type": "Script",
+          "bytes": 9631,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0_pbe2znan_kz.js",
+          "type": "Script",
+          "bytes": 38974,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/15iur6_kpywxc.js",
+          "type": "Script",
+          "bytes": 71411,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/turbopack-0x5.7hsixzt7y.js",
+          "type": "Script",
+          "bytes": 4544,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/09xl-9n2sga4w.js",
+          "type": "Script",
+          "bytes": 10330,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0cdza2zv2xsn2.js",
+          "type": "Script",
+          "bytes": 8950,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0fe_u0rcysbto.js",
+          "type": "Script",
+          "bytes": 13286,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/14krw5.5wlbe_.js",
+          "type": "Script",
+          "bytes": 31722,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0vs8bvarfls1n.js",
+          "type": "Script",
+          "bytes": 15249,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0pg~4dpgyvazx.js",
+          "type": "Script",
+          "bytes": 1019,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ml.9677wg67s.js",
+          "type": "Script",
+          "bytes": 14106,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791652727/Danakil_Deep.png",
+          "type": "Image",
+          "bytes": 19359,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791652737/Danakil_Gheralta.png",
+          "type": "Image",
+          "bytes": 35253,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791643803/simien-mountains.png",
+          "type": "Image",
+          "bytes": 37288,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_256/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 25176,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_256/v1791643803/gheralta.png",
+          "type": "Image",
+          "bytes": 20733,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_256/v1791643803/lalibela.png",
+          "type": "Image",
+          "bytes": 22049,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/afar.png",
+          "type": "Image",
+          "bytes": 77375,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 135834,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/gheralta.png",
+          "type": "Image",
+          "bytes": 99946,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/hamed-ela.png",
+          "type": "Image",
+          "bytes": 61948,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/simien-mountains.png",
+          "type": "Image",
+          "bytes": 115323,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 89706,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/afar.png",
+          "type": "Image",
+          "bytes": 42079,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/erta-ale.png",
+          "type": "Image",
+          "bytes": 34882,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/lake-assale.png",
+          "type": "Image",
+          "bytes": 55265,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/lake-afdera.png",
+          "type": "Image",
+          "bytes": 37667,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791652741/Danakil_Essentials.png",
+          "type": "Image",
+          "bytes": 21372,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 47255,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791652740/Danakil_Photography_Expedition.png",
+          "type": "Image",
+          "bytes": 49209,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791652742/Afar_Geolog.png",
+          "type": "Image",
+          "bytes": 28655,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_vercel/insights/script.js",
+          "type": "Script",
+          "bytes": 518,
+          "status": 404
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_1600/v1791652743/Erta_Ale_approach.png",
+          "type": "Image",
+          "bytes": 358757,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "report": "home-mobile.json",
+      "url": "http://127.0.0.1:3101/",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-11T08:02:47.389Z",
+      "scores": {
+        "performance": 58,
+        "accessibility": 96,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "lcpMs": 4351,
+      "cls": 0,
+      "tbtMs": 1280,
+      "transferBytes": 1769888,
+      "warnings": [],
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-P",
+                  "path": "1,HTML,1,BODY,5,MAIN,0,SECTION,1,P",
+                  "selector": "body.antialiased > main#main > section#top > p.absolute",
+                  "boundingRect": {
+                    "top": 797,
+                    "bottom": 812,
+                    "left": 141,
+                    "right": 397,
+                    "width": 256,
+                    "height": 15
+                  },
+                  "snippet": "<p class=\"absolute bottom-3 right-4 z-10 max-w-[70vw] truncate text-right text-[10px…\">",
+                  "nodeLabel": "Lake Afdera, Afar · Client-provided photo collection"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 464.76025,
+                "percent": "11%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 3886.5205,
+                "percent": "89%"
+              }
+            ]
+          }
+        ]
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/01e4147cff8141ee-s.p.10ked.7w885.g.woff2",
+          "type": "Font",
+          "bytes": 38076,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+          "type": "Font",
+          "bytes": 48732,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/images/logo-light.png",
+          "type": "Image",
+          "bytes": 138229,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_768/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 187047,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ralw4hjh3s7h.js",
+          "type": "Script",
+          "bytes": 9849,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0.ep.m27jwal1.js",
+          "type": "Script",
+          "bytes": 9631,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0_pbe2znan_kz.js",
+          "type": "Script",
+          "bytes": 38974,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/15iur6_kpywxc.js",
+          "type": "Script",
+          "bytes": 71411,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/turbopack-0x5.7hsixzt7y.js",
+          "type": "Script",
+          "bytes": 4544,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/09xl-9n2sga4w.js",
+          "type": "Script",
+          "bytes": 10330,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0cdza2zv2xsn2.js",
+          "type": "Script",
+          "bytes": 8950,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0fe_u0rcysbto.js",
+          "type": "Script",
+          "bytes": 13286,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/14krw5.5wlbe_.js",
+          "type": "Script",
+          "bytes": 31722,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0vs8bvarfls1n.js",
+          "type": "Script",
+          "bytes": 15249,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0pg~4dpgyvazx.js",
+          "type": "Script",
+          "bytes": 1019,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ml.9677wg67s.js",
+          "type": "Script",
+          "bytes": 14106,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/afar.png",
+          "type": "Image",
+          "bytes": 77400,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 136019,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/gheralta.png",
+          "type": "Image",
+          "bytes": 100023,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/hamed-ela.png",
+          "type": "Image",
+          "bytes": 62021,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/simien-mountains.png",
+          "type": "Image",
+          "bytes": 115274,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_768/v1791643803/afar.png",
+          "type": "Image",
+          "bytes": 109393,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_768/v1791643803/erta-ale.png",
+          "type": "Image",
+          "bytes": 83537,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_768/v1791643803/lake-assale.png",
+          "type": "Image",
+          "bytes": 129271,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_vercel/insights/script.js",
+          "type": "Script",
+          "bytes": 518,
+          "status": 404
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_768/v1791652743/Erta_Ale_approach.png",
+          "type": "Image",
+          "bytes": 123426,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "report": "destination-desktop.json",
+      "url": "http://127.0.0.1:3101/destinations/danakil-depression",
+      "formFactor": "desktop",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-11T08:03:33.652Z",
+      "scores": {
+        "performance": 76,
+        "accessibility": 85,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "lcpMs": 5294,
+      "cls": 0,
+      "tbtMs": 47,
+      "transferBytes": 1490993,
+      "warnings": [],
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,5,MAIN,3,SECTION,0,DIV,0,IMG",
+                  "selector": "main#main > section.relative > div.absolute > img.animate-slow-zoom",
+                  "boundingRect": {
+                    "top": 0,
+                    "bottom": 714,
+                    "left": 0,
+                    "right": 1335,
+                    "width": 1335,
+                    "height": 714
+                  },
+                  "snippet": "<img alt=\"Green mineral pools and salt formations in the Danakil landscape\" fetchpriority=\"high\" loading=\"eager\" decoding=\"async\" data-nimg=\"fill\" class=\"animate-slow-zoom object-cover\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" sizes=\"100vw\" srcset=\"https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_3…\" src=\"https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_1…\">",
+                  "nodeLabel": "Green mineral pools and salt formations in the Danakil landscape"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 135.1696,
+                "percent": "3%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 4949.935701276683,
+                "percent": "93%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 209.1730987233159,
+                "percent": "4%"
+              }
+            ]
+          }
+        ]
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/01e4147cff8141ee-s.p.10ked.7w885.g.woff2",
+          "type": "Font",
+          "bytes": 38076,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+          "type": "Font",
+          "bytes": 48732,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/images/logo-light.png",
+          "type": "Image",
+          "bytes": 138229,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_1600/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 387397,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ralw4hjh3s7h.js",
+          "type": "Script",
+          "bytes": 9849,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0.ep.m27jwal1.js",
+          "type": "Script",
+          "bytes": 9631,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0_pbe2znan_kz.js",
+          "type": "Script",
+          "bytes": 38974,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/15iur6_kpywxc.js",
+          "type": "Script",
+          "bytes": 71411,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/turbopack-0x5.7hsixzt7y.js",
+          "type": "Script",
+          "bytes": 4544,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/09xl-9n2sga4w.js",
+          "type": "Script",
+          "bytes": 10330,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0cdza2zv2xsn2.js",
+          "type": "Script",
+          "bytes": 8950,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0fe_u0rcysbto.js",
+          "type": "Script",
+          "bytes": 13286,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/14krw5.5wlbe_.js",
+          "type": "Script",
+          "bytes": 31722,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0vs8bvarfls1n.js",
+          "type": "Script",
+          "bytes": 15249,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791652727/Danakil_Deep.png",
+          "type": "Image",
+          "bytes": 19106,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791652737/Danakil_Gheralta.png",
+          "type": "Image",
+          "bytes": 35253,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791643803/simien-mountains.png",
+          "type": "Image",
+          "bytes": 37463,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_256/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 25176,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_256/v1791643803/gheralta.png",
+          "type": "Image",
+          "bytes": 20616,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_256/v1791643803/lalibela.png",
+          "type": "Image",
+          "bytes": 22196,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791652741/Danakil_Essentials.png",
+          "type": "Image",
+          "bytes": 34442,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791652727/Danakil_Deep.png",
+          "type": "Image",
+          "bytes": 31007,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 89706,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791652740/Danakil_Photography_Expedition.png",
+          "type": "Image",
+          "bytes": 91961,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_vercel/insights/script.js",
+          "type": "Script",
+          "bytes": 518,
+          "status": 404
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0pg~4dpgyvazx.js",
+          "type": "Script",
+          "bytes": 1019,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ml.9677wg67s.js",
+          "type": "Script",
+          "bytes": 14106,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "report": "destination-mobile.json",
+      "url": "http://127.0.0.1:3101/destinations/danakil-depression",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-11T08:04:11.907Z",
+      "scores": {
+        "performance": 74,
+        "accessibility": 93,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "lcpMs": 5882,
+      "cls": 0,
+      "tbtMs": 251,
+      "transferBytes": 802148,
+      "warnings": [],
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,5,MAIN,3,SECTION,0,DIV,0,IMG",
+                  "selector": "main#main > section.relative > div.absolute > img.animate-slow-zoom",
+                  "boundingRect": {
+                    "top": 0,
+                    "bottom": 609,
+                    "left": 0,
+                    "right": 412,
+                    "width": 412,
+                    "height": 609
+                  },
+                  "snippet": "<img alt=\"Green mineral pools and salt formations in the Danakil landscape\" fetchpriority=\"high\" loading=\"eager\" decoding=\"async\" data-nimg=\"fill\" class=\"animate-slow-zoom object-cover\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" sizes=\"100vw\" srcset=\"https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_3…\" src=\"https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_7…\">",
+                  "nodeLabel": "Green mineral pools and salt formations in the Danakil landscape"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 456.66985,
+                "percent": "8%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 5316.219456884798,
+                "percent": "90%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 109.47074311520464,
+                "percent": "2%"
+              }
+            ]
+          }
+        ]
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/01e4147cff8141ee-s.p.10ked.7w885.g.woff2",
+          "type": "Font",
+          "bytes": 38076,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+          "type": "Font",
+          "bytes": 48732,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/images/logo-light.png",
+          "type": "Image",
+          "bytes": 138229,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_768/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 186902,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ralw4hjh3s7h.js",
+          "type": "Script",
+          "bytes": 9849,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0.ep.m27jwal1.js",
+          "type": "Script",
+          "bytes": 9631,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0_pbe2znan_kz.js",
+          "type": "Script",
+          "bytes": 38974,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/15iur6_kpywxc.js",
+          "type": "Script",
+          "bytes": 71411,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/turbopack-0x5.7hsixzt7y.js",
+          "type": "Script",
+          "bytes": 4544,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/09xl-9n2sga4w.js",
+          "type": "Script",
+          "bytes": 10330,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0cdza2zv2xsn2.js",
+          "type": "Script",
+          "bytes": 8950,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0fe_u0rcysbto.js",
+          "type": "Script",
+          "bytes": 13286,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/14krw5.5wlbe_.js",
+          "type": "Script",
+          "bytes": 31722,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0vs8bvarfls1n.js",
+          "type": "Script",
+          "bytes": 15249,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_vercel/insights/script.js",
+          "type": "Script",
+          "bytes": 518,
+          "status": 404
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0pg~4dpgyvazx.js",
+          "type": "Script",
+          "bytes": 1019,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ml.9677wg67s.js",
+          "type": "Script",
+          "bytes": 14106,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "report": "package-desktop.json",
+      "url": "http://127.0.0.1:3101/expeditions/danakil-essentials",
+      "formFactor": "desktop",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-11T08:04:47.131Z",
+      "scores": {
+        "performance": 81,
+        "accessibility": 85,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "lcpMs": 3353,
+      "cls": 0,
+      "tbtMs": 0,
+      "transferBytes": 1185227,
+      "warnings": [],
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-1-IMG",
+                  "path": "1,HTML,1,BODY,5,MAIN,3,SECTION,0,DIV,0,IMG",
+                  "selector": "main#main > section.relative > div.absolute > img.animate-slow-zoom",
+                  "boundingRect": {
+                    "top": 0,
+                    "bottom": 714,
+                    "left": 0,
+                    "right": 1335,
+                    "width": 1335,
+                    "height": 714
+                  },
+                  "snippet": "<img alt=\"Camels silhouetted against sunset on the salt plain\" fetchpriority=\"high\" loading=\"eager\" decoding=\"async\" data-nimg=\"fill\" class=\"animate-slow-zoom object-cover\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" sizes=\"100vw\" srcset=\"https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_3…\" src=\"https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_1…\">",
+                  "nodeLabel": "Camels silhouetted against sunset on the salt plain"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 126.9854,
+                "percent": "4%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 3080.7468430160457,
+                "percent": "92%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 145.2663569839542,
+                "percent": "4%"
+              }
+            ]
+          }
+        ]
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/01e4147cff8141ee-s.p.10ked.7w885.g.woff2",
+          "type": "Font",
+          "bytes": 38076,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+          "type": "Font",
+          "bytes": 48732,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/images/logo-light.png",
+          "type": "Image",
+          "bytes": 138229,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_1600/v1791652741/Danakil_Essentials.png",
+          "type": "Image",
+          "bytes": 326946,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ralw4hjh3s7h.js",
+          "type": "Script",
+          "bytes": 9849,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0.ep.m27jwal1.js",
+          "type": "Script",
+          "bytes": 9631,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0_pbe2znan_kz.js",
+          "type": "Script",
+          "bytes": 38974,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/15iur6_kpywxc.js",
+          "type": "Script",
+          "bytes": 71411,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/turbopack-0x5.7hsixzt7y.js",
+          "type": "Script",
+          "bytes": 4544,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/09xl-9n2sga4w.js",
+          "type": "Script",
+          "bytes": 10330,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0cdza2zv2xsn2.js",
+          "type": "Script",
+          "bytes": 8950,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0fe_u0rcysbto.js",
+          "type": "Script",
+          "bytes": 13286,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/14krw5.5wlbe_.js",
+          "type": "Script",
+          "bytes": 31722,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0vs8bvarfls1n.js",
+          "type": "Script",
+          "bytes": 15249,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791652727/Danakil_Deep.png",
+          "type": "Image",
+          "bytes": 19130,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791652737/Danakil_Gheralta.png",
+          "type": "Image",
+          "bytes": 35282,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791643803/simien-mountains.png",
+          "type": "Image",
+          "bytes": 37382,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_256/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 25492,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_256/v1791643803/gheralta.png",
+          "type": "Image",
+          "bytes": 20484,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_256/v1791643803/lalibela.png",
+          "type": "Image",
+          "bytes": 22078,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_vercel/insights/script.js",
+          "type": "Script",
+          "bytes": 518,
+          "status": 404
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0pg~4dpgyvazx.js",
+          "type": "Script",
+          "bytes": 1019,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ml.9677wg67s.js",
+          "type": "Script",
+          "bytes": 14106,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "report": "package-mobile.json",
+      "url": "http://127.0.0.1:3101/expeditions/danakil-essentials",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-11T08:05:21.355Z",
+      "scores": {
+        "performance": 72,
+        "accessibility": 93,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "lcpMs": 5746,
+      "cls": 0,
+      "tbtMs": 312,
+      "transferBytes": 709866,
+      "warnings": [],
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-1-IMG",
+                  "path": "1,HTML,1,BODY,5,MAIN,3,SECTION,0,DIV,0,IMG",
+                  "selector": "main#main > section.relative > div.absolute > img.animate-slow-zoom",
+                  "boundingRect": {
+                    "top": 0,
+                    "bottom": 609,
+                    "left": 0,
+                    "right": 412,
+                    "width": 412,
+                    "height": 609
+                  },
+                  "snippet": "<img alt=\"Camels silhouetted against sunset on the salt plain\" fetchpriority=\"high\" loading=\"eager\" decoding=\"async\" data-nimg=\"fill\" class=\"animate-slow-zoom object-cover\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" sizes=\"100vw\" srcset=\"https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_3…\" src=\"https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_7…\">",
+                  "nodeLabel": "Camels silhouetted against sunset on the salt plain"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 456.3157,
+                "percent": "8%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 5184.148410416297,
+                "percent": "90%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 105.33998958370375,
+                "percent": "2%"
+              }
+            ]
+          }
+        ]
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/01e4147cff8141ee-s.p.10ked.7w885.g.woff2",
+          "type": "Font",
+          "bytes": 38076,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+          "type": "Font",
+          "bytes": 48732,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/images/logo-light.png",
+          "type": "Image",
+          "bytes": 138229,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_768/v1791652741/Danakil_Essentials.png",
+          "type": "Image",
+          "bytes": 93363,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ralw4hjh3s7h.js",
+          "type": "Script",
+          "bytes": 9849,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0.ep.m27jwal1.js",
+          "type": "Script",
+          "bytes": 9631,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0_pbe2znan_kz.js",
+          "type": "Script",
+          "bytes": 38974,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/15iur6_kpywxc.js",
+          "type": "Script",
+          "bytes": 71411,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/turbopack-0x5.7hsixzt7y.js",
+          "type": "Script",
+          "bytes": 4544,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/09xl-9n2sga4w.js",
+          "type": "Script",
+          "bytes": 10330,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0cdza2zv2xsn2.js",
+          "type": "Script",
+          "bytes": 8950,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0fe_u0rcysbto.js",
+          "type": "Script",
+          "bytes": 13286,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/14krw5.5wlbe_.js",
+          "type": "Script",
+          "bytes": 31722,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0vs8bvarfls1n.js",
+          "type": "Script",
+          "bytes": 15249,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_vercel/insights/script.js",
+          "type": "Script",
+          "bytes": 518,
+          "status": 404
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0pg~4dpgyvazx.js",
+          "type": "Script",
+          "bytes": 1019,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ml.9677wg67s.js",
+          "type": "Script",
+          "bytes": 14106,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "report": "article-desktop.json",
+      "url": "http://127.0.0.1:3101/blog/when-to-visit-ethiopia",
+      "formFactor": "desktop",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-11T08:05:52.011Z",
+      "scores": {
+        "performance": 76,
+        "accessibility": 84,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "lcpMs": 6064,
+      "cls": 0,
+      "tbtMs": 2,
+      "transferBytes": 1667360,
+      "warnings": [],
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-1-IMG",
+                  "path": "1,HTML,1,BODY,5,MAIN,0,ARTICLE,2,DIV,0,FIGURE,0,IMG",
+                  "selector": "article > div.reveal > figure.relative > img.object-cover",
+                  "boundingRect": {
+                    "top": 667,
+                    "bottom": 1140,
+                    "left": 248,
+                    "right": 1088,
+                    "width": 840,
+                    "height": 473
+                  },
+                  "snippet": "<img alt=\"Green mineral pools and salt formations in the Danakil landscape\" fetchpriority=\"high\" loading=\"eager\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" sizes=\"(max-width: 1024px) 100vw, 900px\" srcset=\"https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_3…\" src=\"https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_1…\">",
+                  "nodeLabel": "Green mineral pools and salt formations in the Danakil landscape"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 127.1461,
+                "percent": "2%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 5844.123101922176,
+                "percent": "96%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 93.14059807782633,
+                "percent": "2%"
+              }
+            ]
+          }
+        ]
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/01e4147cff8141ee-s.p.10ked.7w885.g.woff2",
+          "type": "Font",
+          "bytes": 38076,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+          "type": "Font",
+          "bytes": 48732,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/images/logo-light.png",
+          "type": "Image",
+          "bytes": 138229,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_1024/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 301912,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ralw4hjh3s7h.js",
+          "type": "Script",
+          "bytes": 9849,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0.ep.m27jwal1.js",
+          "type": "Script",
+          "bytes": 9631,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0_pbe2znan_kz.js",
+          "type": "Script",
+          "bytes": 38974,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/15iur6_kpywxc.js",
+          "type": "Script",
+          "bytes": 71411,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/turbopack-0x5.7hsixzt7y.js",
+          "type": "Script",
+          "bytes": 4544,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/09xl-9n2sga4w.js",
+          "type": "Script",
+          "bytes": 10330,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0cdza2zv2xsn2.js",
+          "type": "Script",
+          "bytes": 8950,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0fe_u0rcysbto.js",
+          "type": "Script",
+          "bytes": 13286,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/14krw5.5wlbe_.js",
+          "type": "Script",
+          "bytes": 31722,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0vs8bvarfls1n.js",
+          "type": "Script",
+          "bytes": 15249,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791652727/Danakil_Deep.png",
+          "type": "Image",
+          "bytes": 19224,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791652737/Danakil_Gheralta.png",
+          "type": "Image",
+          "bytes": 35406,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791643803/simien-mountains.png",
+          "type": "Image",
+          "bytes": 37325,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_256/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 25204,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_256/v1791643803/gheralta.png",
+          "type": "Image",
+          "bytes": 20578,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_256/v1791643803/lalibela.png",
+          "type": "Image",
+          "bytes": 22092,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_48/v1791643803/afar.png",
+          "type": "Image",
+          "bytes": 952,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/hamed-ela.png",
+          "type": "Image",
+          "bytes": 37961,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/erta-ale.png",
+          "type": "Image",
+          "bytes": 34763,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/northern-ethiopia.png",
+          "type": "Image",
+          "bytes": 55303,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_1600/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 387457,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_vercel/insights/script.js",
+          "type": "Script",
+          "bytes": 518,
+          "status": 404
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0pg~4dpgyvazx.js",
+          "type": "Script",
+          "bytes": 1019,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ml.9677wg67s.js",
+          "type": "Script",
+          "bytes": 14106,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "report": "article-mobile.json",
+      "url": "http://127.0.0.1:3101/blog/when-to-visit-ethiopia",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-11T08:06:29.493Z",
+      "scores": {
+        "performance": 75,
+        "accessibility": 92,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "lcpMs": 6604,
+      "cls": 0,
+      "tbtMs": 167,
+      "transferBytes": 1121733,
+      "warnings": [],
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-5-IMG",
+                  "path": "1,HTML,1,BODY,5,MAIN,0,ARTICLE,2,DIV,0,FIGURE,0,IMG",
+                  "selector": "article > div.reveal > figure.relative > img.object-cover",
+                  "boundingRect": {
+                    "top": 624,
+                    "bottom": 835,
+                    "left": 19,
+                    "right": 393,
+                    "width": 375,
+                    "height": 211
+                  },
+                  "snippet": "<img alt=\"Green mineral pools and salt formations in the Danakil landscape\" fetchpriority=\"high\" loading=\"eager\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" sizes=\"(max-width: 1024px) 100vw, 900px\" srcset=\"https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_3…\" src=\"https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_7…\">",
+                  "nodeLabel": "Green mineral pools and salt formations in the Danakil landscape"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 456.79195,
+                "percent": "7%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 6114.563332607995,
+                "percent": "93%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 32.23659239200333,
+                "percent": "0%"
+              }
+            ]
+          }
+        ]
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/01e4147cff8141ee-s.p.10ked.7w885.g.woff2",
+          "type": "Font",
+          "bytes": 38076,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+          "type": "Font",
+          "bytes": 48732,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/images/logo-light.png",
+          "type": "Image",
+          "bytes": 138229,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_768/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 186782,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ralw4hjh3s7h.js",
+          "type": "Script",
+          "bytes": 9849,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0.ep.m27jwal1.js",
+          "type": "Script",
+          "bytes": 9631,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0_pbe2znan_kz.js",
+          "type": "Script",
+          "bytes": 38974,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/15iur6_kpywxc.js",
+          "type": "Script",
+          "bytes": 71411,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/turbopack-0x5.7hsixzt7y.js",
+          "type": "Script",
+          "bytes": 4544,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/09xl-9n2sga4w.js",
+          "type": "Script",
+          "bytes": 10330,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0cdza2zv2xsn2.js",
+          "type": "Script",
+          "bytes": 8950,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0fe_u0rcysbto.js",
+          "type": "Script",
+          "bytes": 13286,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/14krw5.5wlbe_.js",
+          "type": "Script",
+          "bytes": 31722,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0vs8bvarfls1n.js",
+          "type": "Script",
+          "bytes": 15249,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791643803/afar.png",
+          "type": "Image",
+          "bytes": 2204,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_768/v1791643803/hamed-ela.png",
+          "type": "Image",
+          "bytes": 85345,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_768/v1791643803/erta-ale.png",
+          "type": "Image",
+          "bytes": 83623,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_768/v1791643803/northern-ethiopia.png",
+          "type": "Image",
+          "bytes": 144746,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_vercel/insights/script.js",
+          "type": "Script",
+          "bytes": 518,
+          "status": 404
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0pg~4dpgyvazx.js",
+          "type": "Script",
+          "bytes": 1019,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ml.9677wg67s.js",
+          "type": "Script",
+          "bytes": 14106,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "report": "gallery-desktop.json",
+      "url": "http://127.0.0.1:3101/gallery",
+      "formFactor": "desktop",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-11T08:07:11.566Z",
+      "scores": {
+        "performance": 83,
+        "accessibility": 84,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "lcpMs": 2941,
+      "cls": 0,
+      "tbtMs": 0,
+      "transferBytes": 2336198,
+      "warnings": [],
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-1-IMG",
+                  "path": "1,HTML,1,BODY,5,MAIN,0,SECTION,0,DIV,0,IMG",
+                  "selector": "main#main > section.relative > div.absolute > img.animate-slow-zoom",
+                  "boundingRect": {
+                    "top": 0,
+                    "bottom": 714,
+                    "left": 0,
+                    "right": 1335,
+                    "width": 1335,
+                    "height": 714
+                  },
+                  "snippet": "<img alt=\"Simien Mountains, Ethiopia\" fetchpriority=\"high\" loading=\"eager\" decoding=\"async\" data-nimg=\"fill\" class=\"animate-slow-zoom object-cover\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" sizes=\"100vw\" srcset=\"https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_3…\" src=\"https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_1…\">",
+                  "nodeLabel": "Simien Mountains, Ethiopia"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 124.5207,
+                "percent": "4%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 2737.5115373277254,
+                "percent": "93%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 78.72606267227548,
+                "percent": "3%"
+              }
+            ]
+          }
+        ]
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/01e4147cff8141ee-s.p.10ked.7w885.g.woff2",
+          "type": "Font",
+          "bytes": 38076,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+          "type": "Font",
+          "bytes": 48732,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/images/logo-light.png",
+          "type": "Image",
+          "bytes": 138229,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_1600/v1791643803/simien-mountains.png",
+          "type": "Image",
+          "bytes": 401614,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ralw4hjh3s7h.js",
+          "type": "Script",
+          "bytes": 9849,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0.ep.m27jwal1.js",
+          "type": "Script",
+          "bytes": 9631,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0_pbe2znan_kz.js",
+          "type": "Script",
+          "bytes": 38974,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/15iur6_kpywxc.js",
+          "type": "Script",
+          "bytes": 71411,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/turbopack-0x5.7hsixzt7y.js",
+          "type": "Script",
+          "bytes": 4544,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/09xl-9n2sga4w.js",
+          "type": "Script",
+          "bytes": 10330,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0cdza2zv2xsn2.js",
+          "type": "Script",
+          "bytes": 8950,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0fe_u0rcysbto.js",
+          "type": "Script",
+          "bytes": 13286,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/14krw5.5wlbe_.js",
+          "type": "Script",
+          "bytes": 31722,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0vs8bvarfls1n.js",
+          "type": "Script",
+          "bytes": 15249,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0p9dojdov1nso.js",
+          "type": "Script",
+          "bytes": 2941,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791652727/Danakil_Deep.png",
+          "type": "Image",
+          "bytes": 19200,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791652737/Danakil_Gheralta.png",
+          "type": "Image",
+          "bytes": 35281,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791643803/simien-mountains.png",
+          "type": "Image",
+          "bytes": 37598,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_256/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 25204,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_256/v1791643803/gheralta.png",
+          "type": "Image",
+          "bytes": 20493,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_256/v1791643803/lalibela.png",
+          "type": "Image",
+          "bytes": 22078,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 89743,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/lalibela.png",
+          "type": "Image",
+          "bytes": 82910,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/simien-mountains.png",
+          "type": "Image",
+          "bytes": 63504,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/awash-national-park.png",
+          "type": "Image",
+          "bytes": 53145,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/afar.png",
+          "type": "Image",
+          "bytes": 42120,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/gondar.png",
+          "type": "Image",
+          "bytes": 66308,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/lake-tana.png",
+          "type": "Image",
+          "bytes": 31111,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/lake-afdera.png",
+          "type": "Image",
+          "bytes": 37744,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/axum.png",
+          "type": "Image",
+          "bytes": 34437,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/semera.png",
+          "type": "Image",
+          "bytes": 63811,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/hamed-ela.png",
+          "type": "Image",
+          "bytes": 38068,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/gheralta.png",
+          "type": "Image",
+          "bytes": 58888,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/erta-ale.png",
+          "type": "Image",
+          "bytes": 34763,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_1600/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 387411,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_vercel/insights/script.js",
+          "type": "Script",
+          "bytes": 518,
+          "status": 404
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0pg~4dpgyvazx.js",
+          "type": "Script",
+          "bytes": 1019,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ml.9677wg67s.js",
+          "type": "Script",
+          "bytes": 14106,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "report": "gallery-mobile.json",
+      "url": "http://127.0.0.1:3101/gallery",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-11T08:07:46.462Z",
+      "scores": {
+        "performance": 77,
+        "accessibility": 92,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "lcpMs": 6021,
+      "cls": 0,
+      "tbtMs": 147,
+      "transferBytes": 1730891,
+      "warnings": [],
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-5-IMG",
+                  "path": "1,HTML,1,BODY,5,MAIN,0,SECTION,0,DIV,0,IMG",
+                  "selector": "main#main > section.relative > div.absolute > img.animate-slow-zoom",
+                  "boundingRect": {
+                    "top": 0,
+                    "bottom": 609,
+                    "left": 0,
+                    "right": 412,
+                    "width": 412,
+                    "height": 609
+                  },
+                  "snippet": "<img alt=\"Simien Mountains, Ethiopia\" fetchpriority=\"high\" loading=\"eager\" decoding=\"async\" data-nimg=\"fill\" class=\"animate-slow-zoom object-cover\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" sizes=\"100vw\" srcset=\"https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_3…\" src=\"https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_7…\">",
+                  "nodeLabel": "Simien Mountains, Ethiopia"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 455.5785,
+                "percent": "8%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 5479.48058982096,
+                "percent": "91%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 86.07341017904037,
+                "percent": "1%"
+              }
+            ]
+          }
+        ]
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/01e4147cff8141ee-s.p.10ked.7w885.g.woff2",
+          "type": "Font",
+          "bytes": 38076,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+          "type": "Font",
+          "bytes": 48732,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/images/logo-light.png",
+          "type": "Image",
+          "bytes": 138229,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_768/v1791643803/simien-mountains.png",
+          "type": "Image",
+          "bytes": 160107,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ralw4hjh3s7h.js",
+          "type": "Script",
+          "bytes": 9849,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0.ep.m27jwal1.js",
+          "type": "Script",
+          "bytes": 9631,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0_pbe2znan_kz.js",
+          "type": "Script",
+          "bytes": 38974,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/15iur6_kpywxc.js",
+          "type": "Script",
+          "bytes": 71411,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/turbopack-0x5.7hsixzt7y.js",
+          "type": "Script",
+          "bytes": 4544,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/09xl-9n2sga4w.js",
+          "type": "Script",
+          "bytes": 10330,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0cdza2zv2xsn2.js",
+          "type": "Script",
+          "bytes": 8950,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0fe_u0rcysbto.js",
+          "type": "Script",
+          "bytes": 13286,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/14krw5.5wlbe_.js",
+          "type": "Script",
+          "bytes": 31722,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0vs8bvarfls1n.js",
+          "type": "Script",
+          "bytes": 15249,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0p9dojdov1nso.js",
+          "type": "Script",
+          "bytes": 2941,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_768/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 186804,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_768/v1791643803/lalibela.png",
+          "type": "Image",
+          "bytes": 173639,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_768/v1791643803/awash-national-park.png",
+          "type": "Image",
+          "bytes": 136753,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_768/v1791643803/afar.png",
+          "type": "Image",
+          "bytes": 109541,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_768/v1791643803/gondar.png",
+          "type": "Image",
+          "bytes": 169547,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_768/v1791643803/lake-tana.png",
+          "type": "Image",
+          "bytes": 82952,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_768/v1791643803/lake-afdera.png",
+          "type": "Image",
+          "bytes": 103280,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_vercel/insights/script.js",
+          "type": "Script",
+          "bytes": 518,
+          "status": 404
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0pg~4dpgyvazx.js",
+          "type": "Script",
+          "bytes": 1019,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ml.9677wg67s.js",
+          "type": "Script",
+          "bytes": 14106,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "report": "enquiry-desktop.json",
+      "url": "http://127.0.0.1:3101/plan",
+      "formFactor": "desktop",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-11T08:08:20.086Z",
+      "scores": {
+        "performance": 77,
+        "accessibility": 84,
+        "best-practices": 96,
+        "seo": 69
+      },
+      "lcpMs": 5103,
+      "cls": 0,
+      "tbtMs": 10,
+      "transferBytes": 1242962,
+      "warnings": [],
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,5,MAIN,0,SECTION,0,DIV,0,IMG",
+                  "selector": "main#main > section.relative > div.absolute > img.animate-slow-zoom",
+                  "boundingRect": {
+                    "top": 0,
+                    "bottom": 714,
+                    "left": 0,
+                    "right": 1335,
+                    "width": 1335,
+                    "height": 714
+                  },
+                  "snippet": "<img alt=\"Lake Assale in the Danakil Depression\" fetchpriority=\"high\" loading=\"eager\" decoding=\"async\" data-nimg=\"fill\" class=\"animate-slow-zoom object-cover\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" sizes=\"100vw\" srcset=\"https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_3…\" src=\"https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_1…\">",
+                  "nodeLabel": "Lake Assale in the Danakil Depression"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 126.21209999999999,
+                "percent": "2%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 4723.400805321016,
+                "percent": "93%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 253.12499467898397,
+                "percent": "5%"
+              }
+            ]
+          }
+        ]
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/01e4147cff8141ee-s.p.10ked.7w885.g.woff2",
+          "type": "Font",
+          "bytes": 38076,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+          "type": "Font",
+          "bytes": 48732,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/images/logo-light.png",
+          "type": "Image",
+          "bytes": 138229,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_1600/v1791643803/lake-assale.png",
+          "type": "Image",
+          "bytes": 394164,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ralw4hjh3s7h.js",
+          "type": "Script",
+          "bytes": 9849,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0.ep.m27jwal1.js",
+          "type": "Script",
+          "bytes": 9631,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0_pbe2znan_kz.js",
+          "type": "Script",
+          "bytes": 38974,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/15iur6_kpywxc.js",
+          "type": "Script",
+          "bytes": 71411,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/turbopack-0x5.7hsixzt7y.js",
+          "type": "Script",
+          "bytes": 4544,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/09xl-9n2sga4w.js",
+          "type": "Script",
+          "bytes": 10330,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0cdza2zv2xsn2.js",
+          "type": "Script",
+          "bytes": 8950,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0fe_u0rcysbto.js",
+          "type": "Script",
+          "bytes": 13286,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/14krw5.5wlbe_.js",
+          "type": "Script",
+          "bytes": 31722,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0vs8bvarfls1n.js",
+          "type": "Script",
+          "bytes": 15249,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791652727/Danakil_Deep.png",
+          "type": "Image",
+          "bytes": 19130,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791652737/Danakil_Gheralta.png",
+          "type": "Image",
+          "bytes": 35569,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_360/v1791643803/simien-mountains.png",
+          "type": "Image",
+          "bytes": 37372,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_256/v1791643803/danakil-depression.png",
+          "type": "Image",
+          "bytes": 25204,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_256/v1791643803/gheralta.png",
+          "type": "Image",
+          "bytes": 20493,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_256/v1791643803/lalibela.png",
+          "type": "Image",
+          "bytes": 22078,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_vercel/insights/script.js",
+          "type": "Script",
+          "bytes": 518,
+          "status": 404
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0pg~4dpgyvazx.js",
+          "type": "Script",
+          "bytes": 1019,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ml.9677wg67s.js",
+          "type": "Script",
+          "bytes": 14106,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "report": "enquiry-mobile.json",
+      "url": "http://127.0.0.1:3101/plan",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-10-11T08:08:50.404Z",
+      "scores": {
+        "performance": 77,
+        "accessibility": 92,
+        "best-practices": 96,
+        "seo": 69
+      },
+      "lcpMs": 5661,
+      "cls": 0,
+      "tbtMs": 158,
+      "transferBytes": 736535,
+      "warnings": [],
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-1-IMG",
+                  "path": "1,HTML,1,BODY,5,MAIN,0,SECTION,0,DIV,0,IMG",
+                  "selector": "main#main > section.relative > div.absolute > img.animate-slow-zoom",
+                  "boundingRect": {
+                    "top": -2,
+                    "bottom": 611,
+                    "left": -1,
+                    "right": 413,
+                    "width": 414,
+                    "height": 612
+                  },
+                  "snippet": "<img alt=\"Lake Assale in the Danakil Depression\" fetchpriority=\"high\" loading=\"eager\" decoding=\"async\" data-nimg=\"fill\" class=\"animate-slow-zoom object-cover\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" sizes=\"100vw\" srcset=\"https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_3…\" src=\"https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_7…\">",
+                  "nodeLabel": "Lake Assale in the Danakil Depression"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 456.0168,
+                "percent": "8%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 5124.696895874472,
+                "percent": "91%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 80.7003041255266,
+                "percent": "1%"
+              }
+            ]
+          }
+        ]
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/01e4147cff8141ee-s.p.10ked.7w885.g.woff2",
+          "type": "Font",
+          "bytes": 38076,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+          "type": "Font",
+          "bytes": 48732,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/images/logo-light.png",
+          "type": "Image",
+          "bytes": 138229,
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_768/v1791643803/lake-assale.png",
+          "type": "Image",
+          "bytes": 129513,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ralw4hjh3s7h.js",
+          "type": "Script",
+          "bytes": 9849,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0.ep.m27jwal1.js",
+          "type": "Script",
+          "bytes": 9631,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0_pbe2znan_kz.js",
+          "type": "Script",
+          "bytes": 38974,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/15iur6_kpywxc.js",
+          "type": "Script",
+          "bytes": 71411,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/turbopack-0x5.7hsixzt7y.js",
+          "type": "Script",
+          "bytes": 4544,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/09xl-9n2sga4w.js",
+          "type": "Script",
+          "bytes": 10330,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0cdza2zv2xsn2.js",
+          "type": "Script",
+          "bytes": 8950,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0fe_u0rcysbto.js",
+          "type": "Script",
+          "bytes": 13286,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/14krw5.5wlbe_.js",
+          "type": "Script",
+          "bytes": 31722,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0vs8bvarfls1n.js",
+          "type": "Script",
+          "bytes": 15249,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_vercel/insights/script.js",
+          "type": "Script",
+          "bytes": 518,
+          "status": 404
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0pg~4dpgyvazx.js",
+          "type": "Script",
+          "bytes": 1019,
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/static/chunks/0ml.9677wg67s.js",
+          "type": "Script",
+          "bytes": 14106,
+          "status": 200
+        }
+      ]
+    }
+  ]
+}

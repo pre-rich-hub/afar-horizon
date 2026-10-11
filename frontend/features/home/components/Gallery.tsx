@@ -4,42 +4,79 @@ import { shots } from '../data/gallery.data'
 
 import { ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react'
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export function Gallery() {
   const [activeIndex, setActiveIndex] = useState(0)
   const [isPlaying, setIsPlaying] = useState(true)
+  const [previous, setPrevious] = useState<number | null>(null)
+  const [inView, setInView] = useState(false)
+  const [prepared, setPrepared] = useState<number | null>(null)
+  const [loaded, setLoaded] = useState(new Set<number>())
+  const loadedFrames = useRef(new Set<number>())
+  const viewport = useRef<HTMLElement | null>(null)
+  const select = (index: number) => {
+    if (index === activeIndex) return
+    setPrevious(loaded.has(activeIndex) ? activeIndex : previous ?? activeIndex)
+    setActiveIndex(index)
+  }
 
   useEffect(() => {
-    if (!isPlaying) return
-    const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % shots.length)
-    }, 7000)
-    return () => clearInterval(interval)
-  }, [isPlaying, activeIndex])
+    const motion = window.matchMedia('(prefers-reduced-motion: reduce)')
+    if (motion.matches) setIsPlaying(false)
+    const node = viewport.current
+    if (!node) return
+    const observer = new IntersectionObserver(([entry]) => setInView(entry.isIntersecting), { threshold: 0.1 })
+    observer.observe(node)
+    return () => observer.disconnect()
+  }, [])
+
+  useEffect(() => {
+    if (!isPlaying || !inView) return
+    const next = (activeIndex + 1) % shots.length
+    const prepare = window.setTimeout(() => setPrepared(next), 4500)
+    const go = () => {
+      if (!loadedFrames.current.has(next)) {
+        advance = window.setTimeout(go, 250)
+        return
+      }
+      setPrevious(activeIndex)
+      setActiveIndex(next)
+    }
+    let advance = window.setTimeout(go, 7000)
+    return () => { window.clearTimeout(prepare); window.clearTimeout(advance) }
+  }, [isPlaying, inView, activeIndex])
 
   return (
     <section
+      ref={viewport}
       id="journal"
       aria-label="Photo gallery"
       className="group/viewport relative isolate h-[100svh] min-h-[560px] w-full overflow-hidden bg-charcoal"
     >
       {shots.map((shot, idx) => {
         const isActive = idx === activeIndex
+        if (!isActive && idx !== previous && idx !== prepared) return null
+        const displayed = (isActive && (previous === null || loaded.has(activeIndex))) || (idx === previous && !loaded.has(activeIndex))
         // Alternate animation direction/style
         const kbClass = idx % 2 === 0 ? 'animate-kb-1' : 'animate-kb-2'
         return (
           <div
-            key={shot.src}
+            key={`${idx}-${shot.src}`}
             aria-hidden={!isActive}
-            className={`absolute inset-0 transition-opacity duration-[2000ms] ease-in-out ${isActive ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
+            className={`absolute inset-0 transition-opacity duration-[2000ms] ease-in-out ${displayed ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
               }`}
           >
             <Image
               src={shot.src}
+              onLoad={() => {
+                loadedFrames.current.add(idx)
+                setLoaded(current => new Set(current).add(idx))
+              }}
               alt={`${shot.location}, Ethiopia`}
               fill
               sizes="100vw"
+              loading={inView ? 'eager' : 'lazy'}
               className={`object-cover ${isActive ? kbClass : 'scale-100'}`}
             />
           </div>
@@ -73,7 +110,7 @@ export function Gallery() {
                   <button
                     key={idx}
                     onClick={() => {
-                      setActiveIndex(idx)
+                      select(idx)
                       setIsPlaying(true) // reset timer & keep playing on selection
                     }}
                     className={`h-1.5 rounded-full transition-all duration-500 cursor-pointer ${isActive ? 'w-8 bg-accent' : 'w-2 bg-white/40 hover:bg-white/80'
@@ -92,14 +129,14 @@ export function Gallery() {
                 {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
               </button>
               <button
-                onClick={() => setActiveIndex((prev) => (prev - 1 + shots.length) % shots.length)}
+                onClick={() => select((activeIndex - 1 + shots.length) % shots.length)}
                 className="p-3 rounded-full bg-charcoal/50 backdrop-blur-md border border-sand/20 hover:border-accent hover:bg-accent hover:text-accent-foreground text-sand transition-all duration-300 cursor-pointer"
                 aria-label="Previous slide"
               >
                 <ChevronLeft className="w-4 h-4" />
               </button>
               <button
-                onClick={() => setActiveIndex((prev) => (prev + 1) % shots.length)}
+                onClick={() => select((activeIndex + 1) % shots.length)}
                 className="p-3 rounded-full bg-charcoal/50 backdrop-blur-md border border-sand/20 hover:border-accent hover:bg-accent hover:text-accent-foreground text-sand transition-all duration-300 cursor-pointer"
                 aria-label="Next slide"
               >
@@ -133,10 +170,13 @@ export function Gallery() {
           .animate-progress-grow {
             animation: progress-grow 7000ms linear forwards;
           }
+          @media (prefers-reduced-motion: reduce) {
+            .animate-kb-1, .animate-kb-2, .animate-progress-grow { animation: none; }
+          }
         `}</style>
 
         {/* Progress Bar indicating time remaining for current slide */}
-        {isPlaying && (
+        {isPlaying && inView && (
           <div
             key={activeIndex}
             className="absolute bottom-0 left-0 right-0 h-[3px] bg-accent/90 z-30 origin-left animate-progress-grow"

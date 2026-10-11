@@ -33,7 +33,8 @@ export function PageHero({
           src={image || defaultImage}
           alt={imageAlt}
           fill
-          priority
+          loading="eager"
+          fetchPriority="high"
           sizes="100vw"
           className="animate-slow-zoom object-cover"
         />

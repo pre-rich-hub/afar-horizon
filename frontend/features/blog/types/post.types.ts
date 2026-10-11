@@ -6,6 +6,7 @@ export type Post = {
   title: string
   category: string
   date: string
+  publishedAt?: string
   readTime: string
   image: string
   imageAlt?: string

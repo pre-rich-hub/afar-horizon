@@ -1,6 +1,6 @@
 # Afar Horizon SEO implementation roadmap
 
-Prepared: 10 October 2026. Status: Phases 1–3 implemented and validated locally (updated 11 October 2026). Live deployment and Search Console verification remain separate tasks.
+Prepared: 10 October 2026. Status: Phases 1–5 implemented and validated locally (updated 11 October 2026). Phase 4's Google Rich Results Test remains pending; live deployment and Search Console verification remain separate tasks.
 
 ## Goal and working rules
 
@@ -43,8 +43,8 @@ This is a source-code audit, not a claim about current production rankings, inde
 | 1 | Baseline, site identity and metadata foundations | Completed locally | [Baseline reports](frontend/docs/seo-phase1-baseline.md); metadata tests and rendered-build verifier; included in this commit |
 | 2 | Crawlability, sitemap, indexing rules and URL integrity | Completed locally; host redirects pending live verification | `tests/crawl.test.cjs`, `tests/verify-crawl.cjs`; production/preview checks passed; included in this commit |
 | 3 | Search intent, on-page content and internal links | Completed locally; profile URLs and operator confirmations pending | [Intent map](frontend/docs/seo-phase3-intent-map.md); editorial/rendered checks; included in this commit |
-| 4 | Structured data and trustworthy entity information | Not started | — |
-| 5 | Image delivery, performance and mobile experience | Not started | — |
+| 4 | Structured data and trustworthy entity information | Implemented; local and Schema.org checks passed; Google test pending | [Validation record](frontend/docs/seo-phase4-validation.md); schema tests and rendered verifier; included in this commit |
+| 5 | Image delivery, performance and mobile experience | Completed locally; field measurements and performance backlog remain | [Performance record](frontend/docs/seo-phase5-performance.md); responsive image and browser checks; included in this commit |
 | 6 | Production verification, Search Console and conversion measurement | Not started | — |
 | 7 | Ongoing content, local presence and search improvement | Not started | — |
 | 8 | Translation and international SEO | Deferred until translation | — |
@@ -180,13 +180,13 @@ This is a source-code audit, not a claim about current production rankings, inde
 
 ### Implementation
 
-- [ ] Add shared safe JSON-LD serialization that escapes `<` before inserting JSON into a script element. Keep domain schema builders in the owning features.
-- [ ] Add one stable business entity using `TravelAgency` and a `WebSite` node, with consistent absolute `@id` values. Use existing confirmed name, URL, logo and contact information. Add social `sameAs` links only after real URLs are supplied.
-- [ ] Add `BreadcrumbList` to destination, package and article details, reflecting the real visible hierarchy. Add visible article breadcrumbs within the current design if needed.
-- [ ] Add `BlogPosting` for published articles with title, description, image, canonical URL, publisher and the displayed author. Introduce ISO publication/update dates where confirmed; keep human-readable display dates derived consistently. Do not invent author biographies or backdate new articles.
-- [ ] Describe destinations and itineraries with appropriate Schema.org entities such as `TouristDestination` and `TouristTrip`, based only on displayed catalogue content. These are semantic descriptions, not promised Google travel rich results.
-- [ ] Omit price/availability `Offer` markup while prices await the planned business decision. Omit review/aggregate-rating markup; do not convert the intentional on-site review presentation into eligibility claims or self-serving business review stars. [Google review guidance](https://developers.google.com/search/docs/appearance/structured-data/review-snippet)
-- [ ] Audit the existing FAQPage markup for safe serialization and exact parity with visible questions. Keep useful FAQ content, but do not make FAQ rich results a completion target: Google discontinued that Search feature in May 2026. [Google documentation update](https://developers.google.com/search/updates#may-2026)
+- [x] Add shared safe JSON-LD serialization that escapes `<` before inserting JSON into a script element. Keep domain schema builders in the owning features.
+- [x] Add one stable business entity using `TravelAgency` and a `WebSite` node, with consistent absolute `@id` values. Use existing confirmed name, URL, logo and contact information. Add social `sameAs` links only after real URLs are supplied.
+- [x] Add `BreadcrumbList` to destination, package and article details, reflecting the real visible hierarchy. Add visible article breadcrumbs within the current design if needed.
+- [x] Add `BlogPosting` for published articles with title, description, image, canonical URL, publisher and the displayed author. Introduce ISO publication/update dates where confirmed; keep human-readable display dates derived consistently. Do not invent author biographies or backdate new articles.
+- [x] Describe destinations and itineraries with appropriate Schema.org entities such as `TouristDestination` and `TouristTrip`, based only on displayed catalogue content. These are semantic descriptions, not promised Google travel rich results.
+- [x] Omit price/availability `Offer` markup while prices await the planned business decision. Omit review/aggregate-rating markup; do not convert the intentional on-site review presentation into eligibility claims or self-serving business review stars. [Google review guidance](https://developers.google.com/search/docs/appearance/structured-data/review-snippet)
+- [x] Audit the existing FAQPage markup for safe serialization and exact parity with visible questions. Keep useful FAQ content, but do not make FAQ rich results a completion target: Google discontinued that Search feature in May 2026. [Google documentation update](https://developers.google.com/search/updates#may-2026)
 
 ### Complete when
 
@@ -195,18 +195,25 @@ This is a source-code audit, not a claim about current production rankings, inde
 - Applicable Google-supported types pass the Rich Results Test; other types validate through Schema.org validation.
 - Missing optional data is omitted rather than guessed. No unconfirmed offers, ratings or author claims are emitted.
 
+### Phase 4 implementation record — 11 October 2026
+
+- Root layout emits one connected `TravelAgency`/`WebSite` graph. Domain builders add breadcrumbs and entities to 19 destination, 17 expedition and nine article detail pages; FAQ markup uses the same safe renderer.
+- The owner confirmed existing publication labels. ISO publication dates reproduce those labels; modification dates retain the actual 11 October editorial update. No publication clock times, author URLs, social profiles, ratings or offers were invented.
+- Type checks, all six test files and the production build pass. Rendered JSON-LD, content/link and metadata checks pass on all 60 public pages. Four representative graphs validate through Schema.org with zero errors and zero warnings.
+- Google's Rich Results Test was attempted in code mode but returned “Something went wrong — Log in and try again.” Its result is **pending**, not a pass. An authenticated manual check and deployed-URL verification remain necessary. See the [validation record](frontend/docs/seo-phase4-validation.md).
+
 ## Phase 5 — Improve image delivery and mobile performance
 
 **Outcome:** real photographs load at appropriate sizes without compromising the current experience.
 
 ### Implementation
 
-- [ ] Use the Phase 1 production-build measurements to prioritize the actual bottlenecks. Inspect downloaded image dimensions/bytes, LCP requests, JavaScript, fonts and layout shifts.
-- [ ] Add a shared Cloudinary loader for site photos using width-based transformations, automatic format and automatic quality. Integrate it with Next Image responsive sizing; remove the global optimization bypass where it prevents responsive delivery. Keep logos on their existing local asset paths.
-- [ ] Preserve each original upload URL/public ID, photo subject, layout and intended crop. Avoid combining a Cloudinary transformation pipeline with a second photo optimizer unnecessarily. Test transformations against the actual Cloudinary account before rollout.
-- [ ] Verify `sizes` and reserved dimensions/aspect ratios on heroes, cards, galleries and thumbnails. Give loading priority to the initial visible hero only; lazy-load below-the-fold images and avoid eagerly downloading every slideshow frame.
-- [ ] Keep crawlable content in the initial HTML. Reduce unnecessary client JavaScript, expensive animations and third-party scripts where measurements justify it, preserving the design and reduced-motion behavior.
-- [ ] Check mobile overflow, keyboard access, readable content, stable navigation and enquiry forms. Performance changes must not break gallery/lightbox controls or delay useful page content.
+- [x] Use the Phase 1 production-build measurements to prioritize the actual bottlenecks. Inspect downloaded image dimensions/bytes, LCP requests, JavaScript, fonts and layout shifts.
+- [x] Add a shared Cloudinary loader for site photos using width-based transformations, automatic format and automatic quality. Integrate it with Next Image responsive sizing; remove the global optimization bypass where it prevents responsive delivery. Keep logos on their existing local asset paths.
+- [x] Preserve each original upload URL/public ID, photo subject, layout and intended crop. Avoid combining a Cloudinary transformation pipeline with a second photo optimizer unnecessarily. Test transformations against the actual Cloudinary account before rollout.
+- [x] Verify `sizes` and reserved dimensions/aspect ratios on heroes, cards, galleries and thumbnails. Give loading priority to the initial visible hero only; lazy-load below-the-fold images and avoid eagerly downloading every slideshow frame.
+- [x] Keep crawlable content in the initial HTML. Reduce unnecessary client JavaScript, expensive animations and third-party scripts where measurements justify it, preserving the design and reduced-motion behavior.
+- [x] Check mobile overflow, keyboard access, readable content, stable navigation and enquiry forms. Performance changes must not break gallery/lightbox controls or delay useful page content.
 
 ### Complete when
 
@@ -214,6 +221,14 @@ This is a source-code audit, not a claim about current production rankings, inde
 - Representative production-build pages improve against the baseline without functional or visual regressions.
 - Field goals are LCP ≤ 2.5 seconds, INP ≤ 200 ms and CLS ≤ 0.1 at the 75th percentile, when enough real-user data is available. Lab testing guides fixes; it does not prove field INP or guarantee rankings. [Google Core Web Vitals guidance](https://developers.google.com/search/docs/appearance/core-web-vitals)
 - Lighthouse reports and the remaining performance backlog are recorded; a score of 100 is not a release requirement.
+
+### Phase 5 implementation record — 11 October 2026
+
+- Added a global Cloudinary loader with responsive width candidates, `f_auto`, `q_auto` and `c_limit`. Original catalogue URLs, social/schema images, upload IDs and CSS crops are preserved. Local logo files retain their paths and now declare intrinsic dimensions.
+- Navigation photos now use responsive thumbnails. Only the first hero frame appears in the initial HTML; subsequent frames are prepared shortly before transitions. Hero/gallery timers wait for the replacement image, the gallery pauses outside the viewport, and destination/gallery cross-fades retain the outgoing image while loading.
+- Initial hero requests have high fetch priority and the root layout preconnects to Cloudinary. Reduced-motion visitors get a static hero and a paused gallery. Desktop dropdowns now open for keyboard focus as well as hover.
+- Type checks, all seven test files, the 79-page build and image checks on all 60 public routes pass. Content, metadata and schema checks remain passing. All 28 unique uploads return valid image responses at widths 96 and 640. Browser checks pass on six page templates at 390px and 1440px, including gallery/lightbox controls, menu access and enquiry fields.
+- All twelve Lighthouse performance scores improve and transfers fall by 93.9–97.0%; measured CLS is zero. LCP improves in ten comparisons, with mobile homepage and desktop enquiry remaining above the single-run baseline. The comparisons and remaining delivery/performance backlog are recorded in the [performance record](frontend/docs/seo-phase5-performance.md). Field LCP/INP/CLS remain production measurements; lab results do not establish field targets.
 
 ## Phase 6 — Verify production and start measurement
 
@@ -295,4 +310,4 @@ Recheck current guidance when implementing each phase; search features and frame
 - [Google breadcrumb markup](https://developers.google.com/search/docs/appearance/structured-data/breadcrumb)
 - [Cloudinary image transformations](https://cloudinary.com/documentation/image_transformations)
 
-**Start next:** Phase 4 — structured data. Hosting redirects, real profile URLs and operator-owned policy/operating confirmations remain deployment/content dependencies.
+**Start next:** Phase 6 — production verification, Search Console and conversion measurement. Phase 4's authenticated Google Rich Results Test, hosting redirects, real profile URLs and operator-owned policy/operating confirmations remain external dependencies.

@@ -5,7 +5,10 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    loader: 'custom',
+    loaderFile: './lib/config/image-loader.ts',
+    deviceSizes: [360, 480, 640, 768, 1024, 1280, 1600, 1920, 2560],
+    imageSizes: [32, 48, 64, 96, 128, 192, 256],
     remotePatterns: [
       {
         protocol: 'https',

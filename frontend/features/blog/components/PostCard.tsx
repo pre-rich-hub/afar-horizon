@@ -1,3 +1,4 @@
+import { formatEditorialDate } from '@/lib/utils/date'
 import { defaultImage } from '@/lib/config/cloudinary'
 import Image from 'next/image';
 import Link from 'next/link';
@@ -24,7 +25,7 @@ export function PostCard({ post, wide }: { post: Post; wide?: boolean }) {
           <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
             <span className="text-primary">{post.category}</span>
             <span className="h-3 w-px bg-border" aria-hidden />
-            {post.date}
+            {post.publishedAt ? <time dateTime={post.publishedAt}>{formatEditorialDate(post.publishedAt)}</time> : post.date}
             <span className="h-3 w-px bg-border" aria-hidden />
             {post.readTime}
           </p>

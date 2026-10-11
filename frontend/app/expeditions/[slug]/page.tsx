@@ -3,6 +3,8 @@ import { getRelatedTours, getTour, getTourData, RelatedTours, TourEnquiry, TourF
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getDestinationForPlace } from '@/features/destinations'
+import { JsonLd } from '@/components/common/JsonLd'
+import { tourSchema } from '@/features/tours'
 
 export const dynamicParams = false
 
@@ -44,6 +46,7 @@ export default async function ExpeditionPage({
 
   return (
     <>
+      <JsonLd data={tourSchema(t)} />
       <TourHero t={t} />
 
       {/* Overview + itinerary, with the pricing card pinned alongside */}

@@ -1,0 +1,453 @@
+{
+  "date": "2026-10-11",
+  "results": [
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/afar.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791643803/afar.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 1810
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791643803/danakil-depression.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 5096
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-assale.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791643803/lake-assale.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 2872
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/erta-ale.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791643803/erta-ale.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 1290
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/erta-ale.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/erta-ale.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 52060
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/afar.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/afar.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 76973
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/danakil-depression.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 135468
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-assale.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/lake-assale.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 91611
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-afdera.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791643803/lake-afdera.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 1664
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/semera.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791643803/semera.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 3168
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/awash-national-park.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791643803/awash-national-park.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 3012
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/hamed-ela.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791643803/hamed-ela.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 1694
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/hamed-ela.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/hamed-ela.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 61488
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/semera.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/semera.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 104624
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/awash-national-park.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/awash-national-park.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 94797
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-afdera.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/lake-afdera.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 73515
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/gheralta.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791643803/gheralta.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 2774
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/hadar.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791643803/hadar.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 1972
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/axum.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791643803/axum.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 3440
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lalibela.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791643803/lalibela.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 4934
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/hadar.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/hadar.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 84870
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/gheralta.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/gheralta.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 99526
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/axum.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/axum.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 65702
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lalibela.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/lalibela.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 136623
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/gondar.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791643803/gondar.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 3941
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/bahir-dar.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791643803/bahir-dar.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 6759
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/mekelle.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791643803/mekelle.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 4363
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/simien-mountains.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791643803/simien-mountains.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 3390
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/simien-mountains.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/simien-mountains.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 114800
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/bahir-dar.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/bahir-dar.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 163848
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/mekelle.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/mekelle.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 69600
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/gondar.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/gondar.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 114452
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652748/LakeAfdera.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791652748/LakeAfdera.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 1320
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/northern-ethiopia.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791643803/northern-ethiopia.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 2136
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-tana.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791643803/lake-tana.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 1350
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652746/Into_the_Danakil.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791652746/Into_the_Danakil.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 1780
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652748/LakeAfdera.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791652748/LakeAfdera.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 46220
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/lake-tana.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/lake-tana.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 60890
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/northern-ethiopia.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791643803/northern-ethiopia.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 103341
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652746/Into_the_Danakil.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791652746/Into_the_Danakil.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 75452
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652741/From_Mountain_to_Horizon.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791652741/From_Mountain_to_Horizon.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 2140
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652742/Afar_Geolog.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791652742/Afar_Geolog.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 2587
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652741/Danakil_Essentials.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791652741/Danakil_Essentials.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 64506
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652741/Danakil_Essentials.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791652741/Danakil_Essentials.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 2886
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652743/Erta_Ale_approach.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791652743/Erta_Ale_approach.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 4421
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652742/Afar_Geolog.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791652742/Afar_Geolog.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 81310
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652743/Erta_Ale_approach.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791652743/Erta_Ale_approach.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 152822
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652741/From_Mountain_to_Horizon.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791652741/From_Mountain_to_Horizon.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 81267
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652737/Danakil_Gheralta.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791652737/Danakil_Gheralta.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 2512
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652734/From_Axum_to_the_Afar_Horizon.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791652734/From_Axum_to_the_Afar_Horizon.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 2688
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652740/Danakil_Photography_Expedition.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791652740/Danakil_Photography_Expedition.png",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 5475
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652727/Danakil_Deep.png",
+      "width": 96,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_96/v1791652727/Danakil_Deep.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 1512
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652727/Danakil_Deep.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791652727/Danakil_Deep.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 50336
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652734/From_Axum_to_the_Afar_Horizon.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791652734/From_Axum_to_the_Afar_Horizon.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 96006
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652737/Danakil_Gheralta.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791652737/Danakil_Gheralta.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 117358
+    },
+    {
+      "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791652740/Danakil_Photography_Expedition.png",
+      "width": 640,
+      "url": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_640/v1791652740/Danakil_Photography_Expedition.png",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 153956
+    }
+  ]
+}

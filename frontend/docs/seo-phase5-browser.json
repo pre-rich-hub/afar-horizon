@@ -1,0 +1,198 @@
+{
+  "date": "2026-10-11",
+  "checks": "Mobile/desktop overflow and visible images; hero rotation; gallery controls; lightbox keyboard/focus; navigation keyboard/menu; enquiry controls; reduced-motion slideshow behavior.",
+  "reports": [
+    {
+      "path": "/",
+      "width": 390,
+      "ready": "complete",
+      "scrollWidth": 390,
+      "headings": 1,
+      "frames": 1,
+      "images": [
+        {
+          "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/danakil-depression.png",
+          "complete": true,
+          "naturalWidth": 389,
+          "width": 390
+        }
+      ]
+    },
+    {
+      "path": "/gallery",
+      "width": 390,
+      "ready": "complete",
+      "scrollWidth": 390,
+      "headings": 1,
+      "frames": 0,
+      "images": [
+        {
+          "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/simien-mountains.png",
+          "complete": true,
+          "naturalWidth": 389,
+          "width": 390
+        }
+      ]
+    },
+    {
+      "path": "/destinations/danakil-depression",
+      "width": 390,
+      "ready": "complete",
+      "scrollWidth": 390,
+      "headings": 1,
+      "frames": 0,
+      "images": [
+        {
+          "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/danakil-depression.png",
+          "complete": true,
+          "naturalWidth": 389,
+          "width": 390
+        }
+      ]
+    },
+    {
+      "path": "/expeditions/danakil-deep",
+      "width": 390,
+      "ready": "complete",
+      "scrollWidth": 390,
+      "headings": 1,
+      "frames": 0,
+      "images": [
+        {
+          "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791652727/Danakil_Deep.png",
+          "complete": true,
+          "naturalWidth": 389,
+          "width": 390
+        }
+      ]
+    },
+    {
+      "path": "/blog/when-to-visit-ethiopia",
+      "width": 390,
+      "ready": "complete",
+      "scrollWidth": 390,
+      "headings": 1,
+      "frames": 0,
+      "images": [
+        {
+          "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/danakil-depression.png",
+          "complete": true,
+          "naturalWidth": 389,
+          "width": 353
+        }
+      ]
+    },
+    {
+      "path": "/plan",
+      "width": 390,
+      "ready": "complete",
+      "scrollWidth": 390,
+      "headings": 1,
+      "frames": 0,
+      "images": [
+        {
+          "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_480/v1791643803/lake-assale.png",
+          "complete": true,
+          "naturalWidth": 389,
+          "width": 390
+        }
+      ]
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "ready": "complete",
+      "scrollWidth": 1440,
+      "headings": 1,
+      "frames": 2,
+      "images": [
+        {
+          "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_1600/v1791652743/Erta_Ale_approach.png",
+          "complete": true,
+          "naturalWidth": 1128,
+          "width": 1440
+        }
+      ]
+    },
+    {
+      "path": "/gallery",
+      "width": 1440,
+      "ready": "complete",
+      "scrollWidth": 1440,
+      "headings": 1,
+      "frames": 0,
+      "images": [
+        {
+          "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_1600/v1791643803/simien-mountains.png",
+          "complete": true,
+          "naturalWidth": 1128,
+          "width": 1440
+        }
+      ]
+    },
+    {
+      "path": "/destinations/danakil-depression",
+      "width": 1440,
+      "ready": "complete",
+      "scrollWidth": 1440,
+      "headings": 1,
+      "frames": 0,
+      "images": [
+        {
+          "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_1600/v1791643803/danakil-depression.png",
+          "complete": true,
+          "naturalWidth": 1017,
+          "width": 1440
+        }
+      ]
+    },
+    {
+      "path": "/expeditions/danakil-deep",
+      "width": 1440,
+      "ready": "complete",
+      "scrollWidth": 1440,
+      "headings": 1,
+      "frames": 0,
+      "images": [
+        {
+          "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_1600/v1791652727/Danakil_Deep.png",
+          "complete": true,
+          "naturalWidth": 1440,
+          "width": 1440
+        }
+      ]
+    },
+    {
+      "path": "/blog/when-to-visit-ethiopia",
+      "width": 1440,
+      "ready": "complete",
+      "scrollWidth": 1440,
+      "headings": 1,
+      "frames": 0,
+      "images": [
+        {
+          "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_1600/v1791643803/danakil-depression.png",
+          "complete": true,
+          "naturalWidth": 636,
+          "width": 840
+        }
+      ]
+    },
+    {
+      "path": "/plan",
+      "width": 1440,
+      "ready": "complete",
+      "scrollWidth": 1440,
+      "headings": 1,
+      "frames": 0,
+      "images": [
+        {
+          "src": "https://res.cloudinary.com/xsrr0wfh/image/upload/f_auto,q_auto,c_limit,w_1600/v1791643803/lake-assale.png",
+          "complete": true,
+          "naturalWidth": 1382,
+          "width": 1440
+        }
+      ]
+    }
+  ]
+}

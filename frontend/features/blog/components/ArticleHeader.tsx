@@ -1,33 +1,37 @@
 import { Reveal } from '@/components/common/Reveal'
-import { ArrowLeft } from 'lucide-react'
+import { ChevronRight } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Post } from '../types/post.types'
+import { formatEditorialDate } from '@/lib/utils/date'
 
 export function ArticleHeader({ post }: { post: Post }) {
   return (
     <header className="border-b border-border">
         <div className="shell pb-12 pt-32 sm:pb-16 sm:pt-36 lg:pt-40">
           <Reveal className="mx-auto max-w-3xl">
-            <nav aria-label="Breadcrumb" className="mb-8">
+            <nav aria-label="Breadcrumb" className="mb-8 flex flex-wrap items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground sm:text-[11px]">
+              <Link href="/" className="transition-colors hover:text-primary">Home</Link>
+              <ChevronRight aria-hidden className="h-3 w-3 opacity-50" />
               <Link
                 href="/blog"
                 className="group inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:text-primary sm:text-[11px]"
               >
-                <ArrowLeft className="h-3.5 w-3.5 transition-transform duration-300 group-hover:-translate-x-1" />
                 The Journal
               </Link>
+              <ChevronRight aria-hidden className="h-3 w-3 opacity-50" />
+              <span aria-current="page" className="normal-case tracking-normal">{post.title}</span>
             </nav>
 
             <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
               <span className="text-accent">{post.category}</span>
               <span className="h-3 w-px bg-border" aria-hidden />
-              {post.date}
+              {post.publishedAt ? <time dateTime={post.publishedAt}>{formatEditorialDate(post.publishedAt)}</time> : post.date}
               <span className="h-3 w-px bg-border" aria-hidden />
               {post.readTime}
               {post.updatedAt && <>
                 <span className="h-3 w-px bg-border" aria-hidden />
-                <span>Updated <time dateTime={post.updatedAt}>{new Intl.DateTimeFormat('en', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(post.updatedAt))}</time></span>
+                <span>Updated <time dateTime={post.updatedAt}>{formatEditorialDate(post.updatedAt)}</time></span>
               </>}
             </p>
 

@@ -11,7 +11,8 @@ export function ArticleImage({ post }: { post: Post }) {
             src={post.image || defaultImage}
             alt={post.imageAlt ?? post.title}
             fill
-            priority
+            loading="eager"
+            fetchPriority="high"
             sizes="(max-width: 1024px) 100vw, 900px"
             className="object-cover"
           />

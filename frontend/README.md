@@ -97,6 +97,41 @@ server to verify primary headings, article sections, contextual links, package/e
 paths and the new legal links across all 60 public URLs. Use the metadata and crawl
 verifiers alongside it after changing route or catalogue content.
 
+### Structured data checks
+
+`components/common/JsonLd.tsx` uses `lib/seo/json-ld.ts` to escape `<` before
+embedding JSON. Shared IDs and breadcrumbs live in `lib/seo/schema.ts`;
+business, destination, tour, article and FAQ schema builders belong to their features.
+The root layout emits one business/website graph; detail pages add their own graph.
+Displayed blog dates derive from confirmed ISO dates; missing optional dates are omitted.
+Markup excludes offers, ratings and unconfirmed social/author URLs.
+
+Run `node --test tests/schema.test.cjs` for serialization and content-contract checks,
+then `node tests/verify-schema.cjs --base-url=http://localhost:3000` against the
+production server to check actual scripts on all 60 public pages. External validator
+results and the pending Google test are recorded in `docs/seo-phase4-validation.md`.
+
+### Responsive image delivery
+
+Next Image uses `lib/config/image-loader.ts` for client-provided Cloudinary photos.
+It inserts `f_auto,q_auto,c_limit,w_<width>` before the original upload version and
+public ID. Cloudinary resizes without upscaling and negotiates format/quality;
+existing CSS keeps each photo's crop. There is no second Next photo optimizer.
+Catalogue URLs, social images, schema images and attribution links retain originals.
+The two local logos keep their existing paths and have explicit aspect dimensions.
+
+Every photo needs an accurate `sizes` prop and a reserved aspect ratio or fixed
+dimensions. Give only the initial hero high fetch priority; keep cards/thumbnails lazy. The homepage
+hero prepares one upcoming frame, the gallery runs only in view, and the desktop
+destination panel retains only its active/outgoing images for the cross-fade.
+Reduced-motion users receive a static initial hero and a paused gallery.
+
+Run `node --test tests/images.test.cjs` and
+`node tests/verify-images.cjs --base-url=http://localhost:3000` to verify image URLs,
+responsive candidates, loading and geometry. Phase 5 measurements are recorded in
+`docs/seo-phase5-performance.md` with machine-readable performance, browser and
+live Cloudinary response summaries alongside it.
+
 ## Structure
 
 ```text

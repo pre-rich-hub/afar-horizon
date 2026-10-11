@@ -9,7 +9,8 @@ export function AboutHero() {
           src="https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/danakil-depression.png"
           alt="Danakil Depression, Afar"
           fill
-          priority
+          loading="eager"
+          fetchPriority="high"
           sizes="100vw"
           className="-z-10 animate-slow-zoom object-cover"
         />

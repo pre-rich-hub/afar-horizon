@@ -11,6 +11,13 @@ import { useState } from 'react'
 
 export function DestinationIndex() {
   const [active, setActive] = useState(0)
+  const [previous, setPrevious] = useState<number | null>(null)
+  const [loaded, setLoaded] = useState(new Set<string>())
+  const select = (index: number) => {
+    if (index === active) return
+    setPrevious(loaded.has(destinations[active].slug) ? active : previous ?? active)
+    setActive(index)
+  }
   const current = destinations[active]
 
   return (
@@ -22,19 +29,21 @@ export function DestinationIndex() {
       <MobileIndex />
 
       <div className="hidden lg:grid lg:grid-cols-2">
-        {/* Image panel: every photo is stacked and cross-faded */}
+        {/* Keep the outgoing photo for the existing cross-fade. */}
         <div className="relative aspect-[4/3] overflow-hidden bg-charcoal sm:aspect-[16/10] lg:aspect-auto lg:min-h-[min(100svh,860px)]">
-          {destinations.map((d, i) => (
+          {destinations.filter((_, i) => i === active || i === previous).map((d) => (
             <Image
               key={d.slug}
+              onLoad={() => setLoaded(current => new Set(current).add(d.slug))}
               src={d.image}
-              alt={i === active ? d.name : ''}
-              aria-hidden={i !== active}
+              alt={d.slug === current.slug ? d.name : ''}
+              aria-hidden={d.slug !== current.slug}
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className={cn(
                 'object-cover transition-[opacity,transform] duration-[1100ms] ease-[cubic-bezier(0.16,1,0.3,1)] motion-reduce:transition-none',
-                i === active ? 'scale-100 opacity-100' : 'scale-[1.06] opacity-0',
+                (d.slug === current.slug && (previous === null || loaded.has(current.slug))) || (d.slug !== current.slug && !loaded.has(current.slug))
+                  ? 'scale-100 opacity-100' : 'scale-[1.06] opacity-0',
               )}
             />
           ))}
@@ -69,8 +78,8 @@ export function DestinationIndex() {
                   <li key={d.slug}>
                     <Link
                       href={`/destinations/${d.slug}`}
-                      onMouseEnter={() => setActive(i)}
-                      onFocus={() => setActive(i)}
+                      onMouseEnter={() => select(i)}
+                      onFocus={() => select(i)}
                       aria-current={isActive || undefined}
                       className="group flex items-baseline gap-4 py-1 outline-none sm:gap-5"
                     >

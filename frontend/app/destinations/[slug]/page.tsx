@@ -2,6 +2,8 @@ import { createPageMetadata } from '@/lib/seo/metadata'
 import { DestinationEnquiry, DestinationHero, DestinationOverview, DestinationPlanning, destinations, getDestination, getDestinationRelations } from '@/features/destinations'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { JsonLd } from '@/components/common/JsonLd'
+import { destinationSchema } from '@/features/destinations'
 
 // The catalogue is authoritative; reject unknown slugs before streamed rendering.
 export const dynamicParams = false
@@ -42,6 +44,7 @@ export default async function DestinationPage({
 
   return (
     <>
+      <JsonLd data={destinationSchema(d)} />
       <DestinationHero d={d} />
 
       {/* Essay + highlights, with the planning card pinned alongside */}

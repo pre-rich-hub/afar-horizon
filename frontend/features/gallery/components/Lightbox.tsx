@@ -83,9 +83,9 @@ export function Lightbox({
             src={photo.src}
             alt={photo.alt}
             fill
-            sizes="100vw"
+            sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 1024px) calc(100vw - 160px), calc(100vw - 224px)"
             className="object-contain"
-            priority
+            loading="eager"
           />
         </div>
 

@@ -7,6 +7,8 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Cormorant_Garamond, Inter } from 'next/font/google'
 import './globals.css'
+import { JsonLd } from '@/components/common/JsonLd'
+import { businessSchema } from '@/features/about'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -53,7 +55,11 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${cormorant.variable} bg-background`}
     >
+      <head>
+        <link rel="preconnect" href="https://res.cloudinary.com" />
+      </head>
       <body className="antialiased">
+        <JsonLd data={businessSchema()} />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-primary focus:px-5 focus:py-3 focus:text-xs focus:font-semibold focus:uppercase focus:tracking-[0.14em] focus:text-primary-foreground"

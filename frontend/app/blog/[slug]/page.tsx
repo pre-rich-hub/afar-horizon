@@ -2,6 +2,8 @@ import { createPageMetadata } from '@/lib/seo/metadata'
 import { ArticleBody, ArticleHeader, ArticleImage, ArticlePlanning, getPost, getRelatedPosts, posts, RelatedPosts } from '@/features/blog'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { JsonLd } from '@/components/common/JsonLd'
+import { postSchema } from '@/features/blog'
 
 export const dynamicParams = false
 
@@ -41,6 +43,7 @@ export default async function ArticlePage({
 
   return (
     <article>
+      <JsonLd data={postSchema(post)} />
       {/* Header */}
       <ArticleHeader post={post} />
 

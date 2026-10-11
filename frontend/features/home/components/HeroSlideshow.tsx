@@ -11,16 +11,17 @@ import { type ReactNode } from 'react'
 // Client-provided Cloudinary photos; attribution is shown when supplied.
 
 export function HeroSlideshow({ children }: { children?: ReactNode }) {
-  const { index, current, prev } = useHeroSlideshow()
+  const { index, current, prev, prepared, markLoaded } = useHeroSlideshow()
 
   return (
     <>
       <div className="absolute inset-0 -z-10">
         {slides.map((slide, i) => {
           const visible = i === index || i === prev
+          if (!visible && i !== prepared) return null
           return (
             <div
-              key={slide.src}
+              key={`${i}-${slide.src}`}
               aria-hidden={i !== index}
               className={cn(
                 'absolute inset-0 overflow-hidden transition-opacity duration-[1800ms] ease-in-out',
@@ -28,10 +29,13 @@ export function HeroSlideshow({ children }: { children?: ReactNode }) {
               )}
             >
               <Image
+                data-hero-frame={i}
+                onLoad={() => markLoaded(i)}
                 src={slide.src}
                 alt={slide.alt}
                 fill
-                priority={i === 0}
+                fetchPriority={i === 0 && index === 0 ? 'high' : 'auto'}
+                loading="eager"
                 sizes="100vw"
                 className={cn(
                   'object-cover',

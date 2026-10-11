@@ -143,6 +143,8 @@ export function SiteFooter() {
               <img
                 src="/images/logo-light.png"
                 alt="Afar Horizon Expeditions Logo"
+                width={520}
+                height={341}
                 className="h-28 w-auto object-contain"
               />
             </Link>

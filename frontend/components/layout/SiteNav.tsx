@@ -16,6 +16,7 @@ Phone,
 X,
 } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 
@@ -53,6 +54,8 @@ function Wordmark({
       <img
         src={tone === 'light' ? '/images/logo-light.png' : '/images/logo.png'}
         alt="Afar Horizon Expeditions Logo"
+        width={520}
+        height={341}
         className="h-12 w-auto object-contain transition-transform duration-300 hover:scale-105 sm:h-14"
       />
     </Link>
@@ -163,7 +166,7 @@ export function SiteNav() {
 
                   {/* Dropdowns */}
                   {link.menu === 'destinations' && (
-                    <div className="absolute left-0 top-full w-full bg-background/98 backdrop-blur-2xl border-t border-accent/25 border-b border-border/80 shadow-2xl opacity-0 invisible -translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-45 text-foreground">
+                    <div className="absolute left-0 top-full w-full bg-background/98 backdrop-blur-2xl border-t border-accent/25 border-b border-border/80 shadow-2xl opacity-0 invisible -translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto z-45 text-foreground">
                       <div className="shell grid grid-cols-[1fr_3.2fr] gap-12 py-10">
                         <div className="flex flex-col justify-between">
                           <div>
@@ -202,10 +205,12 @@ export function SiteNav() {
                               className="group/item flex flex-col gap-3.5 rounded-lg overflow-hidden p-2.5 transition-all duration-300 hover:bg-muted/50"
                             >
                               <div className="relative aspect-[3/2] w-full overflow-hidden rounded-[4px]">
-                                <img
+                                <Image
                                   src={d.image}
                                   alt={d.name}
-                                  className="h-full w-full object-cover transition-transform duration-700 group-hover/item:scale-105"
+                                  fill
+                                  sizes="(max-width: 1024px) 25vw, 240px"
+                                  className="object-cover transition-transform duration-700 group-hover/item:scale-105"
                                 />
                                 <span className="absolute left-2.5 top-2.5 rounded-full bg-charcoal/80 backdrop-blur-md px-3 py-1 text-[9px] font-semibold uppercase tracking-wider text-background">
                                   {d.tag}
@@ -230,7 +235,7 @@ export function SiteNav() {
                   )}
 
                   {link.menu === 'links' && link.children && (
-                    <div className="absolute top-full z-45 -ml-4 w-64 border-t-2 border-accent bg-background/98 py-2 text-foreground shadow-2xl backdrop-blur-2xl transition-all duration-300 opacity-0 invisible -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-hover:pointer-events-auto">
+                    <div className="absolute top-full z-45 -ml-4 w-64 border-t-2 border-accent bg-background/98 py-2 text-foreground shadow-2xl backdrop-blur-2xl transition-all duration-300 opacity-0 invisible -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-hover:pointer-events-auto">
                       {link.children.map((c) => (
                         <Link
                           key={c.href}
@@ -247,7 +252,7 @@ export function SiteNav() {
                   )}
 
                   {link.menu === 'expeditions' && (
-                    <div className="absolute left-0 top-full w-full bg-background/98 backdrop-blur-2xl border-t border-accent/25 border-b border-border/80 shadow-2xl opacity-0 invisible -translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-45 text-foreground">
+                    <div className="absolute left-0 top-full w-full bg-background/98 backdrop-blur-2xl border-t border-accent/25 border-b border-border/80 shadow-2xl opacity-0 invisible -translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto z-45 text-foreground">
                       <div className="shell grid grid-cols-[1fr_3.2fr] gap-12 py-10">
                         <div className="flex flex-col justify-between">
                           <div>
@@ -286,10 +291,12 @@ export function SiteNav() {
                               className="group/item flex flex-col gap-3.5 rounded-lg overflow-hidden p-2.5 transition-all duration-300 hover:bg-muted/50"
                             >
                               <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[4px]">
-                                <img
+                                <Image
                                   src={t.image}
                                   alt={t.title}
-                                  className="h-full w-full object-cover transition-transform duration-700 group-hover/item:scale-105"
+                                  fill
+                                  sizes="(max-width: 1024px) 33vw, 320px"
+                                  className="object-cover transition-transform duration-700 group-hover/item:scale-105"
                                 />
                                 <span className="absolute left-2.5 top-2.5 rounded-full bg-accent px-3 py-1 text-[9px] font-semibold uppercase tracking-wider text-primary-foreground">
                                   {t.days}
