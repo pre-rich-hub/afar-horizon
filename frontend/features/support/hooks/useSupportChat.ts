@@ -69,7 +69,12 @@ export function useSupportChat() {
                 sessionIdRef.current = sessionId
             },
             onDelta: (delta) => {
-                if (activeBotMessageIdRef.current === null) {
+                // Capture the id at handler time. The state updater runs later,
+                // at commit time, and the ref is nulled by finishStream when the
+                // stream ends (which can happen before the batch flushes when the
+                // whole SSE body arrives in one chunk).
+                const botMessageId = activeBotMessageIdRef.current
+                if (botMessageId === null) {
                     const id = crypto.randomUUID()
                     activeBotMessageIdRef.current = id
                     setIsTyping(false)
@@ -81,7 +86,7 @@ export function useSupportChat() {
                     }])
                 } else {
                     setMessages((prev) => prev.map((message) =>
-                        message.id === activeBotMessageIdRef.current
+                        message.id === botMessageId
                             ? { ...message, text: message.text + delta }
                             : message
                     ))
