@@ -1,5 +1,5 @@
 // Expeditions are grouped into collections on /expeditions and in the nav.
-export type ExpeditionCollection = 'danakil' | 'danakil-highlands' | 'northern-ethiopia'
+export type ExpeditionCollection = 'danakil' | 'danakil-highlands' | 'northern-ethiopia' | 'simien'
 
 export type ItineraryDay = {
   day: string

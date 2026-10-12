@@ -735,6 +735,233 @@
         "1": "De là, Gondar, le Simien, Axoum, Gheralta et Lalibela suivent, le Danakil étant l'autre monde sous le niveau de la mer. Nous pouvons le construire autour de l'histoire, de la culture, des montagnes, du désert, de la photographie, de la foi, de la nourriture, des gens ou de la géologie, en utilisant les vols intérieurs qui leur permettent de gagner des jours sur la route.",
         "2": "Se déplacer entre le Danakil et le Simien vous fait passer de la chaleur et de la déshydratation à l'altitude et au froid en quelques jours, nous planifions donc le repos et le rythme aussi soigneusement que l'itinéraire."
       }
+    },
+    "afar-people": {
+      "name": "Peuple afar",
+      "tag": "Peuples et culture",
+      "headline": "Les gens de l’horizon",
+      "teaser": "Une terre façonnée par la mobilité, la vie pastorale et la connaissance du désert.",
+      "intro": "Afar est une terre habitée. Comprendre ses paysages demande d’écouter les personnes qui y vivent : quotidien, traditions pastorales, hospitalité et savoir local sont au cœur du récit.",
+      "imageAlt": "Des personnes marchant sur un terrain sec et ensoleillé",
+      "duration": "Au cours d’un voyage privé en Afar",
+      "altitude": "Variable selon l’itinéraire confirmé",
+      "bestTime": "Dates et accès confirmés avant le départ",
+      "highlights": {
+        "0": "Vie pastorale et adaptation au désert",
+        "1": "Économie du sel et savoir local",
+        "2": "Hospitalité et récits des communautés",
+        "3": "Rencontres respectueuses avec les guides locaux"
+      },
+      "paragraphs": {
+        "0": "L’eau, les déplacements et les moyens de subsistance façonnent la vie. Les guides locaux expliquent ces liens. Une rencontre a lieu seulement lorsqu’elle est accueillie par les personnes concernées.",
+        "1": "Toute photo commence par une demande d’autorisation. Respectez la vie familiale et les espaces privés. Nous ne mettons pas en scène les rencontres et ne traitons pas les personnes comme des accessoires."
+      },
+      "sections": {
+        "0": {
+          "title": "Écouter avant de photographier",
+          "text": "Toute photo commence par une demande d’autorisation. Respectez la vie familiale et les espaces privés. Nous ne mettons pas en scène les rencontres et ne traitons pas les personnes comme des accessoires."
+        },
+        "1": {
+          "title": "Voyager avec le savoir local",
+          "text": "Indiquez vos intérêts à l’avance. Activité pastorale, travail du sel et disponibilité des communautés changent ; aucune rencontre particulière n’est garantie."
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Les rencontres sont-elles garanties ?",
+          "a": "Non. Elles sont organisées seulement si elles sont accueillies localement et compatibles avec la route confirmée."
+        },
+        "1": {
+          "q": "Puis-je photographier les personnes ?",
+          "a": "Demandez d’abord, respectez la réponse et suivez les conseils locaux. Une visite n’est pas une autorisation de photographier."
+        }
+      },
+      "seoTitle": "Peuple afar | Afar Horizon",
+      "seoDescription": "Une terre façonnée par la mobilité, la vie pastorale et la connaissance du désert."
+    },
+    "salt-caravans": {
+      "name": "Caravanes de sel",
+      "tag": "Culture du sel",
+      "headline": "La route du sel",
+      "teaser": "Extraction, transport et commerce relient la plaine de sel aux hauts plateaux.",
+      "intro": "Le paysage du sel est un lieu de travail. Son histoire relie extraction, transport, chameaux, travail et communautés vivant de ce commerce.",
+      "imageAlt": "Des chameaux chargés suivant un guide dans l’eau peu profonde d’une plaine de sel",
+      "duration": "Une étape d’une expédition dans le Danakil",
+      "altitude": "Variable sur la route du commerce du sel",
+      "bestTime": "Dates et accès confirmés avant le départ",
+      "highlights": {
+        "0": "Extraction là où le travail est actif",
+        "1": "Transport par chameaux lorsque les caravanes circulent",
+        "2": "Commerce entre désert et hauts plateaux",
+        "3": "Évolution des moyens de subsistance et du transport"
+      },
+      "paragraphs": {
+        "0": "La caravane raconte davantage qu’une ligne de chameaux. Il s’agit de travail et de liens humains entre désert et hauts plateaux. Le guide explique le paysage dans ce contexte.",
+        "1": "L’activité et les moyens de transport changent. Nous ne garantissons pas de caravane, n’interrompons pas le travail et ne créons pas de scène pour les photos. Demandez l’autorisation et gardez vos distances."
+      },
+      "sections": {
+        "0": {
+          "title": "Observer le travail avec respect",
+          "text": "L’activité et les moyens de transport changent. Nous ne garantissons pas de caravane, n’interrompons pas le travail et ne créons pas de scène pour les photos. Demandez l’autorisation et gardez vos distances."
+        },
+        "1": {
+          "title": "Prévoir la visite dans l’expédition",
+          "text": "La visite du pays du sel s’intègre à la route confirmée. Horaires, accès et activité locale déterminent ce que l’on peut voir."
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Verrai-je des caravanes de chameaux ?",
+          "a": "Cela dépend de l’activité et du moment. Les observations ne sont pas garanties."
+        },
+        "1": {
+          "q": "Est-ce un départ séparé ?",
+          "a": "Cette page décrit une expérience du pays du sel. Discutez-en lors de la préparation de votre expédition."
+        }
+      },
+      "seoTitle": "Caravanes de sel | Afar Horizon",
+      "seoDescription": "Extraction, transport et commerce relient la plaine de sel aux hauts plateaux."
+    },
+    "abune-yemata-guh": {
+      "headline": "L’église au-dessus de la falaise",
+      "teaser": "Un lieu religieux vivant au bout d’une approche rocheuse exigeante et exposée.",
+      "intro": "Abune Yemata Guh — Cette église réunit paysage montagneux, patrimoine religieux et marche guidée. Prenez le temps de comprendre le lieu et les communautés, autant que les vues.",
+      "imageAlt": "Des tours de grès au-dessus d’une vallée au coucher du soleil",
+      "tag": "Église taillée dans la roche",
+      "bestTime": "Dates et accès confirmés avant le départ",
+      "duration": "Sortie guidée depuis Gheralta",
+      "altitude": "Cadre montagneux ; approche confirmée avec le guide",
+      "highlights": {
+        "0": "Marche guidée dans le paysage de Gheralta",
+        "1": "Patrimoine religieux vivant et contexte local",
+        "2": "Vues sur le grès et photos avec autorisation",
+        "3": "Parcours adapté aux capacités et aux conditions"
+      },
+      "paragraphs": {
+        "0": "Ce n’est pas une promenade facile. L’exposition et des passages d’escalade peuvent rendre la visite inadaptée. Discutez de votre mobilité et de votre aisance avec les hauteurs avant de réserver.",
+        "1": "Ce sont des lieux religieux vivants. Habillez-vous convenablement, suivez les consignes locales et demandez l’autorisation de photographier. L’accès et les visites dépendent des arrangements confirmés."
+      },
+      "sections": {
+        "0": {
+          "title": "Comprendre l’approche",
+          "text": "La marche fait partie de la visite. Discutez des pentes, de l’exposition et de votre aisance avec les hauteurs avant de choisir une église. Le guide confirme un parcours adapté aux conditions."
+        },
+        "1": {
+          "title": "Respecter l’église",
+          "text": "Ce sont des lieux religieux vivants. Habillez-vous convenablement, suivez les consignes locales et demandez l’autorisation de photographier. L’accès et les visites dépendent des arrangements confirmés."
+        }
+      },
+      "note": {
+        "title": "Accès et aptitude confirmés individuellement",
+        "text": "Une journée à Gheralta ne garantit pas une église précise. L’équipe choisit selon l’accès, les conditions et votre capacité de marche."
+      },
+      "faqs": {
+        "0": {
+          "q": "La visite convient-elle à tous ?",
+          "a": "Le parcours est choisi selon votre capacité, le temps disponible et l’accès. Signalez toute difficulté avec les hauteurs avant de réserver."
+        },
+        "1": {
+          "q": "Peut-on photographier à l’intérieur ?",
+          "a": "Demandez sur place et suivez les consignes de l’église. Ne présumez jamais que la photographie est autorisée."
+        }
+      },
+      "name": "Abune Yemata Guh",
+      "seoTitle": "Abune Yemata Guh | Afar Horizon",
+      "seoDescription": "Un lieu religieux vivant au bout d’une approche rocheuse exigeante et exposée."
+    },
+    "maryam-korkor": {
+      "headline": "Pierre, ciel et silence",
+      "teaser": "Pierre, ciel et silence · Cette église réunit paysage montagneux, patrimoine religieux et marche guidée. Prenez le temps de comprendre le lieu et les communautés, autant que les vues.",
+      "intro": "Maryam Korkor — Cette église réunit paysage montagneux, patrimoine religieux et marche guidée. Prenez le temps de comprendre le lieu et les communautés, autant que les vues.",
+      "imageAlt": "Façade blanche d’une église intégrée à un versant rocheux",
+      "tag": "Église taillée dans la roche",
+      "bestTime": "Dates et accès confirmés avant le départ",
+      "duration": "Sortie guidée depuis Gheralta",
+      "altitude": "Cadre montagneux ; approche confirmée avec le guide",
+      "highlights": {
+        "0": "Marche guidée dans le paysage de Gheralta",
+        "1": "Patrimoine religieux vivant et contexte local",
+        "2": "Vues sur le grès et photos avec autorisation",
+        "3": "Parcours adapté aux capacités et aux conditions"
+      },
+      "paragraphs": {
+        "0": "La marche fait partie de la visite. Discutez des pentes, de l’exposition et de votre aisance avec les hauteurs avant de choisir une église. Le guide confirme un parcours adapté aux conditions.",
+        "1": "Ce sont des lieux religieux vivants. Habillez-vous convenablement, suivez les consignes locales et demandez l’autorisation de photographier. L’accès et les visites dépendent des arrangements confirmés."
+      },
+      "sections": {
+        "0": {
+          "title": "Comprendre l’approche",
+          "text": "La marche fait partie de la visite. Discutez des pentes, de l’exposition et de votre aisance avec les hauteurs avant de choisir une église. Le guide confirme un parcours adapté aux conditions."
+        },
+        "1": {
+          "title": "Respecter l’église",
+          "text": "Ce sont des lieux religieux vivants. Habillez-vous convenablement, suivez les consignes locales et demandez l’autorisation de photographier. L’accès et les visites dépendent des arrangements confirmés."
+        }
+      },
+      "note": {
+        "title": "Accès et aptitude confirmés individuellement",
+        "text": "Une journée à Gheralta ne garantit pas une église précise. L’équipe choisit selon l’accès, les conditions et votre capacité de marche."
+      },
+      "faqs": {
+        "0": {
+          "q": "La visite convient-elle à tous ?",
+          "a": "Le parcours est choisi selon votre capacité, le temps disponible et l’accès. Signalez toute difficulté avec les hauteurs avant de réserver."
+        },
+        "1": {
+          "q": "Peut-on photographier à l’intérieur ?",
+          "a": "Demandez sur place et suivez les consignes de l’église. Ne présumez jamais que la photographie est autorisée."
+        }
+      },
+      "name": "Maryam Korkor",
+      "seoTitle": "Maryam Korkor | Afar Horizon",
+      "seoDescription": "Pierre, ciel et silence · Cette église réunit paysage montagneux, patrimoine religieux et marche guidée. Prenez le temps de comprendre le lieu et les communautés, autant que les vues."
+    },
+    "daniel-korkor": {
+      "headline": "La vue au-delà de la vallée",
+      "teaser": "La vue au-delà de la vallée · Cette église réunit paysage montagneux, patrimoine religieux et marche guidée. Prenez le temps de comprendre le lieu et les communautés, autant que les vues.",
+      "intro": "Daniel Korkor — Cette église réunit paysage montagneux, patrimoine religieux et marche guidée. Prenez le temps de comprendre le lieu et les communautés, autant que les vues.",
+      "imageAlt": "Une haute falaise de grès dominant une vaste vallée",
+      "tag": "Église taillée dans la roche",
+      "bestTime": "Dates et accès confirmés avant le départ",
+      "duration": "Sortie guidée depuis Gheralta",
+      "altitude": "Cadre montagneux ; approche confirmée avec le guide",
+      "highlights": {
+        "0": "Marche guidée dans le paysage de Gheralta",
+        "1": "Patrimoine religieux vivant et contexte local",
+        "2": "Vues sur le grès et photos avec autorisation",
+        "3": "Parcours adapté aux capacités et aux conditions"
+      },
+      "paragraphs": {
+        "0": "La marche fait partie de la visite. Discutez des pentes, de l’exposition et de votre aisance avec les hauteurs avant de choisir une église. Le guide confirme un parcours adapté aux conditions.",
+        "1": "Ce sont des lieux religieux vivants. Habillez-vous convenablement, suivez les consignes locales et demandez l’autorisation de photographier. L’accès et les visites dépendent des arrangements confirmés."
+      },
+      "sections": {
+        "0": {
+          "title": "Comprendre l’approche",
+          "text": "La marche fait partie de la visite. Discutez des pentes, de l’exposition et de votre aisance avec les hauteurs avant de choisir une église. Le guide confirme un parcours adapté aux conditions."
+        },
+        "1": {
+          "title": "Respecter l’église",
+          "text": "Ce sont des lieux religieux vivants. Habillez-vous convenablement, suivez les consignes locales et demandez l’autorisation de photographier. L’accès et les visites dépendent des arrangements confirmés."
+        }
+      },
+      "note": {
+        "title": "Accès et aptitude confirmés individuellement",
+        "text": "Une journée à Gheralta ne garantit pas une église précise. L’équipe choisit selon l’accès, les conditions et votre capacité de marche."
+      },
+      "faqs": {
+        "0": {
+          "q": "La visite convient-elle à tous ?",
+          "a": "Le parcours est choisi selon votre capacité, le temps disponible et l’accès. Signalez toute difficulté avec les hauteurs avant de réserver."
+        },
+        "1": {
+          "q": "Peut-on photographier à l’intérieur ?",
+          "a": "Demandez sur place et suivez les consignes de l’église. Ne présumez jamais que la photographie est autorisée."
+        }
+      },
+      "name": "Daniel Korkor",
+      "seoTitle": "Daniel Korkor | Afar Horizon",
+      "seoDescription": "La vue au-delà de la vallée · Cette église réunit paysage montagneux, patrimoine religieux et marche guidée. Prenez le temps de comprendre le lieu et les communautés, autant que les vues."
     }
   }
 }

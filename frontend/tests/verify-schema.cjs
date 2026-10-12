@@ -53,6 +53,6 @@ async function main() {
       assert(html.includes('aria-label="Breadcrumb"'), `${route}: visible article hierarchy`)
     }
   }
-  console.log(`Verified JSON-LD on ${routes.length} public pages: one shared identity, 45 detail graphs, FAQ parity, breadcrumbs and confirmed article dates.`)
+  console.log(`Verified JSON-LD on ${routes.length} public pages: one shared identity, ${details.size} detail graphs, FAQ parity, breadcrumbs and confirmed article dates.`)
 }
 main().catch(error => { console.error(error); process.exitCode = 1 })

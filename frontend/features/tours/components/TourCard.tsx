@@ -24,7 +24,7 @@ export function TourCard({
       image={t.image}
       imageAlt={t.imageAlt ?? t.title}
       badge={catalogueLabel(kind)}
-      eyebrow={priceOnRequest ? t.from : `From ${t.from.replace(' per person', '')} per person`}
+      eyebrow={priceOnRequest ? catalogueLabel(t.from) : `From ${t.from.replace(' per person', '')} per person`}
       title={t.title}
       summary={t.teaser}
       facts={[

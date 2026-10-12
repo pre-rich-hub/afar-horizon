@@ -1,0 +1,169 @@
+{
+  "date": "2026-10-12",
+  "catalogue": {
+    "destinations": 24,
+    "expeditions": 31,
+    "addedDestinations": 5,
+    "addedExpeditions": 14,
+    "simienItineraryDays": 106
+  },
+  "checks": {
+    "typecheck": "passed",
+    "frontendTests": "passed, all 10 test files",
+    "finalCatalogueI18nSchemaTests": "passed after translated meal corrections",
+    "renderedContent": "passed, 78 public pages",
+    "structuredData": "passed, 78 public pages",
+    "crawl": "passed, 77 sitemap URLs and linked pages",
+    "browser": "passed, 16 cases, no overflow or runtime exceptions",
+    "initialProductionBuild": "passed",
+    "finalProductionRebuild": "passed, final catalogue and client image replacements",
+    "replacementImages": "passed, all 19 supplied Cloudinary photos loaded and matched to their catalogue records"
+  },
+  "browserCases": [
+    {
+      "path": "/expeditions",
+      "width": 390,
+      "overflow": false,
+      "h1": "Choose your horizon",
+      "simienCards": 14,
+      "collections": 4,
+      "days": 0
+    },
+    {
+      "path": "/expeditions",
+      "width": 768,
+      "overflow": false,
+      "h1": "Choose your horizon",
+      "simienCards": 14,
+      "collections": 4,
+      "days": 0
+    },
+    {
+      "path": "/expeditions",
+      "width": 1440,
+      "overflow": false,
+      "h1": "Choose your horizon",
+      "simienCards": 14,
+      "collections": 4,
+      "days": 0
+    },
+    {
+      "path": "/expeditions/simien-to-lalibela-grand-trek",
+      "width": 390,
+      "overflow": false,
+      "h1": "Simien Mountains to Lalibela Grand Trek",
+      "simienCards": 0,
+      "collections": 0,
+      "days": 13
+    },
+    {
+      "path": "/expeditions/simien-to-lalibela-grand-trek",
+      "width": 1440,
+      "overflow": false,
+      "h1": "Simien Mountains to Lalibela Grand Trek",
+      "simienCards": 0,
+      "collections": 0,
+      "days": 13
+    },
+    {
+      "path": "/destinations/abune-yemata-guh",
+      "width": 390,
+      "overflow": false,
+      "h1": "Abune Yemata Guh",
+      "simienCards": 0,
+      "collections": 0,
+      "days": 0
+    },
+    {
+      "path": "/destinations/abune-yemata-guh",
+      "width": 1440,
+      "overflow": false,
+      "h1": "Abune Yemata Guh",
+      "simienCards": 0,
+      "collections": 0,
+      "days": 0
+    },
+    {
+      "path": "/destinations/afar-people",
+      "width": 390,
+      "overflow": false,
+      "h1": "Afar People",
+      "simienCards": 0,
+      "collections": 0,
+      "days": 0
+    },
+    {
+      "path": "/fr/expeditions/simien-mountains-experience",
+      "width": 390,
+      "overflow": false,
+      "h1": "Découverte des montagnes du Simien",
+      "simienCards": 0,
+      "collections": 0,
+      "days": 1
+    },
+    {
+      "path": "/fr/destinations/maryam-korkor",
+      "width": 1440,
+      "overflow": false,
+      "h1": "Maryam Korkor",
+      "simienCards": 0,
+      "collections": 0,
+      "days": 0
+    },
+    {
+      "path": "/es/expeditions/simien-mountains-experience",
+      "width": 390,
+      "overflow": false,
+      "h1": "Experiencia en las montañas Simien",
+      "simienCards": 0,
+      "collections": 0,
+      "days": 1
+    },
+    {
+      "path": "/es/destinations/maryam-korkor",
+      "width": 1440,
+      "overflow": false,
+      "h1": "Maryam Korkor",
+      "simienCards": 0,
+      "collections": 0,
+      "days": 0
+    },
+    {
+      "path": "/de/expeditions/simien-mountains-experience",
+      "width": 390,
+      "overflow": false,
+      "h1": "Simiengebirge kennenlernen",
+      "simienCards": 0,
+      "collections": 0,
+      "days": 1
+    },
+    {
+      "path": "/de/destinations/maryam-korkor",
+      "width": 1440,
+      "overflow": false,
+      "h1": "Maryam Korkor",
+      "simienCards": 0,
+      "collections": 0,
+      "days": 0
+    },
+    {
+      "path": "/zh-Hans/expeditions/simien-mountains-experience",
+      "width": 390,
+      "overflow": false,
+      "h1": "塞米恩山脉体验",
+      "simienCards": 0,
+      "collections": 0,
+      "days": 1
+    },
+    {
+      "path": "/zh-Hans/destinations/maryam-korkor",
+      "width": 1440,
+      "overflow": false,
+      "h1": "Maryam Korkor",
+      "simienCards": 0,
+      "collections": 0,
+      "days": 0
+    }
+  ],
+  "translationPolicy": "French, Spanish, German and Simplified Chinese are client-review drafts; existing noindex policy preserved"
+}

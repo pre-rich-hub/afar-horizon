@@ -1,4 +1,4 @@
-import {useDuration} from '@/lib/i18n/labels'
+import {useCatalogueLabel, useDuration} from '@/lib/i18n/labels'
 import {useToursCopy} from '../data/localized'
 import { useTranslations } from 'next-intl'
 
@@ -12,6 +12,7 @@ import Link from '@/components/common/SiteLink'
 
 export function TourOverview({ t: baset, placeLinks = {} }: { t: Tour; placeLinks?: Record<string, string> }) {
   const duration = useDuration()
+  const catalogueLabel = useCatalogueLabel()
 
   const t = useToursCopy('tour.tours', baset)
 
@@ -74,13 +75,13 @@ export function TourOverview({ t: baset, placeLinks = {} }: { t: Tour; placeLink
         <Reveal delay={120}>
           <BookingCard
             label={tr('pricing')}
-            title={priceOnRequest ? t.from : tr('fromPrice', {value0: t.from.split(' per')[0]})}
+            title={priceOnRequest ? catalogueLabel(t.from) : tr('fromPrice', {value0: t.from.split(' per')[0]})}
             subtitle={priceOnRequest ? tr('confirmedOnQuotation') : tr('perPersonConfirmedOnQuotation')}
             rows={[
               { k: tr('duration'), v: duration(t) },
               { k: tr('startFinish'), v: startEnd },
               ...(t.difficulty ? [{ k: tr('difficulty'), v: t.difficulty }] : []),
-              { k: tr('group'), v: t.group },
+              { k: tr('group'), v: catalogueLabel(t.group) },
               { k: tr('bestSeason'), v: t.season },
             ]}
             primary={{ label: tr('checkMyDates'), href: '#enquire' }}
@@ -149,7 +150,7 @@ export function TourOverview({ t: baset, placeLinks = {} }: { t: Tour; placeLink
             <div className="space-y-3 text-pretty text-sm leading-relaxed text-muted-foreground">
               <p className="font-semibold text-foreground">{tr('operatingSubjectToCurrentAccessAndConditions')}</p>
               {t.accessNote && <p>{t.accessNote}</p>}
-              <p>{expeditionConditionsNote}</p>
+              {t.collection !== 'simien' && <p>{expeditionConditionsNote}</p>}
             </div>
           </Reveal>
         </div>

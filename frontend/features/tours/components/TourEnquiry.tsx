@@ -9,6 +9,7 @@ import type { Tour } from '../types/tour.types'
 export function TourEnquiry({ t: baset }: { t: Tour }) {
   const catalogueLabel = useCatalogueLabel()
 
+  const priceOnRequest = baset.from === 'Price on request'
   const t = useToursCopy('tour.tours', baset)
 
   const tr = useTranslations('UI.tours.TourEnquiry')
@@ -27,8 +28,8 @@ export function TourEnquiry({ t: baset }: { t: Tour }) {
             <p className="mt-6 max-w-md text-pretty leading-relaxed text-background/70 sm:text-lg">
               {tr('sendUsYourDatesAndGroupSize')}</p>
             <p className="mt-8 border-l-2 border-accent pl-5 text-sm leading-relaxed text-background/70">
-              {t.days} · {catalogueLabel(t.group)} {tr('from')}{' '}
-              <span className="text-background">{t.from}</span>
+              {t.days} · {catalogueLabel(t.group)} {!priceOnRequest && tr('from')}{' '}
+              <span className="text-background">{priceOnRequest ? catalogueLabel(t.from) : t.from}</span>
             </p>
           </Reveal>
           <Reveal delay={120}>

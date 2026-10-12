@@ -1,4 +1,5 @@
 import { destinationImageBase } from '@/lib/config/cloudinary'
+import { additionalDestinations } from './additional-destinations.data'
 import type { Destination, DestinationGroup } from '../types/destination.types'
 
 // The destination library: the client's destination copy (Oct 2026),
@@ -826,4 +827,5 @@ export const destinations: Destination[] = [
     ],
     places: ['Lalibela', 'Gheralta', 'Aksum', 'Simien Mountains', 'Gondar', 'Lake Tana', 'Erta Ale', 'Dallol'],
   },
+  ...additionalDestinations,
 ]

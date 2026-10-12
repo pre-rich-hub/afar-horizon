@@ -31,7 +31,7 @@ export function TourHero({ t: baset }: { t: Tour }) {
           { label: tr('duration'), value: duration(t) },
           { label: tr('startFinish'), value: getStartEnd(t) },
           { label: tr('difficulty'), value: t.difficulty ?? t.style },
-          { label: priceOnRequest ? tr('pricing') : tr('from'), value: priceOnRequest ? t.from : t.from.split(' ')[0] },
+          { label: priceOnRequest ? tr('pricing') : tr('from'), value: priceOnRequest ? catalogueLabel(t.from) : t.from.split(' ')[0] },
         ]}
       />
   )

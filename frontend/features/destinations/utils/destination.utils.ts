@@ -17,9 +17,20 @@ export function destinationsInGroup(id: DestinationGroup) {
 }
 
 export function getDestinationRelations(d: Destination) {
-  const placeNames = d.places ?? [d.name]
+  const parentSlug: Record<string, string> = {
+    'afar-people': 'afar',
+    'salt-caravans': 'lake-assale',
+    'abune-yemata-guh': 'gheralta',
+    'maryam-korkor': 'gheralta',
+    'daniel-korkor': 'gheralta',
+  }
+  const parent = getDestination(parentSlug[d.slug])
+  const placeNames = [...(d.places ?? [d.name]), ...(parent?.places ?? [])]
   const related = tours.filter((t) => t.places.some((p) => placeNames.includes(p)))
-  const fallback = (related.length ? related : tours).slice(0, 4)
+  const ranked = d.slug === 'simien-mountains'
+    ? [...related].sort((a, b) => Number(b.collection === 'simien') - Number(a.collection === 'simien'))
+    : related
+  const fallback = (ranked.length ? ranked : tours).slice(0, 4)
   // Neighbours from the same group first.
   const others = destinations
     .filter((o) => o.slug !== d.slug)

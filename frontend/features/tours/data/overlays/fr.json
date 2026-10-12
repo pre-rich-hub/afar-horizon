@@ -14,6 +14,11 @@
       "title": "Nord de l'Éthiopie",
       "span": "12 – 21 jours",
       "text": "Le lac Tana, Gondar, les montagnes du Simien, Aksoum, Gheralta et Lalibela, avec le Danakil ajouté au voyage de 21 jours."
+    },
+    "simien": {
+      "title": "Montagnes du Simien",
+      "span": "1 – 15 jours",
+      "text": "Voyages privés au départ de Gondar : promenades sur les escarpements, treks avec camping, expéditions au Ras Dashen et traversée vers Lalibela."
     }
   },
   "tour.tours": {
@@ -1830,6 +1835,1301 @@
         "4": {
           "q": "L'itinéraire peut-il changer ?",
           "a": "Oui. Les horaires de vol, les conditions routières et l’accès régional peuvent nécessiter des ajustements. L'itinéraire est la trame du voyage, et nous l'adaptons quand nous en avons besoin."
+        }
+      }
+    },
+    "simien-mountains-experience": {
+      "title": "Découverte des montagnes du Simien",
+      "imageAlt": "Un gélada sur un versant herbeux dominant une vallée verdoyante",
+      "days": "1 jour",
+      "season": "Dates et état des sentiers confirmés avant réservation",
+      "difficulty": "Facile à modéré",
+      "teaser": "1 jour · Découverte des montagnes du Simien",
+      "summary": "Un itinéraire privé dans les montagnes du Simien au départ de Gondar. Promenade guidée, observation du paysage et recherche de géladas, puis retour à Gondar le même jour.",
+      "why": "Choisissez selon votre temps disponible, votre expérience et votre aisance en altitude. Les journées de points de vue, de faune et d’acclimatation prévues restent distinctes des transferts.",
+      "idealFor": "Voyageurs actifs souhaitant une introduction guidée aux montagnes en peu de temps.",
+      "notFor": "Voyageurs souhaitant une traversée complète ou une tentative au sommet du Ras Dashen.",
+      "accessNote": "La météo, l’accès aux sentiers et le bien-être des voyageurs peuvent modifier le parcours. Camps, transports, équipement et tentative de sommet sont confirmés pour vos dates. Ni les animaux ni le sommet ne sont garantis.",
+      "includes": {
+        "0": "Transport privé depuis et vers Gondar, selon le devis",
+        "1": "Guide de montagne, scout requis et formalités d’entrée au parc",
+        "2": "Déjeuner et eau potable selon l’itinéraire"
+      },
+      "excludes": {
+        "0": "Vols internationaux et intérieurs",
+        "1": "Visa éthiopien",
+        "2": "Assurance voyage et frais médicaux personnels",
+        "3": "Alcool, achats personnels et pourboires",
+        "4": "Équipement personnel de randonnée",
+        "5": "Nuits d’hôtel supplémentaires et transferts non prévus",
+        "6": "Modifications volontaires et activités non mentionnées"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Jour 1",
+          "title": "Gondar → Debark → Simien → Gondar",
+          "text": "Promenade guidée, observation du paysage et recherche de géladas, puis retour à Gondar le même jour.",
+          "overnight": "None",
+          "meals": "Déjeuner ; petit-déjeuner selon l’hôtel"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Les nuits d’hôtel à Gondar sont-elles incluses ?",
+          "a": "Les nuits avant et après le trek sont proposées séparément. Le nombre de nuits indiqué concerne l’itinéraire."
+        },
+        "1": {
+          "q": "Comment choisir un trek au Ras Dashen ?",
+          "a": "Indiquez votre expérience de marche et d’altitude ainsi que vos jours disponibles. Les routes de sommet sont exigeantes et le guide adapte le plan à la météo et au bien-être du groupe."
+        },
+        "2": {
+          "q": "Quel soutien est prévu ?",
+          "a": "Le devis confirme guide, scout, transport, équipement, repas, eau et portage adaptés à votre route. Apportez votre équipement personnel et indiquez vos besoins alimentaires à l’avance."
+        }
+      }
+    },
+    "simien-escarpment": {
+      "title": "Escarpement du Simien",
+      "imageAlt": "Un lac limpide reflétant des conifères sous un ciel bleu",
+      "days": "2 jours",
+      "season": "Dates et état des sentiers confirmés avant réservation",
+      "difficulty": "Modéré",
+      "teaser": "2 jours · Escarpement du Simien",
+      "summary": "Un itinéraire privé dans les montagnes du Simien au départ de Gondar. Étapes de nuit prévues : Sankaber — camp,200–3,300m. Les camps sont simples ; les sentiers et le soutien logistique sont confirmés avant le départ.",
+      "why": "Choisissez selon votre temps disponible, votre expérience et votre aisance en altitude. Les journées de points de vue, de faune et d’acclimatation prévues restent distinctes des transferts.",
+      "idealFor": "Voyageurs actifs souhaitant une introduction guidée aux montagnes en peu de temps.",
+      "notFor": "Voyageurs recherchant le confort d’un hôtel dans les camps ou des observations d’animaux garanties.",
+      "accessNote": "La météo, l’accès aux sentiers et le bien-être des voyageurs peuvent modifier le parcours. Camps, transports, équipement et tentative de sommet sont confirmés pour vos dates. Ni les animaux ni le sommet ne sont garantis.",
+      "includes": {
+        "0": "Transport privé depuis et vers Gondar, selon le devis",
+        "1": "Guide de montagne, scout requis et formalités d’entrée au parc",
+        "2": "Matériel de camping et hébergement pour les nuits de trek indiquées",
+        "3": "Cuisinier, repas au camp et soutien par mules si applicable",
+        "4": "Eau potable selon l’itinéraire confirmé",
+        "5": "Prise en charge à l’hôtel, planification et premiers secours de base"
+      },
+      "excludes": {
+        "0": "Vols internationaux et intérieurs",
+        "1": "Visa éthiopien",
+        "2": "Assurance voyage et frais médicaux personnels",
+        "3": "Alcool, achats personnels et pourboires",
+        "4": "Équipement personnel de randonnée",
+        "5": "Nuits d’hôtel supplémentaires et transferts non prévus",
+        "6": "Modifications volontaires et activités non mentionnées"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Jour 1",
+          "title": "Gondar → Debark → Sankaber",
+          "text": "Départ de Gondar vers Debark pour les formalités du parc et la rencontre avec l’équipe. Première marche selon les conditions, avec du temps pour s’adapter à l’altitude.",
+          "overnight": "Sankaber — camp,200–3,300m",
+          "meals": "Déjeuner et dîner"
+        },
+        "1": {
+          "day": "Jour 2",
+          "title": "Sankaber → Marche sur l’escarpement → Gondar",
+          "text": "Dernière marche selon les conditions, puis rendez-vous avec le véhicule et retour à Gondar par le point de sortie confirmé.",
+          "overnight": "None",
+          "meals": "Petit-déjeuner et déjeuner"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Les nuits d’hôtel à Gondar sont-elles incluses ?",
+          "a": "Les nuits avant et après le trek sont proposées séparément. Le nombre de nuits indiqué concerne l’itinéraire."
+        },
+        "1": {
+          "q": "Comment choisir un trek au Ras Dashen ?",
+          "a": "Indiquez votre expérience de marche et d’altitude ainsi que vos jours disponibles. Les routes de sommet sont exigeantes et le guide adapte le plan à la météo et au bien-être du groupe."
+        },
+        "2": {
+          "q": "Quel soutien est prévu ?",
+          "a": "Le devis confirme guide, scout, transport, équipement, repas, eau et portage adaptés à votre route. Apportez votre équipement personnel et indiquez vos besoins alimentaires à l’avance."
+        }
+      }
+    },
+    "simien-classic": {
+      "title": "Simien classique",
+      "imageAlt": "Des escarpements rocheux dominant une profonde vallée de montagne",
+      "days": "3 jours",
+      "season": "Dates et état des sentiers confirmés avant réservation",
+      "difficulty": "Modéré",
+      "teaser": "3 jours · Simien classique",
+      "summary": "Un itinéraire privé dans les montagnes du Simien au départ de Gondar. Étapes de nuit prévues : Sankaber — camp → Geech — camp,600m. Les camps sont simples ; les sentiers et le soutien logistique sont confirmés avant le départ.",
+      "why": "Choisissez selon votre temps disponible, votre expérience et votre aisance en altitude. Les journées de points de vue, de faune et d’acclimatation prévues restent distinctes des transferts.",
+      "idealFor": "Voyageurs actifs souhaitant une introduction guidée aux montagnes en peu de temps.",
+      "notFor": "Voyageurs recherchant le confort d’un hôtel dans les camps ou des observations d’animaux garanties.",
+      "accessNote": "La météo, l’accès aux sentiers et le bien-être des voyageurs peuvent modifier le parcours. Camps, transports, équipement et tentative de sommet sont confirmés pour vos dates. Ni les animaux ni le sommet ne sont garantis.",
+      "includes": {
+        "0": "Transport privé depuis et vers Gondar, selon le devis",
+        "1": "Guide de montagne, scout requis et formalités d’entrée au parc",
+        "2": "Matériel de camping et hébergement pour les nuits de trek indiquées",
+        "3": "Cuisinier, repas au camp et soutien par mules si applicable",
+        "4": "Eau potable selon l’itinéraire confirmé",
+        "5": "Prise en charge à l’hôtel, planification et premiers secours de base"
+      },
+      "excludes": {
+        "0": "Vols internationaux et intérieurs",
+        "1": "Visa éthiopien",
+        "2": "Assurance voyage et frais médicaux personnels",
+        "3": "Alcool, achats personnels et pourboires",
+        "4": "Équipement personnel de randonnée",
+        "5": "Nuits d’hôtel supplémentaires et transferts non prévus",
+        "6": "Modifications volontaires et activités non mentionnées"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Jour 1",
+          "title": "Gondar → Debark → Sankaber",
+          "text": "Départ de Gondar vers Debark pour les formalités du parc et la rencontre avec l’équipe. Première marche selon les conditions, avec du temps pour s’adapter à l’altitude.",
+          "overnight": "Sankaber — camp",
+          "meals": "Déjeuner et dîner"
+        },
+        "1": {
+          "day": "Jour 2",
+          "title": "Sankaber → cascade de Jinbar → Geech",
+          "text": "Marche le long de l’escarpement et du paysage de Jinbar, puis montée vers le plateau de Geech. Le rythme et les arrêts sont adaptés au groupe.",
+          "overnight": "Geech — camp,600m",
+          "meals": "Petit-déjeuner, déjeuner et dîner"
+        },
+        "2": {
+          "day": "Jour 3",
+          "title": "Imet Gogo → Geech → Gondar",
+          "text": "Dernière marche selon les conditions, puis rendez-vous avec le véhicule et retour à Gondar par le point de sortie confirmé.",
+          "overnight": "None"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Les nuits d’hôtel à Gondar sont-elles incluses ?",
+          "a": "Les nuits avant et après le trek sont proposées séparément. Le nombre de nuits indiqué concerne l’itinéraire."
+        },
+        "1": {
+          "q": "Comment choisir un trek au Ras Dashen ?",
+          "a": "Indiquez votre expérience de marche et d’altitude ainsi que vos jours disponibles. Les routes de sommet sont exigeantes et le guide adapte le plan à la météo et au bien-être du groupe."
+        },
+        "2": {
+          "q": "Quel soutien est prévu ?",
+          "a": "Le devis confirme guide, scout, transport, équipement, repas, eau et portage adaptés à votre route. Apportez votre équipement personnel et indiquez vos besoins alimentaires à l’avance."
+        }
+      }
+    },
+    "simien-escarpment-expedition": {
+      "title": "Expédition sur les escarpements du Simien",
+      "imageAlt": "Un sentier traversant une campagne verdoyante au pied de collines rocheuses abruptes",
+      "days": "4 jours",
+      "season": "Dates et état des sentiers confirmés avant réservation",
+      "difficulty": "Modéré à exigeant",
+      "teaser": "4 jours · Expédition sur les escarpements du Simien",
+      "summary": "Un itinéraire privé dans les montagnes du Simien au départ de Gondar. Étapes de nuit prévues : Sankaber → Geech → Chenek — camp. Les camps sont simples ; les sentiers et le soutien logistique sont confirmés avant le départ.",
+      "why": "Choisissez selon votre temps disponible, votre expérience et votre aisance en altitude. Les journées de points de vue, de faune et d’acclimatation prévues restent distinctes des transferts.",
+      "idealFor": "Marcheurs recherchant plusieurs jours sur les escarpements, avec du temps pour la faune et la photographie.",
+      "notFor": "Voyageurs recherchant le confort d’un hôtel dans les camps ou des observations d’animaux garanties.",
+      "accessNote": "La météo, l’accès aux sentiers et le bien-être des voyageurs peuvent modifier le parcours. Camps, transports, équipement et tentative de sommet sont confirmés pour vos dates. Ni les animaux ni le sommet ne sont garantis.",
+      "includes": {
+        "0": "Transport privé depuis et vers Gondar, selon le devis",
+        "1": "Guide de montagne, scout requis et formalités d’entrée au parc",
+        "2": "Matériel de camping et hébergement pour les nuits de trek indiquées",
+        "3": "Cuisinier, repas au camp et soutien par mules si applicable",
+        "4": "Eau potable selon l’itinéraire confirmé",
+        "5": "Prise en charge à l’hôtel, planification et premiers secours de base"
+      },
+      "excludes": {
+        "0": "Vols internationaux et intérieurs",
+        "1": "Visa éthiopien",
+        "2": "Assurance voyage et frais médicaux personnels",
+        "3": "Alcool, achats personnels et pourboires",
+        "4": "Équipement personnel de randonnée",
+        "5": "Nuits d’hôtel supplémentaires et transferts non prévus",
+        "6": "Modifications volontaires et activités non mentionnées"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Jour 1",
+          "title": "Gondar → Debark → Sankaber",
+          "text": "Départ de Gondar vers Debark pour les formalités du parc et la rencontre avec l’équipe. Première marche selon les conditions, avec du temps pour s’adapter à l’altitude.",
+          "overnight": "Sankaber"
+        },
+        "1": {
+          "day": "Jour 2",
+          "title": "Sankaber → Jinbar → Geech",
+          "text": "Marche le long de l’escarpement et du paysage de Jinbar, puis montée vers le plateau de Geech. Le rythme et les arrêts sont adaptés au groupe.",
+          "overnight": "Geech"
+        },
+        "2": {
+          "day": "Jour 3",
+          "title": "Geech → Imet Gogo → Inatye → Chenek",
+          "text": "Traversez les hauts escarpements vers Chenek, entre falaises et vallées profondes. Le guide choisit la route selon les conditions.",
+          "overnight": "Chenek — camp"
+        },
+        "3": {
+          "day": "Jour 4",
+          "title": "Chenek → Marche en montagne → Gondar",
+          "text": "Dernière marche selon les conditions, puis rendez-vous avec le véhicule et retour à Gondar par le point de sortie confirmé.",
+          "overnight": "None"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Les nuits d’hôtel à Gondar sont-elles incluses ?",
+          "a": "Les nuits avant et après le trek sont proposées séparément. Le nombre de nuits indiqué concerne l’itinéraire."
+        },
+        "1": {
+          "q": "Comment choisir un trek au Ras Dashen ?",
+          "a": "Indiquez votre expérience de marche et d’altitude ainsi que vos jours disponibles. Les routes de sommet sont exigeantes et le guide adapte le plan à la météo et au bien-être du groupe."
+        },
+        "2": {
+          "q": "Quel soutien est prévu ?",
+          "a": "Le devis confirme guide, scout, transport, équipement, repas, eau et portage adaptés à votre route. Apportez votre équipement personnel et indiquez vos besoins alimentaires à l’avance."
+        }
+      }
+    },
+    "simien-mountains-trek": {
+      "title": "Trek dans les montagnes du Simien",
+      "imageAlt": "Des escarpements ensoleillés au-dessus d’une vallée boisée",
+      "days": "5 jours",
+      "season": "Dates et état des sentiers confirmés avant réservation",
+      "difficulty": "Modéré à exigeant",
+      "teaser": "5 jours · Trek dans les montagnes du Simien",
+      "summary": "Un itinéraire privé dans les montagnes du Simien au départ de Gondar. Étapes de nuit prévues : Sankaber — camp → Geech — camp → Geech → Chenek. Les camps sont simples ; les sentiers et le soutien logistique sont confirmés avant le départ.",
+      "why": "Choisissez selon votre temps disponible, votre expérience et votre aisance en altitude. Les journées de points de vue, de faune et d’acclimatation prévues restent distinctes des transferts.",
+      "idealFor": "Marcheurs recherchant plusieurs jours sur les escarpements, avec du temps pour la faune et la photographie.",
+      "notFor": "Voyageurs recherchant le confort d’un hôtel dans les camps ou des observations d’animaux garanties.",
+      "accessNote": "La météo, l’accès aux sentiers et le bien-être des voyageurs peuvent modifier le parcours. Camps, transports, équipement et tentative de sommet sont confirmés pour vos dates. Ni les animaux ni le sommet ne sont garantis.",
+      "includes": {
+        "0": "Transport privé depuis et vers Gondar, selon le devis",
+        "1": "Guide de montagne, scout requis et formalités d’entrée au parc",
+        "2": "Matériel de camping et hébergement pour les nuits de trek indiquées",
+        "3": "Cuisinier, repas au camp et soutien par mules si applicable",
+        "4": "Eau potable selon l’itinéraire confirmé",
+        "5": "Prise en charge à l’hôtel, planification et premiers secours de base"
+      },
+      "excludes": {
+        "0": "Vols internationaux et intérieurs",
+        "1": "Visa éthiopien",
+        "2": "Assurance voyage et frais médicaux personnels",
+        "3": "Alcool, achats personnels et pourboires",
+        "4": "Équipement personnel de randonnée",
+        "5": "Nuits d’hôtel supplémentaires et transferts non prévus",
+        "6": "Modifications volontaires et activités non mentionnées"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Jour 1",
+          "title": "Gondar → Debark → Sankaber",
+          "text": "Départ de Gondar vers Debark pour les formalités du parc et la rencontre avec l’équipe. Première marche selon les conditions, avec du temps pour s’adapter à l’altitude.",
+          "overnight": "Sankaber — camp"
+        },
+        "1": {
+          "day": "Jour 2",
+          "title": "Sankaber → cascade de Jinbar → Geech",
+          "text": "Marche le long de l’escarpement et du paysage de Jinbar, puis montée vers le plateau de Geech. Le rythme et les arrêts sont adaptés au groupe.",
+          "overnight": "Geech — camp"
+        },
+        "2": {
+          "day": "Jour 3",
+          "title": "Imet Gogo → Saha → Kedadit → Geech",
+          "text": "Une journée de points de vue sur les escarpements, avec du temps pour marcher, photographier et observer. La visite des points de vue dépend des conditions.",
+          "overnight": "Geech"
+        },
+        "3": {
+          "day": "Jour 4",
+          "title": "Geech → Inatye → Chenek",
+          "text": "Traversez les hauts escarpements vers Chenek, entre falaises et vallées profondes. Le guide choisit la route selon les conditions.",
+          "overnight": "Chenek"
+        },
+        "4": {
+          "day": "Jour 5",
+          "title": "Chenek → Point de vue en altitude → Gondar",
+          "text": "Dernière marche selon les conditions, puis rendez-vous avec le véhicule et retour à Gondar par le point de sortie confirmé.",
+          "overnight": "None"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Les nuits d’hôtel à Gondar sont-elles incluses ?",
+          "a": "Les nuits avant et après le trek sont proposées séparément. Le nombre de nuits indiqué concerne l’itinéraire."
+        },
+        "1": {
+          "q": "Comment choisir un trek au Ras Dashen ?",
+          "a": "Indiquez votre expérience de marche et d’altitude ainsi que vos jours disponibles. Les routes de sommet sont exigeantes et le guide adapte le plan à la météo et au bien-être du groupe."
+        },
+        "2": {
+          "q": "Quel soutien est prévu ?",
+          "a": "Le devis confirme guide, scout, transport, équipement, repas, eau et portage adaptés à votre route. Apportez votre équipement personnel et indiquez vos besoins alimentaires à l’avance."
+        }
+      }
+    },
+    "simien-explorer": {
+      "title": "Exploration du Simien",
+      "imageAlt": "Des sommets et des vallées vus entre deux parois rocheuses",
+      "days": "6 jours",
+      "season": "Dates et état des sentiers confirmés avant réservation",
+      "difficulty": "Exigeant",
+      "teaser": "6 jours · Exploration du Simien",
+      "summary": "Un itinéraire privé dans les montagnes du Simien au départ de Gondar. Étapes de nuit prévues : Sankaber → Geech → Geech → Chenek → Chenek. Les camps sont simples ; les sentiers et le soutien logistique sont confirmés avant le départ.",
+      "why": "Choisissez selon votre temps disponible, votre expérience et votre aisance en altitude. Les journées de points de vue, de faune et d’acclimatation prévues restent distinctes des transferts.",
+      "idealFor": "Marcheurs recherchant plusieurs jours sur les escarpements, avec du temps pour la faune et la photographie.",
+      "notFor": "Voyageurs recherchant le confort d’un hôtel dans les camps ou des observations d’animaux garanties.",
+      "accessNote": "La météo, l’accès aux sentiers et le bien-être des voyageurs peuvent modifier le parcours. Camps, transports, équipement et tentative de sommet sont confirmés pour vos dates. Ni les animaux ni le sommet ne sont garantis.",
+      "includes": {
+        "0": "Transport privé depuis et vers Gondar, selon le devis",
+        "1": "Guide de montagne, scout requis et formalités d’entrée au parc",
+        "2": "Matériel de camping et hébergement pour les nuits de trek indiquées",
+        "3": "Cuisinier, repas au camp et soutien par mules si applicable",
+        "4": "Eau potable selon l’itinéraire confirmé",
+        "5": "Prise en charge à l’hôtel, planification et premiers secours de base"
+      },
+      "excludes": {
+        "0": "Vols internationaux et intérieurs",
+        "1": "Visa éthiopien",
+        "2": "Assurance voyage et frais médicaux personnels",
+        "3": "Alcool, achats personnels et pourboires",
+        "4": "Équipement personnel de randonnée",
+        "5": "Nuits d’hôtel supplémentaires et transferts non prévus",
+        "6": "Modifications volontaires et activités non mentionnées"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Jour 1",
+          "title": "Gondar → Debark → Sankaber",
+          "text": "Départ de Gondar vers Debark pour les formalités du parc et la rencontre avec l’équipe. Première marche selon les conditions, avec du temps pour s’adapter à l’altitude.",
+          "overnight": "Sankaber"
+        },
+        "1": {
+          "day": "Jour 2",
+          "title": "Sankaber → cascade de Jinbar → Geech",
+          "text": "Marche le long de l’escarpement et du paysage de Jinbar, puis montée vers le plateau de Geech. Le rythme et les arrêts sont adaptés au groupe.",
+          "overnight": "Geech"
+        },
+        "2": {
+          "day": "Jour 3",
+          "title": "Geech → Imet Gogo → Saha/Kedadit → Geech",
+          "text": "Une journée de points de vue sur les escarpements, avec du temps pour marcher, photographier et observer. La visite des points de vue dépend des conditions.",
+          "overnight": "Geech"
+        },
+        "3": {
+          "day": "Jour 4",
+          "title": "Geech → Inatye → Chenek",
+          "text": "Traversez les hauts escarpements vers Chenek, entre falaises et vallées profondes. Le guide choisit la route selon les conditions.",
+          "overnight": "Chenek"
+        },
+        "4": {
+          "day": "Jour 5",
+          "title": "Chenek → Bwahit hauts paysages → Chenek",
+          "text": "Montée vers les hauts paysages de Bwahit. Le terrain devient plus élevé et exposé ; la route dépend de la météo et de votre forme.",
+          "overnight": "Chenek"
+        },
+        "5": {
+          "day": "Jour 6",
+          "title": "Chenek → dernière marche en montagne → Gondar",
+          "text": "Dernière marche selon les conditions, puis rendez-vous avec le véhicule et retour à Gondar par le point de sortie confirmé.",
+          "overnight": "None"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Les nuits d’hôtel à Gondar sont-elles incluses ?",
+          "a": "Les nuits avant et après le trek sont proposées séparément. Le nombre de nuits indiqué concerne l’itinéraire."
+        },
+        "1": {
+          "q": "Comment choisir un trek au Ras Dashen ?",
+          "a": "Indiquez votre expérience de marche et d’altitude ainsi que vos jours disponibles. Les routes de sommet sont exigeantes et le guide adapte le plan à la météo et au bien-être du groupe."
+        },
+        "2": {
+          "q": "Quel soutien est prévu ?",
+          "a": "Le devis confirme guide, scout, transport, équipement, repas, eau et portage adaptés à votre route. Apportez votre équipement personnel et indiquez vos besoins alimentaires à l’avance."
+        }
+      }
+    },
+    "simien-grand-escarpment": {
+      "title": "Grands escarpements du Simien",
+      "imageAlt": "Un bouquetin aux cornes recourbées se reposant au-dessus d’une vallée",
+      "days": "7 jours",
+      "season": "Dates et état des sentiers confirmés avant réservation",
+      "difficulty": "Exigeant",
+      "teaser": "7 jours · Grands escarpements du Simien",
+      "summary": "Un itinéraire privé dans les montagnes du Simien au départ de Gondar. Étapes de nuit prévues : Sankaber → Geech → Geech → Chenek → Chenek → Chenek. Les camps sont simples ; les sentiers et le soutien logistique sont confirmés avant le départ.",
+      "why": "Choisissez selon votre temps disponible, votre expérience et votre aisance en altitude. Les journées de points de vue, de faune et d’acclimatation prévues restent distinctes des transferts.",
+      "idealFor": "Marcheurs recherchant plusieurs jours sur les escarpements, avec du temps pour la faune et la photographie.",
+      "notFor": "Voyageurs recherchant le confort d’un hôtel dans les camps ou des observations d’animaux garanties.",
+      "accessNote": "La météo, l’accès aux sentiers et le bien-être des voyageurs peuvent modifier le parcours. Camps, transports, équipement et tentative de sommet sont confirmés pour vos dates. Ni les animaux ni le sommet ne sont garantis.",
+      "includes": {
+        "0": "Transport privé depuis et vers Gondar, selon le devis",
+        "1": "Guide de montagne, scout requis et formalités d’entrée au parc",
+        "2": "Matériel de camping et hébergement pour les nuits de trek indiquées",
+        "3": "Cuisinier, repas au camp et soutien par mules si applicable",
+        "4": "Eau potable selon l’itinéraire confirmé",
+        "5": "Prise en charge à l’hôtel, planification et premiers secours de base"
+      },
+      "excludes": {
+        "0": "Vols internationaux et intérieurs",
+        "1": "Visa éthiopien",
+        "2": "Assurance voyage et frais médicaux personnels",
+        "3": "Alcool, achats personnels et pourboires",
+        "4": "Équipement personnel de randonnée",
+        "5": "Nuits d’hôtel supplémentaires et transferts non prévus",
+        "6": "Modifications volontaires et activités non mentionnées"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Jour 1",
+          "title": "Gondar → Debark → Sankaber",
+          "text": "Départ de Gondar vers Debark pour les formalités du parc et la rencontre avec l’équipe. Première marche selon les conditions, avec du temps pour s’adapter à l’altitude.",
+          "overnight": "Sankaber"
+        },
+        "1": {
+          "day": "Jour 2",
+          "title": "Sankaber → cascade de Jinbar → Geech",
+          "text": "Marche le long de l’escarpement et du paysage de Jinbar, puis montée vers le plateau de Geech. Le rythme et les arrêts sont adaptés au groupe.",
+          "overnight": "Geech"
+        },
+        "2": {
+          "day": "Jour 3",
+          "title": "Geech → Imet Gogo → Saha → Kedadit → Geech",
+          "text": "Une journée de points de vue sur les escarpements, avec du temps pour marcher, photographier et observer. La visite des points de vue dépend des conditions.",
+          "overnight": "Geech"
+        },
+        "3": {
+          "day": "Jour 4",
+          "title": "Geech → Inatye → Chenek",
+          "text": "Traversez les hauts escarpements vers Chenek, entre falaises et vallées profondes. Le guide choisit la route selon les conditions.",
+          "overnight": "Chenek"
+        },
+        "4": {
+          "day": "Jour 5",
+          "title": "Chenek → Bwahit hauts paysages → Chenek",
+          "text": "Montée vers les hauts paysages de Bwahit. Le terrain devient plus élevé et exposé ; la route dépend de la météo et de votre forme.",
+          "overnight": "Chenek"
+        },
+        "5": {
+          "day": "Jour 6",
+          "title": "Chenek : faune et montagnes",
+          "text": "Prenez le temps d’observer le paysage et de chercher géladas et bouquetins de Walia à distance respectueuse. Les observations dépendent des conditions.",
+          "overnight": "Chenek"
+        },
+        "6": {
+          "day": "Jour 7",
+          "title": "Chenek → Gondar",
+          "text": "Dernière marche selon les conditions, puis rendez-vous avec le véhicule et retour à Gondar par le point de sortie confirmé.",
+          "overnight": "None"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Les nuits d’hôtel à Gondar sont-elles incluses ?",
+          "a": "Les nuits avant et après le trek sont proposées séparément. Le nombre de nuits indiqué concerne l’itinéraire."
+        },
+        "1": {
+          "q": "Comment choisir un trek au Ras Dashen ?",
+          "a": "Indiquez votre expérience de marche et d’altitude ainsi que vos jours disponibles. Les routes de sommet sont exigeantes et le guide adapte le plan à la météo et au bien-être du groupe."
+        },
+        "2": {
+          "q": "Quel soutien est prévu ?",
+          "a": "Le devis confirme guide, scout, transport, équipement, repas, eau et portage adaptés à votre route. Apportez votre équipement personnel et indiquez vos besoins alimentaires à l’avance."
+        }
+      }
+    },
+    "simien-extended-expedition": {
+      "title": "Expédition prolongée dans le Simien",
+      "imageAlt": "Des géladas sur une falaise verdoyante au-dessus de champs et de vallées",
+      "days": "8 jours",
+      "season": "Dates et état des sentiers confirmés avant réservation",
+      "difficulty": "Très exigeant",
+      "teaser": "8 jours · Expédition prolongée dans le Simien",
+      "summary": "Un itinéraire privé dans les montagnes du Simien au départ de Gondar. Étapes de nuit prévues : Sankaber → Geech → Geech → Chenek → Ambiko → Ambiko → Ambiko. Les camps sont simples ; les sentiers et le soutien logistique sont confirmés avant le départ.",
+      "why": "Choisissez selon votre temps disponible, votre expérience et votre aisance en altitude. Les journées de points de vue, de faune et d’acclimatation prévues restent distinctes des transferts.",
+      "idealFor": "Randonneurs expérimentés à l’aise avec plusieurs journées en montagne et des camps simples.",
+      "notFor": "Voyageurs recherchant le confort d’un hôtel dans les camps ou des observations d’animaux garanties.",
+      "accessNote": "La météo, l’accès aux sentiers et le bien-être des voyageurs peuvent modifier le parcours. Camps, transports, équipement et tentative de sommet sont confirmés pour vos dates. Ni les animaux ni le sommet ne sont garantis.",
+      "includes": {
+        "0": "Transport privé depuis et vers Gondar, selon le devis",
+        "1": "Guide de montagne, scout requis et formalités d’entrée au parc",
+        "2": "Matériel de camping et hébergement pour les nuits de trek indiquées",
+        "3": "Cuisinier, repas au camp et soutien par mules si applicable",
+        "4": "Eau potable selon l’itinéraire confirmé",
+        "5": "Prise en charge à l’hôtel, planification et premiers secours de base"
+      },
+      "excludes": {
+        "0": "Vols internationaux et intérieurs",
+        "1": "Visa éthiopien",
+        "2": "Assurance voyage et frais médicaux personnels",
+        "3": "Alcool, achats personnels et pourboires",
+        "4": "Équipement personnel de randonnée",
+        "5": "Nuits d’hôtel supplémentaires et transferts non prévus",
+        "6": "Modifications volontaires et activités non mentionnées"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Jour 1",
+          "title": "Gondar → Debark → Sankaber",
+          "text": "Départ de Gondar vers Debark pour les formalités du parc et la rencontre avec l’équipe. Première marche selon les conditions, avec du temps pour s’adapter à l’altitude.",
+          "overnight": "Sankaber"
+        },
+        "1": {
+          "day": "Jour 2",
+          "title": "Sankaber → Jinbar → Geech",
+          "text": "Marche le long de l’escarpement et du paysage de Jinbar, puis montée vers le plateau de Geech. Le rythme et les arrêts sont adaptés au groupe.",
+          "overnight": "Geech"
+        },
+        "2": {
+          "day": "Jour 3",
+          "title": "Geech → Imet Gogo → Kedadit → Geech",
+          "text": "Une journée de points de vue sur les escarpements, avec du temps pour marcher, photographier et observer. La visite des points de vue dépend des conditions.",
+          "overnight": "Geech"
+        },
+        "3": {
+          "day": "Jour 4",
+          "title": "Geech → Inatye → Chenek",
+          "text": "Traversez les hauts escarpements vers Chenek, entre falaises et vallées profondes. Le guide choisit la route selon les conditions.",
+          "overnight": "Chenek"
+        },
+        "4": {
+          "day": "Jour 5",
+          "title": "Chenek → Bwahit col et hauts paysages → Ambiko secteur",
+          "text": "Montée vers les hauts paysages de Bwahit. Le terrain devient plus élevé et exposé ; la route dépend de la météo et de votre forme.",
+          "overnight": "Ambiko"
+        },
+        "5": {
+          "day": "Jour 6",
+          "title": "Acclimatation autour d’Ambiko",
+          "text": "Journée d’acclimatation : repos, hydratation, promenades courtes selon les conditions et préparation de la tentative de sommet.",
+          "overnight": "Ambiko"
+        },
+        "6": {
+          "day": "Jour 7",
+          "title": "Tentative au sommet du Ras Dashen",
+          "text": "Départ très matinal pour une tentative exigeante au Ras Dashen. Le guide décide selon la météo et votre état ; retour à Ambiko après la marche.",
+          "overnight": "Ambiko"
+        },
+        "7": {
+          "day": "Jour 8",
+          "title": "Ambiko → itinéraire de sortie",
+          "text": "Dernière marche selon les conditions, puis rendez-vous avec le véhicule et retour à Gondar par le point de sortie confirmé.",
+          "overnight": "None"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Les nuits d’hôtel à Gondar sont-elles incluses ?",
+          "a": "Les nuits avant et après le trek sont proposées séparément. Le nombre de nuits indiqué concerne l’itinéraire."
+        },
+        "1": {
+          "q": "Comment choisir un trek au Ras Dashen ?",
+          "a": "Indiquez votre expérience de marche et d’altitude ainsi que vos jours disponibles. Les routes de sommet sont exigeantes et le guide adapte le plan à la météo et au bien-être du groupe."
+        },
+        "2": {
+          "q": "Quel soutien est prévu ?",
+          "a": "Le devis confirme guide, scout, transport, équipement, repas, eau et portage adaptés à votre route. Apportez votre équipement personnel et indiquez vos besoins alimentaires à l’avance."
+        }
+      }
+    },
+    "ras-dashen-expedition": {
+      "title": "Expédition au Ras Dashen",
+      "imageAlt": "Des randonneurs réunis sur un sommet rocheux sous un ciel bleu",
+      "days": "9 jours",
+      "season": "Dates et état des sentiers confirmés avant réservation",
+      "difficulty": "Très exigeant",
+      "teaser": "9 jours · Expédition au Ras Dashen",
+      "summary": "Un itinéraire privé dans les montagnes du Simien au départ de Gondar. Étapes de nuit prévues : Sankaber → Geech → Geech → Chenek → Ambiko → Ambiko → Ambiko → Sona. Les camps sont simples ; les sentiers et le soutien logistique sont confirmés avant le départ.",
+      "why": "Choisissez selon votre temps disponible, votre expérience et votre aisance en altitude. Les journées de points de vue, de faune et d’acclimatation prévues restent distinctes des transferts.",
+      "idealFor": "Randonneurs expérimentés à l’aise avec plusieurs journées en montagne et des camps simples.",
+      "notFor": "Voyageurs recherchant le confort d’un hôtel dans les camps ou des observations d’animaux garanties.",
+      "accessNote": "La météo, l’accès aux sentiers et le bien-être des voyageurs peuvent modifier le parcours. Camps, transports, équipement et tentative de sommet sont confirmés pour vos dates. Ni les animaux ni le sommet ne sont garantis.",
+      "includes": {
+        "0": "Transport privé depuis et vers Gondar, selon le devis",
+        "1": "Guide de montagne, scout requis et formalités d’entrée au parc",
+        "2": "Matériel de camping et hébergement pour les nuits de trek indiquées",
+        "3": "Cuisinier, repas au camp et soutien par mules si applicable",
+        "4": "Eau potable selon l’itinéraire confirmé",
+        "5": "Prise en charge à l’hôtel, planification et premiers secours de base"
+      },
+      "excludes": {
+        "0": "Vols internationaux et intérieurs",
+        "1": "Visa éthiopien",
+        "2": "Assurance voyage et frais médicaux personnels",
+        "3": "Alcool, achats personnels et pourboires",
+        "4": "Équipement personnel de randonnée",
+        "5": "Nuits d’hôtel supplémentaires et transferts non prévus",
+        "6": "Modifications volontaires et activités non mentionnées"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Jour 1",
+          "title": "Gondar → Debark → Sankaber",
+          "text": "Départ de Gondar vers Debark pour les formalités du parc et la rencontre avec l’équipe. Première marche selon les conditions, avec du temps pour s’adapter à l’altitude.",
+          "overnight": "Sankaber"
+        },
+        "1": {
+          "day": "Jour 2",
+          "title": "Sankaber → Jinbar → Geech",
+          "text": "Marche le long de l’escarpement et du paysage de Jinbar, puis montée vers le plateau de Geech. Le rythme et les arrêts sont adaptés au groupe.",
+          "overnight": "Geech"
+        },
+        "2": {
+          "day": "Jour 3",
+          "title": "Geech → Imet Gogo → Saha → Kedadit",
+          "text": "Une journée de points de vue sur les escarpements, avec du temps pour marcher, photographier et observer. La visite des points de vue dépend des conditions.",
+          "overnight": "Geech"
+        },
+        "3": {
+          "day": "Jour 4",
+          "title": "Geech → Chenek",
+          "text": "Traversez les hauts escarpements vers Chenek, entre falaises et vallées profondes. Le guide choisit la route selon les conditions.",
+          "overnight": "Chenek"
+        },
+        "4": {
+          "day": "Jour 5",
+          "title": "Chenek → Bwahit → Ambiko",
+          "text": "Montée vers les hauts paysages de Bwahit. Le terrain devient plus élevé et exposé ; la route dépend de la météo et de votre forme.",
+          "overnight": "Ambiko"
+        },
+        "5": {
+          "day": "Jour 6",
+          "title": "Acclimatation à Ambiko",
+          "text": "Journée d’acclimatation : repos, hydratation, promenades courtes selon les conditions et préparation de la tentative de sommet.",
+          "overnight": "Ambiko"
+        },
+        "6": {
+          "day": "Jour 7",
+          "title": "Tentative au sommet du Ras Dashen",
+          "text": "Départ très matinal pour une tentative exigeante au Ras Dashen. Le guide décide selon la météo et votre état ; retour à Ambiko après la marche.",
+          "overnight": "Ambiko"
+        },
+        "7": {
+          "day": "Jour 8",
+          "title": "Ambiko → Sona",
+          "text": "Suivez cet itinéraire avec votre guide. Le rythme et les arrêts sont adaptés à la météo, à l’accès et à votre aisance en marche.",
+          "overnight": "Sona"
+        },
+        "8": {
+          "day": "Jour 9",
+          "title": "Sona → vallées basses → Gondar",
+          "text": "Dernière marche selon les conditions, puis rendez-vous avec le véhicule et retour à Gondar par le point de sortie confirmé.",
+          "overnight": "None"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Les nuits d’hôtel à Gondar sont-elles incluses ?",
+          "a": "Les nuits avant et après le trek sont proposées séparément. Le nombre de nuits indiqué concerne l’itinéraire."
+        },
+        "1": {
+          "q": "Comment choisir un trek au Ras Dashen ?",
+          "a": "Indiquez votre expérience de marche et d’altitude ainsi que vos jours disponibles. Les routes de sommet sont exigeantes et le guide adapte le plan à la météo et au bien-être du groupe."
+        },
+        "2": {
+          "q": "Quel soutien est prévu ?",
+          "a": "Le devis confirme guide, scout, transport, équipement, repas, eau et portage adaptés à votre route. Apportez votre équipement personnel et indiquez vos besoins alimentaires à l’avance."
+        }
+      }
+    },
+    "complete-simien-circuit": {
+      "title": "Circuit complet du Simien",
+      "imageAlt": "Des rayons de soleil traversant des falaises abruptes et des vallées verdoyantes",
+      "days": "10 jours",
+      "season": "Dates et état des sentiers confirmés avant réservation",
+      "difficulty": "Très exigeant",
+      "teaser": "10 jours · Circuit complet du Simien",
+      "summary": "Un itinéraire privé dans les montagnes du Simien au départ de Gondar. Étapes de nuit prévues : Sankaber → Geech → Geech → Chenek → Ambiko → Ambiko → Sona → Mekarebia → Mulit. Les camps sont simples ; les sentiers et le soutien logistique sont confirmés avant le départ.",
+      "why": "Choisissez selon votre temps disponible, votre expérience et votre aisance en altitude. Les journées de points de vue, de faune et d’acclimatation prévues restent distinctes des transferts.",
+      "idealFor": "Randonneurs expérimentés à l’aise avec plusieurs journées en montagne et des camps simples.",
+      "notFor": "Voyageurs recherchant le confort d’un hôtel dans les camps ou des observations d’animaux garanties.",
+      "accessNote": "La météo, l’accès aux sentiers et le bien-être des voyageurs peuvent modifier le parcours. Camps, transports, équipement et tentative de sommet sont confirmés pour vos dates. Ni les animaux ni le sommet ne sont garantis.",
+      "includes": {
+        "0": "Transport privé depuis et vers Gondar, selon le devis",
+        "1": "Guide de montagne, scout requis et formalités d’entrée au parc",
+        "2": "Matériel de camping et hébergement pour les nuits de trek indiquées",
+        "3": "Cuisinier, repas au camp et soutien par mules si applicable",
+        "4": "Eau potable selon l’itinéraire confirmé",
+        "5": "Prise en charge à l’hôtel, planification et premiers secours de base"
+      },
+      "excludes": {
+        "0": "Vols internationaux et intérieurs",
+        "1": "Visa éthiopien",
+        "2": "Assurance voyage et frais médicaux personnels",
+        "3": "Alcool, achats personnels et pourboires",
+        "4": "Équipement personnel de randonnée",
+        "5": "Nuits d’hôtel supplémentaires et transferts non prévus",
+        "6": "Modifications volontaires et activités non mentionnées"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Jour 1",
+          "title": "Gondar → Sankaber",
+          "text": "Départ de Gondar vers Debark pour les formalités du parc et la rencontre avec l’équipe. Première marche selon les conditions, avec du temps pour s’adapter à l’altitude.",
+          "overnight": "Sankaber"
+        },
+        "1": {
+          "day": "Jour 2",
+          "title": "Sankaber → Geech",
+          "text": "Marche le long de l’escarpement et du paysage de Jinbar, puis montée vers le plateau de Geech. Le rythme et les arrêts sont adaptés au groupe.",
+          "overnight": "Geech"
+        },
+        "2": {
+          "day": "Jour 3",
+          "title": "Geech → Imet Gogo → Saha → Kedadit",
+          "text": "Une journée de points de vue sur les escarpements, avec du temps pour marcher, photographier et observer. La visite des points de vue dépend des conditions.",
+          "overnight": "Geech"
+        },
+        "3": {
+          "day": "Jour 4",
+          "title": "Geech → Chenek",
+          "text": "Traversez les hauts escarpements vers Chenek, entre falaises et vallées profondes. Le guide choisit la route selon les conditions.",
+          "overnight": "Chenek"
+        },
+        "4": {
+          "day": "Jour 5",
+          "title": "Chenek → Bwahit → Ambiko",
+          "text": "Montée vers les hauts paysages de Bwahit. Le terrain devient plus élevé et exposé ; la route dépend de la météo et de votre forme.",
+          "overnight": "Ambiko"
+        },
+        "5": {
+          "day": "Jour 6",
+          "title": "Tentative au sommet du Ras Dashen → Ambiko",
+          "text": "Départ très matinal pour une tentative exigeante au Ras Dashen. Le guide décide selon la météo et votre état ; retour à Ambiko après la marche.",
+          "overnight": "Ambiko"
+        },
+        "6": {
+          "day": "Jour 7",
+          "title": "Ambiko → Sona",
+          "text": "Suivez cet itinéraire avec votre guide. Le rythme et les arrêts sont adaptés à la météo, à l’accès et à votre aisance en marche.",
+          "overnight": "Sona"
+        },
+        "7": {
+          "day": "Jour 8",
+          "title": "Sona → Mekarebia",
+          "text": "Suivez cet itinéraire avec votre guide. Le rythme et les arrêts sont adaptés à la météo, à l’accès et à votre aisance en marche.",
+          "overnight": "Mekarebia"
+        },
+        "8": {
+          "day": "Jour 9",
+          "title": "Mekarebia → Mulit",
+          "text": "Suivez cet itinéraire avec votre guide. Le rythme et les arrêts sont adaptés à la météo, à l’accès et à votre aisance en marche.",
+          "overnight": "Mulit"
+        },
+        "9": {
+          "day": "Jour 10",
+          "title": "Mulit → point de sortie → Gondar",
+          "text": "Dernière marche selon les conditions, puis rendez-vous avec le véhicule et retour à Gondar par le point de sortie confirmé.",
+          "overnight": "None"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Les nuits d’hôtel à Gondar sont-elles incluses ?",
+          "a": "Les nuits avant et après le trek sont proposées séparément. Le nombre de nuits indiqué concerne l’itinéraire."
+        },
+        "1": {
+          "q": "Comment choisir un trek au Ras Dashen ?",
+          "a": "Indiquez votre expérience de marche et d’altitude ainsi que vos jours disponibles. Les routes de sommet sont exigeantes et le guide adapte le plan à la météo et au bien-être du groupe."
+        },
+        "2": {
+          "q": "Quel soutien est prévu ?",
+          "a": "Le devis confirme guide, scout, transport, équipement, repas, eau et portage adaptés à votre route. Apportez votre équipement personnel et indiquez vos besoins alimentaires à l’avance."
+        }
+      }
+    },
+    "simien-ultimate": {
+      "title": "La grande traversée du Simien",
+      "imageAlt": "Des pentes herbeuses et des arbres dominant des vallées successives",
+      "days": "11 jours",
+      "season": "Dates et état des sentiers confirmés avant réservation",
+      "difficulty": "Très exigeant",
+      "teaser": "11 jours · La grande traversée du Simien",
+      "summary": "Un itinéraire privé dans les montagnes du Simien au départ de Gondar. Étapes de nuit prévues : Sankaber → Geech → Geech → Chenek → Ambiko → Ambiko → Ambiko → Sona → Mekarebia → Mulit. Les camps sont simples ; les sentiers et le soutien logistique sont confirmés avant le départ.",
+      "why": "Choisissez selon votre temps disponible, votre expérience et votre aisance en altitude. Les journées de points de vue, de faune et d’acclimatation prévues restent distinctes des transferts.",
+      "idealFor": "Randonneurs expérimentés à l’aise avec plusieurs journées en montagne et des camps simples.",
+      "notFor": "Voyageurs recherchant le confort d’un hôtel dans les camps ou des observations d’animaux garanties.",
+      "accessNote": "La météo, l’accès aux sentiers et le bien-être des voyageurs peuvent modifier le parcours. Camps, transports, équipement et tentative de sommet sont confirmés pour vos dates. Ni les animaux ni le sommet ne sont garantis.",
+      "includes": {
+        "0": "Transport privé depuis et vers Gondar, selon le devis",
+        "1": "Guide de montagne, scout requis et formalités d’entrée au parc",
+        "2": "Matériel de camping et hébergement pour les nuits de trek indiquées",
+        "3": "Cuisinier, repas au camp et soutien par mules si applicable",
+        "4": "Eau potable selon l’itinéraire confirmé",
+        "5": "Prise en charge à l’hôtel, planification et premiers secours de base"
+      },
+      "excludes": {
+        "0": "Vols internationaux et intérieurs",
+        "1": "Visa éthiopien",
+        "2": "Assurance voyage et frais médicaux personnels",
+        "3": "Alcool, achats personnels et pourboires",
+        "4": "Équipement personnel de randonnée",
+        "5": "Nuits d’hôtel supplémentaires et transferts non prévus",
+        "6": "Modifications volontaires et activités non mentionnées"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Jour 1",
+          "title": "Gondar → Sankaber",
+          "text": "Départ de Gondar vers Debark pour les formalités du parc et la rencontre avec l’équipe. Première marche selon les conditions, avec du temps pour s’adapter à l’altitude.",
+          "overnight": "Sankaber"
+        },
+        "1": {
+          "day": "Jour 2",
+          "title": "Sankaber → Geech",
+          "text": "Marche le long de l’escarpement et du paysage de Jinbar, puis montée vers le plateau de Geech. Le rythme et les arrêts sont adaptés au groupe.",
+          "overnight": "Geech"
+        },
+        "2": {
+          "day": "Jour 3",
+          "title": "Imet Gogo → Saha → Kedadit → Geech",
+          "text": "Une journée de points de vue sur les escarpements, avec du temps pour marcher, photographier et observer. La visite des points de vue dépend des conditions.",
+          "overnight": "Geech"
+        },
+        "3": {
+          "day": "Jour 4",
+          "title": "Geech → Chenek",
+          "text": "Traversez les hauts escarpements vers Chenek, entre falaises et vallées profondes. Le guide choisit la route selon les conditions.",
+          "overnight": "Chenek"
+        },
+        "4": {
+          "day": "Jour 5",
+          "title": "Chenek → Bwahit → Ambiko",
+          "text": "Montée vers les hauts paysages de Bwahit. Le terrain devient plus élevé et exposé ; la route dépend de la météo et de votre forme.",
+          "overnight": "Ambiko"
+        },
+        "5": {
+          "day": "Jour 6",
+          "title": "Acclimatation autour d’Ambiko",
+          "text": "Journée d’acclimatation : repos, hydratation, promenades courtes selon les conditions et préparation de la tentative de sommet.",
+          "overnight": "Ambiko"
+        },
+        "6": {
+          "day": "Jour 7",
+          "title": "Tentative au sommet du Ras Dashen",
+          "text": "Départ très matinal pour une tentative exigeante au Ras Dashen. Le guide décide selon la météo et votre état ; retour à Ambiko après la marche.",
+          "overnight": "Ambiko"
+        },
+        "7": {
+          "day": "Jour 8",
+          "title": "Ambiko → Sona",
+          "text": "Suivez cet itinéraire avec votre guide. Le rythme et les arrêts sont adaptés à la météo, à l’accès et à votre aisance en marche.",
+          "overnight": "Sona"
+        },
+        "8": {
+          "day": "Jour 9",
+          "title": "Sona → Mekarebia",
+          "text": "Suivez cet itinéraire avec votre guide. Le rythme et les arrêts sont adaptés à la météo, à l’accès et à votre aisance en marche.",
+          "overnight": "Mekarebia"
+        },
+        "9": {
+          "day": "Jour 10",
+          "title": "Mekarebia → Mulit",
+          "text": "Suivez cet itinéraire avec votre guide. Le rythme et les arrêts sont adaptés à la météo, à l’accès et à votre aisance en marche.",
+          "overnight": "Mulit"
+        },
+        "10": {
+          "day": "Jour 11",
+          "title": "Mulit → Aderkay / sortie → Gondar",
+          "text": "Dernière marche selon les conditions, puis rendez-vous avec le véhicule et retour à Gondar par le point de sortie confirmé.",
+          "overnight": "None"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Les nuits d’hôtel à Gondar sont-elles incluses ?",
+          "a": "Les nuits avant et après le trek sont proposées séparément. Le nombre de nuits indiqué concerne l’itinéraire."
+        },
+        "1": {
+          "q": "Comment choisir un trek au Ras Dashen ?",
+          "a": "Indiquez votre expérience de marche et d’altitude ainsi que vos jours disponibles. Les routes de sommet sont exigeantes et le guide adapte le plan à la météo et au bien-être du groupe."
+        },
+        "2": {
+          "q": "Quel soutien est prévu ?",
+          "a": "Le devis confirme guide, scout, transport, équipement, repas, eau et portage adaptés à votre route. Apportez votre équipement personnel et indiquez vos besoins alimentaires à l’avance."
+        }
+      }
+    },
+    "simien-mountains-grand-trek": {
+      "title": "Grand trek des montagnes du Simien",
+      "imageAlt": "Une troupe de géladas sur un plateau herbeux au pied de falaises",
+      "days": "12 jours",
+      "season": "Dates et état des sentiers confirmés avant réservation",
+      "difficulty": "Très exigeant",
+      "teaser": "12 jours · Grand trek des montagnes du Simien",
+      "summary": "Un itinéraire privé dans les montagnes du Simien au départ de Gondar. Étapes de nuit prévues : Sankaber → Sankaber → Geech → Geech → Chenek → Chenek → Ambiko → Ambiko → Ambiko → Sona → Mulit. Les camps sont simples ; les sentiers et le soutien logistique sont confirmés avant le départ.",
+      "why": "Choisissez selon votre temps disponible, votre expérience et votre aisance en altitude. Les journées de points de vue, de faune et d’acclimatation prévues restent distinctes des transferts.",
+      "idealFor": "Randonneurs expérimentés à l’aise avec plusieurs journées en montagne et des camps simples.",
+      "notFor": "Voyageurs recherchant le confort d’un hôtel dans les camps ou des observations d’animaux garanties.",
+      "accessNote": "La météo, l’accès aux sentiers et le bien-être des voyageurs peuvent modifier le parcours. Camps, transports, équipement et tentative de sommet sont confirmés pour vos dates. Ni les animaux ni le sommet ne sont garantis.",
+      "includes": {
+        "0": "Transport privé depuis et vers Gondar, selon le devis",
+        "1": "Guide de montagne, scout requis et formalités d’entrée au parc",
+        "2": "Matériel de camping et hébergement pour les nuits de trek indiquées",
+        "3": "Cuisinier, repas au camp et soutien par mules si applicable",
+        "4": "Eau potable selon l’itinéraire confirmé",
+        "5": "Prise en charge à l’hôtel, planification et premiers secours de base"
+      },
+      "excludes": {
+        "0": "Vols internationaux et intérieurs",
+        "1": "Visa éthiopien",
+        "2": "Assurance voyage et frais médicaux personnels",
+        "3": "Alcool, achats personnels et pourboires",
+        "4": "Équipement personnel de randonnée",
+        "5": "Nuits d’hôtel supplémentaires et transferts non prévus",
+        "6": "Modifications volontaires et activités non mentionnées"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Jour 1",
+          "title": "Gondar → Debark → Sankaber",
+          "text": "Départ de Gondar vers Debark pour les formalités du parc et la rencontre avec l’équipe. Première marche selon les conditions, avec du temps pour s’adapter à l’altitude.",
+          "overnight": "Sankaber"
+        },
+        "1": {
+          "day": "Jour 2",
+          "title": "Exploration autour de Sankaber",
+          "text": "Prenez le temps d’observer le paysage et de chercher géladas et bouquetins de Walia à distance respectueuse. Les observations dépendent des conditions.",
+          "overnight": "Sankaber"
+        },
+        "2": {
+          "day": "Jour 3",
+          "title": "Sankaber → Jinbar → Geech",
+          "text": "Marche le long de l’escarpement et du paysage de Jinbar, puis montée vers le plateau de Geech. Le rythme et les arrêts sont adaptés au groupe.",
+          "overnight": "Geech"
+        },
+        "3": {
+          "day": "Jour 4",
+          "title": "Geech → Imet Gogo → Saha → Kedadit → Geech",
+          "text": "Une journée de points de vue sur les escarpements, avec du temps pour marcher, photographier et observer. La visite des points de vue dépend des conditions.",
+          "overnight": "Geech"
+        },
+        "4": {
+          "day": "Jour 5",
+          "title": "Geech → Chenek",
+          "text": "Traversez les hauts escarpements vers Chenek, entre falaises et vallées profondes. Le guide choisit la route selon les conditions.",
+          "overnight": "Chenek"
+        },
+        "5": {
+          "day": "Jour 6",
+          "title": "Chenek : faune et acclimatation",
+          "text": "Journée d’acclimatation : repos, hydratation, promenades courtes selon les conditions et préparation de la tentative de sommet.",
+          "overnight": "Chenek"
+        },
+        "6": {
+          "day": "Jour 7",
+          "title": "Chenek → Bwahit → Ambiko",
+          "text": "Montée vers les hauts paysages de Bwahit. Le terrain devient plus élevé et exposé ; la route dépend de la météo et de votre forme.",
+          "overnight": "Ambiko"
+        },
+        "7": {
+          "day": "Jour 8",
+          "title": "Acclimatation à Ambiko",
+          "text": "Journée d’acclimatation : repos, hydratation, promenades courtes selon les conditions et préparation de la tentative de sommet.",
+          "overnight": "Ambiko"
+        },
+        "8": {
+          "day": "Jour 9",
+          "title": "Tentative au sommet du Ras Dashen",
+          "text": "Départ très matinal pour une tentative exigeante au Ras Dashen. Le guide décide selon la météo et votre état ; retour à Ambiko après la marche.",
+          "overnight": "Ambiko"
+        },
+        "9": {
+          "day": "Jour 10",
+          "title": "Ambiko → Sona",
+          "text": "Suivez cet itinéraire avec votre guide. Le rythme et les arrêts sont adaptés à la météo, à l’accès et à votre aisance en marche.",
+          "overnight": "Sona"
+        },
+        "10": {
+          "day": "Jour 11",
+          "title": "Sona → Mekarebia → Mulit secteur",
+          "text": "Suivez cet itinéraire avec votre guide. Le rythme et les arrêts sont adaptés à la météo, à l’accès et à votre aisance en marche.",
+          "overnight": "Mulit"
+        },
+        "11": {
+          "day": "Jour 12",
+          "title": "Mulit → sortie → Gondar",
+          "text": "Dernière marche selon les conditions, puis rendez-vous avec le véhicule et retour à Gondar par le point de sortie confirmé.",
+          "overnight": "None"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Les nuits d’hôtel à Gondar sont-elles incluses ?",
+          "a": "Les nuits avant et après le trek sont proposées séparément. Le nombre de nuits indiqué concerne l’itinéraire."
+        },
+        "1": {
+          "q": "Comment choisir un trek au Ras Dashen ?",
+          "a": "Indiquez votre expérience de marche et d’altitude ainsi que vos jours disponibles. Les routes de sommet sont exigeantes et le guide adapte le plan à la météo et au bien-être du groupe."
+        },
+        "2": {
+          "q": "Quel soutien est prévu ?",
+          "a": "Le devis confirme guide, scout, transport, équipement, repas, eau et portage adaptés à votre route. Apportez votre équipement personnel et indiquez vos besoins alimentaires à l’avance."
+        }
+      }
+    },
+    "simien-to-lalibela-grand-trek": {
+      "title": "Grand trek du Simien à Lalibela",
+      "imageAlt": "Un randonneur avec un sac orange face à un haut piton rocheux et aux vallées",
+      "days": "13 jours",
+      "season": "Dates et état des sentiers confirmés avant réservation",
+      "difficulty": "Exigeant",
+      "teaser": "13 jours · Grand trek du Simien à Lalibela",
+      "summary": "Un itinéraire privé dans les montagnes du Simien au départ de Gondar. Étapes de nuit prévues : Sankaber — camp → Geech — camp → Geech — camp → Chenek — camp → Ambiko — camp → Ambiko — camp → Beyeda → Zhukzuke → Sekota → Lalibela → Lalibela → Lalibela. Les camps sont simples ; les sentiers et le soutien logistique sont confirmés avant le départ.",
+      "why": "Choisissez selon votre temps disponible, votre expérience et votre aisance en altitude. Les journées de points de vue, de faune et d’acclimatation prévues restent distinctes des transferts.",
+      "idealFor": "Randonneurs expérimentés à l’aise avec plusieurs journées en montagne et des camps simples.",
+      "notFor": "Voyageurs recherchant le confort d’un hôtel dans les camps ou des observations d’animaux garanties.",
+      "accessNote": "La météo, l’accès aux sentiers et le bien-être des voyageurs peuvent modifier le parcours. Camps, transports, équipement et tentative de sommet sont confirmés pour vos dates. Ni les animaux ni le sommet ne sont garantis.",
+      "includes": {
+        "0": "Transport privé de Gondar au Simien et vers Lalibela, selon le devis",
+        "1": "Guide de montagne, scout requis et formalités d’entrée au parc",
+        "2": "Matériel de camping et hébergement pour les nuits de trek indiquées",
+        "3": "Cuisinier, repas au camp et soutien par mules si applicable",
+        "4": "Eau potable selon l’itinéraire confirmé",
+        "5": "Prise en charge à l’hôtel, planification et premiers secours de base",
+        "6": "Hébergement des hauts plateaux et hôtels à Sekota et Lalibela selon le devis",
+        "7": "Guide local à Lalibela selon l’itinéraire confirmé"
+      },
+      "excludes": {
+        "0": "Vols internationaux et intérieurs",
+        "1": "Visa éthiopien",
+        "2": "Assurance voyage et frais médicaux personnels",
+        "3": "Alcool, achats personnels et pourboires",
+        "4": "Équipement personnel de randonnée",
+        "5": "Nuits d’hôtel supplémentaires et transferts non prévus",
+        "6": "Modifications volontaires et activités non mentionnées",
+        "7": "Sac de couchage personnel si non fourni, blanchisserie et frais photo/vidéo",
+        "8": "Évacuation ou secours non couverts par l’assurance"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Jour 1",
+          "title": "Gondar → Debark → Sankaber",
+          "text": "Départ de Gondar vers Debark pour les formalités du parc et la rencontre avec l’équipe. Première marche selon les conditions, avec du temps pour s’adapter à l’altitude.",
+          "overnight": "Sankaber — camp",
+          "meals": "Déjeuner et dîner"
+        },
+        "1": {
+          "day": "Jour 2",
+          "title": "Sankaber → Geech",
+          "text": "Marche le long de l’escarpement et du paysage de Jinbar, puis montée vers le plateau de Geech. Le rythme et les arrêts sont adaptés au groupe.",
+          "overnight": "Geech — camp",
+          "meals": "Petit-déjeuner, déjeuner et dîner"
+        },
+        "2": {
+          "day": "Jour 3",
+          "title": "Geech → Imet Gogo → Geech",
+          "text": "Une journée de points de vue sur les escarpements, avec du temps pour marcher, photographier et observer. La visite des points de vue dépend des conditions.",
+          "overnight": "Geech — camp",
+          "meals": "Petit-déjeuner, déjeuner et dîner"
+        },
+        "3": {
+          "day": "Jour 4",
+          "title": "Geech → Chenek",
+          "text": "Traversez les hauts escarpements vers Chenek, entre falaises et vallées profondes. Le guide choisit la route selon les conditions.",
+          "overnight": "Chenek — camp",
+          "meals": "Petit-déjeuner, déjeuner et dîner"
+        },
+        "4": {
+          "day": "Jour 5",
+          "title": "Chenek → Bwahit → Ambiko",
+          "text": "Montée vers les hauts paysages de Bwahit. Le terrain devient plus élevé et exposé ; la route dépend de la météo et de votre forme.",
+          "overnight": "Ambiko — camp",
+          "meals": "Petit-déjeuner, déjeuner et dîner"
+        },
+        "5": {
+          "day": "Jour 6",
+          "title": "Tentative au sommet du Ras Dashen → Ambiko",
+          "text": "Départ très matinal pour une tentative exigeante au Ras Dashen. Le guide décide selon la météo et votre état ; retour à Ambiko après la marche.",
+          "overnight": "Ambiko — camp",
+          "meals": "Petit-déjeuner, déjeuner à emporter et dîner"
+        },
+        "6": {
+          "day": "Jour 7",
+          "title": "Ambiko → Beyeda",
+          "text": "Quittez le cœur des montagnes pour la région de Beyeda. La liaison de marche et de transfert ainsi que l’hébergement simple sont confirmés localement.",
+          "overnight": "Beyeda",
+          "meals": "Petit-déjeuner, déjeuner et dîner"
+        },
+        "7": {
+          "day": "Jour 8",
+          "title": "Beyeda → Zhukzuke",
+          "text": "Continuez dans les hauts plateaux isolés vers Zhukzuke, entre paysages ruraux et hébergement simple.",
+          "overnight": "Zhukzuke",
+          "meals": "Petit-déjeuner, déjeuner et dîner"
+        },
+        "8": {
+          "day": "Jour 9",
+          "title": "Zhukzuke → Sekota",
+          "text": "Rejoignez Sekota par la liaison confirmée. Après les nuits de camp, une nuit en hôtel ou pension offre une pause.",
+          "overnight": "Sekota",
+          "meals": "Petit-déjeuner, déjeuner et dîner"
+        },
+        "9": {
+          "day": "Jour 10",
+          "title": "Sekota → Lalibela",
+          "text": "Continuez vers Lalibela, où le voyage passe de la montagne aux églises taillées dans la roche.",
+          "overnight": "Lalibela",
+          "meals": "Petit-déjeuner, déjeuner et dîner"
+        },
+        "10": {
+          "day": "Jour 11",
+          "title": "Lalibela",
+          "text": "Visitez les églises taillées dans la roche avec un guide local. Ce sont des lieux religieux vivants : respectez les consignes de visite et de photographie.",
+          "overnight": "Lalibela",
+          "meals": "Petit-déjeuner, déjeuner et dîner"
+        },
+        "11": {
+          "day": "Jour 12",
+          "title": "Lalibela",
+          "text": "Une deuxième journée à Lalibela permet de ralentir et de découvrir davantage selon le programme confirmé.",
+          "overnight": "Lalibela",
+          "meals": "Petit-déjeuner, déjeuner et dîner"
+        },
+        "12": {
+          "day": "Jour 13",
+          "title": "Lalibela",
+          "text": "Dernière matinée à Lalibela. Départ et transfert aéroport selon le devis confirmé.",
+          "overnight": "None",
+          "meals": "Petit-déjeuner"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Comment choisir un trek au Ras Dashen ?",
+          "a": "Indiquez votre expérience de marche et d’altitude ainsi que vos jours disponibles. Les routes de sommet sont exigeantes et le guide adapte le plan à la météo et au bien-être du groupe."
+        },
+        "1": {
+          "q": "Quel soutien est prévu ?",
+          "a": "Le devis confirme guide, scout, transport, équipement, repas, eau et portage adaptés à votre route. Apportez votre équipement personnel et indiquez vos besoins alimentaires à l’avance."
+        }
+      }
+    },
+    "simien-mountains-grand-expedition": {
+      "title": "Grande expédition dans les montagnes du Simien",
+      "imageAlt": "Un homme tenant un bâton en bois sur une crête rocheuse",
+      "days": "15 jours",
+      "season": "Dates et état des sentiers confirmés avant réservation",
+      "difficulty": "Très exigeant",
+      "teaser": "15 jours · Grande expédition dans les montagnes du Simien",
+      "summary": "Un itinéraire privé dans les montagnes du Simien au départ de Gondar. Étapes de nuit prévues : Sankaber → Sankaber → Geech → Geech → Chenek → Chenek → Ambiko → Ambiko → Ambiko → Ambiko → Sona → Mekarebia → Mulit → Aderkay ou hébergement local selon la route. Les camps sont simples ; les sentiers et le soutien logistique sont confirmés avant le départ.",
+      "why": "Choisissez selon votre temps disponible, votre expérience et votre aisance en altitude. Les journées de points de vue, de faune et d’acclimatation prévues restent distinctes des transferts.",
+      "idealFor": "Randonneurs expérimentés à l’aise avec plusieurs journées en montagne et des camps simples.",
+      "notFor": "Voyageurs recherchant le confort d’un hôtel dans les camps ou des observations d’animaux garanties.",
+      "accessNote": "La météo, l’accès aux sentiers et le bien-être des voyageurs peuvent modifier le parcours. Camps, transports, équipement et tentative de sommet sont confirmés pour vos dates. Ni les animaux ni le sommet ne sont garantis.",
+      "includes": {
+        "0": "Transport privé depuis et vers Gondar, selon le devis",
+        "1": "Guide de montagne, scout requis et formalités d’entrée au parc",
+        "2": "Matériel de camping et hébergement pour les nuits de trek indiquées",
+        "3": "Cuisinier, repas au camp et soutien par mules si applicable",
+        "4": "Eau potable selon l’itinéraire confirmé",
+        "5": "Prise en charge à l’hôtel, planification et premiers secours de base"
+      },
+      "excludes": {
+        "0": "Vols internationaux et intérieurs",
+        "1": "Visa éthiopien",
+        "2": "Assurance voyage et frais médicaux personnels",
+        "3": "Alcool, achats personnels et pourboires",
+        "4": "Équipement personnel de randonnée",
+        "5": "Nuits d’hôtel supplémentaires et transferts non prévus",
+        "6": "Modifications volontaires et activités non mentionnées"
+      },
+      "itinerary": {
+        "0": {
+          "day": "Jour 1",
+          "title": "Gondar → Debark → Sankaber",
+          "text": "Départ de Gondar vers Debark pour les formalités du parc et la rencontre avec l’équipe. Première marche selon les conditions, avec du temps pour s’adapter à l’altitude.",
+          "overnight": "Sankaber"
+        },
+        "1": {
+          "day": "Jour 2",
+          "title": "Exploration autour de Sankaber",
+          "text": "Prenez le temps d’observer le paysage et de chercher géladas et bouquetins de Walia à distance respectueuse. Les observations dépendent des conditions.",
+          "overnight": "Sankaber"
+        },
+        "2": {
+          "day": "Jour 3",
+          "title": "Sankaber → Jinbar → Geech",
+          "text": "Marche le long de l’escarpement et du paysage de Jinbar, puis montée vers le plateau de Geech. Le rythme et les arrêts sont adaptés au groupe.",
+          "overnight": "Geech"
+        },
+        "3": {
+          "day": "Jour 4",
+          "title": "Points de vue autour de Geech",
+          "text": "Une journée de points de vue sur les escarpements, avec du temps pour marcher, photographier et observer. La visite des points de vue dépend des conditions.",
+          "overnight": "Geech"
+        },
+        "4": {
+          "day": "Jour 5",
+          "title": "Geech → Chenek",
+          "text": "Traversez les hauts escarpements vers Chenek, entre falaises et vallées profondes. Le guide choisit la route selon les conditions.",
+          "overnight": "Chenek"
+        },
+        "5": {
+          "day": "Jour 6",
+          "title": "Chenek : observation de la faune",
+          "text": "Prenez le temps d’observer le paysage et de chercher géladas et bouquetins de Walia à distance respectueuse. Les observations dépendent des conditions.",
+          "overnight": "Chenek"
+        },
+        "6": {
+          "day": "Jour 7",
+          "title": "Chenek → Bwahit → Ambiko",
+          "text": "Montée vers les hauts paysages de Bwahit. Le terrain devient plus élevé et exposé ; la route dépend de la météo et de votre forme.",
+          "overnight": "Ambiko"
+        },
+        "7": {
+          "day": "Jour 8",
+          "title": "Acclimatation à Ambiko",
+          "text": "Journée d’acclimatation : repos, hydratation, promenades courtes selon les conditions et préparation de la tentative de sommet.",
+          "overnight": "Ambiko"
+        },
+        "8": {
+          "day": "Jour 9",
+          "title": "Tentative au sommet du Ras Dashen",
+          "text": "Départ très matinal pour une tentative exigeante au Ras Dashen. Le guide décide selon la météo et votre état ; retour à Ambiko après la marche.",
+          "overnight": "Ambiko"
+        },
+        "9": {
+          "day": "Jour 10",
+          "title": "Repos à Ambiko",
+          "text": "Une journée plus lente après le sommet, avec repos et promenades adaptées autour d’Ambiko.",
+          "overnight": "Ambiko"
+        },
+        "10": {
+          "day": "Jour 11",
+          "title": "Ambiko → Sona",
+          "text": "Suivez cet itinéraire avec votre guide. Le rythme et les arrêts sont adaptés à la météo, à l’accès et à votre aisance en marche.",
+          "overnight": "Sona"
+        },
+        "11": {
+          "day": "Jour 12",
+          "title": "Sona → Mekarebia",
+          "text": "Suivez cet itinéraire avec votre guide. Le rythme et les arrêts sont adaptés à la météo, à l’accès et à votre aisance en marche.",
+          "overnight": "Mekarebia"
+        },
+        "12": {
+          "day": "Jour 13",
+          "title": "Mekarebia → Mulit",
+          "text": "Suivez cet itinéraire avec votre guide. Le rythme et les arrêts sont adaptés à la météo, à l’accès et à votre aisance en marche.",
+          "overnight": "Mulit"
+        },
+        "13": {
+          "day": "Jour 14",
+          "title": "Mulit → Aderkay",
+          "text": "Suivez cet itinéraire avec votre guide. Le rythme et les arrêts sont adaptés à la météo, à l’accès et à votre aisance en marche.",
+          "overnight": "Aderkay ou hébergement local selon la route"
+        },
+        "14": {
+          "day": "Jour 15",
+          "title": "Aderkay → Gondar",
+          "text": "Dernière marche selon les conditions, puis rendez-vous avec le véhicule et retour à Gondar par le point de sortie confirmé.",
+          "overnight": "None"
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Les nuits d’hôtel à Gondar sont-elles incluses ?",
+          "a": "Les nuits avant et après le trek sont proposées séparément. Le nombre de nuits indiqué concerne l’itinéraire."
+        },
+        "1": {
+          "q": "Comment choisir un trek au Ras Dashen ?",
+          "a": "Indiquez votre expérience de marche et d’altitude ainsi que vos jours disponibles. Les routes de sommet sont exigeantes et le guide adapte le plan à la météo et au bien-être du groupe."
+        },
+        "2": {
+          "q": "Quel soutien est prévu ?",
+          "a": "Le devis confirme guide, scout, transport, équipement, repas, eau et portage adaptés à votre route. Apportez votre équipement personnel et indiquez vos besoins alimentaires à l’avance."
         }
       }
     }

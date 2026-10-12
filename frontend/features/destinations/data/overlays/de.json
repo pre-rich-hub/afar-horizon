@@ -735,6 +735,233 @@
         "1": "Von dort folgen Gondar, die Simien, Axum, Gheralta und Lalibela, mit dem Danakil als der anderen Welt unter dem Meeresspiegel. Wir können es rund um Geschichte, Kultur, Berge, Wüste, Fotografie, Glauben, Essen, Menschen oder Geologie aufbauen und dabei Inlandsflüge nutzen, die uns Tage auf der Straße ersparen.",
         "2": "Wenn Sie sich zwischen Danakil und Simien bewegen, gelangen Sie innerhalb weniger Tage von der Hitze und Dehydrierung in die Höhe und in die Kälte, daher planen wir Ruhe und Tempo genauso sorgfältig wie die Route."
       }
+    },
+    "afar-people": {
+      "name": "Afar-Bevölkerung",
+      "tag": "Menschen und Kultur",
+      "headline": "Die Menschen am Horizont",
+      "teaser": "Eine Heimat geprägt von Bewegung, Hirtenleben und Wüstenwissen.",
+      "intro": "Afar ist eine Heimat. Wer die Landschaft verstehen möchte, muss den Menschen zuhören: Alltag, Hirtentraditionen, Gastfreundschaft und örtliches Wissen gehören ins Zentrum.",
+      "imageAlt": "Menschen auf trockenem, sonnigem Gelände",
+      "duration": "Im Rahmen einer privaten Afarreise",
+      "altitude": "Je nach bestätigter Route",
+      "bestTime": "Reisedaten und Zugang werden vor der Abreise bestätigt",
+      "highlights": {
+        "0": "Hirtenleben und Wüstenanpassung",
+        "1": "Salzwirtschaft und örtliches Wissen",
+        "2": "Gastfreundschaft und Geschichten der Gemeinschaften",
+        "3": "Respektvolle Begegnungen mit örtlichen Guides"
+      },
+      "paragraphs": {
+        "0": "Wasser, Bewegung und Lebensunterhalt prägen den Alltag. Lokale Guides erklären diese Zusammenhänge. Begegnungen finden nur statt, wenn die Beteiligten sie willkommen heißen.",
+        "1": "Jedes Foto beginnt mit einer Bitte um Erlaubnis. Respektieren Sie Familienleben und private Räume. Begegnungen werden nicht inszeniert und Menschen nicht als Fotorequisiten behandelt."
+      },
+      "sections": {
+        "0": {
+          "title": "Vor dem Fotografieren zuhören",
+          "text": "Jedes Foto beginnt mit einer Bitte um Erlaubnis. Respektieren Sie Familienleben und private Räume. Begegnungen werden nicht inszeniert und Menschen nicht als Fotorequisiten behandelt."
+        },
+        "1": {
+          "title": "Mit örtlichem Wissen reisen",
+          "text": "Nennen Sie Ihre Interessen vorher. Hirtenleben, Salzarbeit und die Verfügbarkeit der Gemeinschaften ändern sich; bestimmte Begegnungen sind nicht garantiert."
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Sind Begegnungen garantiert?",
+          "a": "Nein. Sie werden nur organisiert, wenn sie willkommen sind und zur bestätigten Route passen."
+        },
+        "1": {
+          "q": "Darf ich Menschen fotografieren?",
+          "a": "Fragen Sie zuerst, respektieren Sie die Antwort und folgen Sie örtlichen Hinweisen. Ein Besuch ist keine Fotoerlaubnis."
+        }
+      },
+      "seoTitle": "Afar-Bevölkerung | Afar Horizon",
+      "seoDescription": "Eine Heimat geprägt von Bewegung, Hirtenleben und Wüstenwissen."
+    },
+    "salt-caravans": {
+      "name": "Salzkarawanen",
+      "tag": "Salzkultur",
+      "headline": "Die Straße des Salzes",
+      "teaser": "Abbau, Transport und Handel verbinden die Salzebene mit dem Hochland.",
+      "intro": "Die Salzlandschaft ist ein Arbeitsort. Ihre Geschichte verbindet Abbau, Transport, Kamele, Arbeit und die Gemeinschaften, die von diesem Handel leben.",
+      "imageAlt": "Beladene Kamele folgen einem Führer durch flaches Wasser auf einer Salzebene",
+      "duration": "Ein Halt während einer Danakilexpedition",
+      "altitude": "Je nach Abschnitt der Salzhandelsroute",
+      "bestTime": "Reisedaten und Zugang werden vor der Abreise bestätigt",
+      "highlights": {
+        "0": "Salzabbau, wo gearbeitet wird",
+        "1": "Kameltransport, wenn Karawanen unterwegs sind",
+        "2": "Handel zwischen Wüste und Hochland",
+        "3": "Wandel von Lebensunterhalt und Transport"
+      },
+      "paragraphs": {
+        "0": "Eine Karawane ist mehr als eine Reihe von Kamelen. Sie erzählt von Arbeit und menschlichen Verbindungen zwischen Wüste und Hochland. Der Guide erklärt diesen Zusammenhang.",
+        "1": "Arbeit und Transportformen ändern sich. Karawanen sind nicht garantiert; Arbeit wird nicht unterbrochen und Fotoszenen werden nicht inszeniert. Fragen Sie um Erlaubnis und halten Sie Abstand."
+      },
+      "sections": {
+        "0": {
+          "title": "Arbeit respektvoll beobachten",
+          "text": "Arbeit und Transportformen ändern sich. Karawanen sind nicht garantiert; Arbeit wird nicht unterbrochen und Fotoszenen werden nicht inszeniert. Fragen Sie um Erlaubnis und halten Sie Abstand."
+        },
+        "1": {
+          "title": "Den Besuch in die Expedition einplanen",
+          "text": "Der Besuch gehört zur bestätigten Route. Zeitplanung, Zugang und örtliche Arbeit bestimmen, was zu sehen ist."
+        }
+      },
+      "faqs": {
+        "0": {
+          "q": "Werde ich Kamelkarawanen sehen?",
+          "a": "Das hängt von Arbeit und Zeitpunkt ab. Sichtungen sind nicht garantiert."
+        },
+        "1": {
+          "q": "Ist dies eine eigene Abfahrt?",
+          "a": "Diese Seite beschreibt ein Erlebnis im Salzland. Besprechen Sie es bei der Planung Ihrer Expedition."
+        }
+      },
+      "seoTitle": "Salzkarawanen | Afar Horizon",
+      "seoDescription": "Abbau, Transport und Handel verbinden die Salzebene mit dem Hochland."
+    },
+    "abune-yemata-guh": {
+      "headline": "Die Kirche über dem Felsen",
+      "teaser": "Ein lebendiger religiöser Ort nach einem anspruchsvollen, ausgesetzten Felszustieg.",
+      "intro": "Abune Yemata Guh — Diese Kirche verbindet Berglandschaft, religiöses Erbe und geführtes Wandern. Nehmen Sie sich Zeit für den Ort und seine Menschen ebenso wie für die Aussicht.",
+      "imageAlt": "Sandsteintürme über einem Tal bei Sonnenuntergang",
+      "tag": "Felsenkirche",
+      "bestTime": "Reisedaten und Zugang werden vor der Abreise bestätigt",
+      "duration": "Geführter Ausflug ab Gheralta",
+      "altitude": "Berglage; Zustieg wird mit dem Guide bestätigt",
+      "highlights": {
+        "0": "Geführtes Wandern in Gheralta",
+        "1": "Lebendiges religiöses Erbe und örtlicher Kontext",
+        "2": "Sandsteinaussichten und Fotos mit Erlaubnis",
+        "3": "Route passend zu Können und Bedingungen"
+      },
+      "paragraphs": {
+        "0": "Dies ist kein einfacher Spaziergang. Ausgesetzte Stellen und Kletterpassagen können den Besuch ungeeignet machen. Besprechen Sie Mobilität und Höhenverträglichkeit vor der Buchung.",
+        "1": "Dies sind lebendige religiöse Orte. Kleiden Sie sich angemessen, folgen Sie örtlichen Regeln und fragen Sie vor Fotos um Erlaubnis. Zugang und Besuche hängen von bestätigten Vereinbarungen ab."
+      },
+      "sections": {
+        "0": {
+          "title": "Den Zustieg verstehen",
+          "text": "Die Wanderung gehört zum Besuch. Besprechen Sie Steigungen, ausgesetzte Stellen und Ihre Höhenverträglichkeit vor der Kirchenwahl. Der Guide bestätigt eine passende Route."
+        },
+        "1": {
+          "title": "Die Kirche respektieren",
+          "text": "Dies sind lebendige religiöse Orte. Kleiden Sie sich angemessen, folgen Sie örtlichen Regeln und fragen Sie vor Fotos um Erlaubnis. Zugang und Besuche hängen von bestätigten Vereinbarungen ab."
+        }
+      },
+      "note": {
+        "title": "Zugang und Eignung werden individuell bestätigt",
+        "text": "Ein Gheralta-Tag garantiert keine bestimmte Kirche. Das Team wählt nach Zugang, Bedingungen und Gehvermögen."
+      },
+      "faqs": {
+        "0": {
+          "q": "Ist der Besuch für alle geeignet?",
+          "a": "Die Route richtet sich nach Können, Zeit und Zugang. Melden Sie Schwierigkeiten mit Höhen vor der Buchung."
+        },
+        "1": {
+          "q": "Darf man im Inneren fotografieren?",
+          "a": "Fragen Sie vor Ort und beachten Sie die Kirchenregeln. Eine Fotoerlaubnis darf nicht vorausgesetzt werden."
+        }
+      },
+      "name": "Abune Yemata Guh",
+      "seoTitle": "Abune Yemata Guh | Afar Horizon",
+      "seoDescription": "Ein lebendiger religiöser Ort nach einem anspruchsvollen, ausgesetzten Felszustieg."
+    },
+    "maryam-korkor": {
+      "headline": "Stein, Himmel und Stille",
+      "teaser": "Stein, Himmel und Stille · Diese Kirche verbindet Berglandschaft, religiöses Erbe und geführtes Wandern. Nehmen Sie sich Zeit für den Ort und seine Menschen ebenso wie für die Aussicht.",
+      "intro": "Maryam Korkor — Diese Kirche verbindet Berglandschaft, religiöses Erbe und geführtes Wandern. Nehmen Sie sich Zeit für den Ort und seine Menschen ebenso wie für die Aussicht.",
+      "imageAlt": "Weiße Kirchenfassade in einem felsigen Hang",
+      "tag": "Felsenkirche",
+      "bestTime": "Reisedaten und Zugang werden vor der Abreise bestätigt",
+      "duration": "Geführter Ausflug ab Gheralta",
+      "altitude": "Berglage; Zustieg wird mit dem Guide bestätigt",
+      "highlights": {
+        "0": "Geführtes Wandern in Gheralta",
+        "1": "Lebendiges religiöses Erbe und örtlicher Kontext",
+        "2": "Sandsteinaussichten und Fotos mit Erlaubnis",
+        "3": "Route passend zu Können und Bedingungen"
+      },
+      "paragraphs": {
+        "0": "Die Wanderung gehört zum Besuch. Besprechen Sie Steigungen, ausgesetzte Stellen und Ihre Höhenverträglichkeit vor der Kirchenwahl. Der Guide bestätigt eine passende Route.",
+        "1": "Dies sind lebendige religiöse Orte. Kleiden Sie sich angemessen, folgen Sie örtlichen Regeln und fragen Sie vor Fotos um Erlaubnis. Zugang und Besuche hängen von bestätigten Vereinbarungen ab."
+      },
+      "sections": {
+        "0": {
+          "title": "Den Zustieg verstehen",
+          "text": "Die Wanderung gehört zum Besuch. Besprechen Sie Steigungen, ausgesetzte Stellen und Ihre Höhenverträglichkeit vor der Kirchenwahl. Der Guide bestätigt eine passende Route."
+        },
+        "1": {
+          "title": "Die Kirche respektieren",
+          "text": "Dies sind lebendige religiöse Orte. Kleiden Sie sich angemessen, folgen Sie örtlichen Regeln und fragen Sie vor Fotos um Erlaubnis. Zugang und Besuche hängen von bestätigten Vereinbarungen ab."
+        }
+      },
+      "note": {
+        "title": "Zugang und Eignung werden individuell bestätigt",
+        "text": "Ein Gheralta-Tag garantiert keine bestimmte Kirche. Das Team wählt nach Zugang, Bedingungen und Gehvermögen."
+      },
+      "faqs": {
+        "0": {
+          "q": "Ist der Besuch für alle geeignet?",
+          "a": "Die Route richtet sich nach Können, Zeit und Zugang. Melden Sie Schwierigkeiten mit Höhen vor der Buchung."
+        },
+        "1": {
+          "q": "Darf man im Inneren fotografieren?",
+          "a": "Fragen Sie vor Ort und beachten Sie die Kirchenregeln. Eine Fotoerlaubnis darf nicht vorausgesetzt werden."
+        }
+      },
+      "name": "Maryam Korkor",
+      "seoTitle": "Maryam Korkor | Afar Horizon",
+      "seoDescription": "Stein, Himmel und Stille · Diese Kirche verbindet Berglandschaft, religiöses Erbe und geführtes Wandern. Nehmen Sie sich Zeit für den Ort und seine Menschen ebenso wie für die Aussicht."
+    },
+    "daniel-korkor": {
+      "headline": "Die Aussicht jenseits des Tals",
+      "teaser": "Die Aussicht jenseits des Tals · Diese Kirche verbindet Berglandschaft, religiöses Erbe und geführtes Wandern. Nehmen Sie sich Zeit für den Ort und seine Menschen ebenso wie für die Aussicht.",
+      "intro": "Daniel Korkor — Diese Kirche verbindet Berglandschaft, religiöses Erbe und geführtes Wandern. Nehmen Sie sich Zeit für den Ort und seine Menschen ebenso wie für die Aussicht.",
+      "imageAlt": "Hoher Sandsteinfelsen über einem weiten Tal",
+      "tag": "Felsenkirche",
+      "bestTime": "Reisedaten und Zugang werden vor der Abreise bestätigt",
+      "duration": "Geführter Ausflug ab Gheralta",
+      "altitude": "Berglage; Zustieg wird mit dem Guide bestätigt",
+      "highlights": {
+        "0": "Geführtes Wandern in Gheralta",
+        "1": "Lebendiges religiöses Erbe und örtlicher Kontext",
+        "2": "Sandsteinaussichten und Fotos mit Erlaubnis",
+        "3": "Route passend zu Können und Bedingungen"
+      },
+      "paragraphs": {
+        "0": "Die Wanderung gehört zum Besuch. Besprechen Sie Steigungen, ausgesetzte Stellen und Ihre Höhenverträglichkeit vor der Kirchenwahl. Der Guide bestätigt eine passende Route.",
+        "1": "Dies sind lebendige religiöse Orte. Kleiden Sie sich angemessen, folgen Sie örtlichen Regeln und fragen Sie vor Fotos um Erlaubnis. Zugang und Besuche hängen von bestätigten Vereinbarungen ab."
+      },
+      "sections": {
+        "0": {
+          "title": "Den Zustieg verstehen",
+          "text": "Die Wanderung gehört zum Besuch. Besprechen Sie Steigungen, ausgesetzte Stellen und Ihre Höhenverträglichkeit vor der Kirchenwahl. Der Guide bestätigt eine passende Route."
+        },
+        "1": {
+          "title": "Die Kirche respektieren",
+          "text": "Dies sind lebendige religiöse Orte. Kleiden Sie sich angemessen, folgen Sie örtlichen Regeln und fragen Sie vor Fotos um Erlaubnis. Zugang und Besuche hängen von bestätigten Vereinbarungen ab."
+        }
+      },
+      "note": {
+        "title": "Zugang und Eignung werden individuell bestätigt",
+        "text": "Ein Gheralta-Tag garantiert keine bestimmte Kirche. Das Team wählt nach Zugang, Bedingungen und Gehvermögen."
+      },
+      "faqs": {
+        "0": {
+          "q": "Ist der Besuch für alle geeignet?",
+          "a": "Die Route richtet sich nach Können, Zeit und Zugang. Melden Sie Schwierigkeiten mit Höhen vor der Buchung."
+        },
+        "1": {
+          "q": "Darf man im Inneren fotografieren?",
+          "a": "Fragen Sie vor Ort und beachten Sie die Kirchenregeln. Eine Fotoerlaubnis darf nicht vorausgesetzt werden."
+        }
+      },
+      "name": "Daniel Korkor",
+      "seoTitle": "Daniel Korkor | Afar Horizon",
+      "seoDescription": "Die Aussicht jenseits des Tals · Diese Kirche verbindet Berglandschaft, religiöses Erbe und geführtes Wandern. Nehmen Sie sich Zeit für den Ort und seine Menschen ebenso wie für die Aussicht."
     }
   }
 }

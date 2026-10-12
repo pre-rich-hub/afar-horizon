@@ -17,7 +17,7 @@ export function ExpeditionCollections({ tours: basetours }: { tours: Tour[] }) {
     <>
       {/* Collection index */}
       <nav aria-label={tr('expeditionCollections')} className="border-b border-border">
-        <ul className="shell grid py-4 sm:grid-cols-3 sm:py-6">
+        <ul className="shell grid py-4 sm:grid-cols-2 lg:grid-cols-4 sm:py-6">
           {expeditionCollections.map((c, i) => (
             <li key={c.id} className={i > 0 ? 'border-t border-border sm:border-l sm:border-t-0' : ''}>
               <a

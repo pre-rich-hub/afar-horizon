@@ -1,4 +1,5 @@
 import { destinationImageBase } from '@/lib/config/cloudinary'
+import { simienTours } from './simien.data'
 import type { ExpeditionCollection, Tour } from '../types/tour.types'
 
 // The Afar Horizon expedition catalogue, from the client's product
@@ -28,6 +29,12 @@ export const expeditionCollections: {
     title: 'Northern Ethiopia',
     span: '12 – 21 days',
     text: 'Lake Tana, Gondar, the Simien Mountains, Aksum, Gheralta and Lalibela, with the Danakil added on the 21-day journey.',
+  },
+  {
+    id: 'simien',
+    title: 'Simien Mountains',
+    span: '1 – 15 days',
+    text: 'Private mountain journeys from Gondar: short escarpment walks, multi-day camping treks, Ras Dashen expeditions and the crossing to Lalibela.',
   },
 ]
 
@@ -1375,4 +1382,5 @@ export const tours: Tour[] = [
     ],
     faqs: [...danakilFaqs.slice(0, 2), ...highlandFaqs],
   },
+  ...simienTours,
 ]
