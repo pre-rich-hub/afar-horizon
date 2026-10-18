@@ -64,7 +64,7 @@ const platforms: { name: string; href: string; mark: React.ReactNode }[] = [
   },
   {
     name: 'Tripadvisor',
-    href: '#',
+    href: 'https://www.tripadvisor.com/UserReviewEdit-g293791-d34735770-Afar_Horizon_Expedition-Addis_Ababa.html',
     mark: <TripadvisorMark />,
   },
   {
@@ -248,7 +248,12 @@ export function SiteFooter() {
             <ul className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
               {platforms.map((p) => (
                 <li key={p.name}>
-                  <a href={p.href} aria-label={p.name} className={logoTile}>
+                  <a
+                    href={p.href}
+                    aria-label={p.name}
+                    className={logoTile}
+                    {...(p.href !== '#' && { target: '_blank', rel: 'noopener noreferrer' })}
+                  >
                     {p.mark}
                   </a>
                 </li>
