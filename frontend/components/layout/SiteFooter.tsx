@@ -17,7 +17,7 @@ YouTubeIcon,
 import { useDestinationsCopy, destinations as baseDestinations } from '@/features/destinations'
 import { NewsletterForm } from '@/features/newsletter'
 import { useToursCopy, expeditionCollections as baseExpeditionCollections } from '@/features/tours'
-import { contact } from '@/lib/constants/company'
+import { contact, tripadvisorUrl } from '@/lib/constants/company'
 import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react'
 import Link from '@/components/common/SiteLink'
 
@@ -64,7 +64,7 @@ const platforms: { name: string; href: string; mark: React.ReactNode }[] = [
   },
   {
     name: 'Tripadvisor',
-    href: 'https://www.tripadvisor.com/UserReviewEdit-g293791-d34735770-Afar_Horizon_Expedition-Addis_Ababa.html',
+    href: tripadvisorUrl,
     mark: <TripadvisorMark />,
   },
   {

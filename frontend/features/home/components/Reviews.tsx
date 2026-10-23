@@ -10,6 +10,7 @@ import { cn } from '@/lib/utils'
 import { ArrowUpRight, ChevronLeft, ChevronRight, Star } from 'lucide-react'
 import Image from 'next/image'
 import { reviewSummary, testimonials } from '../data/review.data'
+import { tripadvisorUrl } from '@/lib/constants/company'
 
 // Destination photos illustrate the trip each guest reviewed.
 
@@ -41,9 +42,15 @@ export function Reviews() {
             Reviews of Tesema (Tevan) and our team, listed on {reviewSummary.platform} as {reviewSummary.listing}.
           </p>
 
-          <div className="mt-6 flex h-[72px] w-[72px] items-center justify-center rounded-lg bg-tripadvisor shadow-[0_12px_28px_-14px_oklch(0.185_0.012_58/0.6)]">
+          <a
+            href={tripadvisorUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Afar Horizon Expedition on Tripadvisor"
+            className="mt-6 flex h-[72px] w-[72px] items-center justify-center rounded-lg bg-tripadvisor shadow-[0_12px_28px_-14px_oklch(0.185_0.012_58/0.6)] transition-transform duration-300 hover:-translate-y-0.5"
+          >
             <TripadvisorOwl className="h-11 w-11" />
-          </div>
+          </a>
 
           {reviewSummary.url && (
             <a

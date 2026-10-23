@@ -11,6 +11,9 @@ export const contact = {
   hours: 'Monday to Saturday 8:00 AM - 5:30 PM',
 }
 
+// Afar Horizon's own Tripadvisor listing: the footer and the homepage reviews owl.
+export const tripadvisorUrl = 'https://www.tripadvisor.com/UserReviewEdit-g293791-d34735770-Afar_Horizon_Expedition-Addis_Ababa.html'
+
 // "Why Afar Horizon": shown on the homepage and contact page.
 export const promises: BrandPromise[] = [
   {
