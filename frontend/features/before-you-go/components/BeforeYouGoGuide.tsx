@@ -99,7 +99,7 @@ export function BeforeYouGoGuide() {
         <Reveal className="mt-14 border border-border bg-card p-6 sm:p-8">
           <p className="font-serif text-2xl text-foreground">Still have questions?</p>
           <p className="mt-2 text-pretty text-sm leading-relaxed text-muted-foreground">
-            Read our <Link href="/faq" className="text-primary underline-offset-4 hover:underline">FAQ</Link>,
+            Read about <Link href="/safety" className="text-primary underline-offset-4 hover:underline">how we keep you safe</Link> and our <Link href="/faq" className="text-primary underline-offset-4 hover:underline">FAQ</Link>,
             compare <Link href="/expeditions" className="text-primary underline-offset-4 hover:underline">expeditions</Link>,
             or ask us about current conditions for your dates.
           </p>

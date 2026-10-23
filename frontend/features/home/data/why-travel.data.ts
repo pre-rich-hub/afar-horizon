@@ -2,6 +2,7 @@ import { promises } from '@/lib/constants/company'
 import { destinationImageBase } from '@/lib/config/cloudinary'
 
 export const promiseImages = [
+  { image: `${destinationImageBase}/erta-ale.png`, alt: 'Erta Ale volcano in the Afar region' },
   { image: `${destinationImageBase}/afar.png`, alt: 'Afar region, Ethiopia' },
   { image: `${destinationImageBase}/danakil-depression.png`, alt: 'Dallol in the Danakil Depression' },
   { image: `${destinationImageBase}/gheralta.png`, alt: 'Gheralta in the northern Ethiopian highlands' },

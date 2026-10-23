@@ -55,6 +55,7 @@ export const topics: { id: string; title: string; text: string[]; items?: string
       'The Danakil is a remote expedition environment, and access in parts of Afar and Tigray can change. We check current conditions before we quote and again before departure, and we will change or cancel a route when conditions require it.',
       'When something changes on the road, we understand what happened, verify the situation on the ground, explain what it means for you, offer realistic options, decide on the safest one, rebuild the logistics and keep you informed.',
       'Volcanic activity at Erta Ale, camel caravans on the salt and access to Dallol are never guaranteed. We plan responsibly around the conditions we find.',
+      'Safety is our first priority on every journey: experienced local Afar guides, escorts where required, water planned for every day and designated safe areas at Dallol and Erta Ale. Our Safety page explains each of these in full.',
     ],
   },
   {

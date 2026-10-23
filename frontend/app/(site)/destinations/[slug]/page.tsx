@@ -2,6 +2,7 @@ import { createPageMetadata } from '@/lib/seo/metadata'
 import { DestinationEnquiry, DestinationHero, DestinationOverview, DestinationPlanning, destinations, getDestination, getDestinationRelations } from '@/features/destinations'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { SafetyPanel } from '@/components/common/SafetyPanel'
 import { JsonLd } from '@/components/common/JsonLd'
 import { destinationSchema } from '@/features/destinations'
 
@@ -49,6 +50,9 @@ export default async function DestinationPage({
 
       {/* Essay + highlights, with the planning card pinned alongside */}
       <DestinationOverview d={d} fallback={fallback} />
+
+      {/* Safety commitments for Afar and Danakil destinations */}
+      {d.group === 'danakil' && <SafetyPanel title={`Visiting ${d.name} safely`} />}
 
       {/* Enquiry */}
       <DestinationEnquiry d={d} others={others} />

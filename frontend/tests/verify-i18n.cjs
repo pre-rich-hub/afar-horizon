@@ -69,10 +69,10 @@ async function main() {
     console.log(`Passed ${routes.length} ${locale} draft pages`)
   }
   const sitemap = (await get('/sitemap.xml')).html
-  assert.equal((sitemap.match(/<loc>/g) || []).length, 58)
+  assert.equal((sitemap.match(/<loc>/g) || []).length, 59)
   assert.doesNotMatch(sitemap, /afarhorizon.com\/(fr|es|de|zh-Hans)(?:\/|<)/)
   const invalid = ['/it/about', '/en/about', '/fr/admin', '/de/login', '/es/not-a-real-page', '/zh-Hans/destinations/not-a-record']
   for (const route of invalid) assert.equal((await get(route)).status, 404, route)
-  fs.writeFileSync('docs/seo-phase8-validation.json', JSON.stringify({ date: '2026-10-11', origin, EnglishPages: routes.length, draftPages: routes.length * locales.length, sitemapURLs: 58, invalidRoutesChecked: invalid.length, reports }, null, 2) + '\n')
+  fs.writeFileSync('docs/seo-phase8-validation.json', JSON.stringify({ date: '2026-10-11', origin, EnglishPages: routes.length, draftPages: routes.length * locales.length, sitemapURLs: 59, invalidRoutesChecked: invalid.length, reports }, null, 2) + '\n')
 }
 main().catch(error => { console.error(error); process.exitCode = 1 })

@@ -89,7 +89,7 @@ export const destinations: Destination[] = [
       },
       {
         q: 'Is the Danakil safe?',
-        a: 'It is a remote expedition environment, and regional conditions must always be checked before departure. Official advice currently restricts travel in parts of Afar, so we confirm what is possible and responsible for your dates before we quote, and we change or cancel a route when conditions require it.',
+        a: 'Safety is our first priority. The Danakil is a remote expedition environment, and regional conditions must always be checked before departure. Official advice currently restricts travel in parts of Afar, so we confirm what is possible and responsible for your dates before we quote, travel with experienced local Afar guides and escorts where required, and change or cancel a route when conditions require it.',
       },
       {
         q: 'Can I visit without an operator?',
@@ -200,6 +200,10 @@ export const destinations: Destination[] = [
         q: 'What happens if volcanic conditions change?',
         a: 'Your guide decides on the day how close it is safe to go, and we adjust the plan. On some nights the volcano is quiet; occasionally access is closed.',
       },
+      {
+        q: 'Is it safe to visit Erta Ale?',
+        a: 'Safety is our first priority. We confirm current access before you travel, walk up in the cooler hours with experienced local Afar guides and escort arrangements where required, and keep the group within designated safe areas at the crater rim.',
+      },
     ],
     places: ['Erta Ale'],
   },
@@ -238,6 +242,12 @@ export const destinations: Destination[] = [
       title: 'Geothermal areas can be hazardous',
       text: 'The ground can be thin crust over hot acid water, and some areas release toxic gas. Visitors must follow their local guide and stay within designated safe areas. Access depends on current conditions and local instructions, and is never assumed.',
     },
+    faqs: [
+      {
+        q: 'Is it safe to visit Dallol?',
+        a: 'Safety is our first priority. We visit early, before the strongest heat, with experienced local Afar guides, and the group stays within designated safe areas away from thin crust, hot acid water and gas. Access is confirmed for your dates and on the day.',
+      },
+    ],
     places: ['Dallol'],
   },
   {

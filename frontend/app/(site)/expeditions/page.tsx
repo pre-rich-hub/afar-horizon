@@ -1,4 +1,5 @@
 import { createPageMetadata } from '@/lib/seo/metadata'
+import { SafetyPanel } from '@/components/common/SafetyPanel'
 import { ExpeditionCollections, ExpeditionsHero, ExpeditionsNote, ExpeditionsPlanning, getToursData } from '@/features/tours'
 
 export const metadata = createPageMetadata({
@@ -21,6 +22,8 @@ export default async function ExpeditionsPage() {
 
       {/* Operating note */}
       <ExpeditionsNote />
+
+      <SafetyPanel lede="Every expedition, from a short Danakil route to a long highlands journey, is planned around the same safety commitments." />
 
       <ExpeditionsPlanning />
     </>

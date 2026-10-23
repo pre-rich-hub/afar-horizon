@@ -1,4 +1,5 @@
 
+import { TranslatedText } from '@/components/common/TranslatedText'
 import { TranslationBoundary } from '@/components/common/TranslationBoundary'
 import { Reveal } from '@/components/common/Reveal'
 import { EnquiryForm } from '@/features/enquiries'
@@ -28,6 +29,12 @@ export function PlanRequest({ subject }: { subject?: string }) {
             </li></TranslationBoundary>
           ))}
         </ol>
+
+        <p className="mt-10 border-l-2 border-accent pl-5 text-pretty text-sm leading-relaxed text-muted-foreground">
+          <span className="font-semibold text-foreground"><TranslatedText text="Safety is our first priority." /></span>{' '}
+          <TranslatedText text="We confirm current conditions for your dates before we quote, and again before departure." />{' '}
+          <Link href="/safety" className="text-primary underline-offset-4 hover:underline"><TranslatedText text="How we keep you safe" /></Link>
+        </p>
 
         <div className="mt-12 border-t border-border pt-8">
           <p className="eyebrow mb-4 text-primary">Prefer to talk?</p>

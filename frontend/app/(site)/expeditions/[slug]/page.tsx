@@ -3,6 +3,7 @@ import { getRelatedTours, getTour, getTourData, RelatedTours, TourEnquiry, TourF
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getDestinationForPlace } from '@/features/destinations'
+import { SafetyPanel } from '@/components/common/SafetyPanel'
 import { JsonLd } from '@/components/common/JsonLd'
 import { tourSchema } from '@/features/tours'
 
@@ -54,6 +55,9 @@ export default async function ExpeditionPage({
 
       {/* Includes / excludes */}
       <TourInclusions t={t} />
+
+      {/* Safety commitments */}
+      <SafetyPanel />
 
       {/* Questions */}
       <TourFaqs t={t} />

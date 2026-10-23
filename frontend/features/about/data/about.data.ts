@@ -24,6 +24,10 @@ export const brief = [
 
 export const principles = [
   {
+    title: 'Safety before everything',
+    text: 'The places we love most are also among the most demanding on Earth. We check conditions before every departure, travel with experienced local Afar guides, plan every day around the heat and change the route whenever conditions require it. No photograph or itinerary is worth more than the people on the journey.',
+  },
+  {
     title: 'Room for the unexpected',
     text: 'A caravan crossing the salt at first light, a conversation at a roadside coffee stall, a ridge appearing through the cloud. The moment travellers remember most is often the one that was never on the itinerary — so we leave space for it.',
   },

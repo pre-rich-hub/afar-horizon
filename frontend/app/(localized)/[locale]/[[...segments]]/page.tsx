@@ -14,6 +14,7 @@ import * as Home from '../../../(site)/page'
 import * as About from '../../../(site)/about/page'
 import * as Contact from '../../../(site)/contact/page'
 import * as BeforeYouGo from '../../../(site)/before-you-go/page'
+import * as Safety from '../../../(site)/safety/page'
 import * as Faq from '../../../(site)/faq/page'
 import * as Gallery from '../../../(site)/gallery/page'
 import * as GroundOperations from '../../../(site)/ground-operations/page'
@@ -34,7 +35,7 @@ type Props = { params: Promise<{ locale: string; segments?: string[] }>; searchP
 type Route = { default: (props: { params: Promise<{ slug: string }>; searchParams: Props['searchParams'] }) => ReactNode | Promise<ReactNode>; metadata?: Metadata; generateMetadata?: (props: { params: Promise<{ slug: string }> }) => Promise<Metadata> }
 const staticPages = {
   '/': Home, '/about': About, '/contact': Contact, '/before-you-go': BeforeYouGo,
-  '/faq': Faq, '/gallery': Gallery, '/ground-operations': GroundOperations,
+  '/safety': Safety, '/faq': Faq, '/gallery': Gallery, '/ground-operations': GroundOperations,
   '/specialist-travel': SpecialistTravel, '/destinations': DestinationIndex,
   '/expeditions': ExpeditionIndex, '/blog': BlogIndex, '/privacy': Privacy,
   '/terms': Terms, '/plan': Plan,

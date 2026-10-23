@@ -1,4 +1,5 @@
 import { createPageMetadata } from '@/lib/seo/metadata'
+import { SafetyPanel } from '@/components/common/SafetyPanel'
 import { GroundOpsHandle, GroundOpsHero, GroundOpsIntro, GroundOpsPartner, GroundOpsServices } from '@/features/ground-operations'
 
 export const metadata = createPageMetadata({
@@ -21,6 +22,8 @@ export default function GroundOperationsPage() {
 
       {/* Partner services */}
       <GroundOpsServices />
+
+      <SafetyPanel title="Safety standards for your travellers" lede="Your clients travel under the same safety commitments as our own guests, with one local team responsible on the ground." />
 
       {/* Partner form */}
       <GroundOpsPartner />

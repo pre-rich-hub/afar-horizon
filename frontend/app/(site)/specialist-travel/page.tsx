@@ -1,4 +1,5 @@
 import { createPageMetadata } from '@/lib/seo/metadata'
+import { SafetyPanel } from '@/components/common/SafetyPanel'
 import { SpecialistHero, SpecialistNavigation, SpecialistPlanning, SpecialistPricing, SpecialistTracks } from '@/features/specialist-travel'
 
 export const metadata = createPageMetadata({
@@ -20,6 +21,8 @@ export default function SpecialistTravelPage() {
       <SpecialistTracks />
 
       <SpecialistPricing />
+
+      <SafetyPanel title="Safety for crews and specialist teams" lede="Photography, filming and research put people closer to hazardous ground for longer. We plan positions, timings and access around safety first." />
 
       <SpecialistPlanning />
     </>

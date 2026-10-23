@@ -72,6 +72,14 @@ export const faqGroups: { title: string; items: { q: string; a: string }[] }[] =
     title: 'The Danakil & conditions',
     items: [
       {
+        q: 'How do you keep travellers safe?',
+        a: 'Safety is our first priority. We check current conditions and official travel advice before we quote and again before departure, Danakil expeditions are led by experienced local Afar guides with scouts and escort arrangements where required, and every day is planned around the heat. At Dallol and Erta Ale the group stays within designated safe areas.',
+      },
+      {
+        q: 'Is the Danakil safe to visit?',
+        a: 'It is a remote and demanding expedition environment, and regional conditions must always be checked. We confirm what is possible and responsible for your dates before we quote, travel only with experienced local guides, and change or cancel a route when conditions require it. Please also check your own government’s current travel advice.',
+      },
+      {
         q: 'Do you operate the Danakil all year?',
         a: 'Operating conditions vary with season, route, weather, security and local access. The cooler months are the preferred period. We confirm current conditions before booking.',
       },

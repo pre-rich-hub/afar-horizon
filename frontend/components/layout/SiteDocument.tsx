@@ -3,6 +3,7 @@ import { SiteFooter } from '@/components/layout/SiteFooter'
 import { SiteNav } from '@/components/layout/SiteNav'
 import { FloatingSupport } from '@/features/support'
 import { SiteAnalytics } from '@/components/common/SiteAnalytics'
+import { SafetyStrip } from '@/components/common/SafetyStrip'
 import { getMeasurementConfig } from '@/lib/config/measurement'
 import { indexableStaticRoutes } from '@/lib/seo/routes'
 import { destinations } from '@/features/destinations'
@@ -60,6 +61,7 @@ export function SiteDocument({
         </a></TranslationBoundary>
         <SiteNav />
         <main id="main">{children}</main>
+        <SafetyStrip />
         <SiteFooter />
         <FloatingSupport />
         {measurement.pageviews && locale === 'en' && <SiteAnalytics paths={analyticsPaths} origin={site.url} events={measurement.events} />}

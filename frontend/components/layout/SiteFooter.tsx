@@ -83,6 +83,7 @@ const columns = [
     links: [
       { label: 'About Us', href: '/about' },
       { label: 'Before You Go', href: '/before-you-go' },
+      { label: 'Safety', href: '/safety' },
       { label: 'FAQ', href: '/faq' },
       { label: 'Gallery', href: '/gallery' },
       { label: 'Journal', href: '/blog' },
