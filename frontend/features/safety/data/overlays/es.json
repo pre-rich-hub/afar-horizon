@@ -1,0 +1,76 @@
+{
+  "safety.sections": {
+    "before-you-travel": {
+      "title": "Antes de viajar",
+      "text": {
+        "0": "La seguridad empieza mucho antes del primer día en la carretera. Revisamos el acceso actual, la información local y las recomendaciones oficiales de viaje para sus fechas antes de presupuestar y de nuevo antes de la salida. Si no creemos que una ruta sea responsable, no la realizaremos.",
+        "1": "También explicamos con honestidad lo que implica el viaje, como el calor, las caminatas, las carreteras difíciles, los campamentos básicos y los madrugones, para que el plan se ajuste a su salud y forma física y no a un folleto."
+      },
+      "items": {
+        "0": "Condiciones actuales confirmadas para sus fechas antes de reservar",
+        "1": "Una segunda revisión antes de la salida",
+        "2": "Una descripción honesta de las caminatas, el calor y los campamentos",
+        "3": "Asesoramiento sobre un seguro de viaje que cubra zonas remotas, gastos médicos y evacuación de emergencia"
+      }
+    },
+    "on-the-ground": {
+      "title": "Sobre el terreno",
+      "text": {
+        "0": "Su viaje lo dirigen nuestros propios guías, conductores y personal de campo, con un único equipo responsable de toda la operación sobre el terreno. Las expediciones al Danakil las dirigen guías afar locales con experiencia, con exploradores y escoltas cuando se requieren.",
+        "1": "Los días se organizan en función del calor. Salimos temprano, descansamos durante las horas de más calor y planificamos el agua para cada día de la ruta. En Dallol y Erta Ale, su guía decide ese mismo día hasta dónde es seguro acercarse, y el grupo permanece dentro de las zonas seguras designadas."
+      },
+      "items": {
+        "0": "Guías afar locales con experiencia",
+        "1": "Exploradores y escoltas cuando se requieren",
+        "2": "Vehículos 4×4 con nuestros propios conductores",
+        "3": "Agua prevista para cada día",
+        "4": "Salidas tempranas y descanso en las horas de más calor",
+        "5": "Zonas seguras designadas en los sitios geotérmicos y volcánicos"
+      }
+    },
+    "your-part": {
+      "title": "Su parte",
+      "text": {
+        "0": "Una expedición segura es un esfuerzo compartido. Estos sencillos hábitos marcan la mayor diferencia en el Danakil."
+      },
+      "items": {
+        "0": "Siga en todo momento las instrucciones de su guía",
+        "1": "Permanezca con el grupo y dentro de las zonas designadas",
+        "2": "Beba más agua de la que cree necesitar",
+        "3": "Avise de inmediato a su guía si no se encuentra bien",
+        "4": "Protéjase del sol con ropa, sombrero y protector solar"
+      }
+    }
+  },
+  "safety.response": {
+    "0": {
+      "title": "Comprender",
+      "text": "Averiguamos exactamente qué ha ocurrido."
+    },
+    "1": {
+      "title": "Verificar",
+      "text": "Comprobamos la situación sobre el terreno."
+    },
+    "2": {
+      "title": "Explicar",
+      "text": "Le explicamos con claridad lo que significa para usted."
+    },
+    "3": {
+      "title": "Ofrecer opciones",
+      "text": "Le presentamos alternativas realistas."
+    },
+    "4": {
+      "title": "Decidir",
+      "text": "Elegimos la opción más segura, nunca la más fácil."
+    },
+    "5": {
+      "title": "Reorganizar",
+      "text": "Reorganizamos vehículos, campamentos y horarios."
+    },
+    "6": {
+      "title": "Mantenerle informado",
+      "text": "Usted sabe lo que ocurre en cada paso."
+    }
+  },
+  "safety.officialAdvice": "Las recomendaciones gubernamentales de viaje para partes de Afar y el norte de Etiopía cambian y pueden restringir los viajes. Consulte las recomendaciones actuales de su gobierno antes de reservar. Le diremos lo que sabemos para sus fechas y, si una ruta deja de ser adecuada, la cambiaremos o la cancelaremos."
+}

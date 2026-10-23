@@ -1,6 +1,7 @@
 import {getToursCopy} from '@/features/tours'
 import {getTranslations, setRequestLocale} from 'next-intl/server'
 import {requireLocale} from '@/i18n/locale'
+import { SafetyPanel } from '@/components/common/SafetyPanel'
 import { createPageMetadata } from '@/lib/seo/metadata'
 import { getRelatedTours, getTour, getTourData, RelatedTours, TourEnquiry, TourFaqs, TourHero, TourInclusions, TourOverview, TourPlanning, tours } from '@/features/tours'
 import type { Metadata } from 'next'
@@ -64,6 +65,9 @@ export default async function ExpeditionPage({
 
       {/* Includes / excludes */}
       <TourInclusions t={t} />
+
+      {/* Safety commitments */}
+      <SafetyPanel />
 
       {/* Questions */}
       <TourFaqs t={t} />

@@ -3,17 +3,18 @@
   "target": null,
   "mode": "inventory_only",
   "inventory": {
-    "destinations": 19,
-    "expeditions": 17,
+    "destinations": 24,
+    "expeditions": 31,
     "articles": 9,
     "afarArticles": 7,
     "afarArticlePercent": 78,
-    "expectedProductionSitemapUrls": 58,
+    "expectedProductionSitemapUrls": 78,
     "staticIndexablePaths": [
       "/",
       "/about",
       "/contact",
       "/before-you-go",
+      "/safety",
       "/faq",
       "/gallery",
       "/ground-operations",
@@ -140,6 +141,36 @@
         "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/northern-ethiopia.png"
       },
       {
+        "type": "destination",
+        "path": "/destinations/afar-people",
+        "title": "Afar People",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791813666/Afar_People.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/salt-caravans",
+        "title": "Salt Caravans",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791813666/Salt_Caravans.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/abune-yemata-guh",
+        "title": "Abune Yemata Guh",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791813661/Abune_Yemata_Guh.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/maryam-korkor",
+        "title": "Maryam Korkor",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791813668/Maryam_Korkor.png"
+      },
+      {
+        "type": "destination",
+        "path": "/destinations/daniel-korkor",
+        "title": "Daniel Korkor",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791813667/Daniel_Korkor.png"
+      },
+      {
         "type": "expedition",
         "path": "/expeditions/danakil-essentials",
         "title": "Danakil Essentials",
@@ -240,6 +271,90 @@
         "path": "/expeditions/grand-horizon-ethiopia",
         "title": "Grand Horizon Ethiopia",
         "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791643803/northern-ethiopia.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/simien-mountains-experience",
+        "title": "Simien Mountains Experience",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791816527/Simien_Mountains_Experience.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/simien-escarpment",
+        "title": "Simien Escarpment",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791816504/Simien_Escarpment.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/simien-classic",
+        "title": "Simien Classic",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791816507/Simien_Classi.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/simien-escarpment-expedition",
+        "title": "Simien Escarpment Expedition",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791816503/Simien_Escarpment_Expedition.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/simien-mountains-trek",
+        "title": "Simien Mountains Trek",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791816540/Simien_Mountains_Trek.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/simien-explorer",
+        "title": "Simien Explorer",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791816514/Simien_Explorer.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/simien-grand-escarpment",
+        "title": "Simien Grand Escarpment",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791816517/Simien_Grand_Escarpment.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/simien-extended-expedition",
+        "title": "Simien Extended Expedition",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791816530/Simien_Extended_Expedition.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/ras-dashen-expedition",
+        "title": "Ras Dashen Expedition",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791816478/Ras_Dashen_Expedition.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/complete-simien-circuit",
+        "title": "Complete Simien Circuit",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791816475/Complete_Simien_Circuit.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/simien-ultimate",
+        "title": "Simien Ultimate",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791816541/Simien_Ultimate.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/simien-mountains-grand-trek",
+        "title": "Simien Mountains Grand Trek",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791816529/Simien_Mountains_Grand_Trek.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/simien-to-lalibela-grand-trek",
+        "title": "Simien Mountains to Lalibela Grand Trek",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791816534/Simien_Mountains_to_Lalibela_Grand_Trek.png"
+      },
+      {
+        "type": "expedition",
+        "path": "/expeditions/simien-mountains-grand-expedition",
+        "title": "Simien Mountains Grand Expedition",
+        "image": "https://res.cloudinary.com/xsrr0wfh/image/upload/v1791816527/Simien_Mountains_Grand_Expedition.png"
       },
       {
         "type": "article",

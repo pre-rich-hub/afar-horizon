@@ -1,5 +1,6 @@
 import {getTranslations, setRequestLocale} from 'next-intl/server'
 import {requireLocale} from '@/i18n/locale'
+import { SafetyPanel } from '@/components/common/SafetyPanel'
 import { createPageMetadata } from '@/lib/seo/metadata'
 import { SpecialistHero, SpecialistNavigation, SpecialistPlanning, SpecialistPricing, SpecialistTracks } from '@/features/specialist-travel'
 
@@ -32,6 +33,8 @@ export default async function SpecialistTravelPage({params}: {params: Promise<{l
       <SpecialistTracks />
 
       <SpecialistPricing />
+
+      <SafetyPanel variant="specialist" />
 
       <SpecialistPlanning />
     </>

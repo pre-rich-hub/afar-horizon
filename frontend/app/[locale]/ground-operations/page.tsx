@@ -1,5 +1,6 @@
 import {getTranslations, setRequestLocale} from 'next-intl/server'
 import {requireLocale} from '@/i18n/locale'
+import { SafetyPanel } from '@/components/common/SafetyPanel'
 import { createPageMetadata } from '@/lib/seo/metadata'
 import { GroundOpsHandle, GroundOpsHero, GroundOpsIntro, GroundOpsPartner, GroundOpsServices } from '@/features/ground-operations'
 
@@ -33,6 +34,8 @@ export default async function GroundOperationsPage({params}: {params: Promise<{l
 
       {/* Partner services */}
       <GroundOpsServices />
+
+      <SafetyPanel variant="groundOperations" />
 
       {/* Partner form */}
       <GroundOpsPartner />

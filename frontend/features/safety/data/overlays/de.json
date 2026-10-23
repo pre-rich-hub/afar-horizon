@@ -1,0 +1,76 @@
+{
+  "safety.sections": {
+    "before-you-travel": {
+      "title": "Vor der Reise",
+      "text": {
+        "0": "Sicherheit beginnt lange vor dem ersten Reisetag. Wir prüfen den aktuellen Zugang, lokale Informationen und offizielle Reisehinweise für Ihre Daten vor unserem Angebot und erneut vor der Abreise. Halten wir eine Route nicht für verantwortbar, führen wir sie nicht durch.",
+        "1": "Wir erklären außerdem ehrlich, was die Reise mit sich bringt – Hitze, Gehstrecken, raue Straßen, einfache Camps und frühe Starts –, damit der Plan zu Ihrer Gesundheit und Fitness passt und nicht zu einem Prospekt."
+      },
+      "items": {
+        "0": "Aktuelle Bedingungen für Ihre Daten vor der Buchung bestätigt",
+        "1": "Eine zweite Prüfung vor der Abreise",
+        "2": "Eine ehrliche Beschreibung von Gehstrecken, Hitze und Camps",
+        "3": "Beratung zu einer Reiseversicherung, die abgelegene Gebiete, medizinische Kosten und Notfallevakuierung abdeckt"
+      }
+    },
+    "on-the-ground": {
+      "title": "Vor Ort",
+      "text": {
+        "0": "Ihre Reise wird von unseren eigenen Guides, Fahrern und Mitarbeitern vor Ort durchgeführt, wobei ein Team für die gesamte Bodenorganisation verantwortlich ist. Danakil-Expeditionen werden von erfahrenen lokalen Afar-Guides geleitet, mit Kundschaftern und Begleitschutz, wo erforderlich.",
+        "1": "Die Tage sind rund um die Hitze aufgebaut. Wir starten früh, ruhen in den heißesten Stunden und planen Wasser für jeden Tag der Route ein. In Dallol und am Erta Ale entscheidet Ihr Guide am jeweiligen Tag, wie nah man sicher herangehen kann, und die Gruppe bleibt in ausgewiesenen sicheren Bereichen."
+      },
+      "items": {
+        "0": "Erfahrene lokale Afar-Guides",
+        "1": "Kundschafter und Begleitschutz, wo erforderlich",
+        "2": "4×4-Fahrzeuge mit unseren eigenen Fahrern",
+        "3": "Wasser für jeden Tag eingeplant",
+        "4": "Frühe Starts und Ruhe in den heißesten Stunden",
+        "5": "Ausgewiesene sichere Bereiche an geothermischen und vulkanischen Stätten"
+      }
+    },
+    "your-part": {
+      "title": "Ihr Beitrag",
+      "text": {
+        "0": "Eine sichere Expedition ist eine gemeinsame Aufgabe. Diese einfachen Gewohnheiten machen in der Danakil den größten Unterschied."
+      },
+      "items": {
+        "0": "Folgen Sie jederzeit den Anweisungen Ihres Guides",
+        "1": "Bleiben Sie bei der Gruppe und in den ausgewiesenen Bereichen",
+        "2": "Trinken Sie mehr Wasser, als Sie zu brauchen glauben",
+        "3": "Sagen Sie Ihrem Guide sofort Bescheid, wenn Sie sich unwohl fühlen",
+        "4": "Schützen Sie sich mit Kleidung, Hut und Sonnencreme vor der Sonne"
+      }
+    }
+  },
+  "safety.response": {
+    "0": {
+      "title": "Verstehen",
+      "text": "Wir finden genau heraus, was passiert ist."
+    },
+    "1": {
+      "title": "Prüfen",
+      "text": "Wir prüfen die Lage vor Ort."
+    },
+    "2": {
+      "title": "Erklären",
+      "text": "Wir sagen Ihnen klar, was das für Sie bedeutet."
+    },
+    "3": {
+      "title": "Optionen anbieten",
+      "text": "Wir legen Ihnen realistische Alternativen vor."
+    },
+    "4": {
+      "title": "Entscheiden",
+      "text": "Wir wählen die sicherste Option, nie die bequemste."
+    },
+    "5": {
+      "title": "Neu planen",
+      "text": "Wir organisieren Fahrzeuge, Camps und Zeiten neu."
+    },
+    "6": {
+      "title": "Sie auf dem Laufenden halten",
+      "text": "Sie wissen bei jedem Schritt, was passiert."
+    }
+  },
+  "safety.officialAdvice": "Staatliche Reisehinweise für Teile von Afar und Nordäthiopien ändern sich und können Reisen einschränken. Bitte prüfen Sie vor der Buchung die aktuellen Hinweise Ihrer Regierung. Wir sagen Ihnen, was wir für Ihre Daten wissen, und wenn eine Route unangemessen wird, ändern oder streichen wir sie."
+}

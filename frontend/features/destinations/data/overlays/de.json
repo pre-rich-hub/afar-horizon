@@ -70,7 +70,7 @@
         },
         "1": {
           "q": "Ist der Danakil sicher?",
-          "a": "Es handelt sich um eine abgelegene Expeditionsumgebung und die regionalen Bedingungen müssen vor der Abreise immer überprüft werden. Offizielle Empfehlungen schränken derzeit das Reisen in Teilen von Afar ein. Deshalb bestätigen wir, was für Ihre Daten möglich und verantwortlich ist, bevor wir Angebote machen, und ändern oder stornieren eine Route, wenn die Bedingungen dies erfordern."
+          "a": "Sicherheit hat für uns oberste Priorität. Die Danakil ist eine abgelegene Expeditionsumgebung, und die regionalen Bedingungen müssen vor der Abreise immer geprüft werden. Offizielle Hinweise schränken Reisen in Teile von Afar derzeit ein. Deshalb bestätigen wir vor unserem Angebot, was für Ihre Daten möglich und verantwortbar ist, reisen mit erfahrenen lokalen Afar-Guides und Begleitschutz, wo erforderlich, und ändern oder streichen eine Route, wenn die Bedingungen es erfordern."
         },
         "2": {
           "q": "Kann ich ohne Reiseleiter besuchen?",
@@ -168,6 +168,10 @@
         "2": {
           "q": "Was passiert, wenn sich die vulkanischen Bedingungen ändern?",
           "a": "Ihr Guide entscheidet an dem Tag, wie nah es sicher ist, und wir passen den Plan an. In manchen Nächten ist der Vulkan ruhig; Gelegentlich ist der Zugang gesperrt."
+        },
+        "3": {
+          "q": "Ist ein Besuch des Erta Ale sicher?",
+          "a": "Sicherheit hat für uns oberste Priorität. Wir bestätigen den aktuellen Zugang vor Ihrer Reise, steigen in den kühleren Stunden mit erfahrenen lokalen Afar-Guides und Begleitschutz, wo erforderlich, auf und halten die Gruppe in ausgewiesenen sicheren Bereichen am Kraterrand."
         }
       }
     },
@@ -200,6 +204,12 @@
       "note": {
         "title": "Geothermiegebiete können gefährlich sein",
         "text": "Der Boden kann über heißem, saurem Wasser eine dünne Kruste sein und in einigen Gebieten werden giftige Gase freigesetzt. Besucher müssen ihrem örtlichen Reiseführer folgen und sich in den ausgewiesenen sicheren Bereichen aufhalten. Der Zugang hängt von den aktuellen Bedingungen und den örtlichen Anweisungen ab und wird niemals vorausgesetzt."
+      },
+      "faqs": {
+        "0": {
+          "q": "Ist ein Besuch von Dallol sicher?",
+          "a": "Sicherheit hat für uns oberste Priorität. Wir besuchen Dallol früh, vor der größten Hitze, mit erfahrenen lokalen Afar-Guides, und die Gruppe bleibt in ausgewiesenen sicheren Bereichen, fern von dünner Kruste, heißem saurem Wasser und Gasen. Der Zugang wird für Ihre Daten und am Tag selbst bestätigt."
+        }
       }
     },
     "lake-assale": {

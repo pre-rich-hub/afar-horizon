@@ -97,6 +97,9 @@ export function BeforeYouGoGuide() {
           <p className="font-serif text-2xl text-foreground">{tr('stillHaveQuestions')}</p>
           <p className="mt-2 text-pretty text-sm leading-relaxed text-muted-foreground">
             {tr('readOur')}{' '}<Link href="/faq" className="text-primary underline-offset-4 hover:underline">{tr('faq')}</Link>{tr('compare')}{' '}<Link href="/expeditions" className="text-primary underline-offset-4 hover:underline">{tr('expeditions')}</Link>{tr('orAskUsAboutCurrentConditionsFor')}</p>
+          <p className="mt-2 text-pretty text-sm leading-relaxed text-muted-foreground">
+            {tr('wonderingAboutSafety')}{' '}<Link href="/safety" className="text-primary underline-offset-4 hover:underline">{tr('readHowWeKeepYouSafe')}</Link>
+          </p>
         </Reveal>
       </div>
     </div>

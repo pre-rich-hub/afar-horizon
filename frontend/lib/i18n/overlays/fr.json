@@ -1,22 +1,26 @@
 {
   "company.promises": {
     "0": {
+      "title": "La sécurité est notre priorité absolue",
+      "text": "Chaque itinéraire est vérifié selon les conditions actuelles avant notre devis, puis à nouveau avant le départ. Si un lieu n'est pas sûr le jour venu, nous modifions le programme : les personnes avant les itinéraires."
+    },
+    "1": {
       "title": "Détenu et exploité localement",
       "text": "Nous opérons depuis l'Éthiopie, avec nos propres guides, chauffeurs et personnel de terrain. Vous traitez directement avec les personnes qui organisent votre voyage."
     },
-    "1": {
+    "2": {
       "title": "Connaissances d'expédition",
       "text": "Les paysages isolés nécessitent plus qu'une réservation en ligne. Nous planifions l'eau, le chauffage, les itinéraires, les camps et l'accès actuel avant de promettre quoi que ce soit."
     },
-    "2": {
+    "3": {
       "title": "Guidage humain",
       "text": "De vraies personnes avec une réelle expérience du terrain, qui expliquent ce que vous voyez plutôt que de simplement le montrer du doigt."
     },
-    "3": {
+    "4": {
       "title": "Nous nous occupons de la logistique",
       "text": "Véhicules 4×4, éclaireurs locaux, permis, camps, hôtels et transferts. Une équipe responsable de l'ensemble des opérations au sol."
     },
-    "4": {
+    "5": {
       "title": "Privé et flexible",
       "text": "Votre voyage n'a pas besoin de correspondre à un modèle. Lorsque les conditions changent, nous adaptons l'itinéraire en fonction de la sécurité et de ce qui compte pour vous."
     }
@@ -63,5 +67,35 @@
     "5": "Randonnée",
     "6": "Recherche",
     "7": "Famille"
+  },
+  "company.safety": {
+    "headline": "La sécurité est notre priorité absolue",
+    "summary": "Conditions actuelles vérifiées avant chaque départ, guides afars locaux expérimentés, escortes lorsque nécessaire et un programme conçu en fonction de la chaleur."
+  },
+  "company.safetyCommitments": {
+    "0": {
+      "title": "Conditions vérifiées avant chaque départ",
+      "text": "Nous examinons l'accès actuel, les informations locales et les conseils officiels aux voyageurs avant notre devis, puis à nouveau avant votre départ. Si un itinéraire n'est pas approprié, nous le modifions ou l'annulons."
+    },
+    "1": {
+      "title": "Des guides afars locaux expérimentés",
+      "text": "Les expéditions dans le Danakil sont menées par des guides afars locaux qui connaissent le terrain, avec des éclaireurs et des escortes lorsque nécessaire."
+    },
+    "2": {
+      "title": "Organisé en fonction de la chaleur",
+      "text": "Les journées commencent tôt, les heures les plus chaudes sont consacrées au repos et l'eau est prévue pour chaque jour de l'itinéraire."
+    },
+    "3": {
+      "title": "Notre propre équipe et nos véhicules 4×4",
+      "text": "Nos propres guides, chauffeurs et équipes de terrain assurent le voyage. Une seule équipe est responsable de toute l'opération sur place."
+    },
+    "4": {
+      "title": "Uniquement des zones sûres désignées",
+      "text": "À Dallol et à l'Erta Ale, votre guide décide le jour même jusqu'où il est sûr de s'approcher, et le groupe reste dans les zones sûres désignées."
+    },
+    "5": {
+      "title": "Une communication honnête et constante",
+      "text": "Si quelque chose change, nous le vérifions sur le terrain, vous expliquons ce que cela signifie pour vous, proposons des options réalistes et choisissons la plus sûre."
+    }
   }
 }

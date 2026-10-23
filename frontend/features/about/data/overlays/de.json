@@ -29,14 +29,18 @@
   },
   "about.principles": {
     "0": {
+      "title": "Sicherheit vor allem anderen",
+      "text": "Die Orte, die wir am meisten lieben, gehören auch zu den anspruchsvollsten der Erde. Wir prüfen die Bedingungen vor jeder Abreise, reisen mit erfahrenen lokalen Afar-Guides, planen jeden Tag rund um die Hitze und ändern die Route, wann immer die Bedingungen es erfordern. Kein Foto und kein Reiseplan ist mehr wert als die Menschen auf der Reise."
+    },
+    "1": {
       "title": "Raum für das Unerwartete",
       "text": "Eine Karawane, die im Morgengrauen das Salz überquert, ein Gespräch an einem Kaffeestand am Straßenrand, ein Bergrücken, der durch die Wolke auftaucht. Der Moment, an den sich Reisende am meisten erinnern, ist oft der, der nie auf der Reiseroute stand – also lassen wir Platz dafür."
     },
-    "1": {
+    "2": {
       "title": "Ehrliche Beratung",
       "text": "Wenn eine Route zu viel Zeit in Anspruch nimmt, sagen wir das. Wenn die Danakil-Hitze oder die örtlichen Bedingungen den Plan ändern, passen wir ihn an. Wildtiersichtungen, klarer Himmel und Kraterblick werden erhofft, aber nie versprochen."
     },
-    "2": {
+    "3": {
       "title": "Respekt vor den Orten, die wir teilen",
       "text": "Die Afar, das Hochland und der Süden sind Heimat, bevor sie Ziele sind. Wir reisen mit ortsansässigen Führern, fragen vor dem Fotografieren nach und bewegen uns in einem Tempo, das Gemeinden und Landschaften so hinterlässt, wie wir sie vorgefunden haben."
     }

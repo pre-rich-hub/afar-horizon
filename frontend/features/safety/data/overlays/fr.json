@@ -1,0 +1,76 @@
+{
+  "safety.sections": {
+    "before-you-travel": {
+      "title": "Avant de partir",
+      "text": {
+        "0": "La sécurité commence bien avant le premier jour sur la route. Nous vérifions l'accès actuel, les informations locales et les conseils officiels aux voyageurs pour vos dates avant notre devis, puis à nouveau avant le départ. Si nous estimons qu'un itinéraire n'est pas responsable, nous ne le proposerons pas.",
+        "1": "Nous expliquons aussi honnêtement ce qu'implique le voyage, notamment la chaleur, la marche, les routes difficiles, les camps rudimentaires et les départs matinaux, afin que le programme corresponde à votre santé et à votre condition physique plutôt qu'à une brochure."
+      },
+      "items": {
+        "0": "Conditions actuelles confirmées pour vos dates avant la réservation",
+        "1": "Une seconde vérification avant le départ",
+        "2": "Une description honnête de la marche, de la chaleur et des camps",
+        "3": "Conseils sur une assurance voyage couvrant les zones reculées, les frais médicaux et l'évacuation d'urgence"
+      }
+    },
+    "on-the-ground": {
+      "title": "Sur le terrain",
+      "text": {
+        "0": "Votre voyage est assuré par nos propres guides, chauffeurs et équipes de terrain, une seule équipe étant responsable de toute l'opération sur place. Les expéditions dans le Danakil sont menées par des guides afars locaux expérimentés, avec des éclaireurs et des escortes lorsque nécessaire.",
+        "1": "Les journées sont organisées en fonction de la chaleur. Nous partons tôt, nous reposons pendant les heures les plus chaudes et prévoyons l'eau pour chaque jour de l'itinéraire. À Dallol et à l'Erta Ale, votre guide décide le jour même jusqu'où il est sûr de s'approcher, et le groupe reste dans les zones sûres désignées."
+      },
+      "items": {
+        "0": "Des guides afars locaux expérimentés",
+        "1": "Éclaireurs et escortes lorsque nécessaire",
+        "2": "Véhicules 4×4 avec nos propres chauffeurs",
+        "3": "Eau prévue pour chaque journée",
+        "4": "Départs matinaux et repos aux heures les plus chaudes",
+        "5": "Zones sûres désignées sur les sites géothermiques et volcaniques"
+      }
+    },
+    "your-part": {
+      "title": "Votre rôle",
+      "text": {
+        "0": "Une expédition sûre est un effort partagé. Ces habitudes simples font toute la différence dans le Danakil."
+      },
+      "items": {
+        "0": "Suivez à tout moment les instructions de votre guide",
+        "1": "Restez avec le groupe et dans les zones désignées",
+        "2": "Buvez plus d'eau que vous ne le pensez nécessaire",
+        "3": "Prévenez immédiatement votre guide si vous ne vous sentez pas bien",
+        "4": "Protégez-vous du soleil avec des vêtements, un chapeau et de la crème solaire"
+      }
+    }
+  },
+  "safety.response": {
+    "0": {
+      "title": "Comprendre",
+      "text": "Nous établissons précisément ce qui s'est passé."
+    },
+    "1": {
+      "title": "Vérifier",
+      "text": "Nous vérifions la situation sur le terrain."
+    },
+    "2": {
+      "title": "Expliquer",
+      "text": "Nous vous expliquons clairement ce que cela signifie pour vous."
+    },
+    "3": {
+      "title": "Proposer des options",
+      "text": "Nous vous présentons des alternatives réalistes."
+    },
+    "4": {
+      "title": "Décider",
+      "text": "Nous choisissons l'option la plus sûre, jamais la plus facile."
+    },
+    "5": {
+      "title": "Réorganiser",
+      "text": "Nous réorganisons les véhicules, les camps et les horaires."
+    },
+    "6": {
+      "title": "Vous tenir informé",
+      "text": "Vous savez ce qui se passe à chaque étape."
+    }
+  },
+  "safety.officialAdvice": "Les conseils gouvernementaux aux voyageurs pour certaines parties de l'Afar et du nord de l'Éthiopie évoluent et peuvent restreindre les déplacements. Veuillez consulter les conseils actuels de votre gouvernement avant de réserver. Nous vous dirons ce que nous savons pour vos dates et, si un itinéraire devient inapproprié, nous le modifierons ou l'annulerons."
+}

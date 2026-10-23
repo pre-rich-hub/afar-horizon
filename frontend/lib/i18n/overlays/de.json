@@ -1,22 +1,26 @@
 {
   "company.promises": {
     "0": {
+      "title": "Sicherheit hat für uns oberste Priorität",
+      "text": "Jede Route wird vor unserem Angebot und erneut vor der Abreise anhand der aktuellen Bedingungen geprüft. Ist ein Ort am jeweiligen Tag nicht sicher, ändern wir den Plan: Menschen vor Reiseplänen."
+    },
+    "1": {
       "title": "In lokalem Besitz und betrieben",
       "text": "Wir operieren von Äthiopien aus mit unseren eigenen Führern, Fahrern und Außendienstmitarbeitern. Sie arbeiten direkt mit den Menschen zusammen, die Ihre Reise durchführen."
     },
-    "1": {
+    "2": {
       "title": "Expedition Wissen",
       "text": "Entlegene Landschaften erfordern mehr als eine Online-Buchung. Wir planen Wasser, Heizung, Routen, Lager und aktuellen Zugang, bevor wir etwas versprechen."
     },
-    "2": {
+    "3": {
       "title": "Menschliche Führung",
       "text": "Echte Menschen mit echter Erfahrung vor Ort, die erklären, was Sie sehen, anstatt nur darauf zu zeigen."
     },
-    "3": {
+    "4": {
       "title": "Wir kümmern uns um die Logistik",
       "text": "4×4-Fahrzeuge, örtliche Pfadfinder, Genehmigungen, Camps, Hotels und Transfers. Ein Team ist für den gesamten Bodenbetrieb verantwortlich."
     },
-    "4": {
+    "5": {
       "title": "Privat und flexibel",
       "text": "Ihre Reise muss keiner Vorlage entsprechen. Wenn sich die Bedingungen ändern, passen wir die Route entsprechend der Sicherheit und dem, was Ihnen wichtig ist, an."
     }
@@ -63,5 +67,35 @@
     "5": "Trekking",
     "6": "Forschung",
     "7": "Familie"
+  },
+  "company.safety": {
+    "headline": "Sicherheit hat für uns oberste Priorität",
+    "summary": "Aktuelle Bedingungen vor jeder Abreise geprüft, erfahrene lokale Afar-Guides, Begleitschutz wo erforderlich und ein auf die Hitze abgestimmter Plan."
+  },
+  "company.safetyCommitments": {
+    "0": {
+      "title": "Bedingungen vor jeder Abreise geprüft",
+      "text": "Wir prüfen den aktuellen Zugang, lokale Informationen und offizielle Reisehinweise vor unserem Angebot und erneut vor Ihrer Abreise. Ist eine Route nicht angemessen, ändern oder streichen wir sie."
+    },
+    "1": {
+      "title": "Erfahrene lokale Afar-Guides",
+      "text": "Danakil-Expeditionen werden von lokalen Afar-Guides geleitet, die das Gelände kennen, mit Kundschaftern und Begleitschutz, wo erforderlich."
+    },
+    "2": {
+      "title": "Rund um die Hitze geplant",
+      "text": "Die Tage beginnen früh, die heißesten Stunden dienen der Erholung, und Wasser ist für jeden Tag der Route eingeplant."
+    },
+    "3": {
+      "title": "Unser eigenes Team und 4×4-Fahrzeuge",
+      "text": "Unsere eigenen Guides, Fahrer und Mitarbeiter vor Ort führen die Reise durch. Ein Team ist für die gesamte Bodenorganisation verantwortlich."
+    },
+    "4": {
+      "title": "Nur ausgewiesene sichere Bereiche",
+      "text": "In Dallol und am Erta Ale entscheidet Ihr Guide am jeweiligen Tag, wie nah man sicher herangehen kann, und die Gruppe bleibt in ausgewiesenen sicheren Bereichen."
+    },
+    "5": {
+      "title": "Ehrliche, ständige Kommunikation",
+      "text": "Wenn sich etwas ändert, prüfen wir es vor Ort, erklären Ihnen, was es für Sie bedeutet, bieten realistische Optionen an und wählen die sicherste."
+    }
   }
 }

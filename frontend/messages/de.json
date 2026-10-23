@@ -30,6 +30,23 @@
         "or": "Oder",
         "contact": "schreiben Sie an einen Designer",
         "instead": "stattdessen."
+      },
+      "SafetyStrip": {
+        "ourSafetyCommitment": "Unser Sicherheitsversprechen",
+        "howWeKeepYouSafe": "So sorgen wir für Ihre Sicherheit"
+      },
+      "SafetyPanel": {
+        "safetyFirst": "Sicherheit zuerst",
+        "howWeKeepYouSafe": "So sorgen wir für Ihre Sicherheit",
+        "ourSafetyApproach": "Unser Sicherheitsansatz",
+        "expeditionsLede": "Jede Expedition, von einer kurzen Danakil-Route bis zu einer langen Hochlandreise, wird nach denselben Sicherheitsverpflichtungen geplant.",
+        "visitingSafely": "{value0} sicher besuchen",
+        "groundOperationsTitle": "Sicherheitsstandards für Ihre Reisenden",
+        "groundOperationsLede": "Ihre Kunden reisen mit denselben Sicherheitsverpflichtungen wie unsere eigenen Gäste, mit einem lokalen Team, das vor Ort verantwortlich ist.",
+        "specialistTitle": "Sicherheit für Crews und Fachteams",
+        "specialistLede": "Fotografie, Filmarbeiten und Forschung bringen Menschen näher und länger an gefährliches Gelände. Wir planen Positionen, Zeiten und Zugang mit Sicherheit an erster Stelle.",
+        "ourCommitments": "Unsere Verpflichtungen",
+        "whatWeDoOnEveryJourney": "Was wir auf jeder Reise tun"
       }
     },
     "layout": {
@@ -63,7 +80,8 @@
         "gallery": "Galerie",
         "journal": "Reisejournal",
         "contact": "Kontakt",
-        "address": "Addis Abeba, Äthiopien"
+        "address": "Addis Abeba, Äthiopien",
+        "safety": "Sicherheit"
       },
       "SiteNav": {
         "afarHorizonExpeditionsHome": "Afar Horizon Expeditions – Startseite",
@@ -148,7 +166,9 @@
         "faq": "FAQ",
         "compare": ", vergleichen",
         "expeditions": "Expeditionen",
-        "orAskUsAboutCurrentConditionsFor": ", oder fragen Sie uns nach den aktuellen Bedingungen für Ihre Termine."
+        "orAskUsAboutCurrentConditionsFor": ", oder fragen Sie uns nach den aktuellen Bedingungen für Ihre Termine.",
+        "wonderingAboutSafety": "Fragen zur Sicherheit?",
+        "readHowWeKeepYouSafe": "Lesen Sie, wie wir für Ihre Sicherheit sorgen"
       },
       "BeforeYouGoHero": {
         "beforeYouGo": "Bevor Sie losfahren",
@@ -583,7 +603,10 @@
         "whatsapp": "WhatsApp",
         "planningForAGroupOfClientsUse": "Planen Sie für eine Gruppe von Kunden? Nutzen Sie unsere",
         "partnerForm": "Partnerformular",
-        "instead": "stattdessen."
+        "instead": "stattdessen.",
+        "safetyIsOurFirstPriority": "Sicherheit hat für uns oberste Priorität.",
+        "weConfirmCurrentConditionsForYourDates": "Wir bestätigen die aktuellen Bedingungen für Ihre Daten vor unserem Angebot und erneut vor der Abreise.",
+        "howWeKeepYouSafe": "So sorgen wir für Ihre Sicherheit"
       }
     },
     "specialisttravel": {
@@ -707,6 +730,34 @@
         "heatRoadTimeHowHardTheWalking": "Hitze, Fahrzeit, wie anstrengend das Gehen wirklich ist, was Camping im Danakil bedeutet. Wenn Sie uns etwas fragen, werden wir ehrlich antworten.",
         "allExpeditions": "Alle Expeditionen"
       }
+    },
+    "safety": {
+      "SafetyHero": {
+        "safety": "Sicherheit",
+        "safetyIsOurFirstPriority": "Sicherheit hat für uns oberste Priorität",
+        "theDanakilIsOneOfTheMost": "Die Danakil ist einer der außergewöhnlichsten Orte der Erde – und einer der anspruchsvollsten. So planen, führen und reagieren wir, damit Sie verantwortungsvoll dorthin reisen können.",
+        "ertaAleVolcanoInTheAfarRegion": "Der Vulkan Erta Ale in der Afar-Region",
+        "home": "Startseite"
+      },
+      "SafetyGuide": {
+        "onThisPage": "Auf dieser Seite",
+        "whenConditionsChange": "Wenn sich die Bedingungen ändern",
+        "officialTravelAdvice": "Offizielle Reisehinweise",
+        "inARemoteEnvironmentPlansSometimesHave": "In einer abgelegenen Umgebung müssen Pläne manchmal geändert werden. Dann folgen wir jedes Mal denselben Schritten: Menschen vor Reiseplänen.",
+        "haveAQuestionAboutSafety": "Haben Sie eine Frage zur Sicherheit?",
+        "read": "Lesen Sie",
+        "beforeYouGo": "Bevor Sie losfahren",
+        "checkThe": ", sehen Sie in die",
+        "faq": "FAQ",
+        "or": " oder",
+        "askUsDirectly": "fragen Sie uns direkt",
+        "aboutCurrentConditionsForYourDates": "nach den aktuellen Bedingungen für Ihre Daten."
+      },
+      "SafetyPlanning": {
+        "askAboutSafetyForYourDates": "Fragen Sie nach der Sicherheit für Ihre Reisedaten",
+        "tellUsWhenYouWantToTravel": "Sagen Sie uns, wann Sie reisen möchten, und wir erklären Ihnen die aktuellen Bedingungen, was die Route mit sich bringt und wie wir sie sicher durchführen würden.",
+        "readTheFaq": "Lesen Sie die FAQ"
+      }
     }
   },
   "Common": {
@@ -752,7 +803,10 @@
     "specialist-travel_description": "Planen Sie Foto-, Film-, Recherche- und Bergreisen in Afar und Nordäthiopien mit lokaler Routenplanung und Expeditionslogistik.",
     "specialist-travel_imageAlt": "Dallol, Äthiopien",
     "terms_title": "Website-Nutzungsbedingungen",
-    "terms_description": "Website-Bedingungen für Afar Horizon Expeditions: Reiseinformationen, Angebote, geänderter Zugang, der Reiseassistent und verantwortungsvolle Website-Nutzung."
+    "terms_description": "Website-Bedingungen für Afar Horizon Expeditions: Reiseinformationen, Angebote, geänderter Zugang, der Reiseassistent und verantwortungsvolle Website-Nutzung.",
+    "safety_title": "Reisesicherheit in der Danakil und in Afar",
+    "safety_description": "Wie Afar Horizon sichere Expeditionen in die Danakil und nach Afar plant: Bedingungen vor jeder Abreise geprüft, lokale Afar-Guides, Begleitschutz wo erforderlich und Planung rund um die Hitze.",
+    "safety_imageAlt": "Erta Ale, Äthiopien"
   },
   "Schema": {
     "home": "Startseite",

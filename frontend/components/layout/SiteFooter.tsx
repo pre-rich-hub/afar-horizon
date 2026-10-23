@@ -131,6 +131,7 @@ export function SiteFooter() {
       links: [
         { label: tr('aboutUs'), href: '/about' },
         { label: tr('beforeYouGo'), href: '/before-you-go' },
+        { label: tr('safety'), href: '/safety' },
         { label: tr('faq'), href: '/faq' },
         { label: tr('gallery'), href: '/gallery' },
         { label: tr('journal'), href: '/blog' },

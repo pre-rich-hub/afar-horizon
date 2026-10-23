@@ -32,6 +32,12 @@ export function PlanRequest({ subject }: { subject?: string }) {
           ))}
         </ol>
 
+        <p className="mt-10 border-l-2 border-accent pl-5 text-pretty text-sm leading-relaxed text-muted-foreground">
+          <span className="font-semibold text-foreground">{tr('safetyIsOurFirstPriority')}</span>{' '}
+          {tr('weConfirmCurrentConditionsForYourDates')}{' '}
+          <Link href="/safety" className="text-primary underline-offset-4 hover:underline">{tr('howWeKeepYouSafe')}</Link>
+        </p>
+
         <div className="mt-12 border-t border-border pt-8">
           <p className="eyebrow mb-4 text-primary">{tr('preferToTalk')}</p>
           <ul className="space-y-3 text-sm">

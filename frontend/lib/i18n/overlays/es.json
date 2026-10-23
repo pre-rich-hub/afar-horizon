@@ -1,22 +1,26 @@
 {
   "company.promises": {
     "0": {
+      "title": "La seguridad es nuestra máxima prioridad",
+      "text": "Cada ruta se revisa según las condiciones actuales antes de presupuestar y de nuevo antes de la salida. Si un lugar no es seguro ese día, cambiamos el plan: las personas antes que los itinerarios."
+    },
+    "1": {
       "title": "Localmente de propiedad y operación",
       "text": "Operamos desde Etiopía, con nuestros propios guías, conductores y personal de campo. Tratas directamente con las personas que organizan tu viaje."
     },
-    "1": {
+    "2": {
       "title": "Conocimientos de expedición",
       "text": "Los paisajes remotos requieren más que una reserva en línea. Planificamos el agua, la calefacción, las rutas, los campamentos y el acceso actual antes de prometer nada."
     },
-    "2": {
+    "3": {
       "title": "Guía humano",
       "text": "Personas reales con experiencia real del terreno, que te explican lo que estás viendo en lugar de simplemente señalarlo."
     },
-    "3": {
+    "4": {
       "title": "Nosotros nos encargamos de la logística",
       "text": "Vehículos 4×4, scouts locales, permisos, campamentos, hoteles y traslados. Un equipo responsable de toda la operación terrestre."
     },
-    "4": {
+    "5": {
       "title": "Privadas y flexibles",
       "text": "No es necesario que su viaje se ajuste a una plantilla. Cuando las condiciones cambian, adaptamos la ruta en torno a la seguridad y lo que es importante para usted."
     }
@@ -63,5 +67,35 @@
     "5": "senderismo",
     "6": "Investigación",
     "7": "Familia"
+  },
+  "company.safety": {
+    "headline": "La seguridad es nuestra máxima prioridad",
+    "summary": "Condiciones actuales revisadas antes de cada salida, guías afar locales con experiencia, escoltas cuando se requieren y un plan pensado en función del calor."
+  },
+  "company.safetyCommitments": {
+    "0": {
+      "title": "Condiciones revisadas antes de cada salida",
+      "text": "Revisamos el acceso actual, la información local y las recomendaciones oficiales de viaje antes de presupuestar y de nuevo antes de su salida. Si una ruta no es adecuada, la cambiamos o la cancelamos."
+    },
+    "1": {
+      "title": "Guías afar locales con experiencia",
+      "text": "Las expediciones al Danakil las dirigen guías afar locales que conocen el terreno, con exploradores y escoltas cuando se requieren."
+    },
+    "2": {
+      "title": "Planificado en función del calor",
+      "text": "Los días empiezan temprano, las horas de más calor son para descansar y el agua está prevista para cada día de la ruta."
+    },
+    "3": {
+      "title": "Nuestro propio equipo y vehículos 4×4",
+      "text": "Nuestros propios guías, conductores y personal de campo dirigen el viaje. Un único equipo es responsable de toda la operación sobre el terreno."
+    },
+    "4": {
+      "title": "Solo zonas seguras designadas",
+      "text": "En Dallol y Erta Ale, su guía decide ese mismo día hasta dónde es seguro acercarse, y el grupo permanece dentro de las zonas seguras designadas."
+    },
+    "5": {
+      "title": "Comunicación honesta y constante",
+      "text": "Si algo cambia, lo verificamos sobre el terreno, le explicamos lo que significa para usted, le ofrecemos opciones realistas y elegimos la más segura."
+    }
   }
 }

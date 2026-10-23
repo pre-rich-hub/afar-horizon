@@ -29,14 +29,18 @@
   },
   "about.principles": {
     "0": {
+      "title": "La sécurité avant tout",
+      "text": "Les lieux que nous aimons le plus comptent aussi parmi les plus exigeants de la planète. Nous vérifions les conditions avant chaque départ, voyageons avec des guides afars locaux expérimentés, organisons chaque journée en fonction de la chaleur et modifions l'itinéraire dès que les conditions l'exigent. Aucune photographie ni aucun itinéraire ne vaut plus que les personnes du voyage."
+    },
+    "1": {
       "title": "De la place pour l'inattendu",
       "text": "Une caravane traversant le sel aux premières lueurs, une conversation dans un stand de café en bord de route, une crête apparaissant à travers les nuages. Le moment dont les voyageurs se souviennent le plus est souvent celui qui n'a jamais été sur l'itinéraire — nous lui laissons donc de la place."
     },
-    "1": {
+    "2": {
       "title": "Conseils honnêtes",
       "text": "Si un itinéraire demande trop de temps dont vous disposez, nous le disons. Si la chaleur du Danakil ou les conditions locales modifient le plan, nous l'adaptons. L'observation de la faune, un ciel dégagé et des vues de cratères sont espérés, jamais promis."
     },
-    "2": {
+    "3": {
       "title": "Respect des lieux que nous partageons",
       "text": "L'Afar, les hauts plateaux et le sud sont des foyers avant eux. destinations. Nous voyageons avec des guides locaux, demandons avant de photographier et avançons à un rythme qui laisse les communautés et les paysages tels que nous les avons trouvés."
     }

@@ -1,6 +1,7 @@
 import {getDestinationsCopy} from '@/features/destinations'
 import {getTranslations, setRequestLocale} from 'next-intl/server'
 import {requireLocale} from '@/i18n/locale'
+import { SafetyPanel } from '@/components/common/SafetyPanel'
 import { createPageMetadata } from '@/lib/seo/metadata'
 import { DestinationEnquiry, DestinationHero, DestinationOverview, DestinationPlanning, destinations, getDestination, getDestinationRelations } from '@/features/destinations'
 import type { Metadata } from 'next'
@@ -59,6 +60,9 @@ export default async function DestinationPage({
 
       {/* Essay + highlights, with the planning card pinned alongside */}
       <DestinationOverview d={d} fallback={fallback} />
+
+      {/* Safety commitments for Afar and Danakil destinations */}
+      {d.group === 'danakil' && <SafetyPanel variant="destination" name={d.name} />}
 
       {/* Enquiry */}
       <DestinationEnquiry d={based!} others={others} />

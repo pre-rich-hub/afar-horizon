@@ -30,6 +30,23 @@
         "or": "或者",
         "contact": "写信给设计师",
         "instead": "。"
+      },
+      "SafetyStrip": {
+        "ourSafetyCommitment": "我们的安全承诺",
+        "howWeKeepYouSafe": "我们如何保障您的安全"
+      },
+      "SafetyPanel": {
+        "safetyFirst": "安全第一",
+        "howWeKeepYouSafe": "我们如何保障您的安全",
+        "ourSafetyApproach": "我们的安全理念",
+        "expeditionsLede": "每一次探险，无论是短途的达纳基尔路线还是漫长的高原之旅，都遵循同样的安全承诺。",
+        "visitingSafely": "安全游览{value0}",
+        "groundOperationsTitle": "为您的旅客提供的安全标准",
+        "groundOperationsLede": "您的客户享有与我们自己的客人相同的安全承诺，由同一支当地团队在现场负责。",
+        "specialistTitle": "为拍摄团队和专业团队提供的安全保障",
+        "specialistLede": "摄影、拍摄和科研会让人更近、更久地接触危险地带。我们在规划机位、时间和通行时始终把安全放在首位。",
+        "ourCommitments": "我们的承诺",
+        "whatWeDoOnEveryJourney": "我们在每次旅程中的做法"
       }
     },
     "layout": {
@@ -63,7 +80,8 @@
         "gallery": "相册",
         "journal": "旅行日志",
         "contact": "联系我们",
-        "address": "亚的斯亚贝巴，埃塞俄比亚"
+        "address": "亚的斯亚贝巴，埃塞俄比亚",
+        "safety": "安全"
       },
       "SiteNav": {
         "afarHorizonExpeditionsHome": "Afar Horizon Expeditions — 主页",
@@ -148,7 +166,9 @@
         "faq": "常见问题解答",
         "compare": "、比较",
         "expeditions": "探险",
-        "orAskUsAboutCurrentConditionsFor": "，或向我们询问您的日期的当前情况。"
+        "orAskUsAboutCurrentConditionsFor": "，或向我们询问您的日期的当前情况。",
+        "wonderingAboutSafety": "关心安全问题？",
+        "readHowWeKeepYouSafe": "了解我们如何保障您的安全"
       },
       "BeforeYouGoHero": {
         "beforeYouGo": "行前准备",
@@ -583,7 +603,10 @@
         "whatsapp": "WhatsApp",
         "planningForAGroupOfClientsUse": "正在为一组客户进行规划？使用我们的",
         "partnerForm": "合作伙伴表格",
-        "instead": "。"
+        "instead": "。",
+        "safetyIsOurFirstPriority": "安全是我们的首要任务。",
+        "weConfirmCurrentConditionsForYourDates": "我们会在报价前和出发前确认您日期的当前情况。",
+        "howWeKeepYouSafe": "我们如何保障您的安全"
       }
     },
     "specialisttravel": {
@@ -707,6 +730,34 @@
         "heatRoadTimeHowHardTheWalking": "炎热、路途时间、步行到底有多困难、在达纳基尔露营意味着什么。询问我们任何问题，我们都会如实回答。",
         "allExpeditions": "所有探险"
       }
+    },
+    "safety": {
+      "SafetyHero": {
+        "safety": "安全",
+        "safetyIsOurFirstPriority": "安全是我们的首要任务",
+        "theDanakilIsOneOfTheMost": "达纳基尔是地球上最非凡的地方之一，也是最具挑战的地方之一。以下是我们如何规划、带队和灵活应变，让您能够负责任地前往。",
+        "ertaAleVolcanoInTheAfarRegion": "阿法尔地区的尔塔阿雷火山",
+        "home": "首页"
+      },
+      "SafetyGuide": {
+        "onThisPage": "在此页面",
+        "whenConditionsChange": "当情况发生变化时",
+        "officialTravelAdvice": "官方旅行建议",
+        "inARemoteEnvironmentPlansSometimesHave": "在偏远地区，计划有时必须改变。每当这时，我们都遵循同样的步骤：人永远比行程更重要。",
+        "haveAQuestionAboutSafety": "对安全有疑问吗？",
+        "read": "阅读",
+        "beforeYouGo": "行前准备",
+        "checkThe": "，查看",
+        "faq": "常见问题解答",
+        "or": "，或",
+        "askUsDirectly": "直接询问我们",
+        "aboutCurrentConditionsForYourDates": "了解您出行日期的当前情况。"
+      },
+      "SafetyPlanning": {
+        "askAboutSafetyForYourDates": "咨询您出行日期的安全情况",
+        "tellUsWhenYouWantToTravel": "告诉我们您想何时出行，我们会说明当前情况、路线的实际内容，以及我们将如何安全地组织这次旅程。",
+        "readTheFaq": "阅读常见问题解答"
+      }
     }
   },
   "Common": {
@@ -752,7 +803,10 @@
     "specialist-travel_description": "规划 阿法尔 和埃塞俄比亚北部的摄影、拍摄、研究和山地旅行，并提供当地路线规划和探险物流。",
     "specialist-travel_imageAlt": "达洛尔，埃塞俄比亚",
     "terms_title": "网站条款",
-    "terms_description": "Afar Horizon Expeditions 的网站条款：旅程信息、报价、更改访问权限、旅行助理和负责任的网站使用。"
+    "terms_description": "Afar Horizon Expeditions 的网站条款：旅程信息、报价、更改访问权限、旅行助理和负责任的网站使用。",
+    "safety_title": "达纳基尔与阿法尔旅行安全",
+    "safety_description": "Afar Horizon 如何规划安全的达纳基尔和阿法尔探险：每次出发前核查情况、当地阿法尔向导、必要时安排护卫，并围绕高温做好规划。",
+    "safety_imageAlt": "埃塞俄比亚尔塔阿雷"
   },
   "Schema": {
     "home": "首页",

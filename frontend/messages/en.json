@@ -30,6 +30,23 @@
         "or": "Or",
         "contact": "write to a designer",
         "instead": "instead."
+      },
+      "SafetyStrip": {
+        "ourSafetyCommitment": "Our safety commitment",
+        "howWeKeepYouSafe": "How we keep you safe"
+      },
+      "SafetyPanel": {
+        "safetyFirst": "Safety First",
+        "howWeKeepYouSafe": "How we keep you safe",
+        "ourSafetyApproach": "Our safety approach",
+        "expeditionsLede": "Every expedition, from a short Danakil route to a long highlands journey, is planned around the same safety commitments.",
+        "visitingSafely": "Visiting {value0} safely",
+        "groundOperationsTitle": "Safety standards for your travellers",
+        "groundOperationsLede": "Your clients travel under the same safety commitments as our own guests, with one local team responsible on the ground.",
+        "specialistTitle": "Safety for crews and specialist teams",
+        "specialistLede": "Photography, filming and research put people closer to hazardous ground for longer. We plan positions, timings and access around safety first.",
+        "ourCommitments": "Our Commitments",
+        "whatWeDoOnEveryJourney": "What we do on every journey"
       }
     },
     "layout": {
@@ -63,7 +80,8 @@
         "gallery": "Gallery",
         "journal": "Journal",
         "contact": "Contact",
-        "address": "Addis Ababa, Ethiopia"
+        "address": "Addis Ababa, Ethiopia",
+        "safety": "Safety"
       },
       "SiteNav": {
         "afarHorizonExpeditionsHome": "Afar Horizon Expeditions — home",
@@ -148,7 +166,9 @@
         "faq": "FAQ",
         "compare": ", compare",
         "expeditions": "expeditions",
-        "orAskUsAboutCurrentConditionsFor": ", or ask us about current conditions for your dates."
+        "orAskUsAboutCurrentConditionsFor": ", or ask us about current conditions for your dates.",
+        "wonderingAboutSafety": "Wondering about safety?",
+        "readHowWeKeepYouSafe": "Read how we keep you safe"
       },
       "BeforeYouGoHero": {
         "beforeYouGo": "Before You Go",
@@ -583,7 +603,10 @@
         "whatsapp": "WhatsApp",
         "planningForAGroupOfClientsUse": "Planning for a group of clients? Use our",
         "partnerForm": "partner form",
-        "instead": "instead."
+        "instead": "instead.",
+        "safetyIsOurFirstPriority": "Safety is our first priority.",
+        "weConfirmCurrentConditionsForYourDates": "We confirm current conditions for your dates before we quote, and again before departure.",
+        "howWeKeepYouSafe": "How we keep you safe"
       }
     },
     "specialisttravel": {
@@ -707,6 +730,34 @@
         "heatRoadTimeHowHardTheWalking": "Heat, road time, how hard the walking really is, what camping means in the Danakil. Ask us anything and we will answer honestly.",
         "allExpeditions": "All Expeditions"
       }
+    },
+    "safety": {
+      "SafetyHero": {
+        "safety": "Safety",
+        "safetyIsOurFirstPriority": "Safety is our first priority",
+        "theDanakilIsOneOfTheMost": "The Danakil is one of the most extraordinary places on Earth, and one of the most demanding. Here is exactly how we plan, guide and adapt so you can travel there responsibly.",
+        "ertaAleVolcanoInTheAfarRegion": "Erta Ale volcano in the Afar region",
+        "home": "Home"
+      },
+      "SafetyGuide": {
+        "onThisPage": "On this page",
+        "whenConditionsChange": "When conditions change",
+        "officialTravelAdvice": "Official travel advice",
+        "inARemoteEnvironmentPlansSometimesHave": "In a remote environment, plans sometimes have to change. When they do, we follow the same steps every time: people before itineraries.",
+        "haveAQuestionAboutSafety": "Have a question about safety?",
+        "read": "Read",
+        "beforeYouGo": "Before You Go",
+        "checkThe": ", check the",
+        "faq": "FAQ",
+        "or": ", or",
+        "askUsDirectly": "ask us directly",
+        "aboutCurrentConditionsForYourDates": "about current conditions for your dates."
+      },
+      "SafetyPlanning": {
+        "askAboutSafetyForYourDates": "Ask about safety for your dates",
+        "tellUsWhenYouWantToTravel": "Tell us when you want to travel and we will explain current conditions, what the route involves and how we would run it safely.",
+        "readTheFaq": "Read the FAQ"
+      }
     }
   },
   "Common": {
@@ -752,7 +803,10 @@
     "specialist-travel_description": "Plan photography, filming, research and mountain journeys in Afar and northern Ethiopia, with local route planning and expedition logistics.",
     "specialist-travel_imageAlt": "Dallol, Ethiopia",
     "terms_title": "Website Terms",
-    "terms_description": "Website terms for Afar Horizon Expeditions: journey information, quotations, changing access, the travel assistant and responsible website use."
+    "terms_description": "Website terms for Afar Horizon Expeditions: journey information, quotations, changing access, the travel assistant and responsible website use.",
+    "safety_title": "Danakil & Afar Travel Safety",
+    "safety_description": "How Afar Horizon plans safe Danakil and Afar expeditions: conditions checked before every departure, local Afar guides, escorts where required and heat planning.",
+    "safety_imageAlt": "Erta Ale, Ethiopia"
   },
   "Schema": {
     "home": "Home",

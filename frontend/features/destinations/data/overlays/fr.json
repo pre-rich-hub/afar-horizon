@@ -70,7 +70,7 @@
         },
         "1": {
           "q": "Le Danakil est-il sûr ?",
-          "a": "Il s'agit d'un environnement d'expédition éloigné et les conditions régionales doivent toujours être vérifiées avant le départ. Les conseils officiels restreignent actuellement les voyages dans certaines parties d'Afar, nous confirmons donc ce qui est possible et responsable de vos dates avant de proposer, et nous modifions ou annulons un itinéraire lorsque les conditions l'exigent."
+          "a": "La sécurité est notre priorité absolue. Le Danakil est un environnement d'expédition isolé, et les conditions régionales doivent toujours être vérifiées avant le départ. Les conseils officiels restreignent actuellement les déplacements dans certaines parties de l'Afar ; nous confirmons donc ce qui est possible et responsable pour vos dates avant notre devis, voyageons avec des guides afars locaux expérimentés et des escortes lorsque nécessaire, et modifions ou annulons un itinéraire lorsque les conditions l'exigent."
         },
         "2": {
           "q": "Puis-je visiter sans opérateur ?",
@@ -168,6 +168,10 @@
         "2": {
           "q": "Que se passe-t-il si les conditions volcaniques changent ?",
           "a": "Votre guide décide le jour à quelle distance il est possible de s'approcher en toute sécurité, et nous ajustons le plan. Certaines nuits, le volcan est calme ; Parfois, l'accès est fermé."
+        },
+        "3": {
+          "q": "L'Erta Ale est-il sûr à visiter ?",
+          "a": "La sécurité est notre priorité absolue. Nous confirmons l'accès actuel avant votre voyage, montons aux heures les plus fraîches avec des guides afars locaux expérimentés et des escortes lorsque nécessaire, et maintenons le groupe dans les zones sûres désignées au bord du cratère."
         }
       }
     },
@@ -200,6 +204,12 @@
       "note": {
         "title": "Les zones géothermiques peuvent être dangereuses",
         "text": "Le sol peut être une fine croûte recouverte d'eau chaude acide et certaines zones libèrent des gaz toxiques. Les visiteurs doivent suivre leur guide local et rester dans les zones de sécurité désignées. L'accès dépend des conditions actuelles et des instructions locales et n'est jamais supposé."
+      },
+      "faqs": {
+        "0": {
+          "q": "Dallol est-il sûr à visiter ?",
+          "a": "La sécurité est notre priorité absolue. Nous visitons tôt, avant les plus fortes chaleurs, avec des guides afars locaux expérimentés, et le groupe reste dans les zones sûres désignées, à l'écart des croûtes fines, des eaux acides brûlantes et des gaz. L'accès est confirmé pour vos dates et le jour même."
+        }
       }
     },
     "lake-assale": {

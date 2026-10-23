@@ -14,7 +14,7 @@ export const promiseImages = [
   { image: `${destinationImageBase}/dallol.png`, alt: 'Dallol, Ethiopia' },
 ]
 
-// Rotate all ten photographs while retaining the five existing brand promises.
+// Rotate all ten photographs through the brand promises.
 export const slides = promiseImages.map((photo, i) => ({ ...promises[i % promises.length], ...photo }))
 
 export const LAYERS = [

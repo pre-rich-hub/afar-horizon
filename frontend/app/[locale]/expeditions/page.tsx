@@ -1,5 +1,6 @@
 import {getTranslations, setRequestLocale} from 'next-intl/server'
 import {requireLocale} from '@/i18n/locale'
+import { SafetyPanel } from '@/components/common/SafetyPanel'
 import { createPageMetadata } from '@/lib/seo/metadata'
 import { ExpeditionCollections, ExpeditionsHero, ExpeditionsNote, ExpeditionsPlanning, getToursData } from '@/features/tours'
 
@@ -33,6 +34,8 @@ export default async function ExpeditionsPage({params}: {params: Promise<{locale
 
       {/* Operating note */}
       <ExpeditionsNote />
+
+      <SafetyPanel variant="expeditions" />
 
       <ExpeditionsPlanning />
     </>

@@ -7,6 +7,7 @@ const {indexableStaticRoutes} = load('@/lib/seo/routes')
 const {destinations} = load('@/features/destinations/data/destination.data')
 const {tours} = load('@/features/tours/data/tour.data')
 const {posts} = load('@/features/blog/data/post.data')
+const sitemapURLs = indexableStaticRoutes.length + destinations.length + tours.length + posts.length
 const routes = [...indexableStaticRoutes, '/plan', ...destinations.map(d => '/destinations/' + d.slug), ...tours.map(t => '/expeditions/' + t.slug), ...posts.map(p => '/blog/' + p.slug)]
 const locales = ['fr', 'es', 'de', 'zh-Hans']
 const base = process.env.SEO_BASE_URL || 'http://127.0.0.1:3101'
@@ -81,13 +82,13 @@ async function main() {
     console.log('Passed ' + routes.length + ' ' + locale + ' draft pages')
   }
   const sitemap = (await get('/sitemap.xml')).html
-  assert.equal((sitemap.match(/<loc>/g) || []).length, 58)
+  assert.equal((sitemap.match(/<loc>/g) || []).length, sitemapURLs)
   assert.doesNotMatch(sitemap, /afarhorizon.com\/(fr|es|de|zh-Hans)(?:\/|<)/)
   const invalid = ['/it/about', '/fr/admin', '/de/login', '/es/not-a-real-page', '/zh-Hans/destinations/not-a-record']
   for (const route of invalid) assert.equal((await get(route)).status, 404, route)
   const redirect = await get('/en/about')
   assert([307, 308].includes(redirect.status))
   assert.equal(new URL(redirect.location, base).pathname, '/about')
-  fs.writeFileSync('docs/seo-phase8-validation.json', JSON.stringify({date: '2026-10-11', architecture: 'next-intl explicit locale routes and feature overlays', origin: base, EnglishPages: routes.length, draftPages: routes.length * locales.length, sitemapURLs: 58, invalidRoutesChecked: invalid.length, EnglishPrefixRedirect: true, reports}, null, 2) + '\n')
+  fs.writeFileSync('docs/seo-phase8-validation.json', JSON.stringify({date: '2026-10-11', architecture: 'next-intl explicit locale routes and feature overlays', origin: base, EnglishPages: routes.length, draftPages: routes.length * locales.length, sitemapURLs, invalidRoutesChecked: invalid.length, EnglishPrefixRedirect: true, reports}, null, 2) + '\n')
 }
 main().catch(error => {console.error(error); process.exitCode = 1})

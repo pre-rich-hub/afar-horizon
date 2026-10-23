@@ -70,38 +70,46 @@
       "title": "Der Danakil und die Bedingungen",
       "items": {
         "0": {
+          "q": "Wie sorgen Sie für die Sicherheit der Reisenden?",
+          "a": "Sicherheit hat für uns oberste Priorität. Wir prüfen die aktuellen Bedingungen und offiziellen Reisehinweise vor unserem Angebot und erneut vor der Abreise; Danakil-Expeditionen werden von erfahrenen lokalen Afar-Guides geleitet, mit Kundschaftern und Begleitschutz, wo erforderlich, und jeder Tag wird rund um die Hitze geplant. In Dallol und am Erta Ale bleibt die Gruppe in ausgewiesenen sicheren Bereichen."
+        },
+        "1": {
+          "q": "Ist ein Besuch der Danakil sicher?",
+          "a": "Es ist eine abgelegene und anspruchsvolle Expeditionsumgebung, und die regionalen Bedingungen müssen immer geprüft werden. Wir bestätigen vor unserem Angebot, was für Ihre Daten möglich und verantwortbar ist, reisen nur mit erfahrenen lokalen Guides und ändern oder streichen eine Route, wenn die Bedingungen es erfordern. Bitte prüfen Sie auch die aktuellen Reisehinweise Ihrer Regierung."
+        },
+        "2": {
           "q": "Veranstalten Sie den Danakil das ganze Jahr über?",
           "a": "Die Betriebsbedingungen variieren je nach Jahreszeit, Route, Wetter, Sicherheit und Ort Zugang. Die kühleren Monate sind der bevorzugte Zeitraum. Wir bestätigen die aktuellen Bedingungen vor der Buchung."
         },
-        "1": {
+        "3": {
           "q": "Was passiert, wenn sich die Bedingungen ändern?",
           "a": "Wir passen die Route, den Zeitplan oder die Aktivitäten an, um Ihre Sicherheit und den Kern der zu schützen Erfahrung und sagen es Ihnen so früh wie möglich. Wenn eine Route unpassend wird, können wir sie ändern oder stornieren: Personen vor Reiserouten."
         },
-        "2": {
+        "4": {
           "q": "Werde ich Lava bei Erta Ale sehen?",
           "a": "Kein Naturphänomen kann garantiert werden. Bei einer Erta Ale-Expedition handelt es sich um eine Reise in eine Vulkanregion, nicht um eine garantierte Lava-Ausstellung."
         },
-        "3": {
+        "5": {
           "q": "Wie körperlich anstrengend ist Erta Ale?",
           "a": "Am Erta Ale erwartet Sie unebenes, exponiertes vulkanisches Gelände. Gehstrecke, Zeitplan und Beobachtungsbereich hängen von der bestätigten Route und örtlichen Vorgaben ab. Erkundigen Sie sich nach den Anforderungen Ihrer Reise und besprechen Sie Einschränkungen der Mobilität oder Fitness vor der Buchung."
         },
-        "4": {
+        "6": {
           "q": "Was soll ich für den Danakil einpacken?",
           "a": "Leichte, atmungsaktive langärmelige Kleidung, ein Hut mit breiter Krempe, Sonnenbrille, Sonnencreme, feste Wanderschuhe, eine Stirnlampe, eine wiederverwendbare Flasche, eine Powerbank und Ihre persönlichen Medikamente. Auf unserer Seite „Bevor Sie losfahren“ finden Sie die vollständige Liste."
         },
-        "5": {
+        "7": {
           "q": "Kann ich das Danakil mit Gheralta, Axum oder dem Simien kombinieren?",
           "a": "Ja, wenn die Route betriebsbereit ist. Unsere 9- und 10-tägigen Expeditionen kombinieren Danakil mit Axum und Gheralta. Auf Anfrage können wir auch andere Kombinationen zusammenstellen."
         },
-        "6": {
+        "8": {
           "q": "Wo beginnen die Danakil-Expeditionen von Afar Horizon?",
           "a": "Die meisten unserer Kernreisen nach Afar und in die Danakil beginnen in Semera. Bestätigen Sie Start- und Endpunkt im Angebot, bevor Sie Flüge oder Weiterreisen buchen; kombinierte Reisen können im nördlichen Hochland enden."
         },
-        "7": {
+        "9": {
           "q": "Wie wähle ich zwischen einer kurzen und einer längeren Danakil-Reise?",
           "a": "Danakil Essentials ist unsere dreitägige Route mit Erta Ale, der Salzebene am Asale-See und Dallol. Danakil Deep besucht diese Hauptlandschaften an vier Tagen mit mehr Ruhezeit. Längere Routen können mehr Zeit für Fotografie, den Afdera-See und Erläuterungen bieten. Prüfen Sie den Tagesablauf und die aktuelle Zugänglichkeit, bevor Sie wählen."
         },
-        "8": {
+        "10": {
           "q": "Wann sollte ich eine Expedition nach Afar und in die Danakil planen?",
           "a": "Unser Katalog empfiehlt November bis Januar als bevorzugten Planungszeitraum. Afar bleibt auch in den kühleren Monaten heiß. Bestätigen Sie die Betriebsbedingungen für Ihre Termine; eine saisonale Empfehlung bestätigt noch keinen Reisetermin."
         }
