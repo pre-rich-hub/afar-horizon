@@ -2,17 +2,16 @@
 
 import { useReviews } from '../hooks/useReviews'
 
-import { avatarTones, reviewPhotos } from '../data/reviews.data'
+import { avatarTones } from '../data/reviews.data'
 
 import { TripadvisorOwl } from '@/components/common/BrandMarks'
 import { Reveal } from '@/components/common/Reveal'
 import { cn } from '@/lib/utils'
 import { ArrowUpRight, ChevronLeft, ChevronRight, Star } from 'lucide-react'
 import Image from 'next/image'
-import { useState } from 'react'
 import { reviewSummary, testimonials } from '../data/review.data'
 
-// Destination photos illustrate the routes mentioned in guest reviews.
+// Destination photos illustrate the trip each guest reviewed.
 
 export function Reviews() {
   const { track, edges, count, step } = useReviews()
@@ -37,6 +36,9 @@ export function Reviews() {
             <span className="font-semibold text-foreground underline decoration-accent decoration-2 underline-offset-4">
               {count} {count === 1 ? 'review' : 'reviews'}
             </span>
+          </p>
+          <p className="mt-3 text-[13px] leading-relaxed text-muted-foreground">
+            Reviews of Tesema (Tevan) and our team, listed on {reviewSummary.platform} as {reviewSummary.listing}.
           </p>
 
           <div className="mt-6 flex h-[72px] w-[72px] items-center justify-center rounded-lg bg-tripadvisor shadow-[0_12px_28px_-14px_oklch(0.185_0.012_58/0.6)]">
@@ -70,7 +72,8 @@ export function Reviews() {
                 name={t.name}
                 detail={t.detail}
                 quote={t.quote}
-                photo={reviewPhotos[i % reviewPhotos.length]}
+                photo={t.image}
+                href={reviewSummary.url}
                 tone={avatarTones[i % avatarTones.length]}
               />
             ))}
@@ -90,15 +93,15 @@ function ReviewCard({
   quote,
   photo,
   tone,
+  href,
 }: {
   name: string
   detail: string
   quote: string
   photo: string
   tone: string
+  href: string | null
 }) {
-  const [open, setOpen] = useState(false)
-
   return (
     <article className="flex w-[300px] shrink-0 snap-start flex-col sm:w-[330px] xl:w-[calc((100%-3rem)/3)]">
       <header className="flex items-start gap-3">
@@ -123,27 +126,25 @@ function ReviewCard({
       <Stars className="mt-3 gap-0.5" size="h-[18px] w-[18px]" />
 
       <div className="mt-3 flex gap-4">
-        <p
-          className={cn(
-            'min-w-0 flex-1 self-start text-pretty text-[15px] leading-relaxed text-foreground/85',
-            !open && '[display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3] overflow-hidden',
-          )}
-        >
-          {quote}
+        <p className="min-w-0 flex-1 self-start text-pretty text-[15px] leading-relaxed text-foreground/85">
+          &ldquo;{quote}&rdquo;
         </p>
         <span className="relative hidden h-[84px] w-[84px] shrink-0 overflow-hidden rounded-md bg-muted sm:block">
           <Image src={photo} alt="" fill sizes="84px" className="object-cover" />
         </span>
       </div>
 
-      <button
-        type="button"
-        onClick={() => setOpen((v) => !v)}
-        aria-expanded={open}
-        className="mt-auto self-start pt-4 text-[13px] font-medium text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline"
-      >
-        {open ? 'Show less' : 'Read full review'}
-      </button>
+      {href && (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-auto inline-flex items-center gap-1 self-start pt-4 text-[13px] font-medium text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline"
+        >
+          Read full review on Tripadvisor
+          <ArrowUpRight className="h-3.5 w-3.5" />
+        </a>
+      )}
     </article>
   )
 }
