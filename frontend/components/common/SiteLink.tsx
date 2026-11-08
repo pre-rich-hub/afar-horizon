@@ -7,5 +7,5 @@ export default function SiteLink(props: ComponentProps<typeof Link> & {'data-loc
   const locale = useLocale() as Locale
   const href = typeof props.href === 'string' && props.href.startsWith('/') && !props.href.startsWith('//') && !/^\/(admin|login|api)(\/|[?#]|$)/.test(props.href) && !props['data-locale-link']
     ? localePath(props.href, locale) : props.href
-  return <Link {...props} href={href} />
+  return <Link prefetch={false} {...props} href={href} />
 }
